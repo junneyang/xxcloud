@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol
+END
+echo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/echo.cc
+END
+echo.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/echo.h
+END
+work_exception.cc
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/work_exception.cc
+END
+work_exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/work_exception.h
+END
+submit.cc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/submit.cc
+END
+submit.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/submit.h
+END
+option.cc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/option.cc
+END
+option.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman/protocol/option.h
+END

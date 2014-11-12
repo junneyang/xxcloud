@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/back
+https://svn.baidu.com/app-test/search/lbs-stat
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f4274961-963c-4867-a4ef-339537d76bc5
+
+gearmanclient.py
+file
+
+
+
+add
+
+addtask.py
+file
+
+
+
+add
+
+gearmanwork.py
+file
+
+
+
+add
+
+gearmanjob.py
+file
+
+
+
+add
+

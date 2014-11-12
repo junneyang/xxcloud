@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/app-test/search/lbs-stat/!svn/ver/4205/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson
+END
+rapidjson.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/rapidjson.h
+END
+encodings.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/encodings.h
+END
+filestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4205/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/filestream.h
+END
+writer.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/writer.h
+END
+encodedstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/encodedstream.h
+END
+document.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4205/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/document.h
+END
+stringbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/stringbuffer.h
+END
+memorybuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/memorybuffer.h
+END
+reader.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/reader.h
+END
+allocators.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/allocators.h
+END
+memorystream.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/memorystream.h
+END
+prettywriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/prettywriter.h
+END
+filewritestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/filewritestream.h
+END
+filereadstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/include/rapidjson/filereadstream.h
+END

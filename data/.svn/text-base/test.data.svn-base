@@ -1,0 +1,12 @@
+[
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"longitude":13208275.49,
+		"latitude":3323844.07,
+		"radius":100
+	}
+]

@@ -1,0 +1,468 @@
+CHANGES
+=======
+
+0.10.0
+------
+
+* Remove all 2.7 filtering
+* Stop filtering out argparse
+* Remove mirror testing from the integration script
+
+0.9.0
+-----
+
+* Allow examining parsing exceptions
+* Update integration script for Apache 2.4
+* Restore Monkeypatched Distribution Instance
+* Register testr as a distutil entry point
+* Check for git before querying it for a version
+* Allow _run_cmd to run commands in any directory
+* Make setUp fail if sdist fails
+* Permit pre-release versions with git metadata
+* Un-nest some sections of code
+
+0.8.2
+-----
+
+* Remove --use-mailmap as it's not needed
+* Fix typos in docs
+
+0.8.1
+-----
+
+* pbr/testr_command.py: Add logging
+* Documentation updates
+* Fixed a typo in the documentation
+* Make source configurable when using --coverage
+* README.rst: tweaks
+* Format autoindex.rst file properly
+* make pbr use hacking directly
+
+0.8.0
+-----
+
+* Use unicode_literals import instead of u'unicode' notation
+* Add support for nested requirements files
+* Remove pip version specifier
+* Make tools/integration.sh take a branch
+* Fixes blocking issue on Windows
+* Remove duplicate git setup in tests
+
+0.7.0
+-----
+
+* Factor run_cmd out of the base class
+* Return the real class in VersionInfo __repr__
+* Fix up some docstrings
+* Init sphinx config values before accessing them
+* Remove copyright from empty files
+* Declare support for Python versions in setup.cfg
+* Updated from global requirements
+* Remove unused _parse_mailmap()
+* Add support for python 3-<3.3
+* Remove tox locale overrides
+* Do not force log verbosity level to info
+
+0.6
+---
+
+* package: read a specific Python version requirement file
+* Fix typos in documents
+* Pin sphinx to <1.2
+* Build mirror using proper requirements
+* Use wheels for installation
+* show diff between pip installed packages and requirements
+* Enable wheel processing in the tests
+* Clean up integration script
+* Let git do mailmap mapping for us
+* Make ChangeLog more condensed
+* Make sphinx builders configurable in LocalBuildDoc
+* Serve local mirror using apache
+* Bump the development status classifier
+* Support building wheels (PEP-427)
+* Ignore jenkins@openstack.org in authors building
+* Communicate to user when we skip a requirement
+* Base python 2.7 skip list on parsed names
+* Link to the documentation in the readme
+* Avoid using 'which' executable for finding git
+* Add wheel mirror structure awareness
+* Remove pip as an argument from mkvenv
+* Use pypi-mirror instead of jeepyb
+
+0.5.23
+------
+
+* Fixed pbr install to not error out and fail if git is not installed
+
+0.5.22
+------
+
+* Move base test case logic out of __init__.py
+* Comply with pep440
+* Prevent ordereddict installation on 2.7
+* Do not pass unicode where byte strings are wanted
+* Add the semver documentation
+* Get rid of PyPI URL override in integration test
+* Add a test for command registration
+* Switch away from tearDown for BaseTests
+* Fix test_changelog when git isn't globally setup
+* Rework run_shell_command
+* Update tox config to use latest upgrades
+* Add a hint for users who don't have git installed
+* Add pypy to tox.ini
+* Fix python-ldap mirroring
+* Stop checking periods in commit messages
+* Fixes issue with command escaping on Windows
+* Added documentation for packagers
+* Update requirements in integration test
+* Sync requirements with global requirements
+* Fix pep8 error
+* Add option to run testr serially
+
+0.5.21
+------
+
+* Replace setuptools_git with a smarter approach
+* Clean up some style warnings
+* Consume the OpenStack mirror by default
+* Correct typo
+* Improve AUTHORS file generation
+* Ensure _run_shell_command always returns same type
+* Hierarchical sphinx API documentation generation
+* Add support for classmethod console scripts
+* Add skip_pip_install to setup.cfg
+* Remove missing_reuqires optimization
+* Use the same logic everywhere for requirements files
+
+0.5.20
+------
+
+* Fix .mailmap file search location
+* Swap the order of configparser imports
+* Install jeepyb and requirements from REPODIR
+* Stop trying to install old pip and setuptools
+* Add support for globbing in data files
+* Revert include_package_data change
+* Also patch easy_install script creation
+* Loop over test output for better readability
+* Add more documentation
+* We force installs via pip, we should declare it
+* Fix python 3.3 tests
+* Replace entry_points console_scripts
+* Fix integer_types type under python 3
+* Remove the need to specify the pbr hook
+* Move d2to1 more into the source tree
+* Set defaults directly in option processing
+* Do not assume the tests run as jenkins
+* Add libffi-dev
+* Ignore project creator while generating AUTHORS
+
+0.5.19
+------
+
+* Add Python 3.3 checking
+* Fix some issues in setup.py test
+* Put AUTHORS.in at the top of AUTHORS
+* Support version override with PBR prefix
+* Don't try to install requirements repo
+* Allow pip installation to be skipped
+* Don't run pip needlessly
+* Clean up hacking and path issues with d2to1
+* Support version override with PBR prefix
+* Fix some issues in setup.py test
+* Add support for namespace packages
+
+0.5.18
+------
+
+* testr: fix Python 3 compatibility
+* Allow to override requirement files via environ
+* Add importlib to the filter list
+* Fix integration script
+* Move testrepository to test-requirements.txt
+* Make python setup.py test do the right thing
+* Add an integration test script
+
+0.5.17
+------
+
+* Fix pip invocation for old versions of pip
+
+0.5.16
+------
+
+* Remove explicit depend on distribute
+
+0.5.15
+------
+
+* Use pip instead of easy_install for installation
+* Skip git-checkout related tests when .git is missing
+* Refactor hooks file
+
+0.5.14
+------
+
+* Remove jinja pin
+
+0.5.12
+------
+
+* Explicitly install install_requires
+* More python3 compatibility
+* python3: Use six everywhere
+* Add vim and emacs files to .gitignore
+* Fix sphinx autodoc module headers
+* Handle versioned egg fragments in dependency URLs
+* Fix tox.ini to not reference deleted testenv
+
+0.5.11
+------
+
+* Fix author and changelog skipping
+* Fix doc autoindexing
+* Changed _get_git_directory() to use git itself
+* python3: Python3.x compatibility
+* Cosmetic doc fixes
+* Make parse errors meaningful
+* Add missing files to the tarball
+
+0.5.10
+------
+
+* Default to single-version-externally-managed
+* Add config for skipping authors and changelog
+* Update to d2to1 0.2.10
+* Added some additional zest.releaser hooks to deal with some perpetual annoyances of doing releases
+* When catching exceptions from a setup-hook don't throw a traceback up for sys.exit()
+
+0.5.8
+-----
+
+* Don't try to smart find packages that aren't there
+* Add support for manpages
+* Support forcing single-version-externally-managed
+* Add more iterations to BuildDoc coverage
+* Align Sphinx autodoc options with oslo
+
+0.5.6
+-----
+
+* Using __file__ was getting the wrong location
+* Add support for configuring pbr sphinx options
+* Add support for warnings=errors
+* Fix authors generation from co-authored-by
+* Ported in Co-authored-by support from oslo
+* Fix up the test suite to actually all pass
+* Added version code
+* Update tox to run hacking
+* Make hacking compliant
+* Ensure that reuqirements files are shipped
+* Add MANIFEST.in
+
+0.5.0
+-----
+
+* Update documentation for release
+* Rename back to PBR
+* Remove extra complexity of six.u wrapper
+* Add contributing file
+* Fix .gitreview file
+* Add docs dir
+* Cleaned up stdout capture invocation
+* Put stdout capture in the base test class
+* Amended README testing instructions
+* Update README with test running instructions
+* Move setup_requires to setup_requires_dist
+* Move sphinx to test-reuqirements
+* Deal with Sphinx import ordering
+* Add a better todo comment
+* Update docs
+* Just use d2to1 via hooks mechanism
+* Add a few more backwards compatibility options
+* Fix exception handling error
+* Lower distribute requirement - it's too extreme
+* Remove sex requirement, since it's in extern
+* Remove version that had been used for testing
+* pep8/pyflakes fixes
+* Fix things up to work with nova
+* Split out oslo.packaging
+* Fix two minor style things
+* Fixes #20. Make sure the manifest_maker monkeypatch only occurs once and that it gets all its required locals encapsulated. This is why I hate any sort of monkey-patching, but it appears to be the only way to get this feature working
+* Fix 'except as' statements that were breaking things in Python 2.5
+* Somehow neglected to include extra-file.txt used in the test for #15. Also moved the info log message that was causing othere tests to fail to only appear when commands are run that actually affect the manifest generation
+* Yet another Python 2.5 fix; I really ought to just set up my own 2.5 installation
+* multiprocessing doesn't exist in Python 2.5
+* Adds six.py and makes the necessary tweaks to improve support for using d2to1 natively across Python versions
+* Fix 'except as' statements that were breaking things in Python 2.5
+* Somehow neglected to include extra-file.txt used in the test for #15. Also moved the info log message that was causing othere tests to fail to only appear when commands are run that actually affect the manifest generation
+* Adds support for the tests_require keyword from setuptools. Tested by eating our own dogfood -- ./setup.py test now works for d2to1's own setup
+* support test suite and test tests-require
+* Patch manifest_maker to support extra_files--this is really the only way I can see to do this at all sensibly
+* This is a test that should really work to test this feature
+* openstack.common.setup: fails to get version from git
+* Use oslo-config-2013.1b3
+* Change the check for the existence of .git directory
+* returncode for Popen is valid only after communicate call
+* sort options to make --help output prettier
+* Allow running test in uninstalled source tree
+* Remove openstack.common.db.common
+* Add missing DBDuplicateEntry
+* Import sqlalchemy session/models/utils
+* Implements import_group
+* Fix Pep8 Warning
+* Fixes "is not", "not in" syntax usage
+* setup: count revs for revno if there are no tags
+* Use testtools as test base class
+* Move logging config options into the log module
+* Use revno and git sha for pre-release versioning
+* Add env var version override for packagers
+* trivial pep whitespace fix
+* Remove write_requirements
+* Rolling back to previous version of resolve_name; it's possible this can fail in the presence of a broken namespace package, but I want to make sure that's the case before trying to fix it
+* Stop using no longer valid -E option for pip
+* oops - now compatible with python 3
+* use regexp to parse the mailmap
+* Make tox run doctests
+* Verbose should not enable debug level logging
+* Fix pep8 E125 errors
+* Simplify version processing
+* Any exception that escapes from a hook gets reported along with a stack trace
+* Revert "Support lookup of value using "group.key""
+* remove debugging
+* Add a latex command to our sphinx builders
+* Support lookup of value using "group.key"
+* debugging auto builds
+* debugging auto builds
+* fix up importer; clean hook name before search
+* show traceback when a hook encounters an exception
+* Add deprecated --logdir common opt
+* Add deprecated --logfile common opt
+* Allow nova and others to override some logging defaults
+* Fixing the trim for ListOp when reading from config file
+* Fix set_default() with boolean CLI options
+* Rename utils.py to strutils.py
+* Improve cfg's argparse sub-parsers support
+* Make project pyflakes clean
+* Fix regression with cfg CLI arguments
+* Fix ListOpt to trim whitespace
+* Hide the GroupAttr conf and group attributes
+* Fix broken --help with CommonConfigOpts
+* updating sphinx documentation
+* Don't reference argparse._StoreAction
+* Fix minor coding style issue
+* Remove ConfigCliParser class
+* Add support for positional arguments
+* Use stock argparse behaviour for optional args
+* Use stock argparse --usage behaviour
+* Use stock argparse --version behaviour
+* Remove add_option() method
+* Completely remove cfg's disable_interspersed_args()
+* argparse support for cfg
+* Remove openstack.common.config and extensions
+* Fixes setup compatibility issue on Windows
+* Move utils.execute to its own module
+* Add a missing comma in a docstring
+* Import order clean-up
+* Fix a logic error in stable version calculation
+* cfg: fix required if option has a dash
+* Fix a couple of file handle leaks, using with statements
+* Ignore the stackforge jenkins email address
+* Extracted parse_host_port into network_utils
+* Add the rpc service and delete manager
+* Some changes I made weeks ago but forgot to commit
+* Added a method for parsing host:port pairs
+* Add basic periodic task infrastructure
+* Move manager.py and service.py into common
+* cfg: clean up None value handling
+* Allow set_default and set_override to use None
+* Tilde expansion for --config-file and --config-dir
+* Add multiple-driver support to the notifier api
+* Fix errors reported by pyflakes
+* Add import_opt() method to ConfigOpts
+* Remove unused imports
+* Modifies _is_opt_registered fcn to check for duplicate opts
+* fix bug lp:1019348,update openstack-common to support pep8 1.3
+* cfg: allow empty config values
+* Add SKIP_GENERATE_AUTHORS option to setup.py
+* Add SKIP_WRITE_GIT_CHANGELOG option to setup.py
+* Fix missing gettextutils in several modules
+* Fix up pre-versioning based on testing in glance
+* cfg: Fix typo in documentation
+* Fix mailmap
+* Split read_versioninfo into a method
+* Add common logging and notification
+* Add support for tag based versioning
+* Skip argparse when injecting requirements
+* Update common code to support pep 1.3. bug 1014216
+* Add autodoc generation to the build_sphinx command
+* Use 'is not None' instead of '!= None'
+* Adds support for bol and eol spaces to ini files
+* Add support to include config aliases
+* Create testutils with skip decorators
+* cfg: add a global CONF object
+* cfg: add generators for iterating over all options
+* cfg: move constructor args to __call__() args
+* Added support for proper bare URLs
+* Backslash continuation removal (common folsom-1)
+* Alphabetize imports in openstack/common/cfg.py
+* cfg: make reset() clear defaults and overrides
+* cfg: automatically create option groups
+* cfg: allow options to be marked as required
+* cfg: use a list comprehension instead of map()
+* Encapsulate common sdist actions into a cmdclass
+* Truly handle mailmap entries for all combinations
+* New ConfigOpts.find_file() for locating conf files
+* Handle authors existed before VCS was around
+* Support for directory source of config files
+* Provide file extension when when looking for files
+* Some refactoring of the cfg cache
+* Add caching to openstack.common.cfg
+* Add AUTHORS generation function
+* Change behavior in utils.import_object()
+* Move auth_str_equal() to a new authutils module
+* Create openstack.common.timeutils
+* Typofix, OptionGroup should be OptGroup
+* Use absolute import for iniparser
+* Make 'yes' also a true boolean
+* Finish implementing MultiStrOpt
+* Avoid leaking secrets into config logging
+* Add auth_str_equal() to common utils
+* Fix bug 954488
+* fix restructuredtext formatting in docstrings
+* Add ConfigOpts.print_help()
+* Fixes a bug where entry_points in a setup.py are blanked out if there are no entry points defined in setup.cfg
+* Promote more complete support for ISO 8601 time
+* cfg: fix a small comment typo
+* Several changes that I accidentally committed to d2to1's old repository. See the changes to the changelog for more details
+* cfg: unneeded multiple inheritance
+* PEP8 cleanup (openstack-common)
+* Backslash continuations (misc.)
+* Disable ConfigParser interpolation (lp#930270)
+* Add git changelog method
+* Add git vcsversion method
+* Updated tox config for multi-python testing
+* Split functions to avoid eventlet import
+* Implements blueprint separate-nova-volumeapi
+* Makes common/cfg.py raise AttributeError
+* PEP8 type comparison cleanup
+* Add the Mapping interface to cfg.ConfigOpts
+* Add support to cfg for disabling interspersed args
+* Add new cfg module
+* import should not return an instance of the class
+* use isinstance and types.*
+* make fix_path a real function so it can be mock'd
+* remove unused imports
+* merge in upstream
+* port execute and utcnow functions from nova
+* pull parse_mailmap str_dict_replace from nova
+* reog from import merge
+* Rajaram/Vinkesh|Default xmlns for extension serialization can be overriden, added default factory for extension middleware
+* Rajaram/Vinkesh | Copied tests for wsgi from nova. Added default content/accept types in Request which can be overridden by projects. Copied tests for XML serialization of Extension Controller's action from nova
+* Rajaram/Vinkesh | Fixed the extension bug where custom collection actions' routes in resource extension were not getting registered
+* Vinkesh/Rajaram|Added nova's extension framework into common and tests for it
+* Rajaram|renamed AppBaseException to OpenstackException and app_config_dir_name to config_dir as per jaypipes' feedback
+* Rajaram/Vinkesh | Removed references to Glance in code
+* Adding syslog support
+* Add some more generic middleware, request context, utils, and versioning. Add basic template for server binary
+* Initial skeleton project

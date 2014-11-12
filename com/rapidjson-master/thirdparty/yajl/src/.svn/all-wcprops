@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src
+END
+yajl.c
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl.c
+END
+yajl_buf.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_buf.h
+END
+yajl_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_version.c
+END
+yajl_lex.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_lex.c
+END
+yajl_alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_alloc.c
+END
+yajl_parser.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_parser.c
+END
+yajl_lex.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_lex.h
+END
+yajl_encode.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_encode.c
+END
+yajl_bytestack.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_bytestack.h
+END
+yajl_alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_alloc.h
+END
+yajl
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl
+END
+yajl_tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_tree.c
+END
+yajl_parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_parser.h
+END
+YAJL.dxy
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/YAJL.dxy
+END
+yajl_encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_encode.h
+END
+yajl_gen.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_gen.c
+END
+yajl_buf.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/yajl_buf.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/thirdparty/yajl/src/CMakeLists.txt
+END

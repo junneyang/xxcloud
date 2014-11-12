@@ -1,0 +1,10 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Building remotely on [8mha:AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/UqgOVmleQbGAAUL1IfIAAAA[0myangjun03 in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome/workspace/pbrpcclient
+[pbrpcclient] $ /bin/sh -xe /tmp/hudson5551049759279516495.sh
++ cd /home/users/yangjun03/workspace/pb
++ ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7788 lbs.da.openservice.ItemService GetItemsByItem '[{"header": {"secretkey": "pass", "subservice": "sub", "servicekey": "key1"}, "algorithmId": "topic_rev_poi", "item_ids": ["9977193541978760286"]}, {"header": {"secretkey": "pass", "subservice": "sub", "servicekey": "key1"}, "algorithmId": "topic_rev_poi", "item_ids": ["9977193541978760286"]}]'
+{"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+{"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Finished: SUCCESS

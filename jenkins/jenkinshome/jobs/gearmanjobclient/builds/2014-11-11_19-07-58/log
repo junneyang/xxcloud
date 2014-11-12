@@ -1,0 +1,17 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/jobclient
+[jobclient] $ /bin/sh -xe /tmp/hudson6638295706286555879.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python jobclient.py 1 yangjun03 yangjun03 http://10.48.55.39:8898/ pbrpcclient '{' '"ClientNode":"yangjun03",' '"WorkPath":"/home/users/yangjun03/workspace",' '"PBTYPE":"PUBLIC-PBRPC",' '"IPPORT":"127.0.0.1:7788",' '"ServiceName":"lbs.da.openservice.ItemService",' '"MethodName":"GetItemsByItem",' '"TestData":[' '{' '"header":' '{' '"subservice":"sub",' '"secretkey":' '"pass",' '"servicekey":' '"key1"' '},' '"algorithmId":' '"topic_rev_poi",' '"item_ids":' '["9977193541978760286"]' '},' '{' '"header":' '{' '"subservice":"sub",' '"secretkey":' '"pass",' '"servicekey":' '"key1"' '},' '"algorithmId":' '"topic_rev_poi",' '"item_ids":' '["9977193541978760286"]' '}' ']' '}'
+Traceback (most recent call last):
+  File "jobclient.py", line 65, in <module>
+    build_params = json.loads(sys.argv[6])
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/json/__init__.py", line 326, in loads
+    return _default_decoder.decode(s)
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting object: line 1 column 0 (char 0)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

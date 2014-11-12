@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/Main.java
+END
+GearmanConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/GearmanConstants.java
+END
+GearmanImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/GearmanImpl.java
+END

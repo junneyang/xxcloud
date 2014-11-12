@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.7.0_65
+Extension-Name: gearman-plugin
+Specification-Title: Integrates Gearman application framework with Jen
+ kins
+Implementation-Title: gearman-plugin
+Implementation-Version: 0.1.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: gearman-plugin
+Long-Name: Gearman Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Gearman+Plugin
+Plugin-Version: 0.1.1
+Hudson-Version: 1.565.3
+Jenkins-Version: 1.565.3
+Plugin-Developers: Khai Do:zaro0508:zaro0508@gmail.com
+

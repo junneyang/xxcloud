@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test
+END
+generate_expected.py
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/generate_expected.py
+END
+pyjsontestrunner.py
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/pyjsontestrunner.py
+END
+runjsontests.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/runjsontests.py
+END
+cleantests.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/cleantests.py
+END
+rununittests.py
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/rununittests.py
+END

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.tikal.hudson.plugins.notification.HudsonNotificationProperty plugin="notification@1.7">
+      <endpoints>
+        <com.tikal.hudson.plugins.notification.Endpoint>
+          <protocol>HTTP</protocol>
+          <format>JSON</format>
+          <url>http://10.48.55.39:8889/pb/jenkins/status/</url>
+          <event>all</event>
+          <timeout>30000</timeout>
+        </com.tikal.hudson.plugins.notification.Endpoint>
+      </endpoints>
+    </com.tikal.hudson.plugins.notification.HudsonNotificationProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>UNIQUE_ID</name>
+          <description>必填。Job唯一ID标识。默认：1。</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.5.1">
+          <name>ClientNode</name>
+          <description>必选，测试执行机选择。如：yangjun03。</description>
+          <allowedSlaves>
+            <string>ALL (no restriction)</string>
+          </allowedSlaves>
+          <defaultSlaves>
+            <string>yangjun03</string>
+          </defaultSlaves>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>WorkPath</name>
+          <description>必填。工作路径。如：/home/users/yangjun03/workspace。</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PBTYPE</name>
+          <description>必填。pbrpc的类型，支持PUBLIC-PBRPC、SOFA-PBRPC、HULU-PBRPC。默认为PUBLIC-PBRPC。</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>PUBLIC-PBRPC</string>
+              <string>SOFA-PBRPC</string>
+              <string>HULU-PBRPC</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IPPORT</name>
+          <description>必填。被测系统IPPORT。默认为127.0.0.1:7788。</description>
+          <defaultValue>127.0.0.1:7788</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ServiceName</name>
+          <description>必填。被测接口的ServiceName(可参考proto文件描述)。默认为lbs.da.openservice.ItemService。</description>
+          <defaultValue>lbs.da.openservice.ItemService</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>MethodName</name>
+          <description>必填。被测接口方法名(可参考proto文件描述)。默认为GetItemsByItem。</description>
+          <defaultValue>GetItemsByItem</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>TestData</name>
+          <description>必填。json格式的字符串，支持多条数据。参考上面的示例。</description>
+          <defaultValue>[
+    {
+        &quot;header&quot;: {
+            &quot;secretkey&quot;: &quot;pass&quot;,
+            &quot;subservice&quot;: &quot;sub&quot;,
+            &quot;servicekey&quot;: &quot;key1&quot;
+        },
+        &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+        &quot;item_ids&quot;: [
+            &quot;9977193541978760286&quot;
+        ]
+    },
+    {
+        &quot;header&quot;: {
+            &quot;secretkey&quot;: &quot;pass&quot;,
+            &quot;subservice&quot;: &quot;sub&quot;,
+            &quot;servicekey&quot;: &quot;key1&quot;
+        },
+        &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+        &quot;item_ids&quot;: [
+            &quot;9977193541978760286&quot;
+        ]
+    }
+]</defaultValue>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd ${WorkPath}/pb &amp;&amp; ./pbrpcclient ${PBTYPE} ${IPPORT} ${ServiceName} ${MethodName} &quot;${TestData}&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,95 @@
+# vim:ft=automake
+# Gearman server and library 
+# Copyright (C) 2011 DataDifferential 
+# Copyright (C) 2009 Brian Aker, Eric Day, Monty Taylor 
+# Copyright (C) 2008 Brian Aker, Eric Day 
+#
+# All rights reserved.
+#
+# Use and distribution licensed under the BSD license.  See
+# the COPYING file in the parent directory for full text.
+#
+# Included from Top Level Makefile.am
+# All paths should be given relative to the root
+
+noinst_HEADERS+= bin/arguments.h
+noinst_HEADERS+= bin/error.h
+noinst_HEADERS+= bin/function.h
+
+bin_PROGRAMS+= bin/gearman
+bin_PROGRAMS+= bin/gearadmin
+
+bin_gearadmin_SOURCES=
+bin_gearadmin_SOURCES+= bin/gearadmin.cc
+bin_gearadmin_SOURCES+= util/instance.cc
+bin_gearadmin_SOURCES+= util/operation.cc
+
+bin_gearadmin_LDADD=
+bin_gearadmin_LDADD+= @BOOST_PROGRAM_OPTIONS_LIB@
+bin_gearadmin_LDFLAGS=
+
+if ENABLE_SSL
+if ENABLE_CYASSL
+bin_gearadmin_LDADD+= @CYASSL_LIB@
+bin_gearadmin_LDFLAGS+= @CYASSL_LDFLAGS@
+else
+if ENABLE_OPENSSL
+bin_gearadmin_LDADD+= @OPENSSL_LIBS@
+bin_gearadmin_LDFLAGS+= @OPENSSL_LDFLAGS@
+endif
+endif
+endif
+
+bin_gearman_SOURCES=
+bin_gearman_SOURCES+= bin/arguments.cc
+bin_gearman_SOURCES+= bin/function.cc
+bin_gearman_SOURCES+= bin/gearman.cc
+bin_gearman_SOURCES+= bin/error.cc
+bin_gearman_SOURCES+= util/pidfile.cc
+bin_gearman_LDADD= libgearman/libgearman.la
+
+GEARMAN_CLIENT_TEST= bin/gearman
+GEARMAN_VALGRIND_CLIENT_TEST= $(VALGRIND_COMMAND) bin/gearman
+GEARMAN_PIDFILE = ${abs_top_builddir}/tests/var/tmp/Xugear.pid
+GEARMAND_PIDFILE = ${abs_top_builddir}/tests/var/tmp/Xugearmand.pid
+GEARMAND_PORT = 5999
+
+client-test: client-test-basic
+
+client-test-basic: $(GEARMAN_CLIENT_TEST)
+	@$(GEARMAN_CLIENT_TEST) -H 2>&1 > /dev/null
+	@$(GEARMAN_CLIENT_TEST) -w -f true -d -i $(GEARMAN_PIDFILE) -- false
+	@libtest/wait $(GEARMAN_PIDFILE)
+	@cat $(GEARMAN_PIDFILE) | xargs kill
+
+client-test-wc: $(GEARMAN_CLIENT_TEST)
+	@gearmand/gearmand --port=$(GEARMAND_PORT) --daemon --pid-file=$(GEARMAND_PIDFILE)
+	@echo "1" > $(GEARMAN_TMP)/test_file 
+	@$(GEARMAN_CLIENT_TEST) -w -f wc -d -i $(GEARMAN_PIDFILE) -- wc -l
+	@$(GEARMAN_CLIENT_TEST) -f wc < $(GEARMAN_TMP)/test_file > $(GEARMAN_TMP)/out_file
+	@diff -q $(GEARMAN_TMP)/test_file   $(GEARMAN_TMP)/out_file
+	@rm $(GEARMAN_TMP)/test_file   $(GEARMAN_TMP)/out_file
+	@libtest/wait $(GEARMAN_PIDFILE)
+	@libtest/wait $(GEARMAND_PIDFILE)
+	@cat $(GEARMAN_PIDFILE) | xargs kill
+	@cat $(GEARMAND_PIDFILE) | xargs kill
+
+client-test-lp738917: $(GEARMAN_CLIENT_TEST)
+	@gearmand/gearmand --port=$(GEARMAND_PORT) --daemon --pid-file=$(GEARMAND_PIDFILE)
+	@echo "1" > $(GEARMAN_TMP)/test_file 
+	@$(GEARMAN_CLIENT_TEST) -w -f wc -d -i $(GEARMAN_PIDFILE) -- wc -l
+	@$(GEARMAN_CLIENT_TEST) -f wc < $(GEARMAN_TMP)/test_file > $(GEARMAN_TMP)/out_file
+	@$(GEARMAN_CLIENT_TEST) -f wc < $(GEARMAN_TMP)/test_file > $(GEARMAN_TMP)/out_file
+	@$(GEARMAN_CLIENT_TEST) -f wc < $(GEARMAN_TMP)/test_file > $(GEARMAN_TMP)/out_file
+	@diff -q $(GEARMAN_TMP)/test_file   $(GEARMAN_TMP)/out_file
+	@rm $(GEARMAN_TMP)/test_file   $(GEARMAN_TMP)/out_file
+	@libtest/wait $(GEARMAN_PIDFILE)
+	@libtest/wait $(GEARMAND_PIDFILE)
+	@cat $(GEARMAN_PIDFILE) | xargs kill
+	@cat $(GEARMAND_PIDFILE) | xargs kill
+
+valgrind-client-test: $(GEARMAN_CLIENT_TEST)
+		      @$(GEARMAN_VALGRIND_CLIENT_TEST) -H 2>&1 > /dev/null
+		      @$(GEARMAN_CLIENT_TEST) -w -f true -d -i $(GEARMAN_PIDFILE) -- false
+		      @libtest/wait $(GEARMAN_PIDFILE)
+		      @cat $(GEARMAN_PIDFILE) | xargs kill

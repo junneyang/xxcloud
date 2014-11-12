@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/docs/libgearman/examples
+END
+gearman_client_do_background_example.c
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/docs/libgearman/examples/gearman_client_do_background_example.c
+END
+gearman_client_do_example.c
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/docs/libgearman/examples/gearman_client_do_example.c
+END
+gearman_execute_partition.c
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/docs/libgearman/examples/gearman_execute_partition.c
+END
+gearman_execute_example.c
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/docs/libgearman/examples/gearman_execute_example.c
+END

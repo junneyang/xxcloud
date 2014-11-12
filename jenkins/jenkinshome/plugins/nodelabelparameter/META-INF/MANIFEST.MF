@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: discus
+Build-Jdk: 1.6.0_65
+Extension-Name: nodelabelparameter
+Specification-Title: The node and label parameter plugin allows to dyn
+ amically select the node on which a job should be executed.
+Implementation-Title: nodelabelparameter
+Implementation-Version: 1.5.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: nodelabelparameter
+Long-Name: Node and Label parameter plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/NodeLabel+Parameter+P
+ lugin
+Plugin-Version: 1.5.1
+Hudson-Version: 1.509.4
+Jenkins-Version: 1.509.4
+Plugin-Dependencies: token-macro:1.9,jquery:1.7.2-1,parameterized-trig
+ ger:2.22;resolution:=optional
+Plugin-Developers: Dominik Bartholdi:imod:
+

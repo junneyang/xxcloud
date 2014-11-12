@@ -1,0 +1,3 @@
+[console_scripts]
+geard = gear.cmd.geard:main
+

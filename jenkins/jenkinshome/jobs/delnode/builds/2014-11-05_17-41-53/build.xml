@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JenkinsURL</name>
+          <description>必填。jenkins地址。如：http://10.48.55.39:8898/。</description>
+          <value>http://10.48.55.39:8898/</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>NodeName</name>
+          <description>必填，添加节点名称。如：da02。</description>
+          <value>da02</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <number>1</number>
+  <startTime>1415180513102</startTime>
+  <result>FAILURE</result>
+  <duration>25630</duration>
+  <charset>ISO-8859-1</charset>
+  <keepLog>false</keepLog>
+  <builtOn>da01</builtOn>
+  <workspace>/home/map/workspace/workspace/delnode</workspace>
+  <hudsonVersion>1.563</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

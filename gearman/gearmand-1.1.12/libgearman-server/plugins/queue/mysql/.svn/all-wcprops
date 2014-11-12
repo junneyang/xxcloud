@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/mysql
+END
+include.am
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/mysql/include.am
+END
+queue.cc
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/mysql/queue.cc
+END
+queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/mysql/queue.h
+END

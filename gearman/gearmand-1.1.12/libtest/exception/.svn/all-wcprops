@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libtest/exception
+END
+disconnected.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libtest/exception/disconnected.hpp
+END
+fatal.cc
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libtest/exception/fatal.cc
+END
+fatal.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libtest/exception/fatal.hpp
+END

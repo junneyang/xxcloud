@@ -1,0 +1,14 @@
+package helloworld;
+
+option cc_generic_services = true;
+
+enum phonetype { 
+	MOBILE = 0;
+	HOME = 1;
+	WORK = 2;
+}
+
+message phonenumber {
+	required string number = 1;
+	optional phonetype type = 2 [default = MOBILE];
+}

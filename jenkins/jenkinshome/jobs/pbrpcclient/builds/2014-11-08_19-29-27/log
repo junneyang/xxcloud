@@ -1,0 +1,7 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgY+/eT83ILSktQi/ZREA0MAI6LN3MMAAAA=[0mda01 in workspace /home/map/workspace/workspace/pbrpcclient
+[pbrpcclient] $ /bin/sh -xe /tmp/hudson4465758052593196048.sh
++ cd /home/users/yangjun03/workspace/pb
+/tmp/hudson4465758052593196048.sh: line 2: cd: /home/users/yangjun03/workspace/pb: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

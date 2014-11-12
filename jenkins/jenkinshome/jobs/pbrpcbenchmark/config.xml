@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.tikal.hudson.plugins.notification.HudsonNotificationProperty plugin="notification@1.7">
+      <endpoints>
+        <com.tikal.hudson.plugins.notification.Endpoint>
+          <protocol>HTTP</protocol>
+          <format>JSON</format>
+          <url>http://10.48.55.39:8889/pb/jenkins/status/</url>
+          <event>all</event>
+          <timeout>30000</timeout>
+        </com.tikal.hudson.plugins.notification.Endpoint>
+      </endpoints>
+    </com.tikal.hudson.plugins.notification.HudsonNotificationProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>UNIQUE_ID</name>
+          <description>必填。Job唯一ID标识。默认：1。</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.5.1">
+          <name>ClientNode</name>
+          <description>必选，测试执行机选择。如：yangjun03。</description>
+          <allowedSlaves>
+            <string>ALL (no restriction)</string>
+          </allowedSlaves>
+          <defaultSlaves>
+            <string>yangjun03</string>
+          </defaultSlaves>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>WorkPath</name>
+          <description>必填。工作路径。如：/home/users/yangjun03/workspace。</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PBTYPE</name>
+          <description>必填。pbrpc的类型，支持PUBLIC-PBRPC、SOFA-PBRPC、HULU-PBRPC。默认为PUBLIC-PBRPC。</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>PUBLIC-PBRPC</string>
+              <string>SOFA-PBRPC</string>
+              <string>HULU-PBRPC</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IPPORT</name>
+          <description>必填。被测系统IPPORT。默认为127.0.0.1:7788。</description>
+          <defaultValue>127.0.0.1:7788</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ServiceName</name>
+          <description>必填。被测接口的ServiceName(可参考proto文件描述)。默认为lbs.da.openservice.ItemService。</description>
+          <defaultValue>lbs.da.openservice.ItemService</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>MethodName</name>
+          <description>必填。被测接口方法名(可参考proto文件描述)。默认为GetItemsByItem。</description>
+          <defaultValue>GetItemsByItem</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>WorkThreadNum</name>
+          <description>必填。工作线程数，请配置为2*N。默认为8，建议不修改。</description>
+          <defaultValue>8</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SendThreadNum</name>
+          <description>必填。工作线程数。默认为2，压力较大时可增加。</description>
+          <defaultValue>2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ClientNum</name>
+          <description>必填。客户端即socket连接个数。默认为20，压力较大时可增加。</description>
+          <defaultValue>20</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SendRate</name>
+          <description>必填。每个线程每个连接每秒发送请求数。默认为200，即发送QPS约为2*20*200=8000。如果配置为-1，则为压力山大模式。</description>
+          <defaultValue>200</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IsRandom</name>
+          <description>必填。是否随机发送，1 : 随机发送, 0 : 顺序循环发送。默认为1。</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TestTime</name>
+          <description>必填。测试时间(单位分钟)。默认为1.0。</description>
+          <defaultValue>1.0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IsOutput</name>
+          <description>必填。是否打印返回结果。1 : 打印, 0 : 不打印。建议在调试模式下开启，性能测试时关闭。默认为0。</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>TestData</name>
+          <description>必填。json格式的测试数据，支持多条数据。</description>
+          <defaultValue>[
+	{
+		&quot;input&quot;: {
+			&quot;header&quot;: {
+				&quot;subservice&quot;:&quot;sub&quot;,
+				&quot;secretkey&quot;: &quot;pass&quot;,
+				&quot;servicekey&quot;: &quot;key1&quot;
+			},
+			&quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+			&quot;item_ids&quot;: [&quot;9977193541978760286&quot;]
+		},
+		&quot;expect&quot;: {&quot;items&quot;:[{&quot;id&quot;:&quot;18012202574307917823&quot;,&quot;value&quot;:[0.3,0.5,0.4],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;12313225205891489106&quot;,&quot;value&quot;:[1],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;18119621412888245380&quot;,&quot;value&quot;:[0.7],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;2071168565446484381&quot;,&quot;value&quot;:[0.3],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;11710154692952313709&quot;,&quot;value&quot;:[0.3],&quot;str_value&quot;:[]}],&quot;args&quot;:[]}
+	},
+	{
+		&quot;input&quot;: {
+			&quot;header&quot;: {
+				&quot;subservice&quot;:&quot;sub&quot;,
+				&quot;secretkey&quot;: &quot;pass&quot;,
+				&quot;servicekey&quot;: &quot;key1&quot;
+			},
+			&quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+			&quot;item_ids&quot;: [&quot;9977193541978760286&quot;]
+		},
+		&quot;expect&quot;: {&quot;items&quot;:[{&quot;id&quot;:&quot;18012202574307917823&quot;,&quot;value&quot;:[0.3,0.5,0.4],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;12313225205891489106&quot;,&quot;value&quot;:[1],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;18119621412888245380&quot;,&quot;value&quot;:[0.7],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;2071168565446484381&quot;,&quot;value&quot;:[0.3],&quot;str_value&quot;:[]},{&quot;id&quot;:&quot;11710154692952313709&quot;,&quot;value&quot;:[0.3],&quot;str_value&quot;:[]}],&quot;args&quot;:[]}
+	}
+]</defaultValue>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd ${WorkPath}/pb &amp;&amp; ./pbrpcbenchmark ${PBTYPE} ${IPPORT} ${ServiceName} ${MethodName} ${WorkThreadNum} ${SendThreadNum} ${ClientNum} ${SendRate} ${IsRandom} ${TestTime} ${IsOutput} &quot;${TestData}&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

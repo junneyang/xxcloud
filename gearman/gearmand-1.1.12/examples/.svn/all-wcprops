@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples
+END
+include.am
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/include.am
+END
+echo_client.cc
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/echo_client.cc
+END
+reverse_client_cb.cc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/reverse_client_cb.cc
+END
+reverse_client_bg.cc
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/reverse_client_bg.cc
+END
+wc_worker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/wc_worker.cc
+END
+reverse_worker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/reverse_worker.cc
+END
+echo_worker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/echo_worker.cc
+END
+reverse_client_epoch.cc
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/reverse_client_epoch.cc
+END
+reverse_client.cc
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/examples/reverse_client.cc
+END

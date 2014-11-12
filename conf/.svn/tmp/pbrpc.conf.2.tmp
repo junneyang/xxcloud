@@ -1,0 +1,41 @@
+#pbrpc press conf
+[Log]
+level : 4
+procname : pbrpc
+[.@device]
+type : ULLOG
+path : log
+file : pbrpc.log
+open : 1
+[.@device]
+type : TTY
+open : 0
+
+
+
+[UbClientConfig]
+#public/pbrpc≈‰÷√
+ConfType  :  1
+[.Reactor]
+ThreadNum  :  4
+[.UbClient]
+[..@Service]
+Name:UserService
+ConnectAll :  0
+DefaultConnectTimeOut  :  1000
+DefaultReadTimeOut  :  1000
+DefaultWriteTimeOut  :  1000
+DefaultMaxConnect  :  100
+DefaultRetry : 5
+DefaultConnectType  :  LONG
+SendBuf : 10000
+RecvBuf : 10000
+[...CurrStrategy]
+ClassName  :  UbClientStrategy
+[...@Server]
+IP : 127.0.0.1
+Port : 7788
+AsyncWaitingNum  :  50
+Range : 0-100
+Version : 1
+Linger : 1

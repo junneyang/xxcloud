@@ -1,0 +1,77 @@
+#edit-mode:-*- python -*-
+#coding:gbk
+
+#工作路径.
+WORKROOT('../../../../../../')
+
+#使用硬链接copy.
+CopyUsingHardLink(True)
+
+#支持32位/64位平台编译
+#ENABLE_MULTI_LIBS(True)
+
+#C预处理器参数.
+CPPFLAGS('-D_GNU_SOURCE -D__STDC_LIMIT_MACROS -DVERSION=\\\"1.0.0.0\\\"')
+#为32位目标编译指定额外的预处理参数
+#CPPFLAGS_32('-D_XOPEN_SOURE=500')
+
+#C编译参数.
+CFLAGS('-g -pipe -W -Wall -fPIC')
+
+#C++编译参数.
+CXXFLAGS('-g -pipe -W -Wall -fPIC')
+
+#IDL编译参数
+IDLFLAGS('--compack')
+
+#UBRPC编译参数
+UBRPCFLAGS('--compack')
+
+#头文件路径.
+INCPATHS('. ./proto ./src ./com/rapidjson-master/include ./com/jsoncpp-src-0.5.0/include')
+
+#使用库
+#LIBS('')
+
+#链接参数.
+LDFLAGS('-lpthread -lcrypto -lrt')
+
+#依赖模块
+CONFIGS('lib2-64/ullib@base')
+CONFIGS('public/configure@base')
+CONFIGS('public/comlog-plugin@base')
+
+CONFIGS('public/pbrpc@pbrpc_1-0-21-0_PD_BL')
+CONFIGS('public/sofa-pbrpc@1.0.0.24857')
+CONFIGS('third-64/snappy@base')
+CONFIGS('public/hulu/pbrpc@pbrpc_1-0-20-0_PD_BL')
+CONFIGS('public/hulu/saber@base')
+
+CONFIGS('public/protobuf-json@base')
+CONFIGS('third-64/protobuf@base')
+#CONFIGS('third-64/protobuf-2.6.0/protobuf@base')
+
+#为32位/64位指定不同的依赖路径.
+#CONFIGS_32('lib2/ullib')
+#CONFIGS_64('lib2-64/ullib')
+proto_sources = GLOB('./proto/*.cc')
+proto_headers = GLOB('./proto/*.h')
+
+src_sources = GLOB('./src/*.cpp')
+src_headers = GLOB('./src/*.h')
+
+json_src_sources = GLOB('./com/jsoncpp-src-0.5.0/src/lib_json/*.cpp')
+
+#静态库
+#StaticLibrary('pbrpcpress',Sources(user_sources),HeaderFiles(user_headers))
+#共享库
+#SharedLibrary('pbrpcpress',Sources(user_sources),HeaderFiles(user_headers))
+
+#可执行文件
+#Application("write",Sources("./src/write.cpp", proto_sources), OutputPath(''))
+#Application("read",Sources("./src/read.cpp", proto_sources), OutputPath(''))
+#Application("descripter",Sources("./src/descripter.cpp", proto_sources), OutputPath(''))
+#Application("jsontest",Sources("./src/jsontest.cpp", "./src/common.cpp", proto_sources), OutputPath(''))
+Application("pbrpcclient",Sources("./src/pbrpcclient.cpp", "./src/common.cpp", proto_sources, json_src_sources), OutputPath(''))
+Application("pbrpcbenchmark",Sources("./src/pbrpcbenchmark.cpp", "./src/common.cpp", "./src/requestthreadpool.cpp", proto_sources, json_src_sources), OutputPath(''))
+

@@ -1,0 +1,11 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/addnode
+[addnode] $ /bin/sh -xe /tmp/hudson7321786740422113368.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python addnode.py http://10.48.55.39:8898/ da02 10.99.36.61 22 map mapapptest
+Traceback (most recent call last):
+  File "addnode.py", line 41, in <module>
+    port = int(sys.argv[5])
+ValueError: invalid literal for int() with base 10: 'map'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

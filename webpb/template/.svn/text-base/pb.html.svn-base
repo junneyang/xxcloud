@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head name='top'>
+	<meta charset="UTF-8"/>
+	<title>首页-通用性能测试平台</title>
+	<link href="/static/css/hello.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/helloadd.css" rel="stylesheet" type="text/css"/>
+	<script src="/static/js/jquery-1.9.0.js"></script>
+	<script src="/static/js/jquery.glide.js"></script>
+	<script src="/static/js/hello.js"></script>
+</head>
+	
+<body>
+	<!--标题栏-->
+	<div class="header">
+		<div class="h_logo"><a href="/pb/" title="通用性能测试平台"><img src="/static/images/qaup_logo.png" alt=""/></a></div>
+		<div class="h_nav">
+			<span><span id='id_user_name'>{{usrname}}</span>, 欢迎您</span>&nbsp;&nbsp;&nbsp;<span><a href="#"><i class="icon16 icon16-setting"></i>个人中心</a></span>&nbsp;&nbsp;&nbsp;<span><a href="/pb/logout/"><i class="icon16 icon16-power"></i>退出</a></span>
+		</div>
+	</div>
+	
+	<!--菜单栏-->
+	<div class="nav">
+		<ul>
+			<li class="active"><a href="/pb/">首页</a></li>
+			<li><a href="/pb/test/?testtype=testpjt">项目测试</a></li>
+			<li><a href="/pb/conf/?conftype=testsrv">测试配置</a></li>
+			<li><a href="/pb/stat/">使用统计</a></li>
+			<li><a href="#">帮助</a></li>
+		</ul>
+	</div>
+
+	<!--滑动栏    <div class="helloslider">  -->
+	<div class="mala-slider" id="js-slider">
+		<ul class="mala-slide-list">
+			<li class="mala-slide-item mala-fl" style="background: url(/static/images/slide1.jpg);">
+				<div class="mala-container">
+				<h3 class="mala-slide-title">pbrpc 性能测试服务</h3>
+				<h4 class="mala-slide-subtitle">简单 易用 通用</h4>
+				<p class="mala-slide-cont">支持PUBLIC-PBRPC 、SOFA-PBRPC 、HULU-PBRPC等多种协议的 <b>高性能</b> 、<b>自动化</b>测试 , 
+				<br>支持json格式压力数据 , pbrpc性能测试 从未 如此 简单 !
+				</p>
+				<a href="#" class="mala-btn mala-btn-primary mala-btn-larger">立即体验</a>
+				</div>
+			</li>
+			<li class="mala-slide-item mala-fl" style="background: url(/static/images/slide2.jpg);">
+				<div class="mala-container">
+				<h3 class="mala-slide-title">http 性能测试服务</h3>
+				<h4 class="mala-slide-subtitle">简单 易用 高性能</h4>
+				<p class="mala-slide-cont">解决一般http性能测试工具压力不足 、压力不均匀 、统计输出不完备 、扩展不灵活等缺陷 , 
+				<br>基于频繁的业务测试不断优化改进 , <b>性能优异</b> 、<b>稳定可靠</b> 、<b>实用性强</b> , http性能测试首选 !</p>
+				<a href="#" class="mala-btn mala-btn-primary mala-btn-larger">立即体验</a> 
+				</div>
+			</li>
+			<li class="mala-slide-item mala-fl" style="background: url(/static/images/slide3.jpg);">
+				<div class="mala-container">
+				<h3 class="mala-slide-title">pbrpc http 功能测试服务</h3>
+				<h4 class="mala-slide-subtitle">简单 易用 数据驱动</h4>
+				<p class="mala-slide-cont">提供基于数据驱动的http 、pbrpc功能 自动化 测试服务 , 
+				<br>不需要 写代码 ! </p>
+				<a href="#" class="mala-btn mala-btn-primary mala-btn-larger">立即体验</a> 
+				</div>
+			</li>
+			<li class="mala-slide-item mala-fl" style="background: url(/static/images/slide4.png);">
+				<div class="mala-container">
+				<h3 class="mala-slide-title">一站式解决方案</h3>
+				<h4 class="mala-slide-subtitle">实用 极致</h4>
+				<p class="mala-slide-cont">功能测试 , 性能测试 , 指标监控 , 报表展示 , 
+				<br>一应俱全 ! </p>
+				<a href="#" class="mala-btn mala-btn-primary mala-btn-larger">立即体验</a> 
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!--===========通知栏=============-->
+	<div class="mala-notice">
+		<div class="mala-container mala-clearfix">
+			<div class="mala-fl"> <i class="fa fa-volume-up"></i>针对业务测试关键痛点 , 提供pbrpc http性能 、功能测试 <b>一站式</b> 整体解决方案</div>
+			<div class="mala-fr"> <i class="fa fa-envelope-o"></i> 邮件组 : <i class="fa fa-paw" style="margin-left:10px;"></i> hi : </div>
+		</div>
+	</div>
+	
+	<!--==============主体内容========  style="background-color:#E2E2E2;" -->
+	<div class="mala-main" >
+		<div class="mala-container mala-clearfix">
+			<figure class="mala-figure">
+				<div class="mala-service-list">
+					<div class="mala-row">
+						<div class="mala-col-md-4">
+							<div class="mala-service-item">
+								<span class="mala-service-img">
+								<img src="/static/images/index.png" />
+								</span>
+								<h4 class="mala-service-title">性能测试服务</h4>
+								<span class="mala-service-desc">支持http 、pbrpc等协议性能自动化测试 ; 异步高性能 ; 支持线程数 、连接数 、速率 、 发送模式等参数灵活配置 ; 支持json格式数据做为请求 ; 满足一般性能测试 、延迟测试 、最大连接数测试 、压力测试 、长时间稳定性测试 、内存泄漏测试等场景 。</span>
+							</div>
+						</div>
+						<div class="mala-col-md-4">
+							<div class="mala-service-item">
+								<span class="mala-service-img">
+								<img src="/static/images/solution.jpg" />
+								</span>
+								<h4 class="mala-service-title">功能测试服务</h4>
+								<span class="mala-service-desc">支持基于数据驱动的http 、pbrpc协议功能自动化测试 , 不需要写代码 , 专注测试用例设计 , 提高测试效率 。</span>
+							</div>
+						</div>
+						<div class="mala-col-md-4">
+							<div class="mala-service-item">
+								<span class="mala-service-img">
+								<img src="/static/images/robot.png" />
+								</span>
+								<h4 class="mala-service-title">一站式解决方案</h4>
+								<span class="mala-service-desc">支持性能自动化测试 ; 支持性能指标监控 ; 支持测试邮件发送 ; 支持测试报表展示 。</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</figure>
+		</div>
+	</div>
+	<!--<div class="plist">
+		<div class="sec">
+		<h2><a href="#">性能测试服务</a></h2>
+		<h3>性能自动化测试</h3>
+		<p>支持http 、pbrpc等协议高性能自动化测试 ; 异步高性能 ; 支持线程数 、连接数 、速率 、 发送模式等参数灵活定制 ; 支持json格式数据做为请求 ; 满足一般性能测试 、延迟测试 、最大连接数测试 、压力测试 、长时间稳定性测试 、内存泄漏测试等场景 。</p>
+		</div>
+		<div class="sec">
+		<h2><a href="#">功能测试服务</a></h2>
+		<h3>功能自动化测试</h3>
+		<p>支持基于数据驱动的http 、pbrpc协议自动化测试 , 不需要写代码 。
+		</p>
+		</div>
+		<div class="sec sec_last">
+		<h2><a href="#"></a>性能测试全流程自动化</h2>
+		<h3>一站式解决方案</h3>
+		<p>支持性能自动化测试 ; 支持性能指标监控 ; 支持测试结果邮件发送 ; 支持性能指标报表展示 。</p>
+		</div>
+	</div>-->
+	<!--<div class="ilist">
+		<div class="sec" style='padding:0 0 0 0;margin:0 0 0 0'>
+		<div class="icon list1"></div>
+		<div class="title"><h3>性能测试服务</h3></div>
+		</div>
+		<div class="sec">
+		<div class="icon list2"></div>
+		<div class="title"><h3>功能测试服务</h3></div>
+		</div>
+		<div class="sec">
+		<div class="icon list3"></div>
+		<div class="title"><h3>一站式解决方案</h3></div>
+		</div>
+	</div>-->
+	
+    <!--==============页尾==============-->
+	<!--<div class="helloslider">
+    <footer class="mala-footer">
+        <div class="mala-container mala-clearfix">
+            <div class="mala-footer-links"></div>
+            <div class="mala-row">
+                <div class="mala-col-md-2">
+                    <dl class="mala-footer-dl">
+                        <dt class="mala-footer-dt">关于</dt>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">帮助</a> 
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mala-col-md-2">
+                    <dl class="mala-footer-dl">
+                        <dt class="mala-footer-dt">友情链接</dt>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">联系</a> 
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mala-col-md-2">
+                    <dl class="mala-footer-dl">
+                        <dt class="mala-footer-dt">反馈</dt>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">文档中心</a> 
+                        </dd>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">百度监控平台</a> 
+                        </dd>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">Hi群：1425469</a> 
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mala-col-md-2">
+                    <dl class="mala-footer-dl">
+                        <dt class="mala-footer-dt">百度通用元素库</dt>
+                        <dd class="mala-footer-dd"> <a href="" class="mala-link">邮箱：openserver@baidu.com</a> 
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mala-col-md-4">
+                    <div class="mala-footer-copyright mala-fr">©2011-2014 百度质量部出品</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	</div>-->
+	
+	<div class="home_foot">
+		<p>Copyright ©2014 Baidu. All Rights Reserved.
+		</p>
+		<p>
+		百度 LBS 测试 版权所有
+		</p>
+	</div>
+	
+</body>
+</html>

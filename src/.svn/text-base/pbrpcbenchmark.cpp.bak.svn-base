@@ -1,0 +1,178 @@
+ /*
+ *Copyright (c) 2014-2014, yangjun <597092663@qq.com>
+ *All rights reserved.
+ * 
+ *Redistribution and use in source and binary forms, with or without
+ *modification, are permitted provided that the following conditions are met:
+ * 
+ *  * Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *  * Neither the name of Redis nor the names of its contributors may be used
+ *    to endorse or promote products derived from this software without
+ *    specific prior written permission.
+ * 
+ *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS 
+ *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+ *THE POSSIBILITY OF SUCH DAMAGE.
+ */
+#include "common.h"
+
+using namespace std;
+
+int main(int argc, char **argv) {
+	string pbrpc_type;
+	string ip_port;
+	string service_name;
+	string method_name;
+	int thread_num;
+	int client_num;
+	int send_rate;
+	double test_time;
+	int is_output;
+	string testdata;
+	
+	if (argc != 11) {
+		benchmarkhelpinfo();
+		return -1;
+	} else {
+		pbrpc_type = argv[1];
+		ip_port = argv[2];
+		service_name = argv[3];
+		method_name = argv[4];
+		thread_num = atoi(argv[5]);
+		client_num = atoi(argv[6]);
+		send_rate = atoi(argv[7]);
+		test_time = atof(argv[8]);
+		is_output = atoi(argv[9]);
+		testdata = argv[10];
+	}
+	if (thread_num <= 0 || thread_num%2 != 0) {
+		cout << "ERROR : thread number 2*N is suggested \n";
+		return -1;
+	}
+	
+	cout << "INFO : init socket channels, please wait for a moment \n";
+	freopen("./log/pbrpc.log.wf", "a", stderr);
+	
+	//初始化客户端
+	vector<google::protobuf::RpcChannel *> rpc_channels;
+	if (pbrpc_type == "SOFA-PBRPC") {
+		sofa::pbrpc::RpcClientOptions client_options;
+		client_options.work_thread_num = thread_num/2;
+		client_options.callback_thread_num = thread_num - thread_num/2;
+		client_options.keep_alive_time = -1;
+		sofa::pbrpc::RpcClient *rpc_client = new sofa::pbrpc::RpcClient(client_options);
+		for (int i=0; i<client_num; i++) {
+			google::protobuf::RpcChannel *rpc_channel = new sofa::pbrpc::RpcChannel(rpc_client, ip_port);
+			if (rpc_channel != NULL) {
+				rpc_channels.push_back(rpc_channel);
+			}
+		}
+	} else if (pbrpc_type == "HULU-PBRPC") {
+		comcfg::Configure conf;
+		assert (conf.load("./conf", "pbrpc.conf") == 0);
+		comlog_init(conf["Log"]);
+		baidu::hulu::pbrpc::RpcClient *rpc_client = new baidu::hulu::pbrpc::RpcClient();
+		baidu::hulu::pbrpc::RpcClientOptions options;
+		options.net_threads_num = thread_num/2;
+		options.worker_threads_num = thread_num - thread_num/2;
+		//options.keepalive_timeout_second(50000); 默认
+		rpc_client->set_options(options);
+		rpc_client->Start();
+		for (int i=0; i<client_num; i++) {
+			baidu::hulu::pbrpc::RpcChannelOptions channel_options;
+			google::protobuf::RpcChannel *rpc_channel = new baidu::hulu::pbrpc::RpcChannel(ip_port, rpc_client);
+			if (rpc_channel != NULL) {
+				(static_cast<baidu::hulu::pbrpc::RpcChannel*> (rpc_channel))->set_options(channel_options);
+				rpc_channels.push_back(rpc_channel);
+			}
+		}
+	} else if (pbrpc_type == "PUBLIC-PBRPC") {
+		vector<string> tmpv = split_string(service_name, ".");
+		string service = tmpv[tmpv.size()-1];
+		string cmd_str = "sed -i 's/^Name:.*/Name:" +service+ "/'" + " ./conf/pbrpc.conf";
+		exec_cmd(cmd_str.c_str());
+		
+		vector<string> split_ip_port = split_string(ip_port, ":");
+		cmd_str = "sed -i 's/^IP:.*/IP:" +split_ip_port[0]+ "/'" + " ./conf/pbrpc.conf";
+		exec_cmd(cmd_str.c_str());
+		cmd_str = "sed -i 's/^Port:.*/Port:" +split_ip_port[1]+ "/'" + " ./conf/pbrpc.conf";
+		exec_cmd(cmd_str.c_str());
+		
+		stringstream ss;
+		ss << thread_num/2;
+		cmd_str = "sed -i 's/^ThreadNum:.*/ThreadNum:" + ss.str() + "/'" + " ./conf/pbrpc.conf";
+		exec_cmd(cmd_str.c_str());
+		
+		ub::UbClientManager2* ubmgr2 = new ub::UbClientManager2();
+		comcfg::Configure conf;
+		assert (conf.load("./conf", "pbrpc.conf") == 0);
+		//freopen ("./log/pbrpc.log.err","a",stderr);
+		comlog_init(conf["Log"]);
+		int ret = ubmgr2->load(conf["UbClientConfig"]);
+		if (ret == 0) {
+			//fprintf(stderr, "%s\n", "init ok");
+		} else {
+			//fprintf(stderr, "%s\n", "init error");
+			return -1;
+		}
+		pbrpc::UbTransport* transport = new pbrpc::UbTransport(ubmgr2);
+		pbrpc::PbProtocol* protocol = new pbrpc::PbProtocol(transport);
+		for (int i=0; i<client_num; i++) {
+			google::protobuf::RpcChannel *rpc_channel = new pbrpc::AsyncClient(protocol);
+			if (rpc_channel != NULL) {
+				rpc_channels.push_back(rpc_channel);
+			}
+		}
+	} else {
+		cout << "ERROR : not supported pbrpc type\n";
+		return -1;
+	}
+	
+	cout << "INFO : all socket channels init success, start benchmark test \n";
+	//动态创建方法
+	const google::protobuf::MethodDescriptor *method = FindMethodByName(service_name, method_name);
+	if (method == NULL) {
+		return -1;
+	}
+	string filestr = getfilestr(testdata);
+	
+	long start = getCurrentTimeInMSec();
+	long total_time = (long)(test_time*60*1000);
+	long end = start + total_time;
+	vector<google::protobuf::RpcChannel *>::iterator iter;
+	vector<google::protobuf::RpcChannel *>::iterator last = rpc_channels.end();
+	//cout << rpc_channels.size();
+	int avg_interval = (1000*1000)/(send_rate);
+	int interval;
+	long current = getCurrentTimeInMSec();
+	while(current <= end){
+		long tmp_start = getCurrentTimeInUSec();
+		for (iter = rpc_channels.begin(); iter != last; ++iter) {
+			async_request(*iter, pbrpc_type, service_name, method_name, method, is_output, filestr);
+		}
+		long tmp_end = getCurrentTimeInUSec();
+		interval = avg_interval - tmp_end + tmp_start;
+		if (interval > 0) {
+			microseconds_sleep(interval);
+		}
+		current = getCurrentTimeInMSec();
+	}
+	cout << "INFO : benchmark test complete \n";
+	testreport(start, end, thread_num, client_num, test_time);
+	fclose(stderr);
+	
+	return 0;
+}
+

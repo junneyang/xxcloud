@@ -1,0 +1,37 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/jobclient
+[jobclient] $ /bin/sh -xe /tmp/hudson6090432399358312500.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python jobclient.py yangjun03 http://10.48.55.39:8898/ pbrpcclient '{
+        "ClientNode":"yangjun03",
+	"WorkPath":"/home/users/yangjun03/workspace",
+	"PBTYPE":"PUBLIC-PBRPC",
+	"IPPORT":"127.0.0.1:7788",
+	"ServiceName":"lbs.da.openservice.ItemService",
+	"MethodName":"GetItemsByItem",
+        "TestData":[
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	},
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	}
+]
+}'
+INFO, job initial, 0
+INFO, job submit, 1
+INFO, job unique id :11
+INFO, you could link http://10.48.55.39:8889/pb/jenkins/status/?job=11 to trace the job status
+Finished: SUCCESS

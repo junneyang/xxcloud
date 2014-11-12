@@ -1,0 +1,509 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data
+END
+test_array_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_03.expected
+END
+test_basic_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_01.expected
+END
+test_basic_05.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_05.expected
+END
+test_real_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_04.expected
+END
+test_string_unicode_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_03.json
+END
+test_array_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_02.json
+END
+test_basic_09.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_09.expected
+END
+test_large_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_large_01.expected
+END
+test_array_06.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_06.json
+END
+test_basic_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_04.json
+END
+test_real_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_03.json
+END
+test_basic_08.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_08.json
+END
+test_integer_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_04.expected
+END
+test_real_07.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_07.json
+END
+test_integer_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_03.json
+END
+test_object_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_03.expected
+END
+test_comment_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_comment_01.json
+END
+test_string_unicode_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_01.expected
+END
+test_object_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_02.json
+END
+test_string_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_02.json
+END
+test_string_unicode_05.expected
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_05.expected
+END
+test_array_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_04.expected
+END
+test_basic_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_02.expected
+END
+test_real_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_01.expected
+END
+test_preserve_comment_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_preserve_comment_01.json
+END
+test_basic_06.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_06.expected
+END
+test_string_unicode_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_04.json
+END
+test_real_05.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_05.expected
+END
+test_array_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_03.json
+END
+test_basic_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_01.json
+END
+test_basic_05.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_05.json
+END
+test_integer_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_01.expected
+END
+test_real_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_04.json
+END
+test_basic_09.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_09.json
+END
+test_integer_05.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_05.expected
+END
+test_large_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_large_01.json
+END
+test_complex_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_complex_01.expected
+END
+test_integer_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_04.json
+END
+test_object_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_04.expected
+END
+test_string_unicode_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_02.expected
+END
+test_array_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_01.expected
+END
+test_object_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_03.json
+END
+test_array_05.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_05.expected
+END
+test_basic_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_03.expected
+END
+test_string_unicode_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_01.json
+END
+test_real_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_02.expected
+END
+test_basic_07.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_07.expected
+END
+test_real_06.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_06.expected
+END
+test_string_unicode_05.json
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_05.json
+END
+test_array_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_04.json
+END
+test_basic_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_02.json
+END
+test_real_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_01.json
+END
+test_basic_06.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_06.json
+END
+test_integer_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_02.expected
+END
+test_real_05.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_05.json
+END
+test_integer_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_01.json
+END
+test_object_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_01.expected
+END
+test_string_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_01.expected
+END
+test_integer_05.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_05.json
+END
+test_string_unicode_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_03.expected
+END
+test_complex_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_complex_01.json
+END
+test_array_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_02.expected
+END
+test_object_04.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_04.json
+END
+test_array_06.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_06.expected
+END
+test_basic_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_04.expected
+END
+test_real_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_03.expected
+END
+test_string_unicode_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_02.json
+END
+test_array_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_01.json
+END
+test_basic_08.expected
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_08.expected
+END
+test_real_07.expected
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_07.expected
+END
+test_array_05.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_array_05.json
+END
+test_basic_03.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_03.json
+END
+test_real_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_02.json
+END
+test_basic_07.json
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_basic_07.json
+END
+test_integer_03.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_03.expected
+END
+test_real_06.json
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_real_06.json
+END
+test_comment_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_comment_01.expected
+END
+test_integer_02.json
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_integer_02.json
+END
+test_object_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_02.expected
+END
+test_string_02.expected
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_02.expected
+END
+test_preserve_comment_01.expected
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_preserve_comment_01.expected
+END
+test_object_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_object_01.json
+END
+test_string_01.json
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_01.json
+END
+test_string_unicode_04.expected
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/test/data/test_string_unicode_04.expected
+END

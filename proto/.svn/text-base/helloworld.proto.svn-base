@@ -1,0 +1,12 @@
+package helloworld;
+
+import "common.proto";
+
+option cc_generic_services = true;
+
+message helloworld { 
+	required int32 id = 1;  // ID 
+	required string str = 2;  // str 
+	optional int32 opt = 3;  //optional field 
+	repeated phonenumber phonenumbers = 4; // repeated field
+}

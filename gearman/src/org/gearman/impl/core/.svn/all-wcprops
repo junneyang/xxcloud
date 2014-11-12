@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core
+END
+GearmanCodecChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanCodecChannel.java
+END
+GearmanPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanPacket.java
+END
+GearmanCallbackHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanCallbackHandler.java
+END
+GearmanConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanConnectionManager.java
+END
+GearmanCallbackResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanCallbackResult.java
+END
+GearmanCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanCodec.java
+END
+GearmanConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanConnectionHandler.java
+END
+GearmanConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanConnection.java
+END
+GearmanSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/GearmanSettings.java
+END
+StandardCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/core/StandardCodec.java
+END

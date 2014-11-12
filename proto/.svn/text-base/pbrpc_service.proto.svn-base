@@ -1,0 +1,79 @@
+import "pbrpc.proto";
+import "regist_condition.proto";
+
+package lbs.da.openservice;
+
+option cc_generic_services = true;
+
+
+service UserService {
+    /*
+       * 返回所有用户指定偏好取值
+      */
+    rpc GetUserPreference (GetUserPreferenceRequest) returns
+	(GetUserPreferenceResponse);
+	/*
+       * 返回指定用户（cuid）的常驻点信息，若携带type指定类型，则返回结果为指定类型的常驻点，否则返回所有常驻点;或者指定坐标，返回匹配的常住地类型
+      */
+    rpc GetUserRegularStayPoint (GetRegularStayPointRequest) returns
+	(GetRegularStayPointResponse); /*
+       * 返回指定用户（cuid）的实时轨迹信息
+       */
+    rpc GetLatestUserTrajStatus (GetLatestUserTrajRequest) returns
+	(GetLatestUserTrajResponse);
+	
+	//获取常驻点语义化信息
+    rpc GetPlaceSemanticInfo (PlaceSemanticRequest) returns (PlaceSemanticResponse);
+    
+
+	//糯米用户画像查询接口
+    rpc GetNuomiUserPreference (NuomiUserPreferenceRequest) returns (NuomiUserPreferenceResponse);	
+    
+	//获取常驻点语义化AOI信息
+    rpc GetAOIByLocation (GetAOIRequest) returns (GetAOIResponse);
+ 
+     //得到附近poi信息
+    rpc GetNearPoiInfo(GetNearPoiRequest) returns (GetNearPoiResponse);
+
+    // @dengweiru add by 20141021 买了又买用户偏好和商户关联的总接口
+    rpc GetBuy2BuyInfo (NuomiBuy2BuyRequest) returns (NuomiBuy2BuyResponse);
+    
+    rpc POIMatch (POIMatchRequest) returns (POIMatchResponse);
+};
+
+service ItemService {
+   /*
+       * 根据指定item id获取item列表（排序后）
+       */
+    rpc GetItemsByItem (GetItemsByItemRequest) returns
+	(GetItemsByItemResponse);
+
+	rpc GetBNItemsByItem(GetBNItemsRequest) returns (GetBNItemsResponse);
+};
+
+
+//旅游接口-V1.0
+service DynamicPlanService { 
+    /*
+     * 根据指定item id获取item列表（排序后）
+     */
+    rpc GetDynamicTripPlan (DynamicTripPlanRequest) returns (DynamicTripPlanResponse);
+};
+
+//旅游接口-V2.0
+service LvPlanService {
+    /*
+     * 根据指定景点、酒店、餐饮id获取行程规划后的id列表，以及分天信息
+     */
+    rpc GetLvTripPlan (LvTripPlanRequest) returns (LvTripPlanResponse);
+};
+
+//推送接口
+service PushService {
+
+    rpc RegistCondition (RegistConditionRequest) returns (RegistConditionResponse);
+    
+    rpc SetTrigger (SetTriggerRequest) returns (SetTriggerResponse);
+};
+
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/app-test/search/lbs-stat/!svn/ver/2910/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources
+END
+spring-convert.xml
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/app-test/search/lbs-stat/!svn/ver/2910/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources/spring-convert.xml
+END
+app-convert.properties
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/app-test/search/lbs-stat/!svn/ver/2910/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources/app-convert.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/app-test/search/lbs-stat/!svn/ver/2910/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/exporting-server/java/highcharts-export/highcharts-export-convert/src/main/resources/log4j.properties
+END

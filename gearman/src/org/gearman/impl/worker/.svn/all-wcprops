@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker
+END
+GearmanFunctionCallbackImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/GearmanFunctionCallbackImpl.java
+END
+Dispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/Dispatcher.java
+END
+GearmanWorkerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/GearmanWorkerImpl.java
+END
+ZeroLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/ZeroLock.java
+END
+WorkerConnectionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/WorkerConnectionController.java
+END
+GearmanLostConnectionPolicyImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/worker/GearmanLostConnectionPolicyImpl.java
+END

@@ -1,0 +1,45 @@
+package lbs.da.openservice.ipc;
+
+option optimize_for = SPEED;
+message ProcessorConnectRequest {
+	required string from_processor = 1;
+	required int32 from_idx = 2;
+}
+
+message HeartBeatNotify {
+}
+
+message RedisRequest {
+	required string source = 1;
+	required bytes shardkey = 2;
+	repeated bytes args = 3;
+	required bool readonly = 4;
+};
+
+message RedisResponse {
+	required int32 type = 1;
+	optional int64 intv = 2;
+	optional double floatv = 3;
+	optional bytes str = 4;
+	repeated RedisResponse elements = 5;
+};
+
+message StatItem {
+	required string stat_key = 1;
+	required int64 inc_value = 2;
+}
+
+message StatReport {
+	repeated StatItem items = 1;
+}
+
+message ProcessorUpgrade {
+	required string old_processor = 1;
+	required string new_processor = 2;
+}
+
+message ChangeLogLevel
+{
+	required uint32 level = 1;
+}
+

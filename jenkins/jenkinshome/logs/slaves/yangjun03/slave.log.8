@@ -1,0 +1,317 @@
+[11/10/14 16:35:15] [SSH] Opening SSH connection to 10.48.55.39:22.
+[11/10/14 16:35:16] [SSH] Authentication successful.
+[11/10/14 16:35:16] [SSH] The remote users environment is:
+ANT_HOME=/home/tools/tools/ant/apache-ant-1.6.5
+ANT_HOME_1_7=/home/tools/tools/ant/apache-ant-1.7.1
+BASH=/bin/bash
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="3" [1]="00" [2]="15" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='3.00.15(1)-release'
+BOOST_ROOT=/home/users/yangjun03/boost/boost_1_53_0
+COLORS=/etc/DIR_COLORS
+DERBY_HOME=/home/users/yangjun03/.jumbo/opt/sun-java7/db
+DIRSTACK=()
+EUID=16897
+GIANO_BAAS_ALL_PRIVILEGE_LOGIN=0
+GROUPS=()
+G_BROKEN_FILENAMES=1
+HOME=/home/users/yangjun03
+HOSTNAME=cq01-rdqa-pool094.cq01.baidu.com
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+J2REDIR=/home/users/yangjun03/.jumbo/opt/sun-java7/jre
+J2SDKDIR=/home/users/yangjun03/.jumbo/opt/sun-java7
+JAVA_HOME=/home/users/yangjun03/.jumbo/opt/sun-java7
+JAVA_HOME_1_5=/home/tools/tools/java/jdk1.5.0_07
+JAVA_HOME_1_6=/home/tools/tools/java/jdk1.6.0_20
+JUMBO_HADOOP_CONF_DIR=/home/users/yangjun03/.jumbo/etc/hadoop-client
+JUMBO_HADOOP_HOME=/home/users/yangjun03/.jumbo/opt/hadoop-client
+JUMBO_HIVE_CONF_DIR=/home/users/yangjun03/.jumbo/etc/hive
+JUMBO_HIVE_HOME=/home/users/yangjun03/.jumbo/opt/hive
+JUMBO_ROOT=/home/users/yangjun03/.jumbo
+LANG=en_US
+LD_LIBRARY_PATH=/home/users/yangjun03/libevent/libevent-2.0.20-stable/installdir/lib:/home/users/yangjun03/.jumbo/opt/hadoop-client/lib/native/Linux-amd64-64:
+LESSOPEN='|/usr/bin/lesspipe.sh %s'
+LOGNAME=yangjun03
+LS_COLORS=
+MAC=64
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/mail/yangjun03
+MANPATH=/home/users/yangjun03/.jumbo/opt/sun-java7/man:/home/users/yangjun03/.jumbo/opt/sun-java6/man:/home/users/yangjun03/.jumbo/share/man:/home/tools/tools/php/5.2.17/64/man:/usr/kerberos/man:/usr/local/share/man:/usr/share/man/en:/usr/share/man:/usr/man:/usr/local/man:/usr/X11R6/man
+MAVEN_2_2_1=/home/tools/tools/maven/apache-maven-2.2.1/bin
+MAVEN_3_0_4=/home/tools/tools/maven/apache-maven-3.0.4/bin
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/home/users/yangjun03/.jumbo/opt/sun-java7/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/db/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/db/bin:/home/users/yangjun03/.jumbo/bin/core_perl:/home/users/yangjun03/.jumbo/bin/site_perl:/home/users/yangjun03/.jumbo/bin:/home/tools/tools/svn/1.6.5/64/bin:/home/tools/tools/scmtools/usr/bin:/home/tools/tools/../bin/64/:/home/tools/tools/maven/apache-maven-2.2.0/bin:/home/tools/tools/ant/apache-ant-1.6.5/bin:/home/tools/tools/ant/apache-ant-1.7.1/bin:/home/tools/tools/php/5.2.17/64/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin:/home/users/yangjun03/.jumbo/bin/vendor_perl
+PIPESTATUS=([0]="0")
+PPID=17218
+PS4='+ '
+PWD=/home/users/yangjun03
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='10.48.55.39 12220 22'
+SSH_CONNECTION='10.48.55.39 12220 10.48.55.39 22'
+SUPPORTED=en_US.UTF-8:en_US:en
+TERM=dumb
+UID=16897
+USER=yangjun03
+_=LD_LIBRARY_PATH
+i=/home/users/yangjun03/.jumbo/etc/bashrc.d/sun-java6.sh
+_baas () 
+{ 
+    local cur cmds cmdOpts optsParam opt;
+    local optBase i;
+    COMPREPLY=();
+    cur=${COMP_WORDS[COMP_CWORD]};
+    cmds='start bind login gen_cred gen_offline_cred read verify query list_policy add_policy del_policy check_perm grant_tmp_permission default su';
+    if [[ $COMP_CWORD -eq 1 ]]; then
+        COMPREPLY=($( compgen -W "$cmds" -- $cur ));
+        return 0;
+    fi;
+    cmdOpts=;
+    case ${COMP_WORDS[1]} in 
+        start)
+            cmdOpts="--baas_cmd= --baas_cred= --baas_role= --baas_service= --baas_user= --is_offline=
+                --is_sync_start="
+        ;;
+        bind)
+            cmdOpts="--baas_role= --baas_service= --baas_user= --baas_group= --local_account=
+                --enable_rsa_token"
+        ;;
+        query)
+            cmdOpts="--baas_role= --baas_service= --baas_user= --query_user= --query_role=
+                --query_service= --enable_rsa_token"
+        ;;
+        login)
+            cmdOpts="--baas_role= --baas_service= --baas_user= --baas_group= --p --identity_code=
+        --local_account= --enable_rsa_token"
+        ;;
+        gen_cred)
+            cmdOpts="--baas_role= --baas_service= --baas_user= --baas_group= --baas_delegation
+                --baas_role_delegator= --baas_service_delegator= --baas_credential_context
+                --baas_delegatee= --baas_former_credential= --baas_delegation_forward=
+                --baas_delegate_self= --enable_rsa_token"
+        ;;
+        gen_offline_cred)
+            cmdOpts="--baas_user= --baas_service= --baas_role="
+        ;;
+        read)
+            cmdOpts="--credential= --credential_context"
+        ;;
+        verify)
+            cmdOpts="--client_ip_address= --credential= --is_offline="
+        ;;
+        list_policy)
+            cmdOpts="--baas_res_service_addr= --baas_user= --baas_role= --baas_group= --project_name=
+        --type= --local_account= --enable_rsa_token"
+        ;;
+        add_policy)
+            cmdOpts="--baas_res_service_addr= --baas_user= --baas_role= --baas_group= --project_name= --type= --role= --object= --action= --local_account= --enable_rsa_token"
+        ;;
+        del_policy)
+            cmdOpts="--baas_res_service_addr= --baas_user= --baas_role= --baas_group= --project_name= --type= --role= --object= --action= --local_account= --enable_rsa_token"
+        ;;
+        check_perm)
+            cmdOpts="--baas_res_service_addr= --baas_user= --baas_role= --baas_group= --project_name= --type= --role= --object= --action= --local_account= --enable_rsa_token"
+        ;;
+        grant_tmp_permission)
+            cmdOpts="--baas_user= --bils_users= --bils_accounts= --grant_reason= --duration_hours= --enable_rsa_token"
+        ;;
+        default)
+            cmdOpts="--baas_group= --baas_role= --enable_rsa_token"
+        ;;
+        su)
+            cmdOpts="--baas_service= --local_account="
+        ;;
+        *)
+
+        ;;
+    esac;
+    for ((i=2 ; i<=$COMP_CWORD-1 ; ++i))
+    do
+        opt=${COMP_WORDS[$i]};
+        case $opt in 
+            --*)
+                optBase=${opt/=*/}
+            ;;
+            -*)
+                optBase=${opt:0:2}
+            ;;
+        esac;
+        cmdOpts=" $cmdOpts ";
+        cmdOpts=${cmdOpts/ ${optBase} / };
+        if [[ $opt == @($optsParam) ]]; then
+            ((++i));
+        fi;
+    done;
+    COMPREPLY=($(compgen -d -W "$cmdOpts" -- $cur | grep -v '.svn'));
+    return 0
+}
+_jumbo () 
+{ 
+    local loc=$COMP_CWORD;
+    local actionloc=1;
+    while [[ "${COMP_WORDS[$actionloc]::1}" == "-" ]]; do
+        actionloc=$((actionloc + 1));
+    done;
+    local cur=${COMP_WORDS[$COMP_CWORD]};
+    local action=${COMP_WORDS[$actionloc]};
+    if [[ "${cur::1}" == "-" ]]; then
+        true;
+    else
+        if [[ "$loc" == "$actionloc" ]]; then
+            COMPREPLY=($(compgen -W "$(jumbo 2>&1 | awk '/^ /{print $1}')" $cur));
+        else
+            case "X$action" in 
+                Xsearch | Xinstall)
+                    COMPREPLY=($([ -f "$JUMBO_ROOT/var/jumbo/list" ] && compgen -W "$(awk '{print $1}' < "$JUMBO_ROOT/var/jumbo/list")" -- $cur))
+                ;;
+                Xremove | Xupdate | Xlist-files | Xlist)
+                    COMPREPLY=($([ -f "$JUMBO_ROOT/var/jumbo/installed_list" ] && compgen -W "$(awk '{print $1}' < "$JUMBO_ROOT/var/jumbo/installed_list")" -- $cur))
+                ;;
+                Xlocal-install)
+                    COMPREPLY=($( ( compgen -d $cur | sed 's|$|/|' ) && ( ( compgen -f $cur && compgen -d $cur ) | sort | uniq -u ) ))
+                ;;
+                Xcheck | Xclean | Xcheck-unused | Xdoctor | Xadd-repo)
+                    COMPREPLY=
+                ;;
+                Xreport)
+                    COMPREPLY=($( compgen -W "$(ls -t ${JUMBO_ROOT}/var/jumbo/log)" -- $cur ))
+                ;;
+                Xremove-repo | Xlist-repo)
+                    COMP_WORDBREAKS=${COMP_WORDBREAKS//:};
+                    COMPREPLY=($([ -f "$JUMBO_ROOT/etc/jumbo-repo.conf" ] && compgen -W "$(awk '{print $1}' < "$JUMBO_ROOT/etc/jumbo-repo.conf")" -- $cur))
+                ;;
+                *)
+                    COMPREPLY=($( compgen -f $cur ))
+                ;;
+            esac;
+        fi;
+    fi;
+    len=${#COMPREPLY[@]};
+    for ((i=0 ; i<len ; i++))
+    do
+        str=${COMPREPLY[$i]};
+        if [ "${str:(-1)}" != "/" ]; then
+            COMPREPLY[$i]="$str ";
+        fi;
+    done
+}
+_metaquery () 
+{ 
+    local cur cmds cmdOpts optsParam opt;
+    local optBase i;
+    COMPREPLY=();
+    cur=${COMP_WORDS[COMP_CWORD]};
+    cmds='entity relation privilege field history help';
+    if [[ $COMP_CWORD -eq 1 ]]; then
+        COMPREPLY=($( compgen -W "$cmds" -- $cur ));
+        return 0;
+    fi;
+    if [[ $COMP_CWORD -eq 2 ]]; then
+        cmdOpts=;
+        case ${COMP_WORDS[1]} in 
+            entity)
+                cmdOpts="service host ip domain kernel process cluster"
+            ;;
+            relation)
+                cmdOpts="host instance service product path domain ip cluster asset"
+            ;;
+            privilege)
+                cmdOpts="host service product path ip domain user role"
+            ;;
+            field)
+                cmdOpts="host service product path ip domain user role kernel process cluster"
+            ;;
+            history)
+                cmdOpts="host node privilege"
+            ;;
+            help)
+                cmdOpts="entity relation privilege"
+            ;;
+            *)
+
+            ;;
+        esac;
+        for ((i=2 ; i<=$COMP_CWORD-1 ; ++i))
+        do
+            opt=${COMP_WORDS[$i]};
+            case $opt in 
+                --*)
+                    optBase=${opt/=*/}
+                ;;
+                -*)
+                    optBase=${opt:0:2}
+                ;;
+            esac;
+            cmdOpts=" $cmdOpts ";
+            cmdOpts=${cmdOpts/ ${optBase} / };
+            if [[ $opt == @($optsParam) ]]; then
+                ((++i));
+            fi;
+        done;
+        COMPREPLY=($(compgen -d -W "$cmdOpts" -- $cur | grep -v '.svn'));
+        return 0;
+    fi;
+    cmdOpts=;
+    case ${COMP_WORDS[1]} in 
+        entity)
+            cmdOpts=" --condition= --field= --limit= --offset= --file --json"
+        ;;
+        relation)
+            cmdOpts="--condition= --field= --sourceType= --file --json --tidy"
+        ;;
+        privilege)
+            cmdOpts="--user= --role= --instance= --sourceType= --json --tidy"
+        ;;
+        history)
+            cmdOpts="--reverse --startTime= --endTime="
+        ;;
+        *)
+
+        ;;
+    esac;
+    for ((i=2 ; i<=$COMP_CWORD-1 ; ++i))
+    do
+        opt=${COMP_WORDS[$i]};
+        case $opt in 
+            --*)
+                optBase=${opt/=*/}
+            ;;
+            -*)
+                optBase=${opt:0:2}
+            ;;
+        esac;
+        cmdOpts=" $cmdOpts ";
+        cmdOpts=${cmdOpts/ ${optBase} / };
+        if [[ $opt == @($optsParam) ]]; then
+            ((++i));
+        fi;
+    done;
+    COMPREPLY=($(compgen -d -W "$cmdOpts" -- $cur | grep -v '.svn'));
+    return 0
+}
+jumbo () 
+{ 
+    "$JUMBO_ROOT/bin/jumbo" "$@";
+    if [[ "$1" == "install" || "$1" == "update" || "$1" == "remove" || "$1" == "local-install" ]]; then
+        hash -r;
+    fi
+}
+[11/10/14 16:35:16] [SSH] Checking java version of java
+[11/10/14 16:35:16] [SSH] java -version returned 1.7.0_51.
+[11/10/14 16:35:16] [SSH] Starting sftp client.
+[11/10/14 16:35:16] [SSH] Copying latest slave.jar...
+[11/10/14 16:35:16] [SSH] Copied 439,117 bytes.
+Expanded the channel window size to 4MB
+[11/10/14 16:35:16] [SSH] Starting slave process: cd "/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome" && java  -jar slave.jar
+<===[JENKINS REMOTING CAPACITY]===>   channel started
+Slave.jar version: 2.47
+This is a Unix slave
+Slave successfully connected and online

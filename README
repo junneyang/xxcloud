@@ -1,0 +1,15 @@
+How To Use
+-----------------
+1. provide json format test data, you can refer to ./data/nuomi_up.data 
+2. for function test, type "./pbrpcclient -h" for help
+3. for benchmark test, type "./pbrpcbenchmark -h" for help
+
+Warning
+-----------------
+This README is just a fast "quick start" document. You can find more detailed
+documentation at 
+http://wiki.babel.baidu.com/twiki/bin/view/Com/Test/%e9%80%9a%e7%94%a8PBRPC%e5%ae%a2%e6%88%b7%e7%ab%af%e8%af%b7%e6%b1%82%e5%b7%a5%e5%85%b7
+or https://github.com/junneyang/pbrpcclient and https://github.com/junneyang/pbrpcbenchmark.
+
+Enjoy!
+

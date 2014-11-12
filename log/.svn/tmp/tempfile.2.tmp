@@ -1,0 +1,445 @@
+NOTICE: 10-08 23:03:13:  pbrpc * 1775 --------------------------------------------------------------- open log ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1776 --------------------------------------------------------------- open log_r.1099331936 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1778 --------------------------------------------------------------- open log_r.1120311648 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1777 --------------------------------------------------------------- open log_r.1109821792 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1779 --------------------------------------------------------------- open log_r.1130801504 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1784 --------------------------------------------------------------- open log_r.1183250784 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1781 --------------------------------------------------------------- open log_r.1151781216 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1782 --------------------------------------------------------------- open log_r.1162271072 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1783 --------------------------------------------------------------- open log_r.1172760928 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1780 --------------------------------------------------------------- open log_r.1141291360 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1785 --------------------------------------------------------------- open log_r.1087588704 ------------
+NOTICE: 10-08 23:03:13:  pbrpc * 1786 --------------------------------------------------------------- open log_r.1193740640 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10834 --------------------------------------------------------------- open log ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10835 --------------------------------------------------------------- open log_r.1096001888 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10839 --------------------------------------------------------------- open log_r.1137961312 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10836 --------------------------------------------------------------- open log_r.1106491744 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10838 --------------------------------------------------------------- open log_r.1127471456 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10837 --------------------------------------------------------------- open log_r.1116981600 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10840 --------------------------------------------------------------- open log_r.1148451168 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10841 --------------------------------------------------------------- open log_r.1158941024 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10842 --------------------------------------------------------------- open log_r.1169430880 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10843 --------------------------------------------------------------- open log_r.1179920736 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10844 --------------------------------------------------------------- open log_r.1190410592 ------------
+NOTICE: 10-09 10:47:29:  pbrpc * 10845 --------------------------------------------------------------- open log_r.1200900448 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15503 --------------------------------------------------------------- open log ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15504 --------------------------------------------------------------- open log_r.1085634912 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15507 --------------------------------------------------------------- open log_r.1096124768 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15506 --------------------------------------------------------------- open log_r.1116719456 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15508 --------------------------------------------------------------- open log_r.1127209312 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15509 --------------------------------------------------------------- open log_r.1137699168 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15510 --------------------------------------------------------------- open log_r.1148189024 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15512 --------------------------------------------------------------- open log_r.1158678880 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15513 --------------------------------------------------------------- open log_r.1169168736 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15514 --------------------------------------------------------------- open log_r.1179658592 ------------
+NOTICE: 10-09 10:49:29:  pbrpc * 15516 --------------------------------------------------------------- open log_r.1190148448 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29610 --------------------------------------------------------------- open log ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29611 --------------------------------------------------------------- open log_r.1084844384 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29613 --------------------------------------------------------------- open log_r.1105824096 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29612 --------------------------------------------------------------- open log_r.1095334240 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29614 --------------------------------------------------------------- open log_r.1116313952 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29615 --------------------------------------------------------------- open log_r.1126803808 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29619 --------------------------------------------------------------- open log_r.1168763232 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29617 --------------------------------------------------------------- open log_r.1147783520 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29618 --------------------------------------------------------------- open log_r.1158273376 ------------
+NOTICE: 10-09 12:23:55:  pbrpc * 29616 --------------------------------------------------------------- open log_r.1137293664 ------------
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 --------------------------------------------------------------- open log ------------
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:1000  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:1000  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29977 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-09 12:24:07:  pbrpc * 29983 --------------------------------------------------------------- open log_r.1115715936 ------------
+NOTICE: 10-09 12:24:07:  pbrpc * 29984 --------------------------------------------------------------- open log_r.1126205792 ------------
+NOTICE: 10-09 12:24:07:  pbrpc * 29985 --------------------------------------------------------------- open log_r.1092774240 ------------
+NOTICE: 10-09 12:24:07:  pbrpc * 29986 --------------------------------------------------------------- open log_r.1136695648 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9377 --------------------------------------------------------------- open log ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9379 --------------------------------------------------------------- open log_r.1088440672 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9378 --------------------------------------------------------------- open log_r.1111755104 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9380 --------------------------------------------------------------- open log_r.1122244960 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9381 --------------------------------------------------------------- open log_r.1132734816 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9382 --------------------------------------------------------------- open log_r.1143224672 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9383 --------------------------------------------------------------- open log_r.1153714528 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9384 --------------------------------------------------------------- open log_r.1098930528 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9385 --------------------------------------------------------------- open log_r.1164204384 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9386 --------------------------------------------------------------- open log_r.1174694240 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9387 --------------------------------------------------------------- open log_r.1185184096 ------------
+NOTICE: 10-09 18:12:53:  pbrpc * 9388 --------------------------------------------------------------- open log_r.1195673952 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11562 --------------------------------------------------------------- open log ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11563 --------------------------------------------------------------- open log_r.1091553632 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11568 --------------------------------------------------------------- open log_r.1126283616 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11569 --------------------------------------------------------------- open log_r.1136773472 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11573 --------------------------------------------------------------- open log_r.1157753184 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11566 --------------------------------------------------------------- open log_r.1102043488 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11572 --------------------------------------------------------------- open log_r.1147263328 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11565 --------------------------------------------------------------- open log_r.1115793760 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11582 --------------------------------------------------------------- open log_r.1168243040 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11588 --------------------------------------------------------------- open log_r.1178732896 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11611 --------------------------------------------------------------- open log_r.1199712608 ------------
+NOTICE: 10-10 22:36:19:  pbrpc * 11610 --------------------------------------------------------------- open log_r.1189222752 ------------
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 --------------------------------------------------------------- open log ------------
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6208 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-16 17:05:08:  pbrpc * 6213 --------------------------------------------------------------- open log_r.1117174112 ------------
+NOTICE: 10-16 17:05:08:  pbrpc * 6214 --------------------------------------------------------------- open log_r.1087318368 ------------
+NOTICE: 10-16 17:05:08:  pbrpc * 6215 --------------------------------------------------------------- open log_r.1127663968 ------------
+NOTICE: 10-16 17:05:08:  pbrpc * 6216 --------------------------------------------------------------- open log_r.1138153824 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17530 --------------------------------------------------------------- open log ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17531 --------------------------------------------------------------- open log_r.1100003680 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17532 --------------------------------------------------------------- open log_r.1110493536 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17533 --------------------------------------------------------------- open log_r.1120983392 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17538 --------------------------------------------------------------- open log_r.1162942816 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17535 --------------------------------------------------------------- open log_r.1141963104 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17536 --------------------------------------------------------------- open log_r.1084610912 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17537 --------------------------------------------------------------- open log_r.1152452960 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17534 --------------------------------------------------------------- open log_r.1131473248 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17539 --------------------------------------------------------------- open log_r.1173432672 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17540 --------------------------------------------------------------- open log_r.1183922528 ------------
+NOTICE: 10-21 16:32:52:  pbrpc * 17541 --------------------------------------------------------------- open log_r.1194412384 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23303 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23308 --------------------------------------------------------------- open log_r.1097394528 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23309 --------------------------------------------------------------- open log_r.1124424032 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23310 --------------------------------------------------------------- open log_r.1134913888 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23311 --------------------------------------------------------------- open log_r.1145403744 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23313 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23318 --------------------------------------------------------------- open log_r.1111746912 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23319 --------------------------------------------------------------- open log_r.1122236768 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23320 --------------------------------------------------------------- open log_r.1132726624 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23321 --------------------------------------------------------------- open log_r.1143216480 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23323 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:15:15:  pbrpc * 23328 --------------------------------------------------------------- open log_r.1123666272 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23329 --------------------------------------------------------------- open log_r.1098062176 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23330 --------------------------------------------------------------- open log_r.1134156128 ------------
+NOTICE: 10-22 12:15:15:  pbrpc * 23331 --------------------------------------------------------------- open log_r.1086417248 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25926 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25931 --------------------------------------------------------------- open log_r.1115707744 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25932 --------------------------------------------------------------- open log_r.1126197600 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25933 --------------------------------------------------------------- open log_r.1136687456 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25934 --------------------------------------------------------------- open log_r.1147177312 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25937 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25942 --------------------------------------------------------------- open log_r.1123928416 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25943 --------------------------------------------------------------- open log_r.1102846304 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25944 --------------------------------------------------------------- open log_r.1089251680 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25945 --------------------------------------------------------------- open log_r.1134418272 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25947 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:16:17:  pbrpc * 25952 --------------------------------------------------------------- open log_r.1087641952 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25953 --------------------------------------------------------------- open log_r.1117804896 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25954 --------------------------------------------------------------- open log_r.1128294752 ------------
+NOTICE: 10-22 12:16:17:  pbrpc * 25955 --------------------------------------------------------------- open log_r.1138784608 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30235 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30240 --------------------------------------------------------------- open log_r.1089624416 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30241 --------------------------------------------------------------- open log_r.1116256608 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30242 --------------------------------------------------------------- open log_r.1126746464 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30243 --------------------------------------------------------------- open log_r.1137236320 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30245 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30250 --------------------------------------------------------------- open log_r.1110804832 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30252 --------------------------------------------------------------- open log_r.1131784544 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30251 --------------------------------------------------------------- open log_r.1121294688 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30253 --------------------------------------------------------------- open log_r.1142274400 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30255 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:17:56:  pbrpc * 30260 --------------------------------------------------------------- open log_r.1106479456 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30261 --------------------------------------------------------------- open log_r.1116969312 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30262 --------------------------------------------------------------- open log_r.1127459168 ------------
+NOTICE: 10-22 12:17:56:  pbrpc * 30263 --------------------------------------------------------------- open log_r.1137949024 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1073 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1078 --------------------------------------------------------------- open log_r.1109801312 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1079 --------------------------------------------------------------- open log_r.1120291168 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1080 --------------------------------------------------------------- open log_r.1088076128 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1081 --------------------------------------------------------------- open log_r.1130781024 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1083 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1088 --------------------------------------------------------------- open log_r.1116862816 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1089 --------------------------------------------------------------- open log_r.1127352672 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1090 --------------------------------------------------------------- open log_r.1085176160 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1091 --------------------------------------------------------------- open log_r.1137842528 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1093 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:18:37:  pbrpc * 1098 --------------------------------------------------------------- open log_r.1108080992 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1099 --------------------------------------------------------------- open log_r.1118570848 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1100 --------------------------------------------------------------- open log_r.1129060704 ------------
+NOTICE: 10-22 12:18:37:  pbrpc * 1101 --------------------------------------------------------------- open log_r.1139550560 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7988 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7993 --------------------------------------------------------------- open log_r.1091504480 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7996 --------------------------------------------------------------- open log_r.1142212960 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7995 --------------------------------------------------------------- open log_r.1131723104 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7994 --------------------------------------------------------------- open log_r.1121233248 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 7998 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8004 --------------------------------------------------------------- open log_r.1107589472 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8005 --------------------------------------------------------------- open log_r.1118079328 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8006 --------------------------------------------------------------- open log_r.1128569184 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8007 --------------------------------------------------------------- open log_r.1139059040 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8009 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:20:54:  pbrpc * 8014 --------------------------------------------------------------- open log_r.1095059808 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8015 --------------------------------------------------------------- open log_r.1114409312 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8017 --------------------------------------------------------------- open log_r.1124899168 ------------
+NOTICE: 10-22 12:20:54:  pbrpc * 8018 --------------------------------------------------------------- open log_r.1135389024 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10910 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10915 --------------------------------------------------------------- open log_r.1109657952 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10916 --------------------------------------------------------------- open log_r.1120147808 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10917 --------------------------------------------------------------- open log_r.1130637664 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10918 --------------------------------------------------------------- open log_r.1141127520 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10922 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10927 --------------------------------------------------------------- open log_r.1096710496 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10928 --------------------------------------------------------------- open log_r.1108572512 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10929 --------------------------------------------------------------- open log_r.1119062368 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10930 --------------------------------------------------------------- open log_r.1129552224 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10933 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:22:00:  pbrpc * 10938 --------------------------------------------------------------- open log_r.1100101984 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10939 --------------------------------------------------------------- open log_r.1110591840 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10940 --------------------------------------------------------------- open log_r.1121081696 ------------
+NOTICE: 10-22 12:22:00:  pbrpc * 10941 --------------------------------------------------------------- open log_r.1131571552 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23231 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23236 --------------------------------------------------------------- open log_r.1098951008 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23237 --------------------------------------------------------------- open log_r.1109440864 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23238 --------------------------------------------------------------- open log_r.1119930720 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23239 --------------------------------------------------------------- open log_r.1130420576 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23241 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23246 --------------------------------------------------------------- open log_r.1086495072 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23249 --------------------------------------------------------------- open log_r.1137498464 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23248 --------------------------------------------------------------- open log_r.1127008608 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23247 --------------------------------------------------------------- open log_r.1096984928 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23251 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:26:41:  pbrpc * 23256 --------------------------------------------------------------- open log_r.1117600096 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23257 --------------------------------------------------------------- open log_r.1128089952 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23258 --------------------------------------------------------------- open log_r.1087826272 ------------
+NOTICE: 10-22 12:26:41:  pbrpc * 23259 --------------------------------------------------------------- open log_r.1138579808 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26530 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26535 --------------------------------------------------------------- open log_r.1112029536 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26536 --------------------------------------------------------------- open log_r.1122519392 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26537 --------------------------------------------------------------- open log_r.1133009248 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26538 --------------------------------------------------------------- open log_r.1143499104 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26540 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26545 --------------------------------------------------------------- open log_r.1116518752 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26548 --------------------------------------------------------------- open log_r.1137498464 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26547 --------------------------------------------------------------- open log_r.1127008608 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26546 --------------------------------------------------------------- open log_r.1089763680 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 --------------------------------------------------------------- open log ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultConnectType:LONG  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultRetry:5  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultFetchConnMaxTime:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ConnectAll:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultReadTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultWriteTimeout:50000000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] DefaultLinger:0  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ReqBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26551 [  logid:  ][  proctime:  ][  reqip:  ][  reqsvr:  ][  cmdno:  ][  svrname:  ][  errno:  ][    ][    ][  Service[UserService] ResBuf:10000  ]
+NOTICE: 10-22 12:27:53:  pbrpc * 26556 --------------------------------------------------------------- open log_r.1122154848 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26557 --------------------------------------------------------------- open log_r.1088244064 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26559 --------------------------------------------------------------- open log_r.1132644704 ------------
+NOTICE: 10-22 12:27:53:  pbrpc * 26558 --------------------------------------------------------------- open log_r.1098733920 ------------

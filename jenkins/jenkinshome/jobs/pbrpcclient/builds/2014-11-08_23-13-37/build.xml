@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.plugins.gearman.NodeAssignmentAction plugin="gearman-plugin@0.1.1">
+      <labelAtom>da02</labelAtom>
+    </hudson.plugins.gearman.NodeAssignmentAction>
+    <hudson.plugins.gearman.NodeParametersAction plugin="gearman-plugin@0.1.1">
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>IPPORT</name>
+          <value>127.0.0.1:7788</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WorkPath</name>
+          <value>/home/users/yangjun03/workspace</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>PBTYPE</name>
+          <value>PUBLIC-PBRPC</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ServiceName</name>
+          <value>lbs.da.openservice.ItemService</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>MethodName</name>
+          <value>GetItemsByItem</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TestData</name>
+          <value>[{&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}, {&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}]</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ClientNode</name>
+          <value>yangjun03</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <id>emptyID_15</id>
+    </hudson.plugins.gearman.NodeParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <number>55</number>
+  <startTime>1415459617057</startTime>
+  <result>FAILURE</result>
+  <duration>152</duration>
+  <charset>ISO-8859-1</charset>
+  <keepLog>false</keepLog>
+  <builtOn>da02</builtOn>
+  <workspace>/home/map/workspace/workspace/pbrpcclient</workspace>
+  <hudsonVersion>1.588</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

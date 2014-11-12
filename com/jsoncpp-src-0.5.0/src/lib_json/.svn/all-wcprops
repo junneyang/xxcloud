@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json
+END
+json_valueiterator.inl
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_valueiterator.inl
+END
+json_batchallocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_batchallocator.h
+END
+json_internalmap.inl
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_internalmap.inl
+END
+json_internalarray.inl
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_internalarray.inl
+END
+json_value.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
+END
+json_writer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
+END
+sconscript
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/sconscript
+END
+json_reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
+END

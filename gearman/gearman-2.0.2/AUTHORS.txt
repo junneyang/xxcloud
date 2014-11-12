@@ -1,0 +1,24 @@
+python-gearman 2.x:
+========================================
+Primary authors:
+
+* Matthew Tai <mtai@yelp.com>
+
+Contributors (in order of contribution, latest first):
+
+* Khaled alHabache <khellls@gmail.com> :: python 2.4 backward compatibility
+* Eskil Olsen <eskil@yelp.com> :: Connection fixes
+* Julian Krause <juliank@yelp.com> :: Architectural design
+
+python-gearman 1.x
+========================================
+Primary authors:
+
+* Samuel Stauffer <samuel@descolada.com>
+
+Contributors:
+
+* Justin Azoff
+* Kristopher <kris.tate@gmail.com>
+* Eric Sumner <eric@justin.tv>
+

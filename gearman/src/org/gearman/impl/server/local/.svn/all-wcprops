@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local
+END
+JobQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/JobQueue.java
+END
+ClientImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/ClientImpl.java
+END
+StaticPackets.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/StaticPackets.java
+END
+FunctionMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/FunctionMap.java
+END
+Interpreter.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/Interpreter.java
+END
+ServerPersistable.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/ServerPersistable.java
+END
+Function.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/Function.java
+END
+Job.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/Job.java
+END
+GearmanServerLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/GearmanServerLocal.java
+END
+Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/Client.java
+END
+ClientDisconnectListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/ClientDisconnectListener.java
+END
+JobAbstract.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl/server/local/JobAbstract.java
+END

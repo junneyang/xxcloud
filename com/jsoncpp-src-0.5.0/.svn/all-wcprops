@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/LICENSE
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/AUTHORS
+END
+makerelease.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/makerelease.py
+END
+version
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/version
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/SConstruct
+END
+doxybuild.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/doxybuild.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/README.txt
+END

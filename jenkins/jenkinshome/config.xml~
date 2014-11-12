@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.588</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
+  <securityRealm class="edu.hawaii.its.hudson.security.Cas1SecurityRealm" plugin="cas1@1.0.1">
+	  <casServerUrl>http://itebeta.baidu.com:8100</casServerUrl>
+    <hudsonHostName>10.48.55.39:8898</hudsonHostName>
+    <forceRenewal>false</forceRenewal>
+    <rolesValidationScript>def username = response.readLines()[1].trim()
+return username</rolesValidationScript>
+    <testValidationResponse></testValidationResponse>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <slaves>
+    <slave>
+      <name>yangjun03</name>
+      <description></description>
+      <remoteFS>/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
+        <host>10.48.55.39</host>
+        <port>22</port>
+        <credentialsId>4c5b0feb-edb8-4adc-ba76-93c948a98158</credentialsId>
+      </launcher>
+      <label>yangjun03</label>
+      <nodeProperties/>
+      <userId>anonymous</userId>
+    </slave>
+    <slave>
+      <name>da01</name>
+      <description></description>
+      <remoteFS>/home/map/workspace</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
+        <host>10.99.36.60</host>
+        <port>22</port>
+        <credentialsId>5ac417e3-72a8-4c44-9f3c-824366f3d95d</credentialsId>
+      </launcher>
+      <label>da01</label>
+      <nodeProperties/>
+      <userId>anonymous</userId>
+    </slave>
+    <slave>
+      <name>da02</name>
+      <description></description>
+      <remoteFS>/home/map/workspace</remoteFS>
+      <numExecutors>1</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
+        <host>10.99.36.61</host>
+        <port>22</port>
+        <credentialsId>5ac417e3-72a8-4c44-9f3c-824366f3d95d</credentialsId>
+        <maxNumRetries>0</maxNumRetries>
+        <retryWaitTime>0</retryWaitTime>
+      </launcher>
+      <label>da02</label>
+      <nodeProperties/>
+      <userId>anonymous</userId>
+    </slave>
+  </slaves>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <description></description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite
+END
+include.am
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite/include.am
+END
+instance.cc
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite/instance.cc
+END
+queue.cc
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite/queue.cc
+END
+instance.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite/instance.hpp
+END
+queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearmand-1.1.12/libgearman-server/plugins/queue/sqlite/queue.h
+END

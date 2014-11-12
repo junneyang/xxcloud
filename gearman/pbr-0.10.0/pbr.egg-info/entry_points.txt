@@ -1,0 +1,6 @@
+[distutils.commands]
+testr = pbr.testr_command:Testr
+
+[distutils.setup_keywords]
+pbr = pbr.core:pbr
+

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/app-test/search/lbs-stat/!svn/ver/4205/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest
+END
+yajltest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/yajltest.cpp
+END
+perftest.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/perftest.h
+END
+ultrajsontest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/ultrajsontest.cpp
+END
+platformtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/platformtest.cpp
+END
+yajl_all.c
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/yajl_all.c
+END
+rapidjsontest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4205/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/rapidjsontest.cpp
+END
+misctest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/misctest.cpp
+END
+jsoncpptest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/jsoncpptest.cpp
+END
+perftest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/4195/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master/test/perftest/perftest.cpp
+END

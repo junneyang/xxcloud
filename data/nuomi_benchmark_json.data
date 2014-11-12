@@ -1,0 +1,90 @@
+[
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":2,
+			"id":"3uiuiueiukjfdkj:FG=3",
+			"data_type":100,
+			"feature_names":["cat5"]
+		},
+		"expect": {"item_infos": [{"info": "bn_buy_pc", "date": "20140819", "score": 5, "id": "1241844"}], "other_infos": [], "features": [{"score_info": {"featureid": "330", "score": 4.25}, "feature_name": "cat5", "data_type": 1}, {"score_info": {"featureid": "326", "score": 2.34}, "feature_name": "cat5", "data_type": 1}], "result_type": 100}
+	},
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":3,
+			"id":"00093acd84747cd176752ae017cd120631cfa8fb",
+			"data_type":100,
+			"feature_names":["st"]
+		},
+		"expect": {"item_infos": [], "other_infos": [{"str_info": {"featureid": "0", "value": "12334789.9,3827227.5"}, "feature_name": "st", "data_type": 1}, {"str_info": {"featureid": "3", "value": "12334804.3686,3827200.51674"}, "feature_name": "st", "data_type": 1}], "features": [], "result_type": 100}
+	},
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":2,
+			"id":"3uiuiueiukjfdkj:FG=3",
+			"data_type":100,
+			"feature_names":["cat5"],
+			"item_small_flow":"na_up"
+		},
+		"expect": {"features": [{"score_info": {"featureid": "330", "score": 4.25}, "feature_name": "cat5", "data_type": 1}, {"score_info": {"featureid": "326", "score": 2.34}, "feature_name": "cat5", "data_type": 1}], "item_shot": true, "item_infos": [{"info": "bn_buy_pc", "date": "20140819", "score": 5, "id": "1241844"}], "other_infos": [], "result_type": 100, "item_small_flow": "na_up"}
+	},
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":2,
+			"id":"3uiuiueiukjfdkj:FG=3",
+			"data_type":100,
+			"feature_names":["cat5"],
+			"item_small_flow":"test"
+		},
+		"expect": {"features": [{"score_info": {"featureid": "330", "score": 4.25}, "feature_name": "cat5", "data_type": 1}, {"score_info": {"featureid": "326", "score": 2.34}, "feature_name": "cat5", "data_type": 1}], "item_shot": true, "item_infos": [{"info": "bn_buy_pc", "date": "20140819", "score": 5, "id": "1241844"}], "other_infos": [], "result_type": 100, "item_small_flow": "test"}
+	},
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":2,
+			"id":"3uiuiueiukjfdkj:FG=3",
+			"data_type":100,
+			"feature_names":["cat5"],
+			"item_small_flow":"testtest"
+		},
+		"expect": {"features": [{"score_info": {"featureid": "330", "score": 4.25}, "feature_name": "cat5", "data_type": 1}, {"score_info": {"featureid": "326", "score": 2.34}, "feature_name": "cat5", "data_type": 1}], "item_shot": true, "item_infos": [{"info": "bn_buy_pc", "date": "20140819", "score": 5, "id": "1241844"}], "other_infos": [], "result_type": 100, "item_small_flow": "testtest"}
+	},
+	{
+		"input": {
+			"header":{
+				"servicekey":"key1",
+				"secretkey":"pass",
+				"subservice":"sub"
+			},
+			"id_type":2,
+			"id":"3uiuiueiukjfdkj:FG=3",
+			"data_type":100,
+			"feature_names":["cat5"],
+			"item_small_flow":"testtesttest"
+		},
+		"expect": {"features": [{"score_info": {"featureid": "330", "score": 4.25}, "feature_name": "cat5", "data_type": 1}, {"score_info": {"featureid": "326", "score": 2.34}, "feature_name": "cat5", "data_type": 1}], "item_shot": false, "item_infos": [{"info": "bn_buy_pc", "date": "20140819", "score": 5, "id": "1241844"}], "other_infos": [], "result_type": 100, "item_small_flow": "testtesttest"}
+	}
+]

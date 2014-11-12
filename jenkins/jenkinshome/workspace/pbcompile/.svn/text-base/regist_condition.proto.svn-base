@@ -1,0 +1,129 @@
+import "pbrpc.proto";
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+
+message NameVal {
+    optional string name = 1;
+    optional string value = 2;
+}
+//位置过滤规则
+message LocationRule {
+    optional double x = 1;  //经度（百度墨卡托坐标）
+    optional double y = 2;  //纬度
+    optional double r = 3;  //半径
+}
+//时间过滤规则
+message TimeRule {
+    optional int32 t = 1;  //10:08:00 => 100800(精确到秒)
+    optional int32 range = 2;  //时间范围（单位：秒）
+}
+//日志来源过滤规则
+message SourceRule {
+    repeated string source = 1;  //cuid来源
+}
+//用户定位点状态过滤规则
+message TrajStatusRule {
+    repeated UserTrajStatus traj_status = 1;  //用户常驻地状态
+}
+//用户是否是停留态过滤规则
+message IsStayRule {
+    optional bool is_stay = 1;  //用户是否停留
+}
+
+//用户定位点匹配poi列表过滤规则
+/*
+* 说明：
+* 1.poi_tag、poi_r写入用户规则中，poi_id, poi_x, poi_y, poi_r, poi_tag写入poi详情中
+* 2.进行TO_DELETE操作时，如果只指定poi_r, poi_tag，则仅删除用户条件，如果指定了全部条件（poi_id, poi_x, poi_y, poi_r, poi_tag），则删除该poi_id对应的详情
+* 3.进行TO_DELETE_BY_POI_TAG操作时，删除该poi tag标记的所有poi详情
+*/
+message PoiRule {
+    optional string poi_id = 1;
+    optional double poi_x = 2;
+    optional double poi_y = 3;
+    optional double poi_r = 4;  //poi集合的查找精度（范围）
+    optional string poi_tag = 5;  //poi集合的标签
+}
+
+//用户定位点匹配aoi列表过滤规则
+message AoiRule {
+    optional string aoi_id = 1;
+    optional string aoi_tag = 2;
+}
+
+//字符串匹配规则（通过该规则设置一些特殊的监控规则，这些监控规则仅支持简单的字符串匹配）
+message StrMatchRule {
+    repeated NameVal str_rules = 1;  //特殊规则集
+}
+
+enum RuleType{
+    LOCATION_RULE = 1;
+    TIME_RULE = 2;
+    SOURCE_RULE = 3;
+    TRAJSTATUS_RULE = 4;
+    ISSTAY_RULE = 5;
+    POI_RULE = 6;
+    AOI_RULE = 7;
+    STRMATCH_RULE = 8;
+}
+//每一个规则（rule）对应一个type，注册时指定的type需和注册的rule一致，否则注册失败
+message Rule{
+    required RuleType type = 1;
+    optional LocationRule location = 2;
+    optional TimeRule time = 3;
+    optional SourceRule source = 4;
+    optional TrajStatusRule traj_status = 5;
+    optional IsStayRule is_stay = 6;
+    optional PoiRule poi = 7;
+    optional AoiRule aoi = 8;
+    optional StrMatchRule str_rule = 100;
+}
+//指定过滤规则集、推送附加字段（可选）、用户标签（必选）
+message Condition {
+    repeated Rule rules = 1;  //过滤规则集
+    optional string append = 2;  //推送附加字段
+    optional string tag = 3;  //用户分组; 区分业务; 推送时根据该tag取post url
+}
+
+message RegistInfo {
+    optional string cuid = 1;
+    optional Condition cond = 2;
+}
+
+enum Operation {
+    TO_ADD = 1;
+    TO_DELETE = 2;
+    TO_DELETE_BY_USER_TAG = 3;  // RegistConditionRequest中指定以tag为单位删除注册条件
+    TO_DELETE_BY_POI_TAG = 4;  // RegistConditionRequest中指定以poi tag为单位删除poi注册信息
+    TO_DELETE_BY_AOI_TAG = 5;  // RegistConditionRequest中指定以aoi tag为单位删除aoi注册信息
+}
+//注册监控规则的请求接口
+message RegistConditionRequest {
+    required RequestHeader header = 1;
+    repeated RegistInfo regist_info = 2;
+    required Operation operation = 3;
+}
+
+message RegistConditionResponse {
+    optional bool is_success = 1;//全部成功注册返回true
+    optional int32 num = 2;//成功注册的条件数量
+    optional string error = 3;//错误日志
+}
+
+message Trigger {
+    optional string tag = 1;// 与MonitorRule.tag对应
+    optional string post_url = 2;
+}
+//注册推送地址的请求接口
+message SetTriggerRequest {
+    required RequestHeader header = 1;
+    repeated Trigger trigger = 2;
+    required Operation operation = 3;
+}
+
+message SetTriggerResponse {
+    optional bool is_success = 1;//全部成功注册返回true
+    optional int32 num = 2;//成功注册的数量
+    optional string error = 3;//错误日志
+}

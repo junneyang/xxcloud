@@ -1,0 +1,10 @@
+/* DO NOT EDIT! GENERATED AUTOMATICALLY! */
+#define SYSCONFDIR "/usr/local/etc"
+#define GEARMAND_CONFIG "/usr/local/etc/gearmand.conf"
+#define GEARMAND_CA_CERTIFICATE "/usr/local/etc/ssl/certs/gearmand-ca.pem"
+#define GEARMAND_SERVER_PEM "/usr/local/etc/ssl/certs/gearmand.pem"
+#define GEARMAND_SERVER_KEY "/usr/local/etc/ssl/certs/gearmand.key"
+#define GEARMAN_CLIENT_PEM "/usr/local/etc/ssl/certs/gearman.pem"
+#define GEARMAN_CLIENT_KEY "/usr/local/etc/ssl/certs/gearman.key"
+#define LOCALSTATEDIR "/usr/local/var"
+#define GEARMAND_PID "/usr/local/var/gearmand.pid"

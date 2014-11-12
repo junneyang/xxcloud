@@ -1,0 +1,18 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/gearmanjobclient
+[gearmanjobclient] $ /bin/sh -xe /tmp/hudson7103128502375315219.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python gearmanjobclient.py yangjun03 http://10.48.55.39:8898/ pbdownload 1 '{
+        "ProtoFileSVNPath":"https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto",
+	"IPPort":"10.48.55.39:22",
+	"UserName":"yangjun03",
+	"PassWord":"Admin2123",
+	"ToolType":"pbrpcbenchmark",
+	"RemotePath":"/home/users/yangjun03/workspace"
+}'
+INFO, job initial, 0
+INFO, specifynode true
+INFO, job submit, 1
+INFO, job unique id :40
+INFO, you could link http://10.48.55.39:8889/pb/jenkins/status/?job=40 to trace the job status
+Finished: SUCCESS

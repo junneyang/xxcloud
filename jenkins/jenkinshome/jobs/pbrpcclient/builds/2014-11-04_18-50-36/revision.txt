@@ -1,0 +1,1 @@
+https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/4336

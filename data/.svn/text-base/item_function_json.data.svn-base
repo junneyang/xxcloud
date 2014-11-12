@@ -1,0 +1,20 @@
+[
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	},
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	}
+]

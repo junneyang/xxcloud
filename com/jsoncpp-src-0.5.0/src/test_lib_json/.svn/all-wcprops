@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/test_lib_json
+END
+jsontest.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/test_lib_json/jsontest.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/test_lib_json/main.cpp
+END
+sconscript
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/test_lib_json/sconscript
+END
+jsontest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/4226/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/src/test_lib_json/jsontest.cpp
+END

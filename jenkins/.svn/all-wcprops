@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/app-test/search/lbs-stat/!svn/ver/4628/trunk/upps_test/jenkinsFramework/protobuf/jenkins
+END
+slave.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/app-test/search/lbs-stat/!svn/ver/4440/trunk/upps_test/jenkinsFramework/protobuf/jenkins/slave.jar
+END
+start.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/app-test/search/lbs-stat/!svn/ver/3282/trunk/upps_test/jenkinsFramework/protobuf/jenkins/start.sh
+END
+jenkins.war
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app-test/search/lbs-stat/!svn/ver/4628/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
+END

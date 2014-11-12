@@ -1,0 +1,10 @@
+{
+	"header":{
+		"servicekey":"key1",
+		"secretkey":"pass",
+		"subservice":"sub"
+	},
+	"id_type":2,
+	"id":"3uiuiueiukjfdkj:FG=3",
+	"data_type":100
+}
