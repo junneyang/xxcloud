@@ -12,9 +12,12 @@ from lib.sftpLib import *
 import jenkinsapi
 from jenkinsapi.jenkins import Jenkins
 
-def addnode(jenkinsurl, nodename, remote_fs, ip, port, username, password):
+def addnode(jenkinsurl, nodename, num_executors, remote_fs, ip, port, username, password):
+    cmdstr = "mkdir -p " + remote_fs
+    ssh_cmd(ip, port, username, password, cmdstr)
+
     J = Jenkins(jenkinsurl)
-    node = J.create_node(nodename, num_executors = 1, node_description = None, remote_fs = remote_fs, labels = nodename)
+    node = J.create_node(nodename, num_executors = num_executors, node_description = None, remote_fs = remote_fs, labels = nodename)
     put_file(ip, port, username, password, "./jenkins/slave.jar", remote_fs + "/" + "slave.jar")
 
     cmdstr = "cd " + remote_fs + " &&java -jar slave.jar -jnlpUrl " + jenkinsurl + "computer/" + nodename + "/slave-agent.jnlp"
@@ -36,12 +39,13 @@ if __name__ == '__main__':
     try:
         jenkinsurl = sys.argv[1]
         nodename = sys.argv[2]
-        remote_fs = sys.argv[3]
-        ip = sys.argv[4]
-        port = int(sys.argv[5])
-        username = sys.argv[6]
-        password = sys.argv[7]
-        addnode(jenkinsurl, nodename, remote_fs, ip, port, username, password)
+        num_executors = int(sys.argv[3])
+        remote_fs = sys.argv[4]
+        ip = sys.argv[5]
+        port = int(sys.argv[6])
+        username = sys.argv[7]
+        password = sys.argv[8]
+        addnode(jenkinsurl, nodename, num_executors, remote_fs, ip, port, username, password)
     except Exception as e:
         raise Exception(e)
 

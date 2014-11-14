@@ -6,6 +6,7 @@ import tornado.options
 import tornado.ioloop
 from tornado.options import define,options
 
+import sys
 import os
 import time
 import json
@@ -37,6 +38,11 @@ CAS_SETTINGS = {
 	#CAS protocol version, 1.0 or 2.0? default is 2.0.
 	'version' : 2
 }
+
+sys.path.append('../')
+import gearmanjobclient
+import querynodes
+
 ########################################
 class authenticateBase(tornado.web.RequestHandler):
     def get_upps_user(self):
@@ -430,10 +436,42 @@ class query_testdata(authenticateBase):
 
         self.write(json.dumps(datalist_info))
 
-class jobstatusubmit(authenticateBase):
+class jobstatusubmit(tornado.web.RequestHandler):
     def post(self):
-        pass
+        try:
+            jsonobj = json.loads(self.request.body)
+            UserName = jsonobj['UserName']
+            JenkinsURL = jsonobj['JenkinsURL']
+            JobName = jsonobj['JobName']
+            SpecifyNode = int(jsonobj['SpecifyNode'])
+            JobParameter = jsonobj['JobParameter']
 
+            for item in JobParameter:
+                if(type(JobParameter[item]) == list or type(JobParameter[item]) == dict):
+                    JobParameter[item] = json.dumps(JobParameter[item])
+            #print JobParameter
+            url = gearmanjobclient.addtask(UserName, JenkinsURL, JobName, SpecifyNode, JobParameter)
+            ret_info = {"ret":url}
+            self.write(json.dumps(ret_info))
+        except Exception as e:
+            print(e)
+            ret_info = {"ret":"ERROR : internal error"}
+            self.write(json.dumps(ret_info))
+
+class query_nodes(tornado.web.RequestHandler):
+    def post(self):
+        try:
+            jsonobj = json.loads(self.request.body)
+            UserName = jsonobj['UserName']
+            JenkinsURL = jsonobj['JenkinsURL']
+            nodelist = querynodes.querynodes(JenkinsURL)
+            print nodelist
+            ret_info = {"ret":nodelist}
+            self.write(json.dumps(ret_info))
+        except Exception as e:
+            print(e)
+            ret_info = {"ret":"ERROR : internal error"}
+            self.write(json.dumps(ret_info))
 
 class jobstatus(authenticateBase):
     def post(self):
@@ -523,6 +561,7 @@ if __name__ == "__main__":
 
     ( r'/pb/jenkins/submit/',jobstatusubmit),
     ( r'/pb/jenkins/status/',jobstatus),
+    ( r'/pb/jenkins/querynodes/',query_nodes),
 
     ],**settings
     )

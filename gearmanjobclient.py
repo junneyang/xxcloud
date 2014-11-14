@@ -22,6 +22,7 @@ gear_port = 8899
 
 def addtask(username, jenkinsurl, jobname, specifynode, build_params):
     mysql = mysqlLib()
+    url = None
     try:
         param = (username ,jenkinsurl, jobname, json.dumps(build_params), 0)
         n,last_id = mysql.add_task(param)
@@ -52,6 +53,7 @@ def addtask(username, jenkinsurl, jobname, specifynode, build_params):
         print(e)
     finally:
         mysql.close()
+        return url
 
 if __name__ == '__main__':
     '''unique_id = '1'

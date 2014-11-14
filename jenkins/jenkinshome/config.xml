@@ -73,6 +73,17 @@
       <nodeProperties/>
       <userId>yangjun03</userId>
     </slave>
+    <slave>
+      <name>linqiaoying</name>
+      <remoteFS>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</remoteFS>
+      <numExecutors>2</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.slaves.JNLPLauncher"/>
+      <label>linqiaoying</label>
+      <nodeProperties/>
+      <userId>anonymous</userId>
+    </slave>
   </slaves>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>

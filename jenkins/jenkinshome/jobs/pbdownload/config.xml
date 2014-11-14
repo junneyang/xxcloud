@@ -70,7 +70,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>svn co ${ProtoFileSVNPath} . &amp;&amp; cp *.proto /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; ./build.sh &amp;&amp; cd .. &amp;&amp; comake2 &amp;&amp; make &amp;&amp; python upload.py ${IPPort} ${UserName} ${PassWord} ${ToolType} ${RemotePath}</command>
+      <command>svn co ${ProtoFileSVNPath} tmpproto &amp;&amp; cp ./tmpproto/*.proto /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; rm -rf ./tmpproto &amp;&amp; cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; ./build.sh &amp;&amp; cd .. &amp;&amp; comake2 &amp;&amp; make &amp;&amp; python upload.py ${IPPort} ${UserName} ${PassWord} ${ToolType} ${RemotePath}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

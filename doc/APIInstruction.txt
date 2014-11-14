@@ -1,0 +1,142 @@
+提交任务	POST	http://10.48.55.39:8889/pb/jenkins/submit/	Content-Type:application/json
+状态查询	{"ret": "http://10.48.55.39:8889/pb/jenkins/status/?job=50"}
+
+1、节点添加
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/",
+	"JobName":"addnode",
+	"SpecifyNode":"1",
+	"JobParameter":{
+		"JenkinsURL":"http://10.48.55.39:8898/",
+		"NodeName":"linqiaoying",
+		"EXENum":"2",
+		"WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+		"IP":"10.99.18.33",
+		"PORT":"22",
+		"UserName":"linqiaoying",
+		"PassWord":"Qiao123"
+	}
+}
+
+2、节点删除
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/",
+	"JobName":"delnode",
+	"SpecifyNode":"1",
+	"JobParameter":{
+		"JenkinsURL":"http://10.48.55.39:8898/",
+		"NodeName":"linqiaoying"
+	}
+}
+
+
+3、工具下载(ToolType暂时支持pbrpcclient、pbrpcbenchmark)
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/",
+	"JobName":"pbdownload",
+	"SpecifyNode":"1",
+	"JobParameter":{
+		"ProtoFileSVNPath":"https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto",
+		"IPPort":"10.99.18.33:22",
+		"UserName":"linqiaoying",
+		"PassWord":"Qiao123",
+		"ToolType":"pbrpcclient",
+		"RemotePath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool"
+	}
+}
+
+4、功能测试
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/",
+	"JobName":"pbrpcclient",
+	"SpecifyNode":"1",
+	"JobParameter":{
+		"ClientNode":"linqiaoying",
+		"WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+		"PBTYPE":"PUBLIC-PBRPC",
+		"IPPORT":"10.48.55.39:7788",
+		"ServiceName":"lbs.da.openservice.ItemService",
+		"MethodName":"GetItemsByItem",
+		"TestData":[
+			{
+				"header": {
+					"subservice":"sub",
+					"secretkey": "pass",
+					"servicekey": "key1"
+				},
+				"algorithmId": "topic_rev_poi",
+				"item_ids": ["9977193541978760286"]
+			},
+			{
+				"header": {
+					"subservice":"sub",
+					"secretkey": "pass",
+					"servicekey": "key1"
+				},
+				"algorithmId": "topic_rev_poi",
+				"item_ids": ["9977193541978760286"]
+			}
+		]
+	}
+}
+
+5、性能测试
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/",
+	"JobName":"pbrpcbenchmark",
+	"SpecifyNode":"1",
+	"JobParameter":{
+		"ClientNode":"linqiaoying",
+		"WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+		"PBTYPE":"PUBLIC-PBRPC",
+		"IPPORT":"10.48.55.39:7788",
+		"ServiceName":"lbs.da.openservice.ItemService",
+		"MethodName":"GetItemsByItem",
+		"WorkThreadNum":"8",
+		"SendThreadNum":"2",
+		"ClientNum":"20",
+		"SendRate":"200",
+		"IsRandom":"1",
+		"TestTime":"1.0",
+		"IsOutput":"0",
+		"TestData":[
+			{
+				"input": {
+					"header": {
+						"subservice":"sub",
+						"secretkey": "pass",
+						"servicekey": "key1"
+					},
+					"algorithmId": "topic_rev_poi",
+					"item_ids": ["9977193541978760286"]
+				},
+				"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+			},
+			{
+				"input": {
+					"header": {
+						"subservice":"sub",
+						"secretkey": "pass",
+						"servicekey": "key1"
+					},
+					"algorithmId": "topic_rev_poi",
+					"item_ids": ["9977193541978760286"]
+				},
+				"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+			}
+		]
+	}
+}
+
+6、节点查询(POST	http://10.48.55.39:8889/pb/jenkins/querynodes/	Content-Type:application/json)
+{
+	"UserName":"yangjun03",
+	"JenkinsURL":"http://10.48.55.39:8898/"
+}
+{"ret": ["master", "da01", "da02", "yangjun03"]}
+
