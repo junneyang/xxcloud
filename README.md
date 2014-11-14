@@ -1,10 +1,10 @@
 jgear
 ==============
 
-基于jenkins、gearman的分布式服务化平台。
+通用分布式服务化平台。
 
 ### 简介:
-    通用测试服务平台（内置多种pbrpc协议、http性能测试、ftp server等常用服务）
+    通用分布式服务化平台（内置多种pbrpc协议、http性能测试、ftp server等常用服务）
     分布式调度（所有任务既可在节点池构建也可在指定节点构建）
     高性能（分布式构架；各模块全异步调用；支持多个jenkins节点）
     高可靠性（job server、jenkins支持多节点备份；job server任务队列支持数据持久化）
@@ -12,13 +12,14 @@ jgear
     自动化（全流程自动化；任务状态实时监控）
     工作流（计划中，暂不支持）
     性能监控（内置节点进程级CPU、内存、网络监控功能）
-    大量使用现有开源框架、解决方案、模块，基本不用写代码
+    
 
 
 
 ### 架构:
-![image](screenshot/001.jpg)     
+![image](screenshot/002.jpg)     
     
-
+### 实现:
+![image](screenshot/003.jpg)     
 
 
