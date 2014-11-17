@@ -1,6 +1,6 @@
-[11/10/14 18:08:17] [SSH] Opening SSH connection to 10.99.36.60:22.
-[11/10/14 18:08:18] [SSH] Authentication successful.
-[11/10/14 18:08:18] [SSH] The remote users environment is:
+[11/11/14 10:14:10] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/11/14 10:14:10] [SSH] Authentication successful.
+[11/11/14 10:14:10] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -17,16 +17,12 @@ GIANO_BAAS_ALL_PRIVILEGE_LOGIN=0
 GROUPS=()
 G_BROKEN_FILENAMES=1
 HOME=/home/map
-HOSTNAME=cp01-rd-bu-09-da01.cp01.baidu.com
+HOSTNAME=cp01-rd-bu-09-da02.cp01.baidu.com
 HOSTTYPE=x86_64
 IFS=$' \t\n'
 J2REDIR=/home/map/.jumbo/opt/sun-java6/jre
 J2SDKDIR=/home/map/.jumbo/opt/sun-java6
 JAVA_HOME=/home/map/.jumbo/opt/sun-java6
-JUMBO_HADOOP_CONF_DIR=/home/map/.jumbo/etc/hadoop-client
-JUMBO_HADOOP_HOME=/home/map/.jumbo/opt/hadoop-client
-JUMBO_HIVE_CONF_DIR=/home/map/.jumbo/etc/hive
-JUMBO_HIVE_HOME=/home/map/.jumbo/opt/hive
 JUMBO_ROOT=/home/map/.jumbo
 LANG=en_US
 LESSOPEN='|/usr/bin/lesspipe.sh %s'
@@ -38,16 +34,16 @@ MANPATH=/home/map/.jumbo/opt/sun-java6/man:/home/map/.jumbo/share/man:/home/map/
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
-PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/home/map/.jumbo/lib:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
+PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
 PIPESTATUS=([0]="0")
-PPID=17255
+PPID=22729
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 21155 22'
-SSH_CONNECTION='10.48.55.39 21155 10.99.36.60 22'
+SSH_CLIENT='10.48.55.39 53561 22'
+SSH_CONNECTION='10.48.55.39 53561 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -295,14 +291,29 @@ jumbo ()
         hash -r;
     fi
 }
-[11/10/14 18:08:18] [SSH] Checking java version of java
-[11/10/14 18:08:18] [SSH] java -version returned 1.6.0_45.
-[11/10/14 18:08:18] [SSH] Starting sftp client.
-[11/10/14 18:08:18] [SSH] Copying latest slave.jar...
-[11/10/14 18:08:18] [SSH] Copied 439,117 bytes.
+[11/11/14 10:14:10] [SSH] Checking java version of java
+[11/11/14 10:14:10] [SSH] java -version returned 1.6.0_45.
+[11/11/14 10:14:10] [SSH] Starting sftp client.
+[11/11/14 10:14:10] [SSH] Copying latest slave.jar...
+[11/11/14 10:14:10] [SSH] Copied 439,117 bytes.
 Expanded the channel window size to 4MB
-[11/10/14 18:08:18] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+[11/11/14 10:14:10] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
 Slave.jar version: 2.47
 This is a Unix slave
 Slave successfully connected and online
+Connection terminated
+channel stopped
+ERROR: [11/11/14 10:43:06] [SSH] Error deleting file.
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mcom.trilead.ssh2.SFTPException: No such file (SSH_FX_NO_SUCH_FILE: A reference was made to a file which does not exist.)
+	at com.trilead.ssh2.SFTPv3Client.expectStatusOKMessage(SFTPv3Client.java:555)
+	at com.trilead.ssh2.SFTPv3Client.rm(SFTPv3Client.java:973)
+	at hudson.plugins.sshslaves.SSHLauncher.afterDisconnect(SSHLauncher.java:1253)
+	at hudson.slaves.SlaveComputer$3.run(SlaveComputer.java:574)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+[11/11/14 10:43:06] [SSH] Connection closed.

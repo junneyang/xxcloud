@@ -1,0 +1,16 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/gearmanjobstop
+[gearmanjobstop] $ /bin/sh -xe /tmp/hudson1576402124935368505.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python taskstop.py 1
+Exception in thread Gearman client poll (most likely raised during interpreter shutdown):
+Traceback (most recent call last):
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/threading.py", line 551, in __bootstrap_inner
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/threading.py", line 504, in run
+  File "/home/users/yangjun03/.jumbo/lib/python2.7/site-packages/gear/__init__.py", line 763, in _doPollLoop
+<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'error'
+INFO, job aborte start
+{"output": "INFO, job aborte start"}
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Finished: SUCCESS

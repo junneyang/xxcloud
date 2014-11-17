@@ -1,7 +1,7 @@
 10
 
 dir
-4811
+4887
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/gearman
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,43 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+gearmand-1.1.12
+dir
+
+java-gearman-service-0.6.6.zip
+file
+
+
+
+
+2014-11-06T15:03:03.000000Z
+0be7531d85adcf9235ba7e4c094b87d2
+2014-11-07T03:26:11.298906Z
+4530
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+423920
 
 License.txt
 file
@@ -278,41 +315,4 @@ has-props
 
 
 28355
-
-gearmand-1.1.12
-dir
-
-java-gearman-service-0.6.6.zip
-file
-
-
-
-
-2014-11-06T15:03:03.000000Z
-0be7531d85adcf9235ba7e4c094b87d2
-2014-11-07T03:26:11.298906Z
-4530
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-423920
 

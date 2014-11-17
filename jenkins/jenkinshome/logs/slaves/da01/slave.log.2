@@ -1,6 +1,6 @@
-[11/11/14 10:14:10] [SSH] Opening SSH connection to 10.99.36.61:22.
-[11/11/14 10:14:10] [SSH] Authentication successful.
-[11/11/14 10:14:10] [SSH] The remote users environment is:
+[11/11/14 10:57:37] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/11/14 10:57:38] [SSH] Authentication successful.
+[11/11/14 10:57:38] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -36,14 +36,14 @@ OPTIND=1
 OSTYPE=linux-gnu
 PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
 PIPESTATUS=([0]="0")
-PPID=22729
+PPID=21166
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 53561 22'
-SSH_CONNECTION='10.48.55.39 53561 10.99.36.61 22'
+SSH_CLIENT='10.48.55.39 58938 22'
+SSH_CONNECTION='10.48.55.39 58938 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -291,29 +291,15 @@ jumbo ()
         hash -r;
     fi
 }
-[11/11/14 10:14:10] [SSH] Checking java version of java
-[11/11/14 10:14:10] [SSH] java -version returned 1.6.0_45.
-[11/11/14 10:14:10] [SSH] Starting sftp client.
-[11/11/14 10:14:10] [SSH] Copying latest slave.jar...
-[11/11/14 10:14:10] [SSH] Copied 439,117 bytes.
+[11/11/14 10:57:38] [SSH] Checking java version of java
+[11/11/14 10:57:38] [SSH] java -version returned 1.6.0_45.
+[11/11/14 10:57:38] [SSH] Starting sftp client.
+[11/11/14 10:57:38] [SSH] Copying latest slave.jar...
+[11/11/14 10:57:38] [SSH] Copied 439,117 bytes.
 Expanded the channel window size to 4MB
-[11/11/14 10:14:10] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+[11/11/14 10:57:38] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
 Slave.jar version: 2.47
 This is a Unix slave
 Slave successfully connected and online
-Connection terminated
-channel stopped
-ERROR: [11/11/14 10:43:06] [SSH] Error deleting file.
-[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mcom.trilead.ssh2.SFTPException: No such file (SSH_FX_NO_SUCH_FILE: A reference was made to a file which does not exist.)
-	at com.trilead.ssh2.SFTPv3Client.expectStatusOKMessage(SFTPv3Client.java:555)
-	at com.trilead.ssh2.SFTPv3Client.rm(SFTPv3Client.java:973)
-	at hudson.plugins.sshslaves.SSHLauncher.afterDisconnect(SSHLauncher.java:1253)
-	at hudson.slaves.SlaveComputer$3.run(SlaveComputer.java:574)
-	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-[11/11/14 10:43:06] [SSH] Connection closed.
+ERROR: 

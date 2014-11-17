@@ -12,3 +12,17 @@ Options:
    -w        --writefile        write out the .properties file
    -v        --version          display the version and exit
    -h        --help             print help menu and exit
+received unexpected arguments: ./log/gearmanserver.log
+
+java-gearman-service v0.6.6
+
+usage:
+java [jvm options] -jar java-gearman-service-0.6.6.jar [server options]
+
+Options:
+   -p PORT   --port=PORT        port number to listen on (Default: 4730)
+   -c PATH   --classpath=PATH   define the classpath
+   -s NAME   --persistence=NAME GearmanPersistence class name
+   -w        --writefile        write out the .properties file
+   -v        --version          display the version and exit
+   -h        --help             print help menu and exit

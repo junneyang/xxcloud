@@ -1,7 +1,7 @@
 10
 
 dir
-4811
+4887
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/examples
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,6 +26,18 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+area
+dir
+
+columnrange
+dir
+
+yaxis-reversed
+dir
+
+flags-shapes
+dir
+
 intraday-area
 dir
 
@@ -41,13 +53,13 @@ dir
 candlestick
 dir
 
-arearange
-dir
-
 ohlc
 dir
 
 styled-scrollbar
+dir
+
+arearange
 dir
 
 compare
@@ -89,27 +101,15 @@ dir
 flags-placement
 dir
 
-dynamic-update
+yaxis-plotlines
 dir
 
-yaxis-plotlines
+dynamic-update
 dir
 
 basic-line
 dir
 
 flags-general
-dir
-
-area
-dir
-
-columnrange
-dir
-
-yaxis-reversed
-dir
-
-flags-shapes
 dir
 

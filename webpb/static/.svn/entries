@@ -1,7 +1,7 @@
 10
 
 dir
-4811
+4887
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -94,40 +94,6 @@ has-props
 
 7046
 
-del.bmp
-file
-
-
-
-
-2014-04-11T10:35:16.000000Z
-c3484c843cbb2ed50cff5b5ac6dcce82
-2014-10-09T12:43:16.723024Z
-2910
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-822
-
 loading.gif
 file
 
@@ -161,6 +127,40 @@ has-props
 
 
 14852
+
+del.bmp
+file
+
+
+
+
+2014-04-11T10:35:16.000000Z
+c3484c843cbb2ed50cff5b5ac6dcce82
+2014-10-09T12:43:16.723024Z
+2910
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+822
 
 running.gif
 file
@@ -267,74 +267,6 @@ has-props
 
 7627
 
-r_loading.gif
-file
-
-
-
-
-2014-03-28T16:09:08.000000Z
-99c76400818c610e564ce788231951b1
-2014-10-09T12:44:24.040754Z
-2912
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3750
-
-r_exception.png
-file
-
-
-
-
-2014-04-07T12:32:58.000000Z
-8602b5326fdec4da3d3d70acc1939ea8
-2014-10-09T12:44:24.040754Z
-2912
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-809
-
 exception.gif
 file
 
@@ -403,6 +335,74 @@ has-props
 
 822
 
+r_exception.png
+file
+
+
+
+
+2014-04-07T12:32:58.000000Z
+8602b5326fdec4da3d3d70acc1939ea8
+2014-10-09T12:44:24.040754Z
+2912
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+809
+
+r_loading.gif
+file
+
+
+
+
+2014-03-28T16:09:08.000000Z
+99c76400818c610e564ce788231951b1
+2014-10-09T12:44:24.040754Z
+2912
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3750
+
 top_deep.gif
 file
 
@@ -437,6 +437,9 @@ has-props
 
 1127
 
+images
+dir
+
 r_running.gif
 file
 
@@ -470,9 +473,6 @@ has-props
 
 
 2633
-
-images
-dir
 
 top.gif
 file
@@ -610,9 +610,6 @@ has-props
 
 822
 
-js
-dir
-
 r_success.png
 file
 
@@ -680,4 +677,7 @@ has-props
 
 
 20994
+
+js
+dir
 

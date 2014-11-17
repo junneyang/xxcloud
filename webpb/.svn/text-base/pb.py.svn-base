@@ -42,6 +42,7 @@ CAS_SETTINGS = {
 sys.path.append('../')
 import gearmanjobclient
 import querynodes
+import gearmanjobstop
 
 ########################################
 class authenticateBase(tornado.web.RequestHandler):
@@ -473,7 +474,7 @@ class query_nodes(tornado.web.RequestHandler):
             ret_info = {"ret":"ERROR : internal error"}
             self.write(json.dumps(ret_info))
 
-class jobstatus(authenticateBase):
+class jobstatus(tornado.web.RequestHandler):
     def post(self):
         #post_param=urlparse.parse_qs(self.request.body,True)
         #print self.request.body
@@ -497,6 +498,12 @@ class jobstatus(authenticateBase):
                 param=(3, unique_id)
                 mysql.update_task_status(param)
                 print(u"#SUCCESS, job complete, 3")
+                mysql.close()
+            elif (status == "ABORTED"):
+                mysql = mysqlLib()
+                param=(5, unique_id)
+                mysql.update_task_status(param)
+                print(u"#ABORTED, job aborted, 3")
                 mysql.close()
             else:
                 mysql = mysqlLib()
@@ -526,11 +533,19 @@ class jobstatus(authenticateBase):
         #print datalist_info
         cmdstr = "curl " + datalist_info['url'] + "job/" + datalist_info['jobname'] + "/" + str(datalist_info['build_number']) + "/logText/progressiveText?start=0"
         #print cmdstr
-        if (datalist_info['status'] == 3 or datalist_info['status'] == 4):
+        if (datalist_info['status'] == 3 or datalist_info['status'] == 4 or datalist_info['status'] == 5):
             status,output=cmd_execute(cmdstr)
         else:
             output = "INFO, job is running now"
         datalist_info['output'] = output
+        self.write(json.dumps(datalist_info))
+
+class jobstop(tornado.web.RequestHandler):
+    def post(self):
+        jsonobj = json.loads(self.request.body)
+        unique_id = jsonobj['UNIQUE_ID']
+        datalist_info = gearmanjobstop.gearmanjobstop(unique_id)
+        print datalist_info
         self.write(json.dumps(datalist_info))
 
 if __name__ == "__main__":
@@ -561,6 +576,7 @@ if __name__ == "__main__":
 
     ( r'/pb/jenkins/submit/',jobstatusubmit),
     ( r'/pb/jenkins/status/',jobstatus),
+    ( r'/pb/jenkins/jobstop/',jobstop),
     ( r'/pb/jenkins/querynodes/',query_nodes),
 
     ],**settings

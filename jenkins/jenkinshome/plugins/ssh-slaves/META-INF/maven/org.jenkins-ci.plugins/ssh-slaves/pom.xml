@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.466</version>
+    <version>1.532</version>
   </parent>
 
   <artifactId>ssh-slaves</artifactId>
-  <version>1.8</version>
+  <version>1.9</version>
   <packaging>hpi</packaging>
 
   <name>Jenkins SSH Slaves plugin</name>
@@ -33,7 +33,7 @@
     <connection>scm:git:git://github.com/jenkinsci/ssh-slaves-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/ssh-slaves-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/ssh-slaves-plugin</url>
-    <tag>ssh-slaves-1.8</tag>
+    <tag>ssh-slaves-1.9</tag>
   </scm>
 
   <repositories>
@@ -83,7 +83,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>1.95</version>
+        <version>1.106</version>
         <configuration>
           <systemProperties>
             <hudson.bundled.plugins>${basedir}/work/plugins/ssh-slaves.hpl</hudson.bundled.plugins>
