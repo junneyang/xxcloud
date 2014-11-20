@@ -72,6 +72,7 @@ class FeatureInfo;
 class StrInfo;
 class StrFeatureInfo;
 class ItemUpInfo;
+class ItemUpInfoList;
 class UserAction;
 class NuomiUserPreferenceResponse;
 class GetAOIRequest;
@@ -82,6 +83,10 @@ class GetNearPoiResponse;
 class NuomiBuy2BuyRequest;
 class NuomiBuy2BuyResponse;
 class NuomiMerchantItemRequest;
+class NuomiSeeToSeeRequest;
+class SeeToSeeDeal;
+class SeeToSeeDealInfo;
+class NuomiSeeToSeeResponse;
 
 enum UserPreferenceSourceType {
   MAP_CATEGORY = 0,
@@ -317,6 +322,13 @@ class RequestHeader : public ::google::protobuf::Message {
   inline ::std::string* mutable_subservice();
   inline ::std::string* release_subservice();
   
+  // optional int32 sample_id = 4;
+  inline bool has_sample_id() const;
+  inline void clear_sample_id();
+  static const int kSampleIdFieldNumber = 4;
+  inline ::google::protobuf::int32 sample_id() const;
+  inline void set_sample_id(::google::protobuf::int32 value);
+  
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.RequestHeader)
  private:
   inline void set_has_servicekey();
@@ -325,15 +337,18 @@ class RequestHeader : public ::google::protobuf::Message {
   inline void clear_has_secretkey();
   inline void set_has_subservice();
   inline void clear_has_subservice();
+  inline void set_has_sample_id();
+  inline void clear_has_sample_id();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
   ::std::string* servicekey_;
   ::std::string* secretkey_;
   ::std::string* subservice_;
+  ::google::protobuf::int32 sample_id_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
   
   friend void  protobuf_AddDesc_pbrpc_2eproto();
   friend void protobuf_AssignDesc_pbrpc_2eproto();
@@ -5317,6 +5332,91 @@ class ItemUpInfo : public ::google::protobuf::Message {
 };
 // -------------------------------------------------------------------
 
+class ItemUpInfoList : public ::google::protobuf::Message {
+ public:
+  ItemUpInfoList();
+  virtual ~ItemUpInfoList();
+  
+  ItemUpInfoList(const ItemUpInfoList& from);
+  
+  inline ItemUpInfoList& operator=(const ItemUpInfoList& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const ItemUpInfoList& default_instance();
+  
+  void Swap(ItemUpInfoList* other);
+  
+  // implements Message ----------------------------------------------
+  
+  ItemUpInfoList* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const ItemUpInfoList& from);
+  void MergeFrom(const ItemUpInfoList& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // repeated .lbs.da.openservice.ItemUpInfo item_infos = 1;
+  inline int item_infos_size() const;
+  inline void clear_item_infos();
+  static const int kItemInfosFieldNumber = 1;
+  inline const ::lbs::da::openservice::ItemUpInfo& item_infos(int index) const;
+  inline ::lbs::da::openservice::ItemUpInfo* mutable_item_infos(int index);
+  inline ::lbs::da::openservice::ItemUpInfo* add_item_infos();
+  inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo >&
+      item_infos() const;
+  inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo >*
+      mutable_item_infos();
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.ItemUpInfoList)
+ private:
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo > item_infos_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static ItemUpInfoList* default_instance_;
+};
+// -------------------------------------------------------------------
+
 class UserAction : public ::google::protobuf::Message {
  public:
   UserAction();
@@ -6626,6 +6726,495 @@ class NuomiMerchantItemRequest : public ::google::protobuf::Message {
   void InitAsDefaultInstance();
   static NuomiMerchantItemRequest* default_instance_;
 };
+// -------------------------------------------------------------------
+
+class NuomiSeeToSeeRequest : public ::google::protobuf::Message {
+ public:
+  NuomiSeeToSeeRequest();
+  virtual ~NuomiSeeToSeeRequest();
+  
+  NuomiSeeToSeeRequest(const NuomiSeeToSeeRequest& from);
+  
+  inline NuomiSeeToSeeRequest& operator=(const NuomiSeeToSeeRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const NuomiSeeToSeeRequest& default_instance();
+  
+  void Swap(NuomiSeeToSeeRequest* other);
+  
+  // implements Message ----------------------------------------------
+  
+  NuomiSeeToSeeRequest* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const NuomiSeeToSeeRequest& from);
+  void MergeFrom(const NuomiSeeToSeeRequest& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // required .lbs.da.openservice.RequestHeader header = 1;
+  inline bool has_header() const;
+  inline void clear_header();
+  static const int kHeaderFieldNumber = 1;
+  inline const ::lbs::da::openservice::RequestHeader& header() const;
+  inline ::lbs::da::openservice::RequestHeader* mutable_header();
+  inline ::lbs::da::openservice::RequestHeader* release_header();
+  
+  // required string source = 2;
+  inline bool has_source() const;
+  inline void clear_source();
+  static const int kSourceFieldNumber = 2;
+  inline const ::std::string& source() const;
+  inline void set_source(const ::std::string& value);
+  inline void set_source(const char* value);
+  inline void set_source(const char* value, size_t size);
+  inline ::std::string* mutable_source();
+  inline ::std::string* release_source();
+  
+  // required string scene = 3;
+  inline bool has_scene() const;
+  inline void clear_scene();
+  static const int kSceneFieldNumber = 3;
+  inline const ::std::string& scene() const;
+  inline void set_scene(const ::std::string& value);
+  inline void set_scene(const char* value);
+  inline void set_scene(const char* value, size_t size);
+  inline ::std::string* mutable_scene();
+  inline ::std::string* release_scene();
+  
+  // required int64 deal_id = 4;
+  inline bool has_deal_id() const;
+  inline void clear_deal_id();
+  static const int kDealIdFieldNumber = 4;
+  inline ::google::protobuf::int64 deal_id() const;
+  inline void set_deal_id(::google::protobuf::int64 value);
+  
+  // optional int32 res_size = 5;
+  inline bool has_res_size() const;
+  inline void clear_res_size();
+  static const int kResSizeFieldNumber = 5;
+  inline ::google::protobuf::int32 res_size() const;
+  inline void set_res_size(::google::protobuf::int32 value);
+  
+  // optional bytes user_id = 6;
+  inline bool has_user_id() const;
+  inline void clear_user_id();
+  static const int kUserIdFieldNumber = 6;
+  inline const ::std::string& user_id() const;
+  inline void set_user_id(const ::std::string& value);
+  inline void set_user_id(const char* value);
+  inline void set_user_id(const void* value, size_t size);
+  inline ::std::string* mutable_user_id();
+  inline ::std::string* release_user_id();
+  
+  // optional int32 id_type = 7;
+  inline bool has_id_type() const;
+  inline void clear_id_type();
+  static const int kIdTypeFieldNumber = 7;
+  inline ::google::protobuf::int32 id_type() const;
+  inline void set_id_type(::google::protobuf::int32 value);
+  
+  // optional bytes device_id = 8;
+  inline bool has_device_id() const;
+  inline void clear_device_id();
+  static const int kDeviceIdFieldNumber = 8;
+  inline const ::std::string& device_id() const;
+  inline void set_device_id(const ::std::string& value);
+  inline void set_device_id(const char* value);
+  inline void set_device_id(const void* value, size_t size);
+  inline ::std::string* mutable_device_id();
+  inline ::std::string* release_device_id();
+  
+  // optional int64 area_id = 9;
+  inline bool has_area_id() const;
+  inline void clear_area_id();
+  static const int kAreaIdFieldNumber = 9;
+  inline ::google::protobuf::int64 area_id() const;
+  inline void set_area_id(::google::protobuf::int64 value);
+  
+  // optional int64 target_id = 10;
+  inline bool has_target_id() const;
+  inline void clear_target_id();
+  static const int kTargetIdFieldNumber = 10;
+  inline ::google::protobuf::int64 target_id() const;
+  inline void set_target_id(::google::protobuf::int64 value);
+  
+  // optional double x = 11;
+  inline bool has_x() const;
+  inline void clear_x();
+  static const int kXFieldNumber = 11;
+  inline double x() const;
+  inline void set_x(double value);
+  
+  // optional double y = 12;
+  inline bool has_y() const;
+  inline void clear_y();
+  static const int kYFieldNumber = 12;
+  inline double y() const;
+  inline void set_y(double value);
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.NuomiSeeToSeeRequest)
+ private:
+  inline void set_has_header();
+  inline void clear_has_header();
+  inline void set_has_source();
+  inline void clear_has_source();
+  inline void set_has_scene();
+  inline void clear_has_scene();
+  inline void set_has_deal_id();
+  inline void clear_has_deal_id();
+  inline void set_has_res_size();
+  inline void clear_has_res_size();
+  inline void set_has_user_id();
+  inline void clear_has_user_id();
+  inline void set_has_id_type();
+  inline void clear_has_id_type();
+  inline void set_has_device_id();
+  inline void clear_has_device_id();
+  inline void set_has_area_id();
+  inline void clear_has_area_id();
+  inline void set_has_target_id();
+  inline void clear_has_target_id();
+  inline void set_has_x();
+  inline void clear_has_x();
+  inline void set_has_y();
+  inline void clear_has_y();
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::lbs::da::openservice::RequestHeader* header_;
+  ::std::string* source_;
+  ::std::string* scene_;
+  ::google::protobuf::int64 deal_id_;
+  ::std::string* user_id_;
+  ::google::protobuf::int32 res_size_;
+  ::google::protobuf::int32 id_type_;
+  ::std::string* device_id_;
+  ::google::protobuf::int64 area_id_;
+  ::google::protobuf::int64 target_id_;
+  double x_;
+  double y_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(12 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static NuomiSeeToSeeRequest* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SeeToSeeDeal : public ::google::protobuf::Message {
+ public:
+  SeeToSeeDeal();
+  virtual ~SeeToSeeDeal();
+  
+  SeeToSeeDeal(const SeeToSeeDeal& from);
+  
+  inline SeeToSeeDeal& operator=(const SeeToSeeDeal& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SeeToSeeDeal& default_instance();
+  
+  void Swap(SeeToSeeDeal* other);
+  
+  // implements Message ----------------------------------------------
+  
+  SeeToSeeDeal* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SeeToSeeDeal& from);
+  void MergeFrom(const SeeToSeeDeal& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // required int64 deal_id = 1;
+  inline bool has_deal_id() const;
+  inline void clear_deal_id();
+  static const int kDealIdFieldNumber = 1;
+  inline ::google::protobuf::int64 deal_id() const;
+  inline void set_deal_id(::google::protobuf::int64 value);
+  
+  // required double weight = 2;
+  inline bool has_weight() const;
+  inline void clear_weight();
+  static const int kWeightFieldNumber = 2;
+  inline double weight() const;
+  inline void set_weight(double value);
+  
+  // optional uint32 rec_strategy = 3;
+  inline bool has_rec_strategy() const;
+  inline void clear_rec_strategy();
+  static const int kRecStrategyFieldNumber = 3;
+  inline ::google::protobuf::uint32 rec_strategy() const;
+  inline void set_rec_strategy(::google::protobuf::uint32 value);
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.SeeToSeeDeal)
+ private:
+  inline void set_has_deal_id();
+  inline void clear_has_deal_id();
+  inline void set_has_weight();
+  inline void clear_has_weight();
+  inline void set_has_rec_strategy();
+  inline void clear_has_rec_strategy();
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::int64 deal_id_;
+  double weight_;
+  ::google::protobuf::uint32 rec_strategy_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static SeeToSeeDeal* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class SeeToSeeDealInfo : public ::google::protobuf::Message {
+ public:
+  SeeToSeeDealInfo();
+  virtual ~SeeToSeeDealInfo();
+  
+  SeeToSeeDealInfo(const SeeToSeeDealInfo& from);
+  
+  inline SeeToSeeDealInfo& operator=(const SeeToSeeDealInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const SeeToSeeDealInfo& default_instance();
+  
+  void Swap(SeeToSeeDealInfo* other);
+  
+  // implements Message ----------------------------------------------
+  
+  SeeToSeeDealInfo* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const SeeToSeeDealInfo& from);
+  void MergeFrom(const SeeToSeeDealInfo& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // repeated .lbs.da.openservice.SeeToSeeDeal deals = 1;
+  inline int deals_size() const;
+  inline void clear_deals();
+  static const int kDealsFieldNumber = 1;
+  inline const ::lbs::da::openservice::SeeToSeeDeal& deals(int index) const;
+  inline ::lbs::da::openservice::SeeToSeeDeal* mutable_deals(int index);
+  inline ::lbs::da::openservice::SeeToSeeDeal* add_deals();
+  inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::SeeToSeeDeal >&
+      deals() const;
+  inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::SeeToSeeDeal >*
+      mutable_deals();
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.SeeToSeeDealInfo)
+ private:
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::SeeToSeeDeal > deals_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static SeeToSeeDealInfo* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class NuomiSeeToSeeResponse : public ::google::protobuf::Message {
+ public:
+  NuomiSeeToSeeResponse();
+  virtual ~NuomiSeeToSeeResponse();
+  
+  NuomiSeeToSeeResponse(const NuomiSeeToSeeResponse& from);
+  
+  inline NuomiSeeToSeeResponse& operator=(const NuomiSeeToSeeResponse& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const NuomiSeeToSeeResponse& default_instance();
+  
+  void Swap(NuomiSeeToSeeResponse* other);
+  
+  // implements Message ----------------------------------------------
+  
+  NuomiSeeToSeeResponse* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const NuomiSeeToSeeResponse& from);
+  void MergeFrom(const NuomiSeeToSeeResponse& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // optional .lbs.da.openservice.SeeToSeeDealInfo deals_info = 1;
+  inline bool has_deals_info() const;
+  inline void clear_deals_info();
+  static const int kDealsInfoFieldNumber = 1;
+  inline const ::lbs::da::openservice::SeeToSeeDealInfo& deals_info() const;
+  inline ::lbs::da::openservice::SeeToSeeDealInfo* mutable_deals_info();
+  inline ::lbs::da::openservice::SeeToSeeDealInfo* release_deals_info();
+  
+  // optional int32 sample_id = 2;
+  inline bool has_sample_id() const;
+  inline void clear_sample_id();
+  static const int kSampleIdFieldNumber = 2;
+  inline ::google::protobuf::int32 sample_id() const;
+  inline void set_sample_id(::google::protobuf::int32 value);
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.NuomiSeeToSeeResponse)
+ private:
+  inline void set_has_deals_info();
+  inline void clear_has_deals_info();
+  inline void set_has_sample_id();
+  inline void clear_has_sample_id();
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::lbs::da::openservice::SeeToSeeDealInfo* deals_info_;
+  ::google::protobuf::int32 sample_id_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static NuomiSeeToSeeResponse* default_instance_;
+};
 // ===================================================================
 
 
@@ -6805,6 +7394,28 @@ inline ::std::string* RequestHeader::release_subservice() {
     subservice_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
   }
+}
+
+// optional int32 sample_id = 4;
+inline bool RequestHeader::has_sample_id() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void RequestHeader::set_has_sample_id() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void RequestHeader::clear_has_sample_id() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void RequestHeader::clear_sample_id() {
+  sample_id_ = 0;
+  clear_has_sample_id();
+}
+inline ::google::protobuf::int32 RequestHeader::sample_id() const {
+  return sample_id_;
+}
+inline void RequestHeader::set_sample_id(::google::protobuf::int32 value) {
+  set_has_sample_id();
+  sample_id_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -13658,6 +14269,35 @@ inline ::std::string* ItemUpInfo::release_date() {
 
 // -------------------------------------------------------------------
 
+// ItemUpInfoList
+
+// repeated .lbs.da.openservice.ItemUpInfo item_infos = 1;
+inline int ItemUpInfoList::item_infos_size() const {
+  return item_infos_.size();
+}
+inline void ItemUpInfoList::clear_item_infos() {
+  item_infos_.Clear();
+}
+inline const ::lbs::da::openservice::ItemUpInfo& ItemUpInfoList::item_infos(int index) const {
+  return item_infos_.Get(index);
+}
+inline ::lbs::da::openservice::ItemUpInfo* ItemUpInfoList::mutable_item_infos(int index) {
+  return item_infos_.Mutable(index);
+}
+inline ::lbs::da::openservice::ItemUpInfo* ItemUpInfoList::add_item_infos() {
+  return item_infos_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo >&
+ItemUpInfoList::item_infos() const {
+  return item_infos_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo >*
+ItemUpInfoList::mutable_item_infos() {
+  return &item_infos_;
+}
+
+// -------------------------------------------------------------------
+
 // UserAction
 
 // required uint32 timestamp = 1;
@@ -15270,6 +15910,579 @@ NuomiMerchantItemRequest::args() const {
 inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::Arg >*
 NuomiMerchantItemRequest::mutable_args() {
   return &args_;
+}
+
+// -------------------------------------------------------------------
+
+// NuomiSeeToSeeRequest
+
+// required .lbs.da.openservice.RequestHeader header = 1;
+inline bool NuomiSeeToSeeRequest::has_header() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_header() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_header() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void NuomiSeeToSeeRequest::clear_header() {
+  if (header_ != NULL) header_->::lbs::da::openservice::RequestHeader::Clear();
+  clear_has_header();
+}
+inline const ::lbs::da::openservice::RequestHeader& NuomiSeeToSeeRequest::header() const {
+  return header_ != NULL ? *header_ : *default_instance_->header_;
+}
+inline ::lbs::da::openservice::RequestHeader* NuomiSeeToSeeRequest::mutable_header() {
+  set_has_header();
+  if (header_ == NULL) header_ = new ::lbs::da::openservice::RequestHeader;
+  return header_;
+}
+inline ::lbs::da::openservice::RequestHeader* NuomiSeeToSeeRequest::release_header() {
+  clear_has_header();
+  ::lbs::da::openservice::RequestHeader* temp = header_;
+  header_ = NULL;
+  return temp;
+}
+
+// required string source = 2;
+inline bool NuomiSeeToSeeRequest::has_source() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_source() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_source() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void NuomiSeeToSeeRequest::clear_source() {
+  if (source_ != &::google::protobuf::internal::kEmptyString) {
+    source_->clear();
+  }
+  clear_has_source();
+}
+inline const ::std::string& NuomiSeeToSeeRequest::source() const {
+  return *source_;
+}
+inline void NuomiSeeToSeeRequest::set_source(const ::std::string& value) {
+  set_has_source();
+  if (source_ == &::google::protobuf::internal::kEmptyString) {
+    source_ = new ::std::string;
+  }
+  source_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_source(const char* value) {
+  set_has_source();
+  if (source_ == &::google::protobuf::internal::kEmptyString) {
+    source_ = new ::std::string;
+  }
+  source_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_source(const char* value, size_t size) {
+  set_has_source();
+  if (source_ == &::google::protobuf::internal::kEmptyString) {
+    source_ = new ::std::string;
+  }
+  source_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* NuomiSeeToSeeRequest::mutable_source() {
+  set_has_source();
+  if (source_ == &::google::protobuf::internal::kEmptyString) {
+    source_ = new ::std::string;
+  }
+  return source_;
+}
+inline ::std::string* NuomiSeeToSeeRequest::release_source() {
+  clear_has_source();
+  if (source_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = source_;
+    source_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// required string scene = 3;
+inline bool NuomiSeeToSeeRequest::has_scene() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_scene() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_scene() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void NuomiSeeToSeeRequest::clear_scene() {
+  if (scene_ != &::google::protobuf::internal::kEmptyString) {
+    scene_->clear();
+  }
+  clear_has_scene();
+}
+inline const ::std::string& NuomiSeeToSeeRequest::scene() const {
+  return *scene_;
+}
+inline void NuomiSeeToSeeRequest::set_scene(const ::std::string& value) {
+  set_has_scene();
+  if (scene_ == &::google::protobuf::internal::kEmptyString) {
+    scene_ = new ::std::string;
+  }
+  scene_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_scene(const char* value) {
+  set_has_scene();
+  if (scene_ == &::google::protobuf::internal::kEmptyString) {
+    scene_ = new ::std::string;
+  }
+  scene_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_scene(const char* value, size_t size) {
+  set_has_scene();
+  if (scene_ == &::google::protobuf::internal::kEmptyString) {
+    scene_ = new ::std::string;
+  }
+  scene_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* NuomiSeeToSeeRequest::mutable_scene() {
+  set_has_scene();
+  if (scene_ == &::google::protobuf::internal::kEmptyString) {
+    scene_ = new ::std::string;
+  }
+  return scene_;
+}
+inline ::std::string* NuomiSeeToSeeRequest::release_scene() {
+  clear_has_scene();
+  if (scene_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = scene_;
+    scene_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// required int64 deal_id = 4;
+inline bool NuomiSeeToSeeRequest::has_deal_id() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_deal_id() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_deal_id() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void NuomiSeeToSeeRequest::clear_deal_id() {
+  deal_id_ = GOOGLE_LONGLONG(0);
+  clear_has_deal_id();
+}
+inline ::google::protobuf::int64 NuomiSeeToSeeRequest::deal_id() const {
+  return deal_id_;
+}
+inline void NuomiSeeToSeeRequest::set_deal_id(::google::protobuf::int64 value) {
+  set_has_deal_id();
+  deal_id_ = value;
+}
+
+// optional int32 res_size = 5;
+inline bool NuomiSeeToSeeRequest::has_res_size() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_res_size() {
+  _has_bits_[0] |= 0x00000010u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_res_size() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+inline void NuomiSeeToSeeRequest::clear_res_size() {
+  res_size_ = 0;
+  clear_has_res_size();
+}
+inline ::google::protobuf::int32 NuomiSeeToSeeRequest::res_size() const {
+  return res_size_;
+}
+inline void NuomiSeeToSeeRequest::set_res_size(::google::protobuf::int32 value) {
+  set_has_res_size();
+  res_size_ = value;
+}
+
+// optional bytes user_id = 6;
+inline bool NuomiSeeToSeeRequest::has_user_id() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_user_id() {
+  _has_bits_[0] |= 0x00000020u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_user_id() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline void NuomiSeeToSeeRequest::clear_user_id() {
+  if (user_id_ != &::google::protobuf::internal::kEmptyString) {
+    user_id_->clear();
+  }
+  clear_has_user_id();
+}
+inline const ::std::string& NuomiSeeToSeeRequest::user_id() const {
+  return *user_id_;
+}
+inline void NuomiSeeToSeeRequest::set_user_id(const ::std::string& value) {
+  set_has_user_id();
+  if (user_id_ == &::google::protobuf::internal::kEmptyString) {
+    user_id_ = new ::std::string;
+  }
+  user_id_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_user_id(const char* value) {
+  set_has_user_id();
+  if (user_id_ == &::google::protobuf::internal::kEmptyString) {
+    user_id_ = new ::std::string;
+  }
+  user_id_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_user_id(const void* value, size_t size) {
+  set_has_user_id();
+  if (user_id_ == &::google::protobuf::internal::kEmptyString) {
+    user_id_ = new ::std::string;
+  }
+  user_id_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* NuomiSeeToSeeRequest::mutable_user_id() {
+  set_has_user_id();
+  if (user_id_ == &::google::protobuf::internal::kEmptyString) {
+    user_id_ = new ::std::string;
+  }
+  return user_id_;
+}
+inline ::std::string* NuomiSeeToSeeRequest::release_user_id() {
+  clear_has_user_id();
+  if (user_id_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = user_id_;
+    user_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional int32 id_type = 7;
+inline bool NuomiSeeToSeeRequest::has_id_type() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_id_type() {
+  _has_bits_[0] |= 0x00000040u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_id_type() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline void NuomiSeeToSeeRequest::clear_id_type() {
+  id_type_ = 0;
+  clear_has_id_type();
+}
+inline ::google::protobuf::int32 NuomiSeeToSeeRequest::id_type() const {
+  return id_type_;
+}
+inline void NuomiSeeToSeeRequest::set_id_type(::google::protobuf::int32 value) {
+  set_has_id_type();
+  id_type_ = value;
+}
+
+// optional bytes device_id = 8;
+inline bool NuomiSeeToSeeRequest::has_device_id() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_device_id() {
+  _has_bits_[0] |= 0x00000080u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_device_id() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+inline void NuomiSeeToSeeRequest::clear_device_id() {
+  if (device_id_ != &::google::protobuf::internal::kEmptyString) {
+    device_id_->clear();
+  }
+  clear_has_device_id();
+}
+inline const ::std::string& NuomiSeeToSeeRequest::device_id() const {
+  return *device_id_;
+}
+inline void NuomiSeeToSeeRequest::set_device_id(const ::std::string& value) {
+  set_has_device_id();
+  if (device_id_ == &::google::protobuf::internal::kEmptyString) {
+    device_id_ = new ::std::string;
+  }
+  device_id_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_device_id(const char* value) {
+  set_has_device_id();
+  if (device_id_ == &::google::protobuf::internal::kEmptyString) {
+    device_id_ = new ::std::string;
+  }
+  device_id_->assign(value);
+}
+inline void NuomiSeeToSeeRequest::set_device_id(const void* value, size_t size) {
+  set_has_device_id();
+  if (device_id_ == &::google::protobuf::internal::kEmptyString) {
+    device_id_ = new ::std::string;
+  }
+  device_id_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* NuomiSeeToSeeRequest::mutable_device_id() {
+  set_has_device_id();
+  if (device_id_ == &::google::protobuf::internal::kEmptyString) {
+    device_id_ = new ::std::string;
+  }
+  return device_id_;
+}
+inline ::std::string* NuomiSeeToSeeRequest::release_device_id() {
+  clear_has_device_id();
+  if (device_id_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = device_id_;
+    device_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional int64 area_id = 9;
+inline bool NuomiSeeToSeeRequest::has_area_id() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_area_id() {
+  _has_bits_[0] |= 0x00000100u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_area_id() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline void NuomiSeeToSeeRequest::clear_area_id() {
+  area_id_ = GOOGLE_LONGLONG(0);
+  clear_has_area_id();
+}
+inline ::google::protobuf::int64 NuomiSeeToSeeRequest::area_id() const {
+  return area_id_;
+}
+inline void NuomiSeeToSeeRequest::set_area_id(::google::protobuf::int64 value) {
+  set_has_area_id();
+  area_id_ = value;
+}
+
+// optional int64 target_id = 10;
+inline bool NuomiSeeToSeeRequest::has_target_id() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_target_id() {
+  _has_bits_[0] |= 0x00000200u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_target_id() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+inline void NuomiSeeToSeeRequest::clear_target_id() {
+  target_id_ = GOOGLE_LONGLONG(0);
+  clear_has_target_id();
+}
+inline ::google::protobuf::int64 NuomiSeeToSeeRequest::target_id() const {
+  return target_id_;
+}
+inline void NuomiSeeToSeeRequest::set_target_id(::google::protobuf::int64 value) {
+  set_has_target_id();
+  target_id_ = value;
+}
+
+// optional double x = 11;
+inline bool NuomiSeeToSeeRequest::has_x() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_x() {
+  _has_bits_[0] |= 0x00000400u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_x() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline void NuomiSeeToSeeRequest::clear_x() {
+  x_ = 0;
+  clear_has_x();
+}
+inline double NuomiSeeToSeeRequest::x() const {
+  return x_;
+}
+inline void NuomiSeeToSeeRequest::set_x(double value) {
+  set_has_x();
+  x_ = value;
+}
+
+// optional double y = 12;
+inline bool NuomiSeeToSeeRequest::has_y() const {
+  return (_has_bits_[0] & 0x00000800u) != 0;
+}
+inline void NuomiSeeToSeeRequest::set_has_y() {
+  _has_bits_[0] |= 0x00000800u;
+}
+inline void NuomiSeeToSeeRequest::clear_has_y() {
+  _has_bits_[0] &= ~0x00000800u;
+}
+inline void NuomiSeeToSeeRequest::clear_y() {
+  y_ = 0;
+  clear_has_y();
+}
+inline double NuomiSeeToSeeRequest::y() const {
+  return y_;
+}
+inline void NuomiSeeToSeeRequest::set_y(double value) {
+  set_has_y();
+  y_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// SeeToSeeDeal
+
+// required int64 deal_id = 1;
+inline bool SeeToSeeDeal::has_deal_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SeeToSeeDeal::set_has_deal_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void SeeToSeeDeal::clear_has_deal_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void SeeToSeeDeal::clear_deal_id() {
+  deal_id_ = GOOGLE_LONGLONG(0);
+  clear_has_deal_id();
+}
+inline ::google::protobuf::int64 SeeToSeeDeal::deal_id() const {
+  return deal_id_;
+}
+inline void SeeToSeeDeal::set_deal_id(::google::protobuf::int64 value) {
+  set_has_deal_id();
+  deal_id_ = value;
+}
+
+// required double weight = 2;
+inline bool SeeToSeeDeal::has_weight() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void SeeToSeeDeal::set_has_weight() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void SeeToSeeDeal::clear_has_weight() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void SeeToSeeDeal::clear_weight() {
+  weight_ = 0;
+  clear_has_weight();
+}
+inline double SeeToSeeDeal::weight() const {
+  return weight_;
+}
+inline void SeeToSeeDeal::set_weight(double value) {
+  set_has_weight();
+  weight_ = value;
+}
+
+// optional uint32 rec_strategy = 3;
+inline bool SeeToSeeDeal::has_rec_strategy() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void SeeToSeeDeal::set_has_rec_strategy() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void SeeToSeeDeal::clear_has_rec_strategy() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void SeeToSeeDeal::clear_rec_strategy() {
+  rec_strategy_ = 0u;
+  clear_has_rec_strategy();
+}
+inline ::google::protobuf::uint32 SeeToSeeDeal::rec_strategy() const {
+  return rec_strategy_;
+}
+inline void SeeToSeeDeal::set_rec_strategy(::google::protobuf::uint32 value) {
+  set_has_rec_strategy();
+  rec_strategy_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// SeeToSeeDealInfo
+
+// repeated .lbs.da.openservice.SeeToSeeDeal deals = 1;
+inline int SeeToSeeDealInfo::deals_size() const {
+  return deals_.size();
+}
+inline void SeeToSeeDealInfo::clear_deals() {
+  deals_.Clear();
+}
+inline const ::lbs::da::openservice::SeeToSeeDeal& SeeToSeeDealInfo::deals(int index) const {
+  return deals_.Get(index);
+}
+inline ::lbs::da::openservice::SeeToSeeDeal* SeeToSeeDealInfo::mutable_deals(int index) {
+  return deals_.Mutable(index);
+}
+inline ::lbs::da::openservice::SeeToSeeDeal* SeeToSeeDealInfo::add_deals() {
+  return deals_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::SeeToSeeDeal >&
+SeeToSeeDealInfo::deals() const {
+  return deals_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::SeeToSeeDeal >*
+SeeToSeeDealInfo::mutable_deals() {
+  return &deals_;
+}
+
+// -------------------------------------------------------------------
+
+// NuomiSeeToSeeResponse
+
+// optional .lbs.da.openservice.SeeToSeeDealInfo deals_info = 1;
+inline bool NuomiSeeToSeeResponse::has_deals_info() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void NuomiSeeToSeeResponse::set_has_deals_info() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void NuomiSeeToSeeResponse::clear_has_deals_info() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void NuomiSeeToSeeResponse::clear_deals_info() {
+  if (deals_info_ != NULL) deals_info_->::lbs::da::openservice::SeeToSeeDealInfo::Clear();
+  clear_has_deals_info();
+}
+inline const ::lbs::da::openservice::SeeToSeeDealInfo& NuomiSeeToSeeResponse::deals_info() const {
+  return deals_info_ != NULL ? *deals_info_ : *default_instance_->deals_info_;
+}
+inline ::lbs::da::openservice::SeeToSeeDealInfo* NuomiSeeToSeeResponse::mutable_deals_info() {
+  set_has_deals_info();
+  if (deals_info_ == NULL) deals_info_ = new ::lbs::da::openservice::SeeToSeeDealInfo;
+  return deals_info_;
+}
+inline ::lbs::da::openservice::SeeToSeeDealInfo* NuomiSeeToSeeResponse::release_deals_info() {
+  clear_has_deals_info();
+  ::lbs::da::openservice::SeeToSeeDealInfo* temp = deals_info_;
+  deals_info_ = NULL;
+  return temp;
+}
+
+// optional int32 sample_id = 2;
+inline bool NuomiSeeToSeeResponse::has_sample_id() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void NuomiSeeToSeeResponse::set_has_sample_id() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void NuomiSeeToSeeResponse::clear_has_sample_id() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void NuomiSeeToSeeResponse::clear_sample_id() {
+  sample_id_ = 0;
+  clear_has_sample_id();
+}
+inline ::google::protobuf::int32 NuomiSeeToSeeResponse::sample_id() const {
+  return sample_id_;
+}
+inline void NuomiSeeToSeeResponse::set_sample_id(::google::protobuf::int32 value) {
+  set_has_sample_id();
+  sample_id_ = value;
 }
 
 

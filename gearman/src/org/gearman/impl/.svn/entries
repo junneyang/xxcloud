@@ -1,7 +1,7 @@
 10
 
 dir
-4887
+4969
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/gearman/src/org/gearman/impl
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,18 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-util
-dir
-
-client
-dir
-
-reactor
-dir
-
-serverpool
-dir
 
 Main.java
 file
@@ -151,4 +139,16 @@ yangjun03
 
 
 6669
+
+util
+dir
+
+client
+dir
+
+reactor
+dir
+
+serverpool
+dir
 

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/app-test/search/lbs-stat/!svn/ver/4679/trunk/upps_test/jenkinsFramework/protobuf/webpb/common
+/app-test/search/lbs-stat/!svn/ver/4941/trunk/upps_test/jenkinsFramework/protobuf/webpb/common
 END
 logLib.py
 K 25
@@ -25,7 +25,7 @@ mysqlLib.py
 K 25
 svn:wc:ra_dav:version-url
 V 106
-/app-test/search/lbs-stat/!svn/ver/4679/trunk/upps_test/jenkinsFramework/protobuf/webpb/common/mysqlLib.py
+/app-test/search/lbs-stat/!svn/ver/4941/trunk/upps_test/jenkinsFramework/protobuf/webpb/common/mysqlLib.py
 END
 __init__.py
 K 25

@@ -19,6 +19,7 @@ from jenkinsapi.build import Build
 import gear
 gear_server = "127.0.0.1"
 gear_port = 8899
+JENKINSURL = "http://10.48.55.39:8898/"
 
 def addtask(username, jenkinsurl, jobname, specifynode, build_params):
     mysql = mysqlLib()
@@ -47,7 +48,7 @@ def addtask(username, jenkinsurl, jobname, specifynode, build_params):
         mysql.update_task_status(param)
         print(u"INFO, job submit, 1")
         print(u"INFO, job unique id :" + str(unique_id))
-        url = "http://10.48.55.39:8889/pb/jenkins/status/?job=" + str(unique_id)
+        url = "http://10.48.55.39:8889/jobstatus/?job=" + str(unique_id)
         print(u"INFO, you could link " + url + " to trace the job status")
     except Exception as e:
         print(e)
@@ -92,7 +93,12 @@ if __name__ == '__main__':
 
 
     username = sys.argv[1]
-    jenkinsurl = sys.argv[2]
+    clustername = sys.argv[2]
+    jenkinsurl = JENKINSURL
+    if (clustername == "PublicCluster"):
+        jenkinsurl = JENKINSURL
+    else:
+        print("ERROR : cluster not exist")
     jobname = sys.argv[3]
     specifynode = int(sys.argv[4])
     build_params = json.loads(sys.argv[5])

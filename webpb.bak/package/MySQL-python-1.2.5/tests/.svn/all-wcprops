@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests
+END
+configdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/configdb.py
+END
+test_MySQLdb_dbapi20.py
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/test_MySQLdb_dbapi20.py
+END
+dbapi20.py
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/dbapi20.py
+END
+test_MySQLdb_capabilities.py
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/test_MySQLdb_capabilities.py
+END
+test_MySQLdb_nonstandard.py
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/test_MySQLdb_nonstandard.py
+END
+capabilities.py
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/tests/capabilities.py
+END

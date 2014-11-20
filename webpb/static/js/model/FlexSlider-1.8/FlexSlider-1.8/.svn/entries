@@ -1,7 +1,7 @@
 10
 
 dir
-4887
+5042
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/FlexSlider-1.8/FlexSlider-1.8
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+demo.html
+file
+
+
+
+
+2014-10-11T08:41:15.000000Z
+ebb56e096d8202753f28dc7bf56a1df7
+2014-10-11T08:41:10.228165Z
+3104
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2655
 
 flexslider.css
 file
@@ -201,38 +235,4 @@ yangjun03
 
 theme
 dir
-
-demo.html
-file
-
-
-
-
-2014-10-11T08:41:15.000000Z
-ebb56e096d8202753f28dc7bf56a1df7
-2014-10-11T08:41:10.228165Z
-3104
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2655
 

@@ -1,5 +1,6 @@
 import "pbrpc.proto";
 import "regist_condition.proto";
+import "rp.proto";
 
 package lbs.da.openservice;
 
@@ -39,6 +40,11 @@ service UserService {
     rpc GetBuy2BuyInfo (NuomiBuy2BuyRequest) returns (NuomiBuy2BuyResponse);
     
     rpc POIMatch (POIMatchRequest) returns (POIMatchResponse);
+	
+	// @lsf 添加看了又看接口
+	rpc GetSeeToSeeInfo (NuomiSeeToSeeRequest) returns (NuomiSeeToSeeResponse);	
+	
+	rpc RPRequest (RPCommonRequest) returns (RPCommonResponse);	
 };
 
 service ItemService {
@@ -49,6 +55,7 @@ service ItemService {
 	(GetItemsByItemResponse);
 
 	rpc GetBNItemsByItem(GetBNItemsRequest) returns (GetBNItemsResponse);
+
 };
 
 

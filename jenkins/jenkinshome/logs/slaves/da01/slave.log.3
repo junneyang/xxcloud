@@ -1,6 +1,6 @@
-[11/11/14 10:43:17] [SSH] Opening SSH connection to 10.99.36.61:22.
-[11/11/14 10:43:18] [SSH] Authentication successful.
-[11/11/14 10:43:18] [SSH] The remote users environment is:
+[11/17/14 15:12:46] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/17/14 15:12:53] [SSH] Authentication successful.
+[11/17/14 15:12:53] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -36,14 +36,14 @@ OPTIND=1
 OSTYPE=linux-gnu
 PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
 PIPESTATUS=([0]="0")
-PPID=18667
+PPID=2726
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 16612 22'
-SSH_CONNECTION='10.48.55.39 16612 10.99.36.61 22'
+SSH_CLIENT='10.48.55.39 51600 22'
+SSH_CONNECTION='10.48.55.39 51600 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -291,14 +291,17 @@ jumbo ()
         hash -r;
     fi
 }
-[11/11/14 10:43:18] [SSH] Checking java version of java
-[11/11/14 10:43:18] [SSH] java -version returned 1.6.0_45.
-[11/11/14 10:43:18] [SSH] Starting sftp client.
-[11/11/14 10:43:18] [SSH] Copying latest slave.jar...
-[11/11/14 10:43:18] [SSH] Copied 439,117 bytes.
+[11/17/14 15:12:53] [SSH] Checking java version of java
+[11/17/14 15:12:54] [SSH] java -version returned 1.6.0_45.
+[11/17/14 15:12:54] [SSH] Starting sftp client.
+[11/17/14 15:12:54] [SSH] Copying latest slave.jar...
+[11/17/14 15:12:54] [SSH] Copied 439,584 bytes.
 Expanded the channel window size to 4MB
-[11/11/14 10:43:18] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+[11/17/14 15:12:54] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
-Slave.jar version: 2.47
+Slave.jar version: 2.48
 This is a Unix slave
+Evacuated stdout
 Slave successfully connected and online
+Connection terminated
+channel stopped

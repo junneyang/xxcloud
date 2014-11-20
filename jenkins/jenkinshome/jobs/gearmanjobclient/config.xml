@@ -12,9 +12,9 @@
           <defaultValue>yangjun03</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>JenkinsURL</name>
+          <name>ClusterName</name>
           <description></description>
-          <defaultValue>http://10.48.55.39:8898/</defaultValue>
+          <defaultValue>PublicCluster</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>JobName</name>
@@ -71,7 +71,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf &amp;&amp; python gearmanjobclient.py ${UserName} ${JenkinsURL} ${JobName} ${SpecifyNode} &quot;${JobParameter}&quot;</command>
+      <command>cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf &amp;&amp; python gearmanjobclient.py ${UserName} ${ClusterName} ${JobName} ${SpecifyNode} &quot;${JobParameter}&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

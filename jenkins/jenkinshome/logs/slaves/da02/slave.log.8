@@ -1,6 +1,6 @@
-[11/10/14 16:56:27] [SSH] Opening SSH connection to 10.99.36.61:22.
-[11/10/14 16:56:34] [SSH] Authentication successful.
-[11/10/14 16:56:34] [SSH] The remote users environment is:
+[11/10/14 17:55:54] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/10/14 17:56:00] [SSH] Authentication successful.
+[11/10/14 17:56:02] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -36,14 +36,14 @@ OPTIND=1
 OSTYPE=linux-gnu
 PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
 PIPESTATUS=([0]="0")
-PPID=12018
+PPID=20064
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 14957 22'
-SSH_CONNECTION='10.48.55.39 14957 10.99.36.61 22'
+SSH_CLIENT='10.48.55.39 23002 22'
+SSH_CONNECTION='10.48.55.39 23002 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -291,29 +291,14 @@ jumbo ()
         hash -r;
     fi
 }
-[11/10/14 16:56:34] [SSH] Checking java version of java
-[11/10/14 16:56:34] [SSH] java -version returned 1.6.0_45.
-[11/10/14 16:56:34] [SSH] Starting sftp client.
-[11/10/14 16:56:34] [SSH] Copying latest slave.jar...
-[11/10/14 16:56:34] [SSH] Copied 439,117 bytes.
+[11/10/14 17:56:03] [SSH] Checking java version of java
+[11/10/14 17:56:06] [SSH] java -version returned 1.6.0_45.
+[11/10/14 17:56:06] [SSH] Starting sftp client.
+[11/10/14 17:56:07] [SSH] Copying latest slave.jar...
+[11/10/14 17:56:07] [SSH] Copied 439,117 bytes.
 Expanded the channel window size to 4MB
-[11/10/14 16:56:34] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+[11/10/14 17:56:07] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
 Slave.jar version: 2.47
 This is a Unix slave
 Slave successfully connected and online
-channel stopped
-Connection terminated
-ERROR: [11/10/14 17:55:43] [SSH] Error deleting file.
-[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.IllegalStateException: Cannot open session, you need to establish a connection first.
-	at com.trilead.ssh2.Connection.openSession(Connection.java:1125)
-	at com.trilead.ssh2.Connection.exec(Connection.java:1544)
-	at hudson.plugins.sshslaves.SSHLauncher.afterDisconnect(SSHLauncher.java:1257)
-	at hudson.slaves.SlaveComputer$3.run(SlaveComputer.java:574)
-	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-[11/10/14 17:55:43] [SSH] Connection closed.

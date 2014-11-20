@@ -1,0 +1,15 @@
+Running from: /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at Main._main(Main.java:293)
+	at Main.main(Main.java:98)
+Caused by: java.lang.IllegalArgumentException: Expecting ----httpPort=VALUE but found no value
+	at winstone.cmdline.CmdLineParser.parse(CmdLineParser.java:61)
+	at winstone.Launcher.getArgsFromCommandLine(Launcher.java:361)
+	at winstone.Launcher.main(Launcher.java:334)
+	... 6 more
+Running from: /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war

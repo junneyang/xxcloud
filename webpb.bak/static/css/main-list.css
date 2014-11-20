@@ -1,0 +1,24 @@
+.hero-unit ul li.plan {
+    animation-delay: 1s;
+}
+
+
+.divli {
+    position:relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pdate {
+	position:absolute;
+	top:120px;
+	font-size: 13px; 
+	font-weight: 500;
+}
+
+.img {
+    width: 311px;
+    height: 207px;
+    margin-bottom:30px;
+}
+

@@ -1,14 +1,14 @@
 10
 
 dir
-4887
+5042
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-17T09:42:32.809700Z
-4885
+2014-11-20T03:00:32.463484Z
+5042
 yangjun03
 
 
@@ -26,25 +26,28 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+example
+dir
+
+package
+dir
+
+template
+dir
+
 log
 dir
 
-static
-dir
-
-common
-dir
-
-pb.py
+xCloud.py
 file
 
 
 
 
-2014-11-17T09:42:37.000000Z
-70d244c4fd1720928ca50fe2d929f040
-2014-11-17T09:42:32.809700Z
-4885
+2014-11-20T02:32:27.000000Z
+fac331e4ce86808a7fce6d3c083525ee
+2014-11-20T02:32:18.914681Z
+5041
 yangjun03
 
 
@@ -67,17 +70,14 @@ yangjun03
 
 
 
-22420
+25544
+
+static
+dir
+
+common
+dir
 
 plan
-dir
-
-example
-dir
-
-package
-dir
-
-template
 dir
 

@@ -167,6 +167,7 @@ clean:ccpclean
 	rm -rf proto/pbrpcclient_pbrpc.pb.o
 	rm -rf proto/pbrpcclient_pbrpc_service.pb.o
 	rm -rf proto/pbrpcclient_regist_condition.pb.o
+	rm -rf proto/pbrpcclient_rp.pb.o
 	rm -rf proto/pbrpcclient_transport.pb.o
 	rm -rf com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_reader.o
 	rm -rf com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_value.o
@@ -181,6 +182,7 @@ clean:ccpclean
 	rm -rf proto/pbrpcbenchmark_pbrpc.pb.o
 	rm -rf proto/pbrpcbenchmark_pbrpc_service.pb.o
 	rm -rf proto/pbrpcbenchmark_regist_condition.pb.o
+	rm -rf proto/pbrpcbenchmark_rp.pb.o
 	rm -rf proto/pbrpcbenchmark_transport.pb.o
 	rm -rf com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_reader.o
 	rm -rf com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_value.o
@@ -212,6 +214,7 @@ pbrpcclient:src/pbrpcclient_pbrpcclient.o \
   proto/pbrpcclient_pbrpc.pb.o \
   proto/pbrpcclient_pbrpc_service.pb.o \
   proto/pbrpcclient_regist_condition.pb.o \
+  proto/pbrpcclient_rp.pb.o \
   proto/pbrpcclient_transport.pb.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_reader.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_value.o \
@@ -226,6 +229,7 @@ pbrpcclient:src/pbrpcclient_pbrpcclient.o \
   proto/pbrpcclient_pbrpc.pb.o \
   proto/pbrpcclient_pbrpc_service.pb.o \
   proto/pbrpcclient_regist_condition.pb.o \
+  proto/pbrpcclient_rp.pb.o \
   proto/pbrpcclient_transport.pb.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_reader.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcclient_json_value.o \
@@ -306,6 +310,7 @@ pbrpcbenchmark:src/pbrpcbenchmark_pbrpcbenchmark.o \
   proto/pbrpcbenchmark_pbrpc.pb.o \
   proto/pbrpcbenchmark_pbrpc_service.pb.o \
   proto/pbrpcbenchmark_regist_condition.pb.o \
+  proto/pbrpcbenchmark_rp.pb.o \
   proto/pbrpcbenchmark_transport.pb.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_reader.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_value.o \
@@ -321,6 +326,7 @@ pbrpcbenchmark:src/pbrpcbenchmark_pbrpcbenchmark.o \
   proto/pbrpcbenchmark_pbrpc.pb.o \
   proto/pbrpcbenchmark_pbrpc_service.pb.o \
   proto/pbrpcbenchmark_regist_condition.pb.o \
+  proto/pbrpcbenchmark_rp.pb.o \
   proto/pbrpcbenchmark_transport.pb.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_reader.o \
   com/jsoncpp-src-0.5.0/src/lib_json/pbrpcbenchmark_json_value.o \
@@ -417,6 +423,7 @@ src/pbrpcclient_pbrpcclient.o:src/pbrpcclient.cpp \
   proto/pbrpc.pb.h \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
+  proto/rp.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -455,6 +462,7 @@ src/pbrpcclient_common.o:src/common.cpp \
   proto/pbrpc.pb.h \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
+  proto/rp.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -496,7 +504,8 @@ proto/pbrpcclient_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcclient_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h
+  proto/regist_condition.pb.h \
+  proto/rp.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
 
@@ -505,6 +514,12 @@ proto/pbrpcclient_regist_condition.pb.o:proto/regist_condition.pb.cc \
   proto/pbrpc.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_regist_condition.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_regist_condition.pb.o proto/regist_condition.pb.cc
+
+proto/pbrpcclient_rp.pb.o:proto/rp.pb.cc \
+  proto/rp.pb.h \
+  proto/pbrpc.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_rp.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_rp.pb.o proto/rp.pb.cc
 
 proto/pbrpcclient_transport.pb.o:proto/transport.pb.cc \
   proto/transport.pb.h \
@@ -567,6 +582,7 @@ src/pbrpcbenchmark_pbrpcbenchmark.o:src/pbrpcbenchmark.cpp \
   proto/pbrpc.pb.h \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
+  proto/rp.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -606,6 +622,7 @@ src/pbrpcbenchmark_common.o:src/common.cpp \
   proto/pbrpc.pb.h \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
+  proto/rp.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -645,6 +662,7 @@ src/pbrpcbenchmark_requestthreadpool.o:src/requestthreadpool.cpp \
   proto/pbrpc.pb.h \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
+  proto/rp.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -686,7 +704,8 @@ proto/pbrpcbenchmark_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcbenchmark_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h
+  proto/regist_condition.pb.h \
+  proto/rp.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
 
@@ -695,6 +714,12 @@ proto/pbrpcbenchmark_regist_condition.pb.o:proto/regist_condition.pb.cc \
   proto/pbrpc.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_regist_condition.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_regist_condition.pb.o proto/regist_condition.pb.cc
+
+proto/pbrpcbenchmark_rp.pb.o:proto/rp.pb.cc \
+  proto/rp.pb.h \
+  proto/pbrpc.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_rp.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_rp.pb.o proto/rp.pb.cc
 
 proto/pbrpcbenchmark_transport.pb.o:proto/transport.pb.cc \
   proto/transport.pb.h \

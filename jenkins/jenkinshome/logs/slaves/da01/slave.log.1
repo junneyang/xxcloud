@@ -1,6 +1,6 @@
-[11/15/14 10:53:40] [SSH] Opening SSH connection to 10.99.36.61:22.
-[11/15/14 10:53:41] [SSH] Authentication successful.
-[11/15/14 10:53:41] [SSH] The remote users environment is:
+[11/20/14 10:50:29] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/20/14 10:50:29] [SSH] Authentication successful.
+[11/20/14 10:50:29] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -34,16 +34,16 @@ MANPATH=/home/map/.jumbo/opt/sun-java6/man:/home/map/.jumbo/share/man:/home/map/
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
-PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
+PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin:/home/map/.jumbo/bin/vendor_perl
 PIPESTATUS=([0]="0")
-PPID=9784
+PPID=29676
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 34636 22'
-SSH_CONNECTION='10.48.55.39 34636 10.99.36.61 22'
+SSH_CLIENT='10.48.55.39 56908 22'
+SSH_CONNECTION='10.48.55.39 56908 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -291,29 +291,29 @@ jumbo ()
         hash -r;
     fi
 }
-[11/15/14 10:53:41] [SSH] Checking java version of java
-[11/15/14 10:53:41] [SSH] java -version returned 1.6.0_45.
-[11/15/14 10:53:41] [SSH] Starting sftp client.
-[11/15/14 10:53:41] [SSH] Copying latest slave.jar...
-[11/15/14 10:53:41] [SSH] Copied 439,117 bytes.
+[11/20/14 10:50:29] [SSH] Checking java version of java
+[11/20/14 10:50:29] [SSH] java -version returned 1.6.0_45.
+[11/20/14 10:50:29] [SSH] Starting sftp client.
+[11/20/14 10:50:29] [SSH] Copying latest slave.jar...
+[11/20/14 10:50:29] [SSH] Copied 439,584 bytes.
 Expanded the channel window size to 4MB
-[11/15/14 10:53:41] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+[11/20/14 10:50:29] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
-Slave.jar version: 2.47
+Slave.jar version: 2.48
 This is a Unix slave
+Evacuated stdout
 Slave successfully connected and online
-Connection terminated
-channel stopped
-ERROR: [11/17/14 15:12:23] [SSH] Error deleting file.
-[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mcom.trilead.ssh2.SFTPException: No such file (SSH_FX_NO_SUCH_FILE: A reference was made to a file which does not exist.)
-	at com.trilead.ssh2.SFTPv3Client.expectStatusOKMessage(SFTPv3Client.java:555)
-	at com.trilead.ssh2.SFTPv3Client.rm(SFTPv3Client.java:973)
-	at hudson.plugins.sshslaves.SSHLauncher.afterDisconnect(SSHLauncher.java:1253)
-	at hudson.slaves.SlaveComputer$3.run(SlaveComputer.java:574)
-	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-[11/17/14 15:12:23] [SSH] Connection closed.
+bash: line 1: 31113 Killed                  java -jar slave.jar
+ERROR: Connection terminated
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:50)
+Caused by: java.io.EOFException
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2325)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2794)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:801)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:299)
+	at hudson.remoting.ObjectInputStreamEx.<init>(ObjectInputStreamEx.java:40)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.read(AbstractSynchronousByteArrayCommandTransport.java:34)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:48)
+Slave JVM has terminated. Exit code=137
+[11/20/14 10:52:15] [SSH] Connection closed.

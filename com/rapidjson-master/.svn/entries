@@ -1,7 +1,7 @@
 10
 
 dir
-4887
+4969
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+.travis.yml
+file
+
+
+
+
+2014-10-29T06:28:10.000000Z
+de2e2aa9e02d37c6a5a1e70d0dfb6b9f
+2014-10-29T06:28:02.752357Z
+4205
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1316
 
 bin
 dir
@@ -182,38 +216,4 @@ yangjun03
 
 
 130
-
-.travis.yml
-file
-
-
-
-
-2014-10-29T06:28:10.000000Z
-de2e2aa9e02d37c6a5a1e70d0dfb6b9f
-2014-10-29T06:28:02.752357Z
-4205
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1316
 

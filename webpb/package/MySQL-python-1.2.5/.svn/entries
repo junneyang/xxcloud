@@ -1,7 +1,7 @@
 10
 
 dir
-4887
+5042
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/package/MySQL-python-1.2.5
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,14 +26,14 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-README.md
+setup.py
 file
 
 
 
 
-2012-10-04T06:11:12.000000Z
-8bfb683f40276fdc09a57fca1a27cd24
+2014-01-02T05:52:50.000000Z
+0115e5bde931aba840f8f2f6bf3b2d9a
 2014-10-22T05:43:10.570849Z
 3866
 yangjun03
@@ -58,7 +58,7 @@ yangjun03
 
 
 
-1266
+609
 
 _mysql_exceptions.py
 file
@@ -94,6 +94,40 @@ yangjun03
 
 2352
 
+README.md
+file
+
+
+
+
+2012-10-04T06:11:12.000000Z
+8bfb683f40276fdc09a57fca1a27cd24
+2014-10-22T05:43:10.570849Z
+3866
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1266
+
 setup.cfg
 file
 
@@ -128,9 +162,6 @@ yangjun03
 
 398
 
-build
-dir
-
 setup_common.py
 file
 
@@ -164,6 +195,9 @@ yangjun03
 
 
 1088
+
+build
+dir
 
 MySQL_python.egg-info
 dir
@@ -381,9 +415,6 @@ yangjun03
 
 1689
 
-MySQLdb
-dir
-
 MANIFEST.in
 file
 
@@ -417,6 +448,9 @@ yangjun03
 
 
 309
+
+MySQLdb
+dir
 
 metadata.cfg
 file
@@ -553,38 +587,4 @@ yangjun03
 
 
 84709
-
-setup.py
-file
-
-
-
-
-2014-01-02T05:52:50.000000Z
-0115e5bde931aba840f8f2f6bf3b2d9a
-2014-10-22T05:43:10.570849Z
-3866
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-609
 

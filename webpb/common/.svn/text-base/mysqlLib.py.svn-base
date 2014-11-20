@@ -214,6 +214,18 @@ class mysqlLib():
             return ret
         except Exception as e:
             logging.error(str(e))
+    def query_task_totalcnt(self,param):
+        try:
+            s=DynSql("""select count(*) from tbl_task where 1=1
+            { and belong=$belong}
+            """)
+            sql=s(param)
+            cnt=self.cursor.execute(sql[0],sql[1])
+            ret=self.cursor.fetchall()
+            totalcnt=ret[0][0]
+            return ret
+        except Exception as e:
+            logging.error(str(e))
 
 
 

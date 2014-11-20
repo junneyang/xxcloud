@@ -1,14 +1,14 @@
 10
 
 dir
-4887
+5042
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/template
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-10-29T13:41:49.628827Z
-4270
+2014-11-20T03:00:32.463484Z
+5042
 yangjun03
 
 
@@ -25,12 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-stat
-dir
-
-test
-dir
 
 pb.html
 file
@@ -67,5 +61,14 @@ yangjun03
 9703
 
 conf
+dir
+
+stat
+dir
+
+test
+dir
+
+taskmanagement
 dir
 

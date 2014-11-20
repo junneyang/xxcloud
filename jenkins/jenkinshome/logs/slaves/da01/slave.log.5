@@ -1,6 +1,6 @@
-[11/11/14 10:12:45] [SSH] Opening SSH connection to 10.99.36.60:22.
-[11/11/14 10:12:46] [SSH] Authentication successful.
-[11/11/14 10:12:46] [SSH] The remote users environment is:
+[11/11/14 10:57:37] [SSH] Opening SSH connection to 10.99.36.61:22.
+[11/11/14 10:57:38] [SSH] Authentication successful.
+[11/11/14 10:57:38] [SSH] The remote users environment is:
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -17,16 +17,12 @@ GIANO_BAAS_ALL_PRIVILEGE_LOGIN=0
 GROUPS=()
 G_BROKEN_FILENAMES=1
 HOME=/home/map
-HOSTNAME=cp01-rd-bu-09-da01.cp01.baidu.com
+HOSTNAME=cp01-rd-bu-09-da02.cp01.baidu.com
 HOSTTYPE=x86_64
 IFS=$' \t\n'
 J2REDIR=/home/map/.jumbo/opt/sun-java6/jre
 J2SDKDIR=/home/map/.jumbo/opt/sun-java6
 JAVA_HOME=/home/map/.jumbo/opt/sun-java6
-JUMBO_HADOOP_CONF_DIR=/home/map/.jumbo/etc/hadoop-client
-JUMBO_HADOOP_HOME=/home/map/.jumbo/opt/hadoop-client
-JUMBO_HIVE_CONF_DIR=/home/map/.jumbo/etc/hive
-JUMBO_HIVE_HOME=/home/map/.jumbo/opt/hive
 JUMBO_ROOT=/home/map/.jumbo
 LANG=en_US
 LESSOPEN='|/usr/bin/lesspipe.sh %s'
@@ -38,16 +34,16 @@ MANPATH=/home/map/.jumbo/opt/sun-java6/man:/home/map/.jumbo/share/man:/home/map/
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
-PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/home/map/.jumbo/lib:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
+PATH=/home/map/.jumbo/opt/sun-java6/bin:/home/map/.jumbo/opt/sun-java6/jre/bin:/home/map/.jumbo/opt/sun-java6/db/bin:/home/map/.jumbo/bin/core_perl:/home/map/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin
 PIPESTATUS=([0]="0")
-PPID=30405
+PPID=21166
 PS4='+ '
 PWD=/home/map
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 45891 22'
-SSH_CONNECTION='10.48.55.39 45891 10.99.36.60 22'
+SSH_CLIENT='10.48.55.39 58938 22'
+SSH_CONNECTION='10.48.55.39 58938 10.99.36.61 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=501
@@ -295,27 +291,15 @@ jumbo ()
         hash -r;
     fi
 }
-[11/11/14 10:12:46] [SSH] Checking java version of java
-[11/11/14 10:12:46] [SSH] java -version returned 1.6.0_45.
-[11/11/14 10:12:46] [SSH] Starting sftp client.
-[11/11/14 10:12:46] [SSH] Copying latest slave.jar...
-hudson.util.IOException2: Could not copy slave.jar into '/home/map/workspace' on slave
-	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1076)
-	at hudson.plugins.sshslaves.SSHLauncher.access$300(SSHLauncher.java:134)
-	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:704)
-	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:691)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-Caused by: hudson.util.IOException2: Could not copy slave.jar to '/home/map/workspace/slave.jar' on slave
-	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1073)
-	... 7 more
-Caused by: com.trilead.ssh2.SFTPException: Failure (SSH_FX_FAILURE: An error occurred, but no specific error code exists to describe the failure.)
-	at com.trilead.ssh2.SFTPv3Client.write(SFTPv3Client.java:1360)
-	at hudson.plugins.sshslaves.SFTPClient$1.write(SFTPClient.java:102)
-	at java.io.OutputStream.write(OutputStream.java:75)
-	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1067)
-	... 7 more
-[11/11/14 10:12:46] Launch failed - cleaning up connection
-[11/11/14 10:12:46] [SSH] Connection closed.
+[11/11/14 10:57:38] [SSH] Checking java version of java
+[11/11/14 10:57:38] [SSH] java -version returned 1.6.0_45.
+[11/11/14 10:57:38] [SSH] Starting sftp client.
+[11/11/14 10:57:38] [SSH] Copying latest slave.jar...
+[11/11/14 10:57:38] [SSH] Copied 439,117 bytes.
+Expanded the channel window size to 4MB
+[11/11/14 10:57:38] [SSH] Starting slave process: cd "/home/map/workspace" && java  -jar slave.jar
+<===[JENKINS REMOTING CAPACITY]===>   channel started
+Slave.jar version: 2.47
+This is a Unix slave
+Slave successfully connected and online
+ERROR: 

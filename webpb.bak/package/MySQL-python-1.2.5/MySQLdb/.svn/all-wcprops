@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb
+END
+converters.py
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/converters.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/__init__.py
+END
+cursors.py
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/cursors.py
+END
+release.py
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/release.py
+END
+times.py
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/times.py
+END
+connections.py
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/4910/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5/MySQLdb/connections.py
+END

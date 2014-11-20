@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/app-test/search/lbs-stat/!svn/ver/4628/trunk/upps_test/jenkinsFramework/protobuf/jenkins
+/app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins
 END
 slave.jar
 K 25
@@ -20,4 +20,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 101
 /app-test/search/lbs-stat/!svn/ver/4628/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
+END
+jenkins-cli.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins-cli.jar
 END

@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg {
+  position: relative;
+  width: 100%; height: 326px;
+  top: -326px; left: 0;
+  z-index: -250;
+}
+
+.bg1 {
+	background-color:#17429b;
+}
+
+.bg2 {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=鈥�#2A121B鈥�, endColorStr=鈥�#450F11鈥�, gradientType=鈥�1鈥�);
+	background-image:-ms-linear-gradient(left, #2A121B, #450F11);
+	background-image:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#2A121B), to(#450F11));	
+	background-image:-moz-linear-gradient(left, #2A121B, #450F11);
+}
+
+#mybanner{height: 323px;position: relative;}
+
+a.flex-active:hover
+{
+  cursor:default;
+}
+#mybanner img:hover{cursor: default;}
+
+
+/* banner control nav */
+.flex-control-nav {
+  position: relative;
+  z-index: 3;
+  width: 1000px;
+  margin: 0 auto;
+//  padding-top: 15px;
+  padding-right:16px;
+  text-align: right; 
+  overflow: hidden;
+}
+
+.flex-control-nav li {display: inline; width: 16px; height: 16px; padding: 0 3px;}
+
+.flex-control-nav li a { 
+  display: inline-block;
+  width: 16px; height: 16px;
+  background: url(../../image/idl/index/dot-slider-1.png) 0 -16px no-repeat;
+  text-indent: -1000em;
+  font-size: 0;
+}
+
+.flex-control-nav li a.flex-active { background-position: 0 0;}
+.flex-control-nav li a{cursor: hand;}
+
+/* intro  */
+
+.intro_background {
+	background-color: #f8f8f8;
+}
+
+.intro {
+background-color: #FFFFFF;
+margin-top: 0px;
+padding-top: 35px;
+padding-bottom: 35px;
+padding-left: 15px;
+width: 981px;
+margin-bottom: 20px;
+border: 2px solid;
+border-color: #ffffff;
+background-image: url("../../image/idl/index/intro_background.png");
+position: relative;
+z-index: 3;
+
+}
+
+.intro_title {
+	font-size:16px;
+  font-weight: 400;
+	color:#797979;
+	padding-bottom:30px;
+}
+.intro_text {
+	//text-align:center;
+	padding-left:80px;
+	margin-bottom:15px;
+	font-size:12px;
+	color:#969696;
+}
+
+.intro_text_title{
+color:#666;
+font-size:16px;
+margin-bottom:15px;
+}
+.intro_img_box {
+	/*闈濱E鐨勪富娴佹祻瑙堝櫒璇嗗埆鐨勫瀭鐩村眳涓殑鏂规硶*/
+     display: table-cell;
+     vertical-align:middle;
+
+     /*璁剧疆姘村钩灞呬腑*/
+     text-align:center;
+
+     /* 閽堝IE鐨凥ack */
+     *display: block;
+     *font-size:175px;/*绾︿负楂樺害鐨�0.873锛�200*0.873 绾︿负175*/
+	
+     width:300px;
+     height:200px;
+	background-color: #FFFFFF;
+}
+
+.row-head{
+    position: relative;
+}
+.newtec{
+  display: block;
+  margin-top: 35px;
+  font-size:16px;
+  font-weight: 400;
+  color:#797979;
+}
+.more{
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    height: 23px;
+    width: 61px;
+    background: url("../../image/idl/index/idl-bg.png") no-repeat 0 0;
+}
+
+.new-tech0 {
+	width:100%;
+	height:208px;
+	background:url('../../image/nlp/new_tec0.png') no-repeat 0 0;
+}
+.new-tech0-p:hover {
+	background:url('../../image/nlp/new_tec0_n.png') no-repeat 0 0;
+}
+.new-tech0-p {
+	width:100%;
+	height:104px;
+	background:url('../../image/nlp/new_tec0_p.png') no-repeat 0 0;
+}
+
+
+.new-tech1 {
+	width:100%;
+	height:208px;
+	background:url('../../image/nlp/tec1.png') no-repeat 0 0;
+}
+.new-tech1-p {
+	width:100%;
+	height:104px;
+	background:url('../../image/nlp/tec1_p.png') no-repeat 0 0;
+}
+
+
+.new-tech2 {
+	width:100%;
+	height:208px;
+	background:url('../../image/nlp/tec2.png') no-repeat 0 0;
+}
+.new-tech2-p {
+	width:100%;
+	height:104px;
+	background:url('../../image/nlp/tec2_p.png') no-repeat 0 0;
+}
+
+.list-normal{
+    float: left;
+    margin:5px 20px 0 0;
+    width: 232px;
+    height: 174px;
+    border: 1px solid #f2f2f2;
+    border-bottom-width: 2px;
+    border-radius: 0 0 2px 2px;
+}
+.list-last{
+    margin: 5px 0 0 0;
+}

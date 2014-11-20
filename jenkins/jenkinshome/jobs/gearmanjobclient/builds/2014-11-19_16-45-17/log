@@ -1,0 +1,35 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/gearmanjobclient
+[gearmanjobclient] $ /bin/sh -xe /tmp/hudson6362838391473500613.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python gearmanjobclient.py yangjun03 PublicCluster pbrpcclient 1 '{
+        "ClientNode":"yangjun03",
+	"WorkPath":"/home/users/yangjun03/workspace",
+	"PBTYPE":"PUBLIC-PBRPC",
+	"IPPORT":"127.0.0.1:7788",
+	"ServiceName":"lbs.da.openservice.ItemService",
+	"MethodName":"GetItemsByItem",
+        "TestData":[
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	},
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "topic_rev_poi",
+		"item_ids": ["9977193541978760286"]
+	}
+]
+}'
+INFO, job initial, 0
+Invalid URL u'PublicCluster/api/python': No schema supplied. Perhaps you meant http://PublicCluster/api/python?
+Finished: SUCCESS

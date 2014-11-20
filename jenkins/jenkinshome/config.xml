@@ -26,7 +26,7 @@
       <numExecutors>2</numExecutors>
       <mode>NORMAL</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
         <host>10.48.55.39</host>
         <port>22</port>
         <credentialsId>4c5b0feb-edb8-4adc-ba76-93c948a98158</credentialsId>
@@ -38,42 +38,6 @@
       <userId>anonymous</userId>
     </slave>
     <slave>
-      <name>da02</name>
-      <description></description>
-      <remoteFS>/home/map/workspace</remoteFS>
-      <numExecutors>2</numExecutors>
-      <mode>NORMAL</mode>
-      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
-        <host>10.99.36.61</host>
-        <port>22</port>
-        <credentialsId>5ac417e3-72a8-4c44-9f3c-824366f3d95d</credentialsId>
-        <maxNumRetries>0</maxNumRetries>
-        <retryWaitTime>0</retryWaitTime>
-      </launcher>
-      <label>da02</label>
-      <nodeProperties/>
-      <userId>anonymous</userId>
-    </slave>
-    <slave>
-      <name>da01</name>
-      <description></description>
-      <remoteFS>/home/map/workspace</remoteFS>
-      <numExecutors>2</numExecutors>
-      <mode>NORMAL</mode>
-      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.8">
-        <host>10.99.36.61</host>
-        <port>22</port>
-        <credentialsId>5ac417e3-72a8-4c44-9f3c-824366f3d95d</credentialsId>
-        <maxNumRetries>0</maxNumRetries>
-        <retryWaitTime>0</retryWaitTime>
-      </launcher>
-      <label>da01</label>
-      <nodeProperties/>
-      <userId>yangjun03</userId>
-    </slave>
-    <slave>
       <name>linqiaoying</name>
       <remoteFS>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</remoteFS>
       <numExecutors>2</numExecutors>
@@ -81,6 +45,24 @@
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.slaves.JNLPLauncher"/>
       <label>linqiaoying</label>
+      <nodeProperties/>
+      <userId>anonymous</userId>
+    </slave>
+    <slave>
+      <name>maguojun</name>
+      <description></description>
+      <remoteFS>/home/users/maguojun/xingneng/</remoteFS>
+      <numExecutors>2</numExecutors>
+      <mode>NORMAL</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
+        <host>10.95.43.38</host>
+        <port>22</port>
+        <credentialsId>5d461c09-2a8f-4a63-978a-4c536ccb5d65</credentialsId>
+        <maxNumRetries>0</maxNumRetries>
+        <retryWaitTime>0</retryWaitTime>
+      </launcher>
+      <label>maguojun</label>
       <nodeProperties/>
       <userId>anonymous</userId>
     </slave>

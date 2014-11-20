@@ -1,7 +1,7 @@
 10
 
 dir
-4887
+5042
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/bxslider
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,43 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+plugins
+dir
+
+jquery.bxslider.css
+file
+
+
+
+
+2014-10-11T08:01:10.000000Z
+d6711da316447431b655f1e80a001205
+2014-10-11T07:59:57.867314Z
+3092
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3836
 
 images
 dir
@@ -164,41 +201,4 @@ yangjun03
 
 
 14741
-
-plugins
-dir
-
-jquery.bxslider.css
-file
-
-
-
-
-2014-10-11T08:01:10.000000Z
-d6711da316447431b655f1e80a001205
-2014-10-11T07:59:57.867314Z
-3092
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3836
 

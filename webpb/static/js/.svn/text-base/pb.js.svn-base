@@ -152,17 +152,18 @@ function handle_select() {
 }
 
 
-/////////////////test srv
-function dis_pagelist_srv(items,itemsOnPage,currentPage) {
-	$('#query_id_testsrv_page_list').pagination({
+/////////////////task
+function dis_pagelist_task(items,itemsOnPage,currentPage) {
+	$('#query_id_task_page_list').pagination({
 		items: items,
 		itemsOnPage: itemsOnPage,
 		cssStyle: 'light-theme',
 		currentPage: currentPage,
-		onPageClick: pageselectCallback_srv
+		onPageClick: pageselectCallback_task
 	});
 }
-function query_server(page) {
+
+function query_task(page) {
 	var limit=5;
 	var offset=(page-1)*5;
 	var belong=document.getElementById("id_user_name").innerHTML;
@@ -170,7 +171,7 @@ function query_server(page) {
 	$.ajax({
 		type: "post",//使用post方法访问后台
 		dataType: "json",//返回json格式的数据
-		url: "/pb/query_server/",//要访问的后台地址
+		url: "/query_task/",//要访问的后台地址
 		contentType: "application/json; charset=utf-8",
 		cache: false,
 		async: false,
@@ -183,138 +184,81 @@ function query_server(page) {
 	});
 	return retdata;
 }
-function query_server_workspace(id) {
-	var workspace;
-	$.ajax({
-		type: "post",//使用post方法访问后台
-		dataType: "json",//返回json格式的数据
-		url: "/pb/query_server_workspace/",//要访问的后台地址
-		contentType: "application/json; charset=utf-8",
-		cache: false,
-		async: false,
-		data: {id:id},//要发送的数据
-		//start : function(){},
-		//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
-		success: function(data){//msg为返回的数据，在这里做数据绑定
-			workspace=data.workspace;
-		}
-	});
-	return workspace;
-}
 
-function download_testtool(tooltype) {
-	var proto=$("input[name='testdata']:checked").val();
-	var srv=$("input[name='testsrv']:checked").val();
-	var path=$('#id_path').val();
-	var belong=document.getElementById("id_user_name").innerHTML;
-	$.ajax({
-		type: "post",//使用post方法访问后台
-		dataType: "json",//返回json格式的数据
-		url: "/pb/download_testtool/",//要访问的后台地址
-		contentType: "application/json; charset=utf-8",
-		cache: false,
-		async: false,
-		data: {tooltype:tooltype,proto:proto,srv:srv,path:path,belong:belong},//要发送的数据
-		beforeSend : function(){
-			document.getElementById('id_loading').style.visibility = "visible"; 
-		},
-		//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
-		success: function(data){//msg为返回的数据，在这里做数据绑定
-			retdata=data.msg;
-			document.getElementById('id_loading').style.visibility = "hidden"; 
-			//alert(retdata);
-			MessageBox('warning', retdata);
-		}
-	});
-}
-
-
-function dis_serverlist(retdata,type) {
+function dis_tasklist(retdata) {
 	serverlist=retdata.ret_dict;
 	var len=serverlist.length;
 	if (len == 0){
-		document.getElementById("id_serverlist").innerHTML = "";
+		document.getElementById("id_tasklist").innerHTML = "";
 		var t="";
-		if (type == 1) {
-			t+="<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>";
-			t+="<td style='text-align:center;font-size:16px;'>您还没添加机器，<br/><a href='/pb/conf/?conftype=addsrv'><b>立即添加</b></a></td>";
-			t+="<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>";
-		} else {
-			t+="<td>&nbsp;</td><td>&nbsp;</td>";
-			t+="<td style='text-align:center;font-size:16px;'>您还没添加机器，<br/><a href='/pb/conf/?conftype=addsrv'><b>立即添加</b></a></td>";
-			t+="<td>&nbsp;</td>";
-		}
-		$("#id_serverlist").append(t);
+		t+="<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>";
+		t+="<td style='text-align:center;font-size:16px;'>您还没创建任务，<br/><a href='javascript:addtask();'><b>立即创建</b></a></td>";
+		t+="<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>";
+		$("#id_tasklist").append(t);
 	} else {
 		var t="";
 		$.each(serverlist, function(i,n){
-			if (type == 1) {
 				t+="<tr><td>";
+				t+="<a style='text-decoration: underline;' href='javascript:jobstatus(\"";
 				t+=n.id;
+				t+="\")'";
+				t+="'>";
+				t+=n.id;
+				t+="</a>";
 				t+="</td><td>";
-				t+=n.name;
+				t+=n.submit;
 				t+="</td><td>";
-				t+=n.ip;
+				//t+=n.jenkinsurl;
+				t+="PublicCluster";
 				t+="</td><td>";
-				t+=n.workspace;
+				t+=n.jobname;
 				t+="</td><td>";
-				t+=n.belong;
+				//t+=n.build_params;
+				t+="*****";
 				t+="</td><td>";
-				t+=n.descpt;
-				t+="</td><td class='i-operate'><a href='javascript:mod_server("+n.id+");' title='修改'>修改</a><a href='javascript:del_server("+n.id+");' title='删除'>删除</a></td>";
-			} else {
-				t+="<tr><td  style='padding-top:2px;padding-bottom:2px;'>";
-				if (i == 0) {
-					t+="<input type='radio' name='testsrv' checked='checked' value=";
-				} else {
-					t+="<input type='radio' name='testsrv' value=";
+				if (n.status == "1") {
+					t+="<img src='/static/r_loading.gif' title='等待中' />";
+				} else if (n.status == "2") {
+					t+="<img src='/static/r_running.gif' title='运行中' /> &nbsp;|&nbsp;&nbsp;<a href='/jobstop/?job=";
+					t+=n.id;
+					t+="'><img src='/static/r_fail.png' title='中止' /></a>";
+				} else if (n.status == "3") {
+					t+="<img src='/static/r_success.png' title='成功' />";
+				} else if (n.status == "4") {
+					t+="<img src='/static/r_fail.png' title='失败' />";
+				} else if (n.status == "5") {
+					t+="<img src='/static/r_exception.png' title='中止' />";
 				}
-				t+=n.id;
-				t+=" />";
-				t+="</td><td>";
-				t+=n.id;
-				t+="</td><td>";
-				t+=n.name;
-				t+="</td><td>";
-				t+=n.ip;
-				t+="</td><td>";
-				t+=n.descpt;
-				t+="</td></tr>";
-			}
+				//t+=n.status;
+				t+="</td>";
 		});
-		document.getElementById("id_serverlist").innerHTML = "";
-		$("#id_serverlist").append(t);
+		document.getElementById("id_tasklist").innerHTML = "";
+		$("#id_tasklist").append(t);
 	}
 }
-function pageselectCallback_srv (page, jq) {
-	var retdata=query_server(page);
-	dis_serverlist(retdata,1);
-	dis_pagelist_srv(retdata.server_totalcnt,5,page);
+
+function pageselectCallback_task (page) {
+	var retdata=query_task(page);
+	dis_tasklist(retdata);
+	dis_pagelist_task(retdata.task_totalcnt,5,page);
 }
-function del_server(id) {
-	$.ajax({
-		type: "post",//使用post方法访问后台
+
+function jobstatus(jobid) {
+	window.location.href = "/jobstatus/?job="+jobid;
+	//alert(jobid);
+	/*$.ajax({
+		type: "get",//使用post方法访问后台
 		dataType: "json",//返回json格式的数据
-		url: "/pb/del_server/",//要访问的后台地址
+		url: "/jobstatus/?job="+jobid,	//要访问的后台地址
 		contentType: "application/json; charset=utf-8",
 		cache: false,
 		async: false,
-		data: {id:id},//要发送的数据
+		//data: {limit:limit,offset:offset,belong:belong},//要发送的数据
 		//start : function(){},
 		//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
 		success: function(data){//msg为返回的数据，在这里做数据绑定
-			if (data.errcode == 1) {
-				//show_message('删除成功',0.5,'消息提示');
-				MessageBox('warning', '删除成功');
-				var retdata=query_server(1);
-				dis_serverlist(retdata,1);
-				dis_pagelist_srv(retdata.server_totalcnt,5,1);
-			} else {
-				MessageBox('warning', '删除失败');
-			}
+			alert("详细日志信息");
 		}
-	});
+	});*/
 }
-function mod_server(id){
-	MessageBox('warning', '还未实现');
-}
+

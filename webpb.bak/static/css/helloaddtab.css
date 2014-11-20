@@ -1,0 +1,2143 @@
+/* ************************************************************************************************ */
+/* ***************************************全局样式************************************************** */
+/* ************************************************************************************************ */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border:none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin: 4px 0;
+}
+/*body {
+	margin: 0;
+	font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 2;
+	color: #333;
+	background: #fff;
+	text-align: left;
+	display: inline;
+}*/
+input,
+select,
+textarea,
+label,
+button {
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+.fa {
+  margin-right: 5px;
+}
+/*table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+/* ************************************************************************************************ */
+/* ***************************************通用小样式************************************************ */
+/* ************************************************************************************************ */
+/* 小间距********************************************************** */
+.mala-mr {
+  margin-right: 10px;
+}
+.mala-ml {
+  margin-left: 10px;
+}
+/* 浮动方式********************************************************** */
+.mala-fl {
+  float: left;
+}
+.mala-fr {
+  float: right;
+}
+.mala-clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+/* 上下小箭头********************************************************** */
+.mala-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-right: 4px dashed transparent;
+  border-left: 4px dashed transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.mala-arrow-up {
+  border-bottom: 4px solid #fff;
+}
+.mala-arrow-up:hover {
+  border-bottom-color: #fff;
+}
+.mala-arrow-down {
+  border-top: 4px solid #fff;
+}
+.mala-arrow-down:hover {
+  border-top-color: #fff;
+}
+/* ************************************************************************************************ */
+/* ***************************************按钮样式************************************************** */
+/* ************************************************************************************************ */
+/* 按钮初始化******** */
+.mala-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 2px;
+  height: auto;
+}
+.mala-btn-wide {
+  padding: 10px 30px;
+}
+/* 各种尺寸******** */
+/* 翻页按钮的尺寸******** */
+.mala-btn-smaller {
+  padding: 5px 5px;
+  font-size: 12px;
+  line-height: 13px;
+  border-radius: 1px;
+}
+/* 列表筛选&表单内按钮******** */
+.mala-btn-small {
+  padding: 10px 15px;
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 2px;
+}
+/* 表单提交按钮尺寸******** */
+.mala-btn-large {
+  padding: 10px 45px;
+  font-size: 15px;
+  line-height: 23px;
+  border-radius: 2px;
+}
+/* 首页大按钮尺寸******** */
+.mala-btn-larger {
+  padding: 15px 50px;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 4px;
+}
+.mala-btn:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.mala-btn:active,
+.mala-btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.mala-btn-block {
+  display: block;
+}
+/* 禁用的按钮******** */
+.mala-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* 默认的按钮******** */
+.mala-btn-default {
+  color: #ffffff;
+  background-color: #a6b6c6;
+  border-color: #a6b6c6;
+}
+.mala-btn-default:hover,
+.mala-btn-default:focus,
+.mala-btn-default:active,
+.mala-btn-default.active {
+  color: #ffffff;
+  background-color: #667686;
+  border-color: #667686;
+}
+.mala-btn-default:active,
+.mala-btn-default.active {
+  background-image: none;
+}
+.mala-btn-default.disabled,
+.mala-btn-default.disabled:hover,
+.mala-btn-default.disabled:focus,
+.mala-btn-default.disabled:active,
+.mala-btn-default.disabled.active {
+  background-color: #f7f8f9;
+  border-color: #f1f3f5;
+}
+/* 主要按钮******** */
+.mala-btn-primary {
+  color: #ffffff;
+  background-color: #13b5b1;
+  border-color: #13b5b1;
+}
+.mala-btn-primary:hover,
+.mala-btn-primary:focus,
+.mala-btn-primary:active,
+.mala-btn-primary.active {
+  color: #ffffff;
+  background-color: #0ca09b;
+  border-color: #0ca09b;
+}
+.mala-btn-primary:active,
+.mala-btn-primary.active {
+  background-image: none;
+}
+.mala-btn-primary.disabled,
+.mala-btn-primary.disabled:hover,
+.mala-btn-primary.disabled:focus,
+.mala-btn-primary.disabled:active,
+.mala-btn-primary.disabled.active {
+  background-color: #0ca09b;
+  border-color: #0ca09b;
+}
+/* 灰色按钮（多用于模拟下拉菜单）******** */
+.mala-btn-info {
+  color: #666666;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.mala-btn-info:hover,
+.mala-btn-info:focus,
+.mala-btn-info:active,
+.mala-btn-info.active {
+  color: #666666;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.mala-btn-info:active,
+.mala-btn-info.active {
+  background-image: none;
+}
+.mala-btn-info.disabled,
+.mala-btn-info.disabled:hover,
+.mala-btn-info.disabled:focus,
+.mala-btn-info.disabled:active,
+.mala-btn-info.disabled.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+/* 成功的按钮******** */
+.mala-btn-success {
+  color: #ffffff;
+  background-color: #7dcc93;
+  border-color: #7dcc93;
+}
+.mala-btn-success:hover,
+.mala-btn-success:focus,
+.mala-btn-success:active,
+.mala-btn-success.active {
+  color: #ffffff;
+  background-color: #63bc7a;
+  border-color: #63bc7a;
+}
+.mala-btn-success:active,
+.mala-btn-success.active {
+  background-image: none;
+}
+.mala-btn-success.disabled,
+.mala-btn-success.disabled:hover,
+.mala-btn-success.disabled:focus,
+.mala-btn-success.disabled:active,
+.mala-btn-success.disabled.active {
+  background-color: #7dcc93;
+  border-color: #7dcc93;
+}
+/* 危险操作******** */
+.mala-btn-danger {
+  color: #ffffff;
+  background-color: #ff6156;
+  border-color: #ff6156;
+}
+.mala-btn-danger:hover,
+.mala-btn-danger:focus,
+.mala-btn-danger:active,
+.mala-btn-danger.active {
+  color: #ffffff;
+  background-color: #ff3b30;
+  border-color: #ff3b30;
+}
+.mala-btn-danger:active,
+.mala-btn-danger.active {
+  background-image: none;
+}
+.mala-btn-danger.disabled,
+.mala-btn-danger.disabled:hover,
+.mala-btn-danger.disabled:focus,
+.mala-btn-danger.disabled:active,
+.mala-btn-danger.disabled.active {
+  background-color: #ff6156;
+  border-color: #ff6156;
+}
+/* 按钮组******** */
+.mala-btn-group {
+  display: inline-block;
+}
+.mala-btn-group .mala-btn {
+  border-radius: 0;
+}
+.mala-btn-group .mala-btn-smaller:first-child {
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px;
+}
+.mala-btn-group .mala-btn:first-child,
+.mala-btn-group .mala-btn-small:first-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mala-btn-group .mala-btn-large:first-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mala-btn-group .mala-btn-larger:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.mala-btn-group .mala-btn-smaller:last-child {
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+}
+.mala-btn-group .mala-btn:last-child,
+.mala-btn-group .mala-btn-small:last-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mala-btn-group .mala-btn-large:last-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mala-btn-group .mala-btn-larger:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* 模拟下拉菜单******** */
+.mala-fake-select {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+}
+.mala-select-title {
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #f1f3f5;
+  border-radius: 2px;
+  line-height: 13px;
+  background: #ffffff;
+  display: block;
+  cursor: default;
+}
+.mala-fake-select .mala-arrow {
+  position: absolute;
+  top: 15.5px;
+  right: 8px;
+  cursor: default;
+}
+.mala-fake-select .mala-arrow-down {
+  border-top: 4px solid #cccccc;
+}
+.mala-fake-select .mala-arrow-down:hover {
+  border-top-color: #cccccc;
+}
+.mala-fake-select .mala-select-list {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  white-space: nowrap;
+  border-left: 1px solid #f1f3f5;
+  border-right: 1px solid #f1f3f5;
+  background: #ffffff;
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0 0 2px #ccc;
+}
+.mala-fake-select .mala-select-list .mala-select-item:last-child {
+  border-bottom: 1px solid #f1f3f5;
+}
+.mala-fake-select .mala-select-list-fix {
+  border-left: 1px solid #f1f3f5;
+  border-right: 1px solid #f1f3f5;
+  height: 0;
+  overflow: hidden;
+}
+.mala-fake-select .mala-select-item {
+  cursor: default;
+  padding: 10px 20px 10px 10px;
+  border-bottom: 1px solid #f1f3f5;
+  border-radius: 2px;
+  line-height: 14px;
+}
+.mala-fake-select .mala-select-item:hover {
+  background: #f7f8f9;
+}
+.mala-fake-select .mala-select-item.active {
+  background: #f1f3f5;
+}
+/* ************************************************************************************************ */
+/* ***************************************提醒框************************************************** */
+/* ************************************************************************************************ */
+.mala-alert {
+  padding: 10px 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 13px;
+  background: #f1f3f5;
+  color: #a6b6c6;
+}
+.mala-alert-primary {
+  background: #e7f7f7;
+  color: #13b5b1;
+}
+.mala-alert-success {
+  background: #f2faf4;
+  color: #7dcc93;
+}
+.mala-alert-danger {
+  background: #ffefee;
+  color: #ff6156;
+}
+/* ************************************************************************************************ */
+/* ***************************************表单元素************************************************** */
+/* ************************************************************************************************ */
+/* 输入框**************************************** */
+.mala-input[type='text'] {
+  font-size: 13px;
+  color: #666666;
+  width: 160px;
+  padding: 5px 10px;
+  background: #f1f3f5;
+  border: 1px solid #f1f3f5;
+  border-radius: order-radius-base;
+  height: 35px;
+}
+.mala-input[type='text']:focus {
+  outline: none;
+}
+.mala-input.mala-input-small[type='text'] {
+  width: 120px;
+}
+.mala-input.mala-input-large[type='text'] {
+  width: 320px;
+}
+/* 一般选择框**************************************** */
+.mala-select {
+  font-size: 13px;
+  color: #666666;
+  width: 160px;
+  padding: 5px 10px;
+  background: #f1f3f5;
+  border: 1px solid #f1f3f5;
+  border-radius: border-radius-base;
+  height: 35px;
+}
+.mala-select:focus {
+  outline: none;
+}
+.mala-select.mala-select-small[type='text'] {
+  width: 120px;
+}
+.mala-select.mala-select-large[type='text'] {
+  width: 320px;
+}
+/* 文本区**************************************** */
+.mala-textarea {
+  font-size: 13px;
+  color: #666666;
+  width: 320px;
+  padding: 5px 10px;
+  background: #f1f3f5;
+  border: 1px solid #f1f3f5;
+  border-radius: order-radius-base;
+  height: auto;
+}
+.mala-textarea:focus {
+  outline: none;
+}
+.mala-textarea.mala-textarea-small[type='text'] {
+  width: 160px;
+}
+/* 栅格内的控件, 填充栅格宽度**************************************** */
+.mala-input.mala-form-control,
+.mala-select.mala-form-control,
+.mala-textarea.mala-form-control {
+  width: 100%;
+}
+.mala-form-fix {
+  padding-top: 5px;
+}
+/* ************************************************************************************************ */
+/* ***************************************表格基本样式********************************************** */
+/* ************************************************************************************************ */
+.mala-table {
+  font-size: 13px;
+  text-align: left;
+  width: 100%;
+}
+.mala-table .mala-th {
+  font-weight: 500;
+  padding: 10px 0;
+  background: #f1f3f5;
+  line-height: 25px;
+}
+.mala-table .mala-tr:nth-of-type(even) {
+  background: #f7f8f9;
+}
+.mala-table .mala-td {
+  padding: 10px 0;
+  color: #999999;
+  line-height: 20px;
+}
+.mala-tr .mala-td:first-child,
+tr .mala-th:first-child {
+  padding-left: 15px;
+}
+.mala-tr .mala-td:last-child,
+tr .mala-th:last-child {
+  padding-right: 15px;
+}
+/* ************************************************************************************************ */
+/* ***************************************表格中的项目********************************************** */
+/* ************************************************************************************************ */
+/* 标题与时间***********/
+.mala-td-title a {
+  color: #667686;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mala-td-title.mala-td-title-icon a {
+  display: list-item;
+  list-style-position: inside;
+}
+.mala-td-title a:hover {
+  color: #4697ce;
+}
+/* ************************************************************************************************ */
+/* ***************************************列表***************************************************** */
+/* ************************************************************************************************ */
+/* **********************一般列表************************/
+.mala-list {
+  text-align: left;
+  width: 100%;
+}
+.mala-list-item {
+  padding: 10px 15px;
+  line-height: 20px;
+}
+.mala-list-item:nth-of-type(even) {
+  background: #f7f8f9;
+}
+.mala-list-title a {
+  color: #667686;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mala-list-title a:hover {
+  color: #4697ce;
+}
+.mala-list-time {
+  text-align: right;
+  color: #999999;
+}
+/* **********************左右摘要列表************************/
+.mala-list-summary-photo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.mala-list-summary-photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.mala-list-summary-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  display: block;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+.mala-list-summary-desc {
+  font-size: 13px;
+  font-weight: 700;
+  color: #999999;
+  display: block;
+  line-height: 1.8;
+}
+/* **********************图片列表************************/
+.mala-grid {
+  text-align: left;
+  width: 100%;
+}
+.mala-grid-item {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+.mala-grid-summary-photo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.mala-grid-summary-photo img {
+  border-radius: 1px;
+}
+.mala-grid-summary-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333333;
+  display: block;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+/* ************************************************************************************************ */
+/* ***************************************echarts占位********************************************** */
+/* ************************************************************************************************ */
+.mala-echarts-normal {
+  height: 300px;
+  margin: 0 auto;
+}
+.mala-echarts-large {
+  height: 500px;
+  margin: 0 auto;
+}
+/* ************************************************************************************************ */
+/* ***************************************翻页模块************************************************** */
+/* ************************************************************************************************ */
+.mala-pager {
+  font-size: 12px;
+  text-align: center;
+  padding: 30px 0;
+}
+.mala-pager .mala-paginate-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.mala-pager .mala-paginate-link:hover {
+  background: #f7f8f9;
+  text-decoration: none;
+}
+.mala-pager .mala-paginate-link.active {
+  background: #13b5b1;
+  color: #ffffff;
+}
+.mala-pager .mala-paginate-link .mala-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-top: 6px dashed transparent;
+  border-bottom: 6px dashed transparent;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.mala-pager .mala-paginate-link .mala-caret-prev {
+  border-right: 6px dashed #a6b6c6;
+}
+.mala-pager .mala-paginate-link .mala-caret-next {
+  border-left: 6px dashed #a6b6c6;
+}
+/* ************************************************************************************************ */
+/* ***************************************选项卡样式********************************************** */
+/* ************************************************************************************************ */
+.mala-tab-navi-bar {
+  padding: 0 20px;
+  background: #f7f8f9;
+  margin-bottom: 15px;
+}
+.mala-tab-navi-bar .mala-tab-navi-item {
+  font-size: 15px;
+  color: #a6b6c6;
+  width: 120px;
+  padding: 10px 0;
+  line-height: 30px;
+  text-align: center;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  cursor: pointer;
+}
+.mala-tab-navi-bar .mala-tab-navi-item:hover {
+  color: #13b5b1;
+}
+.mala-tab-navi-bar .mala-tab-navi-item.active {
+  color: #13b5b1;
+  background: #ffffff;
+}
+.mala-tab-navi-bar .mala-tab-navi-item.active:hover {
+  corsor: default;
+}
+/* ************************************************************************************************ */
+/* ***************************************栅格化**************************************************** */
+/* ************************************************************************************************ */
+.mala-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top:0px;
+}
+.mala-container:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+@media (min-width: 768px) {
+  .mala-container {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .mala-container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .mala-container {
+    width: 1180px;
+  }
+}
+.mala-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mala-container-fluid:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+.mala-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.mala-row:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+.mala-col-xs-1,
+.mala-col-sm-1,
+.mala-col-md-1,
+.mala-col-lg-1,
+.mala-col-xs-2,
+.mala-col-sm-2,
+.mala-col-md-2,
+.mala-col-lg-2,
+.mala-col-xs-3,
+.mala-col-sm-3,
+.mala-col-md-3,
+.mala-col-lg-3,
+.mala-col-xs-4,
+.mala-col-sm-4,
+.mala-col-md-4,
+.mala-col-lg-4,
+.mala-col-xs-5,
+.mala-col-sm-5,
+.mala-col-md-5,
+.mala-col-lg-5,
+.mala-col-xs-6,
+.mala-col-sm-6,
+.mala-col-md-6,
+.mala-col-lg-6,
+.mala-col-xs-7,
+.mala-col-sm-7,
+.mala-col-md-7,
+.mala-col-lg-7,
+.mala-col-xs-8,
+.mala-col-sm-8,
+.mala-col-md-8,
+.mala-col-lg-8,
+.mala-col-xs-9,
+.mala-col-sm-9,
+.mala-col-md-9,
+.mala-col-lg-9,
+.mala-col-xs-10,
+.mala-col-sm-10,
+.mala-col-md-10,
+.mala-col-lg-10,
+.mala-col-xs-11,
+.mala-col-sm-11,
+.mala-col-md-11,
+.mala-col-lg-11,
+.mala-col-xs-12,
+.mala-col-sm-12,
+.mala-col-md-12,
+.mala-col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.mala-col-xs-1,
+.mala-col-xs-2,
+.mala-col-xs-3,
+.mala-col-xs-4,
+.mala-col-xs-5,
+.mala-col-xs-6,
+.mala-col-xs-7,
+.mala-col-xs-8,
+.mala-col-xs-9,
+.mala-col-xs-10,
+.mala-col-xs-11,
+.mala-col-xs-12 {
+  float: left;
+}
+.mala-col-xs-12 {
+  width: 100%;
+}
+.mala-col-xs-11 {
+  width: 91.66666667%;
+}
+.mala-col-xs-10 {
+  width: 83.33333333%;
+}
+.mala-col-xs-9 {
+  width: 75%;
+}
+.mala-col-xs-8 {
+  width: 66.66666667%;
+}
+.mala-col-xs-7 {
+  width: 58.33333333%;
+}
+.mala-col-xs-6 {
+  width: 50%;
+}
+.mala-col-xs-5 {
+  width: 41.66666667%;
+}
+.mala-col-xs-4 {
+  width: 33.33333333%;
+}
+.mala-col-xs-3 {
+  width: 25%;
+}
+.mala-col-xs-2 {
+  width: 16.66666667%;
+}
+.mala-col-xs-1 {
+  width: 8.33333333%;
+}
+.mala-col-xs-pull-12 {
+  right: 100%;
+}
+.mala-col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.mala-col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.mala-col-xs-pull-9 {
+  right: 75%;
+}
+.mala-col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.mala-col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.mala-col-xs-pull-6 {
+  right: 50%;
+}
+.mala-col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.mala-col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.mala-col-xs-pull-3 {
+  right: 25%;
+}
+.mala-col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.mala-col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.mala-col-xs-pull-0 {
+  right: auto;
+}
+.mala-col-xs-push-12 {
+  left: 100%;
+}
+.mala-col-xs-push-11 {
+  left: 91.66666667%;
+}
+.mala-col-xs-push-10 {
+  left: 83.33333333%;
+}
+.mala-col-xs-push-9 {
+  left: 75%;
+}
+.mala-col-xs-push-8 {
+  left: 66.66666667%;
+}
+.mala-col-xs-push-7 {
+  left: 58.33333333%;
+}
+.mala-col-xs-push-6 {
+  left: 50%;
+}
+.mala-col-xs-push-5 {
+  left: 41.66666667%;
+}
+.mala-col-xs-push-4 {
+  left: 33.33333333%;
+}
+.mala-col-xs-push-3 {
+  left: 25%;
+}
+.mala-col-xs-push-2 {
+  left: 16.66666667%;
+}
+.mala-col-xs-push-1 {
+  left: 8.33333333%;
+}
+.mala-col-xs-push-0 {
+  left: auto;
+}
+.mala-col-xs-offset-12 {
+  margin-left: 100%;
+}
+.mala-col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.mala-col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.mala-col-xs-offset-9 {
+  margin-left: 75%;
+}
+.mala-col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.mala-col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.mala-col-xs-offset-6 {
+  margin-left: 50%;
+}
+.mala-col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.mala-col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.mala-col-xs-offset-3 {
+  margin-left: 25%;
+}
+.mala-col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.mala-col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.mala-col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .mala-col-sm-1,
+  .mala-col-sm-2,
+  .mala-col-sm-3,
+  .mala-col-sm-4,
+  .mala-col-sm-5,
+  .mala-col-sm-6,
+  .mala-col-sm-7,
+  .mala-col-sm-8,
+  .mala-col-sm-9,
+  .mala-col-sm-10,
+  .mala-col-sm-11,
+  .mala-col-sm-12 {
+    float: left;
+  }
+  .mala-col-sm-12 {
+    width: 100%;
+  }
+  .mala-col-sm-11 {
+    width: 91.66666667%;
+  }
+  .mala-col-sm-10 {
+    width: 83.33333333%;
+  }
+  .mala-col-sm-9 {
+    width: 75%;
+  }
+  .mala-col-sm-8 {
+    width: 66.66666667%;
+  }
+  .mala-col-sm-7 {
+    width: 58.33333333%;
+  }
+  .mala-col-sm-6 {
+    width: 50%;
+  }
+  .mala-col-sm-5 {
+    width: 41.66666667%;
+  }
+  .mala-col-sm-4 {
+    width: 33.33333333%;
+  }
+  .mala-col-sm-3 {
+    width: 25%;
+  }
+  .mala-col-sm-2 {
+    width: 16.66666667%;
+  }
+  .mala-col-sm-1 {
+    width: 8.33333333%;
+  }
+  .mala-col-sm-pull-12 {
+    right: 100%;
+  }
+  .mala-col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .mala-col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .mala-col-sm-pull-9 {
+    right: 75%;
+  }
+  .mala-col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .mala-col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .mala-col-sm-pull-6 {
+    right: 50%;
+  }
+  .mala-col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .mala-col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .mala-col-sm-pull-3 {
+    right: 25%;
+  }
+  .mala-col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .mala-col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .mala-col-sm-pull-0 {
+    right: auto;
+  }
+  .mala-col-sm-push-12 {
+    left: 100%;
+  }
+  .mala-col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .mala-col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .mala-col-sm-push-9 {
+    left: 75%;
+  }
+  .mala-col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .mala-col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .mala-col-sm-push-6 {
+    left: 50%;
+  }
+  .mala-col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .mala-col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .mala-col-sm-push-3 {
+    left: 25%;
+  }
+  .mala-col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .mala-col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .mala-col-sm-push-0 {
+    left: auto;
+  }
+  .mala-col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .mala-col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .mala-col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .mala-col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .mala-col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .mala-col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .mala-col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .mala-col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .mala-col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .mala-col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .mala-col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .mala-col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .mala-col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .mala-col-md-1,
+  .mala-col-md-2,
+  .mala-col-md-3,
+  .mala-col-md-4,
+  .mala-col-md-5,
+  .mala-col-md-6,
+  .mala-col-md-7,
+  .mala-col-md-8,
+  .mala-col-md-9,
+  .mala-col-md-10,
+  .mala-col-md-11,
+  .mala-col-md-12 {
+    float: left;
+  }
+  .mala-col-md-12 {
+    width: 100%;
+  }
+  .mala-col-md-11 {
+    width: 91.66666667%;
+  }
+  .mala-col-md-10 {
+    width: 83.33333333%;
+  }
+  .mala-col-md-9 {
+    width: 75%;
+  }
+  .mala-col-md-8 {
+    width: 66.66666667%;
+  }
+  .mala-col-md-7 {
+    width: 58.33333333%;
+  }
+  .mala-col-md-6 {
+    width: 50%;
+  }
+  .mala-col-md-5 {
+    width: 41.66666667%;
+  }
+  .mala-col-md-4 {
+    width: 33.33333333%;
+  }
+  .mala-col-md-3 {
+    width: 25%;
+  }
+  .mala-col-md-2 {
+    width: 16.66666667%;
+  }
+  .mala-col-md-1 {
+    width: 8.33333333%;
+  }
+  .mala-col-md-pull-12 {
+    right: 100%;
+  }
+  .mala-col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .mala-col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .mala-col-md-pull-9 {
+    right: 75%;
+  }
+  .mala-col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .mala-col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .mala-col-md-pull-6 {
+    right: 50%;
+  }
+  .mala-col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .mala-col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .mala-col-md-pull-3 {
+    right: 25%;
+  }
+  .mala-col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .mala-col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .mala-col-md-pull-0 {
+    right: auto;
+  }
+  .mala-col-md-push-12 {
+    left: 100%;
+  }
+  .mala-col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .mala-col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .mala-col-md-push-9 {
+    left: 75%;
+  }
+  .mala-col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .mala-col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .mala-col-md-push-6 {
+    left: 50%;
+  }
+  .mala-col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .mala-col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .mala-col-md-push-3 {
+    left: 25%;
+  }
+  .mala-col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .mala-col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .mala-col-md-push-0 {
+    left: auto;
+  }
+  .mala-col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .mala-col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .mala-col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .mala-col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .mala-col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .mala-col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .mala-col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .mala-col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .mala-col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .mala-col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .mala-col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .mala-col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .mala-col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .mala-col-lg-1,
+  .mala-col-lg-2,
+  .mala-col-lg-3,
+  .mala-col-lg-4,
+  .mala-col-lg-5,
+  .mala-col-lg-6,
+  .mala-col-lg-7,
+  .mala-col-lg-8,
+  .mala-col-lg-9,
+  .mala-col-lg-10,
+  .mala-col-lg-11,
+  .mala-col-lg-12 {
+    float: left;
+  }
+  .mala-col-lg-12 {
+    width: 100%;
+  }
+  .mala-col-lg-11 {
+    width: 91.66666667%;
+  }
+  .mala-col-lg-10 {
+    width: 83.33333333%;
+  }
+  .mala-col-lg-9 {
+    width: 75%;
+  }
+  .mala-col-lg-8 {
+    width: 66.66666667%;
+  }
+  .mala-col-lg-7 {
+    width: 58.33333333%;
+  }
+  .mala-col-lg-6 {
+    width: 50%;
+  }
+  .mala-col-lg-5 {
+    width: 41.66666667%;
+  }
+  .mala-col-lg-4 {
+    width: 33.33333333%;
+  }
+  .mala-col-lg-3 {
+    width: 25%;
+  }
+  .mala-col-lg-2 {
+    width: 16.66666667%;
+  }
+  .mala-col-lg-1 {
+    width: 8.33333333%;
+  }
+  .mala-col-lg-pull-12 {
+    right: 100%;
+  }
+  .mala-col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .mala-col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .mala-col-lg-pull-9 {
+    right: 75%;
+  }
+  .mala-col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .mala-col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .mala-col-lg-pull-6 {
+    right: 50%;
+  }
+  .mala-col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .mala-col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .mala-col-lg-pull-3 {
+    right: 25%;
+  }
+  .mala-col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .mala-col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .mala-col-lg-pull-0 {
+    right: auto;
+  }
+  .mala-col-lg-push-12 {
+    left: 100%;
+  }
+  .mala-col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .mala-col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .mala-col-lg-push-9 {
+    left: 75%;
+  }
+  .mala-col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .mala-col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .mala-col-lg-push-6 {
+    left: 50%;
+  }
+  .mala-col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .mala-col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .mala-col-lg-push-3 {
+    left: 25%;
+  }
+  .mala-col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .mala-col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .mala-col-lg-push-0 {
+    left: auto;
+  }
+  .mala-col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .mala-col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .mala-col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .mala-col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .mala-col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .mala-col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .mala-col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .mala-col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .mala-col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .mala-col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .mala-col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .mala-col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .mala-col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* ************************************************************************************************ */
+/* ***************************************页面元素开始*********************************************** */
+/* ************************************************************************************************ */
+/* 页头********************************************* */
+.mala-header {
+  height: 60px;
+  background-color: #13b5b1;
+}
+.mala-header-fix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+/* logo******************* */
+.mala-logo {
+  display: block;
+  width: 256px;
+  height: 40px;
+  margin-top: 10px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+.mala-header-fix .mala-logo {
+  margin-left: 15px;
+}
+/* 用户信息******************* */
+.mala-user-info {
+  position: relative;
+}
+.mala-header-fix .mala-user-info {
+  margin-right: 15px;
+}
+.mala-username {
+  display: inline-block;
+  padding: 10px 10px;
+  color: #ffffff;
+  line-height: 40px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.mala-username:hover {
+  color: #ffffff;
+}
+/* 用户头像******************* */
+.mala-avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 10px;
+  background: url(../images/avatar.png) no-repeat;
+  background-size: cover;
+}
+.mala-avatar img {
+  width: 40px;
+  height: 40px;
+}
+/* 主菜单******************* */
+.mala-nav-list {
+  margin-right: 60px;
+}
+.mala-nav-item {
+  position: relative;
+}
+.mala-nav-link {
+  display: inline-block;
+  width: 120px;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.mala-nav-link:hover,
+.mala-nav-link.active {
+  background: #0ca09b;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* 下拉菜单******************* */
+.mala-header-dropdown-list {
+  position: absolute;
+  top: 60px;
+  z-index: 10;
+  display: none;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 4px #999;
+}
+.mala-header-dropdown-list .mala-arrow {
+  position: absolute;
+  top: -6px;
+  right: 13px;
+  border-width: 6px;
+  border-top-color: #ffffff;
+}
+.mala-header-dropdown-item .mala-link {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.mala-header-dropdown-item .mala-link:hover {
+  text-decoration: none;
+  background: #f1f3f5;
+}
+/* 轮播********************************************* */
+.mala-slider {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+}
+.mala-slide-list {
+  height: 100%;
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.mala-slide-item {
+  height: 100%;
+  clear: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+.mala-slide-title {
+  font-size: 48px;
+  margin-top: 80px;
+  font-weight: 500;
+}
+.mala-slide-subtitle {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.mala-slide-cont {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+/* 左右箭头******************* */
+.slider-arrow {
+  position: absolute;
+  display: block;
+  margin-bottom: -40px;
+  width: 40px;
+  height: 80px;
+  line-height: 999;
+  overflow: hidden;
+  opacity: .6;
+}
+.slider-arrow-right {
+  bottom: 50%;
+  right: 40px;
+  background: url(../images/slider-arrow.png) no-repeat -40px 0;
+}
+.slider-arrow-left {
+  bottom: 50%;
+  left: 40px;
+  background: url(../images/slider-arrow.png) no-repeat 0 0;
+}
+.slider-arrow:hover {
+  opacity: 1;
+}
+/* 圆点展示******************* */
+.slider-nav {
+  position: absolute;
+  bottom: 30px;
+}
+.slider-nav-item {
+  width: 12px;
+  height: 12px;
+  float: left;
+  clear: none;
+  display: block;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 6px;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+.slider-nav-item-current {
+  opacity: 1;
+}
+/* 通知栏********************************************* */
+.mala-notice {
+  padding: 10px 0;
+  background: #333333;
+  line-height: 40px;
+  color: #ffffff;
+}
+/* 主内容********************************************* */
+.mala-main {
+  height: auto;
+  overflow: hidden;
+  margin:0px;
+  padding:0px;
+}
+.mala-figure {
+  padding: 15px 0;
+}
+/* 产品特点********************************************* */
+.mala-service-item {
+  text-align: center;
+}
+.mala-service-img {
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 10px;
+  margin-top:0px;
+}
+.mala-service-img .fa {
+  font-size: 96px;
+  color: #13b5b1;
+}
+.mala-service-title {
+  font-size: 24px;
+  color: #666666;
+}
+.mala-service-desc {
+  font-size: 15px;
+  color: #999999;
+}
+/* 页尾********************************************* */
+.mala-footer {
+  background: #f7f8f9;
+  padding: 20px 0;
+}
+.mala-footer-dl {
+  text-align: left;
+}
+.mala-footer-dt {
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+.mala-footer-dd {
+  line-height: 1.8;
+}
+.mala-footer-copyright {
+  color: #999999;
+}
+/* ************************************************************************************************ */
+/* *******************************************左侧菜单********************************************** */
+/* ************************************************************************************************ */
+.mala-aside {
+  background: #f1f3f5;
+  width: 180px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.mala-subnavi-title {
+  padding: 10px 0 0 15px;
+  margin-top: 10px;
+  background: url(../images/title-shadow.png) top center no-repeat;
+  font-size: 13px;
+  color: #a6b6c6;
+  line-height: 40px;
+  font-weight: 500;
+}
+.mala-thirdnavi-list {
+  display: none;
+}
+.mala-subnavi-title:first-child {
+  background-image: none;
+  margin-top: 0;
+}
+.mala-subnavi-link,
+.mala-thirdnavi-link,
+.mala-subnavi-lead {
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 15px;
+  color: #667686;
+  line-height: 40px;
+}
+.mala-subnavi-link .mala-arrow,
+.mala-thirdnavi-link .mala-arrow,
+.mala-subnavi-lead .mala-arrow {
+  margin-top: 18px;
+}
+.mala-subnavi-link .mala-arrow-up,
+.mala-thirdnavi-link .mala-arrow-up,
+.mala-subnavi-lead .mala-arrow-up {
+  border-bottom-color: #cccccc;
+}
+.mala-subnavi-link .mala-arrow-up:hover,
+.mala-thirdnavi-link .mala-arrow-up:hover,
+.mala-subnavi-lead .mala-arrow-up:hover {
+  border-bottom-color: #999999;
+}
+.mala-subnavi-link .mala-arrow-down,
+.mala-thirdnavi-link .mala-arrow-down,
+.mala-subnavi-lead .mala-arrow-down {
+  border-top-color: #cccccc;
+}
+.mala-subnavi-link .mala-arrow-down:hover,
+.mala-thirdnavi-link .mala-arrow-down:hover,
+.mala-subnavi-lead .mala-arrow-down:hover {
+  border-top-color: #999999;
+}
+.mala-subnavi-lead:hover .mala-arrow-down {
+  border-top-color: #999999;
+}
+.mala-subnavi-lead:hover .mala-arrow-up {
+  border-bottom-color: #999999;
+}
+.mala-subnavi-link:hover,
+.mala-thirdnavi-link:hover,
+.mala-subnavi-link.active,
+.mala-thirdnavi-link.active {
+  color: #ffffff;
+  background: #a6b6c6;
+  text-decoration: none;
+}
+.mala-thirdnavi-link {
+  padding-left: 41px;
+}
+/* ************************************************************************************************ */
+/* *******************************************内页主内容布局********************************************** */
+/* ************************************************************************************************ */
+.mala-content {
+  left: 180px;
+  top: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+/* 主标题栏******************************** */
+.mala-title-bar {
+  background: #f7f8f9;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 40px;
+}
+.mala-title-bar.mala-title-bar-solo {
+  margin-bottom: 15px;
+}
+/* 概况******************************** */
+.mala-overview-bar {
+  padding: 20px 20px;
+  background: #f7f8f9;
+  margin-bottom: 15px;
+}
+/* 欢迎******************* */
+.mala-welcome {
+  font-size: 19.200000000000003px;
+  color: #333333;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+/* 上次登录******************* */
+.mala-login-time {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+/* 数据概览******************* */
+.mala-statistic-item {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #13b5b1;
+  color: #ffffff;
+  text-align: center;
+}
+.mala-circle-title {
+  font-size: 36px;
+  margin-top: 15px;
+  line-height: 1.5;
+  display: inline-block;
+}
+.mala-circle-desc {
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* 搜索筛选**************************************** */
+.mala-search-bar {
+  margin-bottom: 15px;
+}
+/* 批量操作按钮**************************************** */
+.mala-opt-bar {
+  padding: 10px 10px;
+  background: #f7f8f9;
+  border-radius: 2px;
+}
+.mala-opt-bar .mala-fake-select .mala-select-title {
+  line-height: 18px;
+}
+/* ************************************************************************************************ */
+/* ***************************************任务流**************************************************** */
+/* ************************************************************************************************ */
+.mala-flow-bar {
+  background: #f7f8f9;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+.mala-flow-list {
+  background: #a6b6c6;
+  width: 600px;
+  height: 30px;
+  border-radius: 17.5px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.mala-flow-list .mala-flow-item {
+  width: 200px;
+  height: 100%;
+  border-radius: 15px;
+}
+.mala-flow-list .mala-flow-item.active {
+  background: #13b5b1;
+  color: #ffffff;
+}
+.mala-flow-list .mala-flow-item.active:hover {
+  cursor: default;
+}
+/* ************************************************************************************************ */
+/* ***************************************面板基本样式********************************************** */
+/* ************************************************************************************************ */
+.mala-panel {
+  margin-bottom: 15px;
+}
+.mala-panel-heading {
+  padding: 5px 15px;
+  line-height: 35px;
+  background: #f1f3f5;
+  border-radius: 2px;
+}
+.mala-panel-title {
+  font-size: 15px;
+  color: #333333;
+}
+.mala-panel-more {
+  font-size: 13px;
+}
+.mala-panel-filter {
+  margin-right: -10px;
+}
+/* ************************************************************************************************ */
+/* **************************************表单提交基本样式******************************************** */
+/* ************************************************************************************************ */
+.mala-form {
+  width: 900px;
+}
+.mala-form-item {
+  margin-bottom: 15px;
+}
+.mala-form-item .mala-label {
+  display: block;
+  text-align: right;
+}
+.mala-form-item .mala-required {
+  color: #ff6156;
+}
+.mala-form-item textarea {
+  resize: none;
+}
+.mala-form-item .mala-tiper {
+  color: #bbb;
+  display: block;
+}
+.mala-form-item .mala-form-photo {
+  width: 100%;
+  border-radius: 2px;
+}
+.mala-form-opt {
+  background: #f7f8f9;
+  padding: 20px 20px;
+  text-align: center;
+}
+/* ************************************************************************************************ */
+/* ******************************************弹窗基本样式******************************************** */
+/* ************************************************************************************************ */
+.mala-modal-open {
+  overflow: hidden;
+}
+.mala-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.mala-modal.fade .mala-modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate3d(0, -25%, 0);
+  -o-transform: translate3d(0, -25%, 0);
+  transform: translate3d(0, -25%, 0);
+}
+.mala-modal.in .mala-modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.mala-modal-open .mmala-odal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.mala-modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.mala-modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.mala-modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.mala-modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.mala-modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.mala-modal-header {
+  padding: 20px;
+  line-height: 20px;
+  border-bottom: 1px solid #f1f3f5;
+  background: #f7f8f9;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.mala-modal-header .close {
+  margin-top: -2px;
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+.mala-modal-title {
+  margin: 0;
+  font-size: 15px;
+  color: #333333;
+}
+.mala-modal-body {
+  position: relative;
+  padding: 10px 30px;
+  max-height: 500px;
+  overflow: auto;
+}
+.mala-modal-footer {
+  padding: 10px 20px;
+  text-align: right;
+  background: #f7f8f9;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .mala-modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .mala-modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .mala-modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .mala-modal-lg {
+    width: 900px;
+  }
+}
+.mala-modal .mala-form {
+  width: 100%;
+}
+/* ************************************************************************************************ */
+/* *****************************************显示隐藏左侧菜单****************************************** */
+/* ************************************************************************************************ */
+.mala-aside-opt {
+  position: absolute;
+  z-index: 12;
+  left: 4px;
+  bottom: 4px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.mala-aside-opt a {
+  display: block;
+  background: #a6b6c6;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  line-height: 22px;
+  text-align: center;
+  font-size: 15px;
+}
+.mala-aside-opt a .fa {
+  margin-right: 1px;
+}
+.mala-aside-opt a:hover {
+  background: #667686;
+  color: #ffffff;
+}
+.mala-aside-hide-body .mala-content {
+  left: 0;
+  background: #fff;
+}
