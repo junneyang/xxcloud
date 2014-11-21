@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>xCloud开放云平台-任务管理</title>
+	<title>xCloudFoundry 开放平台-任务管理</title>
 	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
 	<script src="/static/js/jquery-1.9.0.js"></script>
 	<script src="/static/js/common.js" type="text/javascript"></script>
@@ -41,7 +41,7 @@
 	<!--标题栏-->
 	<div class="header">
 		<div class="h_logo"><a href="#" title="xCloud"><img src="/static/images/qaup_logo.png" alt=""  /></a></div>
-		<div class="h_nav">
+		<div class="h_nav" style="margin-top:33px;margin-right:10%">
 			<span><span id='id_user_name'>{{usrname}}</span>, 欢迎您</span>&nbsp;&nbsp;&nbsp;<span><a href="#"><i class="icon16 icon16-setting"></i>个人中心</a></span>&nbsp;&nbsp;&nbsp;<span><a href="/logout/"><i class="icon16 icon16-power"></i>退出</a></span>
 		</div>
 	</div>

@@ -1,43 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/app-test/search/lbs-stat/!svn/ver/4420/trunk/upps_test/jenkinsFramework/protobuf/src
-END
-test.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/app-test/search/lbs-stat/!svn/ver/2695/trunk/upps_test/jenkinsFramework/protobuf/src/test.cpp
-END
-requestthreadpool.h
-K 25
-svn:wc:ra_dav:version-url
-V 105
-/app-test/search/lbs-stat/!svn/ver/2886/trunk/upps_test/jenkinsFramework/protobuf/src/requestthreadpool.h
-END
-pbrpcbenchmark.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 104
-/app-test/search/lbs-stat/!svn/ver/4420/trunk/upps_test/jenkinsFramework/protobuf/src/pbrpcbenchmark.cpp
-END
-descripter.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 100
-/app-test/search/lbs-stat/!svn/ver/2548/trunk/upps_test/jenkinsFramework/protobuf/src/descripter.cpp
-END
-pbrpcclient.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 101
-/app-test/search/lbs-stat/!svn/ver/4419/trunk/upps_test/jenkinsFramework/protobuf/src/pbrpcclient.cpp
+/app-test/search/lbs-stat/!svn/ver/5086/trunk/upps_test/jenkinsFramework/protobuf/src
 END
 common.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/app-test/search/lbs-stat/!svn/ver/4416/trunk/upps_test/jenkinsFramework/protobuf/src/common.cpp
+/app-test/search/lbs-stat/!svn/ver/5086/trunk/upps_test/jenkinsFramework/protobuf/src/common.cpp
 END
 jsontest.cpp
 K 25
@@ -80,4 +50,34 @@ K 25
 svn:wc:ra_dav:version-url
 V 108
 /app-test/search/lbs-stat/!svn/ver/2825/trunk/upps_test/jenkinsFramework/protobuf/src/pbrpcbenchmark.cpp.bak
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/app-test/search/lbs-stat/!svn/ver/2695/trunk/upps_test/jenkinsFramework/protobuf/src/test.cpp
+END
+requestthreadpool.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app-test/search/lbs-stat/!svn/ver/2886/trunk/upps_test/jenkinsFramework/protobuf/src/requestthreadpool.h
+END
+pbrpcbenchmark.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app-test/search/lbs-stat/!svn/ver/4420/trunk/upps_test/jenkinsFramework/protobuf/src/pbrpcbenchmark.cpp
+END
+descripter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/app-test/search/lbs-stat/!svn/ver/2548/trunk/upps_test/jenkinsFramework/protobuf/src/descripter.cpp
+END
+pbrpcclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app-test/search/lbs-stat/!svn/ver/4419/trunk/upps_test/jenkinsFramework/protobuf/src/pbrpcclient.cpp
 END

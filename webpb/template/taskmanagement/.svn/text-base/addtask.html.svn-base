@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>xCloud开放云平台-任务管理</title>
+	<title>xCloudFoundry 开放平台-任务管理</title>
 	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
 	<script src="/static/js/jquery-1.9.0.js"></script>
 	<script src="/static/js/common.js" type="text/javascript"></script>
@@ -41,7 +41,7 @@
 	<!--标题栏-->
 	<div class="header">
 		<div class="h_logo"><a href="#" title="xCloud"><img src="/static/images/qaup_logo.png" alt="" /></a></div>
-		<div class="h_nav">
+		<div class="h_nav"  style="margin-top:33px;margin-right:10%">
 			<span><span id='id_user_name'>{{usrname}}</span>, 欢迎您</span>&nbsp;&nbsp;&nbsp;<span><a href="#"><i class="icon16 icon16-setting"></i>个人中心</a></span>&nbsp;&nbsp;&nbsp;<span><a href="/logout/"><i class="icon16 icon16-power"></i>退出</a></span>
 		</div>
 	</div>
@@ -99,6 +99,14 @@
 							<input type="radio" name="name_specifynode" checked="checked" value="1" /> 是
 							<input type="radio" name="name_specifynode" value="0" /> 否 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">仅在参数中需要指定节点时有效</span>
 						</td>
+					</tr>
+					<tr height=50>
+						<td valign=top width=70>节点<span style="color:red">*</span> </td> 
+						<td valign=top >
+							此处显示集群内节点列表，要求选择特定节点或者选择节点个数，暂未实现
+							<!--<input type="radio" name="name_specifynode" checked="checked" value="1" /> 是
+							<input type="radio" name="name_specifynode" value="0" /> 否 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray;">仅在参数中需要指定节点时有效</span>
+						--></td>   
 					</tr>
 					<tr height=100>
 						<td valign=top width=70>参 数<span style="color:red">*</span></td>
@@ -266,6 +274,12 @@
 			var SpecifyNode = radio_select("name_specifynode");
 			var params = $('#id_params').val();
 			//alert(SpecifyNode);
+			try {
+				data=eval('('+params+')');
+			} catch (e) {
+				MessageBox('warning', 'JSON参数格式有误');
+				return;
+			}
 			if (submit == "" || cluster == 0 || service == 0 || params == "") {
 				//alert("请输入必填项");
 				MessageBox('warning', '请输入必填项');
@@ -282,7 +296,9 @@
 					//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
 					beforeSend:function(XMLHttpRequest){
 					   //alert('远程调用开始...');
-					   document.getElementById("id_add").disabled=true;
+					   document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #CCC";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #CCC";
 					   document.getElementById('id_loading').style.display = "block";
 					},
 					//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
@@ -293,11 +309,17 @@
 					},*/
 					error:function(XMLHttpRequest,textStatus,errorThrown){
 						document.getElementById('id_loading').style.display = "none"; 
-						document.getElementById("id_add").disabled=false;
+						//$("#id_add").attr("disabled",false); //不可用
+						document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
 					},
 					success: function(data){//msg为返回的数据，在这里做数据绑定
 						document.getElementById('id_loading').style.display = "none"; 
-						document.getElementById("id_add").disabled=false;
+						document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
+						//$("#id_add").attr("disabled",false); //不可用
 						if (data.errcode == 0) {
 							//MessageBox('warning', '任务提交成功');
 							//window.location.href = "/";

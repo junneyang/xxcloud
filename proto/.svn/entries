@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-user_proto.h
-file
-
-
-
-
-2014-11-13T09:17:05.000000Z
-71bf778382e45b192c249470ea1f57cc
-2014-10-22T04:37:34.464930Z
-3861
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-353
 
 regist_condition.pb.cc
 file
@@ -93,6 +59,40 @@ yangjun03
 
 
 179672
+
+user_proto.h
+file
+
+
+
+
+2014-11-13T09:17:05.000000Z
+71bf778382e45b192c249470ea1f57cc
+2014-10-22T04:37:34.464930Z
+3861
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+353
 
 pbrpc_service.proto
 file
@@ -162,40 +162,6 @@ yangjun03
 
 111590
 
-common.proto
-file
-
-
-
-
-2014-11-13T09:17:05.000000Z
-ced33fafa2b1ccee2f9c443e9592a134
-2014-09-28T02:47:34.250799Z
-2503
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-229
-
 pbrpc.pb.cc
 file
 
@@ -229,6 +195,40 @@ yangjun03
 
 
 705122
+
+common.proto
+file
+
+
+
+
+2014-11-13T09:17:05.000000Z
+ced33fafa2b1ccee2f9c443e9592a134
+2014-09-28T02:47:34.250799Z
+2503
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+229
 
 pbrpc.pb.h
 file
@@ -298,40 +298,6 @@ yangjun03
 
 970
 
-ipc.pb.cc
-file
-
-
-
-
-2014-11-13T09:17:05.000000Z
-1883605e9b769141d9d15cb843ec4827
-2014-10-08T05:58:21.518692Z
-2782
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-77037
-
 helloworld.pb.cc
 file
 
@@ -365,6 +331,40 @@ yangjun03
 
 
 14290
+
+ipc.pb.cc
+file
+
+
+
+
+2014-11-13T09:17:05.000000Z
+1883605e9b769141d9d15cb843ec4827
+2014-10-08T05:58:21.518692Z
+2782
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+77037
 
 helloworld.pb.h
 file
@@ -808,40 +808,6 @@ yangjun03
 
 7780
 
-echo.proto
-file
-
-
-
-
-2014-11-13T09:17:05.000000Z
-da3594940ed82bce90149f00b7f5caaf
-2014-10-22T04:37:34.464930Z
-3861
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-805
-
 transport.pb.cc
 file
 
@@ -875,6 +841,40 @@ yangjun03
 
 
 32478
+
+echo.proto
+file
+
+
+
+
+2014-11-13T09:17:05.000000Z
+da3594940ed82bce90149f00b7f5caaf
+2014-10-22T04:37:34.464930Z
+3861
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+805
 
 transport.pb.h
 file

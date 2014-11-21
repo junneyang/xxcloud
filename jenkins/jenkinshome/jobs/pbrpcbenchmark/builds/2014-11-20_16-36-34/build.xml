@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>UNIQUE_ID</name>
+          <description>必填。Job唯一ID标识。默认：1。</description>
+          <value>166</value>
+        </hudson.model.StringParameterValue>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.5.1">
+          <name>ClientNode</name>
+          <description>必选，测试执行机选择。如：yangjun03。</description>
+          <label>linqiaoying</label>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WorkPath</name>
+          <description>必填。工作路径。如：/home/users/yangjun03/workspace。</description>
+          <value>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>PBTYPE</name>
+          <description>必填。pbrpc的类型，支持PUBLIC-PBRPC、SOFA-PBRPC、HULU-PBRPC。默认为PUBLIC-PBRPC。</description>
+          <value>PUBLIC-PBRPC</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IPPORT</name>
+          <description>必填。被测系统IPPORT。默认为127.0.0.1:7788。</description>
+          <value>10.48.55.39:7788</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ServiceName</name>
+          <description>必填。被测接口的ServiceName(可参考proto文件描述)。默认为lbs.da.openservice.ItemService。</description>
+          <value>lbs.da.openservice.ItemService</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>MethodName</name>
+          <description>必填。被测接口方法名(可参考proto文件描述)。默认为GetItemsByItem。</description>
+          <value>GetItemsByItem</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WorkThreadNum</name>
+          <description>必填。工作线程数，请配置为2*N。默认为8，建议不修改。</description>
+          <value>8</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>SendThreadNum</name>
+          <description>必填。工作线程数。默认为2，压力较大时可增加。</description>
+          <value>2</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ClientNum</name>
+          <description>必填。客户端即socket连接个数。默认为20，压力较大时可增加。</description>
+          <value>20</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>SendRate</name>
+          <description>必填。每个线程每个连接每秒发送请求数。默认为200，即发送QPS约为2*20*200=8000。如果配置为-1，则为压力山大模式。</description>
+          <value>200</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IsRandom</name>
+          <description>必填。是否随机发送，1 : 随机发送, 0 : 顺序循环发送。默认为1。</description>
+          <value>1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TestTime</name>
+          <description>必填。测试时间(单位分钟)。默认为1.0。</description>
+          <value>1.0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IsOutput</name>
+          <description>必填。是否打印返回结果。1 : 打印, 0 : 不打印。建议在调试模式下开启，性能测试时关闭。默认为0。</description>
+          <value>0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>TestData</name>
+          <description>必填。json格式的测试数据，支持多条数据。</description>
+          <value>[{&quot;input&quot;: {&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}, &quot;expect&quot;: {&quot;items&quot;: [{&quot;str_value&quot;: [], &quot;id&quot;: &quot;18012202574307917823&quot;, &quot;value&quot;: [0.3, 0.5, 0.4]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;12313225205891489106&quot;, &quot;value&quot;: [1]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;18119621412888245380&quot;, &quot;value&quot;: [0.7]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;2071168565446484381&quot;, &quot;value&quot;: [0.3]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;11710154692952313709&quot;, &quot;value&quot;: [0.3]}], &quot;args&quot;: []}}, {&quot;input&quot;: {&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}, &quot;expect&quot;: {&quot;items&quot;: [{&quot;str_value&quot;: [], &quot;id&quot;: &quot;18012202574307917823&quot;, &quot;value&quot;: [0.3, 0.5, 0.4]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;12313225205891489106&quot;, &quot;value&quot;: [1]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;18119621412888245380&quot;, &quot;value&quot;: [0.7]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;2071168565446484381&quot;, &quot;value&quot;: [0.3]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;11710154692952313709&quot;, &quot;value&quot;: [0.3]}], &quot;args&quot;: []}}]</value>
+        </hudson.model.TextParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.5.1">
+      <label>linqiaoying</label>
+      <tooltip>Run with label [linqiaoying] (node: linqiaoying)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+  </actions>
+  <number>16</number>
+  <startTime>1416472594343</startTime>
+  <result>FAILURE</result>
+  <duration>103</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn>linqiaoying</builtOn>
+  <workspace>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool/workspace/pbrpcbenchmark</workspace>
+  <hudsonVersion>1.590</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

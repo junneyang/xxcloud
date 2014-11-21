@@ -1,7 +1,7 @@
 10
 
 dir
-5042
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/exporting-server/java/highcharts-export/highcharts-export-web/src/main
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,12 +26,12 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-resources
-dir
-
 webapp
 dir
 
 java
+dir
+
+resources
 dir
 

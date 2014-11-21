@@ -504,8 +504,7 @@ proto/pbrpcclient_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcclient_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h \
-  proto/rp.pb.h
+  proto/regist_condition.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
 
@@ -704,8 +703,7 @@ proto/pbrpcbenchmark_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcbenchmark_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h \
-  proto/rp.pb.h
+  proto/regist_condition.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
 

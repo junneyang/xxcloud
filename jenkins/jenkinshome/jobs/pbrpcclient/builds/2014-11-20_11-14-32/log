@@ -1,0 +1,9 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/jobstatus/'
+Building remotely on [8mha:AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/UqgOVmleQbGAAUL1IfIAAAA[0myangjun03 in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome/workspace/pbrpcclient
+[pbrpcclient] $ /bin/sh -xe /tmp/hudson5491026718508351889.sh
++ cd /home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool/pb
+/tmp/hudson5491026718508351889.sh: line 2: cd: /home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool/pb: No such file or directory
+Build step 'Execute shell' marked build as failure
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/jobstatus/'
+Finished: FAILURE

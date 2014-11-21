@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/example
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-traditional_testCase.py
-file
-
-
-
-
-2014-11-19T02:39:19.000000Z
-bc55e1319ebbfa67b9ea1d3f584bf236
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1173
 
 helloworld.html
 file
@@ -161,4 +127,38 @@ yangjun03
 
 
 1226
+
+traditional_testCase.py
+file
+
+
+
+
+2014-11-19T02:39:19.000000Z
+bc55e1319ebbfa67b9ea1d3f584bf236
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1173
 

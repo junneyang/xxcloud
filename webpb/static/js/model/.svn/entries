@@ -1,7 +1,7 @@
 10
 
 dir
-5042
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,10 +26,13 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-cycle
+uploadify
 dir
 
 dialog
+dir
+
+cycle
 dir
 
 SmartWizard-master
@@ -47,10 +50,10 @@ dir
 flaviusmatis-simplePagination.js-9d0304d
 dir
 
-img
+bxslider
 dir
 
-bxslider
+img
 dir
 
 jquery-ui-1.11.1.custom
@@ -66,8 +69,5 @@ highcharts
 dir
 
 xdialog
-dir
-
-uploadify
 dir
 

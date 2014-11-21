@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/jenkinsapi-0.2.25/jenkinsapi-0.2.25/jenkinsapi/command_line
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-jenkins_invoke.py
-file
-
-
-
-
-2014-11-19T02:39:22.000000Z
-61bba87bd2254d48858284c427e4b67d
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2735
 
 __init__.py
 file
@@ -127,4 +93,38 @@ yangjun03
 
 
 140
+
+jenkins_invoke.py
+file
+
+
+
+
+2014-11-19T02:39:22.000000Z
+61bba87bd2254d48858284c427e4b67d
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2735
 

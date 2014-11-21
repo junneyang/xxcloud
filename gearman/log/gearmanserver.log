@@ -7934,3 +7934,48 @@ Options:
 432041362 [gearman-33] INFO gearman - [10.48.55.39:34938] : IN  : PRE_SLEEP
 432091716 [gearman-33] INFO gearman - [10.48.55.39:34939] : Disconnected
 432091717 [gearman-33] INFO gearman - [10.48.55.39:34938] : Disconnected
+433331234 [gearman-33] INFO gearman - [127.0.0.1:21906] : Connected
+433331235 [gearman-33] INFO gearman - [127.0.0.1:21906] : IN  : SUBMIT_JOB
+433331235 [gearman-33] INFO gearman - [127.0.0.1:21906] : OUT : JOB_CREATED
+433331235 [gearman-33] INFO gearman - [10.48.55.39:16860] : OUT : NOOP
+433331235 [gearman-33] INFO gearman - [10.48.55.39:16861] : OUT : NOOP
+433331235 [gearman-33] INFO gearman - [10.48.55.39:17658] : OUT : NOOP
+433331236 [gearman-33] INFO gearman - [10.48.55.39:17662] : OUT : NOOP
+433331236 [gearman-33] INFO gearman - [10.48.55.39:17823] : OUT : NOOP
+433331236 [gearman-33] INFO gearman - [10.48.55.39:17824] : OUT : NOOP
+433331236 [gearman-33] INFO gearman - [10.48.55.39:12035] : OUT : NOOP
+433331237 [gearman-33] INFO gearman - [10.48.55.39:12036] : OUT : NOOP
+433331238 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : GRAB_JOB_UNIQ
+433331238 [gearman-33] INFO gearman - [10.48.55.39:17662] : OUT : JOB_ASSIGN_UNIQ
+433331238 [gearman-33] INFO gearman - [10.48.55.39:16860] : IN  : GRAB_JOB_UNIQ
+433331238 [gearman-33] INFO gearman - [10.48.55.39:16860] : OUT : NO_JOB
+433331239 [gearman-35] INFO gearman - [10.48.55.39:17824] : IN  : GRAB_JOB_UNIQ
+433331239 [gearman-35] INFO gearman - [10.48.55.39:17824] : OUT : NO_JOB
+433331239 [gearman-36] INFO gearman - [10.48.55.39:12036] : IN  : GRAB_JOB_UNIQ
+433331239 [gearman-36] INFO gearman - [10.48.55.39:12036] : OUT : NO_JOB
+433331241 [gearman-36] INFO gearman - [10.48.55.39:17824] : IN  : PRE_SLEEP
+433331241 [gearman-36] INFO gearman - [10.48.55.39:16860] : IN  : PRE_SLEEP
+433331241 [gearman-35] INFO gearman - [10.48.55.39:12035] : IN  : GRAB_JOB_UNIQ
+433331241 [gearman-35] INFO gearman - [10.48.55.39:12035] : OUT : NO_JOB
+433331241 [gearman-33] INFO gearman - [10.48.55.39:12036] : IN  : PRE_SLEEP
+433331242 [gearman-35] INFO gearman - [10.48.55.39:16861] : IN  : GRAB_JOB_UNIQ
+433331242 [gearman-35] INFO gearman - [10.48.55.39:16861] : OUT : NO_JOB
+433331242 [gearman-33] INFO gearman - [10.48.55.39:17823] : IN  : GRAB_JOB_UNIQ
+433331242 [gearman-33] INFO gearman - [10.48.55.39:17823] : OUT : NO_JOB
+433331244 [gearman-33] INFO gearman - [10.48.55.39:12035] : IN  : PRE_SLEEP
+433331245 [gearman-33] INFO gearman - [10.48.55.39:17823] : IN  : PRE_SLEEP
+433331245 [gearman-33] INFO gearman - [10.48.55.39:16861] : IN  : PRE_SLEEP
+433331249 [gearman-33] INFO gearman - [10.48.55.39:17658] : IN  : GRAB_JOB_UNIQ
+433331249 [gearman-33] INFO gearman - [10.48.55.39:17658] : OUT : NO_JOB
+433331250 [gearman-33] INFO gearman - [10.48.55.39:17658] : IN  : PRE_SLEEP
+433331255 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : WORK_DATA
+433331255 [gearman-33] INFO gearman - [127.0.0.1:21906] : OUT : WORK_DATA
+433331255 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : WORK_STATUS
+433331255 [gearman-33] INFO gearman - [127.0.0.1:21906] : OUT : WORK_STATUS
+433331407 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : WORK_COMPLETE
+433331407 [gearman-33] INFO gearman - [127.0.0.1:21906] : OUT : WORK_COMPLETE
+433331407 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : GRAB_JOB_UNIQ
+433331407 [gearman-33] INFO gearman - [10.48.55.39:17662] : OUT : NO_JOB
+433331409 [gearman-33] INFO gearman - [10.48.55.39:17662] : IN  : PRE_SLEEP
+435299201 [gearman-33] INFO gearman - [127.0.0.1:21906] : Disconnected
+459052684 [gearman-33] INFO gearman - [127.0.0.1:29671] : Disconnected

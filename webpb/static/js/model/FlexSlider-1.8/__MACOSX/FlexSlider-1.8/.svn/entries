@@ -1,7 +1,7 @@
 10
 
 dir
-5042
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/FlexSlider-1.8/__MACOSX/FlexSlider-1.8
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,74 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-._demo.html
-file
-
-
-
-
-2014-10-11T08:41:15.000000Z
-7e5ed23974a3216c7fcc653af7a3210a
-2014-10-11T08:41:10.228165Z
-3104
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-188
-
-._flexslider.css
-file
-
-
-
-
-2014-10-11T08:41:15.000000Z
-9e631d38d6d73deab1121aebee39a031
-2014-10-11T08:41:10.228165Z
-3104
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-186
 
 ._jquery.flexslider.js
 file
@@ -229,4 +161,72 @@ has-props
 
 
 82
+
+._demo.html
+file
+
+
+
+
+2014-10-11T08:41:15.000000Z
+7e5ed23974a3216c7fcc653af7a3210a
+2014-10-11T08:41:10.228165Z
+3104
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+188
+
+._flexslider.css
+file
+
+
+
+
+2014-10-11T08:41:15.000000Z
+9e631d38d6d73deab1121aebee39a031
+2014-10-11T08:41:10.228165Z
+3104
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+186
 

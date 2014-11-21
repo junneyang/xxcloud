@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/jenkinsapi-0.2.25/jenkinsapi-0.2.25
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,43 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+jenkinsapi_tests
+dir
+
+setup.cfg
+file
+
+
+
+
+2014-11-19T02:39:23.000000Z
+96adaa329f3ea2262264331d06fbb4cf
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+258
 
 README.rst
 file
@@ -133,41 +170,4 @@ yangjun03
 
 jenkinsapi
 dir
-
-jenkinsapi_tests
-dir
-
-setup.cfg
-file
-
-
-
-
-2014-11-19T02:39:23.000000Z
-96adaa329f3ea2262264331d06fbb4cf
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-258
 

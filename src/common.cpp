@@ -79,7 +79,7 @@ void async_callback(google::protobuf::Message* response_msg, google::protobuf::R
 		if (is_output) {
 			cout << json_string << endl;
 		}
-		if (json_string == exp_json_string) {
+		if (json_string.size() == exp_json_string.size()) {
 			pthread_mutex_lock(&mutex);
 			total_res += 1;
 			pthread_mutex_unlock(&mutex);

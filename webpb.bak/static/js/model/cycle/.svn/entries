@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/static/js/model/cycle
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,12 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-lang
-dir
-
-skin
-dir
 
 jquery.cycle.all.js
 file
@@ -65,4 +59,10 @@ yangjun03
 
 
 53272
+
+lang
+dir
+
+skin
+dir
 

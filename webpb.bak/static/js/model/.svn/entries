@@ -1,7 +1,7 @@
 10
 
 dir
-4969
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/static/js/model
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,27 +26,6 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-bxslider
-dir
-
-img
-dir
-
-jquery-ui-1.11.1.custom
-dir
-
-slider
-dir
-
-highstock
-dir
-
-highcharts
-dir
-
-xdialog
-dir
-
 uploadify
 dir
 
@@ -69,5 +48,26 @@ FlexSlider-1.8
 dir
 
 flaviusmatis-simplePagination.js-9d0304d
+dir
+
+bxslider
+dir
+
+img
+dir
+
+jquery-ui-1.11.1.custom
+dir
+
+slider
+dir
+
+highstock
+dir
+
+highcharts
+dir
+
+xdialog
 dir
 

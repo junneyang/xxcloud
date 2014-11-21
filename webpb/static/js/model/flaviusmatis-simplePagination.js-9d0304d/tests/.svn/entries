@@ -1,7 +1,7 @@
 10
 
 dir
-5042
+5106
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/flaviusmatis-simplePagination.js-9d0304d/tests
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,9 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+spec
+dir
 
 lib
 dir
@@ -62,7 +65,4 @@ yangjun03
 
 
 1479
-
-spec
-dir
 
