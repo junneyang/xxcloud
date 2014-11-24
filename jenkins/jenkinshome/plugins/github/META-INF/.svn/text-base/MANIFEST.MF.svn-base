@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nicolas
+Build-Jdk: 1.7.0_51
+Extension-Name: github
+Implementation-Title: github
+Implementation-Version: 1.9.1
+Group-Id: com.coravy.hudson.plugins.github
+Short-Name: github
+Long-Name: GitHub plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin
+Plugin-Version: 1.9.1
+Hudson-Version: 1.448
+Jenkins-Version: 1.448
+Plugin-Dependencies: ssh-agent:1.3,github-api:1.42,git:2.0,git-client:
+ 1.4.4,multiple-scms:0.2;resolution:=optional,credentials:1.8.3,ssh-cr
+ edentials:1.5.1,scm-api:0.1
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Stefan Saasen:juretta:
+

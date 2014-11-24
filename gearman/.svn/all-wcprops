@@ -1,19 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/app-test/search/lbs-stat/!svn/ver/4604/trunk/upps_test/jenkinsFramework/protobuf/gearman
-END
-License.txt
-K 25
-svn:wc:ra_dav:version-url
-V 101
-/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/License.txt
-END
-pbr-0.10.0.tar.gz
-K 25
-svn:wc:ra_dav:version-url
-V 107
-/app-test/search/lbs-stat/!svn/ver/4604/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0.tar.gz
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/gearman
 END
 gear-0.5.5.tar.gz
 K 25
@@ -45,9 +33,33 @@ svn:wc:ra_dav:version-url
 V 117
 /app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/python-gearman-2.0.2.tar.gz
 END
+gearman-plugin-client-master.zip
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master.zip
+END
 java-gearman-service-0.6.6.zip
 K 25
 svn:wc:ra_dav:version-url
 V 120
 /app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/java-gearman-service-0.6.6.zip
+END
+nohup.out
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/nohup.out
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/gearman/License.txt
+END
+pbr-0.10.0.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/app-test/search/lbs-stat/!svn/ver/4604/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0.tar.gz
 END

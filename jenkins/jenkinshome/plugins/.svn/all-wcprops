@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins
+END
+nodelabelparameter.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/nodelabelparameter.jpi
+END
+cas1.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/cas1.jpi
+END
+cvs.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/cvs.jpi
+END
+translation.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/translation.jpi
+END
+maven-plugin.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin.jpi
+END
+gearman-plugin.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/gearman-plugin.jpi
+END
+matrix-project.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/matrix-project.jpi
+END
+publish-over-ssh.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh.jpi
+END
+token-macro.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/token-macro.jpi
+END
+external-monitor-job.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/external-monitor-job.jpi
+END
+jquery.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/jquery.jpi
+END
+ldap.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ldap.jpi
+END
+github.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/github.jpi
+END
+git.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/git.jpi
+END
+scp.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/scp.jpi
+END
+windows-slaves.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves.jpi
+END
+notification.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/notification.jpi
+END
+ssh-slaves.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-slaves.jpi
+END
+ssh-credentials.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-credentials.jpi
+END
+ssh-agent.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent.jpi
+END
+scm-api.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/scm-api.jpi
+END
+github-api.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/github-api.jpi
+END
+junit.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/junit.jpi
+END
+credentials.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/credentials.jpi
+END
+subversion.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/subversion.jpi
+END
+git-client.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/git-client.jpi
+END
+matrix-auth.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/matrix-auth.jpi
+END
+javadoc.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/javadoc.jpi
+END
+mailer.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/mailer.jpi
+END
+git-client.bak
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/git-client.bak
+END
+pam-auth.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/pam-auth.jpi
+END
+ant.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ant.jpi
+END
+antisamy-markup-formatter.jpi
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/antisamy-markup-formatter.jpi
+END

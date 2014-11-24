@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib
+END
+j-interop-2.0.6-kohsuke-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/j-interop-2.0.6-kohsuke-1.jar
+END
+windows-remote-command-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/windows-remote-command-1.4.jar
+END
+jinterop-wmi-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/jinterop-wmi-1.1.jar
+END
+windows-slaves.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/windows-slaves.jar
+END
+jinterop-proxy-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/jinterop-proxy-1.1.jar
+END
+jcifs-1.3.17-kohsuke-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/jcifs-1.3.17-kohsuke-1.jar
+END
+j-interopdeps-2.0.6-kohsuke-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/j-interopdeps-2.0.6-kohsuke-1.jar
+END
+tiger-types-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib/tiger-types-1.1.jar
+END

@@ -1,0 +1,3 @@
+<div>You can upload some artifacts to the repository sites using SFTP (SSH) protocol.
+First you should define SCP hosts on hudson global config page. After that you can refer to this hosts using select list.
+</div>

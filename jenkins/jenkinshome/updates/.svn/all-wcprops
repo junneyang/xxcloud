@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates
+END
+default.json
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates/default.json
+END
+hudson.tasks.Maven.MavenInstaller
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates/hudson.tasks.Maven.MavenInstaller
+END
+hudson.tasks.Ant.AntInstaller
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates/hudson.tasks.Ant.AntInstaller
+END
+hudson.tools.JDKInstaller
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates/hudson.tools.JDKInstaller
+END

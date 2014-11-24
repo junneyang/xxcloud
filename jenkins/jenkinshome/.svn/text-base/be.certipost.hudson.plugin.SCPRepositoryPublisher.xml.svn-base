@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<be.certipost.hudson.plugin.SCPRepositoryPublisher_-DescriptorImpl plugin="scp@1.8">
+  <sites/>
+</be.certipost.hudson.plugin.SCPRepositoryPublisher_-DescriptorImpl>

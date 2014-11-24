@@ -19,7 +19,7 @@ from common.sftpLib import *
 
 import urlparse
 
-defaultport=8889
+defaultport=8886
 import socket
 hostname=socket.gethostname()
 hostname=socket.gethostbyname(hostname)

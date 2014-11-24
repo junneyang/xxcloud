@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/security
+END
+AbstractPasswordBasedSecurityRealm.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/security/AbstractPasswordBasedSecurityRealm.groovy
+END
+SecurityFilters.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/security/SecurityFilters.groovy
+END

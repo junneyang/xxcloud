@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/data_files
+END
+c.rst
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/data_files/c.rst
+END
+a.txt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/data_files/a.txt
+END
+b.txt
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/data_files/b.txt
+END

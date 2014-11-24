@@ -1,0 +1,17 @@
+[11/22/14 10:15:24] [SSH] Opening SSH connection to 10.95.43.38:22.
+Connection timed out
+ERROR: Unexpected error in launching a slave. This is probably a bug in Jenkins.
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.IllegalStateException: Connection is not established!
+	at com.trilead.ssh2.Connection.getRemainingAuthMethods(Connection.java:1030)
+	at com.cloudbees.jenkins.plugins.sshcredentials.impl.TrileadSSHPasswordAuthenticator.canAuthenticate(TrileadSSHPasswordAuthenticator.java:82)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:207)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:169)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:1173)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:701)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:696)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+[11/22/14 10:15:27] Launch failed - cleaning up connection
+[11/22/14 10:15:28] [SSH] Connection closed.

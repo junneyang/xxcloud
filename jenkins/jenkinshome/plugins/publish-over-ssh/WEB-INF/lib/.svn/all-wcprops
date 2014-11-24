@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh/WEB-INF/lib
+END
+jsch-0.1.45.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh/WEB-INF/lib/jsch-0.1.45.jar
+END
+classes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh/WEB-INF/lib/classes.jar
+END
+publish-over-0.18.jar
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh/WEB-INF/lib/publish-over-0.18.jar
+END

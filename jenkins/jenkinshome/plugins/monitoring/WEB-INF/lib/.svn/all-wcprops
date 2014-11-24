@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib
+END
+jrobin-1.5.9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib/jrobin-1.5.9.jar
+END
+slf4j-api-1.6.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib/slf4j-api-1.6.3.jar
+END
+classes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib/classes.jar
+END
+itext-2.1.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib/itext-2.1.7.jar
+END
+javamelody-core-1.53.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/monitoring/WEB-INF/lib/javamelody-core-1.53.0.jar
+END

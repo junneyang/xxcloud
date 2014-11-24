@@ -1,0 +1,9 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/pbdownload
+[pbdownload] $ /bin/sh -xe /tmp/hudson1163886082920216199.sh
++ svn co https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto tmpproto
+/tmp/hudson1163886082920216199.sh: line 2: svn: command not found
+Build step 'Execute shell' marked build as failure
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Finished: FAILURE

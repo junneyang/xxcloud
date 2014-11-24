@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins
+/app-test/search/lbs-stat/!svn/ver/5158/trunk/upps_test/jenkinsFramework/protobuf/jenkins
 END
 slave.jar
 K 25
@@ -9,21 +9,39 @@ svn:wc:ra_dav:version-url
 V 99
 /app-test/search/lbs-stat/!svn/ver/4440/trunk/upps_test/jenkinsFramework/protobuf/jenkins/slave.jar
 END
+jenkins.war.bak
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war.bak
+END
 start.sh
 K 25
 svn:wc:ra_dav:version-url
 V 98
 /app-test/search/lbs-stat/!svn/ver/3282/trunk/upps_test/jenkinsFramework/protobuf/jenkins/start.sh
 END
+jenkins.war.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war.tmp
+END
 jenkins.war
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/app-test/search/lbs-stat/!svn/ver/4628/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
 END
 jenkins-cli.jar
 K 25
 svn:wc:ra_dav:version-url
 V 105
 /app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins-cli.jar
+END
+libgcc_s.so.1
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/app-test/search/lbs-stat/!svn/ver/5155/trunk/upps_test/jenkinsFramework/protobuf/jenkins/libgcc_s.so.1
 END

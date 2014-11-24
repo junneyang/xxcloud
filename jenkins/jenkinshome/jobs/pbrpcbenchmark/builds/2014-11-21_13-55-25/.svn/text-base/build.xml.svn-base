@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.plugins.gearman.NodeAssignmentAction plugin="gearman-plugin@0.1.1">
+      <labelAtom>yangjun03</labelAtom>
+    </hudson.plugins.gearman.NodeAssignmentAction>
+    <hudson.plugins.gearman.NodeParametersAction plugin="gearman-plugin@0.1.1">
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>IPPORT</name>
+          <value>10.48.55.39:7788</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WorkPath</name>
+          <value>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>MethodName</name>
+          <value>GetItemsByItem</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TestData</name>
+          <value>[{&quot;input&quot;: {&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}, &quot;expect&quot;: {&quot;items&quot;: [{&quot;str_value&quot;: [], &quot;id&quot;: &quot;18012202574307917823&quot;, &quot;value&quot;: [0.3, 0.5, 0.4]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;12313225205891489106&quot;, &quot;value&quot;: [1]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;18119621412888245380&quot;, &quot;value&quot;: [0.7]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;2071168565446484381&quot;, &quot;value&quot;: [0.3]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;11710154692952313709&quot;, &quot;value&quot;: [0.3]}], &quot;args&quot;: []}}, {&quot;input&quot;: {&quot;header&quot;: {&quot;secretkey&quot;: &quot;pass&quot;, &quot;subservice&quot;: &quot;sub&quot;, &quot;servicekey&quot;: &quot;key1&quot;}, &quot;algorithmId&quot;: &quot;topic_rev_poi&quot;, &quot;item_ids&quot;: [&quot;9977193541978760286&quot;]}, &quot;expect&quot;: {&quot;items&quot;: [{&quot;str_value&quot;: [], &quot;id&quot;: &quot;18012202574307917823&quot;, &quot;value&quot;: [0.3, 0.5, 0.4]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;12313225205891489106&quot;, &quot;value&quot;: [1]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;18119621412888245380&quot;, &quot;value&quot;: [0.7]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;2071168565446484381&quot;, &quot;value&quot;: [0.3]}, {&quot;str_value&quot;: [], &quot;id&quot;: &quot;11710154692952313709&quot;, &quot;value&quot;: [0.3]}], &quot;args&quot;: []}}]</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IsOutput</name>
+          <value>0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IsRandom</name>
+          <value>1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>TestTime</name>
+          <value>1.0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>WorkThreadNum</name>
+          <value>8</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ServiceName</name>
+          <value>lbs.da.openservice.ItemService</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ClientNum</name>
+          <value>20</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>PBTYPE</name>
+          <value>PUBLIC-PBRPC</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>SendThreadNum</name>
+          <value>2</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>SendRate</name>
+          <value>200</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>UNIQUE_ID</name>
+          <value>173</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ClientNode</name>
+          <value>linqiaoying</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <id>emptyID_1</id>
+    </hudson.plugins.gearman.NodeParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <number>20</number>
+  <startTime>1416549325383</startTime>
+  <result>FAILURE</result>
+  <duration>131</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn>yangjun03</builtOn>
+  <workspace>/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome/workspace/pbrpcbenchmark</workspace>
+  <hudsonVersion>1.590</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

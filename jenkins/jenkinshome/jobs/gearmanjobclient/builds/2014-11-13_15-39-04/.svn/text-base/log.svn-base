@@ -1,0 +1,20 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/gearmanjobclient
+[gearmanjobclient] $ /bin/sh -xe /tmp/hudson3804113173979044990.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python gearmanjobclient.py yangjun03 http://10.48.55.39:8898/ addnode 1 '{
+        "JenkinsURL":"http://10.48.55.39:8898/",
+        "NodeName":"linqiaoying",
+        "EXENum":"2",
+        "WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+        "IP":"10.99.18.33",
+        "PORT":"22",
+        "UserName":"linqiaoying",
+        "PassWord":"Qiao123"
+}'
+INFO, job initial, 0
+INFO, specifynode true
+INFO, job submit, 1
+INFO, job unique id :49
+INFO, you could link http://10.48.55.39:8889/pb/jenkins/status/?job=49 to trace the job status
+Finished: SUCCESS

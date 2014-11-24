@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/MANIFEST.in
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/README.txt
+END
+extra-file.txt
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/extra-file.txt
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/setup.cfg
+END
+git-extra-file.txt
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/git-extra-file.txt
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/LICENSE.txt
+END
+CHANGES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/CHANGES.txt
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/tests/testpackage/setup.py
+END

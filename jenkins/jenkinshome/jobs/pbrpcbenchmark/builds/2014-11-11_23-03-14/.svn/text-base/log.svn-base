@@ -1,0 +1,57 @@
+Started by upstream project "[8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JP2CpKKC5KTUvOSM3MSibH0AodLzackAAAA=[0mpbrpcbenchmark" build number [8mha:AAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBlH9rPwk/YKkooLkpNS85IzcxKJsfVMA3UB60MoAAAA=[0m5
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Building remotely on [8mha:AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/UqgOVmleQbGAAUL1IfIAAAA[0myangjun03 in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome/workspace/pbrpcbenchmark
+next nodes: [][pbrpcbenchmark] $ /bin/sh -xe /tmp/hudson316574442127162853.sh
++ cd /home/users/yangjun03/workspace/pb
++ ./pbrpcbenchmark PUBLIC-PBRPC 127.0.0.1:7788 lbs.da.openservice.ItemService GetItemsByItem 8 2 20 200 1 1.0 0 '[
+	{
+		"input": {
+			"header": {
+				"subservice":"sub",
+				"secretkey": "pass",
+				"servicekey": "key1"
+			},
+			"algorithmId": "topic_rev_poi",
+			"item_ids": ["9977193541978760286"]
+		},
+		"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+	},
+	{
+		"input": {
+			"header": {
+				"subservice":"sub",
+				"secretkey": "pass",
+				"servicekey": "key1"
+			},
+			"algorithmId": "topic_rev_poi",
+			"item_ids": ["9977193541978760286"]
+		},
+		"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+	}
+]'
+======================================================================================
+|                                 TEST REPORT                                        |
+======================================================================================
+| StartTime             : 2014-11-11 23:03:14
+| EndTime               : 2014-11-11 23:04:14
+|-------------------------------------------------------------------------------------
+| WorkThreadNum         : 8
+| SendThreadNum         : 2
+| ClientNum             : 20
+| TestTime              : 1 min 
+|-------------------------------------------------------------------------------------
+| TotalReq              : 469240
+| TotalRes              : 15905
+| TotalErr              : 453335
+| QPS                   : 265.083
+|-------------------------------------------------------------------------------------
+| AvgLatency            : 9.58947 ms 
+| Below_10              : 454845
+| Between_10_20         : 4111
+| Between_20_30         : 935
+| Over_30               : 9349
+======================================================================================
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Finished: SUCCESS

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib
+END
+jnr-unixsocket-nodep-0.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/jnr-unixsocket-nodep-0.3.1.jar
+END
+slf4j-jdk14-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/slf4j-jdk14-1.6.6.jar
+END
+sshd-core-0.12.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/sshd-core-0.12.0.jar
+END
+bcprov-jdk15on-1.47.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/bcprov-jdk15on-1.47.jar
+END
+mina-core-2.0.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/mina-core-2.0.7.jar
+END
+classes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/classes.jar
+END
+slf4j-api-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/slf4j-api-1.6.6.jar
+END
+tomcat-apr-5.5.23.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/tomcat-apr-5.5.23.jar
+END
+bcpkix-jdk15on-1.47.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/ssh-agent/WEB-INF/lib/bcpkix-jdk15on-1.47.jar
+END

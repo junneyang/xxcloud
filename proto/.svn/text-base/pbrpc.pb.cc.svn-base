@@ -133,6 +133,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* ItemUpInfo_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   ItemUpInfo_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UserAction_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UserAction_reflection_ = NULL;
 const ::google::protobuf::Descriptor* NuomiUserPreferenceResponse_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   NuomiUserPreferenceResponse_reflection_ = NULL;
@@ -165,6 +168,7 @@ const ::google::protobuf::EnumDescriptor* UserTrajStatus_descriptor_ = NULL;
 const ::google::protobuf::EnumDescriptor* RequestIdType_descriptor_ = NULL;
 const ::google::protobuf::EnumDescriptor* NuomiDataType_descriptor_ = NULL;
 const ::google::protobuf::EnumDescriptor* NuomiUpResultType_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* UserActionType_descriptor_ = NULL;
 
 }  // namespace
 
@@ -721,9 +725,10 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(PlaceSemanticRequest));
   PoiProbability_descriptor_ = file->message_type(28);
-  static const int PoiProbability_offsets_[2] = {
+  static const int PoiProbability_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PoiProbability, poi_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PoiProbability, probability_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PoiProbability, name_),
   };
   PoiProbability_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -752,12 +757,11 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(PlaceSemanticResponse));
   POIMatchRequest_descriptor_ = file->message_type(30);
-  static const int POIMatchRequest_offsets_[5] = {
+  static const int POIMatchRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, wifi_finger_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, pois_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, match_finger_offsets_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, match_finger_counts_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, poi_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchRequest, match_finger_offset_),
   };
   POIMatchRequest_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -772,7 +776,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       sizeof(POIMatchRequest));
   POIMatchResponse_descriptor_ = file->message_type(31);
   static const int POIMatchResponse_offsets_[1] = {
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchResponse, probabilities_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(POIMatchResponse, prob_),
   };
   POIMatchResponse_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -889,8 +893,25 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(ItemUpInfo));
-  NuomiUserPreferenceResponse_descriptor_ = file->message_type(38);
-  static const int NuomiUserPreferenceResponse_offsets_[7] = {
+  UserAction_descriptor_ = file->message_type(38);
+  static const int UserAction_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserAction, timestamp_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserAction, action_type_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserAction, param_),
+  };
+  UserAction_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      UserAction_descriptor_,
+      UserAction::default_instance_,
+      UserAction_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserAction, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserAction, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(UserAction));
+  NuomiUserPreferenceResponse_descriptor_ = file->message_type(39);
+  static const int NuomiUserPreferenceResponse_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, features_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, result_type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, id_),
@@ -898,6 +919,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, item_infos_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, item_small_flow_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, item_shot_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiUserPreferenceResponse, actions_),
   };
   NuomiUserPreferenceResponse_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -910,7 +932,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(NuomiUserPreferenceResponse));
-  GetAOIRequest_descriptor_ = file->message_type(39);
+  GetAOIRequest_descriptor_ = file->message_type(40);
   static const int GetAOIRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetAOIRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetAOIRequest, cuid_),
@@ -928,7 +950,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(GetAOIRequest));
-  GetAOIResponse_descriptor_ = file->message_type(40);
+  GetAOIResponse_descriptor_ = file->message_type(41);
   static const int GetAOIResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetAOIResponse, aoi_id_),
   };
@@ -943,7 +965,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(GetAOIResponse));
-  GetNearPoiRequest_descriptor_ = file->message_type(41);
+  GetNearPoiRequest_descriptor_ = file->message_type(42);
   static const int GetNearPoiRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetNearPoiRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetNearPoiRequest, longitude_),
@@ -961,7 +983,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(GetNearPoiRequest));
-  PoiInfo_descriptor_ = file->message_type(42);
+  PoiInfo_descriptor_ = file->message_type(43);
   static const int PoiInfo_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PoiInfo, poi_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PoiInfo, name_),
@@ -979,7 +1001,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(PoiInfo));
-  GetNearPoiResponse_descriptor_ = file->message_type(43);
+  GetNearPoiResponse_descriptor_ = file->message_type(44);
   static const int GetNearPoiResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetNearPoiResponse, poi_list_),
   };
@@ -994,7 +1016,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(GetNearPoiResponse));
-  NuomiBuy2BuyRequest_descriptor_ = file->message_type(44);
+  NuomiBuy2BuyRequest_descriptor_ = file->message_type(45);
   static const int NuomiBuy2BuyRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiBuy2BuyRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiBuy2BuyRequest, user_preference_req_),
@@ -1011,7 +1033,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(NuomiBuy2BuyRequest));
-  NuomiBuy2BuyResponse_descriptor_ = file->message_type(45);
+  NuomiBuy2BuyResponse_descriptor_ = file->message_type(46);
   static const int NuomiBuy2BuyResponse_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiBuy2BuyResponse, status_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiBuy2BuyResponse, err_str_),
@@ -1029,7 +1051,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(NuomiBuy2BuyResponse));
-  NuomiMerchantItemRequest_descriptor_ = file->message_type(46);
+  NuomiMerchantItemRequest_descriptor_ = file->message_type(47);
   static const int NuomiMerchantItemRequest_offsets_[18] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiMerchantItemRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NuomiMerchantItemRequest, source_),
@@ -1066,6 +1088,7 @@ void protobuf_AssignDesc_pbrpc_2eproto() {
   RequestIdType_descriptor_ = file->enum_type(2);
   NuomiDataType_descriptor_ = file->enum_type(3);
   NuomiUpResultType_descriptor_ = file->enum_type(4);
+  UserActionType_descriptor_ = file->enum_type(5);
 }
 
 namespace {
@@ -1154,6 +1177,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
     StrFeatureInfo_descriptor_, &StrFeatureInfo::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     ItemUpInfo_descriptor_, &ItemUpInfo::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    UserAction_descriptor_, &UserAction::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     NuomiUserPreferenceResponse_descriptor_, &NuomiUserPreferenceResponse::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
@@ -1253,6 +1278,8 @@ void protobuf_ShutdownFile_pbrpc_2eproto() {
   delete StrFeatureInfo_reflection_;
   delete ItemUpInfo::default_instance_;
   delete ItemUpInfo_reflection_;
+  delete UserAction::default_instance_;
+  delete UserAction_reflection_;
   delete NuomiUserPreferenceResponse::default_instance_;
   delete NuomiUserPreferenceResponse_reflection_;
   delete GetAOIRequest::default_instance_;
@@ -1387,90 +1414,99 @@ void protobuf_AddDesc_pbrpc_2eproto() {
     "estHeader\022,\n\004wifi\030\002 \003(\0132\036.lbs.da.openser"
     "vice.WifiFinger\022\021\n\tlongitude\030\003 \001(\001\022\020\n\010la"
     "titude\030\004 \001(\001\022\014\n\004cuid\030\005 \001(\t\022\020\n\010accuracy\030\006"
-    " \001(\005\022\035\n\025similarity_threadhold\030\007 \001(\001\"2\n\016P"
+    " \001(\005\022\035\n\025similarity_threadhold\030\007 \001(\001\"@\n\016P"
     "oiProbability\022\013\n\003poi\030\001 \002(\t\022\023\n\013probabilit"
-    "y\030\002 \002(\001\"R\n\025PlaceSemanticResponse\0229\n\rpoi_"
-    "prob_list\030\002 \003(\0132\".lbs.da.openservice.Poi"
-    "Probability\"\242\001\n\017POIMatchRequest\0221\n\006heade"
-    "r\030\001 \002(\0132!.lbs.da.openservice.RequestHead"
-    "er\022\023\n\013wifi_finger\030\002 \003(\004\022\014\n\004pois\030\003 \003(\t\022\034\n"
-    "\024match_finger_offsets\030\005 \003(\005\022\033\n\023match_fin"
-    "ger_counts\030\006 \003(\005\"M\n\020POIMatchResponse\0229\n\r"
-    "probabilities\030\001 \003(\0132\".lbs.da.openservice"
-    ".PoiProbability\"\365\001\n\032NuomiUserPreferenceR"
-    "equest\0221\n\006header\030\001 \002(\0132!.lbs.da.openserv"
-    "ice.RequestHeader\0222\n\007id_type\030\002 \002(\0162!.lbs"
-    ".da.openservice.RequestIdType\022\n\n\002id\030\003 \002("
-    "\t\0224\n\tdata_type\030\004 \001(\0162!.lbs.da.openservic"
-    "e.NuomiDataType\022\025\n\rfeature_names\030\005 \003(\t\022\027"
-    "\n\017item_small_flow\030\006 \001(\t\"-\n\tScoreInfo\022\021\n\t"
-    "featureid\030\001 \002(\t\022\r\n\005score\030\002 \002(\001\"\214\001\n\013Featu"
-    "reInfo\022\024\n\014feature_name\030\001 \002(\t\0221\n\nscore_in"
-    "fo\030\002 \002(\0132\035.lbs.da.openservice.ScoreInfo\022"
-    "4\n\tdata_type\030\003 \001(\0162!.lbs.da.openservice."
-    "NuomiDataType\"+\n\007StrInfo\022\021\n\tfeatureid\030\001 "
-    "\002(\t\022\r\n\005value\030\002 \002(\t\"\213\001\n\016StrFeatureInfo\022\024\n"
-    "\014feature_name\030\001 \002(\t\022-\n\010str_info\030\002 \002(\0132\033."
-    "lbs.da.openservice.StrInfo\0224\n\tdata_type\030"
-    "\003 \001(\0162!.lbs.da.openservice.NuomiDataType"
-    "\"C\n\nItemUpInfo\022\n\n\002id\030\001 \001(\t\022\r\n\005score\030\002 \001("
-    "\001\022\014\n\004info\030\003 \001(\t\022\014\n\004date\030\004 \001(\t\"\261\002\n\033NuomiU"
-    "serPreferenceResponse\0221\n\010features\030\001 \003(\0132"
-    "\037.lbs.da.openservice.FeatureInfo\022:\n\013resu"
-    "lt_type\030\002 \001(\0162%.lbs.da.openservice.Nuomi"
-    "UpResultType\022\n\n\002id\030\003 \001(\t\0227\n\013other_infos\030"
-    "\004 \003(\0132\".lbs.da.openservice.StrFeatureInf"
-    "o\0222\n\nitem_infos\030\005 \003(\0132\036.lbs.da.openservi"
-    "ce.ItemUpInfo\022\027\n\017item_small_flow\030\006 \001(\t\022\021"
-    "\n\titem_shot\030\007 \001(\010\"x\n\rGetAOIRequest\0221\n\006he"
+    "y\030\002 \002(\001\022\014\n\004name\030\003 \001(\t\"R\n\025PlaceSemanticRe"
+    "sponse\0229\n\rpoi_prob_list\030\002 \003(\0132\".lbs.da.o"
+    "penservice.PoiProbability\"\203\001\n\017POIMatchRe"
+    "quest\0221\n\006header\030\001 \002(\0132!.lbs.da.openservi"
+    "ce.RequestHeader\022\023\n\013wifi_finger\030\002 \002(\014\022\013\n"
+    "\003poi\030\003 \001(\t\022\033\n\023match_finger_offset\030\005 \001(\005\""
+    "D\n\020POIMatchResponse\0220\n\004prob\030\001 \001(\0132\".lbs."
+    "da.openservice.PoiProbability\"\365\001\n\032NuomiU"
+    "serPreferenceRequest\0221\n\006header\030\001 \002(\0132!.l"
+    "bs.da.openservice.RequestHeader\0222\n\007id_ty"
+    "pe\030\002 \002(\0162!.lbs.da.openservice.RequestIdT"
+    "ype\022\n\n\002id\030\003 \002(\t\0224\n\tdata_type\030\004 \001(\0162!.lbs"
+    ".da.openservice.NuomiDataType\022\025\n\rfeature"
+    "_names\030\005 \003(\t\022\027\n\017item_small_flow\030\006 \001(\t\"-\n"
+    "\tScoreInfo\022\021\n\tfeatureid\030\001 \002(\t\022\r\n\005score\030\002"
+    " \002(\001\"\214\001\n\013FeatureInfo\022\024\n\014feature_name\030\001 \002"
+    "(\t\0221\n\nscore_info\030\002 \002(\0132\035.lbs.da.openserv"
+    "ice.ScoreInfo\0224\n\tdata_type\030\003 \001(\0162!.lbs.d"
+    "a.openservice.NuomiDataType\"+\n\007StrInfo\022\021"
+    "\n\tfeatureid\030\001 \002(\t\022\r\n\005value\030\002 \002(\t\"\213\001\n\016Str"
+    "FeatureInfo\022\024\n\014feature_name\030\001 \002(\t\022-\n\010str"
+    "_info\030\002 \002(\0132\033.lbs.da.openservice.StrInfo"
+    "\0224\n\tdata_type\030\003 \001(\0162!.lbs.da.openservice"
+    ".NuomiDataType\"C\n\nItemUpInfo\022\n\n\002id\030\001 \001(\t"
+    "\022\r\n\005score\030\002 \001(\001\022\014\n\004info\030\003 \001(\t\022\014\n\004date\030\004 "
+    "\001(\t\"g\n\nUserAction\022\021\n\ttimestamp\030\001 \002(\r\0227\n\013"
+    "action_type\030\002 \002(\0162\".lbs.da.openservice.U"
+    "serActionType\022\r\n\005param\030\003 \002(\014\"\342\002\n\033NuomiUs"
+    "erPreferenceResponse\0221\n\010features\030\001 \003(\0132\037"
+    ".lbs.da.openservice.FeatureInfo\022:\n\013resul"
+    "t_type\030\002 \001(\0162%.lbs.da.openservice.NuomiU"
+    "pResultType\022\n\n\002id\030\003 \001(\t\0227\n\013other_infos\030\004"
+    " \003(\0132\".lbs.da.openservice.StrFeatureInfo"
+    "\0222\n\nitem_infos\030\005 \003(\0132\036.lbs.da.openservic"
+    "e.ItemUpInfo\022\027\n\017item_small_flow\030\006 \001(\t\022\021\n"
+    "\titem_shot\030\007 \001(\010\022/\n\007actions\030\010 \003(\0132\036.lbs."
+    "da.openservice.UserAction\"x\n\rGetAOIReque"
+    "st\0221\n\006header\030\001 \002(\0132!.lbs.da.openservice."
+    "RequestHeader\022\014\n\004cuid\030\002 \001(\t\022\022\n\nmercator_"
+    "x\030\003 \001(\001\022\022\n\nmercator_y\030\004 \001(\001\" \n\016GetAOIRes"
+    "ponse\022\016\n\006aoi_id\030\001 \003(\t\"{\n\021GetNearPoiReque"
+    "st\0221\n\006header\030\001 \002(\0132!.lbs.da.openservice."
+    "RequestHeader\022\021\n\tlongitude\030\002 \001(\001\022\020\n\010lati"
+    "tude\030\003 \001(\001\022\016\n\006radius\030\004 \001(\001\"I\n\007PoiInfo\022\013\n"
+    "\003poi\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021\n\tlongitude\030\003 "
+    "\001(\001\022\020\n\010latitude\030\004 \001(\001\"C\n\022GetNearPoiRespo"
+    "nse\022-\n\010poi_list\030\001 \003(\0132\033.lbs.da.openservi"
+    "ce.PoiInfo\"\325\001\n\023NuomiBuy2BuyRequest\0221\n\006he"
     "ader\030\001 \002(\0132!.lbs.da.openservice.RequestH"
-    "eader\022\014\n\004cuid\030\002 \001(\t\022\022\n\nmercator_x\030\003 \001(\001\022"
-    "\022\n\nmercator_y\030\004 \001(\001\" \n\016GetAOIResponse\022\016\n"
-    "\006aoi_id\030\001 \003(\t\"{\n\021GetNearPoiRequest\0221\n\006he"
-    "ader\030\001 \002(\0132!.lbs.da.openservice.RequestH"
-    "eader\022\021\n\tlongitude\030\002 \001(\001\022\020\n\010latitude\030\003 \001"
-    "(\001\022\016\n\006radius\030\004 \001(\001\"I\n\007PoiInfo\022\013\n\003poi\030\001 \001"
-    "(\t\022\014\n\004name\030\002 \001(\t\022\021\n\tlongitude\030\003 \001(\001\022\020\n\010l"
-    "atitude\030\004 \001(\001\"C\n\022GetNearPoiResponse\022-\n\010p"
-    "oi_list\030\001 \003(\0132\033.lbs.da.openservice.PoiIn"
-    "fo\"\325\001\n\023NuomiBuy2BuyRequest\0221\n\006header\030\001 \002"
-    "(\0132!.lbs.da.openservice.RequestHeader\022K\n"
-    "\023user_preference_req\030\002 \001(\0132..lbs.da.open"
-    "service.NuomiUserPreferenceRequest\022>\n\010me"
-    "rt_req\030\003 \001(\0132,.lbs.da.openservice.NuomiM"
-    "erchantItemRequest\"\277\001\n\024NuomiBuy2BuyRespo"
-    "nse\022\016\n\006status\030\001 \001(\005\022\017\n\007err_str\030\002 \001(\014\022L\n\023"
-    "user_preference_rsp\030\003 \001(\0132/.lbs.da.opens"
-    "ervice.NuomiUserPreferenceResponse\0228\n\010me"
-    "rt_rsp\030\004 \001(\0132&.lbs.da.openservice.GetBNI"
-    "temsResponse\"\224\003\n\030NuomiMerchantItemReques"
-    "t\0221\n\006header\030\001 \002(\0132!.lbs.da.openservice.R"
-    "equestHeader\022\016\n\006source\030\002 \001(\005\022\016\n\006userid\030\003"
-    " \001(\014\022\023\n\013algorithmId\030\004 \001(\014\022\r\n\005limit\030\005 \001(\005"
-    "\022\017\n\007deal_id\030\006 \001(\003\022\023\n\013merchant_id\030\007 \003(\003\022\020"
-    "\n\010deal_num\030\010 \001(\005\022\020\n\010coor_sys\030\t \001(\014\022\t\n\001x\030"
-    "\n \001(\002\022\t\n\001y\030\013 \001(\002\022\017\n\007area_id\030\014 \001(\003\022\020\n\010vec"
-    "_catg\030\r \003(\003\022\023\n\013vec_subcatg\030\016 \003(\003\022\023\n\013vec_"
-    "thdcatg\030\017 \003(\003\022\025\n\rvec_shop_dist\030\020 \003(\003\022\026\n\016"
-    "vec_shop_range\030\021 \003(\003\022%\n\004args\030\022 \003(\0132\027.lbs"
-    ".da.openservice.Arg*\206\001\n\030UserPreferenceSo"
-    "urceType\022\020\n\014MAP_CATEGORY\020\000\022\r\n\tMAP_PRICE\020"
-    "\001\022\r\n\tMAP_BRAND\020\002\022\024\n\020TUANGOU_CATEGORY\020\n\022\021"
-    "\n\rTUANGOU_PRICE\020\013\022\021\n\rTUANGOU_BRAND\020\014*\331\001\n"
-    "\016UserTrajStatus\022\017\n\013HOME_STATUS\020\000\022\022\n\016COMP"
-    "ANY_STATUS\020\001\022\017\n\013AREA_STATUS\020\002\022\020\n\014LOCAL_S"
-    "TATUS\020\003\022\020\n\014EWORK_STATUS\020\004\022\022\n\016ETRAVEL_STA"
-    "TUS\020\005\022\022\n\016EFAMILY_STATUS\020\006\022\017\n\013ELOW_STATUS"
-    "\020\007\022\020\n\014EHIGH_STATUS\020\010\022\017\n\013ENEW_STATUS\020\t\022\021\n"
-    "\rUNKNOW_STATUS\020d*B\n\rRequestIdType\022\017\n\013PAS"
-    "SPORT_ID\020\001\022\014\n\010BAIDU_ID\020\002\022\010\n\004CUID\020\003\022\010\n\004IM"
-    "EI\020\004*{\n\rNuomiDataType\022\021\n\rNUOMI_OFFLINE\020\001"
-    "\022\020\n\014NUOMI_ONLINE\020\002\022\r\n\tNUOMI_ALL\020\003\022\020\n\014ITE"
-    "M_OFFLINE\020\004\022\026\n\022NUOMI_ITEM_OFFLINE\020\005\022\014\n\010A"
-    "LL_DATA\020d*\205\001\n\021NuomiUpResultType\022\021\n\rBY_PA"
-    "SSPORTID\020\001\022\016\n\nBY_BAIDUID\020\002\022\013\n\007BY_CUID\020\003\022"
-    "\013\n\007BY_IMEI\020\004\022\r\n\tNO_RESULT\020d\022\021\n\rRESULTS_E"
-    "RROR\020e\022\021\n\rREQUEST_ERROR\020fB\002H\001", 7629);
+    "eader\022K\n\023user_preference_req\030\002 \001(\0132..lbs"
+    ".da.openservice.NuomiUserPreferenceReque"
+    "st\022>\n\010mert_req\030\003 \001(\0132,.lbs.da.openservic"
+    "e.NuomiMerchantItemRequest\"\277\001\n\024NuomiBuy2"
+    "BuyResponse\022\016\n\006status\030\001 \001(\005\022\017\n\007err_str\030\002"
+    " \001(\014\022L\n\023user_preference_rsp\030\003 \001(\0132/.lbs."
+    "da.openservice.NuomiUserPreferenceRespon"
+    "se\0228\n\010mert_rsp\030\004 \001(\0132&.lbs.da.openservic"
+    "e.GetBNItemsResponse\"\224\003\n\030NuomiMerchantIt"
+    "emRequest\0221\n\006header\030\001 \002(\0132!.lbs.da.opens"
+    "ervice.RequestHeader\022\016\n\006source\030\002 \001(\005\022\016\n\006"
+    "userid\030\003 \001(\014\022\023\n\013algorithmId\030\004 \001(\014\022\r\n\005lim"
+    "it\030\005 \001(\005\022\017\n\007deal_id\030\006 \001(\003\022\023\n\013merchant_id"
+    "\030\007 \003(\003\022\020\n\010deal_num\030\010 \001(\005\022\020\n\010coor_sys\030\t \001"
+    "(\014\022\t\n\001x\030\n \001(\002\022\t\n\001y\030\013 \001(\002\022\017\n\007area_id\030\014 \001("
+    "\003\022\020\n\010vec_catg\030\r \003(\003\022\023\n\013vec_subcatg\030\016 \003(\003"
+    "\022\023\n\013vec_thdcatg\030\017 \003(\003\022\025\n\rvec_shop_dist\030\020"
+    " \003(\003\022\026\n\016vec_shop_range\030\021 \003(\003\022%\n\004args\030\022 \003"
+    "(\0132\027.lbs.da.openservice.Arg*\206\001\n\030UserPref"
+    "erenceSourceType\022\020\n\014MAP_CATEGORY\020\000\022\r\n\tMA"
+    "P_PRICE\020\001\022\r\n\tMAP_BRAND\020\002\022\024\n\020TUANGOU_CATE"
+    "GORY\020\n\022\021\n\rTUANGOU_PRICE\020\013\022\021\n\rTUANGOU_BRA"
+    "ND\020\014*\331\001\n\016UserTrajStatus\022\017\n\013HOME_STATUS\020\000"
+    "\022\022\n\016COMPANY_STATUS\020\001\022\017\n\013AREA_STATUS\020\002\022\020\n"
+    "\014LOCAL_STATUS\020\003\022\020\n\014EWORK_STATUS\020\004\022\022\n\016ETR"
+    "AVEL_STATUS\020\005\022\022\n\016EFAMILY_STATUS\020\006\022\017\n\013ELO"
+    "W_STATUS\020\007\022\020\n\014EHIGH_STATUS\020\010\022\017\n\013ENEW_STA"
+    "TUS\020\t\022\021\n\rUNKNOW_STATUS\020d*B\n\rRequestIdTyp"
+    "e\022\017\n\013PASSPORT_ID\020\001\022\014\n\010BAIDU_ID\020\002\022\010\n\004CUID"
+    "\020\003\022\010\n\004IMEI\020\004*\332\001\n\rNuomiDataType\022\021\n\rNUOMI_"
+    "OFFLINE\020\001\022\020\n\014NUOMI_ONLINE\020\002\022\r\n\tNUOMI_ALL"
+    "\020\003\022\020\n\014ITEM_OFFLINE\020\004\022\026\n\022NUOMI_ITEM_OFFLI"
+    "NE\020\005\022\024\n\020NUOMI_ACTION_SEQ\020\006\022\030\n\024NUOMI_OFFL"
+    "INE_ACTION\020\007\022\027\n\023NUOMI_ONLINE_ACTION\020\010\022\024\n"
+    "\020NUOMI_ALL_ACTION\020\t\022\014\n\010ALL_DATA\020d*\205\001\n\021Nu"
+    "omiUpResultType\022\021\n\rBY_PASSPORTID\020\001\022\016\n\nBY"
+    "_BAIDUID\020\002\022\013\n\007BY_CUID\020\003\022\013\n\007BY_IMEI\020\004\022\r\n\t"
+    "NO_RESULT\020d\022\021\n\rRESULTS_ERROR\020e\022\021\n\rREQUES"
+    "T_ERROR\020f*j\n\016UserActionType\022\021\n\rACTION_FI"
+    "LTER\020\001\022\017\n\013ACTION_VIEW\020\002\022\016\n\nACTION_BUY\020\003\022"
+    "\020\n\014ACTION_ORDER\020\004\022\022\n\016ACTION_PAYMENT\020\005B\002H"
+    "\001", 7961);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "pbrpc.proto", &protobuf_RegisterTypes);
   RequestHeader::default_instance_ = new RequestHeader();
@@ -1511,6 +1547,7 @@ void protobuf_AddDesc_pbrpc_2eproto() {
   StrInfo::default_instance_ = new StrInfo();
   StrFeatureInfo::default_instance_ = new StrFeatureInfo();
   ItemUpInfo::default_instance_ = new ItemUpInfo();
+  UserAction::default_instance_ = new UserAction();
   NuomiUserPreferenceResponse::default_instance_ = new NuomiUserPreferenceResponse();
   GetAOIRequest::default_instance_ = new GetAOIRequest();
   GetAOIResponse::default_instance_ = new GetAOIResponse();
@@ -1558,6 +1595,7 @@ void protobuf_AddDesc_pbrpc_2eproto() {
   StrInfo::default_instance_->InitAsDefaultInstance();
   StrFeatureInfo::default_instance_->InitAsDefaultInstance();
   ItemUpInfo::default_instance_->InitAsDefaultInstance();
+  UserAction::default_instance_->InitAsDefaultInstance();
   NuomiUserPreferenceResponse::default_instance_->InitAsDefaultInstance();
   GetAOIRequest::default_instance_->InitAsDefaultInstance();
   GetAOIResponse::default_instance_->InitAsDefaultInstance();
@@ -1645,6 +1683,10 @@ bool NuomiDataType_IsValid(int value) {
     case 3:
     case 4:
     case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
     case 100:
       return true;
     default:
@@ -1665,6 +1707,23 @@ bool NuomiUpResultType_IsValid(int value) {
     case 100:
     case 101:
     case 102:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* UserActionType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return UserActionType_descriptor_;
+}
+bool UserActionType_IsValid(int value) {
+  switch(value) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -13488,6 +13547,7 @@ void PlaceSemanticRequest::Swap(PlaceSemanticRequest* other) {
 #ifndef _MSC_VER
 const int PoiProbability::kPoiFieldNumber;
 const int PoiProbability::kProbabilityFieldNumber;
+const int PoiProbability::kNameFieldNumber;
 #endif  // !_MSC_VER
 
 PoiProbability::PoiProbability()
@@ -13508,6 +13568,7 @@ void PoiProbability::SharedCtor() {
   _cached_size_ = 0;
   poi_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   probability_ = 0;
+  name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -13518,6 +13579,9 @@ PoiProbability::~PoiProbability() {
 void PoiProbability::SharedDtor() {
   if (poi_ != &::google::protobuf::internal::kEmptyString) {
     delete poi_;
+  }
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    delete name_;
   }
   if (this != default_instance_) {
   }
@@ -13551,6 +13615,11 @@ void PoiProbability::Clear() {
       }
     }
     probability_ = 0;
+    if (has_name()) {
+      if (name_ != &::google::protobuf::internal::kEmptyString) {
+        name_->clear();
+      }
+    }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -13590,6 +13659,23 @@ bool PoiProbability::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(26)) goto parse_name;
+        break;
+      }
+      
+      // optional string name = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_name:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->name().data(), this->name().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -13626,6 +13712,15 @@ void PoiProbability::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->probability(), output);
   }
   
+  // optional string name = 3;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->name().data(), this->name().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      3, this->name(), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -13649,6 +13744,16 @@ void PoiProbability::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->probability(), target);
   }
   
+  // optional string name = 3;
+  if (has_name()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->name().data(), this->name().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->name(), target);
+  }
+  
   if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
@@ -13670,6 +13775,13 @@ int PoiProbability::ByteSize() const {
     // required double probability = 2;
     if (has_probability()) {
       total_size += 1 + 8;
+    }
+    
+    // optional string name = 3;
+    if (has_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->name());
     }
     
   }
@@ -13705,6 +13817,9 @@ void PoiProbability::MergeFrom(const PoiProbability& from) {
     if (from.has_probability()) {
       set_probability(from.probability());
     }
+    if (from.has_name()) {
+      set_name(from.name());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -13731,6 +13846,7 @@ void PoiProbability::Swap(PoiProbability* other) {
   if (other != this) {
     std::swap(poi_, other->poi_);
     std::swap(probability_, other->probability_);
+    std::swap(name_, other->name_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -13956,9 +14072,8 @@ void PlaceSemanticResponse::Swap(PlaceSemanticResponse* other) {
 #ifndef _MSC_VER
 const int POIMatchRequest::kHeaderFieldNumber;
 const int POIMatchRequest::kWifiFingerFieldNumber;
-const int POIMatchRequest::kPoisFieldNumber;
-const int POIMatchRequest::kMatchFingerOffsetsFieldNumber;
-const int POIMatchRequest::kMatchFingerCountsFieldNumber;
+const int POIMatchRequest::kPoiFieldNumber;
+const int POIMatchRequest::kMatchFingerOffsetFieldNumber;
 #endif  // !_MSC_VER
 
 POIMatchRequest::POIMatchRequest()
@@ -13979,6 +14094,9 @@ POIMatchRequest::POIMatchRequest(const POIMatchRequest& from)
 void POIMatchRequest::SharedCtor() {
   _cached_size_ = 0;
   header_ = NULL;
+  wifi_finger_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  poi_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  match_finger_offset_ = 0;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -13987,6 +14105,12 @@ POIMatchRequest::~POIMatchRequest() {
 }
 
 void POIMatchRequest::SharedDtor() {
+  if (wifi_finger_ != &::google::protobuf::internal::kEmptyString) {
+    delete wifi_finger_;
+  }
+  if (poi_ != &::google::protobuf::internal::kEmptyString) {
+    delete poi_;
+  }
   if (this != default_instance_) {
     delete header_;
   }
@@ -14017,11 +14141,18 @@ void POIMatchRequest::Clear() {
     if (has_header()) {
       if (header_ != NULL) header_->::lbs::da::openservice::RequestHeader::Clear();
     }
+    if (has_wifi_finger()) {
+      if (wifi_finger_ != &::google::protobuf::internal::kEmptyString) {
+        wifi_finger_->clear();
+      }
+    }
+    if (has_poi()) {
+      if (poi_ != &::google::protobuf::internal::kEmptyString) {
+        poi_->clear();
+      }
+    }
+    match_finger_offset_ = 0;
   }
-  wifi_finger_.Clear();
-  pois_.Clear();
-  match_finger_offsets_.Clear();
-  match_finger_counts_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -14041,90 +14172,53 @@ bool POIMatchRequest::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(16)) goto parse_wifi_finger;
+        if (input->ExpectTag(18)) goto parse_wifi_finger;
         break;
       }
       
-      // repeated uint64 wifi_finger = 2;
+      // required bytes wifi_finger = 2;
       case 2: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_wifi_finger:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 1, 16, input, this->mutable_wifi_finger())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, this->mutable_wifi_finger())));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_wifi_finger()));
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(16)) goto parse_wifi_finger;
-        if (input->ExpectTag(26)) goto parse_pois;
+        if (input->ExpectTag(26)) goto parse_poi;
         break;
       }
       
-      // repeated string pois = 3;
+      // optional string poi = 3;
       case 3: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_pois:
+         parse_poi:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->add_pois()));
+                input, this->mutable_poi()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-            this->pois(0).data(), this->pois(0).length(),
+            this->poi().data(), this->poi().length(),
             ::google::protobuf::internal::WireFormat::PARSE);
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(26)) goto parse_pois;
-        if (input->ExpectTag(40)) goto parse_match_finger_offsets;
+        if (input->ExpectTag(40)) goto parse_match_finger_offset;
         break;
       }
       
-      // repeated int32 match_finger_offsets = 5;
+      // optional int32 match_finger_offset = 5;
       case 5: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_match_finger_offsets:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
+         parse_match_finger_offset:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 1, 40, input, this->mutable_match_finger_offsets())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, this->mutable_match_finger_offsets())));
+                 input, &match_finger_offset_)));
+          set_has_match_finger_offset();
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(40)) goto parse_match_finger_offsets;
-        if (input->ExpectTag(48)) goto parse_match_finger_counts;
-        break;
-      }
-      
-      // repeated int32 match_finger_counts = 6;
-      case 6: {
-        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
-         parse_match_finger_counts:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 1, 48, input, this->mutable_match_finger_counts())));
-        } else if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag)
-                   == ::google::protobuf::internal::WireFormatLite::
-                      WIRETYPE_LENGTH_DELIMITED) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
-                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
-                 input, this->mutable_match_finger_counts())));
-        } else {
-          goto handle_uninterpreted;
-        }
-        if (input->ExpectTag(48)) goto parse_match_finger_counts;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -14153,31 +14247,24 @@ void POIMatchRequest::SerializeWithCachedSizes(
       1, this->header(), output);
   }
   
-  // repeated uint64 wifi_finger = 2;
-  for (int i = 0; i < this->wifi_finger_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(
-      2, this->wifi_finger(i), output);
+  // required bytes wifi_finger = 2;
+  if (has_wifi_finger()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      2, this->wifi_finger(), output);
   }
   
-  // repeated string pois = 3;
-  for (int i = 0; i < this->pois_size(); i++) {
-  ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-    this->pois(i).data(), this->pois(i).length(),
-    ::google::protobuf::internal::WireFormat::SERIALIZE);
+  // optional string poi = 3;
+  if (has_poi()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->poi().data(), this->poi().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     ::google::protobuf::internal::WireFormatLite::WriteString(
-      3, this->pois(i), output);
+      3, this->poi(), output);
   }
   
-  // repeated int32 match_finger_offsets = 5;
-  for (int i = 0; i < this->match_finger_offsets_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(
-      5, this->match_finger_offsets(i), output);
-  }
-  
-  // repeated int32 match_finger_counts = 6;
-  for (int i = 0; i < this->match_finger_counts_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt32(
-      6, this->match_finger_counts(i), output);
+  // optional int32 match_finger_offset = 5;
+  if (has_match_finger_offset()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->match_finger_offset(), output);
   }
   
   if (!unknown_fields().empty()) {
@@ -14195,31 +14282,26 @@ void POIMatchRequest::SerializeWithCachedSizes(
         1, this->header(), target);
   }
   
-  // repeated uint64 wifi_finger = 2;
-  for (int i = 0; i < this->wifi_finger_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteUInt64ToArray(2, this->wifi_finger(i), target);
+  // required bytes wifi_finger = 2;
+  if (has_wifi_finger()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        2, this->wifi_finger(), target);
   }
   
-  // repeated string pois = 3;
-  for (int i = 0; i < this->pois_size(); i++) {
+  // optional string poi = 3;
+  if (has_poi()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
-      this->pois(i).data(), this->pois(i).length(),
+      this->poi().data(), this->poi().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE);
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteStringToArray(3, this->pois(i), target);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->poi(), target);
   }
   
-  // repeated int32 match_finger_offsets = 5;
-  for (int i = 0; i < this->match_finger_offsets_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteInt32ToArray(5, this->match_finger_offsets(i), target);
-  }
-  
-  // repeated int32 match_finger_counts = 6;
-  for (int i = 0; i < this->match_finger_counts_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteInt32ToArray(6, this->match_finger_counts(i), target);
+  // optional int32 match_finger_offset = 5;
+  if (has_match_finger_offset()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->match_finger_offset(), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -14240,44 +14322,28 @@ int POIMatchRequest::ByteSize() const {
           this->header());
     }
     
-  }
-  // repeated uint64 wifi_finger = 2;
-  {
-    int data_size = 0;
-    for (int i = 0; i < this->wifi_finger_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        UInt64Size(this->wifi_finger(i));
+    // required bytes wifi_finger = 2;
+    if (has_wifi_finger()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->wifi_finger());
     }
-    total_size += 1 * this->wifi_finger_size() + data_size;
-  }
-  
-  // repeated string pois = 3;
-  total_size += 1 * this->pois_size();
-  for (int i = 0; i < this->pois_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->pois(i));
-  }
-  
-  // repeated int32 match_finger_offsets = 5;
-  {
-    int data_size = 0;
-    for (int i = 0; i < this->match_finger_offsets_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        Int32Size(this->match_finger_offsets(i));
+    
+    // optional string poi = 3;
+    if (has_poi()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->poi());
     }
-    total_size += 1 * this->match_finger_offsets_size() + data_size;
-  }
-  
-  // repeated int32 match_finger_counts = 6;
-  {
-    int data_size = 0;
-    for (int i = 0; i < this->match_finger_counts_size(); i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        Int32Size(this->match_finger_counts(i));
+    
+    // optional int32 match_finger_offset = 5;
+    if (has_match_finger_offset()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->match_finger_offset());
     }
-    total_size += 1 * this->match_finger_counts_size() + data_size;
+    
   }
-  
   if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
@@ -14303,13 +14369,18 @@ void POIMatchRequest::MergeFrom(const ::google::protobuf::Message& from) {
 
 void POIMatchRequest::MergeFrom(const POIMatchRequest& from) {
   GOOGLE_CHECK_NE(&from, this);
-  wifi_finger_.MergeFrom(from.wifi_finger_);
-  pois_.MergeFrom(from.pois_);
-  match_finger_offsets_.MergeFrom(from.match_finger_offsets_);
-  match_finger_counts_.MergeFrom(from.match_finger_counts_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_header()) {
       mutable_header()->::lbs::da::openservice::RequestHeader::MergeFrom(from.header());
+    }
+    if (from.has_wifi_finger()) {
+      set_wifi_finger(from.wifi_finger());
+    }
+    if (from.has_poi()) {
+      set_poi(from.poi());
+    }
+    if (from.has_match_finger_offset()) {
+      set_match_finger_offset(from.match_finger_offset());
     }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
@@ -14328,7 +14399,7 @@ void POIMatchRequest::CopyFrom(const POIMatchRequest& from) {
 }
 
 bool POIMatchRequest::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   
   return true;
 }
@@ -14336,10 +14407,9 @@ bool POIMatchRequest::IsInitialized() const {
 void POIMatchRequest::Swap(POIMatchRequest* other) {
   if (other != this) {
     std::swap(header_, other->header_);
-    wifi_finger_.Swap(&other->wifi_finger_);
-    pois_.Swap(&other->pois_);
-    match_finger_offsets_.Swap(&other->match_finger_offsets_);
-    match_finger_counts_.Swap(&other->match_finger_counts_);
+    std::swap(wifi_finger_, other->wifi_finger_);
+    std::swap(poi_, other->poi_);
+    std::swap(match_finger_offset_, other->match_finger_offset_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -14358,7 +14428,7 @@ void POIMatchRequest::Swap(POIMatchRequest* other) {
 // ===================================================================
 
 #ifndef _MSC_VER
-const int POIMatchResponse::kProbabilitiesFieldNumber;
+const int POIMatchResponse::kProbFieldNumber;
 #endif  // !_MSC_VER
 
 POIMatchResponse::POIMatchResponse()
@@ -14367,6 +14437,7 @@ POIMatchResponse::POIMatchResponse()
 }
 
 void POIMatchResponse::InitAsDefaultInstance() {
+  prob_ = const_cast< ::lbs::da::openservice::PoiProbability*>(&::lbs::da::openservice::PoiProbability::default_instance());
 }
 
 POIMatchResponse::POIMatchResponse(const POIMatchResponse& from)
@@ -14377,6 +14448,7 @@ POIMatchResponse::POIMatchResponse(const POIMatchResponse& from)
 
 void POIMatchResponse::SharedCtor() {
   _cached_size_ = 0;
+  prob_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -14386,6 +14458,7 @@ POIMatchResponse::~POIMatchResponse() {
 
 void POIMatchResponse::SharedDtor() {
   if (this != default_instance_) {
+    delete prob_;
   }
 }
 
@@ -14410,7 +14483,11 @@ POIMatchResponse* POIMatchResponse::New() const {
 }
 
 void POIMatchResponse::Clear() {
-  probabilities_.Clear();
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (has_prob()) {
+      if (prob_ != NULL) prob_->::lbs::da::openservice::PoiProbability::Clear();
+    }
+  }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -14421,17 +14498,15 @@ bool POIMatchResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .lbs.da.openservice.PoiProbability probabilities = 1;
+      // optional .lbs.da.openservice.PoiProbability prob = 1;
       case 1: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
-         parse_probabilities:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-                input, add_probabilities()));
+               input, mutable_prob()));
         } else {
           goto handle_uninterpreted;
         }
-        if (input->ExpectTag(10)) goto parse_probabilities;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -14454,10 +14529,10 @@ bool POIMatchResponse::MergePartialFromCodedStream(
 
 void POIMatchResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // repeated .lbs.da.openservice.PoiProbability probabilities = 1;
-  for (int i = 0; i < this->probabilities_size(); i++) {
+  // optional .lbs.da.openservice.PoiProbability prob = 1;
+  if (has_prob()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->probabilities(i), output);
+      1, this->prob(), output);
   }
   
   if (!unknown_fields().empty()) {
@@ -14468,11 +14543,11 @@ void POIMatchResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* POIMatchResponse::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // repeated .lbs.da.openservice.PoiProbability probabilities = 1;
-  for (int i = 0; i < this->probabilities_size(); i++) {
+  // optional .lbs.da.openservice.PoiProbability prob = 1;
+  if (has_prob()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        1, this->probabilities(i), target);
+        1, this->prob(), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -14485,14 +14560,15 @@ void POIMatchResponse::SerializeWithCachedSizes(
 int POIMatchResponse::ByteSize() const {
   int total_size = 0;
   
-  // repeated .lbs.da.openservice.PoiProbability probabilities = 1;
-  total_size += 1 * this->probabilities_size();
-  for (int i = 0; i < this->probabilities_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->probabilities(i));
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .lbs.da.openservice.PoiProbability prob = 1;
+    if (has_prob()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->prob());
+    }
+    
   }
-  
   if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
@@ -14518,7 +14594,11 @@ void POIMatchResponse::MergeFrom(const ::google::protobuf::Message& from) {
 
 void POIMatchResponse::MergeFrom(const POIMatchResponse& from) {
   GOOGLE_CHECK_NE(&from, this);
-  probabilities_.MergeFrom(from.probabilities_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_prob()) {
+      mutable_prob()->::lbs::da::openservice::PoiProbability::MergeFrom(from.prob());
+    }
+  }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
@@ -14536,15 +14616,15 @@ void POIMatchResponse::CopyFrom(const POIMatchResponse& from) {
 
 bool POIMatchResponse::IsInitialized() const {
   
-  for (int i = 0; i < probabilities_size(); i++) {
-    if (!this->probabilities(i).IsInitialized()) return false;
+  if (has_prob()) {
+    if (!this->prob().IsInitialized()) return false;
   }
   return true;
 }
 
 void POIMatchResponse::Swap(POIMatchResponse* other) {
   if (other != this) {
-    probabilities_.Swap(&other->probabilities_);
+    std::swap(prob_, other->prob_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);
@@ -16588,6 +16668,308 @@ void ItemUpInfo::Swap(ItemUpInfo* other) {
 // ===================================================================
 
 #ifndef _MSC_VER
+const int UserAction::kTimestampFieldNumber;
+const int UserAction::kActionTypeFieldNumber;
+const int UserAction::kParamFieldNumber;
+#endif  // !_MSC_VER
+
+UserAction::UserAction()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void UserAction::InitAsDefaultInstance() {
+}
+
+UserAction::UserAction(const UserAction& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void UserAction::SharedCtor() {
+  _cached_size_ = 0;
+  timestamp_ = 0u;
+  action_type_ = 1;
+  param_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+UserAction::~UserAction() {
+  SharedDtor();
+}
+
+void UserAction::SharedDtor() {
+  if (param_ != &::google::protobuf::internal::kEmptyString) {
+    delete param_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void UserAction::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UserAction::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return UserAction_descriptor_;
+}
+
+const UserAction& UserAction::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_pbrpc_2eproto();  return *default_instance_;
+}
+
+UserAction* UserAction::default_instance_ = NULL;
+
+UserAction* UserAction::New() const {
+  return new UserAction;
+}
+
+void UserAction::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    timestamp_ = 0u;
+    action_type_ = 1;
+    if (has_param()) {
+      if (param_ != &::google::protobuf::internal::kEmptyString) {
+        param_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool UserAction::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required uint32 timestamp = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &timestamp_)));
+          set_has_timestamp();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(16)) goto parse_action_type;
+        break;
+      }
+      
+      // required .lbs.da.openservice.UserActionType action_type = 2;
+      case 2: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_action_type:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (lbs::da::openservice::UserActionType_IsValid(value)) {
+            set_action_type(static_cast< lbs::da::openservice::UserActionType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(2, value);
+          }
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(26)) goto parse_param;
+        break;
+      }
+      
+      // required bytes param = 3;
+      case 3: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_param:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_param()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+      
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void UserAction::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // required uint32 timestamp = 1;
+  if (has_timestamp()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->timestamp(), output);
+  }
+  
+  // required .lbs.da.openservice.UserActionType action_type = 2;
+  if (has_action_type()) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      2, this->action_type(), output);
+  }
+  
+  // required bytes param = 3;
+  if (has_param()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytes(
+      3, this->param(), output);
+  }
+  
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* UserAction::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // required uint32 timestamp = 1;
+  if (has_timestamp()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->timestamp(), target);
+  }
+  
+  // required .lbs.da.openservice.UserActionType action_type = 2;
+  if (has_action_type()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      2, this->action_type(), target);
+  }
+  
+  // required bytes param = 3;
+  if (has_param()) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        3, this->param(), target);
+  }
+  
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int UserAction::ByteSize() const {
+  int total_size = 0;
+  
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // required uint32 timestamp = 1;
+    if (has_timestamp()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->timestamp());
+    }
+    
+    // required .lbs.da.openservice.UserActionType action_type = 2;
+    if (has_action_type()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->action_type());
+    }
+    
+    // required bytes param = 3;
+    if (has_param()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->param());
+    }
+    
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UserAction::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const UserAction* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const UserAction*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void UserAction::MergeFrom(const UserAction& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_timestamp()) {
+      set_timestamp(from.timestamp());
+    }
+    if (from.has_action_type()) {
+      set_action_type(from.action_type());
+    }
+    if (from.has_param()) {
+      set_param(from.param());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void UserAction::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UserAction::CopyFrom(const UserAction& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UserAction::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  
+  return true;
+}
+
+void UserAction::Swap(UserAction* other) {
+  if (other != this) {
+    std::swap(timestamp_, other->timestamp_);
+    std::swap(action_type_, other->action_type_);
+    std::swap(param_, other->param_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata UserAction::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UserAction_descriptor_;
+  metadata.reflection = UserAction_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
 const int NuomiUserPreferenceResponse::kFeaturesFieldNumber;
 const int NuomiUserPreferenceResponse::kResultTypeFieldNumber;
 const int NuomiUserPreferenceResponse::kIdFieldNumber;
@@ -16595,6 +16977,7 @@ const int NuomiUserPreferenceResponse::kOtherInfosFieldNumber;
 const int NuomiUserPreferenceResponse::kItemInfosFieldNumber;
 const int NuomiUserPreferenceResponse::kItemSmallFlowFieldNumber;
 const int NuomiUserPreferenceResponse::kItemShotFieldNumber;
+const int NuomiUserPreferenceResponse::kActionsFieldNumber;
 #endif  // !_MSC_VER
 
 NuomiUserPreferenceResponse::NuomiUserPreferenceResponse()
@@ -16673,6 +17056,7 @@ void NuomiUserPreferenceResponse::Clear() {
   features_.Clear();
   other_infos_.Clear();
   item_infos_.Clear();
+  actions_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
 }
@@ -16795,6 +17179,21 @@ bool NuomiUserPreferenceResponse::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(66)) goto parse_actions;
+        break;
+      }
+      
+      // repeated .lbs.da.openservice.UserAction actions = 8;
+      case 8: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_actions:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_actions()));
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(66)) goto parse_actions;
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -16864,6 +17263,12 @@ void NuomiUserPreferenceResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->item_shot(), output);
   }
   
+  // repeated .lbs.da.openservice.UserAction actions = 8;
+  for (int i = 0; i < this->actions_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, this->actions(i), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -16922,6 +17327,13 @@ void NuomiUserPreferenceResponse::SerializeWithCachedSizes(
   // optional bool item_shot = 7;
   if (has_item_shot()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->item_shot(), target);
+  }
+  
+  // repeated .lbs.da.openservice.UserAction actions = 8;
+  for (int i = 0; i < this->actions_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        8, this->actions(i), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -16985,6 +17397,14 @@ int NuomiUserPreferenceResponse::ByteSize() const {
         this->item_infos(i));
   }
   
+  // repeated .lbs.da.openservice.UserAction actions = 8;
+  total_size += 1 * this->actions_size();
+  for (int i = 0; i < this->actions_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->actions(i));
+  }
+  
   if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
@@ -17013,6 +17433,7 @@ void NuomiUserPreferenceResponse::MergeFrom(const NuomiUserPreferenceResponse& f
   features_.MergeFrom(from.features_);
   other_infos_.MergeFrom(from.other_infos_);
   item_infos_.MergeFrom(from.item_infos_);
+  actions_.MergeFrom(from.actions_);
   if (from._has_bits_[1 / 32] & (0xffu << (1 % 32))) {
     if (from.has_result_type()) {
       set_result_type(from.result_type());
@@ -17050,6 +17471,9 @@ bool NuomiUserPreferenceResponse::IsInitialized() const {
   for (int i = 0; i < other_infos_size(); i++) {
     if (!this->other_infos(i).IsInitialized()) return false;
   }
+  for (int i = 0; i < actions_size(); i++) {
+    if (!this->actions(i).IsInitialized()) return false;
+  }
   return true;
 }
 
@@ -17062,6 +17486,7 @@ void NuomiUserPreferenceResponse::Swap(NuomiUserPreferenceResponse* other) {
     item_infos_.Swap(&other->item_infos_);
     std::swap(item_small_flow_, other->item_small_flow_);
     std::swap(item_shot_, other->item_shot_);
+    actions_.Swap(&other->actions_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

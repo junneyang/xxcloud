@@ -1,0 +1,5 @@
+<div>
+    The public DNS name of this Hudson server (optionally with port number and protocol).
+    CAS redirects the user back here after authentication.
+    For example, <code>localhost:8080</code> when testing Hudson locally.
+</div>

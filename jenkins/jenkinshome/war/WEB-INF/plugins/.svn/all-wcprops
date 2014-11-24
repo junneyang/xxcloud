@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins
+END
+maven-plugin.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/maven-plugin.hpi
+END
+matrix-auth.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/matrix-auth.hpi
+END
+javadoc.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/javadoc.hpi
+END
+matrix-project.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/matrix-project.hpi
+END
+mailer.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/mailer.hpi
+END
+pam-auth.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/pam-auth.hpi
+END
+external-monitor-job.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/external-monitor-job.hpi
+END
+ldap.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/ldap.hpi
+END
+ant.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/ant.hpi
+END
+antisamy-markup-formatter.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/antisamy-markup-formatter.hpi
+END
+windows-slaves.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/windows-slaves.hpi
+END
+ssh-slaves.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/ssh-slaves.hpi
+END
+ssh-credentials.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/ssh-credentials.hpi
+END
+junit.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/junit.hpi
+END
+cvs.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/cvs.hpi
+END
+credentials.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/credentials.hpi
+END
+translation.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/translation.hpi
+END
+subversion.hpi
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins/subversion.hpi
+END

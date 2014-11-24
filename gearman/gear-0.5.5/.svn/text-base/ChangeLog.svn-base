@@ -1,0 +1,113 @@
+CHANGES
+=======
+
+0.5.5
+-----
+
+* Restructure logging
+* geard: be more careful removing jobs
+* Add access control
+* add tox shortcut to build docs
+
+0.5.4
+-----
+
+* Re-register all functions on reconnect
+* Close server connect pipes on cleanup
+* Be more careful with locks
+* Throttle geard connect loop
+* Close poll loop pipes on cleanup
+
+0.5.3
+-----
+
+* Send less statsd data
+
+0.5.2
+-----
+
+* Geard: Report packet timing to statsd
+* Use client_id as part of the logger name
+
+0.5.1
+-----
+
+* Fix exception in status admin command
+* Remove tox locale overrides
+* Solve hacking/pbr requirements conflict
+
+0.5.0
+-----
+
+* Add statsd support
+* Correctly set job known/running attributes
+* geard: wrong reference to setup_logging()
+* Add SSL error checking
+* Encapsulate the raw socket.send calls
+* Update tox.ini to use skipsdist/develop
+* Fix geard logging config
+* Remove --pre from tox install command
+* Update gear docs to include gearman server daemon
+
+0.4.0
+-----
+
+* Fix ordering of state change in server
+* fix project dependencies
+* Server: make job handle safer
+* Remove E128 pep8 ignore
+* Add SSL support for clients, workers, and geard
+* Set hacking versions
+* Add server command: "geard"
+
+0.3.1
+-----
+
+* Fix accounting in server 'status' command
+
+0.3.0
+-----
+
+* Make BaseClientServer threads daemons
+* Clean up server jobs on disconnect
+
+0.2.0
+-----
+
+* Add tiered queues to server
+* Add workers admin command to server
+* Support python3
+
+0.1.1
+-----
+
+* Explicitly check event state after waiting
+* Handle blobs with nulls
+
+0.1.0
+-----
+
+* Wait for responses to admin requests
+* Wait for responses to some requests
+* Handle GET_STATUS in the server
+* Fix connection debugging messages
+* Fix miscategorized packets
+* More improvements to admin requests
+* Improve efficiency of admin packets
+* Add remaining client/worker handlers
+* Encoding bugfix
+* Add status command to test server
+* Some bugfixes and test/debugging assist
+* Add simple Gearman server
+* Reorganize documentation
+* Add worker functionality
+* Add a method that waits for a job handle
+* Support administrative protocol
+* Treat job data as an array
+* Fix typo in workStatus
+* Add Sphinx documentation
+* Make flake8 and OpenStack Hacking clean
+* Add initial test suite
+* Add pbr-based setup
+* Initial commit
+* Added .gitreview

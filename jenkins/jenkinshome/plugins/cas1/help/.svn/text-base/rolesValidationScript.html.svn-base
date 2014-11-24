@@ -1,0 +1,52 @@
+<div>
+    A Groovy script to parse a custom validation response and return a list of roles/groups for this user.
+    Each list element is changed toString() to create a GrantedAuthority.
+
+    <p>
+        For example, suppose a customized CAS returns five extra lines with a successful validation response:
+        <pre>
+yes
+jbeutel
+99999999
+John D Beutel
+student; staff
+uhsystem; uhm
+eduPersonOrgDn=uhm,eduPersonAffiliation=student;&nbsp;eduPersonOrgDn=uhsystem,eduPersonAffiliation=staff
+        </pre>
+
+        The following script grants authorities/roles/groups "uhm-student" and "uhsystem-staff" to this user.
+        It handles the LDAP attribute names case-insensitively.
+        <pre>
+response.readLines()[6].split(';')*.trim().collect {
+    def map = [:]
+    it.split(',').each {
+        def a = it.split('=')
+        map[a[0].toLowerCase()] = a[1]
+    }
+    "$map.edupersonorgdn-$map.edupersonaffiliation"
+}
+        </pre>
+    </p>
+
+    <p>
+        As a second example, to add roles managed within the script as lists of usernames,
+        the following script adds the authority/role/group "kfs-dev" to "uhm-student" and "uhsystem-staff"
+        for the above validation response:
+        <pre>
+def roles = response.readLines()[6].split(';')*.trim().collect {
+    def map = [:]
+    it.split(',').each {
+        def a = it.split('=')
+        map[a[0].toLowerCase()] = a[1]
+    }
+    "$map.edupersonorgdn-$map.edupersonaffiliation"
+}
+def username = response.readLines()[1].trim()
+roles += [
+    'kfs-dev': ['raejean', 'lodo', 'bly', 'jbeutel'], // etc...
+    'kfs-func': ['kegami', 'tammy', 'jfujita'] // etc...
+].collect { role, names -> names.contains(username) ? role : [] }.flatten()
+return roles
+        </pre>
+    </p>
+</div>

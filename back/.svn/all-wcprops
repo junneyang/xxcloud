@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/app-test/search/lbs-stat/!svn/ver/5153/trunk/upps_test/jenkinsFramework/protobuf/back
+END
+addtask.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/app-test/search/lbs-stat/!svn/ver/5153/trunk/upps_test/jenkinsFramework/protobuf/back/addtask.py
+END
+gearmanwork.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app-test/search/lbs-stat/!svn/ver/5153/trunk/upps_test/jenkinsFramework/protobuf/back/gearmanwork.py
+END
+gearmanjob.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/app-test/search/lbs-stat/!svn/ver/5153/trunk/upps_test/jenkinsFramework/protobuf/back/gearmanjob.py
+END
+gearmanclient.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/app-test/search/lbs-stat/!svn/ver/5153/trunk/upps_test/jenkinsFramework/protobuf/back/gearmanclient.py
+END

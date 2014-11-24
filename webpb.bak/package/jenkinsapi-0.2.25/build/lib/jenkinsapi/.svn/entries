@@ -1,7 +1,7 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/jenkinsapi-0.2.25/build/lib/jenkinsapi
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,14 +26,14 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-plugins.py
+result.py
 file
 
 
 
 
 2014-11-19T02:39:24.000000Z
-7b839732d8a100d1549fd655cd43e0b6
+c1401bc0121ffa6d4c270116338c57dc
 2014-11-19T02:32:09.521866Z
 4910
 yangjun03
@@ -58,7 +58,7 @@ yangjun03
 
 
 
-1671
+617
 
 executors.py
 file
@@ -93,6 +93,40 @@ yangjun03
 
 
 1121
+
+plugins.py
+file
+
+
+
+
+2014-11-19T02:39:24.000000Z
+7b839732d8a100d1549fd655cd43e0b6
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1671
 
 queue.py
 file
@@ -264,14 +298,14 @@ yangjun03
 
 3042
 
-jobs.py
+views.py
 file
 
 
 
 
 2014-11-19T02:39:24.000000Z
-990289b17584771d18549344013088ef
+e4ccf5f159c6bb556a3e6bde6f390c57
 2014-11-19T02:32:09.521866Z
 4910
 yangjun03
@@ -296,7 +330,7 @@ yangjun03
 
 
 
-4849
+3215
 
 artifact.py
 file
@@ -332,14 +366,14 @@ yangjun03
 
 4089
 
-views.py
+jobs.py
 file
 
 
 
 
 2014-11-19T02:39:24.000000Z
-e4ccf5f159c6bb556a3e6bde6f390c57
+990289b17584771d18549344013088ef
 2014-11-19T02:32:09.521866Z
 4910
 yangjun03
@@ -364,7 +398,7 @@ yangjun03
 
 
 
-3215
+4849
 
 executor.py
 file
@@ -641,39 +675,8 @@ yangjun03
 
 1672
 
-api.py
-file
-
-
-
-
-2014-11-19T02:39:24.000000Z
-cea354e6ee0fbf3f154d53f8429ebded
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8247
+utils
+dir
 
 invocation.py
 file
@@ -709,17 +712,14 @@ yangjun03
 
 3954
 
-utils
-dir
-
-job.py
+api.py
 file
 
 
 
 
 2014-11-19T02:39:24.000000Z
-ea557af148d2b70e3020f459f18bab4e
+cea354e6ee0fbf3f154d53f8429ebded
 2014-11-19T02:32:09.521866Z
 4910
 yangjun03
@@ -744,7 +744,7 @@ yangjun03
 
 
 
-23377
+8247
 
 view.py
 file
@@ -779,6 +779,40 @@ yangjun03
 
 
 5863
+
+job.py
+file
+
+
+
+
+2014-11-19T02:39:24.000000Z
+ea557af148d2b70e3020f459f18bab4e
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23377
 
 custom_exceptions.py
 file
@@ -847,38 +881,4 @@ yangjun03
 
 
 416
-
-result.py
-file
-
-
-
-
-2014-11-19T02:39:24.000000Z
-c1401bc0121ffa6d4c270116338c57dc
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-617
 

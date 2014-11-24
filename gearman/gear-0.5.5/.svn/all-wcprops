@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/LICENSE
+END
+.testr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/.testr.conf
+END
+README.rst
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/README.rst
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/ChangeLog
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/setup.py
+END
+tox.ini
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/tox.ini
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/PKG-INFO
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/MANIFEST.in
+END
+CONTRIBUTING.rst
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/CONTRIBUTING.rst
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/setup.cfg
+END
+test-requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/test-requirements.txt
+END
+requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/requirements.txt
+END

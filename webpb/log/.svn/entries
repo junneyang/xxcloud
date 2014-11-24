@@ -1,14 +1,14 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/log
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-10T08:29:58.650616Z
-4628
+2014-11-24T10:11:23.601272Z
+5154
 yangjun03
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2014-11-10T05:59:17.000000Z
-29c71456c2a429c6091b48d1e3b08495
-2014-11-10T08:29:58.650616Z
-4628
+2014-11-24T09:40:18.000000Z
+12eabddcf56ac82d9ee1c2a03aa0b309
+2014-11-24T10:11:23.601272Z
+5154
 yangjun03
 
 
@@ -58,5 +58,5 @@ yangjun03
 
 
 
-4269463
+6479908
 

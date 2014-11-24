@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/base.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/__init__.py
+END
+metadata.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/metadata.py
+END
+backwards.py
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/backwards.py
+END
+commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/commands.py
+END
+files.py
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/pbr/hooks/files.py
+END

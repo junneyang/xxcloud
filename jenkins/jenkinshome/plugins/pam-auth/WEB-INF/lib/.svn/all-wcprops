@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/pam-auth/WEB-INF/lib
+END
+libpam4j-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/pam-auth/WEB-INF/lib/libpam4j-1.6.jar
+END
+jna-3.4.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/pam-auth/WEB-INF/lib/jna-3.4.0.jar
+END
+classes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/pam-auth/WEB-INF/lib/classes.jar
+END

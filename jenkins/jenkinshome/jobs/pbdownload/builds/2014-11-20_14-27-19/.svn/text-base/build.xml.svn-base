@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>UNIQUE_ID</name>
+          <description>	必填。Job唯一ID标识。默认：1。</description>
+          <value>162</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ProtoFileSVNPath</name>
+          <description>必填。proto文件的svn路径，如：https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto。</description>
+          <value>https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>IPPort</name>
+          <description>必填。目标机器IP以及SSH端口，如：10.48.55.39:22。</description>
+          <value>10.99.18.33:22</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>UserName</name>
+          <description>必填。目标机器登录用户名。如：yangjun03。</description>
+          <value>linqiaoying</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.PasswordParameterValue>
+          <name>PassWord</name>
+          <description>必填。目标机器登录密码。</description>
+          <value>mFEe2cKuJe9lmAT5jCdD6Sx15DX84dJakgqERu1921U=</value>
+        </hudson.model.PasswordParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ToolType</name>
+          <description>必填。测试工具类型(功能 : pbrpcclient, 性能 : pbrpcbenchmark)。如：pbrpcclient。</description>
+          <value>pbrpcclient</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>RemotePath</name>
+          <description>必填。目标路径。如：/home/users/yangjun03/workspace。</description>
+          <value>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+  </actions>
+  <number>122</number>
+  <startTime>1416464839083</startTime>
+  <result>SUCCESS</result>
+  <duration>72149</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/pbdownload</workspace>
+  <hudsonVersion>1.590</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

@@ -1,13 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/log
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/log
+END
+pbrpc.log
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/log/pbrpc.log
+END
+nuomi_up.log
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/app-test/search/lbs-stat/!svn/ver/4317/trunk/upps_test/jenkinsFramework/protobuf/log/nuomi_up.log
 END
 pbrpc.log.wf
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/app-test/search/lbs-stat/!svn/ver/4317/trunk/upps_test/jenkinsFramework/protobuf/log/pbrpc.log.wf
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/log/pbrpc.log.wf
 END
 pbunittest.log
 K 25
@@ -15,15 +27,15 @@ svn:wc:ra_dav:version-url
 V 100
 /app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/log/pbunittest.log
 END
-pbrpc.log
+jenkins.log
 K 25
 svn:wc:ra_dav:version-url
-V 95
-/app-test/search/lbs-stat/!svn/ver/4530/trunk/upps_test/jenkinsFramework/protobuf/log/pbrpc.log
+V 97
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/log/jenkins.log
 END
-nuomi_up.log
+pb.log
 K 25
 svn:wc:ra_dav:version-url
-V 98
-/app-test/search/lbs-stat/!svn/ver/4317/trunk/upps_test/jenkinsFramework/protobuf/log/nuomi_up.log
+V 92
+/app-test/search/lbs-stat/!svn/ver/5152/trunk/upps_test/jenkinsFramework/protobuf/log/pb.log
 END

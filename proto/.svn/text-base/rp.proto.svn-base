@@ -1,0 +1,137 @@
+import "pbrpc.proto";
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+
+//message TestItem{
+//   optional string a = 1;
+//}
+
+message RPCommonRequest
+{
+    required RequestHeader header = 1;      // 请求头部
+	optional string provider = 2;
+	optional string logId = 3;            //输入中的日志编号，用来使用前、中、后端统一请求的唯一编号
+	
+	//app_see2see
+	optional string userID = 4;          //稳定用户标识：登录账号id，若取不到设为DEFAULT_USER_ID=""
+	optional string cuid = 5;            //相对稳定用户标识：无线端用户标识，相当于cookie，若取不到设为 DEFAULT_CUID="BN_UNKNOWN_CUID"
+	optional string coor_sys = 6;        //前端所使用的坐标系，若取不到，则设为DEFAULT_COOR_SYS="UNKNOW_COOR_SYS"
+	optional double x = 7;              //经度坐标，若取不到设为DEFAULT_USER_X=-1.0
+	optional double y = 8;               //纬度坐标，若取不到设为DEFAULT_USER_Y=-1.0
+	optional int64 areaId = 9;          //用户所在城市ID，若取不到设为DEFAULT_USER_AREA_ID=-1
+	optional int64 dealId = 10;           //待推荐的团单ID，若取不到设为DEFAULT_DEAL_ID=-1
+	optional int32 size = 11;           //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1 或者 请求团单数
+	optional string deviceType = 12;   //输入中的设备类型，可取值：pc、ios、ipad、android、webapp
+	optional int32 situationId = 13;  //场景编号，1　默认推荐；2　过期团单推荐
+	optional int32 need_poi = 14;      //请求di中的poi信息，若取不到设为DEFAULT_NEED_POI=0
+	optional int32 poi_num = 15;      //请求di中的poi的数量要求， 若取不到设置DEFAULT_POI_NUM=0  
+	
+	optional string baidu_id = 16;    //相对稳定用户标识：PC端标识，相当于cookie，为空则设为DEFAULT_BAIDU_ID="BN_UNKNOWN_BAIDU_ID"
+	optional int64 targetAreaId = 17;   //酒店等查询中的目标城市，为空则设为DEFAULT_USER_TARGET_AREA_ID = -1
+	 
+	optional string keywords = 18;        //用户检索query
+	optional string str_catg = 19;        //用户筛选的一级分类
+	optional string str_subcatg = 20;     //用户筛选的二级分类
+	optional string str_thdcatg = 21;     //用户筛选的三级分类
+	optional string str_shop_dist = 22;   //用户筛选的行政区
+	optional string str_shop_range = 23;  //用户筛选的商圈
+	optional string qrw_str_poi_id = 24;  //qrw识别出来的商户列表
+	optional string qrw_str_brand_id = 25; //qrw识别出来的品牌列表
+	optional string qrw_str_thdcatg = 26;  //qrw识别出来的三级分类列表
+	optional string qrw_str_subcatg = 27;  //qrw识别出来的二级分类列表
+	optional string qrw_str_catg = 28;     //qrw识别出来的一级分类列表
+	optional string qrw_str_city = 29;     //qrw识别出来的城市倾向列表
+	optional string qrw_str_dist = 30;     //qrw识别出来的行政区域倾向列表
+	optional string qrw_str_range = 31;    //qrw识别出来的商圈倾向列表
+	
+	optional int32 client = 32;            //手机型号：0 - IOS, 1 - ANDROID, 2 - WINPHONE, 3 - OTHER
+	optional int32 channelType = 33;       //channel type：7 - wap, 8 - app
+	optional int32 startDay = 34;          //请求的起始日期，若取不到设为DEFAULT_START_DAY=0
+	optional int32 daySize  = 35;           //以起始日期为1，往前依次增加，最多为7， 若取不到设置DEFAULT_DAY_SIZE=0
+	optional int32 dealSize = 36;         //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1
+	optional string str_site_list = 37;    //推送直达标记，若取不到设为DEFAULT_STR_SITE_LIST=""
+	
+	optional int32 eventId = 38;           //请求中的eventID， 若取不到设置DEFAULT_POI_NUM=0
+	optional int64 recDay = 39;            //推荐日期，若取不到设为DEFAULT_REC_DAY=-
+	optional int64 dealPos = 40;           //请求的团单位置，若取不到设为DEFAULT_DEAL_POS=0	
+	
+	//repeated string ss = 41;	 
+	//repeated int64 ii = 42;	
+	//optional TestItem item = 43;
+	//repeated TestItem items = 44;
+}
+
+
+message RPResultPOIItem{
+   optional int32 poiid = 1;
+   optional double x = 2;
+   optional double y = 3;
+   optional double distance = 4;
+   optional string poiname = 5;
+   optional string address = 6;
+   optional string tel = 7;
+   optional string rangeid = 8;
+}
+
+message RPResultItem{
+    optional int64 dealId = 1;   //推荐的团单ID
+    optional double weight = 2;  //推荐的团单权重
+    optional int32 rec_strategy = 3; //推荐的策略编号
+    optional string reason = 4;   //推荐的原因-
+    optional int32 ifvirtual = 5; //是否虚拟团单
+     //-DI信息
+    optional string image = 6;
+    optional string tiny_image = 7;
+    optional string mid_image = 8;
+    optional string business_title = 9;
+    optional string medium_title = 10;
+    optional string min_title = 11;
+    optional string title_high_price = 12;
+    optional int32  price_ori = 13;
+    optional int32 price_current = 14;
+    optional string tags = 15;
+    optional int32 is_new = 16;
+    optional int32 is_flush = 17;
+    optional int32 is_reservation = 18;
+    optional int32 sale_count = 19;
+    optional int32 type = 20;
+    optional int32 pay_start_time = 21;
+    optional int32 pay_end_time = 22;
+    optional int32 deal_start_time = 23;
+    optional int32 deal_expire_time = 24;
+    optional int32 city_num = 25;
+    
+    repeated RPResultPOIItem poi = 26;
+    optional int32 poi_num = 27; 
+    optional string range = 28;
+    optional int32 score = 29;
+    optional int32 comment_num = 30;
+    optional string tinyurl = 31;
+    
+    optional string group_title = 32; //分组引导词
+    optional int32 group_type = 33; //分组类型
+    repeated RPResultItem group_list = 34;
+    
+    optional int32 day = 35;  
+    optional string bn_rp_svr_exp_ids = 36;  //小流量实验ID
+    optional int32 pushNum = 37;  
+    repeated RPResultItem bn_rp_svr_result = 38; 
+    
+}
+
+message RPCommonResponse{
+    optional string bn_rp_svr_errinf = 1;
+    optional int32  bn_rp_svr_errno =  2;
+    optional string bn_rp_svr_exp_ids = 3;
+    optional string logId = 4;
+    optional int32 bn_rp_svr_rec_num = 5;
+    repeated RPResultItem bn_rp_svr_result = 6;
+    
+    optional int32 bn_rp_svr_nresult_flag =7;  //是否有推荐结果
+    
+    optional string bn_rp_svr_title = 8; //推送标题
+    optional string bn_rp_svr_subtitle = 9; //推送副标题
+    optional string gift_cart_id = 10; //代金券ID
+    
+}

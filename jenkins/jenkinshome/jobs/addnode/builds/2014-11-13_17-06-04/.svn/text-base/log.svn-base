@@ -1,0 +1,8 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Building on master in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/addnode
+[addnode] $ /bin/sh -xe /tmp/hudson6773134965398658467.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ python addnode.py http://10.48.55.39:8898/ linqiaoying 2 /home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool 10.99.18.33 22 linqiaoying Qiao123
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/pb/jenkins/status/'
+Finished: SUCCESS

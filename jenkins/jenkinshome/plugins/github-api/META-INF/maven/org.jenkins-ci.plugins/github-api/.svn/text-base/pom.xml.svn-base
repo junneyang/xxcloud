@@ -1,0 +1,185 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.424</version>
+  </parent>
+  
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <artifactId>github-api</artifactId>
+  <version>1.59</version>
+  <packaging>hpi</packaging>
+  <name>GitHub API Plugin</name>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/GitHub+API+Plugin</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>github-api</artifactId>
+      <version>1.59</version>
+    </dependency>
+  </dependencies>
+
+  <!-- get every artifact through maven.glassfish.org, which proxies all the artifacts that we need -->
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+  
+  <scm>
+    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+    <tag>github-api-1.59</tag>
+  </scm>
+  <build>
+  	<pluginManagement>
+  		<plugins>
+  			<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+  			<plugin>
+  				<groupId>org.eclipse.m2e</groupId>
+  				<artifactId>lifecycle-mapping</artifactId>
+  				<version>1.0.0</version>
+  				<configuration>
+  					<lifecycleMappingMetadata>
+  						<pluginExecutions>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>com.cloudbees</groupId>
+  									<artifactId>
+  										maven-license-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.1,)
+  									</versionRange>
+  									<goals>
+  										<goal>process</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.apache.maven.plugins
+  									</groupId>
+  									<artifactId>
+  										maven-enforcer-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.0,)
+  									</versionRange>
+  									<goals>
+  										<goal>display-info</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.codehaus.groovy.maven
+  									</groupId>
+  									<artifactId>
+  										gmaven-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.0-rc-5,)
+  									</versionRange>
+  									<goals>
+  										<goal>generateTestStubs</goal>
+  										<goal>testCompile</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.jenkins-ci.tools
+  									</groupId>
+  									<artifactId>
+  										maven-hpi-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.67,)
+  									</versionRange>
+  									<goals>
+  										<goal>apt-compile</goal>
+  										<goal>insert-test</goal>
+  										<goal>
+  											resolve-test-dependencies
+  										</goal>
+  										<goal>test-hpl</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>
+  										org.jvnet.localizer
+  									</groupId>
+  									<artifactId>
+  										maven-localizer-plugin
+  									</artifactId>
+  									<versionRange>
+  										[1.12,)
+  									</versionRange>
+  									<goals>
+  										<goal>generate</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.kohsuke</groupId>
+  									<artifactId>
+  										access-modifier-checker
+  									</artifactId>
+  									<versionRange>
+  										[1.0,)
+  									</versionRange>
+  									<goals>
+  										<goal>enforce</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore />
+  								</action>
+  							</pluginExecution>
+  						</pluginExecutions>
+  					</lifecycleMappingMetadata>
+  				</configuration>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
+  </build>
+</project>

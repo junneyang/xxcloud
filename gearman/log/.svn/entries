@@ -1,14 +1,14 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/gearman/log
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-07T03:33:51.218282Z
-4533
+2014-11-24T10:04:14.126578Z
+5152
 yangjun03
 
 
@@ -25,4 +25,38 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+gearmanserver.log
+file
+
+
+
+
+2014-11-22T17:56:37.000000Z
+28f2de082d82a331a6f909f9e2975636
+2014-11-24T10:04:14.126578Z
+5152
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+586863
 

@@ -1,0 +1,20 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/workspace/pbrpcclient
+[pbrpcclient] $ /bin/sh -xe /tmp/hudson3701881078639003689.sh
++ cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf
++ ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7788 lbs.da.openservice.ItemService GetItemsByItem '[' '{' '"header":' '{' '"subservice":"sub",' '"secretkey":' '"pass",' '"servicekey":' '"key1"' '},' '"algorithmId":' '"topic_rev_poi",' '"item_ids":' '["9977193541978760286"]' '},' '{' '"header":' '{' '"subservice":"sub",' '"secretkey":' '"pass",' '"servicekey":' '"key1"' '},' '"algorithmId":' '"topic_rev_poi",' '"item_ids":' '["9977193541978760286"]' '}' ']'
+======================================================================================
+|                                 Usage Instructions                                 |
+======================================================================================
+|USAGE          : ./pbrpcclient <PBTYPE> <IPPORT> <ServiceName> <MethodName> <TestData>
+|       PBTYPE  : type of pbrpc, currently supported PUBLIC-PBRPC/SOFA-PBRPC/HULU-PBRPC, eg : SOFA-PBRPC 
+|       IPPORT  : sever ip port pair, eg : 127.0.0.1:7789 
+|  ServiceName  : service name, eg : lbs.da.openservice.ItemService 
+|   MethodName  : method name, eg : GetItemsByItem 
+|     TestData  : test data file path, eg : ./data/item_function_json.data 
+|
+|EXAMPLE        : ./pbrpcclient HULU-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/item_function_json.data 
+|-------------------------------------------------------------------------------------
+|MORE           : if any questions, please contact 597092663@qq.com 
+======================================================================================
+Finished: SUCCESS

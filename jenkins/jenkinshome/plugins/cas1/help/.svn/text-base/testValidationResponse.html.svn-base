@@ -1,0 +1,17 @@
+<div>
+    Input for testing the validation script. This is only used for testing.
+    It should look like the body of a successful validation response sent by your CAS server.
+    The Test Script button feeds it to the script and displays the roles it parsed.
+    <p>
+        Example:
+        <pre>
+yes
+jbeutel
+99999999
+John D Beutel
+student; staff
+uhsystem; uhm
+eduPersonOrgDn=uhm,eduPersonAffiliation=student;&nbsp;eduPersonOrgDn=uhsystem,eduPersonAffiliation=staff
+        </pre>
+    </p>
+</div>

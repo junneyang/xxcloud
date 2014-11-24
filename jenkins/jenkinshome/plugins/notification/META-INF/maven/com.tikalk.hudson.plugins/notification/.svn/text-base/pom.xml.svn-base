@@ -1,0 +1,130 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.tikalk.hudson.plugins</groupId>
+    <artifactId>notification</artifactId>
+    <version>1.7</version>
+    <packaging>hpi</packaging>
+    <name>Jenkins Notification plugin</name>
+    <description>Sends notifications about jobs phases and status</description>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin</url>
+
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>1.566</version>
+    </parent>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+        <pluginManagement>
+           <plugins>
+               <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.maven.plugins%22%20AND%20a%3A%22maven-compiler-plugin%22 -->
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-compiler-plugin</artifactId>
+                   <version>3.1</version>
+               </plugin>
+               <!-- http://repo.jenkins-ci.org/releases/org/jenkins-ci/tools/maven-hpi-plugin/ -->
+               <plugin>
+                   <groupId>org.jenkins-ci.tools</groupId>
+                   <artifactId>maven-hpi-plugin</artifactId>
+                   <version>1.109</version>
+               </plugin>
+		<plugin>
+		  <artifactId>maven-release-plugin</artifactId>
+		  <version>2.4.2</version>
+		  <dependencies>
+			<dependency>
+			  <groupId>org.apache.maven.scm</groupId>
+			  <artifactId>maven-scm-provider-gitexe</artifactId>
+			  <version>1.8.1</version>
+			</dependency>
+		   </dependencies>
+		  </plugin>
+           </plugins>
+       </pluginManagement>
+    </build>
+
+    <dependencies>
+        <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.google.code.gson%22%20AND%20a%3A%22gson%22 -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        <!-- http://jcenter.bintray.com/org/jenkins-ci/plugins/s3/ -->
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>s3</artifactId>
+            <version>0.6</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <developers>
+        <developer>
+            <id>markb</id>
+            <name>Mark Berner</name>
+            <email>markb@tikalk.com</email>
+            <organization>Tikal Knowledge</organization>
+            <organizationUrl>http://tikalk.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>hagzag</id>
+            <name>Haggai Philip Zagury</name>
+            <email>hagzag@tikalk.com</email>
+            <organization>Tikal Knowledge</organization>
+            <organizationUrl>http://tikalk.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>evgenyg</id>
+            <name>Evgeny Goldin</name>
+            <email>evgenyg@gmail.com</email>
+            <organization>AKQA</organization>
+            <organizationUrl>http://akqa.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/notification-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/notification-plugin.git</developerConnection>
+        <url>http://github.com/jenkinsci/notification-plugin</url>
+      <tag>notification-1.7</tag>
+  </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+</project>
+

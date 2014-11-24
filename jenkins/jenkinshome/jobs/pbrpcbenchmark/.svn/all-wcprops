@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark
+END
+lastStable
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark/lastStable
+END
+lastSuccessful
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark/lastSuccessful
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark/config.xml
+END
+nextBuildNumber
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark/nextBuildNumber
+END

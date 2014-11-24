@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.tikal.hudson.plugins.notification.HudsonNotificationProperty plugin="notification@1.7">
+      <endpoints>
+        <com.tikal.hudson.plugins.notification.Endpoint>
+          <protocol>HTTP</protocol>
+          <format>JSON</format>
+          <url>http://10.48.55.39:8889/pb/jenkins/status/</url>
+          <event>all</event>
+          <timeout>30000</timeout>
+        </com.tikal.hudson.plugins.notification.Endpoint>
+      </endpoints>
+    </com.tikal.hudson.plugins.notification.HudsonNotificationProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>UNIQUE_ID</name>
+          <description>必填。Job唯一ID标识。默认：1。</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JenkinsURL</name>
+          <description>必填。jenkins地址。如：http://10.48.55.39:8898/。</description>
+          <defaultValue>http://10.48.55.39:8898/</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>NodeName</name>
+          <description>必填，添加节点名称。如：da02。</description>
+          <defaultValue>da02</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>EXENum</name>
+          <description>必填。并发任务数。如：2。
+</description>
+          <defaultValue>2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>WorkPath</name>
+          <description>必填。工作路径。如：/home/map/workspace。</description>
+          <defaultValue>/home/map/workspace</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IP</name>
+          <description>必填。节点IP地址。如：10.99.36.61。</description>
+          <defaultValue>10.99.36.61</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PORT</name>
+          <description>必填。节点SSH端口。默认22。</description>
+          <defaultValue>22</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UserName</name>
+          <description>必填。节点登录用户名。</description>
+          <defaultValue>map</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.PasswordParameterDefinition>
+          <name>PassWord</name>
+          <description>必填。节点登录密码。</description>
+          <defaultValue>jCA7Hq+1f6iEWZtwZ3u1Tw==</defaultValue>
+        </hudson.model.PasswordParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf &amp;&amp; python addnode.py ${JenkinsURL} ${NodeName} ${EXENum} ${WorkPath} ${IP} ${PORT} ${UserName} ${PassWord}</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

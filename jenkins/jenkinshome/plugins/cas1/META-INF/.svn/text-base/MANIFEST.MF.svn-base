@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jbeutel
+Build-Jdk: 1.6.0_17
+Extension-Name: cas1
+Implementation-Title: cas1
+Implementation-Version: 1.0.1
+Short-Name: cas1
+Long-Name: CAS protocol version 1 plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/CAS1+Plugin
+Plugin-Version: 1.0.1
+Hudson-Version: 1.349
+Plugin-Developers: J. David Beutel:david_beutel:jbeutel@hawaii.edu
+

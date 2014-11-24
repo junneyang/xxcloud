@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: gear
+Version: 0.5.5
+Summary: Pure Python Async Gear Protocol Library
+Home-page: http://pypi.python.org/pypi/gear
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Description: python-gear
+        ===========
+        
+        A pure-Python asynchronous library to interface with Gearman.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

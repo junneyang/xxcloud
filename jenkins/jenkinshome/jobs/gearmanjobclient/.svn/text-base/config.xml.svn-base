@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>UserName</name>
+          <description>必填。提交用户名。</description>
+          <defaultValue>yangjun03</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ClusterName</name>
+          <description></description>
+          <defaultValue>PublicCluster</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JobName</name>
+          <description>必填。job名称。如：pbrpcclient。</description>
+          <defaultValue>pbrpcclient</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SpecifyNode</name>
+          <description>必填。是否在指定节点执行。,1表示在指定节点执行，JobParameter需要指定Node；0表示系统在节点池选择合适节点执行，此时JobParameter的Node参数无效。</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>JobParameter</name>
+          <description>必填。job参数。要求JSON格式。</description>
+          <defaultValue>{
+        &quot;ClientNode&quot;:&quot;yangjun03&quot;,
+	&quot;WorkPath&quot;:&quot;/home/users/yangjun03/workspace&quot;,
+	&quot;PBTYPE&quot;:&quot;PUBLIC-PBRPC&quot;,
+	&quot;IPPORT&quot;:&quot;127.0.0.1:7788&quot;,
+	&quot;ServiceName&quot;:&quot;lbs.da.openservice.ItemService&quot;,
+	&quot;MethodName&quot;:&quot;GetItemsByItem&quot;,
+        &quot;TestData&quot;:[
+	{
+		&quot;header&quot;: {
+			&quot;subservice&quot;:&quot;sub&quot;,
+			&quot;secretkey&quot;: &quot;pass&quot;,
+			&quot;servicekey&quot;: &quot;key1&quot;
+		},
+		&quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+		&quot;item_ids&quot;: [&quot;9977193541978760286&quot;]
+	},
+	{
+		&quot;header&quot;: {
+			&quot;subservice&quot;:&quot;sub&quot;,
+			&quot;secretkey&quot;: &quot;pass&quot;,
+			&quot;servicekey&quot;: &quot;key1&quot;
+		},
+		&quot;algorithmId&quot;: &quot;topic_rev_poi&quot;,
+		&quot;item_ids&quot;: [&quot;9977193541978760286&quot;]
+	}
+]
+}</defaultValue>
+        </hudson.model.TextParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf &amp;&amp; python gearmanjobclient.py ${UserName} ${ClusterName} ${JobName} ${SpecifyNode} &quot;${JobParameter}&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

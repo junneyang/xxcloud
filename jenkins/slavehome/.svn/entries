@@ -1,15 +1,15 @@
 10
 
 dir
-0
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/slavehome
 https://svn.baidu.com/app-test/search/lbs-stat
-add
 
 
 
-
-
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
 
 
 
@@ -26,24 +26,40 @@ add
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+workspace
+dir
+
 slave.jar
 file
 
 
 
-add
 
-
-
-
-
+2014-11-17T07:12:54.000000Z
+8e743c9742fc3ed5f1f7635fec86af58
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
 has-props
-has-prop-mods
-
-workspace
-dir
 
 
 
-add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+439584
 

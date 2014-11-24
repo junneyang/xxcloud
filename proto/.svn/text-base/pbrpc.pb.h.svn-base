@@ -72,6 +72,7 @@ class FeatureInfo;
 class StrInfo;
 class StrFeatureInfo;
 class ItemUpInfo;
+class UserAction;
 class NuomiUserPreferenceResponse;
 class GetAOIRequest;
 class GetAOIResponse;
@@ -160,6 +161,10 @@ enum NuomiDataType {
   NUOMI_ALL = 3,
   ITEM_OFFLINE = 4,
   NUOMI_ITEM_OFFLINE = 5,
+  NUOMI_ACTION_SEQ = 6,
+  NUOMI_OFFLINE_ACTION = 7,
+  NUOMI_ONLINE_ACTION = 8,
+  NUOMI_ALL_ACTION = 9,
   ALL_DATA = 100
 };
 bool NuomiDataType_IsValid(int value);
@@ -200,6 +205,28 @@ inline bool NuomiUpResultType_Parse(
     const ::std::string& name, NuomiUpResultType* value) {
   return ::google::protobuf::internal::ParseNamedEnum<NuomiUpResultType>(
     NuomiUpResultType_descriptor(), name, value);
+}
+enum UserActionType {
+  ACTION_FILTER = 1,
+  ACTION_VIEW = 2,
+  ACTION_BUY = 3,
+  ACTION_ORDER = 4,
+  ACTION_PAYMENT = 5
+};
+bool UserActionType_IsValid(int value);
+const UserActionType UserActionType_MIN = ACTION_FILTER;
+const UserActionType UserActionType_MAX = ACTION_PAYMENT;
+const int UserActionType_ARRAYSIZE = UserActionType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* UserActionType_descriptor();
+inline const ::std::string& UserActionType_Name(UserActionType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    UserActionType_descriptor(), value);
+}
+inline bool UserActionType_Parse(
+    const ::std::string& name, UserActionType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<UserActionType>(
+    UserActionType_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -4281,20 +4308,34 @@ class PoiProbability : public ::google::protobuf::Message {
   inline double probability() const;
   inline void set_probability(double value);
   
+  // optional string name = 3;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 3;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const char* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.PoiProbability)
  private:
   inline void set_has_poi();
   inline void clear_has_poi();
   inline void set_has_probability();
   inline void clear_has_probability();
+  inline void set_has_name();
+  inline void clear_has_name();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
   ::std::string* poi_;
   double probability_;
+  ::std::string* name_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
   
   friend void  protobuf_AddDesc_pbrpc_2eproto();
   friend void protobuf_AssignDesc_pbrpc_2eproto();
@@ -4452,73 +4493,55 @@ class POIMatchRequest : public ::google::protobuf::Message {
   inline ::lbs::da::openservice::RequestHeader* mutable_header();
   inline ::lbs::da::openservice::RequestHeader* release_header();
   
-  // repeated uint64 wifi_finger = 2;
-  inline int wifi_finger_size() const;
+  // required bytes wifi_finger = 2;
+  inline bool has_wifi_finger() const;
   inline void clear_wifi_finger();
   static const int kWifiFingerFieldNumber = 2;
-  inline ::google::protobuf::uint64 wifi_finger(int index) const;
-  inline void set_wifi_finger(int index, ::google::protobuf::uint64 value);
-  inline void add_wifi_finger(::google::protobuf::uint64 value);
-  inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint64 >&
-      wifi_finger() const;
-  inline ::google::protobuf::RepeatedField< ::google::protobuf::uint64 >*
-      mutable_wifi_finger();
+  inline const ::std::string& wifi_finger() const;
+  inline void set_wifi_finger(const ::std::string& value);
+  inline void set_wifi_finger(const char* value);
+  inline void set_wifi_finger(const void* value, size_t size);
+  inline ::std::string* mutable_wifi_finger();
+  inline ::std::string* release_wifi_finger();
   
-  // repeated string pois = 3;
-  inline int pois_size() const;
-  inline void clear_pois();
-  static const int kPoisFieldNumber = 3;
-  inline const ::std::string& pois(int index) const;
-  inline ::std::string* mutable_pois(int index);
-  inline void set_pois(int index, const ::std::string& value);
-  inline void set_pois(int index, const char* value);
-  inline void set_pois(int index, const char* value, size_t size);
-  inline ::std::string* add_pois();
-  inline void add_pois(const ::std::string& value);
-  inline void add_pois(const char* value);
-  inline void add_pois(const char* value, size_t size);
-  inline const ::google::protobuf::RepeatedPtrField< ::std::string>& pois() const;
-  inline ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_pois();
+  // optional string poi = 3;
+  inline bool has_poi() const;
+  inline void clear_poi();
+  static const int kPoiFieldNumber = 3;
+  inline const ::std::string& poi() const;
+  inline void set_poi(const ::std::string& value);
+  inline void set_poi(const char* value);
+  inline void set_poi(const char* value, size_t size);
+  inline ::std::string* mutable_poi();
+  inline ::std::string* release_poi();
   
-  // repeated int32 match_finger_offsets = 5;
-  inline int match_finger_offsets_size() const;
-  inline void clear_match_finger_offsets();
-  static const int kMatchFingerOffsetsFieldNumber = 5;
-  inline ::google::protobuf::int32 match_finger_offsets(int index) const;
-  inline void set_match_finger_offsets(int index, ::google::protobuf::int32 value);
-  inline void add_match_finger_offsets(::google::protobuf::int32 value);
-  inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
-      match_finger_offsets() const;
-  inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
-      mutable_match_finger_offsets();
-  
-  // repeated int32 match_finger_counts = 6;
-  inline int match_finger_counts_size() const;
-  inline void clear_match_finger_counts();
-  static const int kMatchFingerCountsFieldNumber = 6;
-  inline ::google::protobuf::int32 match_finger_counts(int index) const;
-  inline void set_match_finger_counts(int index, ::google::protobuf::int32 value);
-  inline void add_match_finger_counts(::google::protobuf::int32 value);
-  inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
-      match_finger_counts() const;
-  inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
-      mutable_match_finger_counts();
+  // optional int32 match_finger_offset = 5;
+  inline bool has_match_finger_offset() const;
+  inline void clear_match_finger_offset();
+  static const int kMatchFingerOffsetFieldNumber = 5;
+  inline ::google::protobuf::int32 match_finger_offset() const;
+  inline void set_match_finger_offset(::google::protobuf::int32 value);
   
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.POIMatchRequest)
  private:
   inline void set_has_header();
   inline void clear_has_header();
+  inline void set_has_wifi_finger();
+  inline void clear_has_wifi_finger();
+  inline void set_has_poi();
+  inline void clear_has_poi();
+  inline void set_has_match_finger_offset();
+  inline void clear_has_match_finger_offset();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
   ::lbs::da::openservice::RequestHeader* header_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint64 > wifi_finger_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> pois_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > match_finger_offsets_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > match_finger_counts_;
+  ::std::string* wifi_finger_;
+  ::std::string* poi_;
+  ::google::protobuf::int32 match_finger_offset_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
   
   friend void  protobuf_AddDesc_pbrpc_2eproto();
   friend void protobuf_AssignDesc_pbrpc_2eproto();
@@ -4583,24 +4606,22 @@ class POIMatchResponse : public ::google::protobuf::Message {
   
   // accessors -------------------------------------------------------
   
-  // repeated .lbs.da.openservice.PoiProbability probabilities = 1;
-  inline int probabilities_size() const;
-  inline void clear_probabilities();
-  static const int kProbabilitiesFieldNumber = 1;
-  inline const ::lbs::da::openservice::PoiProbability& probabilities(int index) const;
-  inline ::lbs::da::openservice::PoiProbability* mutable_probabilities(int index);
-  inline ::lbs::da::openservice::PoiProbability* add_probabilities();
-  inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::PoiProbability >&
-      probabilities() const;
-  inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::PoiProbability >*
-      mutable_probabilities();
+  // optional .lbs.da.openservice.PoiProbability prob = 1;
+  inline bool has_prob() const;
+  inline void clear_prob();
+  static const int kProbFieldNumber = 1;
+  inline const ::lbs::da::openservice::PoiProbability& prob() const;
+  inline ::lbs::da::openservice::PoiProbability* mutable_prob();
+  inline ::lbs::da::openservice::PoiProbability* release_prob();
   
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.POIMatchResponse)
  private:
+  inline void set_has_prob();
+  inline void clear_has_prob();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
-  ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::PoiProbability > probabilities_;
+  ::lbs::da::openservice::PoiProbability* prob_;
   
   mutable int _cached_size_;
   ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
@@ -5296,6 +5317,112 @@ class ItemUpInfo : public ::google::protobuf::Message {
 };
 // -------------------------------------------------------------------
 
+class UserAction : public ::google::protobuf::Message {
+ public:
+  UserAction();
+  virtual ~UserAction();
+  
+  UserAction(const UserAction& from);
+  
+  inline UserAction& operator=(const UserAction& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserAction& default_instance();
+  
+  void Swap(UserAction* other);
+  
+  // implements Message ----------------------------------------------
+  
+  UserAction* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserAction& from);
+  void MergeFrom(const UserAction& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // required uint32 timestamp = 1;
+  inline bool has_timestamp() const;
+  inline void clear_timestamp();
+  static const int kTimestampFieldNumber = 1;
+  inline ::google::protobuf::uint32 timestamp() const;
+  inline void set_timestamp(::google::protobuf::uint32 value);
+  
+  // required .lbs.da.openservice.UserActionType action_type = 2;
+  inline bool has_action_type() const;
+  inline void clear_action_type();
+  static const int kActionTypeFieldNumber = 2;
+  inline lbs::da::openservice::UserActionType action_type() const;
+  inline void set_action_type(lbs::da::openservice::UserActionType value);
+  
+  // required bytes param = 3;
+  inline bool has_param() const;
+  inline void clear_param();
+  static const int kParamFieldNumber = 3;
+  inline const ::std::string& param() const;
+  inline void set_param(const ::std::string& value);
+  inline void set_param(const char* value);
+  inline void set_param(const void* value, size_t size);
+  inline ::std::string* mutable_param();
+  inline ::std::string* release_param();
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.UserAction)
+ private:
+  inline void set_has_timestamp();
+  inline void clear_has_timestamp();
+  inline void set_has_action_type();
+  inline void clear_has_action_type();
+  inline void set_has_param();
+  inline void clear_has_param();
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::uint32 timestamp_;
+  int action_type_;
+  ::std::string* param_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_pbrpc_2eproto();
+  friend void protobuf_AssignDesc_pbrpc_2eproto();
+  friend void protobuf_ShutdownFile_pbrpc_2eproto();
+  
+  void InitAsDefaultInstance();
+  static UserAction* default_instance_;
+};
+// -------------------------------------------------------------------
+
 class NuomiUserPreferenceResponse : public ::google::protobuf::Message {
  public:
   NuomiUserPreferenceResponse();
@@ -5422,6 +5549,18 @@ class NuomiUserPreferenceResponse : public ::google::protobuf::Message {
   inline bool item_shot() const;
   inline void set_item_shot(bool value);
   
+  // repeated .lbs.da.openservice.UserAction actions = 8;
+  inline int actions_size() const;
+  inline void clear_actions();
+  static const int kActionsFieldNumber = 8;
+  inline const ::lbs::da::openservice::UserAction& actions(int index) const;
+  inline ::lbs::da::openservice::UserAction* mutable_actions(int index);
+  inline ::lbs::da::openservice::UserAction* add_actions();
+  inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::UserAction >&
+      actions() const;
+  inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::UserAction >*
+      mutable_actions();
+  
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.NuomiUserPreferenceResponse)
  private:
   inline void set_has_result_type();
@@ -5442,9 +5581,10 @@ class NuomiUserPreferenceResponse : public ::google::protobuf::Message {
   bool item_shot_;
   ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::ItemUpInfo > item_infos_;
   ::std::string* item_small_flow_;
+  ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::UserAction > actions_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(7 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
   
   friend void  protobuf_AddDesc_pbrpc_2eproto();
   friend void protobuf_AssignDesc_pbrpc_2eproto();
@@ -12354,6 +12494,64 @@ inline void PoiProbability::set_probability(double value) {
   probability_ = value;
 }
 
+// optional string name = 3;
+inline bool PoiProbability::has_name() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void PoiProbability::set_has_name() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void PoiProbability::clear_has_name() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void PoiProbability::clear_name() {
+  if (name_ != &::google::protobuf::internal::kEmptyString) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& PoiProbability::name() const {
+  return *name_;
+}
+inline void PoiProbability::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void PoiProbability::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+}
+inline void PoiProbability::set_name(const char* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* PoiProbability::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    name_ = new ::std::string;
+  }
+  return name_;
+}
+inline ::std::string* PoiProbability::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
 // -------------------------------------------------------------------
 
 // PlaceSemanticResponse
@@ -12416,152 +12614,175 @@ inline ::lbs::da::openservice::RequestHeader* POIMatchRequest::release_header() 
   return temp;
 }
 
-// repeated uint64 wifi_finger = 2;
-inline int POIMatchRequest::wifi_finger_size() const {
-  return wifi_finger_.size();
+// required bytes wifi_finger = 2;
+inline bool POIMatchRequest::has_wifi_finger() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void POIMatchRequest::set_has_wifi_finger() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void POIMatchRequest::clear_has_wifi_finger() {
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline void POIMatchRequest::clear_wifi_finger() {
-  wifi_finger_.Clear();
+  if (wifi_finger_ != &::google::protobuf::internal::kEmptyString) {
+    wifi_finger_->clear();
+  }
+  clear_has_wifi_finger();
 }
-inline ::google::protobuf::uint64 POIMatchRequest::wifi_finger(int index) const {
-  return wifi_finger_.Get(index);
+inline const ::std::string& POIMatchRequest::wifi_finger() const {
+  return *wifi_finger_;
 }
-inline void POIMatchRequest::set_wifi_finger(int index, ::google::protobuf::uint64 value) {
-  wifi_finger_.Set(index, value);
+inline void POIMatchRequest::set_wifi_finger(const ::std::string& value) {
+  set_has_wifi_finger();
+  if (wifi_finger_ == &::google::protobuf::internal::kEmptyString) {
+    wifi_finger_ = new ::std::string;
+  }
+  wifi_finger_->assign(value);
 }
-inline void POIMatchRequest::add_wifi_finger(::google::protobuf::uint64 value) {
-  wifi_finger_.Add(value);
+inline void POIMatchRequest::set_wifi_finger(const char* value) {
+  set_has_wifi_finger();
+  if (wifi_finger_ == &::google::protobuf::internal::kEmptyString) {
+    wifi_finger_ = new ::std::string;
+  }
+  wifi_finger_->assign(value);
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint64 >&
-POIMatchRequest::wifi_finger() const {
+inline void POIMatchRequest::set_wifi_finger(const void* value, size_t size) {
+  set_has_wifi_finger();
+  if (wifi_finger_ == &::google::protobuf::internal::kEmptyString) {
+    wifi_finger_ = new ::std::string;
+  }
+  wifi_finger_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* POIMatchRequest::mutable_wifi_finger() {
+  set_has_wifi_finger();
+  if (wifi_finger_ == &::google::protobuf::internal::kEmptyString) {
+    wifi_finger_ = new ::std::string;
+  }
   return wifi_finger_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint64 >*
-POIMatchRequest::mutable_wifi_finger() {
-  return &wifi_finger_;
+inline ::std::string* POIMatchRequest::release_wifi_finger() {
+  clear_has_wifi_finger();
+  if (wifi_finger_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = wifi_finger_;
+    wifi_finger_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
 }
 
-// repeated string pois = 3;
-inline int POIMatchRequest::pois_size() const {
-  return pois_.size();
+// optional string poi = 3;
+inline bool POIMatchRequest::has_poi() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
-inline void POIMatchRequest::clear_pois() {
-  pois_.Clear();
+inline void POIMatchRequest::set_has_poi() {
+  _has_bits_[0] |= 0x00000004u;
 }
-inline const ::std::string& POIMatchRequest::pois(int index) const {
-  return pois_.Get(index);
+inline void POIMatchRequest::clear_has_poi() {
+  _has_bits_[0] &= ~0x00000004u;
 }
-inline ::std::string* POIMatchRequest::mutable_pois(int index) {
-  return pois_.Mutable(index);
+inline void POIMatchRequest::clear_poi() {
+  if (poi_ != &::google::protobuf::internal::kEmptyString) {
+    poi_->clear();
+  }
+  clear_has_poi();
 }
-inline void POIMatchRequest::set_pois(int index, const ::std::string& value) {
-  pois_.Mutable(index)->assign(value);
+inline const ::std::string& POIMatchRequest::poi() const {
+  return *poi_;
 }
-inline void POIMatchRequest::set_pois(int index, const char* value) {
-  pois_.Mutable(index)->assign(value);
+inline void POIMatchRequest::set_poi(const ::std::string& value) {
+  set_has_poi();
+  if (poi_ == &::google::protobuf::internal::kEmptyString) {
+    poi_ = new ::std::string;
+  }
+  poi_->assign(value);
 }
-inline void POIMatchRequest::set_pois(int index, const char* value, size_t size) {
-  pois_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
+inline void POIMatchRequest::set_poi(const char* value) {
+  set_has_poi();
+  if (poi_ == &::google::protobuf::internal::kEmptyString) {
+    poi_ = new ::std::string;
+  }
+  poi_->assign(value);
 }
-inline ::std::string* POIMatchRequest::add_pois() {
-  return pois_.Add();
+inline void POIMatchRequest::set_poi(const char* value, size_t size) {
+  set_has_poi();
+  if (poi_ == &::google::protobuf::internal::kEmptyString) {
+    poi_ = new ::std::string;
+  }
+  poi_->assign(reinterpret_cast<const char*>(value), size);
 }
-inline void POIMatchRequest::add_pois(const ::std::string& value) {
-  pois_.Add()->assign(value);
+inline ::std::string* POIMatchRequest::mutable_poi() {
+  set_has_poi();
+  if (poi_ == &::google::protobuf::internal::kEmptyString) {
+    poi_ = new ::std::string;
+  }
+  return poi_;
 }
-inline void POIMatchRequest::add_pois(const char* value) {
-  pois_.Add()->assign(value);
-}
-inline void POIMatchRequest::add_pois(const char* value, size_t size) {
-  pois_.Add()->assign(reinterpret_cast<const char*>(value), size);
-}
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
-POIMatchRequest::pois() const {
-  return pois_;
-}
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
-POIMatchRequest::mutable_pois() {
-  return &pois_;
-}
-
-// repeated int32 match_finger_offsets = 5;
-inline int POIMatchRequest::match_finger_offsets_size() const {
-  return match_finger_offsets_.size();
-}
-inline void POIMatchRequest::clear_match_finger_offsets() {
-  match_finger_offsets_.Clear();
-}
-inline ::google::protobuf::int32 POIMatchRequest::match_finger_offsets(int index) const {
-  return match_finger_offsets_.Get(index);
-}
-inline void POIMatchRequest::set_match_finger_offsets(int index, ::google::protobuf::int32 value) {
-  match_finger_offsets_.Set(index, value);
-}
-inline void POIMatchRequest::add_match_finger_offsets(::google::protobuf::int32 value) {
-  match_finger_offsets_.Add(value);
-}
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
-POIMatchRequest::match_finger_offsets() const {
-  return match_finger_offsets_;
-}
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
-POIMatchRequest::mutable_match_finger_offsets() {
-  return &match_finger_offsets_;
+inline ::std::string* POIMatchRequest::release_poi() {
+  clear_has_poi();
+  if (poi_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = poi_;
+    poi_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
 }
 
-// repeated int32 match_finger_counts = 6;
-inline int POIMatchRequest::match_finger_counts_size() const {
-  return match_finger_counts_.size();
+// optional int32 match_finger_offset = 5;
+inline bool POIMatchRequest::has_match_finger_offset() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
-inline void POIMatchRequest::clear_match_finger_counts() {
-  match_finger_counts_.Clear();
+inline void POIMatchRequest::set_has_match_finger_offset() {
+  _has_bits_[0] |= 0x00000008u;
 }
-inline ::google::protobuf::int32 POIMatchRequest::match_finger_counts(int index) const {
-  return match_finger_counts_.Get(index);
+inline void POIMatchRequest::clear_has_match_finger_offset() {
+  _has_bits_[0] &= ~0x00000008u;
 }
-inline void POIMatchRequest::set_match_finger_counts(int index, ::google::protobuf::int32 value) {
-  match_finger_counts_.Set(index, value);
+inline void POIMatchRequest::clear_match_finger_offset() {
+  match_finger_offset_ = 0;
+  clear_has_match_finger_offset();
 }
-inline void POIMatchRequest::add_match_finger_counts(::google::protobuf::int32 value) {
-  match_finger_counts_.Add(value);
+inline ::google::protobuf::int32 POIMatchRequest::match_finger_offset() const {
+  return match_finger_offset_;
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
-POIMatchRequest::match_finger_counts() const {
-  return match_finger_counts_;
-}
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
-POIMatchRequest::mutable_match_finger_counts() {
-  return &match_finger_counts_;
+inline void POIMatchRequest::set_match_finger_offset(::google::protobuf::int32 value) {
+  set_has_match_finger_offset();
+  match_finger_offset_ = value;
 }
 
 // -------------------------------------------------------------------
 
 // POIMatchResponse
 
-// repeated .lbs.da.openservice.PoiProbability probabilities = 1;
-inline int POIMatchResponse::probabilities_size() const {
-  return probabilities_.size();
+// optional .lbs.da.openservice.PoiProbability prob = 1;
+inline bool POIMatchResponse::has_prob() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void POIMatchResponse::clear_probabilities() {
-  probabilities_.Clear();
+inline void POIMatchResponse::set_has_prob() {
+  _has_bits_[0] |= 0x00000001u;
 }
-inline const ::lbs::da::openservice::PoiProbability& POIMatchResponse::probabilities(int index) const {
-  return probabilities_.Get(index);
+inline void POIMatchResponse::clear_has_prob() {
+  _has_bits_[0] &= ~0x00000001u;
 }
-inline ::lbs::da::openservice::PoiProbability* POIMatchResponse::mutable_probabilities(int index) {
-  return probabilities_.Mutable(index);
+inline void POIMatchResponse::clear_prob() {
+  if (prob_ != NULL) prob_->::lbs::da::openservice::PoiProbability::Clear();
+  clear_has_prob();
 }
-inline ::lbs::da::openservice::PoiProbability* POIMatchResponse::add_probabilities() {
-  return probabilities_.Add();
+inline const ::lbs::da::openservice::PoiProbability& POIMatchResponse::prob() const {
+  return prob_ != NULL ? *prob_ : *default_instance_->prob_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::PoiProbability >&
-POIMatchResponse::probabilities() const {
-  return probabilities_;
+inline ::lbs::da::openservice::PoiProbability* POIMatchResponse::mutable_prob() {
+  set_has_prob();
+  if (prob_ == NULL) prob_ = new ::lbs::da::openservice::PoiProbability;
+  return prob_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::PoiProbability >*
-POIMatchResponse::mutable_probabilities() {
-  return &probabilities_;
+inline ::lbs::da::openservice::PoiProbability* POIMatchResponse::release_prob() {
+  clear_has_prob();
+  ::lbs::da::openservice::PoiProbability* temp = prob_;
+  prob_ = NULL;
+  return temp;
 }
 
 // -------------------------------------------------------------------
@@ -13437,6 +13658,113 @@ inline ::std::string* ItemUpInfo::release_date() {
 
 // -------------------------------------------------------------------
 
+// UserAction
+
+// required uint32 timestamp = 1;
+inline bool UserAction::has_timestamp() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserAction::set_has_timestamp() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserAction::clear_has_timestamp() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserAction::clear_timestamp() {
+  timestamp_ = 0u;
+  clear_has_timestamp();
+}
+inline ::google::protobuf::uint32 UserAction::timestamp() const {
+  return timestamp_;
+}
+inline void UserAction::set_timestamp(::google::protobuf::uint32 value) {
+  set_has_timestamp();
+  timestamp_ = value;
+}
+
+// required .lbs.da.openservice.UserActionType action_type = 2;
+inline bool UserAction::has_action_type() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void UserAction::set_has_action_type() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void UserAction::clear_has_action_type() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void UserAction::clear_action_type() {
+  action_type_ = 1;
+  clear_has_action_type();
+}
+inline lbs::da::openservice::UserActionType UserAction::action_type() const {
+  return static_cast< lbs::da::openservice::UserActionType >(action_type_);
+}
+inline void UserAction::set_action_type(lbs::da::openservice::UserActionType value) {
+  GOOGLE_DCHECK(lbs::da::openservice::UserActionType_IsValid(value));
+  set_has_action_type();
+  action_type_ = value;
+}
+
+// required bytes param = 3;
+inline bool UserAction::has_param() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void UserAction::set_has_param() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void UserAction::clear_has_param() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void UserAction::clear_param() {
+  if (param_ != &::google::protobuf::internal::kEmptyString) {
+    param_->clear();
+  }
+  clear_has_param();
+}
+inline const ::std::string& UserAction::param() const {
+  return *param_;
+}
+inline void UserAction::set_param(const ::std::string& value) {
+  set_has_param();
+  if (param_ == &::google::protobuf::internal::kEmptyString) {
+    param_ = new ::std::string;
+  }
+  param_->assign(value);
+}
+inline void UserAction::set_param(const char* value) {
+  set_has_param();
+  if (param_ == &::google::protobuf::internal::kEmptyString) {
+    param_ = new ::std::string;
+  }
+  param_->assign(value);
+}
+inline void UserAction::set_param(const void* value, size_t size) {
+  set_has_param();
+  if (param_ == &::google::protobuf::internal::kEmptyString) {
+    param_ = new ::std::string;
+  }
+  param_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* UserAction::mutable_param() {
+  set_has_param();
+  if (param_ == &::google::protobuf::internal::kEmptyString) {
+    param_ = new ::std::string;
+  }
+  return param_;
+}
+inline ::std::string* UserAction::release_param() {
+  clear_has_param();
+  if (param_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = param_;
+    param_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// -------------------------------------------------------------------
+
 // NuomiUserPreferenceResponse
 
 // repeated .lbs.da.openservice.FeatureInfo features = 1;
@@ -13673,6 +14001,31 @@ inline bool NuomiUserPreferenceResponse::item_shot() const {
 inline void NuomiUserPreferenceResponse::set_item_shot(bool value) {
   set_has_item_shot();
   item_shot_ = value;
+}
+
+// repeated .lbs.da.openservice.UserAction actions = 8;
+inline int NuomiUserPreferenceResponse::actions_size() const {
+  return actions_.size();
+}
+inline void NuomiUserPreferenceResponse::clear_actions() {
+  actions_.Clear();
+}
+inline const ::lbs::da::openservice::UserAction& NuomiUserPreferenceResponse::actions(int index) const {
+  return actions_.Get(index);
+}
+inline ::lbs::da::openservice::UserAction* NuomiUserPreferenceResponse::mutable_actions(int index) {
+  return actions_.Mutable(index);
+}
+inline ::lbs::da::openservice::UserAction* NuomiUserPreferenceResponse::add_actions() {
+  return actions_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::UserAction >&
+NuomiUserPreferenceResponse::actions() const {
+  return actions_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::UserAction >*
+NuomiUserPreferenceResponse::mutable_actions() {
+  return &actions_;
 }
 
 // -------------------------------------------------------------------
@@ -14949,6 +15302,10 @@ inline const EnumDescriptor* GetEnumDescriptor< lbs::da::openservice::NuomiDataT
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< lbs::da::openservice::NuomiUpResultType>() {
   return lbs::da::openservice::NuomiUpResultType_descriptor();
+}
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< lbs::da::openservice::UserActionType>() {
+  return lbs::da::openservice::UserActionType_descriptor();
 }
 
 }  // namespace google

@@ -1,5 +1,215 @@
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/app-test/search/lbs-stat/!svn/ver/3271/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome
+/app-test/search/lbs-stat/!svn/ver/5158/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome
+END
+secret.key
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/secret.key
+END
+hudson.scm.CVSSCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.scm.CVSSCM.xml
+END
+secret.key.not-so-secret
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/secret.key.not-so-secret
+END
+jenkins.model.ArtifactManagerConfiguration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.model.ArtifactManagerConfiguration.xml
+END
+nodeMonitors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/nodeMonitors.xml
+END
+queue.xml.bak
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/queue.xml.bak
+END
+jenkins.model.JenkinsLocationConfiguration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.model.JenkinsLocationConfiguration.xml
+END
+hudson.scm.SubversionSCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.scm.SubversionSCM.xml
+END
+jenkins.model.DownloadSettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.model.DownloadSettings.xml
+END
+hudson.plugins.git.GitSCM.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.plugins.git.GitSCM.xml
+END
+hudson.tasks.Maven.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.tasks.Maven.xml
+END
+Download metadata.log
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/Download%20metadata.log
+END
+hudson.tasks.Shell.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.tasks.Shell.xml
+END
+credentials.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/credentials.xml
+END
+be.certipost.hudson.plugin.SCPRepositoryPublisher.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/be.certipost.hudson.plugin.SCPRepositoryPublisher.xml
+END
+Workspace clean-up.log
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/Workspace%20clean-up.log
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/config.xml
+END
+hudson.plugins.gearman.GearmanPluginConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.plugins.gearman.GearmanPluginConfig.xml
+END
+.owner
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5158/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/.owner
+END
+jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml
+END
+jenkins.mvn.GlobalMavenConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.mvn.GlobalMavenConfig.xml
+END
+Fingerprint cleanup.log
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/Fingerprint%20cleanup.log
+END
+hudson.model.UpdateCenter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.model.UpdateCenter.xml
+END
+hudson.plugins.git.GitTool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.plugins.git.GitTool.xml
+END
+Connection Activity monitoring to slaves.log
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/Connection%20Activity%20monitoring%20to%20slaves.log
+END
+identity.key.enc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/identity.key.enc
+END
+com.cloudbees.jenkins.GitHubPushTrigger.xml
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/com.cloudbees.jenkins.GitHubPushTrigger.xml
+END
+Out of order build detection.log
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/Out%20of%20order%20build%20detection.log
+END
+hudson.triggers.SCMTrigger.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.triggers.SCMTrigger.xml
+END
+hudson.maven.MavenModuleSet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.maven.MavenModuleSet.xml
+END
+jenkins.security.QueueItemAuthenticatorConfiguration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jenkins.security.QueueItemAuthenticatorConfiguration.xml
+END
+hudson.tasks.Mailer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.tasks.Mailer.xml
+END
+org.jenkinsci.plugins.gitclient.JGitTool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/org.jenkinsci.plugins.gitclient.JGitTool.xml
+END
+config.xml~
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/config.xml~
+END
+hudson.tasks.Ant.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/hudson.tasks.Ant.xml
 END

@@ -1,0 +1,437 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib
+END
+aether-impl-0.9.0.M3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-impl-0.9.0.M3.jar
+END
+plexus-interpolation-1.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-interpolation-1.16.jar
+END
+commons-codec-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-codec-1.6.jar
+END
+wagon-http-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-http-2.4.jar
+END
+aether-transport-wagon-0.9.0.M3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-transport-wagon-0.9.0.M3.jar
+END
+jsr305-1.3.9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/jsr305-1.3.9.jar
+END
+classes.jar
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/classes.jar
+END
+wagon-ssh-common-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-ssh-common-2.4.jar
+END
+maven-repository-metadata-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-repository-metadata-3.1.0.jar
+END
+lib-jenkins-maven-embedder-3.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/lib-jenkins-maven-embedder-3.11.jar
+END
+maven-settings-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-settings-3.1.0.jar
+END
+maven-model-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-model-3.1.0.jar
+END
+maven-aether-provider-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-aether-provider-3.1.0.jar
+END
+plexus-interactivity-api-1.0-alpha-6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-interactivity-api-1.0-alpha-6.jar
+END
+maven-plugin-api-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-plugin-api-3.1.0.jar
+END
+wagon-provider-api-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-provider-api-2.4.jar
+END
+plexus-component-annotations-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-component-annotations-1.5.5.jar
+END
+org.eclipse.sisu.inject-0.0.0.M5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/org.eclipse.sisu.inject-0.0.0.M5.jar
+END
+maven2.1-interceptor-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven2.1-interceptor-1.2.jar
+END
+httpclient-4.2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/httpclient-4.2.5.jar
+END
+maven-compat-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-compat-3.1.0.jar
+END
+commons-httpclient-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-httpclient-3.1.jar
+END
+SECURITY-144-compat-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/SECURITY-144-compat-1.0.jar
+END
+httpcore-4.2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/httpcore-4.2.4.jar
+END
+aether-api-0.9.0.M3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-api-0.9.0.M3.jar
+END
+plexus-utils-3.0.17.jar
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-utils-3.0.17.jar
+END
+wagon-ftp-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-ftp-2.4.jar
+END
+aopalliance-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aopalliance-1.0.jar
+END
+doxia-sink-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/doxia-sink-api-1.0.jar
+END
+lib-jenkins-maven-artifact-manager-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/lib-jenkins-maven-artifact-manager-1.2.jar
+END
+plexus-sec-dispatcher-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-sec-dispatcher-1.3.jar
+END
+guava-11.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/guava-11.0.1.jar
+END
+maven-reporting-api-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-reporting-api-3.0.jar
+END
+org.eclipse.sisu.plexus-0.0.0.M5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/org.eclipse.sisu.plexus-0.0.0.M5.jar
+END
+maven-settings-builder-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-settings-builder-3.1.0.jar
+END
+maven-model-builder-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-model-builder-3.1.0.jar
+END
+maven3-interceptor-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-1.5.jar
+END
+wagon-ssh-external-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-ssh-external-2.4.jar
+END
+aether-connector-wagon-0.9.0.M2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-connector-wagon-0.9.0.M2.jar
+END
+jsr250-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/jsr250-api-1.0.jar
+END
+maven-core-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-core-3.1.0.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-logging-1.1.1.jar
+END
+commons-lang-2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-lang-2.6.jar
+END
+slf4j-api-1.7.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/slf4j-api-1.7.4.jar
+END
+maven-artifact-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-artifact-3.1.0.jar
+END
+maven3-interceptor-commons-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.5.jar
+END
+jsoup-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/jsoup-1.7.1.jar
+END
+maven-agent-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-agent-1.5.jar
+END
+guice-4.0-beta.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/guice-4.0-beta.jar
+END
+maven31-agent-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.5.jar
+END
+jsch-0.1.44-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/jsch-0.1.44-1.jar
+END
+wagon-ssh-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-ssh-2.4.jar
+END
+commons-io-2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-io-2.2.jar
+END
+javax.inject-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/javax.inject-1.jar
+END
+maven3-agent-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven3-agent-1.5.jar
+END
+ant-launcher-1.9.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/ant-launcher-1.9.2.jar
+END
+ant-1.9.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/ant-1.9.2.jar
+END
+wagon-file-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-file-2.4.jar
+END
+plexus-cipher-1.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-cipher-1.7.jar
+END
+wagon-http-shared-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-http-shared-2.4.jar
+END
+commons-net-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-net-3.1.jar
+END
+cdi-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/cdi-api-1.0.jar
+END
+maven-interceptor-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-interceptor-1.5.jar
+END
+aether-util-0.9.0.M3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-util-0.9.0.M3.jar
+END
+jackrabbit-webdav-2.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/jackrabbit-webdav-2.5.2.jar
+END
+maven31-interceptor-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.5.jar
+END
+maven-embedder-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/maven-embedder-3.1.0.jar
+END
+wagon-webdav-jackrabbit-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-webdav-jackrabbit-2.4.jar
+END
+commons-cli-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/commons-cli-1.2.jar
+END
+plexus-classworlds-2.5.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/plexus-classworlds-2.5.1.jar
+END
+aether-spi-0.9.0.M3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/aether-spi-0.9.0.M3.jar
+END
+wagon-http-shared4-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/WEB-INF/lib/wagon-http-shared4-2.4.jar
+END

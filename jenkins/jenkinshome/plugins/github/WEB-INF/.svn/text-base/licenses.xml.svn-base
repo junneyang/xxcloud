@@ -1,0 +1,13 @@
+<l:dependencies xmlns:l='licenses'>
+  <l:dependency name='GitHub plugin' groupId='com.coravy.hudson.plugins.github' artifactId='github' version='1.9.1' url='http://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin'>
+    <l:description />
+  </l:dependency>
+  <l:dependency name='JGit - Core' groupId='org.eclipse.jgit' artifactId='org.eclipse.jgit' version='0.12.1' url='http://www.eclipse.org/jgit//org.eclipse.jgit'>
+    <l:description>Repository access and algorithms</l:description>
+    <l:license name='Eclipse Distribution License (New BSD License)' />
+  </l:dependency>
+  <l:dependency name='JSch' groupId='com.jcraft' artifactId='jsch' version='0.1.44-1' url='http://www.jcraft.com/jsch/'>
+    <l:description>JSch is a pure Java implementation of SSH2</l:description>
+    <l:license name='Revised BSD' url='http://www.jcraft.com/jsch/LICENSE.txt' />
+  </l:dependency>
+</l:dependencies>

@@ -1,14 +1,14 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-18T07:26:58.932769Z
-4899
+2014-11-24T10:25:50.500004Z
+5158
 yangjun03
 
 
@@ -65,10 +65,40 @@ has-props
 
 slavehome
 dir
+
+libgcc_s.so.1
+file
 
 
 
-add
+
+2014-11-04T10:00:44.000000Z
+cbb03fe60e53226b6023ca08811ca8db
+2014-11-24T10:16:23.480427Z
+5155
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+522648
 
 slave.jar
 file
@@ -104,6 +134,40 @@ has-props
 
 410490
 
+jenkins.war.bak
+file
+
+
+
+
+2014-11-08T03:09:01.000000Z
+4aec487e77b69a2f7439132c7aad32a3
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+68200131
+
 start.sh
 file
 
@@ -138,16 +202,16 @@ has-props
 
 556
 
-jenkins.war
+jenkins.war.tmp
 file
 
 
 
 
-2014-11-08T03:09:01.000000Z
-4aec487e77b69a2f7439132c7aad32a3
-2014-11-10T08:29:58.650616Z
-4628
+2014-11-17T07:12:08.000000Z
+b4f4bbf89f9a4bb775145eb86a681531
+2014-11-24T10:24:34.940865Z
+5157
 yangjun03
 has-props
 
@@ -170,7 +234,41 @@ has-props
 
 
 
-68200131
+68199289
+
+jenkins.war
+file
+
+
+
+
+2014-11-17T07:12:08.000000Z
+b4f4bbf89f9a4bb775145eb86a681531
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+68199289
 
 jenkinshome
 dir

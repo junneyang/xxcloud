@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds
+END
+lastStableBuild
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/lastStableBuild
+END
+1
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/1
+END
+2
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/2
+END
+lastUnstableBuild
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/lastUnstableBuild
+END
+3
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/3
+END
+4
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/4
+END
+lastSuccessfulBuild
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/lastSuccessfulBuild
+END
+5
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/5
+END
+6
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/6
+END
+7
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/7
+END
+lastUnsuccessfulBuild
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/lastUnsuccessfulBuild
+END
+lastFailedBuild
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds/lastFailedBuild
+END

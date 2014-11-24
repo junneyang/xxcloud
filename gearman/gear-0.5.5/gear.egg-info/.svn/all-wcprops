@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info
+END
+requires.txt
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/requires.txt
+END
+SOURCES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/SOURCES.txt
+END
+top_level.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/top_level.txt
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/PKG-INFO
+END
+entry_points.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/entry_points.txt
+END
+dependency_links.txt
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/dependency_links.txt
+END
+not-zip-safe
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gear-0.5.5/gear.egg-info/not-zip-safe
+END

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: sogabe
+Build-Jdk: 1.6.0_22
+Extension-Name: scp
+Implementation-Title: scp
+Implementation-Version: 1.8
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: scp
+Long-Name: Hudson SCP publisher plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/SCP+plugin
+Plugin-Version: 1.8
+Hudson-Version: 1.389
+Plugin-Developers: Ramil Israfilov:ramazanyich2:
+

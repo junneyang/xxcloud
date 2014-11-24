@@ -1,7 +1,7 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/template/conf
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,74 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-conf.testdata.html
-file
-
-
-
-
-2014-11-19T02:39:25.000000Z
-a783c8cc209d7d63c1cb05933173872d
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7306
-
-conf.testsrv.html
-file
-
-
-
-
-2014-11-19T02:39:25.000000Z
-4455485d3ea3db9f0cc75e27623446f4
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7316
 
 conf.adddata.html
 file
@@ -161,4 +93,72 @@ yangjun03
 
 
 10577
+
+conf.testdata.html
+file
+
+
+
+
+2014-11-19T02:39:25.000000Z
+a783c8cc209d7d63c1cb05933173872d
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7306
+
+conf.testsrv.html
+file
+
+
+
+
+2014-11-19T02:39:25.000000Z
+4455485d3ea3db9f0cc75e27623446f4
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7316
 

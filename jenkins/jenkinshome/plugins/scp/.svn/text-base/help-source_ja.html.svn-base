@@ -1,0 +1,5 @@
+<div>
+    アップロードするソースファイルです。
+    この項目は、<tt>**/build/test-reports/*.xml</tt>のように、<a href="http://ant.apache.org/manual/Types/fileset.html">the Ant glob syntax</a>を使用することができます。
+    ベースディレクトリは、<a href="ws/">ワークスペース</a>です。
+</div>

@@ -1,7 +1,7 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/com/jsoncpp-src-0.5.0/makefiles/vs71
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-test_lib_json.vcproj
-file
-
-
-
-
-2014-10-29T07:56:56.000000Z
-c508bc24ff7bbe51e773d1a8fee625a2
-2014-10-29T07:56:02.455830Z
-4226
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3485
 
 lib_json.vcproj
 file
@@ -161,4 +127,38 @@ yangjun03
 
 
 3112
+
+test_lib_json.vcproj
+file
+
+
+
+
+2014-10-29T07:56:56.000000Z
+c508bc24ff7bbe51e773d1a8fee625a2
+2014-10-29T07:56:02.455830Z
+4226
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3485
 

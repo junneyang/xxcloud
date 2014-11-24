@@ -8,5 +8,6 @@
 #include "pbrpc.pb.h"
 #include "pbrpc_service.pb.h"
 #include "regist_condition.pb.h"
+#include "rp.pb.h"
 #include "transport.pb.h"
 #endif //_PBRPCPRESS_USER_PROTO_H_

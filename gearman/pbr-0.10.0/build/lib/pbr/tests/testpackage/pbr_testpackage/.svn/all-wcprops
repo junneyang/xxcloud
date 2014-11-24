@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/build/lib/pbr/tests/testpackage/pbr_testpackage
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/build/lib/pbr/tests/testpackage/pbr_testpackage/__init__.py
+END
+_setup_hooks.py
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/build/lib/pbr/tests/testpackage/pbr_testpackage/_setup_hooks.py
+END
+cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/build/lib/pbr/tests/testpackage/pbr_testpackage/cmd.py
+END

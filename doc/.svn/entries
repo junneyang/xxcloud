@@ -1,14 +1,14 @@
 10
 
 dir
-5106
+5158
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/doc
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-14T08:52:21.061145Z
-4811
+2014-11-21T08:19:39.655677Z
+5112
 yangjun03
 
 
@@ -25,6 +25,74 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+xCloudFoundry.pptx
+file
+
+
+
+
+2014-11-21T08:19:59.000000Z
+dce74eb15cf1d96e6df795208d075302
+2014-11-21T08:19:39.655677Z
+5112
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+102373
+
+DistributedServicePlatform.pptx
+file
+
+
+
+
+2014-11-14T08:58:48.000000Z
+2247a81e3bd919392cec3f841b19f8ec
+2014-11-14T08:52:21.061145Z
+4811
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+107735
 
 APIInstruction.txt
 file
@@ -93,38 +161,4 @@ has-props
 
 
 85675
-
-DistributedServicePlatform.pptx
-file
-
-
-
-
-2014-11-14T08:58:48.000000Z
-2247a81e3bd919392cec3f841b19f8ec
-2014-11-14T08:52:21.061145Z
-4811
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-107735
 

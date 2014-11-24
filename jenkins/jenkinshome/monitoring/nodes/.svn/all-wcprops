@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes
+END
+buildQueueLength.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/buildQueueLength.rrd
+END
+Free_disk_space.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/Free_disk_space.rrd
+END
+loadedClassesCount.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/loadedClassesCount.rrd
+END
+threadCount.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/threadCount.rrd
+END
+usedPhysicalMemorySize.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/usedPhysicalMemorySize.rrd
+END
+runningBuilds.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/runningBuilds.rrd
+END
+systemLoad.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/systemLoad.rrd
+END
+buildsSystemErrors.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/buildsSystemErrors.rrd
+END
+buildsMeanTimes.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/buildsMeanTimes.rrd
+END
+buildsHitsRate.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/buildsHitsRate.rrd
+END
+cpu.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/cpu.rrd
+END
+usedMemory.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/usedMemory.rrd
+END
+gc.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/gc.rrd
+END
+fileDescriptors.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/fileDescriptors.rrd
+END
+usedNonHeapMemory.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/usedNonHeapMemory.rrd
+END
+usedSwapSpaceSize.rrd
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/nodes/usedSwapSpaceSize.rrd
+END

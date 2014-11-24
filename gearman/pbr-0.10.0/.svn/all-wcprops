@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0
+END
+.mailmap
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/.mailmap
+END
+CONTRIBUTING.rst
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/CONTRIBUTING.rst
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/setup.cfg
+END
+test-requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/test-requirements.txt
+END
+requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/requirements.txt
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/LICENSE
+END
+.testr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/.testr.conf
+END
+README.rst
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/README.rst
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/ChangeLog
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/setup.py
+END
+tox.ini
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/tox.ini
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/PKG-INFO
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/pbr-0.10.0/MANIFEST.in
+END

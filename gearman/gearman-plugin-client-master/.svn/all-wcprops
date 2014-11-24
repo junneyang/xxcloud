@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master/README.md
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master/LICENSE
+END
+gear_client.py
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master/gear_client.py
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/app-test/search/lbs-stat/!svn/ver/5149/trunk/upps_test/jenkinsFramework/protobuf/gearman/gearman-plugin-client-master/.gitignore
+END
