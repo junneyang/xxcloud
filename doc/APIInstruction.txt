@@ -15,7 +15,7 @@
 		"IP":"10.99.18.33",
 		"PORT":"22",
 		"UserName":"linqiaoying",
-		"PassWord":"Qiao123"
+		"PassWord":"XXX"
 	}
 }
 
@@ -42,7 +42,7 @@
 		"ProtoFileSVNPath":"https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto",
 		"IPPort":"10.99.18.33:22",
 		"UserName":"linqiaoying",
-		"PassWord":"Qiao123",
+		"PassWord":"XXX",
 		"ToolType":"pbrpcclient",
 		"RemotePath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool"
 	}

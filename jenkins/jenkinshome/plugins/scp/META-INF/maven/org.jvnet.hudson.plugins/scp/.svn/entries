@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/scp/META-INF/maven/org.jvnet.hudson.plugins/scp
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-pom.properties
-file
-
-
-
-
-2011-01-06T16:06:00.000000Z
-5ddd1547b7b6de90a928096cd298e504
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-110
 
 pom.xml
 file
@@ -93,4 +59,38 @@ yangjun03
 
 
 2841
+
+pom.properties
+file
+
+
+
+
+2011-01-06T16:06:00.000000Z
+5ddd1547b7b6de90a928096cd298e504
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+110
 

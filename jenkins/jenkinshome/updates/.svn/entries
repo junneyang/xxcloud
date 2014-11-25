@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/updates
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,74 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-hudson.tasks.Ant.AntInstaller
-file
-
-
-
-
-2014-11-24T02:13:39.000000Z
-9a7c8384f942886524779854de9c8df6
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4169
-
-hudson.tools.JDKInstaller
-file
-
-
-
-
-2014-11-24T02:13:40.000000Z
-2d396e582231556c227e2b9d9a2e0fe3
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-220867
 
 hudson.tasks.Maven.MavenInstaller
 file
@@ -161,4 +93,72 @@ yangjun03
 
 
 893056
+
+hudson.tasks.Ant.AntInstaller
+file
+
+
+
+
+2014-11-24T02:13:39.000000Z
+9a7c8384f942886524779854de9c8df6
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4169
+
+hudson.tools.JDKInstaller
+file
+
+
+
+
+2014-11-24T02:13:40.000000Z
+2d396e582231556c227e2b9d9a2e0fe3
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+220867
 

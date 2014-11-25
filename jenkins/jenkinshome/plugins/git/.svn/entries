@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/git
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,77 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+META-INF
+dir
+
+.timestamp2
+file
+
+
+
+
+2014-11-10T08:55:49.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+gitPublisher.html
+file
+
+
+
+
+2014-10-08T13:38:20.000000Z
+670e9d9f32e2ceb63f9f7e2ea458e682
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+89
 
 sparseCheckoutPaths.html
 file
@@ -99,75 +170,4 @@ yangjun03
 
 
 224
-
-META-INF
-dir
-
-.timestamp2
-file
-
-
-
-
-2014-11-10T08:55:49.000000Z
-d41d8cd98f00b204e9800998ecf8427e
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
-
-gitPublisher.html
-file
-
-
-
-
-2014-10-08T13:38:20.000000Z
-670e9d9f32e2ceb63f9f7e2ea458e682
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-89
 

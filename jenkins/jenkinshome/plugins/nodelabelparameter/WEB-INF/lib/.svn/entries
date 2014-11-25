@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/nodelabelparameter/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+nodelabelparameter.jar
+file
+
+
+
+
+2014-03-02T04:43:46.000000Z
+c965866f9e9d400c0932581e98e817fd
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+86879
 
 junit-4.11.jar
 file
@@ -93,38 +127,4 @@ has-props
 
 
 45024
-
-nodelabelparameter.jar
-file
-
-
-
-
-2014-03-02T04:43:46.000000Z
-c965866f9e9d400c0932581e98e817fd
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-86879
 

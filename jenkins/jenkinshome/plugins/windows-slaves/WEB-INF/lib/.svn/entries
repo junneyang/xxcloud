@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/windows-slaves/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,74 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-tiger-types-1.1.jar
-file
-
-
-
-
-2014-01-03T09:16:48.000000Z
-35e4b7e406e55757416103d9fbe7bd95
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-17351
-
-j-interopdeps-2.0.6-kohsuke-1.jar
-file
-
-
-
-
-2014-01-03T09:16:48.000000Z
-a17335569fd2765c000e9d76116b0da9
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-117686
 
 j-interop-2.0.6-kohsuke-1.jar
 file
@@ -297,4 +229,72 @@ has-props
 
 
 398132
+
+tiger-types-1.1.jar
+file
+
+
+
+
+2014-01-03T09:16:48.000000Z
+35e4b7e406e55757416103d9fbe7bd95
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17351
+
+j-interopdeps-2.0.6-kohsuke-1.jar
+file
+
+
+
+
+2014-01-03T09:16:48.000000Z
+a17335569fd2765c000e9d76116b0da9
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+117686
 

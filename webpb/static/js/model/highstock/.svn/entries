@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,15 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-exporting-server
-dir
-
-gfx
-dir
-
-js
-dir
 
 examples
 dir
@@ -73,5 +64,14 @@ yangjun03
 2678
 
 graphics
+dir
+
+exporting-server
+dir
+
+gfx
+dir
+
+js
 dir
 

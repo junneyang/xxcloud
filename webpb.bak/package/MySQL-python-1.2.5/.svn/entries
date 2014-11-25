@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb.bak/package/MySQL-python-1.2.5
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -236,40 +236,6 @@ dir
 MySQL_python.egg-info
 dir
 
-setup_windows.py
-file
-
-
-
-
-2014-11-19T02:39:19.000000Z
-c60f4911c5037498343f0bf1136b7802
-2014-11-19T02:32:09.521866Z
-4910
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1334
-
 HISTORY
 file
 
@@ -304,8 +270,39 @@ yangjun03
 
 5687
 
-tests
-dir
+setup_windows.py
+file
+
+
+
+
+2014-11-19T02:39:19.000000Z
+c60f4911c5037498343f0bf1136b7802
+2014-11-19T02:32:09.521866Z
+4910
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1334
 
 site.cfg
 file
@@ -340,6 +337,9 @@ yangjun03
 
 
 665
+
+tests
+dir
 
 dist
 dir
@@ -449,6 +449,9 @@ yangjun03
 
 1689
 
+MySQLdb
+dir
+
 MANIFEST.in
 file
 
@@ -482,9 +485,6 @@ yangjun03
 
 
 309
-
-MySQLdb
-dir
 
 metadata.cfg
 file

@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/log
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-nuomi_up.log
-file
-
-
-
-
-2014-10-31T09:42:17.000000Z
-f7a63806f9546ef2b3a9996c9dc9380d
-2014-10-31T03:54:36.977829Z
-4317
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-355053
 
 pbrpc.log.wf
 file
@@ -229,4 +195,38 @@ yangjun03
 
 
 370715
+
+nuomi_up.log
+file
+
+
+
+
+2014-10-31T09:42:17.000000Z
+f7a63806f9546ef2b3a9996c9dc9380d
+2014-10-31T03:54:36.977829Z
+4317
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+355053
 

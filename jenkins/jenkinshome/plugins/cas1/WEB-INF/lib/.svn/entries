@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/cas1/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,14 +26,14 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-spring-support-1.2.9.jar
+spring-jdbc-1.2.9.jar
 file
 
 
 
 
 2010-03-09T01:55:46.000000Z
-90818f16de2bc06f13ee93dd4e21c1c5
+5d12344dc7931438725bb55dbc9a2a1c
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -58,7 +58,143 @@ has-props
 
 
 
-166145
+187036
+
+spring-dao-1.2.9.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+2396ea4e1942a5fc7950cd4478120ec7
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95425
+
+acegi-security-1.0.5.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+addf0912f0618cddff322d18a6979cd2
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+546950
+
+cas-client-core-3.1.9.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+c53785547c79d493af08a79fbaf91ebd
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64835
+
+spring-web-2.5.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+a89e4a6025f8802215a91177d7914fde
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+221465
 
 spring-aop-2.5.jar
 file
@@ -94,6 +230,40 @@ has-props
 
 322942
 
+spring-support-1.2.9.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+90818f16de2bc06f13ee93dd4e21c1c5
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+166145
+
 ant-launcher-1.7.1.jar
 file
 
@@ -128,40 +298,6 @@ has-props
 
 12143
 
-log4j-1.2.9.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-6a44d84b72897f28189f4792e2015b93
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-352291
-
 ant-1.7.1.jar
 file
 
@@ -195,6 +331,40 @@ has-props
 
 
 1323005
+
+log4j-1.2.9.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+6a44d84b72897f28189f4792e2015b93
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+352291
 
 commons-codec-1.3.jar
 file
@@ -366,40 +536,6 @@ has-props
 
 461339
 
-groovy-all-1.6.0.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-69c19d4a23a94903271cd337e2187c9a
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4392210
-
 commons-lang-2.4.jar
 file
 
@@ -433,6 +569,40 @@ has-props
 
 
 261809
+
+groovy-all-1.6.0.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+69c19d4a23a94903271cd337e2187c9a
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4392210
 
 commons-logging-1.1.jar
 file
@@ -468,40 +638,6 @@ has-props
 
 52915
 
-spring-core-1.2.9.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-f5a779cb557f847437ca4a5e2f233698
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-126101
-
 classes.jar
 file
 
@@ -535,6 +671,40 @@ has-props
 
 
 14461
+
+spring-core-1.2.9.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+f5a779cb557f847437ca4a5e2f233698
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+126101
 
 jline-0.9.94.jar
 file
@@ -637,174 +807,4 @@ has-props
 
 
 4467
-
-spring-jdbc-1.2.9.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-5d12344dc7931438725bb55dbc9a2a1c
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-187036
-
-spring-dao-1.2.9.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-2396ea4e1942a5fc7950cd4478120ec7
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-95425
-
-acegi-security-1.0.5.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-addf0912f0618cddff322d18a6979cd2
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-546950
-
-cas-client-core-3.1.9.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-c53785547c79d493af08a79fbaf91ebd
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-64835
-
-spring-web-2.5.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-a89e4a6025f8802215a91177d7914fde
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-221465
 

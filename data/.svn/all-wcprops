@@ -1,7 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/app-test/search/lbs-stat/!svn/ver/5085/trunk/upps_test/jenkinsFramework/protobuf/data
+/app-test/search/lbs-stat/!svn/ver/5160/trunk/upps_test/jenkinsFramework/protobuf/data
+END
+nuomi_benchmark_json.data
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/4335/trunk/upps_test/jenkinsFramework/protobuf/data/nuomi_benchmark_json.data
+END
+item_function_json.data
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/app-test/search/lbs-stat/!svn/ver/4160/trunk/upps_test/jenkinsFramework/protobuf/data/item_function_json.data
 END
 test.data
 K 25
@@ -31,17 +43,5 @@ README
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/app-test/search/lbs-stat/!svn/ver/4154/trunk/upps_test/jenkinsFramework/protobuf/data/README
-END
-nuomi_benchmark_json.data
-K 25
-svn:wc:ra_dav:version-url
-V 112
-/app-test/search/lbs-stat/!svn/ver/4335/trunk/upps_test/jenkinsFramework/protobuf/data/nuomi_benchmark_json.data
-END
-item_function_json.data
-K 25
-svn:wc:ra_dav:version-url
-V 110
-/app-test/search/lbs-stat/!svn/ver/4160/trunk/upps_test/jenkinsFramework/protobuf/data/item_function_json.data
+/app-test/search/lbs-stat/!svn/ver/5160/trunk/upps_test/jenkinsFramework/protobuf/data/README
 END

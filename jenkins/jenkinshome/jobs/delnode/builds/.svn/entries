@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/delnode/builds
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-lastUnstableBuild
-file
-
-
-
-
-2014-11-05T09:41:38.000000Z
-6f1ac7e61a27f63da87a84bcf95d251b
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2
 
 2014-11-10_11-11-14
 dir
@@ -131,10 +97,10 @@ svn:special
 
 1
 
-2014-11-07_12-02-52
+2014-11-07_12-10-17
 dir
 
-2014-11-07_12-10-17
+2014-11-07_12-02-52
 dir
 
 2014-11-08_11-15-51
@@ -188,142 +154,6 @@ svn:special
 
 
 2
-
-10
-file
-
-
-
-
-2014-11-13T07:46:58.000000Z
-5e73c7afcb1fdfc9788e328492ee3c7b
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19
-
-11
-file
-
-
-
-
-2014-11-13T08:05:33.000000Z
-2b87499cb0f0c97744927734f08a7eae
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19
-
-12
-file
-
-
-
-
-2014-11-13T09:04:59.000000Z
-8319224bfd47706eb939121ae308d324
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19
-
-13
-file
-
-
-
-
-2014-11-13T09:07:14.000000Z
-e4f90e4af5aeb5ab326636a264c173db
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19
 
 lastSuccessfulBuild
 file
@@ -393,6 +223,9 @@ svn:special
 
 19
 
+2014-11-13_16-05-33
+dir
+
 2
 file
 
@@ -426,9 +259,6 @@ svn:special
 
 
 19
-
-2014-11-13_16-05-33
-dir
 
 3
 file
@@ -464,9 +294,6 @@ svn:special
 
 19
 
-2014-11-13_17-07-14
-dir
-
 4
 file
 
@@ -500,6 +327,9 @@ svn:special
 
 
 19
+
+2014-11-13_17-07-14
+dir
 
 5
 file
@@ -535,6 +365,12 @@ svn:special
 
 19
 
+2014-11-06_10-56-35
+dir
+
+2014-11-05_17-41-53
+dir
+
 6
 file
 
@@ -568,12 +404,6 @@ svn:special
 
 
 19
-
-2014-11-05_17-41-53
-dir
-
-2014-11-06_10-56-35
-dir
 
 7
 file
@@ -651,6 +481,176 @@ file
 
 2014-11-10T03:11:14.000000Z
 a211369e1a45c2dabe87df27bed80c37
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
+
+10
+file
+
+
+
+
+2014-11-13T07:46:58.000000Z
+5e73c7afcb1fdfc9788e328492ee3c7b
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
+
+lastUnstableBuild
+file
+
+
+
+
+2014-11-05T09:41:38.000000Z
+6f1ac7e61a27f63da87a84bcf95d251b
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+11
+file
+
+
+
+
+2014-11-13T08:05:33.000000Z
+2b87499cb0f0c97744927734f08a7eae
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
+
+12
+file
+
+
+
+
+2014-11-13T09:04:59.000000Z
+8319224bfd47706eb939121ae308d324
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
+
+13
+file
+
+
+
+
+2014-11-13T09:07:14.000000Z
+e4f90e4af5aeb5ab326636a264c173db
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03

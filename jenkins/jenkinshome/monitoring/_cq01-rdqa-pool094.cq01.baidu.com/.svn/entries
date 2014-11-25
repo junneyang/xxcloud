@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/monitoring/_cq01-rdqa-pool094.cq01.baidu.com
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,150 +26,14 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-httpd10521a4dbcf2b6e69346c33a0a1ac2285671be4.rrd
-file
-
-
-
-
-2014-11-11T02:56:42.000000Z
-d159afec8faaf7b377cecac153a70a6b
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-httpSessions.rrd
-file
-
-
-
-
-2014-11-11T02:57:12.000000Z
-59c0761a17d26a41d69a2515ecf30155
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-http00bdd1763e473ec5e09dad0d6b209553cbbaaef0.rrd
-file
-
-
-
-
-2014-11-11T02:55:13.000000Z
-716932e52ca4cb8f5a03b8e0af00f088
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-http64aa7741ff44d2f82d385ef8c464c050688cf8f6.rrd
-file
-
-
-
-
-2014-11-11T02:55:13.000000Z
-8e231de57c5f0c3dcbded1166677841d
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-http9b051a0212745888c373b46ee5f27d9d6d905d45.rrd
+threadCount.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-d008f1a8731c3514b7ba1c3ff5abb43a
+50ee4389dbe7f202f21be310c5b9d213
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -230,14 +94,14 @@ has-props
 
 34272
 
-usedPhysicalMemorySize.rrd
+httpSystemErrors.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-ac9a5aa375a8300c07d8d5b8433047b6
+23c297caf54eb653749473396bb388bb
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -298,14 +162,14 @@ has-props
 
 34272
 
-httpSystemErrors.rrd
+usedPhysicalMemorySize.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-23c297caf54eb653749473396bb388bb
+ac9a5aa375a8300c07d8d5b8433047b6
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -332,82 +196,14 @@ has-props
 
 34272
 
-httpMeanTimes.rrd
+activeThreads.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-96ec9bc3a094fe90394e10b890de6ed5
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-error_20141111.ser.gz
-file
-
-
-
-
-2014-11-11T02:57:13.000000Z
-2589d494789c51d85239e577b3c93ebd
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1019
-
-httpSessionsMeanAge.rrd
-file
-
-
-
-
-2014-11-11T02:57:13.000000Z
-c5ef3a54941c8198a95f592edf687993
+4e536c1b4bc51d5596ee2a038c913b2a
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -442,6 +238,40 @@ file
 
 2014-11-11T02:51:13.000000Z
 20ed0dd417b7068ecba4e89bb79f91f0
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+cpu.rrd
+file
+
+
+
+
+2014-11-11T02:57:12.000000Z
+468522513fecf23ebfdd92ee6cdd89ca
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -536,14 +366,48 @@ has-props
 
 34272
 
-usedNonHeapMemory.rrd
+http.ser.gz
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-14fdc601cd8103808d776c64cb0c30fe
+f127ef8110224e4918e595334208b391
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7057
+
+fileDescriptors.rrd
+file
+
+
+
+
+2014-11-11T02:57:13.000000Z
+78f81bd850a8ce916bfb62426d999165
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -570,14 +434,14 @@ has-props
 
 34272
 
-Free_disk_space.rrd
+usedSwapSpaceSize.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-39f59d530ec116182f334363eaf4a6d7
+bb39d85dc6d2bdd6c5455d3f1c5b6534
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -740,14 +604,14 @@ has-props
 
 34272
 
-threadCount.rrd
+httpMeanTimes.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-50ee4389dbe7f202f21be310c5b9d213
+96ec9bc3a094fe90394e10b890de6ed5
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -842,14 +706,14 @@ has-props
 
 34272
 
-activeThreads.rrd
+error_20141111.ser.gz
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-4e536c1b4bc51d5596ee2a038c913b2a
+2589d494789c51d85239e577b3c93ebd
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -874,50 +738,16 @@ has-props
 
 
 
-34272
+1019
 
-cpu.rrd
-file
-
-
-
-
-2014-11-11T02:57:12.000000Z
-468522513fecf23ebfdd92ee6cdd89ca
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-gc.rrd
+httpSessionsMeanAge.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-659db2c4fc0324f84ee651931cfac8e8
+c5ef3a54941c8198a95f592edf687993
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -952,6 +782,40 @@ file
 
 2014-11-11T02:57:12.000000Z
 f55971ed5d7f6458600c40c995551ac8
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+gc.rrd
+file
+
+
+
+
+2014-11-11T02:57:13.000000Z
+659db2c4fc0324f84ee651931cfac8e8
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -1046,82 +910,14 @@ has-props
 
 34272
 
-http.ser.gz
+usedNonHeapMemory.rrd
 file
 
 
 
 
 2014-11-11T02:57:13.000000Z
-f127ef8110224e4918e595334208b391
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7057
-
-fileDescriptors.rrd
-file
-
-
-
-
-2014-11-11T02:57:13.000000Z
-78f81bd850a8ce916bfb62426d999165
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34272
-
-usedSwapSpaceSize.rrd
-file
-
-
-
-
-2014-11-11T02:57:13.000000Z
-bb39d85dc6d2bdd6c5455d3f1c5b6534
+14fdc601cd8103808d776c64cb0c30fe
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -1156,6 +952,210 @@ file
 
 2014-11-11T02:56:42.000000Z
 bdc30088e7ed918ab651e0c1da2979ca
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+httpd10521a4dbcf2b6e69346c33a0a1ac2285671be4.rrd
+file
+
+
+
+
+2014-11-11T02:56:42.000000Z
+d159afec8faaf7b377cecac153a70a6b
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+Free_disk_space.rrd
+file
+
+
+
+
+2014-11-11T02:57:13.000000Z
+39f59d530ec116182f334363eaf4a6d7
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+httpSessions.rrd
+file
+
+
+
+
+2014-11-11T02:57:12.000000Z
+59c0761a17d26a41d69a2515ecf30155
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+http00bdd1763e473ec5e09dad0d6b209553cbbaaef0.rrd
+file
+
+
+
+
+2014-11-11T02:55:13.000000Z
+716932e52ca4cb8f5a03b8e0af00f088
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+http64aa7741ff44d2f82d385ef8c464c050688cf8f6.rrd
+file
+
+
+
+
+2014-11-11T02:55:13.000000Z
+8e231de57c5f0c3dcbded1166677841d
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34272
+
+http9b051a0212745888c373b46ee5f27d9d6d905d45.rrd
+file
+
+
+
+
+2014-11-11T02:57:13.000000Z
+d008f1a8731c3514b7ba1c3ff5abb43a
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03

@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/publish-over-ssh/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-publish-over-0.18.jar
-file
-
-
-
-
-2014-10-16T08:16:34.000000Z
-aaeb268a8df4cd5667e7eaa7af8f8368
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-93041
 
 jsch-0.1.45.jar
 file
@@ -127,4 +93,38 @@ has-props
 
 
 191122
+
+publish-over-0.18.jar
+file
+
+
+
+
+2014-10-16T08:16:34.000000Z
+aaeb268a8df4cd5667e7eaa7af8f8368
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93041
 

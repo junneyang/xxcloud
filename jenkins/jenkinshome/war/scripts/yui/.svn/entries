@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/scripts/yui
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,25 +26,16 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-cookie
-dir
-
-base
-dir
-
-button
-dir
-
-dom
-dir
-
-logger
+animation
 dir
 
 yahoo
 dir
 
-animation
+logger
+dir
+
+dom
 dir
 
 event
@@ -56,16 +47,16 @@ dir
 editor
 dir
 
-element
-dir
-
 fonts
 dir
 
-datasource
+element
 dir
 
 treeview
+dir
+
+datasource
 dir
 
 cutdown.sh
@@ -124,5 +115,14 @@ storage
 dir
 
 menu
+dir
+
+cookie
+dir
+
+base
+dir
+
+button
 dir
 

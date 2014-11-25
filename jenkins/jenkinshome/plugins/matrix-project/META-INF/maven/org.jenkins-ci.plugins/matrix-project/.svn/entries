@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/matrix-project/META-INF/maven/org.jenkins-ci.plugins/matrix-project
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-pom.xml
-file
-
-
-
-
-2014-07-22T06:25:08.000000Z
-ca16f108cfcfedb6a3f6d40f6efefa75
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3575
 
 pom.properties
 file
@@ -93,4 +59,38 @@ yangjun03
 
 
 119
+
+pom.xml
+file
+
+
+
+
+2014-07-22T06:25:08.000000Z
+ca16f108cfcfedb6a3f6d40f6efefa75
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3575
 

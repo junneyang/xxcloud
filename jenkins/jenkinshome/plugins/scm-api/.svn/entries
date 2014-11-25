@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/scm-api
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,12 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-WEB-INF
-dir
-
-META-INF
-dir
 
 .timestamp2
 file
@@ -65,4 +59,10 @@ yangjun03
 
 
 0
+
+WEB-INF
+dir
+
+META-INF
+dir
 

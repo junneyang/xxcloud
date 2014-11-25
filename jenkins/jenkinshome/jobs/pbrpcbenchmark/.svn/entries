@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcbenchmark
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,43 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+lastStable
+file
+
+
+
+
+2014-11-21T06:28:05.000000Z
+c0e2bc825a69b4e51c56530b1a5989d2
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22
+
+builds
+dir
 
 lastSuccessful
 file
@@ -127,41 +164,4 @@ yangjun03
 
 
 3
-
-lastStable
-file
-
-
-
-
-2014-11-21T06:28:05.000000Z
-c0e2bc825a69b4e51c56530b1a5989d2
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-22
-
-builds
-dir
 

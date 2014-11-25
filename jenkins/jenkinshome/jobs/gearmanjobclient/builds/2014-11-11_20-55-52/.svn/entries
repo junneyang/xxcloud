@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobclient/builds/2014-11-11_20-55-52
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+log
+file
+
+
+
+
+2014-11-11T12:55:56.000000Z
+cf84a781a7e801378d9b9f402d0d3748
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1312
 
 changelog.xml
 file
@@ -93,38 +127,4 @@ yangjun03
 
 
 2672
-
-log
-file
-
-
-
-
-2014-11-11T12:55:56.000000Z
-cf84a781a7e801378d9b9f402d0d3748
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1312
 

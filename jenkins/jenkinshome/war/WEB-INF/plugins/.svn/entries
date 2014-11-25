@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/plugins
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,74 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+external-monitor-job.hpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+256a43ef2a95f0dae6f10d40a9b45373
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53839
+
+ldap.hpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+0cedffc7a027e3eb56414ad1cca60907
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+43419
 
 ant.hpi
 file
@@ -128,40 +196,6 @@ has-props
 
 949638
 
-ssh-credentials.hpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-00201bf689bab87cc191f58a20ac5ec9
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-74973
-
 ssh-slaves.hpi
 file
 
@@ -195,6 +229,40 @@ has-props
 
 
 64366
+
+ssh-credentials.hpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+00201bf689bab87cc191f58a20ac5ec9
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74973
 
 junit.hpi
 file
@@ -569,72 +637,4 @@ has-props
 
 
 1030550
-
-external-monitor-job.hpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-256a43ef2a95f0dae6f10d40a9b45373
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-53839
-
-ldap.hpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-0cedffc7a027e3eb56414ad1cca60907
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-43419
 

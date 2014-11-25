@@ -75,17 +75,6 @@ def addtask(jenkinsurl, jobname, build_params):
         mysql.close()
 
 if __name__ == '__main__':
-    #jenkinsurl = 'http://10.48.55.39:8898/'
-    '''jobname = 'addnode'
-    build_params = {'JenkinsURL':'http://10.48.55.39:8898/','NodeName':'da02','WorkPath':'/home/map/workspace','IP':'10.99.36.61','PORT':'22','UserName':'map','PassWord':'mapapptest'}
-    '''
-    #jobname = 'pbdownload'
-    #build_params = {'ProtoFileSVNPath':'https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto',
-    #                'IPPort':'10.48.55.39:22','UserName':'yangjun03','PassWord':'Admin2123','ToolType':'pbrpcclient','RemotePath':'/home/users/yangjun03/workspace'}
-    #build_number = addtask(jenkinsurl, jobname, build_params)
-    #result = get_result(jenkinsurl, jobname, build_number)
-    #print result
-
     jenkinsurl = sys.argv[1]
     jobname = sys.argv[2]
     build_params = json.loads(sys.argv[3])

@@ -1,7 +1,7 @@
 10
 
 dir
-5158
+5175
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/maven-plugin/META-INF/maven/org.jenkins-ci.main/maven-plugin
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-pom.properties
-file
-
-
-
-
-2014-10-29T09:27:36.000000Z
-deb0330f4595d7ff80bc03908b0ee662
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-116
 
 pom.xml
 file
@@ -93,4 +59,38 @@ yangjun03
 
 
 18554
+
+pom.properties
+file
+
+
+
+
+2014-10-29T09:27:36.000000Z
+deb0330f4595d7ff80bc03908b0ee662
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+116
 

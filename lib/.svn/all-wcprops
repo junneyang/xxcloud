@@ -1,19 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/app-test/search/lbs-stat/!svn/ver/4679/trunk/upps_test/jenkinsFramework/protobuf/lib
-END
-logLib.py
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/app-test/search/lbs-stat/!svn/ver/4496/trunk/upps_test/jenkinsFramework/protobuf/lib/logLib.py
-END
-mysqlLib.py.bak
-K 25
-svn:wc:ra_dav:version-url
-V 101
-/app-test/search/lbs-stat/!svn/ver/4421/trunk/upps_test/jenkinsFramework/protobuf/lib/mysqlLib.py.bak
+/app-test/search/lbs-stat/!svn/ver/5174/trunk/upps_test/jenkinsFramework/protobuf/lib
 END
 cmdLib.py
 K 25
@@ -49,7 +37,7 @@ uuapLib.py
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/app-test/search/lbs-stat/!svn/ver/4421/trunk/upps_test/jenkinsFramework/protobuf/lib/uuapLib.py
+/app-test/search/lbs-stat/!svn/ver/5174/trunk/upps_test/jenkinsFramework/protobuf/lib/uuapLib.py
 END
 sftpLib.py
 K 25
@@ -62,4 +50,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 100
 /app-test/search/lbs-stat/!svn/ver/4508/trunk/upps_test/jenkinsFramework/protobuf/lib/addtask.py.bak
+END
+logLib.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/app-test/search/lbs-stat/!svn/ver/4496/trunk/upps_test/jenkinsFramework/protobuf/lib/logLib.py
+END
+mysqlLib.py.bak
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app-test/search/lbs-stat/!svn/ver/4421/trunk/upps_test/jenkinsFramework/protobuf/lib/mysqlLib.py.bak
 END

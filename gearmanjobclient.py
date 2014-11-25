@@ -57,41 +57,6 @@ def addtask(username, jenkinsurl, jobname, specifynode, build_params):
         return url
 
 if __name__ == '__main__':
-    '''unique_id = '1'
-    username = 'yangjun03'
-    password = 'yangjun03'
-    jenkinsurl = 'http://10.48.55.39:8898/'
-    jobname = 'pbrpcclient'
-    build_params = {
-    	"ClientNode":"yangjun03",
-    	"WorkPath":"/home/users/yangjun03/workspace",
-    	"PBTYPE":"PUBLIC-PBRPC",
-    	"IPPORT":"127.0.0.1:7788",
-    	"ServiceName":"lbs.da.openservice.ItemService",
-    	"MethodName":"GetItemsByItem",
-            "TestData":[
-    	{
-    		"header": {
-    			"subservice":"sub",
-    			"secretkey": "pass",
-    			"servicekey": "key1"
-    		},
-    		"algorithmId": "topic_rev_poi",
-    		"item_ids": ["9977193541978760286"]
-    	},
-    	{
-    		"header": {
-    			"subservice":"sub",
-    			"secretkey": "pass",
-    			"servicekey": "key1"
-    		},
-    		"algorithmId": "topic_rev_poi",
-    		"item_ids": ["9977193541978760286"]
-    	}
-    ]
-    }'''
-
-
     username = sys.argv[1]
     clustername = sys.argv[2]
     jenkinsurl = JENKINSURL
