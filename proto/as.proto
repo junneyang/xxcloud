@@ -1,0 +1,118 @@
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+
+message ASRequest {
+    optional int32 is_new = 1 [default = 0];
+    optional int32 checkin_time = 2 [default = -1];
+    optional int32 checkout_time = 3 [default = -1];
+    optional int64 city_id = 4;
+    optional int32 channel_type = 5 [default = 8];
+    optional string str_catg = 6 [default = "0"];
+    optional string str_subcatg = 7 [default = "0"];
+    optional string str_thdcatg = 8 [default = "0"];
+    optional string str_shop_dist = 9 [default = "0"];
+    optional string str_shop_range = 10 [default = "0"];
+    optional string str_sub_line = 11 ;
+    optional string str_sub_station = 12;
+    repeated int32 sub_station = 13;
+    optional string str_site_list = 14 [default = "0"];
+    optional int32 sort_type = 15 [default = 0];
+    optional int32 start_idx = 16 [default = 1];
+    optional int32 goods_per_page = 17 [default = 91];
+    optional int32 good_num = 18 [default = 91];
+    optional int32 poi_per_page = 19 [default = 10];
+    optional int32 poi_num = 20 [default = 20];
+    optional int32 goods_per_poi = 21 [default = 10];
+    optional string cuid = 22 [default = ""];
+    optional int32 client = 23 [default = 3];
+    optional string s = 24 [default = "realtime_push"];
+    optional string baidu_id = 25;
+    optional int32 is_expired = 26 [default = 0];
+    optional string location = 27;
+    //optional int32 border_distance = 28;
+    optional string keywords = 29;
+    optional int32 is_goflush = 30 [default = 0];
+    optional string tags = 31; //多个tag之间用","隔开
+    optional string border = 32;
+    optional int32 border_start_distance = 33;
+    optional int32 border_distance = 34 [default = 500];
+    optional int32 verbose = 35;
+    optional string coor_sys = 36 [default = "google"];
+    optional string nearby_id = 37;
+    optional string str_customized_location = 38;
+    optional string userID = 39;
+    optional string need_poi = 40 [default = "1"];
+}
+
+message ASFacetDetail {
+    optional string catg = 1;
+    optional string city = 2;
+    optional string range = 3;
+    optional string dist = 4;
+    optional string subcatg = 5;
+    optional string thirdcatg = 6;
+    optional string tags = 7;
+    optional string subway_line = 8;
+    optional string subway_station = 9;
+}
+
+message ASPoiDetail {
+    optional int32 poiid = 1;
+    optional int32 x = 2;
+    optional int32 y = 3;
+    optional int32 distance = 4;
+}
+
+message ASDistInfo {
+    optional int32 id = 1;
+    optional string name = 2;
+}
+
+message ASDealDetail {
+    optional int32 id = 1;// 团单id
+    optional string image = 2;
+    optional string mid_image = 3;
+    optional string tiny_image = 4;
+    optional string business_title = 5;
+    optional string medium_title = 6;
+    optional string title_high_price = 7;
+    optional string min_title = 8;
+    optional int32 price_ori = 9;
+    optional int32 price_current = 10;
+    optional string tags = 11;
+    optional int32 is_new = 12;
+    optional int32 sale_count = 13;
+    optional int32 type = 14;
+    optional int32 pay_start_time = 15;
+    optional int32 pay_end_time = 16;
+    optional int32 deal_start_time = 17;
+    optional int32 deal_expire_time = 18;
+    optional int32 city_num = 19;
+    optional int32 poi_num = 20;
+    repeated ASPoiDetail poi = 21;
+    optional string range = 22;
+    optional int32 score = 23;
+    optional int32 comment_num = 24;
+    optional int32 bought_weekly = 25;
+    optional string tiny_url = 26;
+    optional ASDistInfo dist_info = 27;
+    optional int32 is_national = 28;
+    optional int32 num_brother = 29;
+}
+
+message ASResponse {
+    optional string data = 1;
+    optional string head_data = 2;
+    optional ASFacetDetail facet = 3;
+    optional int32 total = 4;
+    optional string remain = 5;
+    optional string landmark_distance = 6;
+    optional string nearby_distance = 7;
+    optional int32 query_dist = 8;
+    optional int32 query_range = 9;
+    optional string highlights = 10;
+    optional int32 expired_amount = 11;
+    repeated ASDealDetail detail = 12;
+    optional string exp_ids = 13;
+}

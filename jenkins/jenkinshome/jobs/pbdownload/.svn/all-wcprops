@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 117
-/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload
+/app-test/search/lbs-stat/!svn/ver/5186/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload
 END
 config.xml
 K 25
@@ -13,7 +13,7 @@ nextBuildNumber
 K 25
 svn:wc:ra_dav:version-url
 V 133
-/app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload/nextBuildNumber
+/app-test/search/lbs-stat/!svn/ver/5186/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload/nextBuildNumber
 END
 lastStable
 K 25

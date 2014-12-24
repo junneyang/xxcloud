@@ -1,0 +1,96 @@
+import "pbrpc.proto";
+import "regist_condition.proto";
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+
+message PoiInfo {
+    optional string poi_id = 1;
+    optional double poi_x = 2;
+    optional double poi_y = 3;
+    optional double poi_r = 4;  //poi集合的查找精度（范围）
+    optional string poi_tag = 5;  //poi集合的标签
+}
+message AoiInfo {
+    optional string aoi_id = 1;
+    optional string aoi_tag = 2;
+    optional string aoi_name = 3;
+}
+message TrajStatusInfo {
+    optional UserTrajStatus traj_status = 1;  //用户停留点状态
+    optional double mercator_x = 2;
+    optional double mercator_y = 3;
+}
+message UserTriggeredInfo {
+    optional string cuid = 1;
+    optional string passport_id = 2;
+    optional double mercator_x = 3; //经度（墨卡托）
+    optional double mercator_y = 4; //纬度（墨卡托）
+    optional string tsmcid = 5; //用于判断是否来自推送
+    optional int64 last_log_time = 6; //最后一次日志时间
+    optional int64 target_city = 7;
+    optional string cond_id = 8; //触发条件id（推送模块内部使用）
+    optional string cond_tag = 9; //触发条件tag（与推送队列对应）
+    optional string append = 10; //触发条件附加信息（可以设置供策略使用的触发条件id）
+    repeated PoiInfo triggered_poi = 11; //用户当前触发到的poi点
+    repeated AoiInfo triggered_aoi = 12; //用户当前触发到的aoi点
+    optional TrajStatusInfo triggered_status = 13;//用户当前触发到的停留点状态
+    repeated Rule triggered_rules = 14;//当前推送的触发规则
+    optional string os_name = 15;
+}
+
+message GetPushDetailRequest {
+    optional RequestHeader header = 1;
+    optional string cuid = 2;//hash分流选取字段
+    optional string passport_id = 3;//hash分流备选字段
+    optional string cond_tag = 4;//策略选择字段
+    optional UserTriggeredInfo triggered_info = 5;
+}
+message RedisKeyVal {
+   optional string source = 1;
+    optional string key = 2;
+    optional string val = 3;
+    optional int64 expire_seconds = 4;
+}
+message MsgCenterPushInfo {
+    optional int32 tuanid = 1;
+    optional int32 situationid  = 2;
+    optional int32 startday = 3;
+    optional int32 daysize = 4;
+    optional int32 dealsize = 5;
+    optional int32 strsitelist = 6;
+    optional int32 eventid = 7;
+}
+message MsgCenterPushDetail {
+    optional string pid = 1; //即pid
+    optional int32 utype = 2; //推送用户类型
+    optional string uid = 3; //推送用户ID
+    optional string title = 4;//标题
+    optional string content = 5;//内容
+    optional int32 type = 6;//推送类型
+    optional int32 prod = 7 [default = 1] ;// 产品id(int),1：百糯
+    optional string operator = 8;
+    optional string src = 9 [default = "srh"];
+    optional int32 at = 10 [default = 0];
+    optional int32 seq = 11 [default = -1];
+    optional int32 et = 12 [default = 0];
+    optional int32 exp = 13;
+    optional MsgCenterPushInfo info = 14;
+}
+
+enum PushActionType {
+    NO_ACTION = 1;//不做任何操作
+    WRITE_REDIS = 2;//写redis
+    PUSH_MSGCENTER = 3;//推送至消息中心
+    WRITE_REDIS_PUSH_MSGCENTER = 4;//先写redis再推送至消息中心
+}
+
+message  GetPushDetailResponse {
+    optional string trigger_cond_id = 1; //触发条件id
+    optional string cuid = 2;
+    optional string passport_id = 3;
+    repeated RedisKeyVal redis_data = 5;
+    optional MsgCenterPushDetail push_detail = 6;
+    optional string sample_ids = 7;
+    optional PushActionType action_type = 8;
+}

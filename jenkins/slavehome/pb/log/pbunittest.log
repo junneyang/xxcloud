@@ -1,0 +1,204 @@
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:25:38] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:27:12] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:29:37] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:34:15] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:24] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:35:48] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:35:48] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Wed,2014-10-29 22:35:48] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Wed,2014-10-29 22:35:49] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 09:45:04] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 10:53:07] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 12:09:59] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 12:09:59] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 12:09:59] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:10:00] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 12:35:11] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 12:35:12] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:35:12] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 12:35:12] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 15:50:02] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 15:50:02] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 15:50:02] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:03] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Thu,2014-10-30 15:50:08] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:17:52] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000001
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:22] [service_proc-MainThread] ***********************************************************************************************
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:23] [service_proc-MainThread] test_case_id : case_1000002
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:32] [service_proc-MainThread] cmdstr : ./pbrpcclient PUBLIC-PBRPC 127.0.0.1:7790 lbs.da.openservice.ItemService GetItemsByItem ./data/tmp.data
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:35] [service_proc-MainThread] expect : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:36] [service_proc-MainThread] output : {"items": [{"str_value": [], "id": "18012202574307917823", "value": [0.3, 0.5, 0.4]}, {"str_value": [], "id": "12313225205891489106", "value": [1]}, {"str_value": [], "id": "18119621412888245380", "value": [0.7]}, {"str_value": [], "id": "2071168565446484381", "value": [0.3]}, {"str_value": [], "id": "11710154692952313709", "value": [0.3]}], "args": []}
+[DEBUG] [Mon,2014-11-03 16:31:10] [pbunittest.py-line:38] [service_proc-MainThread] ***********************************************************************************************
+
+

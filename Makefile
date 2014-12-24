@@ -160,12 +160,14 @@ clean:ccpclean
 	rm -rf pbrpcbenchmark
 	rm -rf src/pbrpcclient_pbrpcclient.o
 	rm -rf src/pbrpcclient_common.o
+	rm -rf proto/pbrpcclient_as.pb.o
 	rm -rf proto/pbrpcclient_common.pb.o
 	rm -rf proto/pbrpcclient_echo.pb.o
 	rm -rf proto/pbrpcclient_helloworld.pb.o
 	rm -rf proto/pbrpcclient_ipc.pb.o
 	rm -rf proto/pbrpcclient_pbrpc.pb.o
 	rm -rf proto/pbrpcclient_pbrpc_service.pb.o
+	rm -rf proto/pbrpcclient_realtime_push.pb.o
 	rm -rf proto/pbrpcclient_regist_condition.pb.o
 	rm -rf proto/pbrpcclient_rp.pb.o
 	rm -rf proto/pbrpcclient_transport.pb.o
@@ -175,12 +177,14 @@ clean:ccpclean
 	rm -rf src/pbrpcbenchmark_pbrpcbenchmark.o
 	rm -rf src/pbrpcbenchmark_common.o
 	rm -rf src/pbrpcbenchmark_requestthreadpool.o
+	rm -rf proto/pbrpcbenchmark_as.pb.o
 	rm -rf proto/pbrpcbenchmark_common.pb.o
 	rm -rf proto/pbrpcbenchmark_echo.pb.o
 	rm -rf proto/pbrpcbenchmark_helloworld.pb.o
 	rm -rf proto/pbrpcbenchmark_ipc.pb.o
 	rm -rf proto/pbrpcbenchmark_pbrpc.pb.o
 	rm -rf proto/pbrpcbenchmark_pbrpc_service.pb.o
+	rm -rf proto/pbrpcbenchmark_realtime_push.pb.o
 	rm -rf proto/pbrpcbenchmark_regist_condition.pb.o
 	rm -rf proto/pbrpcbenchmark_rp.pb.o
 	rm -rf proto/pbrpcbenchmark_transport.pb.o
@@ -207,12 +211,14 @@ love:
 
 pbrpcclient:src/pbrpcclient_pbrpcclient.o \
   src/pbrpcclient_common.o \
+  proto/pbrpcclient_as.pb.o \
   proto/pbrpcclient_common.pb.o \
   proto/pbrpcclient_echo.pb.o \
   proto/pbrpcclient_helloworld.pb.o \
   proto/pbrpcclient_ipc.pb.o \
   proto/pbrpcclient_pbrpc.pb.o \
   proto/pbrpcclient_pbrpc_service.pb.o \
+  proto/pbrpcclient_realtime_push.pb.o \
   proto/pbrpcclient_regist_condition.pb.o \
   proto/pbrpcclient_rp.pb.o \
   proto/pbrpcclient_transport.pb.o \
@@ -222,12 +228,14 @@ pbrpcclient:src/pbrpcclient_pbrpcclient.o \
 	@echo "[COMAKE:BUILD][Target:'pbrpcclient']"
 	$(CXX) src/pbrpcclient_pbrpcclient.o \
   src/pbrpcclient_common.o \
+  proto/pbrpcclient_as.pb.o \
   proto/pbrpcclient_common.pb.o \
   proto/pbrpcclient_echo.pb.o \
   proto/pbrpcclient_helloworld.pb.o \
   proto/pbrpcclient_ipc.pb.o \
   proto/pbrpcclient_pbrpc.pb.o \
   proto/pbrpcclient_pbrpc_service.pb.o \
+  proto/pbrpcclient_realtime_push.pb.o \
   proto/pbrpcclient_regist_condition.pb.o \
   proto/pbrpcclient_rp.pb.o \
   proto/pbrpcclient_transport.pb.o \
@@ -303,12 +311,14 @@ pbrpcclient:src/pbrpcclient_pbrpcclient.o \
 pbrpcbenchmark:src/pbrpcbenchmark_pbrpcbenchmark.o \
   src/pbrpcbenchmark_common.o \
   src/pbrpcbenchmark_requestthreadpool.o \
+  proto/pbrpcbenchmark_as.pb.o \
   proto/pbrpcbenchmark_common.pb.o \
   proto/pbrpcbenchmark_echo.pb.o \
   proto/pbrpcbenchmark_helloworld.pb.o \
   proto/pbrpcbenchmark_ipc.pb.o \
   proto/pbrpcbenchmark_pbrpc.pb.o \
   proto/pbrpcbenchmark_pbrpc_service.pb.o \
+  proto/pbrpcbenchmark_realtime_push.pb.o \
   proto/pbrpcbenchmark_regist_condition.pb.o \
   proto/pbrpcbenchmark_rp.pb.o \
   proto/pbrpcbenchmark_transport.pb.o \
@@ -319,12 +329,14 @@ pbrpcbenchmark:src/pbrpcbenchmark_pbrpcbenchmark.o \
 	$(CXX) src/pbrpcbenchmark_pbrpcbenchmark.o \
   src/pbrpcbenchmark_common.o \
   src/pbrpcbenchmark_requestthreadpool.o \
+  proto/pbrpcbenchmark_as.pb.o \
   proto/pbrpcbenchmark_common.pb.o \
   proto/pbrpcbenchmark_echo.pb.o \
   proto/pbrpcbenchmark_helloworld.pb.o \
   proto/pbrpcbenchmark_ipc.pb.o \
   proto/pbrpcbenchmark_pbrpc.pb.o \
   proto/pbrpcbenchmark_pbrpc_service.pb.o \
+  proto/pbrpcbenchmark_realtime_push.pb.o \
   proto/pbrpcbenchmark_regist_condition.pb.o \
   proto/pbrpcbenchmark_rp.pb.o \
   proto/pbrpcbenchmark_transport.pb.o \
@@ -416,6 +428,7 @@ src/pbrpcclient_pbrpcclient.o:src/pbrpcclient.cpp \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   proto/user_proto.h \
+  proto/as.pb.h \
   proto/common.pb.h \
   proto/echo.pb.h \
   proto/helloworld.pb.h \
@@ -424,6 +437,7 @@ src/pbrpcclient_pbrpcclient.o:src/pbrpcclient.cpp \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
   proto/rp.pb.h \
+  proto/realtime_push.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -455,6 +469,7 @@ src/pbrpcclient_common.o:src/common.cpp \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   proto/user_proto.h \
+  proto/as.pb.h \
   proto/common.pb.h \
   proto/echo.pb.h \
   proto/helloworld.pb.h \
@@ -463,6 +478,7 @@ src/pbrpcclient_common.o:src/common.cpp \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
   proto/rp.pb.h \
+  proto/realtime_push.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -474,6 +490,11 @@ src/pbrpcclient_common.o:src/common.cpp \
   com/jsoncpp-src-0.5.0/include/json/writer.h
 	@echo "[COMAKE:BUILD][Target:'src/pbrpcclient_common.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o src/pbrpcclient_common.o src/common.cpp
+
+proto/pbrpcclient_as.pb.o:proto/as.pb.cc \
+  proto/as.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_as.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_as.pb.o proto/as.pb.cc
 
 proto/pbrpcclient_common.pb.o:proto/common.pb.cc \
   proto/common.pb.h
@@ -504,9 +525,18 @@ proto/pbrpcclient_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcclient_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h
+  proto/regist_condition.pb.h \
+  proto/rp.pb.h \
+  proto/realtime_push.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
+
+proto/pbrpcclient_realtime_push.pb.o:proto/realtime_push.pb.cc \
+  proto/realtime_push.pb.h \
+  proto/pbrpc.pb.h \
+  proto/regist_condition.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcclient_realtime_push.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcclient_realtime_push.pb.o proto/realtime_push.pb.cc
 
 proto/pbrpcclient_regist_condition.pb.o:proto/regist_condition.pb.cc \
   proto/regist_condition.pb.h \
@@ -574,6 +604,7 @@ src/pbrpcbenchmark_pbrpcbenchmark.o:src/pbrpcbenchmark.cpp \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   proto/user_proto.h \
+  proto/as.pb.h \
   proto/common.pb.h \
   proto/echo.pb.h \
   proto/helloworld.pb.h \
@@ -582,6 +613,7 @@ src/pbrpcbenchmark_pbrpcbenchmark.o:src/pbrpcbenchmark.cpp \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
   proto/rp.pb.h \
+  proto/realtime_push.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -614,6 +646,7 @@ src/pbrpcbenchmark_common.o:src/common.cpp \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   proto/user_proto.h \
+  proto/as.pb.h \
   proto/common.pb.h \
   proto/echo.pb.h \
   proto/helloworld.pb.h \
@@ -622,6 +655,7 @@ src/pbrpcbenchmark_common.o:src/common.cpp \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
   proto/rp.pb.h \
+  proto/realtime_push.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -654,6 +688,7 @@ src/pbrpcbenchmark_requestthreadpool.o:src/requestthreadpool.cpp \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   com/rapidjson-master/include/rapidjson/stringbuffer.h \
   proto/user_proto.h \
+  proto/as.pb.h \
   proto/common.pb.h \
   proto/echo.pb.h \
   proto/helloworld.pb.h \
@@ -662,6 +697,7 @@ src/pbrpcbenchmark_requestthreadpool.o:src/requestthreadpool.cpp \
   proto/pbrpc_service.pb.h \
   proto/regist_condition.pb.h \
   proto/rp.pb.h \
+  proto/realtime_push.pb.h \
   proto/transport.pb.h \
   com/jsoncpp-src-0.5.0/include/json/json.h \
   com/jsoncpp-src-0.5.0/include/json/autolink.h \
@@ -673,6 +709,11 @@ src/pbrpcbenchmark_requestthreadpool.o:src/requestthreadpool.cpp \
   com/jsoncpp-src-0.5.0/include/json/writer.h
 	@echo "[COMAKE:BUILD][Target:'src/pbrpcbenchmark_requestthreadpool.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o src/pbrpcbenchmark_requestthreadpool.o src/requestthreadpool.cpp
+
+proto/pbrpcbenchmark_as.pb.o:proto/as.pb.cc \
+  proto/as.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_as.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_as.pb.o proto/as.pb.cc
 
 proto/pbrpcbenchmark_common.pb.o:proto/common.pb.cc \
   proto/common.pb.h
@@ -703,9 +744,18 @@ proto/pbrpcbenchmark_pbrpc.pb.o:proto/pbrpc.pb.cc \
 proto/pbrpcbenchmark_pbrpc_service.pb.o:proto/pbrpc_service.pb.cc \
   proto/pbrpc_service.pb.h \
   proto/pbrpc.pb.h \
-  proto/regist_condition.pb.h
+  proto/regist_condition.pb.h \
+  proto/rp.pb.h \
+  proto/realtime_push.pb.h
 	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_pbrpc_service.pb.o']"
 	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_pbrpc_service.pb.o proto/pbrpc_service.pb.cc
+
+proto/pbrpcbenchmark_realtime_push.pb.o:proto/realtime_push.pb.cc \
+  proto/realtime_push.pb.h \
+  proto/pbrpc.pb.h \
+  proto/regist_condition.pb.h
+	@echo "[COMAKE:BUILD][Target:'proto/pbrpcbenchmark_realtime_push.pb.o']"
+	$(CXX) -c $(INCPATH) $(DEP_INCPATH) $(CPPFLAGS) $(CXXFLAGS)  -o proto/pbrpcbenchmark_realtime_push.pb.o proto/realtime_push.pb.cc
 
 proto/pbrpcbenchmark_regist_condition.pb.o:proto/regist_condition.pb.cc \
   proto/regist_condition.pb.h \

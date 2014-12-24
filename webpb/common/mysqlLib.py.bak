@@ -1,0 +1,182 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+from logLib import *
+import datetime
+
+import MySQLdb
+host='localhost'
+user='root'
+passwd='Admin@123'
+db='db_autotestplatform'
+port=33306
+
+from dynsqlLib import *
+
+class mysqlLib():
+    def __init__(self,host=host,user=user,passwd=passwd,db=db,port=port,charset='utf8'):
+        try:
+            self.host=host
+            self.user=user
+            self.passwd=passwd
+            self.db=db
+            self.port=port
+            self.charset=charset
+            self.conn=MySQLdb.connect(host=self.host,user=self.user,passwd=self.passwd,db=self.db,port=self.port,charset=self.charset)
+            self.cursor=self.conn.cursor()
+        except Exception as e:
+            logging.error(str(e))
+    def close(self):
+        try:
+            self.cursor.close()
+            self.conn.close()
+        except Exception as e:
+            logging.error(str(e))
+    def query_pjt(self,param):
+        try:
+            s=DynSql("""select * from tbl_project where 1=1 { and id=$id}
+            { and name=$name} { and info=$info} { and status=$status} ORDER BY id DESC {limit {$offset,} $row_cnt}""")
+            sql=s(param)
+            cnt=self.cursor.execute(sql[0],sql[1])
+            ret=self.cursor.fetchall()
+            self.conn.commit()
+            return ret
+        except Exception as e:
+            logging.error(str(e))
+    def add_pjt(self,param):
+        try:
+            sql="insert into tbl_project(id,name,info,status) values(NULL,%s,%s,%s)"
+            n=self.cursor.execute(sql,param)
+            last_id=int(self.cursor.lastrowid)
+            self.conn.commit()
+            return n,last_id
+        except Exception as e:
+            logging.error(str(e))
+            return 0,0
+    def updata_pjt(self,param):
+        try:
+            sql="update tbl_project set name=%s,info=%s,status=%s where name=%s"
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+    def del_pjt(self,param):
+        try:
+            sql="delete from tbl_project where name=%s"
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+    def query_task(self,param):
+        try:
+            #sql="select * from tbl_task limit %s,%s"
+            s=DynSql("""select * from tbl_task where 1=1 { and id=$id}
+            { and pjt_id=$pjt_id} { and name=$name} { and version=$version} { and info=$info}
+            { and testtype=$testtype} { and processtype=$processtype} { and filepath=$filepath} { and starttime=$starttime}
+            { and endtime=$endtime} { and status=$status}
+            ORDER BY id DESC {limit {$offset,} $row_cnt}""")
+            sql=s(param)
+            cnt=self.cursor.execute(sql[0],sql[1])
+            ret=self.cursor.fetchall()
+            self.conn.commit()
+            return ret
+        except Exception as e:
+            logging.error(str(e))
+    def add_task(self,param):
+        try:
+            sql="""insert into tbl_task(id,pjt_id,name,version,info,testtype,processtype,filepath,starttime,endtime,status)
+            values(NULL,%s,%s,%s,%s,%s,%s,%s,NULL,NULL,%s)"""
+            n=self.cursor.execute(sql,param)
+            last_id=int(self.cursor.lastrowid)
+            self.conn.commit()
+            return n,last_id
+        except Exception as e:
+            logging.error(str(e))
+            return 0,0
+    def update_task_starttime(self,param):
+        try:
+            sql="""update tbl_task set starttime=%s where id=%s"""
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+    def update_task_endtime(self,param):
+        try:
+            sql="""update tbl_task set endtime=%s where id=%s"""
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+    def update_task_status(self,param):
+        try:
+            sql="""update tbl_task set status=%s where id=%s"""
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+    def del_task(self,param):
+        try:
+            sql="delete from tbl_task where name=%s"
+            n=self.cursor.execute(sql,param)
+            self.conn.commit()
+            return n
+        except Exception as e:
+            logging.error(str(e))
+
+if __name__ == "__main__":
+    mysql=mysqlLib()
+
+    '''n=mysql.add_pjt(param=("UserPreference",u"用户偏好",0))
+    print(u"插入数据:"+str(n))
+
+    ret=mysql.query_pjt()
+    print(u"查询数据:"+str(len(ret)))
+    print ret
+    for record in ret:
+        for field in record:
+            print field
+
+    n=mysql.updata_pjt(param=("UserPreference_NEW",u"用户偏好_NEW",1,"UserPreference"))
+    print(u"更新数据:"+str(n))
+
+    n=mysql.del_pjt(param=(u"UserPreference",))
+    print(u"删除数据:"+str(n))'''
+
+    '''param=(2,'task_userpreference','1.0.1.1',u'标记一下',0,1,
+    'ftp://getprod:getprod@product.scm.baidu.com:/data/prod-64/app/search/lbs-da/upps/openservice/openservice_1-0-11-4_PD_BL',0)
+    n,last_id=mysql.add_task(param)
+    print(u"插入数据:"+str(n)+","+str(last_id))
+
+    ret=mysql.query_task((0,10))
+    print(u"查询数据:"+str(len(ret)))
+    print ret
+    for record in ret:
+        for field in record:
+            print field
+
+    now=datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+    param=(2,'task_userpreference_new','1.0.1.1',u'标记一下',0,1,
+    'ftp://getprod:getprod@product.scm.baidu.com:/data/prod-64/app/search/lbs-da/upps/openservice/openservice_1-0-11-4_PD_BL',
+    now,now,0,'task_userpreference')
+    n=mysql.update_task(param)
+    print(u"更新数据:"+str(n))
+
+    ret=mysql.query_task((0,10))
+    print(u"查询数据:"+str(len(ret)))
+    print ret
+    for record in ret:
+        for field in record:
+            print field
+
+    n=mysql.del_task(param=(u"task_userpreference",))
+    print(u"删除数据:"+str(n))'''
+
+    ret=pjt_list=mysql.query_pjt({"offset":0,"row_cnt":10})
+    print ret
+
+    mysql.close()
+

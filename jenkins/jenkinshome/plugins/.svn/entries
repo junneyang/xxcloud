@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,46 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+javadoc.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+585dc4d72723739f124f6d66e5338117
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38073
+
+junit
+dir
+
+scm-api
+dir
 
 mailer.jpi
 file
@@ -60,159 +100,20 @@ has-props
 
 128645
 
-cvs
-dir
-
-pam-auth.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-ea872725eb7df546312b067dcce680fd
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1030550
-
 git-client
 dir
 
 subversion
 dir
 
-token-macro.jpi
-file
-
-
-
-
-2014-11-04T13:24:23.000000Z
-eb5a575ce2817d61ef16835e402c44dc
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-24523
-
-git.jpi
-file
-
-
-
-
-2014-11-10T08:55:49.000000Z
-31f0dbcf88871aa47ea1fec224302b6f
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4691249
-
-cas1.jpi
-file
-
-
-
-
-2014-11-10T09:55:24.000000Z
-0281e37e0984a376e4a090095aec68fa
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8841843
-
-ssh-credentials.jpi
+ant.jpi
 file
 
 
 
 
 2014-11-17T07:12:26.000000Z
-00201bf689bab87cc191f58a20ac5ec9
+57b1cca1b16dcfdceaf795a9d1b97ee4
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -237,78 +138,115 @@ has-props
 
 
 
-74973
+90421
 
-junit.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-5946a3a75ce161378678a3e0c01f8aa6
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-331127
-
-credentials.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-7f6100d98bfb05780487f5a4172ec290
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-406478
-
-scp
+matrix-auth
 dir
+
+antisamy-markup-formatter.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+9a223fec44c3aea990fcd7e3edecb925
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+112483
+
+pam-auth
+dir
+
+cvs.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+2c964a1c6322fce17f262c7236743946
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+929025
+
+maven-plugin.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+b03d7654d6b1a29196640254d73354c1
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10805330
 
 nodelabelparameter
 dir
@@ -347,113 +285,11 @@ has-props
 
 779559
 
-javadoc.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-585dc4d72723739f124f6d66e5338117
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-38073
-
-scm-api
+cas1
 dir
 
-ssh-agent
+translation
 dir
-
-publish-over-ssh.jpi
-file
-
-
-
-
-2014-11-04T14:28:57.000000Z
-8b56b3949d23afaa593d248dde583e22
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-503534
-
-external-monitor-job.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-256a43ef2a95f0dae6f10d40a9b45373
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-53839
 
 jquery.jpi
 file
@@ -489,14 +325,14 @@ has-props
 
 1672427
 
-ldap.jpi
+scp.jpi
 file
 
 
 
 
-2014-11-17T07:12:26.000000Z
-0cedffc7a027e3eb56414ad1cca60907
+2014-11-04T14:14:21.000000Z
+6ef6b033d0ff91f63eb11bd1b51924ce
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -521,22 +357,16 @@ has-props
 
 
 
-43419
+200049
 
-maven-plugin
-dir
-
-matrix-auth
-dir
-
-ant.jpi
+notification.jpi
 file
 
 
 
 
-2014-11-17T07:12:26.000000Z
-57b1cca1b16dcfdceaf795a9d1b97ee4
+2014-11-10T08:34:24.000000Z
+d6b07eea843945d13b4db60df90c468f
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -561,53 +391,22 @@ has-props
 
 
 
-90421
+199656
 
 matrix-project
 dir
 
-cvs.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-2c964a1c6322fce17f262c7236743946
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-929025
+publish-over-ssh
+dir
 
-subversion.jpi
+junit.jpi
 file
 
 
 
 
 2014-11-17T07:12:26.000000Z
-5ff9e5056b9cb61b8d1fca9f65b75259
+5946a3a75ce161378678a3e0c01f8aa6
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -632,7 +431,50 @@ has-props
 
 
 
-4683101
+331127
+
+scm-api.jpi
+file
+
+
+
+
+2014-11-10T08:55:46.000000Z
+9574c07bf6bfd02a57b451145c870f0e
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+75264
+
+external-monitor-job
+dir
+
+token-macro
+dir
+
+ldap
+dir
 
 git-client.jpi
 file
@@ -668,19 +510,90 @@ has-props
 
 3216605
 
+subversion.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+5ff9e5056b9cb61b8d1fca9f65b75259
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4683101
+
 github
 dir
 
-antisamy-markup-formatter
+git
 dir
+
+matrix-auth.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+7314c933473c423f2560e14e60755b81
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+79681
 
 windows-slaves
 dir
 
-notification
+ssh-credentials
 dir
 
 ssh-slaves
+dir
+
+ssh-agent
 dir
 
 github-api
@@ -720,17 +633,17 @@ has-props
 
 3216605
 
-translation
+credentials
 dir
 
-scp.jpi
+pam-auth.jpi
 file
 
 
 
 
-2014-11-04T14:14:21.000000Z
-6ef6b033d0ff91f63eb11bd1b51924ce
+2014-11-17T07:12:26.000000Z
+ea872725eb7df546312b067dcce680fd
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -755,7 +668,10 @@ has-props
 
 
 
-200049
+1030550
+
+javadoc
+dir
 
 nodelabelparameter.jpi
 file
@@ -791,91 +707,51 @@ has-props
 
 321451
 
+cas1.jpi
+file
+
+
+
+
+2014-11-10T09:55:24.000000Z
+0281e37e0984a376e4a090095aec68fa
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8841843
+
 mailer
 dir
 
-scm-api.jpi
-file
-
-
-
-
-2014-11-10T08:55:46.000000Z
-9574c07bf6bfd02a57b451145c870f0e
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-75264
-
-ssh-agent.jpi
-file
-
-
-
-
-2014-11-10T08:55:54.000000Z
-a7fad44711642c81dd69608b6f6f955e
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5265201
-
-pam-auth
-dir
-
-token-macro
-dir
-
-maven-plugin.jpi
+translation.jpi
 file
 
 
 
 
 2014-11-17T07:12:26.000000Z
-b03d7654d6b1a29196640254d73354c1
+d764356c8050face1ad6e4d9cde7afc1
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -900,52 +776,15 @@ has-props
 
 
 
-10805330
+50065
 
-git
+ant
 dir
 
-matrix-auth.jpi
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-7314c933473c423f2560e14e60755b81
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-79681
+antisamy-markup-formatter
+dir
 
 monitoring
-dir
-
-cas1
-dir
-
-ssh-credentials
 dir
 
 matrix-project.jpi
@@ -982,10 +821,146 @@ has-props
 
 237973
 
-junit
+cvs
 dir
 
-credentials
+publish-over-ssh.jpi
+file
+
+
+
+
+2014-11-04T14:28:57.000000Z
+8b56b3949d23afaa593d248dde583e22
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+503534
+
+token-macro.jpi
+file
+
+
+
+
+2014-11-04T13:24:23.000000Z
+eb5a575ce2817d61ef16835e402c44dc
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24523
+
+external-monitor-job.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+256a43ef2a95f0dae6f10d40a9b45373
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53839
+
+ldap.jpi
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+0cedffc7a027e3eb56414ad1cca60907
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+43419
+
+maven-plugin
 dir
 
 github.jpi
@@ -1022,14 +997,14 @@ has-props
 
 1470247
 
-antisamy-markup-formatter.jpi
+git.jpi
 file
 
 
 
 
-2014-11-17T07:12:26.000000Z
-9a223fec44c3aea990fcd7e3edecb925
+2014-11-10T08:55:49.000000Z
+31f0dbcf88871aa47ea1fec224302b6f
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -1054,7 +1029,7 @@ has-props
 
 
 
-112483
+4691249
 
 windows-slaves.jpi
 file
@@ -1093,14 +1068,14 @@ has-props
 gearman-plugin
 dir
 
-notification.jpi
+ssh-credentials.jpi
 file
 
 
 
 
-2014-11-10T08:34:24.000000Z
-d6b07eea843945d13b4db60df90c468f
+2014-11-17T07:12:26.000000Z
+00201bf689bab87cc191f58a20ac5ec9
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -1125,10 +1100,7 @@ has-props
 
 
 
-199656
-
-javadoc
-dir
+74973
 
 ssh-slaves.jpi
 file
@@ -1164,6 +1136,40 @@ has-props
 
 64366
 
+ssh-agent.jpi
+file
+
+
+
+
+2014-11-10T08:55:54.000000Z
+a7fad44711642c81dd69608b6f6f955e
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5265201
+
 github-api.jpi
 file
 
@@ -1198,17 +1204,14 @@ has-props
 
 3258615
 
-publish-over-ssh
-dir
-
-translation.jpi
+credentials.jpi
 file
 
 
 
 
 2014-11-17T07:12:26.000000Z
-d764356c8050face1ad6e4d9cde7afc1
+7f6100d98bfb05780487f5a4172ec290
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
@@ -1233,17 +1236,14 @@ has-props
 
 
 
-50065
-
-external-monitor-job
-dir
+406478
 
 jquery
 dir
 
-ldap
+scp
 dir
 
-ant
+notification
 dir
 

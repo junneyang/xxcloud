@@ -156,7 +156,7 @@ void callback (google::protobuf::Message* request_msg, google::protobuf::Message
 //for benchmark
 void async_request(google::protobuf::RpcChannel *rpc_channel, string pbrpc_type, string service_name,
 	const google::protobuf::MethodDescriptor *method, int is_output, string filestr, string current_expjson);
-void async_callback(google::protobuf::Message* response_msg, google::protobuf::RpcController* cntl, int is_output, long para_starttime, google::protobuf::Message* exp_msg);
+void async_callback(google::protobuf::Message* response_msg, google::protobuf::RpcController* cntl, int is_output, long para_starttime, string current_expjson);
 //socket客户端初始化
 vector<google::protobuf::RpcChannel *> channelinit(string pbrpc_type, string ip_port, int work_thread_num, int client_num, string service_name);
 

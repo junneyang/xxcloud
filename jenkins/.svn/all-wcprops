@@ -1,7 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/app-test/search/lbs-stat/!svn/ver/5158/trunk/upps_test/jenkinsFramework/protobuf/jenkins
+/app-test/search/lbs-stat/!svn/ver/5186/trunk/upps_test/jenkinsFramework/protobuf/jenkins
+END
+jenkins-cli.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins-cli.jar
+END
+libgcc_s.so.1
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/app-test/search/lbs-stat/!svn/ver/5155/trunk/upps_test/jenkinsFramework/protobuf/jenkins/libgcc_s.so.1
 END
 slave.jar
 K 25
@@ -32,16 +44,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 101
 /app-test/search/lbs-stat/!svn/ver/5157/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins.war
-END
-jenkins-cli.jar
-K 25
-svn:wc:ra_dav:version-url
-V 105
-/app-test/search/lbs-stat/!svn/ver/4899/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkins-cli.jar
-END
-libgcc_s.so.1
-K 25
-svn:wc:ra_dav:version-url
-V 103
-/app-test/search/lbs-stat/!svn/ver/5155/trunk/upps_test/jenkinsFramework/protobuf/jenkins/libgcc_s.so.1
 END

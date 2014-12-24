@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/javadoc/META-INF
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,9 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-maven
-dir
 
 MANIFEST.MF
 file
@@ -62,4 +59,7 @@ yangjun03
 
 
 445
+
+maven
+dir
 

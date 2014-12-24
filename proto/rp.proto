@@ -14,21 +14,21 @@ message RPCommonRequest
 	optional string logId = 3;            //输入中的日志编号，用来使用前、中、后端统一请求的唯一编号
 	
 	//app_see2see
-	optional string userID = 4;          //稳定用户标识：登录账号id，若取不到设为DEFAULT_USER_ID=""
-	optional string cuid = 5;            //相对稳定用户标识：无线端用户标识，相当于cookie，若取不到设为 DEFAULT_CUID="BN_UNKNOWN_CUID"
-	optional string coor_sys = 6;        //前端所使用的坐标系，若取不到，则设为DEFAULT_COOR_SYS="UNKNOW_COOR_SYS"
-	optional double x = 7;              //经度坐标，若取不到设为DEFAULT_USER_X=-1.0
-	optional double y = 8;               //纬度坐标，若取不到设为DEFAULT_USER_Y=-1.0
-	optional int64 areaId = 9;          //用户所在城市ID，若取不到设为DEFAULT_USER_AREA_ID=-1
-	optional int64 dealId = 10;           //待推荐的团单ID，若取不到设为DEFAULT_DEAL_ID=-1
-	optional int32 size = 11;           //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1 或者 请求团单数
+	optional string userID = 4 [default = "0"];          //稳定用户标识：登录账号id，若取不到设为DEFAULT_USER_ID=""
+	optional string cuid = 5 [default = ""];            //相对稳定用户标识：无线端用户标识，相当于cookie，若取不到设为 DEFAULT_CUID="BN_UNKNOWN_CUID"
+	optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];        //前端所使用的坐标系，若取不到，则设为DEFAULT_COOR_SYS="UNKNOW_COOR_SYS"
+	optional double x = 7 [default = -1.0];              //经度坐标，若取不到设为DEFAULT_USER_X=-1.0
+	optional double y = 8 [default = -1.0];               //纬度坐标，若取不到设为DEFAULT_USER_Y=-1.0
+	optional int64 areaId = 9 [default = -1];          //用户所在城市ID，若取不到设为DEFAULT_USER_AREA_ID=-1
+	optional int64 dealId = 10 [default = -1];           //待推荐的团单ID，若取不到设为DEFAULT_DEAL_ID=-1
+	optional int32 size = 11 [default = -1];           //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1 或者 请求团单数
 	optional string deviceType = 12;   //输入中的设备类型，可取值：pc、ios、ipad、android、webapp
-	optional int32 situationId = 13;  //场景编号，1　默认推荐；2　过期团单推荐
-	optional int32 need_poi = 14;      //请求di中的poi信息，若取不到设为DEFAULT_NEED_POI=0
-	optional int32 poi_num = 15;      //请求di中的poi的数量要求， 若取不到设置DEFAULT_POI_NUM=0  
+	optional int32 situationId = 13 [default = -1];  //场景编号，1　默认推荐；2　过期团单推荐
+	optional int32 need_poi = 14 [default = 0];      //请求di中的poi信息，若取不到设为DEFAULT_NEED_POI=0
+	optional int32 poi_num = 15 [default = 0];      //请求di中的poi的数量要求， 若取不到设置DEFAULT_POI_NUM=0  
 	
-	optional string baidu_id = 16;    //相对稳定用户标识：PC端标识，相当于cookie，为空则设为DEFAULT_BAIDU_ID="BN_UNKNOWN_BAIDU_ID"
-	optional int64 targetAreaId = 17;   //酒店等查询中的目标城市，为空则设为DEFAULT_USER_TARGET_AREA_ID = -1
+	optional string baidu_id = 16 [default = ""];    //相对稳定用户标识：PC端标识，相当于cookie，为空则设为DEFAULT_BAIDU_ID="BN_UNKNOWN_BAIDU_ID"
+	optional int64 targetAreaId = 17 [default = -1];   //酒店等查询中的目标城市，为空则设为DEFAULT_USER_TARGET_AREA_ID = -1
 	 
 	optional string keywords = 18;        //用户检索query
 	optional string str_catg = 19;        //用户筛选的一级分类
@@ -45,16 +45,23 @@ message RPCommonRequest
 	optional string qrw_str_dist = 30;     //qrw识别出来的行政区域倾向列表
 	optional string qrw_str_range = 31;    //qrw识别出来的商圈倾向列表
 	
-	optional int32 client = 32;            //手机型号：0 - IOS, 1 - ANDROID, 2 - WINPHONE, 3 - OTHER
-	optional int32 channelType = 33;       //channel type：7 - wap, 8 - app
-	optional int32 startDay = 34;          //请求的起始日期，若取不到设为DEFAULT_START_DAY=0
-	optional int32 daySize  = 35;           //以起始日期为1，往前依次增加，最多为7， 若取不到设置DEFAULT_DAY_SIZE=0
-	optional int32 dealSize = 36;         //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1
-	optional string str_site_list = 37;    //推送直达标记，若取不到设为DEFAULT_STR_SITE_LIST=""
+	optional int32 client = 32 [default = 3];            //手机型号：0 - IOS, 1 - ANDROID, 2 - WINPHONE, 3 - OTHER
+	optional int32 channelType = 33 [default = 8];       //channel type：7 - wap, 8 - app
+	optional int32 startDay = 34 [default = 0];          //请求的起始日期，若取不到设为DEFAULT_START_DAY=0
+	optional int32 daySize  = 35 [default = 0];           //以起始日期为1，往前依次增加，最多为7， 若取不到设置DEFAULT_DAY_SIZE=0
+	optional int32 dealSize = 36 [default = -1];         //请求的推荐结果数量上限，若取不到设为DEFAULT_REC_NUM=-1
+	optional string str_site_list = 37 [default = ""];    //推送直达标记，若取不到设为DEFAULT_STR_SITE_LIST=""
 	
-	optional int32 eventId = 38;           //请求中的eventID， 若取不到设置DEFAULT_POI_NUM=0
-	optional int64 recDay = 39;            //推荐日期，若取不到设为DEFAULT_REC_DAY=-
-	optional int64 dealPos = 40;           //请求的团单位置，若取不到设为DEFAULT_DEAL_POS=0	
+	optional int32 eventId = 38 [default = 0];           //请求中的eventID， 若取不到设置DEFAULT_POI_NUM=0
+	optional int64 recDay = 39 [default = -1];            //推荐日期，若取不到设为DEFAULT_REC_DAY=-
+	optional int64 dealPos = 40 [default = 0];           //请求的团单位置，若取不到设为DEFAULT_DEAL_POS=0	
+	
+	optional string sourceType = 41;        //用户页面来源
+	optional string history_deal_list = 42;   //用户浏览团单列表
+	
+	optional string nm_key = 43;            //no use
+	optional int64 poi = 44 [default = 0];  //buy2buy验单场景POI
+	optional bool  should_set_di = 45 [default =false]; //是否需要设置detail_info
 	
 	//repeated string ss = 41;	 
 	//repeated int64 ii = 42;	
@@ -133,5 +140,6 @@ message RPCommonResponse{
     optional string bn_rp_svr_title = 8; //推送标题
     optional string bn_rp_svr_subtitle = 9; //推送副标题
     optional string gift_cart_id = 10; //代金券ID
+    optional int32  is_transcode = 11;
     
 }

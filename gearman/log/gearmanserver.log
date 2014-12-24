@@ -8123,3 +8123,489 @@ Options:
 659025984 [gearman-43] INFO gearman - [10.73.191.24:20380] : IN  : TEXT
 659026028 [gearman-43] INFO gearman - [10.73.191.24:20380] : Disconnected
 659055969 [gearman-43] INFO gearman - [10.73.191.24:961] : Disconnected
+949054692 [gearman-43] INFO gearman - [127.0.0.1:30834] : Disconnected
+949054693 [gearman-44] INFO gearman - [10.48.55.39:60775] : Disconnected
+949054694 [gearman-45] INFO gearman - [127.0.0.1:53725] : Disconnected
+954841251 [gearman-45] INFO gearman - [10.48.55.39:17662] : Disconnected
+954841253 [gearman-45] INFO gearman - [10.48.55.39:17658] : Disconnected
+954842589 [gearman-45] INFO gearman - [10.48.55.39:33681] : Connected
+954842589 [gearman-46] INFO gearman - [10.48.55.39:33682] : Connected
+954842591 [gearman-46] INFO gearman - [10.48.55.39:33682] : IN  : SET_CLIENT_ID
+954842592 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : SET_CLIENT_ID
+954842592 [gearman-46] INFO gearman - [10.48.55.39:33682] : IN  : SET_CLIENT_ID
+954842592 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : SET_CLIENT_ID
+954842592 [gearman-46] INFO gearman - [10.48.55.39:33682] : IN  : RESET_ABILITIES
+954842592 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : RESET_ABILITIES
+954842593 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : CAN_DO
+954842593 [gearman-45] INFO gearman - [10.48.55.39:33682] : IN  : CAN_DO
+954842594 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : CAN_DO
+954842594 [gearman-45] INFO gearman - [10.48.55.39:33682] : IN  : CAN_DO
+954842595 [gearman-45] INFO gearman - [10.48.55.39:33681] : IN  : GRAB_JOB_UNIQ
+954842595 [gearman-45] INFO gearman - [10.48.55.39:33681] : OUT : NO_JOB
+954842596 [gearman-45] INFO gearman - [10.48.55.39:33682] : IN  : GRAB_JOB_UNIQ
+954842597 [gearman-45] INFO gearman - [10.48.55.39:33682] : OUT : NO_JOB
+954842597 [gearman-46] INFO gearman - [10.48.55.39:33681] : IN  : PRE_SLEEP
+954842598 [gearman-46] INFO gearman - [10.48.55.39:33682] : IN  : PRE_SLEEP
+954875068 [gearman-46] INFO gearman - [10.48.55.39:33682] : Disconnected
+954875070 [gearman-46] INFO gearman - [10.48.55.39:33681] : Disconnected
+954876424 [gearman-46] INFO gearman - [10.48.55.39:36624] : Connected
+954876425 [gearman-47] INFO gearman - [10.48.55.39:36625] : Connected
+954876427 [gearman-47] INFO gearman - [10.48.55.39:36625] : IN  : SET_CLIENT_ID
+954876427 [gearman-47] INFO gearman - [10.48.55.39:36625] : IN  : SET_CLIENT_ID
+954876427 [gearman-47] INFO gearman - [10.48.55.39:36625] : IN  : RESET_ABILITIES
+954876427 [gearman-46] INFO gearman - [10.48.55.39:36624] : IN  : SET_CLIENT_ID
+954876428 [gearman-46] INFO gearman - [10.48.55.39:36624] : IN  : SET_CLIENT_ID
+954876428 [gearman-46] INFO gearman - [10.48.55.39:36624] : IN  : RESET_ABILITIES
+954876428 [gearman-46] INFO gearman - [10.48.55.39:36624] : IN  : CAN_DO
+954876428 [gearman-47] INFO gearman - [10.48.55.39:36625] : IN  : CAN_DO
+954876428 [gearman-47] INFO gearman - [10.48.55.39:36624] : IN  : CAN_DO
+954876429 [gearman-46] INFO gearman - [10.48.55.39:36625] : IN  : CAN_DO
+954876430 [gearman-46] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+954876430 [gearman-46] INFO gearman - [10.48.55.39:36624] : OUT : NO_JOB
+954876431 [gearman-46] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+954876432 [gearman-46] INFO gearman - [10.48.55.39:36625] : OUT : NO_JOB
+954876432 [gearman-47] INFO gearman - [10.48.55.39:36624] : IN  : PRE_SLEEP
+954876433 [gearman-47] INFO gearman - [10.48.55.39:36625] : IN  : PRE_SLEEP
+965333112 [gearman-47] INFO gearman - [10.48.55.39:55206] : Disconnected
+965333114 [gearman-47] INFO gearman - [10.48.55.39:55205] : Disconnected
+965342493 [gearman-47] INFO gearman - [10.48.55.39:25954] : Connected
+965342498 [gearman-48] INFO gearman - [10.48.55.39:25955] : Connected
+965342499 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : SET_CLIENT_ID
+965342499 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : SET_CLIENT_ID
+965342499 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : SET_CLIENT_ID
+965342500 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : SET_CLIENT_ID
+965342500 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : RESET_ABILITIES
+965342500 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : CAN_DO
+965342500 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : RESET_ABILITIES
+965342500 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : CAN_DO
+965342500 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : CAN_DO
+965342501 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : CAN_DO
+965342501 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : GRAB_JOB_UNIQ
+965342501 [gearman-47] INFO gearman - [10.48.55.39:25954] : OUT : NO_JOB
+965342503 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : GRAB_JOB_UNIQ
+965342503 [gearman-48] INFO gearman - [10.48.55.39:25955] : OUT : NO_JOB
+965342503 [gearman-47] INFO gearman - [10.48.55.39:25954] : IN  : PRE_SLEEP
+965342504 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : PRE_SLEEP
+965407851 [gearman-48] INFO gearman - [10.48.55.39:25954] : IN  : RESET_ABILITIES
+965407853 [gearman-48] INFO gearman - [10.48.55.39:25955] : IN  : RESET_ABILITIES
+965407856 [gearman-48] INFO gearman - [10.48.55.39:25954] : Disconnected
+965407859 [gearman-48] INFO gearman - [10.48.55.39:25955] : Disconnected
+965466017 [gearman-48] INFO gearman - [10.48.55.39:36663] : Connected
+965466018 [gearman-49] INFO gearman - [10.48.55.39:36664] : Connected
+965466020 [gearman-49] INFO gearman - [10.48.55.39:36664] : IN  : SET_CLIENT_ID
+965466020 [gearman-48] INFO gearman - [10.48.55.39:36663] : IN  : SET_CLIENT_ID
+965466020 [gearman-49] INFO gearman - [10.48.55.39:36664] : IN  : SET_CLIENT_ID
+965466020 [gearman-48] INFO gearman - [10.48.55.39:36663] : IN  : SET_CLIENT_ID
+965466020 [gearman-49] INFO gearman - [10.48.55.39:36664] : IN  : RESET_ABILITIES
+965466020 [gearman-48] INFO gearman - [10.48.55.39:36663] : IN  : RESET_ABILITIES
+965466021 [gearman-48] INFO gearman - [10.48.55.39:36663] : IN  : CAN_DO
+965466021 [gearman-48] INFO gearman - [10.48.55.39:36664] : IN  : CAN_DO
+965466021 [gearman-49] INFO gearman - [10.48.55.39:36663] : IN  : CAN_DO
+965466021 [gearman-49] INFO gearman - [10.48.55.39:36664] : IN  : CAN_DO
+965466022 [gearman-49] INFO gearman - [10.48.55.39:36664] : IN  : GRAB_JOB_UNIQ
+965466022 [gearman-49] INFO gearman - [10.48.55.39:36664] : OUT : NO_JOB
+965466023 [gearman-49] INFO gearman - [10.48.55.39:36663] : IN  : GRAB_JOB_UNIQ
+965466024 [gearman-49] INFO gearman - [10.48.55.39:36663] : OUT : NO_JOB
+965466024 [gearman-48] INFO gearman - [10.48.55.39:36664] : IN  : PRE_SLEEP
+965466025 [gearman-48] INFO gearman - [10.48.55.39:36663] : IN  : PRE_SLEEP
+965558182 [gearman-48] INFO gearman - [10.48.55.39:36664] : Disconnected
+965558185 [gearman-48] INFO gearman - [10.48.55.39:36663] : Disconnected
+965640976 [gearman-48] INFO gearman - [10.48.55.39:51940] : Connected
+965640977 [gearman-50] INFO gearman - [10.48.55.39:51941] : Connected
+965640979 [gearman-50] INFO gearman - [10.48.55.39:51941] : IN  : SET_CLIENT_ID
+965640979 [gearman-50] INFO gearman - [10.48.55.39:51941] : IN  : SET_CLIENT_ID
+965640979 [gearman-50] INFO gearman - [10.48.55.39:51941] : IN  : RESET_ABILITIES
+965640980 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : SET_CLIENT_ID
+965640980 [gearman-48] INFO gearman - [10.48.55.39:51941] : IN  : CAN_DO
+965640980 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : SET_CLIENT_ID
+965640980 [gearman-48] INFO gearman - [10.48.55.39:51941] : IN  : CAN_DO
+965640980 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : RESET_ABILITIES
+965640980 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : CAN_DO
+965640981 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : CAN_DO
+965640981 [gearman-48] INFO gearman - [10.48.55.39:51941] : IN  : GRAB_JOB_UNIQ
+965640981 [gearman-48] INFO gearman - [10.48.55.39:51941] : OUT : NO_JOB
+965640982 [gearman-48] INFO gearman - [10.48.55.39:51940] : IN  : GRAB_JOB_UNIQ
+965640982 [gearman-48] INFO gearman - [10.48.55.39:51940] : OUT : NO_JOB
+965640982 [gearman-50] INFO gearman - [10.48.55.39:51941] : IN  : PRE_SLEEP
+965640984 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : PRE_SLEEP
+966258495 [gearman-50] INFO gearman - [10.48.55.39:51941] : IN  : RESET_ABILITIES
+966258495 [gearman-50] INFO gearman - [10.48.55.39:51940] : IN  : RESET_ABILITIES
+966258498 [gearman-50] INFO gearman - [10.48.55.39:51941] : Disconnected
+966258501 [gearman-50] INFO gearman - [10.48.55.39:51940] : Disconnected
+966366028 [gearman-50] INFO gearman - [10.48.55.39:12880] : Connected
+966366028 [gearman-50] INFO gearman - [10.48.55.39:12881] : Connected
+966366030 [gearman-50] INFO gearman - [10.48.55.39:12880] : IN  : SET_CLIENT_ID
+966366031 [gearman-50] INFO gearman - [10.48.55.39:12880] : IN  : SET_CLIENT_ID
+966366031 [gearman-50] INFO gearman - [10.48.55.39:12880] : IN  : RESET_ABILITIES
+966366031 [gearman-51] INFO gearman - [10.48.55.39:12881] : IN  : SET_CLIENT_ID
+966366031 [gearman-51] INFO gearman - [10.48.55.39:12881] : IN  : SET_CLIENT_ID
+966366031 [gearman-50] INFO gearman - [10.48.55.39:12880] : IN  : CAN_DO
+966366031 [gearman-51] INFO gearman - [10.48.55.39:12881] : IN  : RESET_ABILITIES
+966366032 [gearman-50] INFO gearman - [10.48.55.39:12881] : IN  : CAN_DO
+966366032 [gearman-51] INFO gearman - [10.48.55.39:12880] : IN  : CAN_DO
+966366032 [gearman-51] INFO gearman - [10.48.55.39:12881] : IN  : CAN_DO
+966366033 [gearman-51] INFO gearman - [10.48.55.39:12880] : IN  : GRAB_JOB_UNIQ
+966366033 [gearman-51] INFO gearman - [10.48.55.39:12880] : OUT : NO_JOB
+966366034 [gearman-51] INFO gearman - [10.48.55.39:12881] : IN  : GRAB_JOB_UNIQ
+966366034 [gearman-51] INFO gearman - [10.48.55.39:12881] : OUT : NO_JOB
+966366034 [gearman-50] INFO gearman - [10.48.55.39:12880] : IN  : PRE_SLEEP
+966366035 [gearman-50] INFO gearman - [10.48.55.39:12881] : IN  : PRE_SLEEP
+967983788 [gearman-50] INFO gearman - [10.48.55.39:12880] : Disconnected
+967983789 [gearman-50] INFO gearman - [10.48.55.39:12881] : Disconnected
+968031093 [gearman-50] INFO gearman - [10.48.55.39:55160] : Connected
+968031093 [gearman-52] INFO gearman - [10.48.55.39:55161] : Connected
+968031095 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : SET_CLIENT_ID
+968031096 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : SET_CLIENT_ID
+968031096 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : SET_CLIENT_ID
+968031096 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : RESET_ABILITIES
+968031096 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : SET_CLIENT_ID
+968031096 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : RESET_ABILITIES
+968031096 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : CAN_DO
+968031096 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : CAN_DO
+968031097 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : CAN_DO
+968031097 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : CAN_DO
+968031098 [gearman-50] INFO gearman - [10.48.55.39:55160] : IN  : GRAB_JOB_UNIQ
+968031098 [gearman-50] INFO gearman - [10.48.55.39:55160] : OUT : NO_JOB
+968031099 [gearman-50] INFO gearman - [10.48.55.39:55161] : IN  : GRAB_JOB_UNIQ
+968031099 [gearman-50] INFO gearman - [10.48.55.39:55161] : OUT : NO_JOB
+968031099 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : PRE_SLEEP
+968031100 [gearman-52] INFO gearman - [10.48.55.39:55161] : IN  : PRE_SLEEP
+968084667 [gearman-52] INFO gearman - [10.48.55.39:55161] : IN  : RESET_ABILITIES
+968084668 [gearman-52] INFO gearman - [10.48.55.39:55160] : IN  : RESET_ABILITIES
+968084672 [gearman-52] INFO gearman - [10.48.55.39:55161] : Disconnected
+968084674 [gearman-52] INFO gearman - [10.48.55.39:55160] : Disconnected
+968211081 [gearman-52] INFO gearman - [10.48.55.39:19787] : Connected
+968211082 [gearman-53] INFO gearman - [10.48.55.39:19788] : Connected
+968211084 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : SET_CLIENT_ID
+968211084 [gearman-52] INFO gearman - [10.48.55.39:19788] : IN  : SET_CLIENT_ID
+968211084 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : SET_CLIENT_ID
+968211084 [gearman-52] INFO gearman - [10.48.55.39:19788] : IN  : SET_CLIENT_ID
+968211084 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : RESET_ABILITIES
+968211084 [gearman-52] INFO gearman - [10.48.55.39:19788] : IN  : RESET_ABILITIES
+968211084 [gearman-52] INFO gearman - [10.48.55.39:19788] : IN  : CAN_DO
+968211085 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : CAN_DO
+968211085 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : CAN_DO
+968211085 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : CAN_DO
+968211086 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : GRAB_JOB_UNIQ
+968211086 [gearman-53] INFO gearman - [10.48.55.39:19787] : OUT : NO_JOB
+968211087 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+968211087 [gearman-53] INFO gearman - [10.48.55.39:19788] : OUT : NO_JOB
+968211087 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : PRE_SLEEP
+968211088 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : PRE_SLEEP
+1124983419 [gearman-53] INFO gearman - [127.0.0.1:22246] : Connected
+1124983420 [gearman-53] INFO gearman - [127.0.0.1:22246] : IN  : SUBMIT_JOB
+1124983420 [gearman-53] INFO gearman - [127.0.0.1:22246] : OUT : JOB_CREATED
+1124983421 [gearman-53] INFO gearman - [10.48.55.39:16860] : OUT : NOOP
+1124983421 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NOOP
+1124983421 [gearman-53] INFO gearman - [10.48.55.39:17823] : OUT : NOOP
+1124983421 [gearman-53] INFO gearman - [10.48.55.39:17824] : OUT : NOOP
+1124983421 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : NOOP
+1124983422 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : NOOP
+1124983422 [gearman-53] INFO gearman - [10.48.55.39:19787] : OUT : NOOP
+1124983422 [gearman-53] INFO gearman - [10.48.55.39:19788] : OUT : NOOP
+1124983424 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+1124983424 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : JOB_ASSIGN_UNIQ
+1124983424 [gearman-54] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+1124983424 [gearman-54] INFO gearman - [10.48.55.39:19788] : OUT : NO_JOB
+1124983424 [gearman-55] INFO gearman - [10.48.55.39:17824] : IN  : GRAB_JOB_UNIQ
+1124983424 [gearman-53] INFO gearman - [10.48.55.39:16860] : IN  : GRAB_JOB_UNIQ
+1124983425 [gearman-55] INFO gearman - [10.48.55.39:17824] : OUT : NO_JOB
+1124983425 [gearman-53] INFO gearman - [10.48.55.39:16860] : OUT : NO_JOB
+1124983426 [gearman-53] INFO gearman - [10.48.55.39:17824] : IN  : PRE_SLEEP
+1124983427 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : PRE_SLEEP
+1124983427 [gearman-55] INFO gearman - [10.48.55.39:19787] : IN  : GRAB_JOB_UNIQ
+1124983427 [gearman-55] INFO gearman - [10.48.55.39:19787] : OUT : NO_JOB
+1124983427 [gearman-53] INFO gearman - [10.48.55.39:16860] : IN  : PRE_SLEEP
+1124983428 [gearman-53] INFO gearman - [10.48.55.39:17823] : IN  : GRAB_JOB_UNIQ
+1124983428 [gearman-53] INFO gearman - [10.48.55.39:17823] : OUT : NO_JOB
+1124983429 [gearman-53] INFO gearman - [10.48.55.39:16861] : IN  : GRAB_JOB_UNIQ
+1124983429 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NO_JOB
+1124983432 [gearman-53] INFO gearman - [10.48.55.39:17823] : IN  : PRE_SLEEP
+1124983433 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : PRE_SLEEP
+1124983433 [gearman-55] INFO gearman - [10.48.55.39:16861] : IN  : PRE_SLEEP
+1124983434 [gearman-55] INFO gearman - [10.48.55.39:36625] : IN  : WORK_DATA
+1124983434 [gearman-55] INFO gearman - [127.0.0.1:22246] : OUT : WORK_DATA
+1124983434 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1124983435 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : NO_JOB
+1124983435 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : WORK_STATUS
+1124983435 [gearman-53] INFO gearman - [127.0.0.1:22246] : OUT : WORK_STATUS
+1124983436 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : PRE_SLEEP
+1124983791 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : WORK_COMPLETE
+1124983792 [gearman-53] INFO gearman - [127.0.0.1:22246] : OUT : WORK_COMPLETE
+1124983792 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+1124983792 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : NO_JOB
+1124983793 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : PRE_SLEEP
+1125000916 [gearman-53] INFO gearman - [127.0.0.1:23788] : Connected
+1125000917 [gearman-53] INFO gearman - [127.0.0.1:23788] : IN  : SUBMIT_JOB
+1125000917 [gearman-53] INFO gearman - [127.0.0.1:23788] : OUT : JOB_CREATED
+1125000917 [gearman-53] INFO gearman - [10.48.55.39:16860] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:17823] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:17824] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:19787] : OUT : NOOP
+1125000918 [gearman-53] INFO gearman - [10.48.55.39:19788] : OUT : NOOP
+1125000920 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1125000920 [gearman-55] INFO gearman - [10.48.55.39:17824] : IN  : GRAB_JOB_UNIQ
+1125000920 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : JOB_ASSIGN_UNIQ
+1125000920 [gearman-55] INFO gearman - [10.48.55.39:17824] : OUT : NO_JOB
+1125000921 [gearman-53] INFO gearman - [10.48.55.39:19787] : IN  : GRAB_JOB_UNIQ
+1125000921 [gearman-53] INFO gearman - [10.48.55.39:19787] : OUT : NO_JOB
+1125000921 [gearman-53] INFO gearman - [10.48.55.39:16861] : IN  : GRAB_JOB_UNIQ
+1125000921 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NO_JOB
+1125000923 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+1125000923 [gearman-53] INFO gearman - [10.48.55.39:19788] : OUT : NO_JOB
+1125000923 [gearman-55] INFO gearman - [10.48.55.39:19787] : IN  : PRE_SLEEP
+1125000924 [gearman-55] INFO gearman - [10.48.55.39:16861] : IN  : PRE_SLEEP
+1125000924 [gearman-53] INFO gearman - [10.48.55.39:16860] : IN  : GRAB_JOB_UNIQ
+1125000924 [gearman-53] INFO gearman - [10.48.55.39:16860] : OUT : NO_JOB
+1125000924 [gearman-55] INFO gearman - [10.48.55.39:17824] : IN  : PRE_SLEEP
+1125000926 [gearman-55] INFO gearman - [10.48.55.39:17823] : IN  : GRAB_JOB_UNIQ
+1125000926 [gearman-55] INFO gearman - [10.48.55.39:17823] : OUT : NO_JOB
+1125000927 [gearman-53] INFO gearman - [10.48.55.39:19788] : IN  : PRE_SLEEP
+1125000927 [gearman-55] INFO gearman - [10.48.55.39:16860] : IN  : PRE_SLEEP
+1125000930 [gearman-55] INFO gearman - [10.48.55.39:17823] : IN  : PRE_SLEEP
+1125000931 [gearman-55] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+1125000931 [gearman-55] INFO gearman - [10.48.55.39:36625] : OUT : NO_JOB
+1125000931 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : WORK_DATA
+1125000931 [gearman-53] INFO gearman - [127.0.0.1:23788] : OUT : WORK_DATA
+1125000932 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : WORK_STATUS
+1125000932 [gearman-53] INFO gearman - [127.0.0.1:23788] : OUT : WORK_STATUS
+1125000932 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : PRE_SLEEP
+1125001287 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : WORK_COMPLETE
+1125001287 [gearman-53] INFO gearman - [127.0.0.1:23788] : OUT : WORK_COMPLETE
+1125001287 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1125001287 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : NO_JOB
+1125001288 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : PRE_SLEEP
+1125013043 [gearman-53] INFO gearman - [127.0.0.1:24821] : Connected
+1125013045 [gearman-53] INFO gearman - [127.0.0.1:24821] : IN  : SUBMIT_JOB
+1125013045 [gearman-53] INFO gearman - [127.0.0.1:24821] : OUT : JOB_CREATED
+1125013045 [gearman-53] INFO gearman - [10.48.55.39:16860] : OUT : NOOP
+1125013045 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NOOP
+1125013045 [gearman-53] INFO gearman - [10.48.55.39:17823] : OUT : NOOP
+1125013045 [gearman-53] INFO gearman - [10.48.55.39:17824] : OUT : NOOP
+1125013045 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : NOOP
+1125013046 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : NOOP
+1125013046 [gearman-53] INFO gearman - [10.48.55.39:19787] : OUT : NOOP
+1125013046 [gearman-53] INFO gearman - [10.48.55.39:19788] : OUT : NOOP
+1125013048 [gearman-53] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1125013048 [gearman-53] INFO gearman - [10.48.55.39:36624] : OUT : JOB_ASSIGN_UNIQ
+1125013048 [gearman-53] INFO gearman - [10.48.55.39:16861] : IN  : GRAB_JOB_UNIQ
+1125013048 [gearman-53] INFO gearman - [10.48.55.39:16861] : OUT : NO_JOB
+1125013049 [gearman-55] INFO gearman - [10.48.55.39:17824] : IN  : GRAB_JOB_UNIQ
+1125013049 [gearman-54] INFO gearman - [10.48.55.39:19787] : IN  : GRAB_JOB_UNIQ
+1125013049 [gearman-54] INFO gearman - [10.48.55.39:19787] : OUT : NO_JOB
+1125013049 [gearman-55] INFO gearman - [10.48.55.39:17824] : OUT : NO_JOB
+1125013051 [gearman-55] INFO gearman - [10.48.55.39:16860] : IN  : GRAB_JOB_UNIQ
+1125013051 [gearman-55] INFO gearman - [10.48.55.39:16860] : OUT : NO_JOB
+1125013051 [gearman-54] INFO gearman - [10.48.55.39:19787] : IN  : PRE_SLEEP
+1125013052 [gearman-55] INFO gearman - [10.48.55.39:16861] : IN  : PRE_SLEEP
+1125013052 [gearman-55] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+1125013053 [gearman-55] INFO gearman - [10.48.55.39:19788] : OUT : NO_JOB
+1125013053 [gearman-55] INFO gearman - [10.48.55.39:17824] : IN  : PRE_SLEEP
+1125013054 [gearman-55] INFO gearman - [10.48.55.39:17823] : IN  : GRAB_JOB_UNIQ
+1125013054 [gearman-55] INFO gearman - [10.48.55.39:17823] : OUT : NO_JOB
+1125013054 [gearman-55] INFO gearman - [10.48.55.39:16860] : IN  : PRE_SLEEP
+1125013056 [gearman-55] INFO gearman - [10.48.55.39:19788] : IN  : PRE_SLEEP
+1125013057 [gearman-55] INFO gearman - [10.48.55.39:36624] : IN  : WORK_DATA
+1125013057 [gearman-55] INFO gearman - [127.0.0.1:24821] : OUT : WORK_DATA
+1125013058 [gearman-54] INFO gearman - [10.48.55.39:17823] : IN  : PRE_SLEEP
+1125013058 [gearman-53] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+1125013058 [gearman-53] INFO gearman - [10.48.55.39:36625] : OUT : NO_JOB
+1125013058 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : WORK_STATUS
+1125013058 [gearman-54] INFO gearman - [127.0.0.1:24821] : OUT : WORK_STATUS
+1125013059 [gearman-54] INFO gearman - [10.48.55.39:36625] : IN  : PRE_SLEEP
+1125013410 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : WORK_COMPLETE
+1125013410 [gearman-54] INFO gearman - [127.0.0.1:24821] : OUT : WORK_COMPLETE
+1125013411 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1125013411 [gearman-54] INFO gearman - [10.48.55.39:36624] : OUT : NO_JOB
+1125013412 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : PRE_SLEEP
+1125067136 [gearman-54] INFO gearman - [127.0.0.1:29473] : Connected
+1125067137 [gearman-54] INFO gearman - [127.0.0.1:29473] : IN  : SUBMIT_JOB
+1125067138 [gearman-54] INFO gearman - [127.0.0.1:29473] : OUT : JOB_CREATED
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:16860] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:16861] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:17823] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:17824] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:36624] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:36625] : OUT : NOOP
+1125067138 [gearman-54] INFO gearman - [10.48.55.39:19787] : OUT : NOOP
+1125067139 [gearman-54] INFO gearman - [10.48.55.39:19788] : OUT : NOOP
+1125067141 [gearman-54] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+1125067141 [gearman-54] INFO gearman - [10.48.55.39:19788] : OUT : JOB_ASSIGN_UNIQ
+1125067141 [gearman-54] INFO gearman - [10.48.55.39:36625] : IN  : GRAB_JOB_UNIQ
+1125067141 [gearman-54] INFO gearman - [10.48.55.39:36625] : OUT : NO_JOB
+1125067141 [gearman-56] INFO gearman - [10.48.55.39:16860] : IN  : GRAB_JOB_UNIQ
+1125067141 [gearman-54] INFO gearman - [10.48.55.39:17824] : IN  : GRAB_JOB_UNIQ
+1125067142 [gearman-54] INFO gearman - [10.48.55.39:17824] : OUT : NO_JOB
+1125067142 [gearman-56] INFO gearman - [10.48.55.39:16860] : OUT : NO_JOB
+1125067144 [gearman-56] INFO gearman - [10.48.55.39:16860] : IN  : PRE_SLEEP
+1125067144 [gearman-54] INFO gearman - [10.48.55.39:17823] : IN  : GRAB_JOB_UNIQ
+1125067145 [gearman-54] INFO gearman - [10.48.55.39:17823] : OUT : NO_JOB
+1125067145 [gearman-54] INFO gearman - [10.48.55.39:17824] : IN  : PRE_SLEEP
+1125067145 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : GRAB_JOB_UNIQ
+1125067145 [gearman-54] INFO gearman - [10.48.55.39:36624] : OUT : NO_JOB
+1125067145 [gearman-56] INFO gearman - [10.48.55.39:36625] : IN  : PRE_SLEEP
+1125067147 [gearman-56] INFO gearman - [10.48.55.39:16861] : IN  : GRAB_JOB_UNIQ
+1125067147 [gearman-56] INFO gearman - [10.48.55.39:16861] : OUT : NO_JOB
+1125067149 [gearman-56] INFO gearman - [10.48.55.39:19787] : IN  : GRAB_JOB_UNIQ
+1125067149 [gearman-56] INFO gearman - [10.48.55.39:19787] : OUT : NO_JOB
+1125067149 [gearman-54] INFO gearman - [10.48.55.39:19788] : IN  : WORK_DATA
+1125067149 [gearman-54] INFO gearman - [127.0.0.1:29473] : OUT : WORK_DATA
+1125067149 [gearman-54] INFO gearman - [10.48.55.39:36624] : IN  : PRE_SLEEP
+1125067149 [gearman-57] INFO gearman - [10.48.55.39:16861] : IN  : PRE_SLEEP
+1125067150 [gearman-57] INFO gearman - [10.48.55.39:17823] : IN  : PRE_SLEEP
+1125067150 [gearman-57] INFO gearman - [10.48.55.39:19788] : IN  : WORK_STATUS
+1125067150 [gearman-57] INFO gearman - [127.0.0.1:29473] : OUT : WORK_STATUS
+1125067151 [gearman-57] INFO gearman - [10.48.55.39:19787] : IN  : PRE_SLEEP
+1125069489 [gearman-57] INFO gearman - [10.48.55.39:19788] : IN  : WORK_COMPLETE
+1125069489 [gearman-57] INFO gearman - [127.0.0.1:29473] : OUT : WORK_COMPLETE
+1125069490 [gearman-57] INFO gearman - [10.48.55.39:19788] : IN  : GRAB_JOB_UNIQ
+1125069490 [gearman-57] INFO gearman - [10.48.55.39:19788] : OUT : NO_JOB
+1125069491 [gearman-57] INFO gearman - [10.48.55.39:19788] : IN  : PRE_SLEEP
+1135339835 [gearman-57] INFO gearman - [10.48.55.39:19788] : Disconnected
+1135339836 [gearman-57] INFO gearman - [10.48.55.39:19787] : Disconnected
+1136120034 [gearman-57] INFO gearman - [127.0.0.1:22246] : Disconnected
+1136120035 [gearman-58] INFO gearman - [127.0.0.1:23788] : Disconnected
+1136120035 [gearman-59] INFO gearman - [127.0.0.1:24821] : Disconnected
+1136120035 [gearman-60] INFO gearman - [127.0.0.1:29473] : Disconnected
+1146908285 [gearman-60] INFO gearman - [10.48.55.39:25678] : Connected
+1146908286 [gearman-61] INFO gearman - [10.48.55.39:25679] : Connected
+1146908288 [gearman-61] INFO gearman - [10.48.55.39:25679] : IN  : SET_CLIENT_ID
+1146908288 [gearman-60] INFO gearman - [10.48.55.39:25678] : IN  : SET_CLIENT_ID
+1146908288 [gearman-61] INFO gearman - [10.48.55.39:25679] : IN  : SET_CLIENT_ID
+1146908288 [gearman-60] INFO gearman - [10.48.55.39:25678] : IN  : SET_CLIENT_ID
+1146908288 [gearman-61] INFO gearman - [10.48.55.39:25679] : IN  : RESET_ABILITIES
+1146908288 [gearman-60] INFO gearman - [10.48.55.39:25678] : IN  : RESET_ABILITIES
+1146908288 [gearman-60] INFO gearman - [10.48.55.39:25679] : IN  : CAN_DO
+1146908289 [gearman-61] INFO gearman - [10.48.55.39:25678] : IN  : CAN_DO
+1146908289 [gearman-61] INFO gearman - [10.48.55.39:25678] : IN  : CAN_DO
+1146908289 [gearman-60] INFO gearman - [10.48.55.39:25679] : IN  : CAN_DO
+1146908290 [gearman-60] INFO gearman - [10.48.55.39:25678] : IN  : GRAB_JOB_UNIQ
+1146908290 [gearman-60] INFO gearman - [10.48.55.39:25678] : OUT : NO_JOB
+1146908291 [gearman-60] INFO gearman - [10.48.55.39:25679] : IN  : GRAB_JOB_UNIQ
+1146908291 [gearman-60] INFO gearman - [10.48.55.39:25679] : OUT : NO_JOB
+1146908291 [gearman-61] INFO gearman - [10.48.55.39:25678] : IN  : PRE_SLEEP
+1146908293 [gearman-61] INFO gearman - [10.48.55.39:25679] : IN  : PRE_SLEEP
+1205762377 [gearman-61] INFO gearman - [10.48.55.39:17823] : Disconnected
+1205762379 [gearman-61] INFO gearman - [10.48.55.39:17824] : Disconnected
+1380134269 [gearman-61] INFO gearman - [10.48.55.39:49662] : Connected
+1380134270 [gearman-62] INFO gearman - [10.48.55.39:49663] : Connected
+1380134272 [gearman-62] INFO gearman - [10.48.55.39:49662] : IN  : SET_CLIENT_ID
+1380134272 [gearman-61] INFO gearman - [10.48.55.39:49663] : IN  : SET_CLIENT_ID
+1380134272 [gearman-62] INFO gearman - [10.48.55.39:49662] : IN  : SET_CLIENT_ID
+1380134272 [gearman-61] INFO gearman - [10.48.55.39:49663] : IN  : SET_CLIENT_ID
+1380134272 [gearman-62] INFO gearman - [10.48.55.39:49662] : IN  : RESET_ABILITIES
+1380134272 [gearman-61] INFO gearman - [10.48.55.39:49663] : IN  : RESET_ABILITIES
+1380134272 [gearman-61] INFO gearman - [10.48.55.39:49662] : IN  : CAN_DO
+1380134272 [gearman-62] INFO gearman - [10.48.55.39:49663] : IN  : CAN_DO
+1380134273 [gearman-61] INFO gearman - [10.48.55.39:49662] : IN  : CAN_DO
+1380134273 [gearman-62] INFO gearman - [10.48.55.39:49663] : IN  : CAN_DO
+1380134275 [gearman-61] INFO gearman - [10.48.55.39:49663] : IN  : GRAB_JOB_UNIQ
+1380134275 [gearman-61] INFO gearman - [10.48.55.39:49663] : OUT : NO_JOB
+1380134276 [gearman-61] INFO gearman - [10.48.55.39:49662] : IN  : GRAB_JOB_UNIQ
+1380134276 [gearman-61] INFO gearman - [10.48.55.39:49662] : OUT : NO_JOB
+1380134276 [gearman-62] INFO gearman - [10.48.55.39:49663] : IN  : PRE_SLEEP
+1380134277 [gearman-62] INFO gearman - [10.48.55.39:49662] : IN  : PRE_SLEEP
+1399253131 [gearman-62] INFO gearman - [10.48.55.39:49662] : IN  : RESET_ABILITIES
+1399253132 [gearman-62] INFO gearman - [10.48.55.39:49663] : IN  : RESET_ABILITIES
+1399253135 [gearman-62] INFO gearman - [10.48.55.39:49662] : Disconnected
+1399253138 [gearman-62] INFO gearman - [10.48.55.39:49663] : Disconnected
+1399258136 [gearman-62] INFO gearman - [10.48.55.39:25679] : IN  : RESET_ABILITIES
+1399258136 [gearman-62] INFO gearman - [10.48.55.39:25678] : IN  : RESET_ABILITIES
+1399258139 [gearman-62] INFO gearman - [10.48.55.39:25679] : Disconnected
+1399258141 [gearman-62] INFO gearman - [10.48.55.39:25678] : Disconnected
+1399379589 [gearman-62] INFO gearman - [10.48.55.39:49164] : Connected
+1399379592 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : SET_CLIENT_ID
+1399379592 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : SET_CLIENT_ID
+1399379592 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : RESET_ABILITIES
+1399379592 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : CAN_DO
+1399379593 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : CAN_DO
+1399379593 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : GRAB_JOB_UNIQ
+1399379593 [gearman-62] INFO gearman - [10.48.55.39:49164] : OUT : NO_JOB
+1399379594 [gearman-62] INFO gearman - [10.48.55.39:49164] : IN  : PRE_SLEEP
+2006152817 [gearman-62] INFO gearman - [10.73.191.24:15656] : Connected
+2006153316 [gearman-62] INFO gearman - [10.73.191.24:15656] : Disconnected
+2006153356 [gearman-62] INFO gearman - [10.73.191.24:15667] : Connected
+2006153356 [gearman-62] INFO gearman - [10.73.191.24:15667] : IN  : TEXT
+2006153357 [gearman-62] INFO gearman - [10.73.191.24:15667] : OUT : TEXT
+2006153357 [gearman-64] INFO gearman - [10.73.191.24:15667] : IN  : TEXT
+2006153358 [gearman-64] INFO gearman - [10.73.191.24:15667] : IN  : TEXT
+2006153358 [gearman-64] INFO gearman - [10.73.191.24:15667] : IN  : TEXT
+2006153607 [gearman-64] INFO gearman - [10.73.191.24:15667] : Disconnected
+2006153635 [gearman-64] INFO gearman - [10.73.191.24:15672] : Connected
+2006153646 [gearman-64] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153646 [gearman-64] INFO gearman - [10.73.191.24:15672] : OUT : TEXT
+2006153647 [gearman-63] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153649 [gearman-64] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153649 [gearman-64] INFO gearman - [10.73.191.24:15672] : OUT : TEXT
+2006153649 [gearman-64] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153649 [gearman-63] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153650 [gearman-63] INFO gearman - [10.73.191.24:15672] : OUT : TEXT
+2006153650 [gearman-62] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153651 [gearman-62] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153651 [gearman-62] INFO gearman - [10.73.191.24:15672] : OUT : TEXT
+2006153651 [gearman-62] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153651 [gearman-62] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153652 [gearman-62] INFO gearman - [10.73.191.24:15672] : IN  : TEXT
+2006153654 [gearman-62] INFO gearman - [10.73.191.24:842] : Connected
+2006153655 [gearman-62] INFO gearman - [10.73.191.24:842] : IN  : TEXT
+2006153657 [gearman-62] INFO gearman - [10.73.191.24:842] : OUT : TEXT
+2006153694 [gearman-62] INFO gearman - [10.73.191.24:15672] : Disconnected
+2006183704 [gearman-62] INFO gearman - [10.73.191.24:842] : Disconnected
+3281305594 [gearman-62] INFO gearman - [10.48.55.39:49164] : Disconnected
+3300291837 [gearman-62] INFO gearman - [10.48.55.39:41352] : Connected
+3300291839 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : SET_CLIENT_ID
+3300291839 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : SET_CLIENT_ID
+3300291839 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : RESET_ABILITIES
+3300291839 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : CAN_DO
+3300291840 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : CAN_DO
+3300291840 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : GRAB_JOB_UNIQ
+3300291840 [gearman-62] INFO gearman - [10.48.55.39:41352] : OUT : NO_JOB
+3300291842 [gearman-62] INFO gearman - [10.48.55.39:41352] : IN  : PRE_SLEEP
+3301267985 [gearman-62] INFO gearman - [10.48.55.39:49927] : Connected
+3301267986 [gearman-65] INFO gearman - [10.48.55.39:49928] : Connected
+3301267988 [gearman-65] INFO gearman - [10.48.55.39:49927] : IN  : SET_CLIENT_ID
+3301267988 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : SET_CLIENT_ID
+3301267989 [gearman-65] INFO gearman - [10.48.55.39:49927] : IN  : SET_CLIENT_ID
+3301267989 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : SET_CLIENT_ID
+3301267989 [gearman-65] INFO gearman - [10.48.55.39:49927] : IN  : RESET_ABILITIES
+3301267989 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : RESET_ABILITIES
+3301267989 [gearman-65] INFO gearman - [10.48.55.39:49927] : IN  : CAN_DO
+3301267989 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : CAN_DO
+3301267989 [gearman-62] INFO gearman - [10.48.55.39:49927] : IN  : CAN_DO
+3301267989 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : CAN_DO
+3301267990 [gearman-62] INFO gearman - [10.48.55.39:49927] : IN  : GRAB_JOB_UNIQ
+3301267990 [gearman-62] INFO gearman - [10.48.55.39:49927] : OUT : NO_JOB
+3301267991 [gearman-62] INFO gearman - [10.48.55.39:49928] : IN  : GRAB_JOB_UNIQ
+3301267991 [gearman-62] INFO gearman - [10.48.55.39:49928] : OUT : NO_JOB
+3301267991 [gearman-65] INFO gearman - [10.48.55.39:49927] : IN  : PRE_SLEEP
+3301267992 [gearman-65] INFO gearman - [10.48.55.39:49928] : IN  : PRE_SLEEP
+3318718438 [gearman-65] INFO gearman - [10.73.191.24:11560] : Connected
+3318718939 [gearman-65] INFO gearman - [10.73.191.24:11560] : Disconnected
+3318718949 [gearman-65] INFO gearman - [10.73.191.24:11568] : Connected
+3318718949 [gearman-65] INFO gearman - [10.73.191.24:11568] : IN  : TEXT
+3318718949 [gearman-65] INFO gearman - [10.73.191.24:11568] : OUT : TEXT
+3318718950 [gearman-67] INFO gearman - [10.73.191.24:11568] : IN  : TEXT
+3318718951 [gearman-67] INFO gearman - [10.73.191.24:11568] : IN  : TEXT
+3318718951 [gearman-67] INFO gearman - [10.73.191.24:11568] : IN  : TEXT
+3318719200 [gearman-67] INFO gearman - [10.73.191.24:11568] : Disconnected
+3318719254 [gearman-67] INFO gearman - [10.73.191.24:11576] : Connected
+3318719275 [gearman-67] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719276 [gearman-67] INFO gearman - [10.73.191.24:11576] : OUT : TEXT
+3318719276 [gearman-65] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719278 [gearman-67] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719278 [gearman-67] INFO gearman - [10.73.191.24:11576] : OUT : TEXT
+3318719278 [gearman-67] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719278 [gearman-65] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719279 [gearman-65] INFO gearman - [10.73.191.24:11576] : OUT : TEXT
+3318719279 [gearman-66] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719280 [gearman-66] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719280 [gearman-66] INFO gearman - [10.73.191.24:11576] : OUT : TEXT
+3318719281 [gearman-66] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719281 [gearman-66] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719281 [gearman-66] INFO gearman - [10.73.191.24:11576] : IN  : TEXT
+3318719285 [gearman-66] INFO gearman - [10.73.191.24:1000] : Connected
+3318719325 [gearman-66] INFO gearman - [10.73.191.24:11576] : Disconnected
+3318749285 [gearman-66] INFO gearman - [10.73.191.24:1000] : Disconnected

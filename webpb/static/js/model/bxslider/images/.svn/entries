@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/bxslider/images
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-controls.png
-file
-
-
-
-
-2014-10-11T08:01:10.000000Z
-d9d25372f38c6b242b9b51d5841fe86e
-2014-10-11T07:59:57.867314Z
-3092
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2806
 
 bx_loader.gif
 file
@@ -93,4 +59,38 @@ has-props
 
 
 8581
+
+controls.png
+file
+
+
+
+
+2014-10-11T08:01:10.000000Z
+d9d25372f38c6b242b9b51d5841fe86e
+2014-10-11T07:59:57.867314Z
+3092
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2806
 

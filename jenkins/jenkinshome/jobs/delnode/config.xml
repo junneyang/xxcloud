@@ -9,7 +9,7 @@
         <com.tikal.hudson.plugins.notification.Endpoint>
           <protocol>HTTP</protocol>
           <format>JSON</format>
-          <url>http://10.48.55.39:8889/pb/jenkins/status/</url>
+          <url>http://10.48.55.39:8889/jobstatus/</url>
           <event>all</event>
           <timeout>30000</timeout>
         </com.tikal.hudson.plugins.notification.Endpoint>

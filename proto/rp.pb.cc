@@ -42,7 +42,7 @@ void protobuf_AssignDesc_rp_2eproto() {
       "rp.proto");
   GOOGLE_CHECK(file != NULL);
   RPCommonRequest_descriptor_ = file->message_type(0);
-  static const int RPCommonRequest_offsets_[40] = {
+  static const int RPCommonRequest_offsets_[45] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, provider_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, logid_),
@@ -83,6 +83,11 @@ void protobuf_AssignDesc_rp_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, eventid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, recday_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, dealpos_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, sourcetype_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, history_deal_list_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, nm_key_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, poi_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonRequest, should_set_di_),
   };
   RPCommonRequest_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -170,7 +175,7 @@ void protobuf_AssignDesc_rp_2eproto() {
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(RPResultItem));
   RPCommonResponse_descriptor_ = file->message_type(3);
-  static const int RPCommonResponse_offsets_[10] = {
+  static const int RPCommonResponse_offsets_[11] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, bn_rp_svr_errinf_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, bn_rp_svr_errno_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, bn_rp_svr_exp_ids_),
@@ -181,6 +186,7 @@ void protobuf_AssignDesc_rp_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, bn_rp_svr_title_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, bn_rp_svr_subtitle_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, gift_cart_id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RPCommonResponse, is_transcode_),
   };
   RPCommonResponse_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -237,60 +243,65 @@ void protobuf_AddDesc_rp_2eproto() {
   ::lbs::da::openservice::protobuf_AddDesc_pbrpc_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\010rp.proto\022\022lbs.da.openservice\032\013pbrpc.pr"
-    "oto\"\252\006\n\017RPCommonRequest\0221\n\006header\030\001 \002(\0132"
+    "oto\"\355\007\n\017RPCommonRequest\0221\n\006header\030\001 \002(\0132"
     "!.lbs.da.openservice.RequestHeader\022\020\n\010pr"
-    "ovider\030\002 \001(\t\022\r\n\005logId\030\003 \001(\t\022\016\n\006userID\030\004 "
-    "\001(\t\022\014\n\004cuid\030\005 \001(\t\022\020\n\010coor_sys\030\006 \001(\t\022\t\n\001x"
-    "\030\007 \001(\001\022\t\n\001y\030\010 \001(\001\022\016\n\006areaId\030\t \001(\003\022\016\n\006dea"
-    "lId\030\n \001(\003\022\014\n\004size\030\013 \001(\005\022\022\n\ndeviceType\030\014 "
-    "\001(\t\022\023\n\013situationId\030\r \001(\005\022\020\n\010need_poi\030\016 \001"
-    "(\005\022\017\n\007poi_num\030\017 \001(\005\022\020\n\010baidu_id\030\020 \001(\t\022\024\n"
-    "\014targetAreaId\030\021 \001(\003\022\020\n\010keywords\030\022 \001(\t\022\020\n"
-    "\010str_catg\030\023 \001(\t\022\023\n\013str_subcatg\030\024 \001(\t\022\023\n\013"
-    "str_thdcatg\030\025 \001(\t\022\025\n\rstr_shop_dist\030\026 \001(\t"
-    "\022\026\n\016str_shop_range\030\027 \001(\t\022\026\n\016qrw_str_poi_"
-    "id\030\030 \001(\t\022\030\n\020qrw_str_brand_id\030\031 \001(\t\022\027\n\017qr"
-    "w_str_thdcatg\030\032 \001(\t\022\027\n\017qrw_str_subcatg\030\033"
-    " \001(\t\022\024\n\014qrw_str_catg\030\034 \001(\t\022\024\n\014qrw_str_ci"
-    "ty\030\035 \001(\t\022\024\n\014qrw_str_dist\030\036 \001(\t\022\025\n\rqrw_st"
-    "r_range\030\037 \001(\t\022\016\n\006client\030  \001(\005\022\023\n\013channel"
-    "Type\030! \001(\005\022\020\n\010startDay\030\" \001(\005\022\017\n\007daySize\030"
-    "# \001(\005\022\020\n\010dealSize\030$ \001(\005\022\025\n\rstr_site_list"
-    "\030% \001(\t\022\017\n\007eventId\030& \001(\005\022\016\n\006recDay\030\' \001(\003\022"
-    "\017\n\007dealPos\030( \001(\003\"\210\001\n\017RPResultPOIItem\022\r\n\005"
-    "poiid\030\001 \001(\005\022\t\n\001x\030\002 \001(\001\022\t\n\001y\030\003 \001(\001\022\020\n\010dis"
-    "tance\030\004 \001(\001\022\017\n\007poiname\030\005 \001(\t\022\017\n\007address\030"
-    "\006 \001(\t\022\013\n\003tel\030\007 \001(\t\022\017\n\007rangeid\030\010 \001(\t\"\332\006\n\014"
-    "RPResultItem\022\016\n\006dealId\030\001 \001(\003\022\016\n\006weight\030\002"
-    " \001(\001\022\024\n\014rec_strategy\030\003 \001(\005\022\016\n\006reason\030\004 \001"
-    "(\t\022\021\n\tifvirtual\030\005 \001(\005\022\r\n\005image\030\006 \001(\t\022\022\n\n"
-    "tiny_image\030\007 \001(\t\022\021\n\tmid_image\030\010 \001(\t\022\026\n\016b"
-    "usiness_title\030\t \001(\t\022\024\n\014medium_title\030\n \001("
-    "\t\022\021\n\tmin_title\030\013 \001(\t\022\030\n\020title_high_price"
-    "\030\014 \001(\t\022\021\n\tprice_ori\030\r \001(\005\022\025\n\rprice_curre"
-    "nt\030\016 \001(\005\022\014\n\004tags\030\017 \001(\t\022\016\n\006is_new\030\020 \001(\005\022\020"
-    "\n\010is_flush\030\021 \001(\005\022\026\n\016is_reservation\030\022 \001(\005"
-    "\022\022\n\nsale_count\030\023 \001(\005\022\014\n\004type\030\024 \001(\005\022\026\n\016pa"
-    "y_start_time\030\025 \001(\005\022\024\n\014pay_end_time\030\026 \001(\005"
-    "\022\027\n\017deal_start_time\030\027 \001(\005\022\030\n\020deal_expire"
-    "_time\030\030 \001(\005\022\020\n\010city_num\030\031 \001(\005\0220\n\003poi\030\032 \003"
-    "(\0132#.lbs.da.openservice.RPResultPOIItem\022"
-    "\017\n\007poi_num\030\033 \001(\005\022\r\n\005range\030\034 \001(\t\022\r\n\005score"
-    "\030\035 \001(\005\022\023\n\013comment_num\030\036 \001(\005\022\017\n\007tinyurl\030\037"
-    " \001(\t\022\023\n\013group_title\030  \001(\t\022\022\n\ngroup_type\030"
-    "! \001(\005\0224\n\ngroup_list\030\" \003(\0132 .lbs.da.opens"
-    "ervice.RPResultItem\022\013\n\003day\030# \001(\005\022\031\n\021bn_r"
-    "p_svr_exp_ids\030$ \001(\t\022\017\n\007pushNum\030% \001(\005\022:\n\020"
-    "bn_rp_svr_result\030& \003(\0132 .lbs.da.openserv"
-    "ice.RPResultItem\"\261\002\n\020RPCommonResponse\022\030\n"
-    "\020bn_rp_svr_errinf\030\001 \001(\t\022\027\n\017bn_rp_svr_err"
-    "no\030\002 \001(\005\022\031\n\021bn_rp_svr_exp_ids\030\003 \001(\t\022\r\n\005l"
-    "ogId\030\004 \001(\t\022\031\n\021bn_rp_svr_rec_num\030\005 \001(\005\022:\n"
-    "\020bn_rp_svr_result\030\006 \003(\0132 .lbs.da.openser"
-    "vice.RPResultItem\022\036\n\026bn_rp_svr_nresult_f"
-    "lag\030\007 \001(\005\022\027\n\017bn_rp_svr_title\030\010 \001(\t\022\032\n\022bn"
-    "_rp_svr_subtitle\030\t \001(\t\022\024\n\014gift_cart_id\030\n"
-    " \001(\tB\002H\001", 2168);
+    "ovider\030\002 \001(\t\022\r\n\005logId\030\003 \001(\t\022\021\n\006userID\030\004 "
+    "\001(\t:\0010\022\016\n\004cuid\030\005 \001(\t:\000\022!\n\010coor_sys\030\006 \001(\t"
+    ":\017UNKNOW_COOR_SYS\022\r\n\001x\030\007 \001(\001:\002-1\022\r\n\001y\030\010 "
+    "\001(\001:\002-1\022\022\n\006areaId\030\t \001(\003:\002-1\022\022\n\006dealId\030\n "
+    "\001(\003:\002-1\022\020\n\004size\030\013 \001(\005:\002-1\022\022\n\ndeviceType\030"
+    "\014 \001(\t\022\027\n\013situationId\030\r \001(\005:\002-1\022\023\n\010need_p"
+    "oi\030\016 \001(\005:\0010\022\022\n\007poi_num\030\017 \001(\005:\0010\022\022\n\010baidu"
+    "_id\030\020 \001(\t:\000\022\030\n\014targetAreaId\030\021 \001(\003:\002-1\022\020\n"
+    "\010keywords\030\022 \001(\t\022\020\n\010str_catg\030\023 \001(\t\022\023\n\013str"
+    "_subcatg\030\024 \001(\t\022\023\n\013str_thdcatg\030\025 \001(\t\022\025\n\rs"
+    "tr_shop_dist\030\026 \001(\t\022\026\n\016str_shop_range\030\027 \001"
+    "(\t\022\026\n\016qrw_str_poi_id\030\030 \001(\t\022\030\n\020qrw_str_br"
+    "and_id\030\031 \001(\t\022\027\n\017qrw_str_thdcatg\030\032 \001(\t\022\027\n"
+    "\017qrw_str_subcatg\030\033 \001(\t\022\024\n\014qrw_str_catg\030\034"
+    " \001(\t\022\024\n\014qrw_str_city\030\035 \001(\t\022\024\n\014qrw_str_di"
+    "st\030\036 \001(\t\022\025\n\rqrw_str_range\030\037 \001(\t\022\021\n\006clien"
+    "t\030  \001(\005:\0013\022\026\n\013channelType\030! \001(\005:\0018\022\023\n\010st"
+    "artDay\030\" \001(\005:\0010\022\022\n\007daySize\030# \001(\005:\0010\022\024\n\010d"
+    "ealSize\030$ \001(\005:\002-1\022\027\n\rstr_site_list\030% \001(\t"
+    ":\000\022\022\n\007eventId\030& \001(\005:\0010\022\022\n\006recDay\030\' \001(\003:\002"
+    "-1\022\022\n\007dealPos\030( \001(\003:\0010\022\022\n\nsourceType\030) \001"
+    "(\t\022\031\n\021history_deal_list\030* \001(\t\022\016\n\006nm_key\030"
+    "+ \001(\t\022\016\n\003poi\030, \001(\003:\0010\022\034\n\rshould_set_di\030-"
+    " \001(\010:\005false\"\210\001\n\017RPResultPOIItem\022\r\n\005poiid"
+    "\030\001 \001(\005\022\t\n\001x\030\002 \001(\001\022\t\n\001y\030\003 \001(\001\022\020\n\010distance"
+    "\030\004 \001(\001\022\017\n\007poiname\030\005 \001(\t\022\017\n\007address\030\006 \001(\t"
+    "\022\013\n\003tel\030\007 \001(\t\022\017\n\007rangeid\030\010 \001(\t\"\332\006\n\014RPRes"
+    "ultItem\022\016\n\006dealId\030\001 \001(\003\022\016\n\006weight\030\002 \001(\001\022"
+    "\024\n\014rec_strategy\030\003 \001(\005\022\016\n\006reason\030\004 \001(\t\022\021\n"
+    "\tifvirtual\030\005 \001(\005\022\r\n\005image\030\006 \001(\t\022\022\n\ntiny_"
+    "image\030\007 \001(\t\022\021\n\tmid_image\030\010 \001(\t\022\026\n\016busine"
+    "ss_title\030\t \001(\t\022\024\n\014medium_title\030\n \001(\t\022\021\n\t"
+    "min_title\030\013 \001(\t\022\030\n\020title_high_price\030\014 \001("
+    "\t\022\021\n\tprice_ori\030\r \001(\005\022\025\n\rprice_current\030\016 "
+    "\001(\005\022\014\n\004tags\030\017 \001(\t\022\016\n\006is_new\030\020 \001(\005\022\020\n\010is_"
+    "flush\030\021 \001(\005\022\026\n\016is_reservation\030\022 \001(\005\022\022\n\ns"
+    "ale_count\030\023 \001(\005\022\014\n\004type\030\024 \001(\005\022\026\n\016pay_sta"
+    "rt_time\030\025 \001(\005\022\024\n\014pay_end_time\030\026 \001(\005\022\027\n\017d"
+    "eal_start_time\030\027 \001(\005\022\030\n\020deal_expire_time"
+    "\030\030 \001(\005\022\020\n\010city_num\030\031 \001(\005\0220\n\003poi\030\032 \003(\0132#."
+    "lbs.da.openservice.RPResultPOIItem\022\017\n\007po"
+    "i_num\030\033 \001(\005\022\r\n\005range\030\034 \001(\t\022\r\n\005score\030\035 \001("
+    "\005\022\023\n\013comment_num\030\036 \001(\005\022\017\n\007tinyurl\030\037 \001(\t\022"
+    "\023\n\013group_title\030  \001(\t\022\022\n\ngroup_type\030! \001(\005"
+    "\0224\n\ngroup_list\030\" \003(\0132 .lbs.da.openservic"
+    "e.RPResultItem\022\013\n\003day\030# \001(\005\022\031\n\021bn_rp_svr"
+    "_exp_ids\030$ \001(\t\022\017\n\007pushNum\030% \001(\005\022:\n\020bn_rp"
+    "_svr_result\030& \003(\0132 .lbs.da.openservice.R"
+    "PResultItem\"\307\002\n\020RPCommonResponse\022\030\n\020bn_r"
+    "p_svr_errinf\030\001 \001(\t\022\027\n\017bn_rp_svr_errno\030\002 "
+    "\001(\005\022\031\n\021bn_rp_svr_exp_ids\030\003 \001(\t\022\r\n\005logId\030"
+    "\004 \001(\t\022\031\n\021bn_rp_svr_rec_num\030\005 \001(\005\022:\n\020bn_r"
+    "p_svr_result\030\006 \003(\0132 .lbs.da.openservice."
+    "RPResultItem\022\036\n\026bn_rp_svr_nresult_flag\030\007"
+    " \001(\005\022\027\n\017bn_rp_svr_title\030\010 \001(\t\022\032\n\022bn_rp_s"
+    "vr_subtitle\030\t \001(\t\022\024\n\014gift_cart_id\030\n \001(\t\022"
+    "\024\n\014is_transcode\030\013 \001(\005B\002H\001", 2385);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "rp.proto", &protobuf_RegisterTypes);
   RPCommonRequest::default_instance_ = new RPCommonRequest();
@@ -314,6 +325,8 @@ struct StaticDescriptorInitializer_rp_2eproto {
 
 // ===================================================================
 
+const ::std::string RPCommonRequest::_default_userid_("0");
+const ::std::string RPCommonRequest::_default_coor_sys_("UNKNOW_COOR_SYS");
 #ifndef _MSC_VER
 const int RPCommonRequest::kHeaderFieldNumber;
 const int RPCommonRequest::kProviderFieldNumber;
@@ -355,6 +368,11 @@ const int RPCommonRequest::kStrSiteListFieldNumber;
 const int RPCommonRequest::kEventIdFieldNumber;
 const int RPCommonRequest::kRecDayFieldNumber;
 const int RPCommonRequest::kDealPosFieldNumber;
+const int RPCommonRequest::kSourceTypeFieldNumber;
+const int RPCommonRequest::kHistoryDealListFieldNumber;
+const int RPCommonRequest::kNmKeyFieldNumber;
+const int RPCommonRequest::kPoiFieldNumber;
+const int RPCommonRequest::kShouldSetDiFieldNumber;
 #endif  // !_MSC_VER
 
 RPCommonRequest::RPCommonRequest()
@@ -377,20 +395,20 @@ void RPCommonRequest::SharedCtor() {
   header_ = NULL;
   provider_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   logid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  userid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  userid_ = const_cast< ::std::string*>(&_default_userid_);
   cuid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  coor_sys_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  x_ = 0;
-  y_ = 0;
-  areaid_ = GOOGLE_LONGLONG(0);
-  dealid_ = GOOGLE_LONGLONG(0);
-  size_ = 0;
+  coor_sys_ = const_cast< ::std::string*>(&_default_coor_sys_);
+  x_ = -1;
+  y_ = -1;
+  areaid_ = GOOGLE_LONGLONG(-1);
+  dealid_ = GOOGLE_LONGLONG(-1);
+  size_ = -1;
   devicetype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  situationid_ = 0;
+  situationid_ = -1;
   need_poi_ = 0;
   poi_num_ = 0;
   baidu_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  targetareaid_ = GOOGLE_LONGLONG(0);
+  targetareaid_ = GOOGLE_LONGLONG(-1);
   keywords_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   str_catg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   str_subcatg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
@@ -405,15 +423,20 @@ void RPCommonRequest::SharedCtor() {
   qrw_str_city_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   qrw_str_dist_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   qrw_str_range_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-  client_ = 0;
-  channeltype_ = 0;
+  client_ = 3;
+  channeltype_ = 8;
   startday_ = 0;
   daysize_ = 0;
-  dealsize_ = 0;
+  dealsize_ = -1;
   str_site_list_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   eventid_ = 0;
-  recday_ = GOOGLE_LONGLONG(0);
+  recday_ = GOOGLE_LONGLONG(-1);
   dealpos_ = GOOGLE_LONGLONG(0);
+  sourcetype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  history_deal_list_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  nm_key_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  poi_ = GOOGLE_LONGLONG(0);
+  should_set_di_ = false;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -428,13 +451,13 @@ void RPCommonRequest::SharedDtor() {
   if (logid_ != &::google::protobuf::internal::kEmptyString) {
     delete logid_;
   }
-  if (userid_ != &::google::protobuf::internal::kEmptyString) {
+  if (userid_ != &_default_userid_) {
     delete userid_;
   }
   if (cuid_ != &::google::protobuf::internal::kEmptyString) {
     delete cuid_;
   }
-  if (coor_sys_ != &::google::protobuf::internal::kEmptyString) {
+  if (coor_sys_ != &_default_coor_sys_) {
     delete coor_sys_;
   }
   if (devicetype_ != &::google::protobuf::internal::kEmptyString) {
@@ -488,6 +511,15 @@ void RPCommonRequest::SharedDtor() {
   if (str_site_list_ != &::google::protobuf::internal::kEmptyString) {
     delete str_site_list_;
   }
+  if (sourcetype_ != &::google::protobuf::internal::kEmptyString) {
+    delete sourcetype_;
+  }
+  if (history_deal_list_ != &::google::protobuf::internal::kEmptyString) {
+    delete history_deal_list_;
+  }
+  if (nm_key_ != &::google::protobuf::internal::kEmptyString) {
+    delete nm_key_;
+  }
   if (this != default_instance_) {
     delete header_;
   }
@@ -529,8 +561,8 @@ void RPCommonRequest::Clear() {
       }
     }
     if (has_userid()) {
-      if (userid_ != &::google::protobuf::internal::kEmptyString) {
-        userid_->clear();
+      if (userid_ != &_default_userid_) {
+        userid_->assign(_default_userid_);
       }
     }
     if (has_cuid()) {
@@ -539,23 +571,23 @@ void RPCommonRequest::Clear() {
       }
     }
     if (has_coor_sys()) {
-      if (coor_sys_ != &::google::protobuf::internal::kEmptyString) {
-        coor_sys_->clear();
+      if (coor_sys_ != &_default_coor_sys_) {
+        coor_sys_->assign(_default_coor_sys_);
       }
     }
-    x_ = 0;
-    y_ = 0;
+    x_ = -1;
+    y_ = -1;
   }
   if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
-    areaid_ = GOOGLE_LONGLONG(0);
-    dealid_ = GOOGLE_LONGLONG(0);
-    size_ = 0;
+    areaid_ = GOOGLE_LONGLONG(-1);
+    dealid_ = GOOGLE_LONGLONG(-1);
+    size_ = -1;
     if (has_devicetype()) {
       if (devicetype_ != &::google::protobuf::internal::kEmptyString) {
         devicetype_->clear();
       }
     }
-    situationid_ = 0;
+    situationid_ = -1;
     need_poi_ = 0;
     poi_num_ = 0;
     if (has_baidu_id()) {
@@ -565,7 +597,7 @@ void RPCommonRequest::Clear() {
     }
   }
   if (_has_bits_[16 / 32] & (0xffu << (16 % 32))) {
-    targetareaid_ = GOOGLE_LONGLONG(0);
+    targetareaid_ = GOOGLE_LONGLONG(-1);
     if (has_keywords()) {
       if (keywords_ != &::google::protobuf::internal::kEmptyString) {
         keywords_->clear();
@@ -638,21 +670,40 @@ void RPCommonRequest::Clear() {
         qrw_str_range_->clear();
       }
     }
-    client_ = 0;
+    client_ = 3;
   }
   if (_has_bits_[32 / 32] & (0xffu << (32 % 32))) {
-    channeltype_ = 0;
+    channeltype_ = 8;
     startday_ = 0;
     daysize_ = 0;
-    dealsize_ = 0;
+    dealsize_ = -1;
     if (has_str_site_list()) {
       if (str_site_list_ != &::google::protobuf::internal::kEmptyString) {
         str_site_list_->clear();
       }
     }
     eventid_ = 0;
-    recday_ = GOOGLE_LONGLONG(0);
+    recday_ = GOOGLE_LONGLONG(-1);
     dealpos_ = GOOGLE_LONGLONG(0);
+  }
+  if (_has_bits_[40 / 32] & (0xffu << (40 % 32))) {
+    if (has_sourcetype()) {
+      if (sourcetype_ != &::google::protobuf::internal::kEmptyString) {
+        sourcetype_->clear();
+      }
+    }
+    if (has_history_deal_list()) {
+      if (history_deal_list_ != &::google::protobuf::internal::kEmptyString) {
+        history_deal_list_->clear();
+      }
+    }
+    if (has_nm_key()) {
+      if (nm_key_ != &::google::protobuf::internal::kEmptyString) {
+        nm_key_->clear();
+      }
+    }
+    poi_ = GOOGLE_LONGLONG(0);
+    should_set_di_ = false;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
   mutable_unknown_fields()->Clear();
@@ -711,7 +762,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional string userID = 4;
+      // optional string userID = 4 [default = "0"];
       case 4: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -728,7 +779,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional string cuid = 5;
+      // optional string cuid = 5 [default = ""];
       case 5: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -745,7 +796,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional string coor_sys = 6;
+      // optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
       case 6: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -762,7 +813,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional double x = 7;
+      // optional double x = 7 [default = -1];
       case 7: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
@@ -778,7 +829,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional double y = 8;
+      // optional double y = 8 [default = -1];
       case 8: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_FIXED64) {
@@ -794,7 +845,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int64 areaId = 9;
+      // optional int64 areaId = 9 [default = -1];
       case 9: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -810,7 +861,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int64 dealId = 10;
+      // optional int64 dealId = 10 [default = -1];
       case 10: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -826,7 +877,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 size = 11;
+      // optional int32 size = 11 [default = -1];
       case 11: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -859,7 +910,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 situationId = 13;
+      // optional int32 situationId = 13 [default = -1];
       case 13: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -875,7 +926,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 need_poi = 14;
+      // optional int32 need_poi = 14 [default = 0];
       case 14: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -891,7 +942,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 poi_num = 15;
+      // optional int32 poi_num = 15 [default = 0];
       case 15: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -907,7 +958,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional string baidu_id = 16;
+      // optional string baidu_id = 16 [default = ""];
       case 16: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -924,7 +975,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int64 targetAreaId = 17;
+      // optional int64 targetAreaId = 17 [default = -1];
       case 17: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1178,7 +1229,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 client = 32;
+      // optional int32 client = 32 [default = 3];
       case 32: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1194,7 +1245,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 channelType = 33;
+      // optional int32 channelType = 33 [default = 8];
       case 33: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1210,7 +1261,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 startDay = 34;
+      // optional int32 startDay = 34 [default = 0];
       case 34: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1226,7 +1277,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 daySize = 35;
+      // optional int32 daySize = 35 [default = 0];
       case 35: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1242,7 +1293,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 dealSize = 36;
+      // optional int32 dealSize = 36 [default = -1];
       case 36: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1258,7 +1309,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional string str_site_list = 37;
+      // optional string str_site_list = 37 [default = ""];
       case 37: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
@@ -1275,7 +1326,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int32 eventId = 38;
+      // optional int32 eventId = 38 [default = 0];
       case 38: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1291,7 +1342,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int64 recDay = 39;
+      // optional int64 recDay = 39 [default = -1];
       case 39: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1307,7 +1358,7 @@ bool RPCommonRequest::MergePartialFromCodedStream(
         break;
       }
       
-      // optional int64 dealPos = 40;
+      // optional int64 dealPos = 40 [default = 0];
       case 40: {
         if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
@@ -1316,6 +1367,89 @@ bool RPCommonRequest::MergePartialFromCodedStream(
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &dealpos_)));
           set_has_dealpos();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(330)) goto parse_sourceType;
+        break;
+      }
+      
+      // optional string sourceType = 41;
+      case 41: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_sourceType:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_sourcetype()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->sourcetype().data(), this->sourcetype().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(338)) goto parse_history_deal_list;
+        break;
+      }
+      
+      // optional string history_deal_list = 42;
+      case 42: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_history_deal_list:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_history_deal_list()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->history_deal_list().data(), this->history_deal_list().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(346)) goto parse_nm_key;
+        break;
+      }
+      
+      // optional string nm_key = 43;
+      case 43: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_nm_key:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_nm_key()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->nm_key().data(), this->nm_key().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(352)) goto parse_poi;
+        break;
+      }
+      
+      // optional int64 poi = 44 [default = 0];
+      case 44: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_poi:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &poi_)));
+          set_has_poi();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectTag(360)) goto parse_should_set_di;
+        break;
+      }
+      
+      // optional bool should_set_di = 45 [default = false];
+      case 45: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_should_set_di:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &should_set_di_)));
+          set_has_should_set_di();
         } else {
           goto handle_uninterpreted;
         }
@@ -1365,7 +1499,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
       3, this->logid(), output);
   }
   
-  // optional string userID = 4;
+  // optional string userID = 4 [default = "0"];
   if (has_userid()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->userid().data(), this->userid().length(),
@@ -1374,7 +1508,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
       4, this->userid(), output);
   }
   
-  // optional string cuid = 5;
+  // optional string cuid = 5 [default = ""];
   if (has_cuid()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->cuid().data(), this->cuid().length(),
@@ -1383,7 +1517,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
       5, this->cuid(), output);
   }
   
-  // optional string coor_sys = 6;
+  // optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
   if (has_coor_sys()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->coor_sys().data(), this->coor_sys().length(),
@@ -1392,27 +1526,27 @@ void RPCommonRequest::SerializeWithCachedSizes(
       6, this->coor_sys(), output);
   }
   
-  // optional double x = 7;
+  // optional double x = 7 [default = -1];
   if (has_x()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(7, this->x(), output);
   }
   
-  // optional double y = 8;
+  // optional double y = 8 [default = -1];
   if (has_y()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(8, this->y(), output);
   }
   
-  // optional int64 areaId = 9;
+  // optional int64 areaId = 9 [default = -1];
   if (has_areaid()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(9, this->areaid(), output);
   }
   
-  // optional int64 dealId = 10;
+  // optional int64 dealId = 10 [default = -1];
   if (has_dealid()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(10, this->dealid(), output);
   }
   
-  // optional int32 size = 11;
+  // optional int32 size = 11 [default = -1];
   if (has_size()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->size(), output);
   }
@@ -1426,22 +1560,22 @@ void RPCommonRequest::SerializeWithCachedSizes(
       12, this->devicetype(), output);
   }
   
-  // optional int32 situationId = 13;
+  // optional int32 situationId = 13 [default = -1];
   if (has_situationid()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(13, this->situationid(), output);
   }
   
-  // optional int32 need_poi = 14;
+  // optional int32 need_poi = 14 [default = 0];
   if (has_need_poi()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(14, this->need_poi(), output);
   }
   
-  // optional int32 poi_num = 15;
+  // optional int32 poi_num = 15 [default = 0];
   if (has_poi_num()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(15, this->poi_num(), output);
   }
   
-  // optional string baidu_id = 16;
+  // optional string baidu_id = 16 [default = ""];
   if (has_baidu_id()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->baidu_id().data(), this->baidu_id().length(),
@@ -1450,7 +1584,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
       16, this->baidu_id(), output);
   }
   
-  // optional int64 targetAreaId = 17;
+  // optional int64 targetAreaId = 17 [default = -1];
   if (has_targetareaid()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(17, this->targetareaid(), output);
   }
@@ -1581,32 +1715,32 @@ void RPCommonRequest::SerializeWithCachedSizes(
       31, this->qrw_str_range(), output);
   }
   
-  // optional int32 client = 32;
+  // optional int32 client = 32 [default = 3];
   if (has_client()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(32, this->client(), output);
   }
   
-  // optional int32 channelType = 33;
+  // optional int32 channelType = 33 [default = 8];
   if (has_channeltype()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(33, this->channeltype(), output);
   }
   
-  // optional int32 startDay = 34;
+  // optional int32 startDay = 34 [default = 0];
   if (has_startday()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(34, this->startday(), output);
   }
   
-  // optional int32 daySize = 35;
+  // optional int32 daySize = 35 [default = 0];
   if (has_daysize()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(35, this->daysize(), output);
   }
   
-  // optional int32 dealSize = 36;
+  // optional int32 dealSize = 36 [default = -1];
   if (has_dealsize()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(36, this->dealsize(), output);
   }
   
-  // optional string str_site_list = 37;
+  // optional string str_site_list = 37 [default = ""];
   if (has_str_site_list()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->str_site_list().data(), this->str_site_list().length(),
@@ -1615,19 +1749,56 @@ void RPCommonRequest::SerializeWithCachedSizes(
       37, this->str_site_list(), output);
   }
   
-  // optional int32 eventId = 38;
+  // optional int32 eventId = 38 [default = 0];
   if (has_eventid()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(38, this->eventid(), output);
   }
   
-  // optional int64 recDay = 39;
+  // optional int64 recDay = 39 [default = -1];
   if (has_recday()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(39, this->recday(), output);
   }
   
-  // optional int64 dealPos = 40;
+  // optional int64 dealPos = 40 [default = 0];
   if (has_dealpos()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(40, this->dealpos(), output);
+  }
+  
+  // optional string sourceType = 41;
+  if (has_sourcetype()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->sourcetype().data(), this->sourcetype().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      41, this->sourcetype(), output);
+  }
+  
+  // optional string history_deal_list = 42;
+  if (has_history_deal_list()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->history_deal_list().data(), this->history_deal_list().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      42, this->history_deal_list(), output);
+  }
+  
+  // optional string nm_key = 43;
+  if (has_nm_key()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->nm_key().data(), this->nm_key().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      43, this->nm_key(), output);
+  }
+  
+  // optional int64 poi = 44 [default = 0];
+  if (has_poi()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(44, this->poi(), output);
+  }
+  
+  // optional bool should_set_di = 45 [default = false];
+  if (has_should_set_di()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(45, this->should_set_di(), output);
   }
   
   if (!unknown_fields().empty()) {
@@ -1665,7 +1836,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
         3, this->logid(), target);
   }
   
-  // optional string userID = 4;
+  // optional string userID = 4 [default = "0"];
   if (has_userid()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->userid().data(), this->userid().length(),
@@ -1675,7 +1846,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
         4, this->userid(), target);
   }
   
-  // optional string cuid = 5;
+  // optional string cuid = 5 [default = ""];
   if (has_cuid()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->cuid().data(), this->cuid().length(),
@@ -1685,7 +1856,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
         5, this->cuid(), target);
   }
   
-  // optional string coor_sys = 6;
+  // optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
   if (has_coor_sys()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->coor_sys().data(), this->coor_sys().length(),
@@ -1695,27 +1866,27 @@ void RPCommonRequest::SerializeWithCachedSizes(
         6, this->coor_sys(), target);
   }
   
-  // optional double x = 7;
+  // optional double x = 7 [default = -1];
   if (has_x()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(7, this->x(), target);
   }
   
-  // optional double y = 8;
+  // optional double y = 8 [default = -1];
   if (has_y()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(8, this->y(), target);
   }
   
-  // optional int64 areaId = 9;
+  // optional int64 areaId = 9 [default = -1];
   if (has_areaid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(9, this->areaid(), target);
   }
   
-  // optional int64 dealId = 10;
+  // optional int64 dealId = 10 [default = -1];
   if (has_dealid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(10, this->dealid(), target);
   }
   
-  // optional int32 size = 11;
+  // optional int32 size = 11 [default = -1];
   if (has_size()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->size(), target);
   }
@@ -1730,22 +1901,22 @@ void RPCommonRequest::SerializeWithCachedSizes(
         12, this->devicetype(), target);
   }
   
-  // optional int32 situationId = 13;
+  // optional int32 situationId = 13 [default = -1];
   if (has_situationid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(13, this->situationid(), target);
   }
   
-  // optional int32 need_poi = 14;
+  // optional int32 need_poi = 14 [default = 0];
   if (has_need_poi()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(14, this->need_poi(), target);
   }
   
-  // optional int32 poi_num = 15;
+  // optional int32 poi_num = 15 [default = 0];
   if (has_poi_num()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(15, this->poi_num(), target);
   }
   
-  // optional string baidu_id = 16;
+  // optional string baidu_id = 16 [default = ""];
   if (has_baidu_id()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->baidu_id().data(), this->baidu_id().length(),
@@ -1755,7 +1926,7 @@ void RPCommonRequest::SerializeWithCachedSizes(
         16, this->baidu_id(), target);
   }
   
-  // optional int64 targetAreaId = 17;
+  // optional int64 targetAreaId = 17 [default = -1];
   if (has_targetareaid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(17, this->targetareaid(), target);
   }
@@ -1900,32 +2071,32 @@ void RPCommonRequest::SerializeWithCachedSizes(
         31, this->qrw_str_range(), target);
   }
   
-  // optional int32 client = 32;
+  // optional int32 client = 32 [default = 3];
   if (has_client()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(32, this->client(), target);
   }
   
-  // optional int32 channelType = 33;
+  // optional int32 channelType = 33 [default = 8];
   if (has_channeltype()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(33, this->channeltype(), target);
   }
   
-  // optional int32 startDay = 34;
+  // optional int32 startDay = 34 [default = 0];
   if (has_startday()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(34, this->startday(), target);
   }
   
-  // optional int32 daySize = 35;
+  // optional int32 daySize = 35 [default = 0];
   if (has_daysize()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(35, this->daysize(), target);
   }
   
-  // optional int32 dealSize = 36;
+  // optional int32 dealSize = 36 [default = -1];
   if (has_dealsize()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(36, this->dealsize(), target);
   }
   
-  // optional string str_site_list = 37;
+  // optional string str_site_list = 37 [default = ""];
   if (has_str_site_list()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->str_site_list().data(), this->str_site_list().length(),
@@ -1935,19 +2106,59 @@ void RPCommonRequest::SerializeWithCachedSizes(
         37, this->str_site_list(), target);
   }
   
-  // optional int32 eventId = 38;
+  // optional int32 eventId = 38 [default = 0];
   if (has_eventid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(38, this->eventid(), target);
   }
   
-  // optional int64 recDay = 39;
+  // optional int64 recDay = 39 [default = -1];
   if (has_recday()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(39, this->recday(), target);
   }
   
-  // optional int64 dealPos = 40;
+  // optional int64 dealPos = 40 [default = 0];
   if (has_dealpos()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(40, this->dealpos(), target);
+  }
+  
+  // optional string sourceType = 41;
+  if (has_sourcetype()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->sourcetype().data(), this->sourcetype().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        41, this->sourcetype(), target);
+  }
+  
+  // optional string history_deal_list = 42;
+  if (has_history_deal_list()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->history_deal_list().data(), this->history_deal_list().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        42, this->history_deal_list(), target);
+  }
+  
+  // optional string nm_key = 43;
+  if (has_nm_key()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->nm_key().data(), this->nm_key().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        43, this->nm_key(), target);
+  }
+  
+  // optional int64 poi = 44 [default = 0];
+  if (has_poi()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(44, this->poi(), target);
+  }
+  
+  // optional bool should_set_di = 45 [default = false];
+  if (has_should_set_di()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(45, this->should_set_di(), target);
   }
   
   if (!unknown_fields().empty()) {
@@ -1982,54 +2193,54 @@ int RPCommonRequest::ByteSize() const {
           this->logid());
     }
     
-    // optional string userID = 4;
+    // optional string userID = 4 [default = "0"];
     if (has_userid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->userid());
     }
     
-    // optional string cuid = 5;
+    // optional string cuid = 5 [default = ""];
     if (has_cuid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->cuid());
     }
     
-    // optional string coor_sys = 6;
+    // optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
     if (has_coor_sys()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->coor_sys());
     }
     
-    // optional double x = 7;
+    // optional double x = 7 [default = -1];
     if (has_x()) {
       total_size += 1 + 8;
     }
     
-    // optional double y = 8;
+    // optional double y = 8 [default = -1];
     if (has_y()) {
       total_size += 1 + 8;
     }
     
   }
   if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
-    // optional int64 areaId = 9;
+    // optional int64 areaId = 9 [default = -1];
     if (has_areaid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
           this->areaid());
     }
     
-    // optional int64 dealId = 10;
+    // optional int64 dealId = 10 [default = -1];
     if (has_dealid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
           this->dealid());
     }
     
-    // optional int32 size = 11;
+    // optional int32 size = 11 [default = -1];
     if (has_size()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -2043,28 +2254,28 @@ int RPCommonRequest::ByteSize() const {
           this->devicetype());
     }
     
-    // optional int32 situationId = 13;
+    // optional int32 situationId = 13 [default = -1];
     if (has_situationid()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->situationid());
     }
     
-    // optional int32 need_poi = 14;
+    // optional int32 need_poi = 14 [default = 0];
     if (has_need_poi()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->need_poi());
     }
     
-    // optional int32 poi_num = 15;
+    // optional int32 poi_num = 15 [default = 0];
     if (has_poi_num()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->poi_num());
     }
     
-    // optional string baidu_id = 16;
+    // optional string baidu_id = 16 [default = ""];
     if (has_baidu_id()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2073,7 +2284,7 @@ int RPCommonRequest::ByteSize() const {
     
   }
   if (_has_bits_[16 / 32] & (0xffu << (16 % 32))) {
-    // optional int64 targetAreaId = 17;
+    // optional int64 targetAreaId = 17 [default = -1];
     if (has_targetareaid()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -2180,7 +2391,7 @@ int RPCommonRequest::ByteSize() const {
           this->qrw_str_range());
     }
     
-    // optional int32 client = 32;
+    // optional int32 client = 32 [default = 3];
     if (has_client()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -2189,60 +2400,95 @@ int RPCommonRequest::ByteSize() const {
     
   }
   if (_has_bits_[32 / 32] & (0xffu << (32 % 32))) {
-    // optional int32 channelType = 33;
+    // optional int32 channelType = 33 [default = 8];
     if (has_channeltype()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->channeltype());
     }
     
-    // optional int32 startDay = 34;
+    // optional int32 startDay = 34 [default = 0];
     if (has_startday()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->startday());
     }
     
-    // optional int32 daySize = 35;
+    // optional int32 daySize = 35 [default = 0];
     if (has_daysize()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->daysize());
     }
     
-    // optional int32 dealSize = 36;
+    // optional int32 dealSize = 36 [default = -1];
     if (has_dealsize()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->dealsize());
     }
     
-    // optional string str_site_list = 37;
+    // optional string str_site_list = 37 [default = ""];
     if (has_str_site_list()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->str_site_list());
     }
     
-    // optional int32 eventId = 38;
+    // optional int32 eventId = 38 [default = 0];
     if (has_eventid()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->eventid());
     }
     
-    // optional int64 recDay = 39;
+    // optional int64 recDay = 39 [default = -1];
     if (has_recday()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
           this->recday());
     }
     
-    // optional int64 dealPos = 40;
+    // optional int64 dealPos = 40 [default = 0];
     if (has_dealpos()) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
           this->dealpos());
+    }
+    
+  }
+  if (_has_bits_[40 / 32] & (0xffu << (40 % 32))) {
+    // optional string sourceType = 41;
+    if (has_sourcetype()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->sourcetype());
+    }
+    
+    // optional string history_deal_list = 42;
+    if (has_history_deal_list()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->history_deal_list());
+    }
+    
+    // optional string nm_key = 43;
+    if (has_nm_key()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->nm_key());
+    }
+    
+    // optional int64 poi = 44 [default = 0];
+    if (has_poi()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->poi());
+    }
+    
+    // optional bool should_set_di = 45 [default = false];
+    if (has_should_set_di()) {
+      total_size += 2 + 1;
     }
     
   }
@@ -2401,6 +2647,23 @@ void RPCommonRequest::MergeFrom(const RPCommonRequest& from) {
       set_dealpos(from.dealpos());
     }
   }
+  if (from._has_bits_[40 / 32] & (0xffu << (40 % 32))) {
+    if (from.has_sourcetype()) {
+      set_sourcetype(from.sourcetype());
+    }
+    if (from.has_history_deal_list()) {
+      set_history_deal_list(from.history_deal_list());
+    }
+    if (from.has_nm_key()) {
+      set_nm_key(from.nm_key());
+    }
+    if (from.has_poi()) {
+      set_poi(from.poi());
+    }
+    if (from.has_should_set_di()) {
+      set_should_set_di(from.should_set_di());
+    }
+  }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
@@ -2464,6 +2727,11 @@ void RPCommonRequest::Swap(RPCommonRequest* other) {
     std::swap(eventid_, other->eventid_);
     std::swap(recday_, other->recday_);
     std::swap(dealpos_, other->dealpos_);
+    std::swap(sourcetype_, other->sourcetype_);
+    std::swap(history_deal_list_, other->history_deal_list_);
+    std::swap(nm_key_, other->nm_key_);
+    std::swap(poi_, other->poi_);
+    std::swap(should_set_di_, other->should_set_di_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     std::swap(_has_bits_[1], other->_has_bits_[1]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
@@ -4973,6 +5241,7 @@ const int RPCommonResponse::kBnRpSvrNresultFlagFieldNumber;
 const int RPCommonResponse::kBnRpSvrTitleFieldNumber;
 const int RPCommonResponse::kBnRpSvrSubtitleFieldNumber;
 const int RPCommonResponse::kGiftCartIdFieldNumber;
+const int RPCommonResponse::kIsTranscodeFieldNumber;
 #endif  // !_MSC_VER
 
 RPCommonResponse::RPCommonResponse()
@@ -5000,6 +5269,7 @@ void RPCommonResponse::SharedCtor() {
   bn_rp_svr_title_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   bn_rp_svr_subtitle_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   gift_cart_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  is_transcode_ = 0;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -5087,6 +5357,7 @@ void RPCommonResponse::Clear() {
         gift_cart_id_->clear();
       }
     }
+    is_transcode_ = 0;
   }
   bn_rp_svr_result_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
@@ -5259,6 +5530,22 @@ bool RPCommonResponse::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(88)) goto parse_is_transcode;
+        break;
+      }
+      
+      // optional int32 is_transcode = 11;
+      case 11: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+         parse_is_transcode:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &is_transcode_)));
+          set_has_is_transcode();
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -5356,6 +5643,11 @@ void RPCommonResponse::SerializeWithCachedSizes(
       10, this->gift_cart_id(), output);
   }
   
+  // optional int32 is_transcode = 11;
+  if (has_is_transcode()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->is_transcode(), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -5446,6 +5738,11 @@ void RPCommonResponse::SerializeWithCachedSizes(
         10, this->gift_cart_id(), target);
   }
   
+  // optional int32 is_transcode = 11;
+  if (has_is_transcode()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->is_transcode(), target);
+  }
+  
   if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
@@ -5522,6 +5819,13 @@ int RPCommonResponse::ByteSize() const {
           this->gift_cart_id());
     }
     
+    // optional int32 is_transcode = 11;
+    if (has_is_transcode()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->is_transcode());
+    }
+    
   }
   // repeated .lbs.da.openservice.RPResultItem bn_rp_svr_result = 6;
   total_size += 1 * this->bn_rp_svr_result_size();
@@ -5587,6 +5891,9 @@ void RPCommonResponse::MergeFrom(const RPCommonResponse& from) {
     if (from.has_gift_cart_id()) {
       set_gift_cart_id(from.gift_cart_id());
     }
+    if (from.has_is_transcode()) {
+      set_is_transcode(from.is_transcode());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -5620,6 +5927,7 @@ void RPCommonResponse::Swap(RPCommonResponse* other) {
     std::swap(bn_rp_svr_title_, other->bn_rp_svr_title_);
     std::swap(bn_rp_svr_subtitle_, other->bn_rp_svr_subtitle_);
     std::swap(gift_cart_id_, other->gift_cart_id_);
+    std::swap(is_transcode_, other->is_transcode_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

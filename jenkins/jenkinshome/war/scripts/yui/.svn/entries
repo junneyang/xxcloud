@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/scripts/yui
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -96,13 +96,13 @@ yangjun03
 connection
 dir
 
-autocomplete
-dir
-
 resize
 dir
 
 tabview
+dir
+
+autocomplete
 dir
 
 dragdrop

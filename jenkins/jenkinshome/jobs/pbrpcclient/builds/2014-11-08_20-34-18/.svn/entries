@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbrpcclient/builds/2014-11-08_20-34-18
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+build.xml
+file
+
+
+
+
+2014-11-08T12:34:19.000000Z
+92772fe82da8b6242d3f083660713168
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3914
 
 log
 file
@@ -93,38 +127,4 @@ yangjun03
 
 
 6
-
-build.xml
-file
-
-
-
-
-2014-11-08T12:34:19.000000Z
-92772fe82da8b6242d3f083660713168
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3914
 

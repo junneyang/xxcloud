@@ -57,6 +57,11 @@ message StrMatchRule {
     repeated NameVal str_rules = 1;  //特殊规则集
 }
 
+//用户离开时间过滤规则
+message LeaveTimeRule {
+    optional int32 leave_time = 1; //用户离开时间，单位：秒
+}
+
 enum RuleType{
     LOCATION_RULE = 1;
     TIME_RULE = 2;
@@ -66,6 +71,7 @@ enum RuleType{
     POI_RULE = 6;
     AOI_RULE = 7;
     STRMATCH_RULE = 8;
+    LEAVETIME_RULE = 9;
 }
 //每一个规则（rule）对应一个type，注册时指定的type需和注册的rule一致，否则注册失败
 message Rule{
@@ -77,6 +83,7 @@ message Rule{
     optional IsStayRule is_stay = 6;
     optional PoiRule poi = 7;
     optional AoiRule aoi = 8;
+    optional LeaveTimeRule leave_time = 9;
     optional StrMatchRule str_rule = 100;
 }
 //指定过滤规则集、推送附加字段（可选）、用户标签（必选）
@@ -84,6 +91,7 @@ message Condition {
     repeated Rule rules = 1;  //过滤规则集
     optional string append = 2;  //推送附加字段
     optional string tag = 3;  //用户分组; 区分业务; 推送时根据该tag取post url
+    optional string prod_tag = 4; //标识接入的日志："nuomi","map"
 }
 
 message RegistInfo {
@@ -127,3 +135,5 @@ message SetTriggerResponse {
     optional int32 num = 2;//成功注册的数量
     optional string error = 3;//错误日志
 }
+
+

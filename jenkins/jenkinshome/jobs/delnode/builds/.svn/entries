@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/delnode/builds
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,169 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-2014-11-10_11-11-14
-dir
-
-lastUnsuccessfulBuild
-file
-
-
-
-
-2014-11-07T04:10:17.000000Z
-31cc1cd198e248dc2e406b10af8c3be0
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
-
-lastFailedBuild
-file
-
-
-
-
-2014-11-07T04:10:17.000000Z
-31cc1cd198e248dc2e406b10af8c3be0
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
-
-2014-11-07_12-10-17
-dir
-
-2014-11-07_12-02-52
-dir
-
-2014-11-08_11-15-51
-dir
-
-2014-11-08_11-26-08
-dir
-
-2014-11-05_17-46-31
-dir
-
-2014-11-13_17-04-59
-dir
-
-2014-11-05_17-42-39
-dir
-
-2014-11-13_15-46-58
-dir
-
-lastStableBuild
-file
-
-
-
-
-2014-11-13T09:07:14.000000Z
-d77d8b82f6e50a5fc729f2473f28a747
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2
-
-lastSuccessfulBuild
-file
-
-
-
-
-2014-11-13T09:07:14.000000Z
-d77d8b82f6e50a5fc729f2473f28a747
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2
 
 1
 file
@@ -223,9 +60,6 @@ svn:special
 
 19
 
-2014-11-13_16-05-33
-dir
-
 2
 file
 
@@ -259,6 +93,9 @@ svn:special
 
 
 19
+
+2014-11-13_16-05-33
+dir
 
 3
 file
@@ -294,6 +131,9 @@ svn:special
 
 19
 
+2014-11-13_17-07-14
+dir
+
 4
 file
 
@@ -327,9 +167,6 @@ svn:special
 
 
 19
-
-2014-11-13_17-07-14
-dir
 
 5
 file
@@ -676,4 +513,167 @@ svn:special
 
 
 19
+
+2014-11-10_11-11-14
+dir
+
+lastUnsuccessfulBuild
+file
+
+
+
+
+2014-11-07T04:10:17.000000Z
+31cc1cd198e248dc2e406b10af8c3be0
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+lastFailedBuild
+file
+
+
+
+
+2014-11-07T04:10:17.000000Z
+31cc1cd198e248dc2e406b10af8c3be0
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+2014-11-07_12-02-52
+dir
+
+2014-11-07_12-10-17
+dir
+
+2014-11-08_11-15-51
+dir
+
+2014-11-08_11-26-08
+dir
+
+2014-11-05_17-46-31
+dir
+
+2014-11-13_17-04-59
+dir
+
+2014-11-05_17-42-39
+dir
+
+2014-11-13_15-46-58
+dir
+
+lastStableBuild
+file
+
+
+
+
+2014-11-13T09:07:14.000000Z
+d77d8b82f6e50a5fc729f2473f28a747
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+lastSuccessfulBuild
+file
+
+
+
+
+2014-11-13T09:07:14.000000Z
+d77d8b82f6e50a5fc729f2473f28a747
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
 

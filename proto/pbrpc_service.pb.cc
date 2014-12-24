@@ -66,51 +66,65 @@ void protobuf_AddDesc_pbrpc_5fservice_2eproto() {
 
   ::lbs::da::openservice::protobuf_AddDesc_pbrpc_2eproto();
   ::lbs::da::openservice::protobuf_AddDesc_regist_5fcondition_2eproto();
+  ::lbs::da::openservice::protobuf_AddDesc_rp_2eproto();
+  ::lbs::da::openservice::protobuf_AddDesc_realtime_5fpush_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\023pbrpc_service.proto\022\022lbs.da.openservic"
-    "e\032\013pbrpc.proto\032\026regist_condition.proto2\323"
-    "\007\n\013UserService\022p\n\021GetUserPreference\022,.lb"
-    "s.da.openservice.GetUserPreferenceReques"
-    "t\032-.lbs.da.openservice.GetUserPreference"
-    "Response\022z\n\027GetUserRegularStayPoint\022..lb"
-    "s.da.openservice.GetRegularStayPointRequ"
-    "est\032/.lbs.da.openservice.GetRegularStayP"
-    "ointResponse\022v\n\027GetLatestUserTrajStatus\022"
-    ",.lbs.da.openservice.GetLatestUserTrajRe"
-    "quest\032-.lbs.da.openservice.GetLatestUser"
-    "TrajResponse\022k\n\024GetPlaceSemanticInfo\022(.l"
-    "bs.da.openservice.PlaceSemanticRequest\032)"
-    ".lbs.da.openservice.PlaceSemanticRespons"
-    "e\022y\n\026GetNuomiUserPreference\022..lbs.da.ope"
-    "nservice.NuomiUserPreferenceRequest\032/.lb"
-    "s.da.openservice.NuomiUserPreferenceResp"
-    "onse\022Y\n\020GetAOIByLocation\022!.lbs.da.opense"
-    "rvice.GetAOIRequest\032\".lbs.da.openservice"
-    ".GetAOIResponse\022_\n\016GetNearPoiInfo\022%.lbs."
-    "da.openservice.GetNearPoiRequest\032&.lbs.d"
-    "a.openservice.GetNearPoiResponse\022c\n\016GetB"
-    "uy2BuyInfo\022\'.lbs.da.openservice.NuomiBuy"
-    "2BuyRequest\032(.lbs.da.openservice.NuomiBu"
-    "y2BuyResponse\022U\n\010POIMatch\022#.lbs.da.opens"
-    "ervice.POIMatchRequest\032$.lbs.da.openserv"
-    "ice.POIMatchResponse2\331\001\n\013ItemService\022g\n\016"
-    "GetItemsByItem\022).lbs.da.openservice.GetI"
-    "temsByItemRequest\032*.lbs.da.openservice.G"
-    "etItemsByItemResponse\022a\n\020GetBNItemsByIte"
-    "m\022%.lbs.da.openservice.GetBNItemsRequest"
-    "\032&.lbs.da.openservice.GetBNItemsResponse"
-    "2\203\001\n\022DynamicPlanService\022m\n\022GetDynamicTri"
-    "pPlan\022*.lbs.da.openservice.DynamicTripPl"
-    "anRequest\032+.lbs.da.openservice.DynamicTr"
-    "ipPlanResponse2o\n\rLvPlanService\022^\n\rGetLv"
-    "TripPlan\022%.lbs.da.openservice.LvTripPlan"
-    "Request\032&.lbs.da.openservice.LvTripPlanR"
-    "esponse2\326\001\n\013PushService\022j\n\017RegistConditi"
-    "on\022*.lbs.da.openservice.RegistConditionR"
-    "equest\032+.lbs.da.openservice.RegistCondit"
-    "ionResponse\022[\n\nSetTrigger\022%.lbs.da.opens"
-    "ervice.SetTriggerRequest\032&.lbs.da.opense"
-    "rvice.SetTriggerResponseB\003\200\001\001", 1749);
+    "e\032\013pbrpc.proto\032\026regist_condition.proto\032\010"
+    "rp.proto\032\023realtime_push.proto2\224\n\n\013UserSe"
+    "rvice\022p\n\021GetUserPreference\022,.lbs.da.open"
+    "service.GetUserPreferenceRequest\032-.lbs.d"
+    "a.openservice.GetUserPreferenceResponse\022"
+    "z\n\027GetUserRegularStayPoint\022..lbs.da.open"
+    "service.GetRegularStayPointRequest\032/.lbs"
+    ".da.openservice.GetRegularStayPointRespo"
+    "nse\022v\n\027GetLatestUserTrajStatus\022,.lbs.da."
+    "openservice.GetLatestUserTrajRequest\032-.l"
+    "bs.da.openservice.GetLatestUserTrajRespo"
+    "nse\022k\n\024GetPlaceSemanticInfo\022(.lbs.da.ope"
+    "nservice.PlaceSemanticRequest\032).lbs.da.o"
+    "penservice.PlaceSemanticResponse\022y\n\026GetN"
+    "uomiUserPreference\022..lbs.da.openservice."
+    "NuomiUserPreferenceRequest\032/.lbs.da.open"
+    "service.NuomiUserPreferenceResponse\022Y\n\020G"
+    "etAOIByLocation\022!.lbs.da.openservice.Get"
+    "AOIRequest\032\".lbs.da.openservice.GetAOIRe"
+    "sponse\022_\n\016GetNearPoiInfo\022%.lbs.da.opense"
+    "rvice.GetNearPoiRequest\032&.lbs.da.openser"
+    "vice.GetNearPoiResponse\022c\n\016GetBuy2BuyInf"
+    "o\022\'.lbs.da.openservice.NuomiBuy2BuyReque"
+    "st\032(.lbs.da.openservice.NuomiBuy2BuyResp"
+    "onse\022U\n\010POIMatch\022#.lbs.da.openservice.PO"
+    "IMatchRequest\032$.lbs.da.openservice.POIMa"
+    "tchResponse\022f\n\017GetSeeToSeeInfo\022(.lbs.da."
+    "openservice.NuomiSeeToSeeRequest\032).lbs.d"
+    "a.openservice.NuomiSeeToSeeResponse\022V\n\tR"
+    "PRequest\022#.lbs.da.openservice.RPCommonRe"
+    "quest\032$.lbs.da.openservice.RPCommonRespo"
+    "nse\022\177\n\030GetNuomiRTBasedRecommend\0220.lbs.da"
+    ".openservice.NuomiRTBasedRecommendReques"
+    "t\0321.lbs.da.openservice.NuomiRTBasedRecom"
+    "mendResponse2\331\001\n\013ItemService\022g\n\016GetItems"
+    "ByItem\022).lbs.da.openservice.GetItemsByIt"
+    "emRequest\032*.lbs.da.openservice.GetItemsB"
+    "yItemResponse\022a\n\020GetBNItemsByItem\022%.lbs."
+    "da.openservice.GetBNItemsRequest\032&.lbs.d"
+    "a.openservice.GetBNItemsResponse2\203\001\n\022Dyn"
+    "amicPlanService\022m\n\022GetDynamicTripPlan\022*."
+    "lbs.da.openservice.DynamicTripPlanReques"
+    "t\032+.lbs.da.openservice.DynamicTripPlanRe"
+    "sponse2o\n\rLvPlanService\022^\n\rGetLvTripPlan"
+    "\022%.lbs.da.openservice.LvTripPlanRequest\032"
+    "&.lbs.da.openservice.LvTripPlanResponse2"
+    "\274\002\n\013PushService\022j\n\017RegistCondition\022*.lbs"
+    ".da.openservice.RegistConditionRequest\032+"
+    ".lbs.da.openservice.RegistConditionRespo"
+    "nse\022[\n\nSetTrigger\022%.lbs.da.openservice.S"
+    "etTriggerRequest\032&.lbs.da.openservice.Se"
+    "tTriggerResponse\022d\n\rGetPushDetail\022(.lbs."
+    "da.openservice.GetPushDetailRequest\032).lb"
+    "s.da.openservice.GetPushDetailResponseB\003"
+    "\200\001\001", 2203);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "pbrpc_service.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_pbrpc_5fservice_2eproto);
@@ -210,6 +224,30 @@ void UserService::POIMatch(::google::protobuf::RpcController* controller,
   done->Run();
 }
 
+void UserService::GetSeeToSeeInfo(::google::protobuf::RpcController* controller,
+                         const ::lbs::da::openservice::NuomiSeeToSeeRequest*,
+                         ::lbs::da::openservice::NuomiSeeToSeeResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method GetSeeToSeeInfo() not implemented.");
+  done->Run();
+}
+
+void UserService::RPRequest(::google::protobuf::RpcController* controller,
+                         const ::lbs::da::openservice::RPCommonRequest*,
+                         ::lbs::da::openservice::RPCommonResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method RPRequest() not implemented.");
+  done->Run();
+}
+
+void UserService::GetNuomiRTBasedRecommend(::google::protobuf::RpcController* controller,
+                         const ::lbs::da::openservice::NuomiRTBasedRecommendRequest*,
+                         ::lbs::da::openservice::NuomiRTBasedRecommendResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method GetNuomiRTBasedRecommend() not implemented.");
+  done->Run();
+}
+
 void UserService::CallMethod(const ::google::protobuf::MethodDescriptor* method,
                              ::google::protobuf::RpcController* controller,
                              const ::google::protobuf::Message* request,
@@ -271,6 +309,24 @@ void UserService::CallMethod(const ::google::protobuf::MethodDescriptor* method,
              ::google::protobuf::down_cast< ::lbs::da::openservice::POIMatchResponse*>(response),
              done);
       break;
+    case 9:
+      GetSeeToSeeInfo(controller,
+             ::google::protobuf::down_cast<const ::lbs::da::openservice::NuomiSeeToSeeRequest*>(request),
+             ::google::protobuf::down_cast< ::lbs::da::openservice::NuomiSeeToSeeResponse*>(response),
+             done);
+      break;
+    case 10:
+      RPRequest(controller,
+             ::google::protobuf::down_cast<const ::lbs::da::openservice::RPCommonRequest*>(request),
+             ::google::protobuf::down_cast< ::lbs::da::openservice::RPCommonResponse*>(response),
+             done);
+      break;
+    case 11:
+      GetNuomiRTBasedRecommend(controller,
+             ::google::protobuf::down_cast<const ::lbs::da::openservice::NuomiRTBasedRecommendRequest*>(request),
+             ::google::protobuf::down_cast< ::lbs::da::openservice::NuomiRTBasedRecommendResponse*>(response),
+             done);
+      break;
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       break;
@@ -299,6 +355,12 @@ const ::google::protobuf::Message& UserService::GetRequestPrototype(
       return ::lbs::da::openservice::NuomiBuy2BuyRequest::default_instance();
     case 8:
       return ::lbs::da::openservice::POIMatchRequest::default_instance();
+    case 9:
+      return ::lbs::da::openservice::NuomiSeeToSeeRequest::default_instance();
+    case 10:
+      return ::lbs::da::openservice::RPCommonRequest::default_instance();
+    case 11:
+      return ::lbs::da::openservice::NuomiRTBasedRecommendRequest::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *reinterpret_cast< ::google::protobuf::Message*>(NULL);
@@ -327,6 +389,12 @@ const ::google::protobuf::Message& UserService::GetResponsePrototype(
       return ::lbs::da::openservice::NuomiBuy2BuyResponse::default_instance();
     case 8:
       return ::lbs::da::openservice::POIMatchResponse::default_instance();
+    case 9:
+      return ::lbs::da::openservice::NuomiSeeToSeeResponse::default_instance();
+    case 10:
+      return ::lbs::da::openservice::RPCommonResponse::default_instance();
+    case 11:
+      return ::lbs::da::openservice::NuomiRTBasedRecommendResponse::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *reinterpret_cast< ::google::protobuf::Message*>(NULL);
@@ -405,6 +473,27 @@ void UserService_Stub::POIMatch(::google::protobuf::RpcController* controller,
                               ::lbs::da::openservice::POIMatchResponse* response,
                               ::google::protobuf::Closure* done) {
   channel_->CallMethod(descriptor()->method(8),
+                       controller, request, response, done);
+}
+void UserService_Stub::GetSeeToSeeInfo(::google::protobuf::RpcController* controller,
+                              const ::lbs::da::openservice::NuomiSeeToSeeRequest* request,
+                              ::lbs::da::openservice::NuomiSeeToSeeResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(9),
+                       controller, request, response, done);
+}
+void UserService_Stub::RPRequest(::google::protobuf::RpcController* controller,
+                              const ::lbs::da::openservice::RPCommonRequest* request,
+                              ::lbs::da::openservice::RPCommonResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(10),
+                       controller, request, response, done);
+}
+void UserService_Stub::GetNuomiRTBasedRecommend(::google::protobuf::RpcController* controller,
+                              const ::lbs::da::openservice::NuomiRTBasedRecommendRequest* request,
+                              ::lbs::da::openservice::NuomiRTBasedRecommendResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(11),
                        controller, request, response, done);
 }
 // ===================================================================
@@ -711,6 +800,14 @@ void PushService::SetTrigger(::google::protobuf::RpcController* controller,
   done->Run();
 }
 
+void PushService::GetPushDetail(::google::protobuf::RpcController* controller,
+                         const ::lbs::da::openservice::GetPushDetailRequest*,
+                         ::lbs::da::openservice::GetPushDetailResponse*,
+                         ::google::protobuf::Closure* done) {
+  controller->SetFailed("Method GetPushDetail() not implemented.");
+  done->Run();
+}
+
 void PushService::CallMethod(const ::google::protobuf::MethodDescriptor* method,
                              ::google::protobuf::RpcController* controller,
                              const ::google::protobuf::Message* request,
@@ -730,6 +827,12 @@ void PushService::CallMethod(const ::google::protobuf::MethodDescriptor* method,
              ::google::protobuf::down_cast< ::lbs::da::openservice::SetTriggerResponse*>(response),
              done);
       break;
+    case 2:
+      GetPushDetail(controller,
+             ::google::protobuf::down_cast<const ::lbs::da::openservice::GetPushDetailRequest*>(request),
+             ::google::protobuf::down_cast< ::lbs::da::openservice::GetPushDetailResponse*>(response),
+             done);
+      break;
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       break;
@@ -744,6 +847,8 @@ const ::google::protobuf::Message& PushService::GetRequestPrototype(
       return ::lbs::da::openservice::RegistConditionRequest::default_instance();
     case 1:
       return ::lbs::da::openservice::SetTriggerRequest::default_instance();
+    case 2:
+      return ::lbs::da::openservice::GetPushDetailRequest::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *reinterpret_cast< ::google::protobuf::Message*>(NULL);
@@ -758,6 +863,8 @@ const ::google::protobuf::Message& PushService::GetResponsePrototype(
       return ::lbs::da::openservice::RegistConditionResponse::default_instance();
     case 1:
       return ::lbs::da::openservice::SetTriggerResponse::default_instance();
+    case 2:
+      return ::lbs::da::openservice::GetPushDetailResponse::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *reinterpret_cast< ::google::protobuf::Message*>(NULL);
@@ -787,6 +894,13 @@ void PushService_Stub::SetTrigger(::google::protobuf::RpcController* controller,
                               ::lbs::da::openservice::SetTriggerResponse* response,
                               ::google::protobuf::Closure* done) {
   channel_->CallMethod(descriptor()->method(1),
+                       controller, request, response, done);
+}
+void PushService_Stub::GetPushDetail(::google::protobuf::RpcController* controller,
+                              const ::lbs::da::openservice::GetPushDetailRequest* request,
+                              ::lbs::da::openservice::GetPushDetailResponse* response,
+                              ::google::protobuf::Closure* done) {
+  channel_->CallMethod(descriptor()->method(2),
                        controller, request, response, done);
 }
 

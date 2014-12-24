@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/template/taskmanagement
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-21T02:22:16.279814Z
-5097
+2014-12-02T02:10:48.430437Z
+5455
 yangjun03
 
 
@@ -26,50 +26,16 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-taskmanagement.html
-file
-
-
-
-
-2014-11-20T04:02:29.000000Z
-3490d2951c18baecacb58d3efd93d9ea
-2014-11-20T04:02:26.228300Z
-5054
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6433
-
 addtask.html
 file
 
 
 
 
-2014-11-21T02:22:20.000000Z
-061c853d69753834ee6a9115a66aa88e
-2014-11-21T02:22:16.279814Z
-5097
+2014-12-02T02:10:53.000000Z
+469294a74ca8027269396c9ca8e56f39
+2014-12-02T02:10:48.430437Z
+5455
 yangjun03
 
 
@@ -92,5 +58,175 @@ yangjun03
 
 
 
-18319
+19025
+
+nextstop_pbdownload.html
+file
+
+
+
+
+2014-12-02T02:10:53.000000Z
+7cfa13eed6e23040c0efc2631ea279f3
+2014-12-02T02:10:48.430437Z
+5455
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19149
+
+taskmanagement.html
+file
+
+
+
+
+2014-12-02T02:06:59.000000Z
+daee0e385b23675b4a05d2ac66f40dcc
+2014-12-02T02:06:48.954828Z
+5454
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6404
+
+nextstop_pbbenchmark.html
+file
+
+
+
+
+2014-12-02T02:10:53.000000Z
+3351b1fc6924c67a63ba33a0fb3a9f8a
+2014-12-02T02:10:48.430437Z
+5455
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26414
+
+nextstop_pbclient.html
+file
+
+
+
+
+2014-12-02T02:10:53.000000Z
+039432fd080aee226530079c55d2ae46
+2014-12-02T02:10:48.430437Z
+5455
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22260
+
+taskdetail.html
+file
+
+
+
+
+2014-12-02T02:10:53.000000Z
+3ac1aa4e39af08ecf1d7e13024fb8c18
+2014-12-02T02:10:48.430437Z
+5455
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4693
 

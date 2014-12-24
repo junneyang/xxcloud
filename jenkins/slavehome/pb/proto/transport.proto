@@ -1,0 +1,45 @@
+import "pbrpc.proto";
+
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+
+/*
+ message RequestHeader {
+    required string servicekey = 1; //区分来源，
+    required string secretkey = 2; //来源的验证
+    required string subservice = 3; //区分子来源
+}*/
+ 
+enum TransportType{
+    SO_CONF_FILE = 0;
+    SO_DOWNLOAD_CMD = 1;
+    SO_DELETE_CMD = 2;                //用于卸载某一版本的so
+    REDIS_CONF_FILE = 3;
+    DIS_CONF_FILE = 4;
+    INTERFACE_CONF_FILE = 5;
+    SAFECHECK_CONF_FILE = 6;
+    SAFECHECK_DATA_FILE = 7;
+}
+
+message TransportFileRequest{
+    required RequestHeader header = 1;
+    required TransportType type = 2;
+    required string fileName = 3;
+    required string fileContent = 4;
+    optional string filePath = 5;
+    optional string fileCmd = 6;
+}
+
+enum TransportRet{
+    TRANSPORT_SUCC = 0;
+    TRANSPORT_FAILD = 1;
+}
+
+message TransportFileResponse{
+    required TransportRet value = 1; //返回值
+    optional string errmsg = 2;//错误信息
+}
+
+
+

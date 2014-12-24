@@ -26,6 +26,8 @@
 #include <google/protobuf/service.h>
 #include "pbrpc.pb.h"
 #include "regist_condition.pb.h"
+#include "rp.pb.h"
+#include "realtime_push.pb.h"
 // @@protoc_insertion_point(includes)
 
 namespace lbs {
@@ -92,6 +94,18 @@ class UserService : public ::google::protobuf::Service {
                        const ::lbs::da::openservice::POIMatchRequest* request,
                        ::lbs::da::openservice::POIMatchResponse* response,
                        ::google::protobuf::Closure* done);
+  virtual void GetSeeToSeeInfo(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::NuomiSeeToSeeRequest* request,
+                       ::lbs::da::openservice::NuomiSeeToSeeResponse* response,
+                       ::google::protobuf::Closure* done);
+  virtual void RPRequest(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::RPCommonRequest* request,
+                       ::lbs::da::openservice::RPCommonResponse* response,
+                       ::google::protobuf::Closure* done);
+  virtual void GetNuomiRTBasedRecommend(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::NuomiRTBasedRecommendRequest* request,
+                       ::lbs::da::openservice::NuomiRTBasedRecommendResponse* response,
+                       ::google::protobuf::Closure* done);
   
   // implements Service ----------------------------------------------
   
@@ -156,6 +170,18 @@ class UserService_Stub : public UserService {
   void POIMatch(::google::protobuf::RpcController* controller,
                        const ::lbs::da::openservice::POIMatchRequest* request,
                        ::lbs::da::openservice::POIMatchResponse* response,
+                       ::google::protobuf::Closure* done);
+  void GetSeeToSeeInfo(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::NuomiSeeToSeeRequest* request,
+                       ::lbs::da::openservice::NuomiSeeToSeeResponse* response,
+                       ::google::protobuf::Closure* done);
+  void RPRequest(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::RPCommonRequest* request,
+                       ::lbs::da::openservice::RPCommonResponse* response,
+                       ::google::protobuf::Closure* done);
+  void GetNuomiRTBasedRecommend(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::NuomiRTBasedRecommendRequest* request,
+                       ::lbs::da::openservice::NuomiRTBasedRecommendResponse* response,
                        ::google::protobuf::Closure* done);
  private:
   ::google::protobuf::RpcChannel* channel_;
@@ -372,6 +398,10 @@ class PushService : public ::google::protobuf::Service {
                        const ::lbs::da::openservice::SetTriggerRequest* request,
                        ::lbs::da::openservice::SetTriggerResponse* response,
                        ::google::protobuf::Closure* done);
+  virtual void GetPushDetail(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::GetPushDetailRequest* request,
+                       ::lbs::da::openservice::GetPushDetailResponse* response,
+                       ::google::protobuf::Closure* done);
   
   // implements Service ----------------------------------------------
   
@@ -408,6 +438,10 @@ class PushService_Stub : public PushService {
   void SetTrigger(::google::protobuf::RpcController* controller,
                        const ::lbs::da::openservice::SetTriggerRequest* request,
                        ::lbs::da::openservice::SetTriggerResponse* response,
+                       ::google::protobuf::Closure* done);
+  void GetPushDetail(::google::protobuf::RpcController* controller,
+                       const ::lbs::da::openservice::GetPushDetailRequest* request,
+                       ::lbs::da::openservice::GetPushDetailResponse* response,
                        ::google::protobuf::Closure* done);
  private:
   ::google::protobuf::RpcChannel* channel_;

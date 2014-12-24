@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>测试配置-通用性能测试平台</title>
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+	<script src="/static/js/jquery-1.9.0.js"></script>
+	<script src="/static/js/common.js" type="text/javascript"></script>
+	<script src="/static/js/model/cycle/jquery.cycle.all.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="/static/css/scojs.css" media="screen">
+	<link rel="stylesheet" href="/static/css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main-list.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/api.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/public.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/gy_css.css">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/about.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/my.css">
+
+	<script type="text/javascript" src="/static/js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/static/js/sprintf.min.js"></script>
+	<script type="text/javascript" src="/static/js/help_panel.js"></script>
+
+	<script type="text/javascript" src="/static/js/model/uploadify/jquery.uploadify.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/js/model/uploadify/uploadify.css" />
+	<script type="text/javascript" src="/static/js/upload.js"></script>
+
+
+	<link href="/static/css/hellotab.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/helloaddtab.css" rel="stylesheet" type="text/css"/>
+	
+	<script type="text/javascript" src="/static/js/model/flaviusmatis-simplePagination.js-9d0304d/jquery.simplePagination.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/js/model/flaviusmatis-simplePagination.js-9d0304d/simplePagination.css" />
+	
+	<script type="text/javascript" src="/static/js/model/dialog/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/js/model/dialog/ui.css" />
+	
+	<script type="text/javascript" src="/static/js/pb.js"></script>
+</head>
+<body>
+	<!--标题栏-->
+	<div class="header">
+		<div class="h_logo"><a href="/pb/" title="通用性能测试平台"><img src="/static/images/qaup_logo.png" alt=""/></a></div>
+		<div class="h_nav">
+			<span><span id='id_user_name'>{{usrname}}</span>, 欢迎您</span>&nbsp;&nbsp;&nbsp;<span><a href="#"><i class="icon16 icon16-setting"></i>个人中心</a></span>&nbsp;&nbsp;&nbsp;<span><a href="/pb/logout/"><i class="icon16 icon16-power"></i>退出</a></span>
+		</div>
+	</div>
+	
+	<!--菜单栏-->
+	<div class="nav">
+		<ul>
+			<li><a href="/pb/">首页</a></li>
+			<li><a href="/pb/test/?testtype=testpjt">项目测试</a></li>
+			<li class="active"><a href="/pb/conf/?conftype=testsrv">测试配置</a></li>
+			<li><a href="/pb/stat/">使用统计</a></li>
+			<li><a href="#">帮助</a></li>
+		</ul>
+	</div>
+	
+	<div class="content_about">
+		<div class="container about_container main-content">
+			<div style="position:absolute;width:120px;left:0px;top:0px;bottom:0px;background-color:#fbfbfb;z-index:1">
+				<ul style="width:100%;font-family:Microsoft YaHei">
+					<li class="left-menu-li"><a href="/pb/conf/?conftype=testsrv" style="color:#000;font-size:medium">测试机器</a></li>
+					<li class="left-menu-li-select"><a href="/pb/conf/?conftype=testdata" style="color:#000;font-size:medium">测试数据</a></li>
+				</ul>
+				<!--<div style="position:absolute;left:0;bottom:0;top:163px;width:100%;border-right:1px solid #e8e8e8"></div>-->
+			</div>
+			
+			<div class="div-content">
+				<div class="page-title mt40">我的测试数据<a class="btn btn-primary fr" id='x4' href="/pb/conf/?conftype=adddata"><i class="icon16 icon16-new"></i>添加</a> <a class="btn btn-primary fr" id='x3' style='margin-right:5px;text-decoration: none;' href='/pb/conf/?conftype=testdata'><i class="icon16 icon16-refresh"></i>刷新</a></div>
+				<div class="panel mt20 mb20">
+					<div>
+					<table class="table table_bordered">
+						<thead>
+							<tr>
+								<th width="30">序号</th>
+								<th>名称</th>
+								<th>类型</th>
+								<th>归属</th>
+								<th>文件个数</th>
+								<th>描述</th>
+								<th width="130" style="padding-left:15px;">操作</th>
+							</tr>
+						</thead>
+						<tbody id='id_datalist'>
+							<!--<tr>
+								<td>1</td>
+								<td>机器名称</td>
+								<td>10.48.55.39</td>
+								<td>~/workspace</td>
+								<td>yangjun03</td>
+								<td>描述一下</td>
+								<td class="i-operate"><a href="#" title="修改">修改</a><a href="#" title="删除">删除</a></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>机器名称</td>
+								<td>10.48.55.39</td>
+								<td>~/workspace</td>
+								<td>yangjun03</td>
+								<td>描述一下</td>
+								<td class="i-operate"><a href="#" title="修改">修改</a><a href="#" title="删除">删除</a></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>机器名称</td>
+								<td>10.48.55.39</td>
+								<td>~/workspace</td>
+								<td>yangjun03</td>
+								<td>描述一下</td>
+								<td class="i-operate"><a href="#" title="修改">修改</a><a href="#" title="删除">删除</a></td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>机器名称</td>
+								<td>10.48.55.39</td>
+								<td>~/workspace</td>
+								<td>yangjun03</td>
+								<td>描述一下</td>
+								<td class="i-operate"><a href="#" title="修改">修改</a><a href="#" title="删除">删除</a></td>
+							</tr>-->
+						</tbody>
+					</table>
+					</div>
+				</div>
+				<div id="id_info"></div>
+				
+				<div class="list-page" style="float:right;margin-right:20px;">
+					<div id='query_id_test_page_list'></div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--<div class="div-content">
+				<div class="row-fluid row-head" style="height:75px;width:870px;margin-bottom:20px">
+					<span class="newtec" style="">上传proto文件：</span>
+				</div>
+				<div id="fileQueue"></div>
+				<input type="file" name="file_upload_1" id="file_upload_1" /><br/>
+				<div style="float:left;margin-left:50%;font-size:18px;font-weight:bold;">
+					<a href="javascript:$('#file_upload_1').uploadify('upload','*')">开始上传</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="javascript:$('#file_upload_1').uploadify('cancel','*');">全部取消</a>
+				</div>
+
+				<div style="margin-left:15px;margin-top:100px;margin-bottom:40px;width:800px;border-bottom:1px dashed #ccc"></div>
+			</div>-->
+		</div>
+	</div>
+	
+	<div class="home_foot" style="float:left;">
+		<p>Copyright ©2014 Baidu. All Rights Reserved.
+		</p>
+		<p>
+		百度 LBS 测试 版权所有
+		</p>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			var retdata=query_testdata(1,-1);
+			dis_datalist(retdata,-1);
+			dis_pagelist(retdata.data_totalcnt,5,1);
+		});
+	</script>
+</body>
+</html>

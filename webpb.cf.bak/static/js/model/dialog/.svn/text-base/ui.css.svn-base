@@ -1,0 +1,55 @@
+﻿#show_message_area li {list-style-type: none;}
+#show_message_area ul {border: 0;margin: 0;padding: 0;}
+/*弹出对话框样式*/
+.dialog_wrapper {background:#666; padding:7px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px; display:block;}
+.dialog_body {background: #fff; padding:0 0 5px 0;}
+.dialog_head {}
+.dialog_title {color:#666;font-size:14px;font-weight:500; padding:0 10px 0 15px; display:block; line-height:38px;background: #fff url(./images/dialog_title_bg.gif) repeat-x;cursor:move; }
+.dialog_title_icon{display:block; clear:both; height:38px;}
+.dialog_close_button {display:block; width:15px; height:15px; background:url(./images/dialog_close_bg.gif) 0 0px; position:absolute; top:11px; right:10px;}
+.dialog_content { background:#fff;}
+.dialog_content .topic_new_add .issueBox .box_3{_position:absolute;_top:150px;_left:-10px;}
+.dialog_content .topic_new_add .issueBox .box_4{_padding-top:30px;}
+.dialog_loading { text-align:center; width:300px;}
+.dialog_loading_text { padding:0px;padding-top:20px;padding-left:10px;width:220px;font-style:italic;margin:15px auto 5px auto; text-align:left; font-size:15px;background:transparent url(./images/loading.gif) no-repeat center top; }
+.dialog_message_body { margin:15px 5px; }
+.dialog_message_contents { margin:0px 10px; padding-left:55px; padding-top:5px; padding-bottom:20px;font-size:14px;}
+.dialog_message_notice { background:transparent url(./images/message_notice.gif) no-repeat left top; }
+.dialog_message_warning { background:transparent url(./images/message_warning.gif) no-repeat left top; }
+.dialog_message_confirm { background:transparent url(./images/message_confirm.gif) no-repeat left top; }
+.dialog_buttons_bar { text-align:center;margin-top:5px; }
+.dialog_buttons_bar input {margin:0px 5px; }
+.dialog_buttons_bar .btn1 {width:75px; height:29px; border:0;background:url(./images/btn1.gif); color:#c73702; font-weight:bold; font-size:14px;cursor:pointer;}
+.dialog_buttons_bar .btn2 {width:75px; height:29px; border:0;background:url(./images/btn2.gif); color:#4e4e4e; font-weight:bold; font-size:14px;cursor:pointer;}
+.dialog_has_title { background: #555; }
+.dialog_has_title .dialog_body { background:#fff; bottom:3px; right:3px; padding:10px; border:4px solid #dadada; font-family:Arial, Helvetica, sans-serif; font-size:12px; color: #666;}
+.dialog_has_title .dialog_head {background: url(./images/login_h1.gif); height: 30px;}
+.dialog_has_title .dialog_title {color: #666; font-size: 16px; font-weight: bold; background: #fff url(./images/linebox_h1_span.gif) no-repeat left 3px; padding: 4px 10px 5px 15px; display: block; float: left; }
+.dialog_has_title .dialog_close_button {position: absolute; top: 10px; _top:14px; right: 10px; background: #fff url(./images/dialog_close_button.gif) no-repeat right bottom; width: 21px; height: 21px; padding-right: 10px; overflow: hidden; cursor: pointer;}
+.dialog_has_title .dialog_close_button:hover {background: #fff url(./images/dialog_close_button.gif) no-repeat right top;}
+.dialog_has_title .dialog_content {}
+.dialog_has_title .dialog_loading { text-align:center; }
+.dialog_has_title .dialog_loading_text { padding:0px;padding-top:20px;padding-left:10px;width:220px;font-style:italic;margin:15px auto 5px auto; text-align:left; font-size:15px;background:transparent url(./images/loading.gif) no-repeat center top; }
+.dialog_has_title .dialog_message_body { margin:15px 5px 5px 5px; }
+.dialog_has_title .dialog_message_contents { margin:0px 10px; padding-left:45px; padding-top:5px; padding-bottom:20px; }
+.dialog_has_title .dialog_message_notice { background:transparent url(./images/message_notice.gif) no-repeat left top; }
+.dialog_has_title .dialog_message_warning { background:transparent url(./images/message_warning.gif) no-repeat left top; }
+.dialog_has_title .dialog_message_confirm { background:transparent url(./images/message_confirm.gif) no-repeat left top; }
+.dialog_has_title .dialog_buttons_bar { text-align:center;margin-top:5px; }
+.dialog_has_title .dialog_buttons_bar input { margin:0px 5px; }
+.dialog_has_title .dialog_buttons_bar .btn1 {width: 75px; height: 29px; border: 0; background: url(./images/btn1.gif); color: #c73702; font-weight: bold; font-size: 14px;}
+.dialog_has_title .dialog_buttons_bar .btn2 {width: 75px; height: 29px; border: 0; background: url(./images/btn2.gif); color: #4e4e4e; font-weight: bold; font-size: 14px;}
+.dialog_cl{clear:both;}
+.tigBox{
+visibility:hidden;z-index:10000;width:300px; left:52%;top: 50%;margin-left:-200px!important;margin-top:-150px!important;margin-top:0px;position:fixed;
+_position:absolute;line-height:60px;font-size:12px;font-weight:600;background:#fff; border:#bfbfbf 5px solid;-moz-border-radius:5px;-webkit-border-radius:5px;
+_top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ?
+     documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :
+     document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+ul.warnBox{ width:100%;border:#a0a0a0 1px solid; background:#fff; overflow:hidden; padding:0px 0 10px 0;}
+ul.warnBox li{ width:100%; height:100%; margin:0;}
+ul.warnBox li .tt1{ background:#eef3f6; height:28px; width:100%; overflow:hidden; text-indent:10px; text-align:left; line-height:28px;}
+ul.warnBox li .bt_qr{ background:#e2e2e2; border:1px solid #ccc; height:28px; width:50px; overflow:hidden; text-align:center; line-height:28px; margin:10px auto; cursor:pointer;}
+ul.warnBox li .wWarp{ padding:10px;background:#fff url(./images/tigsus.gif) no-repeat 5px 15px; }
+ul.warnBox li .wWarp .wwsp{ margin:10px 0 5px 50px; color:#444; text-align:center;word-break:break-all;white-space:normal; line-height:25px; height:35px; *padding-top:12px;}

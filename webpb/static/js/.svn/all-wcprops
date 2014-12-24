@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/app-test/search/lbs-stat/!svn/ver/5040/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js
+/app-test/search/lbs-stat/!svn/ver/5352/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js
 END
 bootstrap.js
 K 25
@@ -13,7 +13,7 @@ pb.js
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/app-test/search/lbs-stat/!svn/ver/5040/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/pb.js
+/app-test/search/lbs-stat/!svn/ver/5352/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/pb.js
 END
 jquery-1.9.0.js
 K 25

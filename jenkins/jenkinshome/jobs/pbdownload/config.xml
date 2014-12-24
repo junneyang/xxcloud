@@ -27,21 +27,6 @@
           <description>必填。proto文件的svn路径，如：https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto。</description>
           <defaultValue>https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>IPPort</name>
-          <description>必填。目标机器IP以及SSH端口，如：10.48.55.39:22。</description>
-          <defaultValue>10.48.55.39:22</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>UserName</name>
-          <description>必填。目标机器登录用户名。如：yangjun03。</description>
-          <defaultValue>yangjun03</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.PasswordParameterDefinition>
-          <name>PassWord</name>
-          <description>必填。目标机器登录密码。</description>
-          <defaultValue>jCA7Hq+1f6iEWZtwZ3u1Tw==</defaultValue>
-        </hudson.model.PasswordParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>ToolType</name>
           <description>必填。测试工具类型(功能 : pbrpcclient, 性能 : pbrpcbenchmark)。如：pbrpcclient。</description>
@@ -53,8 +38,8 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>RemotePath</name>
-          <description>必填。目标路径。如：/home/users/yangjun03/workspace。</description>
+          <name>NodeList</name>
+          <description>必填。目标节点名称，多个节点英文逗号隔开。如：linqiaoying,yangjun03。</description>
           <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
@@ -70,7 +55,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>svn co ${ProtoFileSVNPath} tmpproto &amp;&amp; cp ./tmpproto/*.proto /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; rm -rf ./tmpproto &amp;&amp; cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; ./build.sh &amp;&amp; cd .. &amp;&amp; comake2 &amp;&amp; make &amp;&amp; python upload.py ${IPPort} ${UserName} ${PassWord} ${ToolType} ${RemotePath}</command>
+      <command>svn co ${ProtoFileSVNPath} tmpproto &amp;&amp; cp ./tmpproto/*.proto /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; rm -rf ./tmpproto &amp;&amp; cd /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/proto &amp;&amp; ./build.sh &amp;&amp; cd .. &amp;&amp; comake2 &amp;&amp; make &amp;&amp; python upload.py ${ToolType} ${NodeList}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

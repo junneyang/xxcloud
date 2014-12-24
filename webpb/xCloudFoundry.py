@@ -19,7 +19,7 @@ from common.sftpLib import *
 
 import urlparse
 
-defaultport=8889
+defaultport=8885
 import socket
 hostname=socket.gethostname()
 hostname=socket.gethostbyname(hostname)
@@ -145,6 +145,7 @@ class add_server(authenticateBase):
     def post(self):
         post_param=urlparse.parse_qs(self.request.body,True)
         name=post_param['name'][0]
+        exenum=post_param['exenum'][0]
         ip=post_param['ip'][0]
         username=post_param['username'][0]
         password=post_param['password'][0]
@@ -152,7 +153,7 @@ class add_server(authenticateBase):
         belong=post_param['belong'][0]
         descpt=post_param['descpt'][0]
 
-        param=(name,ip,username,password,workspace,belong,descpt)
+        param=(name,exenum,workspace,ip,username,password,belong,descpt)
         mysql=mysqlLib()
         n,last_id=mysql.add_server(param)
         mysql.close()
@@ -163,13 +164,13 @@ class query_server(authenticateBase):
         post_param=urlparse.parse_qs(self.request.body,True)
         limit=int(post_param['limit'][0])
         offset=int(post_param['offset'][0])
-        belong=post_param['belong'][0]
+        #belong=post_param['belong'][0]
 
-        param={"belong":belong,"limit":limit,"offset":offset}
+        param={"limit":limit,"offset":offset}
         mysql=mysqlLib()
         serverlist=mysql.query_server(param)
 
-        param={"belong":belong}
+        param={}
         server_totalcnt=mysql.query_server_totalcnt(param)
         mysql.close()
 
@@ -180,10 +181,13 @@ class query_server(authenticateBase):
             sub_ret_dict={}
             sub_ret_dict['id']=str(int(item[0]))
             sub_ret_dict['name']=item[1]
-            sub_ret_dict['ip']=item[2]
+            sub_ret_dict['exenum']=str(int(item[2]))
             sub_ret_dict['workspace']=item[3]
-            sub_ret_dict['belong']=item[4]
-            sub_ret_dict['descpt']=item[5]
+            sub_ret_dict['ip']=item[4]
+            sub_ret_dict['username']=item[5]
+            sub_ret_dict['password']=item[6]
+            sub_ret_dict['belong']=item[7]
+            sub_ret_dict['descpt']=item[8]
             ret_dict.append(sub_ret_dict)
         serverlist_info['ret_dict']=ret_dict
 
@@ -567,10 +571,54 @@ class jobstatus(tornado.web.RequestHandler):
         #print cmdstr
         if (datalist_info['status'] == 3 or datalist_info['status'] == 4 or datalist_info['status'] == 5):
             status,output=cmd_execute(cmdstr)
+            jobname = datalist_info['jobname']
+            if (jobname == "pbdownload" or jobname == "addnode" or jobname == "delnode") :
+                output = "INFO, task execute success."
+            else:
+                tmp = output.split("]'\r\n")[1].split("Notifying")[0]
+                output = tmp
         else:
             output = "INFO, job is running now"
         datalist_info['output'] = output
         self.write(json.dumps(datalist_info))
+
+class job_detail(authenticateBase):
+    def get(self):
+        userid=self.get_cookie_user()
+        unique_id = self.get_argument("job").encode('utf-8')
+        param={"id":unique_id}
+        mysql=mysqlLib()
+        datalist=mysql.query_task(param)
+        mysql.close()
+        #print datalist
+        datalist_info={}
+        datalist_info['submit'] = datalist[0][1]
+        datalist_info['url'] = datalist[0][2]
+        datalist_info['jobname'] = datalist[0][3]
+        datalist_info['status'] = datalist[0][5]
+        datalist_info['build_number'] = datalist[0][6]
+        #print datalist_info
+        cmdstr = "curl " + datalist_info['url'] + "job/" + datalist_info['jobname'] + "/" + str(datalist_info['build_number']) + "/logText/progressiveText?start=0"
+        #print cmdstr
+        if (datalist_info['status'] == 3 or datalist_info['status'] == 4 or datalist_info['status'] == 5):
+            status,output=cmd_execute(cmdstr)
+            jobname = datalist_info['jobname']
+            if (jobname == "pbdownload" or jobname == "addnode" or jobname == "delnode") :
+                output = "INFO, task execute success."
+            else:
+                tmp = output.split("]'\r\n")[1].split("Notifying")[0]
+                output = tmp
+                output = output.replace("\n","<br/>")
+        else:
+            output = "INFO, job is running now"
+        datalist_info['output'] = output
+        #self.write(json.dumps(datalist_info))
+
+        if(userid):
+            self.render("./taskmanagement/taskdetail.html",usrname=userid,datalist_info=datalist_info)
+        else:
+            redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
+            self.redirect(redirect_url)
 
 class jobstop(tornado.web.RequestHandler):
     def get(self):
@@ -621,6 +669,51 @@ class add_task(authenticateBase):
             redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
             self.redirect(redirect_url)
 
+class query_node(authenticateBase):
+    def get(self):
+        userid=self.get_cookie_user()
+        if(userid):
+            self.render("./nodemanagement/nodemanagement.html",usrname=userid)
+        else:
+            redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
+            self.redirect(redirect_url)
+
+class add_node(authenticateBase):
+    def get(self):
+        userid=self.get_cookie_user()
+        if(userid):
+            self.render("./nodemanagement/addnode.html",usrname=userid)
+        else:
+            redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
+            self.redirect(redirect_url)
+
+class nextstep(authenticateBase):
+    def get(self):
+        userid=self.get_cookie_user()
+        service_type = int(self.get_argument("type").encode('utf-8'))
+        JenkinsURL = JENKINSURL
+        nodelist = querynodes.querynodes(JenkinsURL)
+        if(userid):
+            if(service_type == 1):
+                self.render("./taskmanagement/nextstop_pbdownload.html",usrname=userid,nodelist=nodelist)
+            if(service_type == 2):
+                self.render("./taskmanagement/nextstop_pbclient.html",usrname=userid,nodelist=nodelist)
+            if(service_type == 3):
+                self.render("./taskmanagement/nextstop_pbbenchmark.html",usrname=userid,nodelist=nodelist)
+        else:
+            redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
+            self.redirect(redirect_url)
+
+class family(authenticateBase):
+    def get(self):
+        userid=self.get_cookie_user()
+        print userid
+        if(userid):
+            self.render("pb.html",usrname=userid)
+        else:
+            redirect_url=CAS_SETTINGS[ 'cas_server' ] + '/login?service=' + CAS_SETTINGS[ 'service_url' ]
+            self.redirect(redirect_url)
+
 if __name__ == "__main__":
     settings={"template_path": os.path.join(os.path.dirname(__file__), "template") ,
     "static_path": os.path.join(os.path.dirname(__file__), "static") ,
@@ -650,11 +743,18 @@ if __name__ == "__main__":
 
     ( r'/jobsubmit/',jobstatusubmit),
     ( r'/jobstatus/',jobstatus),
+    ( r'/job_detail/',job_detail),
     ( r'/jobstop/',jobstop),
     ( r'/querynodes/',query_nodes),
 
     ( r'/addtask/', add_task),
     ( r'/query_task/', query_task),
+    ( r'/node/',query_node),
+    ( r'/addnode/',add_node),
+    ( r'/nextstep/',nextstep),
+
+    ( r'/family/',family),
+    ( r'/stat/', stat),
     ],**settings
     )
     HttpServer=tornado.httpserver.HTTPServer(app)

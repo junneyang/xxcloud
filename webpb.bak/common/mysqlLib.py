@@ -4,10 +4,10 @@ from logLib import *
 import datetime
 
 import MySQLdb
-host='XXX'
-user='XXX'
-passwd='XXX'
-db='XXX'
+host='10.48.55.39'
+user='root'
+passwd='Admin@123'
+db='db_pb'
 port=33306
 
 from dynsqlLib import *

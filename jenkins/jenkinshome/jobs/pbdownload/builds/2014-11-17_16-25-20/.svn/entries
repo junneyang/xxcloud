@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload/builds/2014-11-17_16-25-20
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-changelog.xml
-file
-
-
-
-
-2014-11-17T08:25:20.000000Z
-d1575a328b105b07d54f948ca38ad6ab
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6
 
 build.xml
 file
@@ -127,4 +93,38 @@ yangjun03
 
 
 113280
+
+changelog.xml
+file
+
+
+
+
+2014-11-17T08:25:20.000000Z
+d1575a328b105b07d54f948ca38ad6ab
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6
 

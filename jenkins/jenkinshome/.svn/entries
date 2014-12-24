@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-24T10:25:50.500004Z
-5158
+2014-11-25T08:32:17.496623Z
+5186
 yangjun03
 
 
@@ -26,226 +26,13 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-Workspace clean-up.log
-file
-
-
-
-
-2014-11-23T13:30:39.000000Z
-13b7fbf203cbfa347b17f7a4eb0c3195
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-149
-
-config.xml
-file
-
-
-
-
-2014-11-20T02:53:57.000000Z
-57e7f525c515c8285961aadf36388fb7
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3417
-
-logs
-dir
-
-hudson.plugins.gearman.GearmanPluginConfig.xml
-file
-
-
-
-
-2014-11-10T09:18:21.000000Z
-dab96557a387eda339ad46288d539c6d
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-242
-
-.owner
-file
-
-
-
-
-2014-11-24T09:24:46.000000Z
-800c4a139ad4339b25a7dd143756cd37
-2014-11-24T10:25:50.500004Z
-5158
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-65
-
-secrets
-dir
-
-jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml
-file
-
-
-
-
-2014-11-10T09:18:21.000000Z
-fd5fef6375423626c5e7c3de75bb75fc
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-501
-
-userContent
-dir
-
-jenkins.mvn.GlobalMavenConfig.xml
-file
-
-
-
-
-2014-11-10T09:18:21.000000Z
-94f35b83d57292db39c36abb43a327a4
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-247
-
 Fingerprint cleanup.log
 file
 
 
 
 
-2014-11-23T16:00:45.000000Z
+2014-11-24T16:00:45.000000Z
 4b30e5dee1e3a3fa1629c43002eb5eb3
 2014-11-24T10:24:34.940865Z
 5157
@@ -455,7 +242,7 @@ file
 
 
 
-2014-11-24T02:56:44.000000Z
+2014-11-25T02:56:44.000000Z
 5c92949ccf6e366656f02ae6ed93f7aa
 2014-11-24T10:24:34.940865Z
 5157
@@ -1209,9 +996,6 @@ yangjun03
 
 1758
 
-jenkins.diagnostics.ooom.OutOfOrderBuildMonitor
-dir
-
 be.certipost.hudson.plugin.SCPRepositoryPublisher.xml
 file
 
@@ -1245,4 +1029,220 @@ yangjun03
 
 
 203
+
+jenkins.diagnostics.ooom.OutOfOrderBuildMonitor
+dir
+
+Workspace clean-up.log
+file
+
+
+
+
+2014-11-24T13:30:39.000000Z
+13b7fbf203cbfa347b17f7a4eb0c3195
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+149
+
+logs
+dir
+
+config.xml
+file
+
+
+
+
+2014-11-20T02:53:57.000000Z
+57e7f525c515c8285961aadf36388fb7
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3417
+
+hudson.plugins.gearman.GearmanPluginConfig.xml
+file
+
+
+
+
+2014-11-10T09:18:21.000000Z
+dab96557a387eda339ad46288d539c6d
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+242
+
+.owner
+file
+
+
+
+
+2014-11-25T08:23:46.000000Z
+800c4a139ad4339b25a7dd143756cd37
+2014-11-24T10:25:50.500004Z
+5158
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+65
+
+secrets
+dir
+
+jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml
+file
+
+
+
+
+2014-11-10T09:18:21.000000Z
+fd5fef6375423626c5e7c3de75bb75fc
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+501
+
+userContent
+dir
+
+jenkins.mvn.GlobalMavenConfig.xml
+file
+
+
+
+
+2014-11-10T09:18:21.000000Z
+94f35b83d57292db39c36abb43a327a4
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+247
 

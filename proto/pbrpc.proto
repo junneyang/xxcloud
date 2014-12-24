@@ -8,6 +8,7 @@ option optimize_for = SPEED;
 	optional string servicekey = 1; //区分来源，
 	optional string secretkey = 2; //来源的验证
 	optional string subservice = 3; //区分子来源
+	optional int32 sample_id = 4;  //小流量实验id,一般请忽略，如需设置soul端会告知。
 }
 
 message Arg
@@ -410,14 +411,23 @@ message ItemUpInfo{
     optional string info = 3;
     optional string date = 4;
 }
+message ItemUpInfoList{
+	repeated ItemUpInfo item_infos = 1;
+}
+
 
 enum UserActionType
 {
-	ACTION_FILTER = 1; //筛选
-	ACTION_VIEW = 2;   //浏览
-	ACTION_BUY = 3;    //立即购买
-	ACTION_ORDER = 4;  //提交订单
-	ACTION_PAYMENT = 5; //支付成功
+    ACTION_INVALID = 0;
+    ACTION_FILTER = 1;
+    ACTION_VIEW   = 2;
+    ACTION_BUY    = 3;
+    ACTION_ORDER  = 4;
+    ACTION_PAYMENT= 5;
+    ACTION_ACTIVE_QUERY = 6;
+    ACTION_HOT_WORD = 7;
+    ACTION_SUG = 8;
+    ACTION_UNKNOWN_QUERY = 9;
 }
 
 message UserAction{
@@ -456,7 +466,7 @@ message GetNearPoiRequest{
     optional double radius = 4;
 }
 
-message PoiInfo{
+message POIInfo{
     optional string poi = 1;
     optional string name = 2;
     optional double longitude = 3;
@@ -464,7 +474,7 @@ message PoiInfo{
 }
 
 message GetNearPoiResponse{
-    repeated PoiInfo poi_list = 1;
+    repeated POIInfo poi_list = 1;
 }
 
 message NuomiBuy2BuyRequest {
@@ -516,3 +526,102 @@ message NuomiMerchantItemRequest {
 	// 扩展字段
 	repeated Arg args = 18;
 }
+
+
+message NuomiSeeToSeeRequest{
+	required RequestHeader header = 1;       // 头部信息，框架控制用
+	required string source = 2;               // 端来源  pc/app
+	required string scene  = 3;               // 展现场景【待定】item
+	required int64 deal_id = 4;              // 当前用户浏览团单
+	optional int32 res_size = 5;            // 请求预期最大的推荐结果数量
+	
+	optional bytes user_id = 6;              // 登录用户的用户id
+	optional int32 id_type = 7;              // 用户类型 1 baidu_id 2 cuid
+	optional bytes device_id = 8;            // 用户的设备id  baidu_id/cuid 与id_type对应
+	optional int64 area_id = 9;              // 用户当前所在的城市id
+	optional int64 target_id = 10;            // 用户目标城市id
+	
+	optional double x = 11;                   // 对应为na端时，摩卡托坐标x【只支持莫卡托坐标】
+	optional double y = 12;                   // 对应为na端时，摩卡托坐标y
+}
+
+message SeeToSeeDeal{
+	required int64 deal_id = 1;               // 团单id
+	required double weight = 2;               // 推荐权重
+	optional uint32 rec_strategy = 3;         // 数据侧提出的需求标，用于数据内部数据细分
+}
+
+message SeeToSeeDealInfo{					  //为redis内存储pb结构方便
+	repeated SeeToSeeDeal deals = 1;
+}
+
+message NuomiSeeToSeeResponse{
+	optional SeeToSeeDealInfo deals_info = 1;
+	optional int32 sample_id = 2;  //小流量实验id。 
+}
+
+
+message MerchantEasyInfo{
+	required string merchant_id = 1; //商户id
+	optional double x = 2;
+	optional double y = 3;
+	optional int64 area_id = 4;      //城市id
+}
+
+message DealAreaScore{
+	required int64 area_id = 1;      //城市id
+	required double	score = 2;                 //团单质量分数
+}
+
+message DealDetailInfo{
+	required	int64	deal_id = 1;               // 团单id
+	repeated	DealAreaScore	area_scores = 2;                 //团单质量分数
+	optional	double	price = 3;				   //价格
+	repeated	string	catg_list = 4;             //一级类目
+	repeated	string	subcatg_list = 5;          //二级类目
+	repeated	string	tags = 6;                  //tags ?
+	optional	int64	brand = 7;                 //品牌id
+	repeated	MerchantEasyInfo m_easy_infos = 8; //商户id列表
+}
+
+message MerchantDetailInfo{
+	required string merchant_id = 1; //商户id
+	optional double x = 2;
+	optional double y = 3;	
+	optional int64 area_id = 4;      //城市id
+	optional double score = 5;       //商户质量评分
+	repeated DealDetailInfo deal_infos = 6;     //团单id列表
+}
+
+message MerchantRelated{
+	required string merchant_id = 1; //商户id
+	optional double score = 2;    
+}
+message MerchantRelatedList{
+	repeated MerchantRelated merchants = 1;
+}
+
+message NuomiRTBasedRecommendRequest{
+    required RequestHeader header = 1;
+    required string source = 2;//请求来源，包括pc, app, webapp三类
+    required int32 res_size = 3;//请求预期的最大的推荐结果数量
+    optional string user_id = 4;//登录用户的用户id
+    optional int32 id_type = 5;//用户类型 1:baidu_id 2:cuid
+    optional string device_id = 6;//用户的baiduid或者cuid
+    optional int64 area_id = 7;//用户当前所在城市id
+    optional double x= 8;//对应为na端时，墨卡托坐标x
+    optional double y= 9;//对应为na端时，墨卡托坐标y
+    optional int32 radius = 10;//附近同类目召回范围
+}
+
+message Deal{
+    required int64 deal_id = 1;               // 团单id
+    required double weight = 2;               // 推荐权重
+}
+
+message NuomiRTBasedRecommendResponse {
+    required int32 errorno = 1;//错误编码
+    required string errormsg = 2;//错误原因
+    repeated Deal deal_list = 3;//推荐列表
+}
+

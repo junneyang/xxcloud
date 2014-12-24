@@ -1,0 +1,553 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>通用性能测试平台-任务管理</title>
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+	<script src="/static/js/jquery-1.9.0.js"></script>
+	<script src="/static/js/common.js" type="text/javascript"></script>
+	<script src="/static/js/model/cycle/jquery.cycle.all.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="/static/css/scojs.css" media="screen">
+	<link rel="stylesheet" href="/static/css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main-list.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/api.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/public.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/gy_css.css">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/about.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/my.css">
+
+	<script type="text/javascript" src="/static/js/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/static/js/sprintf.min.js"></script>
+	<script type="text/javascript" src="/static/js/help_panel.js"></script>
+
+	<script type="text/javascript" src="/static/js/model/uploadify/jquery.uploadify.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/js/model/uploadify/uploadify.css" />
+	<script type="text/javascript" src="/static/js/upload.js"></script>
+
+
+	<link href="/static/css/hellotab.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/helloaddtab.css" rel="stylesheet" type="text/css"/>
+	
+	<script type="text/javascript" src="/static/js/model/dialog/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/js/model/dialog/ui.css" />
+</head>
+<body>
+	<!--标题栏-->
+	<div class="header">
+		<div class="h_logo"><a href="#" title="xCloud"><img src="/static/images/qaup_logo.png" alt="" /></a></div>
+		<div class="h_nav"  style="margin-top:33px;margin-right:10%">
+			<span><span id='id_user_name'>{{usrname}}</span>, 欢迎您</span>&nbsp;&nbsp;&nbsp;<span><a href="#"><i class="icon16 icon16-setting"></i>个人中心</a></span>&nbsp;&nbsp;&nbsp;<span><a href="/logout/"><i class="icon16 icon16-power"></i>退出</a></span>
+		</div>
+	</div>
+	
+	<!--菜单栏-->
+	<div class="nav">
+		<ul>
+			<li><a href="/family/">首页</a></li>
+			<li class="active"><a href="/">任务管理</a></li>
+			<li><a href="/node/">节点管理</a></li>
+			<li><a href="/stat/">使用统计</a></li>
+			<li><a href="#">帮助</a></li>
+		</ul>
+	</div>
+	
+	<div class="content_about">
+		<div class="container about_container main-content">
+			<div style="position:absolute;width:120px;left:0px;top:0px;bottom:0px;background-color:#fbfbfb;z-index:1">
+				<ul style="width:100%;font-family:Microsoft YaHei">
+					<li class="left-menu-li-select"><a href="/addtask/" style="color:#000;font-size:medium">新建任务</a></li>
+				</ul>
+				<!--<div style="position:absolute;left:0;bottom:0;top:163px;width:100%;border-right:1px solid #e8e8e8"></div>-->
+			</div>
+			
+			<div class="div-content">
+				<table style="margin-bottom:20px;margin-left:30px;margin-top:25px">
+					<tr height=50>
+						<td valign=top width=100>选择执行节点<span style="color:red"></span></td>
+						<td valign=top width=490>
+							{% for item in nodelist %}
+							<input name="subBox_node" type="radio" value={{item}} />{{item}}
+							{% end %}
+							<!--<input name="subBox" type="checkbox" />项1项1项1
+							<input name="subBox" type="checkbox" />项1项1项1-->
+						</td>
+						<td valign=top><span style="color:red">非必选，默认随机选择节点执行</span></td>
+					</tr>
+					<tr height=50>
+						<td valign=top width=70>协议类型<span style="color:red">*</span></td>
+						<td valign=top >
+							<select id="id_dl_type" style="border-radius:0px">
+								<option value="请选择服务">请选择pbrpc协议类型</option>
+								<option value="PUBLIC-PBRPC">PUBLIC-PBRPC</option>
+								<option value="SOFA-PBRPC">SOFA-PBRPC</option>
+								<option value="HULU-PBRPC">HULU-PBRPC</option>
+							</select>
+						</td>
+					</tr>
+					<tr height=50>
+						<td valign=top width=70>服务IP端口<span style="color:red">*</span></td>
+						<td valign=top ><input id="id_ipport" type="text" style="border-radius:0px;height:30px" placeholder="被测系统IP端口，如：10.48.55.39:7788"></input></td>
+					</tr>
+					<tr height=50>
+						<td valign=top width=70>ServiceName<span style="color:red">*</span></td>
+						<td valign=top ><input id="id_ServiceName" type="text" style="border-radius:0px;height:30px" placeholder="被测接口所属服务，如：lbs.da.openservice.ItemService"></input></td>
+					</tr>
+					<tr height=50>
+						<td valign=top width=70>MethodName<span style="color:red">*</span></td>
+						<td valign=top ><input id="id_MethodName" type="text" style="border-radius:0px;height:30px" placeholder="被测接口名称，如：GetItemsByItem"></input></td>
+					</tr>
+					<tr height=600>
+						<td valign=top width=70>请求参数<span style="color:red">*</span></td>
+						<td valign=top width=490><textarea style="height:600px;" id="id_request" style="width:760px;height:70px;border-radius:0px" placeholder='' value=''></textarea></td>
+						<td valign=top><a href="http://wiki.babel.baidu.com/twiki/bin/view/Com/Test/%e9%80%9a%e7%94%a8PBRPC%e5%ae%a2%e6%88%b7%e7%ab%af%e8%af%b7%e6%b1%82%e5%b7%a5%e5%85%b7" style='text-decoration:underline;color:blue;'>&nbsp;&nbsp;&nbsp;帮助？</a></td>
+					</tr>
+					
+					<tr height=50>
+							<td valign=top width=1>&nbsp;</td>
+							<td align=center><div id="id_loading" style="display:none;"><img src="/static/loading.gif"/><br/>正在提交，请稍候...</div></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan=2><button id="id_add" class="global-btn-style" onclick="window.location.href='/addtask/';">返回</button>&nbsp;<button id="id_back" class="global-btn-style" onclick="javascript:add_task_submit();">提交</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="home_foot" style="float:left;">
+		<p>Copyright ©2014 Baidu. All Rights Reserved.
+		</p>
+		<p>
+		百度 LBS 测试 版权所有
+		</p>
+	</div>
+
+	<!-- show_message_area是必须的哦 -->
+	<div id="show_message_area"></div>
+	<script type="text/javascript">
+		var tips = [
+			{
+				"header": {
+					"subservice":"sub",
+					"secretkey": "pass",
+					"servicekey": "key1"
+				},
+				"algorithmId": "topic_rev_poi",
+				"item_ids": ["9977193541978760286"]
+			},
+			{
+				"header": {
+					"subservice":"sub",
+					"secretkey": "pass",
+					"servicekey": "key1"
+				},
+				"algorithmId": "topic_rev_poi",
+				"item_ids": ["9977193541978760286"]
+			}
+		];
+		$(document).ready(function(){
+			var tmp = "请填写请求参数，如："+"\r\n"+formatJson(tips);
+			document.getElementById('id_request').value = tmp;
+			
+		});
+
+		var pbdownload = {
+			"ProtoFileSVNPath":"https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/proto",
+			"IPPort":"10.99.18.33:22",
+			"UserName":"linqiaoying",
+			"PassWord":"Qiao123",
+			"ToolType":"pbrpcclient",
+			"RemotePath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool"
+		};
+		var pbrpcclient = {
+			"ClientNode":"linqiaoying",
+			"WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+			"PBTYPE":"PUBLIC-PBRPC",
+			"IPPORT":"10.48.55.39:7788",
+			"ServiceName":"lbs.da.openservice.ItemService",
+			"MethodName":"GetItemsByItem",
+			"TestData":[
+				{
+					"header": {
+						"subservice":"sub",
+						"secretkey": "pass",
+						"servicekey": "key1"
+					},
+					"algorithmId": "topic_rev_poi",
+					"item_ids": ["9977193541978760286"]
+				},
+				{
+					"header": {
+						"subservice":"sub",
+						"secretkey": "pass",
+						"servicekey": "key1"
+					},
+					"algorithmId": "topic_rev_poi",
+					"item_ids": ["9977193541978760286"]
+				}
+			]
+		};
+		var pbrpcbenchmark = {
+			"ClientNode":"linqiaoying",
+			"WorkPath":"/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool",
+			"PBTYPE":"PUBLIC-PBRPC",
+			"IPPORT":"10.48.55.39:7788",
+			"ServiceName":"lbs.da.openservice.ItemService",
+			"MethodName":"GetItemsByItem",
+			"WorkThreadNum":"8",
+			"SendThreadNum":"2",
+			"ClientNum":"20",
+			"SendRate":"200",
+			"IsRandom":"1",
+			"TestTime":"1.0",
+			"IsOutput":"0",
+			"TestData":[
+				{
+					"input": {
+						"header": {
+							"subservice":"sub",
+							"secretkey": "pass",
+							"servicekey": "key1"
+						},
+						"algorithmId": "topic_rev_poi",
+						"item_ids": ["9977193541978760286"]
+					},
+					"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+				},
+				{
+					"input": {
+						"header": {
+							"subservice":"sub",
+							"secretkey": "pass",
+							"servicekey": "key1"
+						},
+						"algorithmId": "topic_rev_poi",
+						"item_ids": ["9977193541978760286"]
+					},
+					"expect": {"items":[{"id":"18012202574307917823","value":[0.3,0.5,0.4],"str_value":[]},{"id":"12313225205891489106","value":[1],"str_value":[]},{"id":"18119621412888245380","value":[0.7],"str_value":[]},{"id":"2071168565446484381","value":[0.3],"str_value":[]},{"id":"11710154692952313709","value":[0.3],"str_value":[]}],"args":[]}
+				}
+			]
+		};
+		
+		function change_params() {
+			/*$("table tr:eq(1)").after("");
+			var toottype = document.getElementById('id_service').selectedIndex;
+			var t="";
+			if (toottype == 1) {
+				t+="<tr height=100>";
+				t+="<td valign=top width=40>申请原因<span style='color:red'>*</span></td>";
+				t+="<td valign=top><textarea id='reasonId' style='width:560px;height:70px;border-radius:0px' placeholder='请包括组名，项目名，项目背景和上线时间点。'></textarea></td>";
+				t+="</tr>";
+				//document.getElementById('id_params').value = formatJson(pbdownload); 
+			} else if (toottype == 2) {
+				//document.getElementById('id_params').value = formatJson(pbrpcclient); 
+			} else if (toottype == 3) {
+				//document.getElementById('id_params').value = formatJson(pbrpcbenchmark); 
+			} 
+			$("table tr:eq(1)").after(t);
+			//$("#id_service_append").append(t);*/
+		}
+		function add_task_next_step() {
+			var service = document.getElementById('id_service').selectedIndex;
+			if (service == 0) {
+				MessageBox('warning', '请选择服务类型');
+			} else {
+				alert(service);
+			}
+		} 
+		function add_task_submit() {
+			var submit = document.getElementById('id_user_name').innerHTML;
+			var node = $("input[name='subBox_node']:checked").val();
+			var SpecifyNode;
+			if ( typeof(node) == "undefined" ) {
+				SpecifyNode = "0";
+			} else {
+				SpecifyNode = "1";
+			}
+			var pbtype = document.getElementById('id_dl_type').selectedIndex;
+			var ipport = document.getElementById('id_ipport').value;
+			var ServiceName = document.getElementById('id_ServiceName').value;
+			var MethodName = document.getElementById('id_MethodName').value;
+			var request = document.getElementById('id_request').value;
+			request = trim(request);  
+			var params = {
+				"ClientNode":node,
+				"PBTYPE":document.getElementById('id_dl_type').value,
+				"IPPORT":ipport,
+				"ServiceName":ServiceName,
+				"MethodName":MethodName,
+				"TestData":request
+			};
+			try {
+				data=eval('('+request+')');
+			} catch (e) {
+				MessageBox('warning', '请求参数JSON参数格式有误');
+				return;
+			}
+			
+			params = JSON.stringify(params);
+			if (pbtype == 0 || ipport == "" || ServiceName == "" || MethodName == "" || request == "") {
+				MessageBox('warning', '请输入必填字段');
+			} else {
+				$.ajax({
+					type: "post",//使用post方法访问后台
+					dataType: "json",//返回json格式的数据
+					url: "/jobsubmit/",//要访问的后台地址
+					contentType: "application/json; charset=utf-8",
+					cache: false,
+					async: true,
+					data: {UserName:submit,ClusterName:"PublicCluster",JobName:"pbrpcclient",SpecifyNode:SpecifyNode,JobParameter:params},//要发送的数据
+					//start : function(){document.getElementById('id_loading').style.display = "block"; },
+					//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
+					beforeSend:function(XMLHttpRequest){
+					   //alert('远程调用开始...');
+					   document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #CCC";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #CCC";
+					   document.getElementById('id_loading').style.display = "block";
+					},
+					//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
+					/*complete:function(XMLHttpRequest,textStatus){
+						// alert('远程调用成功，状态文本值：'+textStatus);
+						alert(textStatus);
+						document.getElementById('id_loading').style.display = "none"; 
+					},*/
+					error:function(XMLHttpRequest,textStatus,errorThrown){
+						document.getElementById('id_loading').style.display = "none"; 
+						//$("#id_add").attr("disabled",false); //不可用
+						document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
+					},
+					success: function(data){//msg为返回的数据，在这里做数据绑定
+						document.getElementById('id_loading').style.display = "none"; 
+						document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+					   //none repeat scroll 0% 0% #4B8EF9
+					   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
+						//$("#id_add").attr("disabled",false); //不可用
+						if (data.errcode == 0) {
+							//MessageBox('warning', '任务提交成功');
+							//window.location.href = "/";
+							options = {
+								'onClickYes':function(){location.href = "#";},
+								'onClickNo':function(){location.href = "/";}
+							};
+							MessageBox('confirm', "提交成功，是否继续提交？", '确认', options);
+						} else {
+							MessageBox('warning', '任务提交失败');
+						}
+					}
+				});
+			}
+		}
+		
+		function add_task() {
+			var service = document.getElementById('id_service').selectedIndex;
+			if (service == 0) {
+				MessageBox('warning', '请输入必填项');
+			} else {
+				var submit = $('#id_submit').val();
+				var cluster = document.getElementById('id_cluster').selectedIndex;
+				//var clustername = document.getElementById('id_cluster').options[cluster].value;
+				var service = document.getElementById('id_service').selectedIndex;
+				var servicename = document.getElementById('id_service').options[service].value;
+				var SpecifyNode = radio_select("name_specifynode");
+				var params = $('#id_params').val();
+				//alert(SpecifyNode);
+				try {
+					data=eval('('+params+')');
+				} catch (e) {
+					MessageBox('warning', 'JSON参数格式有误');
+					return;
+				}
+				if (submit == "" || cluster == 0 || service == 0 || params == "") {
+					//alert("请输入必填项");
+					MessageBox('warning', '请输入必填项');
+				} else {
+					$.ajax({
+						type: "post",//使用post方法访问后台
+						dataType: "json",//返回json格式的数据
+						url: "/jobsubmit/",//要访问的后台地址
+						contentType: "application/json; charset=utf-8",
+						cache: false,
+						async: true,
+						data: {UserName:submit,ClusterName:"PublicCluster",JobName:servicename,SpecifyNode:SpecifyNode,JobParameter:params},//要发送的数据
+						//start : function(){document.getElementById('id_loading').style.display = "block"; },
+						//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
+						beforeSend:function(XMLHttpRequest){
+						   //alert('远程调用开始...');
+						   document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #CCC";
+						   //none repeat scroll 0% 0% #4B8EF9
+						   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #CCC";
+						   document.getElementById('id_loading').style.display = "block";
+						},
+						//complete :function(){$("#load").hide();},//AJAX请求完成时隐藏loading提示
+						/*complete:function(XMLHttpRequest,textStatus){
+							// alert('远程调用成功，状态文本值：'+textStatus);
+							alert(textStatus);
+							document.getElementById('id_loading').style.display = "none"; 
+						},*/
+						error:function(XMLHttpRequest,textStatus,errorThrown){
+							document.getElementById('id_loading').style.display = "none"; 
+							//$("#id_add").attr("disabled",false); //不可用
+							document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+						   //none repeat scroll 0% 0% #4B8EF9
+						   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
+						},
+						success: function(data){//msg为返回的数据，在这里做数据绑定
+							document.getElementById('id_loading').style.display = "none"; 
+							document.getElementById('id_add').style.background = "none repeat scroll 0% 0% #4B8EF9";
+						   //none repeat scroll 0% 0% #4B8EF9
+						   document.getElementById('id_back').style.background = "none repeat scroll 0% 0% #4B8EF9";
+							//$("#id_add").attr("disabled",false); //不可用
+							if (data.errcode == 0) {
+								//MessageBox('warning', '任务提交成功');
+								//window.location.href = "/";
+								options = {
+									'onClickYes':function(){location.href = "#";},
+									'onClickNo':function(){location.href = "/";}
+								};
+								MessageBox('confirm', "提交成功，是否继续提交？", '确认', options);
+							} else {
+								MessageBox('warning', '任务提交失败');
+							}
+						}
+					});
+				}	
+			}
+		}
+		// Example usage: http://jsfiddle.net/q2gnX/
+
+	function formatJson(json, options) {
+    var reg = null,
+        formatted = '',
+        pad = 0,
+        PADDING = '    '; // one can also use '\t' or a different number of spaces
+
+    // optional settings
+    options = options || {};
+    // remove newline where '{' or '[' follows ':'
+    options.newlineAfterColonIfBeforeBraceOrBracket = (options.newlineAfterColonIfBeforeBraceOrBracket === true) ? true : false;
+    // use a space after a colon
+    options.spaceAfterColon = (options.spaceAfterColon === false) ? false : true;
+
+    // begin formatting...
+    if (typeof json !== 'string') {
+        // make sure we start with the JSON as a string
+        json = JSON.stringify(json);
+    } else {
+        // is already a string, so parse and re-stringify in order to remove extra whitespace
+        json = JSON.parse(json);
+        json = JSON.stringify(json);
+    }
+
+    // add newline before and after curly braces
+    reg = /([\{\}])/g;
+    json = json.replace(reg, '\r\n$1\r\n');
+
+    // add newline before and after square brackets
+    reg = /([\[\]])/g;
+    json = json.replace(reg, '\r\n$1\r\n');
+
+    // add newline after comma
+    reg = /(\,)/g;
+    json = json.replace(reg, '$1\r\n');
+
+    // remove multiple newlines
+    reg = /(\r\n\r\n)/g;
+    json = json.replace(reg, '\r\n');
+
+    // remove newlines before commas
+    reg = /\r\n\,/g;
+    json = json.replace(reg, ',');
+
+    // optional formatting...
+    if (!options.newlineAfterColonIfBeforeBraceOrBracket) {         
+        reg = /\:\r\n\{/g;
+        json = json.replace(reg, ':{');
+        reg = /\:\r\n\[/g;
+        json = json.replace(reg, ':[');
+    }
+    if (options.spaceAfterColon) {          
+        reg = /\:/g;
+        json = json.replace(reg, ':');
+    }
+
+    $.each(json.split('\r\n'), function(index, node) {
+        var i = 0,
+            indent = 0,
+            padding = '';
+
+        if (node.match(/\{$/) || node.match(/\[$/)) {
+            indent = 1;
+        } else if (node.match(/\}/) || node.match(/\]/)) {
+            if (pad !== 0) {
+                pad -= 1;
+            }
+        } else {
+            indent = 0;
+        }
+
+        for (i = 0; i < pad; i++) {
+            padding += PADDING;
+        }
+
+        formatted += padding + node + '\r\n';
+        pad += indent;
+    });
+
+    return formatted;
+}
+	function radio_select(radioname) {
+		var temp=document.getElementsByName(radioname);
+		for (i=0; i<temp.length; i++){
+			if(temp[i].checked){
+				return temp[i].value;
+			}
+		}
+	}
+	
+	//供使用者调用  
+function trim(s){  
+ return trimRight(trimLeft(s));  
+ }  
+ //去掉左边的空白  
+function trimLeft(s){  
+ if(s == null) {  
+ return "";  
+ }  
+ var whitespace = new String(" \t\n\r");  
+ var str = new String(s);  
+ if (whitespace.indexOf(str.charAt(0)) != -1) {  
+ var j=0, i = str.length;  
+ while (j < i && whitespace.indexOf(str.charAt(j)) != -1){  
+ j++;  
+ }  
+ str = str.substring(j, i);  
+ }  
+ return str;  
+ }  
+ //去掉右边的空白 www.2cto.com   
+ function trimRight(s){  
+ if(s == null) return "";  
+ var whitespace = new String(" \t\n\r");  
+ var str = new String(s);  
+ if (whitespace.indexOf(str.charAt(str.length-1)) != -1){  
+ var i = str.length - 1;  
+ while (i >= 0 && whitespace.indexOf(str.charAt(i)) != -1){  
+ i--;  
+ }  
+ str = str.substring(0, i+1);  
+ }  
+ return str;  
+ } 
+	</script>
+</body>
+</html>

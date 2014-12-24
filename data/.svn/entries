@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/data
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-25T02:46:24.621397Z
-5160
+2014-11-26T08:28:57.485945Z
+5249
 yangjun03
 
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-README
-file
-
-
-
-
-2014-11-25T02:46:42.000000Z
-fc2f1cac8de870d98c7015fe3b5059b8
-2014-11-25T02:46:24.621397Z
-5160
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-104
 
 nuomi_benchmark_json.data
 file
@@ -196,6 +162,40 @@ yangjun03
 
 361
 
+bntest.data
+file
+
+
+
+
+2014-11-26T08:29:06.000000Z
+9e74f83e915b90e842dd3fe70d376545
+2014-11-26T08:28:57.485945Z
+5249
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+361
+
 tmp.data
 file
 
@@ -263,4 +263,38 @@ yangjun03
 
 
 1085
+
+README
+file
+
+
+
+
+2014-11-25T02:46:42.000000Z
+fc2f1cac8de870d98c7015fe3b5059b8
+2014-11-25T02:46:24.621397Z
+5160
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+104
 

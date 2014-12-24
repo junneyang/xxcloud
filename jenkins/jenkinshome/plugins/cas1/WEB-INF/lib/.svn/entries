@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/cas1/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,74 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+oro-2.0.8.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+42e940d5d2d822f4dc04c65053e630ab
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+65261
+
+aopalliance-1.0.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+04177054e180d09e3998808efa0401c7
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4467
 
 spring-jdbc-1.2.9.jar
 file
@@ -196,40 +264,6 @@ has-props
 
 221465
 
-spring-aop-2.5.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-5887d0ae1da2f51d4e8789c83bd56134
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-322942
-
 spring-support-1.2.9.jar
 file
 
@@ -263,6 +297,40 @@ has-props
 
 
 166145
+
+spring-aop-2.5.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+5887d0ae1da2f51d4e8789c83bd56134
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+322942
 
 ant-launcher-1.7.1.jar
 file
@@ -298,40 +366,6 @@ has-props
 
 12143
 
-ant-1.7.1.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-ef62988c744551fb51f330eaa311bfc0
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1323005
-
 log4j-1.2.9.jar
 file
 
@@ -365,6 +399,40 @@ has-props
 
 
 352291
+
+ant-1.7.1.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+ef62988c744551fb51f330eaa311bfc0
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1323005
 
 commons-codec-1.3.jar
 file
@@ -536,40 +604,6 @@ has-props
 
 461339
 
-commons-lang-2.4.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-237a8e845441bad2e535c57d985c8204
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-261809
-
 groovy-all-1.6.0.jar
 file
 
@@ -603,6 +637,40 @@ has-props
 
 
 4392210
+
+commons-lang-2.4.jar
+file
+
+
+
+
+2010-03-09T01:55:46.000000Z
+237a8e845441bad2e535c57d985c8204
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+261809
 
 commons-logging-1.1.jar
 file
@@ -638,40 +706,6 @@ has-props
 
 52915
 
-classes.jar
-file
-
-
-
-
-2014-11-10T09:55:24.000000Z
-99a2d5e7042b093697486851c60c02df
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-14461
-
 spring-core-1.2.9.jar
 file
 
@@ -706,6 +740,40 @@ has-props
 
 126101
 
+classes.jar
+file
+
+
+
+
+2014-11-10T09:55:24.000000Z
+99a2d5e7042b093697486851c60c02df
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14461
+
 jline-0.9.94.jar
 file
 
@@ -739,72 +807,4 @@ has-props
 
 
 87325
-
-oro-2.0.8.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-42e940d5d2d822f4dc04c65053e630ab
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-65261
-
-aopalliance-1.0.jar
-file
-
-
-
-
-2010-03-09T01:55:46.000000Z
-04177054e180d09e3998808efa0401c7
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4467
 

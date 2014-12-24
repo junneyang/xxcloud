@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/static/js/model/highstock/examples
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,13 +26,25 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+lazy-loading
+dir
+
+spline
+dir
+
+column
+dir
+
+intraday-candlestick
+dir
+
 navigator-disabled
 dir
 
-areasplinerange
+step-line
 dir
 
-step-line
+areasplinerange
 dir
 
 data-grouping
@@ -41,10 +53,10 @@ dir
 flags-placement
 dir
 
-yaxis-plotlines
+dynamic-update
 dir
 
-dynamic-update
+yaxis-plotlines
 dir
 
 basic-line
@@ -56,10 +68,10 @@ dir
 area
 dir
 
-yaxis-reversed
+columnrange
 dir
 
-columnrange
+yaxis-reversed
 dir
 
 flags-shapes
@@ -71,22 +83,22 @@ dir
 yaxis-plotbands
 dir
 
-areaspline
-dir
-
 markers-only
 dir
 
+areaspline
+dir
+
 candlestick
+dir
+
+styled-scrollbar
 dir
 
 arearange
 dir
 
 ohlc
-dir
-
-styled-scrollbar
 dir
 
 compare
@@ -99,17 +111,5 @@ candlestick-and-volume
 dir
 
 line-markers
-dir
-
-spline
-dir
-
-lazy-loading
-dir
-
-column
-dir
-
-intraday-candlestick
 dir
 

@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/gearmanjobstop/builds
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,46 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+2014-11-17_17-40-49
+dir
+
+2014-11-19_10-59-27
+dir
+
+lastStableBuild
+file
+
+
+
+
+2014-11-19T02:59:28.000000Z
+fd1211033a3fbedc0af48f10b341d654
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
 
 2014-11-17_17-43-59
 dir
@@ -414,44 +454,4 @@ dir
 
 2014-11-17_17-39-30
 dir
-
-2014-11-17_17-40-49
-dir
-
-2014-11-19_10-59-27
-dir
-
-lastStableBuild
-file
-
-
-
-
-2014-11-19T02:59:28.000000Z
-fd1211033a3fbedc0af48f10b341d654
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
 

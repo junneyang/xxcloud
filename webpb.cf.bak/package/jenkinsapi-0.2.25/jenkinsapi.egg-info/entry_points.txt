@@ -1,0 +1,4 @@
+[console_scripts]
+jenkins_invoke = jenkinsapi.command_line.jenkins_invoke:main
+jenkinsapi_version = jenkinsapi.command_line.jenkinsapi_version:main
+

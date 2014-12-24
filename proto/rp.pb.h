@@ -126,7 +126,7 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_logid();
   inline ::std::string* release_logid();
   
-  // optional string userID = 4;
+  // optional string userID = 4 [default = "0"];
   inline bool has_userid() const;
   inline void clear_userid();
   static const int kUserIDFieldNumber = 4;
@@ -137,7 +137,7 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_userid();
   inline ::std::string* release_userid();
   
-  // optional string cuid = 5;
+  // optional string cuid = 5 [default = ""];
   inline bool has_cuid() const;
   inline void clear_cuid();
   static const int kCuidFieldNumber = 5;
@@ -148,7 +148,7 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_cuid();
   inline ::std::string* release_cuid();
   
-  // optional string coor_sys = 6;
+  // optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
   inline bool has_coor_sys() const;
   inline void clear_coor_sys();
   static const int kCoorSysFieldNumber = 6;
@@ -159,35 +159,35 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_coor_sys();
   inline ::std::string* release_coor_sys();
   
-  // optional double x = 7;
+  // optional double x = 7 [default = -1];
   inline bool has_x() const;
   inline void clear_x();
   static const int kXFieldNumber = 7;
   inline double x() const;
   inline void set_x(double value);
   
-  // optional double y = 8;
+  // optional double y = 8 [default = -1];
   inline bool has_y() const;
   inline void clear_y();
   static const int kYFieldNumber = 8;
   inline double y() const;
   inline void set_y(double value);
   
-  // optional int64 areaId = 9;
+  // optional int64 areaId = 9 [default = -1];
   inline bool has_areaid() const;
   inline void clear_areaid();
   static const int kAreaIdFieldNumber = 9;
   inline ::google::protobuf::int64 areaid() const;
   inline void set_areaid(::google::protobuf::int64 value);
   
-  // optional int64 dealId = 10;
+  // optional int64 dealId = 10 [default = -1];
   inline bool has_dealid() const;
   inline void clear_dealid();
   static const int kDealIdFieldNumber = 10;
   inline ::google::protobuf::int64 dealid() const;
   inline void set_dealid(::google::protobuf::int64 value);
   
-  // optional int32 size = 11;
+  // optional int32 size = 11 [default = -1];
   inline bool has_size() const;
   inline void clear_size();
   static const int kSizeFieldNumber = 11;
@@ -205,28 +205,28 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_devicetype();
   inline ::std::string* release_devicetype();
   
-  // optional int32 situationId = 13;
+  // optional int32 situationId = 13 [default = -1];
   inline bool has_situationid() const;
   inline void clear_situationid();
   static const int kSituationIdFieldNumber = 13;
   inline ::google::protobuf::int32 situationid() const;
   inline void set_situationid(::google::protobuf::int32 value);
   
-  // optional int32 need_poi = 14;
+  // optional int32 need_poi = 14 [default = 0];
   inline bool has_need_poi() const;
   inline void clear_need_poi();
   static const int kNeedPoiFieldNumber = 14;
   inline ::google::protobuf::int32 need_poi() const;
   inline void set_need_poi(::google::protobuf::int32 value);
   
-  // optional int32 poi_num = 15;
+  // optional int32 poi_num = 15 [default = 0];
   inline bool has_poi_num() const;
   inline void clear_poi_num();
   static const int kPoiNumFieldNumber = 15;
   inline ::google::protobuf::int32 poi_num() const;
   inline void set_poi_num(::google::protobuf::int32 value);
   
-  // optional string baidu_id = 16;
+  // optional string baidu_id = 16 [default = ""];
   inline bool has_baidu_id() const;
   inline void clear_baidu_id();
   static const int kBaiduIdFieldNumber = 16;
@@ -237,7 +237,7 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_baidu_id();
   inline ::std::string* release_baidu_id();
   
-  // optional int64 targetAreaId = 17;
+  // optional int64 targetAreaId = 17 [default = -1];
   inline bool has_targetareaid() const;
   inline void clear_targetareaid();
   static const int kTargetAreaIdFieldNumber = 17;
@@ -398,42 +398,42 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_qrw_str_range();
   inline ::std::string* release_qrw_str_range();
   
-  // optional int32 client = 32;
+  // optional int32 client = 32 [default = 3];
   inline bool has_client() const;
   inline void clear_client();
   static const int kClientFieldNumber = 32;
   inline ::google::protobuf::int32 client() const;
   inline void set_client(::google::protobuf::int32 value);
   
-  // optional int32 channelType = 33;
+  // optional int32 channelType = 33 [default = 8];
   inline bool has_channeltype() const;
   inline void clear_channeltype();
   static const int kChannelTypeFieldNumber = 33;
   inline ::google::protobuf::int32 channeltype() const;
   inline void set_channeltype(::google::protobuf::int32 value);
   
-  // optional int32 startDay = 34;
+  // optional int32 startDay = 34 [default = 0];
   inline bool has_startday() const;
   inline void clear_startday();
   static const int kStartDayFieldNumber = 34;
   inline ::google::protobuf::int32 startday() const;
   inline void set_startday(::google::protobuf::int32 value);
   
-  // optional int32 daySize = 35;
+  // optional int32 daySize = 35 [default = 0];
   inline bool has_daysize() const;
   inline void clear_daysize();
   static const int kDaySizeFieldNumber = 35;
   inline ::google::protobuf::int32 daysize() const;
   inline void set_daysize(::google::protobuf::int32 value);
   
-  // optional int32 dealSize = 36;
+  // optional int32 dealSize = 36 [default = -1];
   inline bool has_dealsize() const;
   inline void clear_dealsize();
   static const int kDealSizeFieldNumber = 36;
   inline ::google::protobuf::int32 dealsize() const;
   inline void set_dealsize(::google::protobuf::int32 value);
   
-  // optional string str_site_list = 37;
+  // optional string str_site_list = 37 [default = ""];
   inline bool has_str_site_list() const;
   inline void clear_str_site_list();
   static const int kStrSiteListFieldNumber = 37;
@@ -444,26 +444,73 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline ::std::string* mutable_str_site_list();
   inline ::std::string* release_str_site_list();
   
-  // optional int32 eventId = 38;
+  // optional int32 eventId = 38 [default = 0];
   inline bool has_eventid() const;
   inline void clear_eventid();
   static const int kEventIdFieldNumber = 38;
   inline ::google::protobuf::int32 eventid() const;
   inline void set_eventid(::google::protobuf::int32 value);
   
-  // optional int64 recDay = 39;
+  // optional int64 recDay = 39 [default = -1];
   inline bool has_recday() const;
   inline void clear_recday();
   static const int kRecDayFieldNumber = 39;
   inline ::google::protobuf::int64 recday() const;
   inline void set_recday(::google::protobuf::int64 value);
   
-  // optional int64 dealPos = 40;
+  // optional int64 dealPos = 40 [default = 0];
   inline bool has_dealpos() const;
   inline void clear_dealpos();
   static const int kDealPosFieldNumber = 40;
   inline ::google::protobuf::int64 dealpos() const;
   inline void set_dealpos(::google::protobuf::int64 value);
+  
+  // optional string sourceType = 41;
+  inline bool has_sourcetype() const;
+  inline void clear_sourcetype();
+  static const int kSourceTypeFieldNumber = 41;
+  inline const ::std::string& sourcetype() const;
+  inline void set_sourcetype(const ::std::string& value);
+  inline void set_sourcetype(const char* value);
+  inline void set_sourcetype(const char* value, size_t size);
+  inline ::std::string* mutable_sourcetype();
+  inline ::std::string* release_sourcetype();
+  
+  // optional string history_deal_list = 42;
+  inline bool has_history_deal_list() const;
+  inline void clear_history_deal_list();
+  static const int kHistoryDealListFieldNumber = 42;
+  inline const ::std::string& history_deal_list() const;
+  inline void set_history_deal_list(const ::std::string& value);
+  inline void set_history_deal_list(const char* value);
+  inline void set_history_deal_list(const char* value, size_t size);
+  inline ::std::string* mutable_history_deal_list();
+  inline ::std::string* release_history_deal_list();
+  
+  // optional string nm_key = 43;
+  inline bool has_nm_key() const;
+  inline void clear_nm_key();
+  static const int kNmKeyFieldNumber = 43;
+  inline const ::std::string& nm_key() const;
+  inline void set_nm_key(const ::std::string& value);
+  inline void set_nm_key(const char* value);
+  inline void set_nm_key(const char* value, size_t size);
+  inline ::std::string* mutable_nm_key();
+  inline ::std::string* release_nm_key();
+  
+  // optional int64 poi = 44 [default = 0];
+  inline bool has_poi() const;
+  inline void clear_poi();
+  static const int kPoiFieldNumber = 44;
+  inline ::google::protobuf::int64 poi() const;
+  inline void set_poi(::google::protobuf::int64 value);
+  
+  // optional bool should_set_di = 45 [default = false];
+  inline bool has_should_set_di() const;
+  inline void clear_should_set_di();
+  static const int kShouldSetDiFieldNumber = 45;
+  inline bool should_set_di() const;
+  inline void set_should_set_di(bool value);
   
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.RPCommonRequest)
  private:
@@ -547,6 +594,16 @@ class RPCommonRequest : public ::google::protobuf::Message {
   inline void clear_has_recday();
   inline void set_has_dealpos();
   inline void clear_has_dealpos();
+  inline void set_has_sourcetype();
+  inline void clear_has_sourcetype();
+  inline void set_has_history_deal_list();
+  inline void clear_has_history_deal_list();
+  inline void set_has_nm_key();
+  inline void clear_has_nm_key();
+  inline void set_has_poi();
+  inline void clear_has_poi();
+  inline void set_has_should_set_di();
+  inline void clear_has_should_set_di();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
@@ -554,15 +611,17 @@ class RPCommonRequest : public ::google::protobuf::Message {
   ::std::string* provider_;
   ::std::string* logid_;
   ::std::string* userid_;
+  static const ::std::string _default_userid_;
   ::std::string* cuid_;
   ::std::string* coor_sys_;
+  static const ::std::string _default_coor_sys_;
   double x_;
   double y_;
   ::google::protobuf::int64 areaid_;
   ::google::protobuf::int64 dealid_;
-  ::std::string* devicetype_;
   ::google::protobuf::int32 size_;
   ::google::protobuf::int32 situationid_;
+  ::std::string* devicetype_;
   ::google::protobuf::int32 need_poi_;
   ::google::protobuf::int32 poi_num_;
   ::std::string* baidu_id_;
@@ -590,9 +649,14 @@ class RPCommonRequest : public ::google::protobuf::Message {
   ::google::protobuf::int32 eventid_;
   ::google::protobuf::int64 recday_;
   ::google::protobuf::int64 dealpos_;
+  ::std::string* sourcetype_;
+  ::std::string* history_deal_list_;
+  ::std::string* nm_key_;
+  ::google::protobuf::int64 poi_;
+  bool should_set_di_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(40 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(45 + 31) / 32];
   
   friend void  protobuf_AddDesc_rp_2eproto();
   friend void protobuf_AssignDesc_rp_2eproto();
@@ -1437,6 +1501,13 @@ class RPCommonResponse : public ::google::protobuf::Message {
   inline ::std::string* mutable_gift_cart_id();
   inline ::std::string* release_gift_cart_id();
   
+  // optional int32 is_transcode = 11;
+  inline bool has_is_transcode() const;
+  inline void clear_is_transcode();
+  static const int kIsTranscodeFieldNumber = 11;
+  inline ::google::protobuf::int32 is_transcode() const;
+  inline void set_is_transcode(::google::protobuf::int32 value);
+  
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.RPCommonResponse)
  private:
   inline void set_has_bn_rp_svr_errinf();
@@ -1457,6 +1528,8 @@ class RPCommonResponse : public ::google::protobuf::Message {
   inline void clear_has_bn_rp_svr_subtitle();
   inline void set_has_gift_cart_id();
   inline void clear_has_gift_cart_id();
+  inline void set_has_is_transcode();
+  inline void clear_has_is_transcode();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
@@ -1468,11 +1541,12 @@ class RPCommonResponse : public ::google::protobuf::Message {
   ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::RPResultItem > bn_rp_svr_result_;
   ::std::string* bn_rp_svr_title_;
   ::std::string* bn_rp_svr_subtitle_;
-  ::std::string* gift_cart_id_;
   ::google::protobuf::int32 bn_rp_svr_nresult_flag_;
+  ::google::protobuf::int32 is_transcode_;
+  ::std::string* gift_cart_id_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(10 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(11 + 31) / 32];
   
   friend void  protobuf_AddDesc_rp_2eproto();
   friend void protobuf_AssignDesc_rp_2eproto();
@@ -1633,7 +1707,7 @@ inline ::std::string* RPCommonRequest::release_logid() {
   }
 }
 
-// optional string userID = 4;
+// optional string userID = 4 [default = "0"];
 inline bool RPCommonRequest::has_userid() const {
   return (_has_bits_[0] & 0x00000008u) != 0;
 }
@@ -1644,8 +1718,8 @@ inline void RPCommonRequest::clear_has_userid() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void RPCommonRequest::clear_userid() {
-  if (userid_ != &::google::protobuf::internal::kEmptyString) {
-    userid_->clear();
+  if (userid_ != &_default_userid_) {
+    userid_->assign(_default_userid_);
   }
   clear_has_userid();
 }
@@ -1654,44 +1728,44 @@ inline const ::std::string& RPCommonRequest::userid() const {
 }
 inline void RPCommonRequest::set_userid(const ::std::string& value) {
   set_has_userid();
-  if (userid_ == &::google::protobuf::internal::kEmptyString) {
+  if (userid_ == &_default_userid_) {
     userid_ = new ::std::string;
   }
   userid_->assign(value);
 }
 inline void RPCommonRequest::set_userid(const char* value) {
   set_has_userid();
-  if (userid_ == &::google::protobuf::internal::kEmptyString) {
+  if (userid_ == &_default_userid_) {
     userid_ = new ::std::string;
   }
   userid_->assign(value);
 }
 inline void RPCommonRequest::set_userid(const char* value, size_t size) {
   set_has_userid();
-  if (userid_ == &::google::protobuf::internal::kEmptyString) {
+  if (userid_ == &_default_userid_) {
     userid_ = new ::std::string;
   }
   userid_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* RPCommonRequest::mutable_userid() {
   set_has_userid();
-  if (userid_ == &::google::protobuf::internal::kEmptyString) {
-    userid_ = new ::std::string;
+  if (userid_ == &_default_userid_) {
+    userid_ = new ::std::string(_default_userid_);
   }
   return userid_;
 }
 inline ::std::string* RPCommonRequest::release_userid() {
   clear_has_userid();
-  if (userid_ == &::google::protobuf::internal::kEmptyString) {
+  if (userid_ == &_default_userid_) {
     return NULL;
   } else {
     ::std::string* temp = userid_;
-    userid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    userid_ = const_cast< ::std::string*>(&_default_userid_);
     return temp;
   }
 }
 
-// optional string cuid = 5;
+// optional string cuid = 5 [default = ""];
 inline bool RPCommonRequest::has_cuid() const {
   return (_has_bits_[0] & 0x00000010u) != 0;
 }
@@ -1749,7 +1823,7 @@ inline ::std::string* RPCommonRequest::release_cuid() {
   }
 }
 
-// optional string coor_sys = 6;
+// optional string coor_sys = 6 [default = "UNKNOW_COOR_SYS"];
 inline bool RPCommonRequest::has_coor_sys() const {
   return (_has_bits_[0] & 0x00000020u) != 0;
 }
@@ -1760,8 +1834,8 @@ inline void RPCommonRequest::clear_has_coor_sys() {
   _has_bits_[0] &= ~0x00000020u;
 }
 inline void RPCommonRequest::clear_coor_sys() {
-  if (coor_sys_ != &::google::protobuf::internal::kEmptyString) {
-    coor_sys_->clear();
+  if (coor_sys_ != &_default_coor_sys_) {
+    coor_sys_->assign(_default_coor_sys_);
   }
   clear_has_coor_sys();
 }
@@ -1770,44 +1844,44 @@ inline const ::std::string& RPCommonRequest::coor_sys() const {
 }
 inline void RPCommonRequest::set_coor_sys(const ::std::string& value) {
   set_has_coor_sys();
-  if (coor_sys_ == &::google::protobuf::internal::kEmptyString) {
+  if (coor_sys_ == &_default_coor_sys_) {
     coor_sys_ = new ::std::string;
   }
   coor_sys_->assign(value);
 }
 inline void RPCommonRequest::set_coor_sys(const char* value) {
   set_has_coor_sys();
-  if (coor_sys_ == &::google::protobuf::internal::kEmptyString) {
+  if (coor_sys_ == &_default_coor_sys_) {
     coor_sys_ = new ::std::string;
   }
   coor_sys_->assign(value);
 }
 inline void RPCommonRequest::set_coor_sys(const char* value, size_t size) {
   set_has_coor_sys();
-  if (coor_sys_ == &::google::protobuf::internal::kEmptyString) {
+  if (coor_sys_ == &_default_coor_sys_) {
     coor_sys_ = new ::std::string;
   }
   coor_sys_->assign(reinterpret_cast<const char*>(value), size);
 }
 inline ::std::string* RPCommonRequest::mutable_coor_sys() {
   set_has_coor_sys();
-  if (coor_sys_ == &::google::protobuf::internal::kEmptyString) {
-    coor_sys_ = new ::std::string;
+  if (coor_sys_ == &_default_coor_sys_) {
+    coor_sys_ = new ::std::string(_default_coor_sys_);
   }
   return coor_sys_;
 }
 inline ::std::string* RPCommonRequest::release_coor_sys() {
   clear_has_coor_sys();
-  if (coor_sys_ == &::google::protobuf::internal::kEmptyString) {
+  if (coor_sys_ == &_default_coor_sys_) {
     return NULL;
   } else {
     ::std::string* temp = coor_sys_;
-    coor_sys_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    coor_sys_ = const_cast< ::std::string*>(&_default_coor_sys_);
     return temp;
   }
 }
 
-// optional double x = 7;
+// optional double x = 7 [default = -1];
 inline bool RPCommonRequest::has_x() const {
   return (_has_bits_[0] & 0x00000040u) != 0;
 }
@@ -1818,7 +1892,7 @@ inline void RPCommonRequest::clear_has_x() {
   _has_bits_[0] &= ~0x00000040u;
 }
 inline void RPCommonRequest::clear_x() {
-  x_ = 0;
+  x_ = -1;
   clear_has_x();
 }
 inline double RPCommonRequest::x() const {
@@ -1829,7 +1903,7 @@ inline void RPCommonRequest::set_x(double value) {
   x_ = value;
 }
 
-// optional double y = 8;
+// optional double y = 8 [default = -1];
 inline bool RPCommonRequest::has_y() const {
   return (_has_bits_[0] & 0x00000080u) != 0;
 }
@@ -1840,7 +1914,7 @@ inline void RPCommonRequest::clear_has_y() {
   _has_bits_[0] &= ~0x00000080u;
 }
 inline void RPCommonRequest::clear_y() {
-  y_ = 0;
+  y_ = -1;
   clear_has_y();
 }
 inline double RPCommonRequest::y() const {
@@ -1851,7 +1925,7 @@ inline void RPCommonRequest::set_y(double value) {
   y_ = value;
 }
 
-// optional int64 areaId = 9;
+// optional int64 areaId = 9 [default = -1];
 inline bool RPCommonRequest::has_areaid() const {
   return (_has_bits_[0] & 0x00000100u) != 0;
 }
@@ -1862,7 +1936,7 @@ inline void RPCommonRequest::clear_has_areaid() {
   _has_bits_[0] &= ~0x00000100u;
 }
 inline void RPCommonRequest::clear_areaid() {
-  areaid_ = GOOGLE_LONGLONG(0);
+  areaid_ = GOOGLE_LONGLONG(-1);
   clear_has_areaid();
 }
 inline ::google::protobuf::int64 RPCommonRequest::areaid() const {
@@ -1873,7 +1947,7 @@ inline void RPCommonRequest::set_areaid(::google::protobuf::int64 value) {
   areaid_ = value;
 }
 
-// optional int64 dealId = 10;
+// optional int64 dealId = 10 [default = -1];
 inline bool RPCommonRequest::has_dealid() const {
   return (_has_bits_[0] & 0x00000200u) != 0;
 }
@@ -1884,7 +1958,7 @@ inline void RPCommonRequest::clear_has_dealid() {
   _has_bits_[0] &= ~0x00000200u;
 }
 inline void RPCommonRequest::clear_dealid() {
-  dealid_ = GOOGLE_LONGLONG(0);
+  dealid_ = GOOGLE_LONGLONG(-1);
   clear_has_dealid();
 }
 inline ::google::protobuf::int64 RPCommonRequest::dealid() const {
@@ -1895,7 +1969,7 @@ inline void RPCommonRequest::set_dealid(::google::protobuf::int64 value) {
   dealid_ = value;
 }
 
-// optional int32 size = 11;
+// optional int32 size = 11 [default = -1];
 inline bool RPCommonRequest::has_size() const {
   return (_has_bits_[0] & 0x00000400u) != 0;
 }
@@ -1906,7 +1980,7 @@ inline void RPCommonRequest::clear_has_size() {
   _has_bits_[0] &= ~0x00000400u;
 }
 inline void RPCommonRequest::clear_size() {
-  size_ = 0;
+  size_ = -1;
   clear_has_size();
 }
 inline ::google::protobuf::int32 RPCommonRequest::size() const {
@@ -1975,7 +2049,7 @@ inline ::std::string* RPCommonRequest::release_devicetype() {
   }
 }
 
-// optional int32 situationId = 13;
+// optional int32 situationId = 13 [default = -1];
 inline bool RPCommonRequest::has_situationid() const {
   return (_has_bits_[0] & 0x00001000u) != 0;
 }
@@ -1986,7 +2060,7 @@ inline void RPCommonRequest::clear_has_situationid() {
   _has_bits_[0] &= ~0x00001000u;
 }
 inline void RPCommonRequest::clear_situationid() {
-  situationid_ = 0;
+  situationid_ = -1;
   clear_has_situationid();
 }
 inline ::google::protobuf::int32 RPCommonRequest::situationid() const {
@@ -1997,7 +2071,7 @@ inline void RPCommonRequest::set_situationid(::google::protobuf::int32 value) {
   situationid_ = value;
 }
 
-// optional int32 need_poi = 14;
+// optional int32 need_poi = 14 [default = 0];
 inline bool RPCommonRequest::has_need_poi() const {
   return (_has_bits_[0] & 0x00002000u) != 0;
 }
@@ -2019,7 +2093,7 @@ inline void RPCommonRequest::set_need_poi(::google::protobuf::int32 value) {
   need_poi_ = value;
 }
 
-// optional int32 poi_num = 15;
+// optional int32 poi_num = 15 [default = 0];
 inline bool RPCommonRequest::has_poi_num() const {
   return (_has_bits_[0] & 0x00004000u) != 0;
 }
@@ -2041,7 +2115,7 @@ inline void RPCommonRequest::set_poi_num(::google::protobuf::int32 value) {
   poi_num_ = value;
 }
 
-// optional string baidu_id = 16;
+// optional string baidu_id = 16 [default = ""];
 inline bool RPCommonRequest::has_baidu_id() const {
   return (_has_bits_[0] & 0x00008000u) != 0;
 }
@@ -2099,7 +2173,7 @@ inline ::std::string* RPCommonRequest::release_baidu_id() {
   }
 }
 
-// optional int64 targetAreaId = 17;
+// optional int64 targetAreaId = 17 [default = -1];
 inline bool RPCommonRequest::has_targetareaid() const {
   return (_has_bits_[0] & 0x00010000u) != 0;
 }
@@ -2110,7 +2184,7 @@ inline void RPCommonRequest::clear_has_targetareaid() {
   _has_bits_[0] &= ~0x00010000u;
 }
 inline void RPCommonRequest::clear_targetareaid() {
-  targetareaid_ = GOOGLE_LONGLONG(0);
+  targetareaid_ = GOOGLE_LONGLONG(-1);
   clear_has_targetareaid();
 }
 inline ::google::protobuf::int64 RPCommonRequest::targetareaid() const {
@@ -2933,7 +3007,7 @@ inline ::std::string* RPCommonRequest::release_qrw_str_range() {
   }
 }
 
-// optional int32 client = 32;
+// optional int32 client = 32 [default = 3];
 inline bool RPCommonRequest::has_client() const {
   return (_has_bits_[0] & 0x80000000u) != 0;
 }
@@ -2944,7 +3018,7 @@ inline void RPCommonRequest::clear_has_client() {
   _has_bits_[0] &= ~0x80000000u;
 }
 inline void RPCommonRequest::clear_client() {
-  client_ = 0;
+  client_ = 3;
   clear_has_client();
 }
 inline ::google::protobuf::int32 RPCommonRequest::client() const {
@@ -2955,7 +3029,7 @@ inline void RPCommonRequest::set_client(::google::protobuf::int32 value) {
   client_ = value;
 }
 
-// optional int32 channelType = 33;
+// optional int32 channelType = 33 [default = 8];
 inline bool RPCommonRequest::has_channeltype() const {
   return (_has_bits_[1] & 0x00000001u) != 0;
 }
@@ -2966,7 +3040,7 @@ inline void RPCommonRequest::clear_has_channeltype() {
   _has_bits_[1] &= ~0x00000001u;
 }
 inline void RPCommonRequest::clear_channeltype() {
-  channeltype_ = 0;
+  channeltype_ = 8;
   clear_has_channeltype();
 }
 inline ::google::protobuf::int32 RPCommonRequest::channeltype() const {
@@ -2977,7 +3051,7 @@ inline void RPCommonRequest::set_channeltype(::google::protobuf::int32 value) {
   channeltype_ = value;
 }
 
-// optional int32 startDay = 34;
+// optional int32 startDay = 34 [default = 0];
 inline bool RPCommonRequest::has_startday() const {
   return (_has_bits_[1] & 0x00000002u) != 0;
 }
@@ -2999,7 +3073,7 @@ inline void RPCommonRequest::set_startday(::google::protobuf::int32 value) {
   startday_ = value;
 }
 
-// optional int32 daySize = 35;
+// optional int32 daySize = 35 [default = 0];
 inline bool RPCommonRequest::has_daysize() const {
   return (_has_bits_[1] & 0x00000004u) != 0;
 }
@@ -3021,7 +3095,7 @@ inline void RPCommonRequest::set_daysize(::google::protobuf::int32 value) {
   daysize_ = value;
 }
 
-// optional int32 dealSize = 36;
+// optional int32 dealSize = 36 [default = -1];
 inline bool RPCommonRequest::has_dealsize() const {
   return (_has_bits_[1] & 0x00000008u) != 0;
 }
@@ -3032,7 +3106,7 @@ inline void RPCommonRequest::clear_has_dealsize() {
   _has_bits_[1] &= ~0x00000008u;
 }
 inline void RPCommonRequest::clear_dealsize() {
-  dealsize_ = 0;
+  dealsize_ = -1;
   clear_has_dealsize();
 }
 inline ::google::protobuf::int32 RPCommonRequest::dealsize() const {
@@ -3043,7 +3117,7 @@ inline void RPCommonRequest::set_dealsize(::google::protobuf::int32 value) {
   dealsize_ = value;
 }
 
-// optional string str_site_list = 37;
+// optional string str_site_list = 37 [default = ""];
 inline bool RPCommonRequest::has_str_site_list() const {
   return (_has_bits_[1] & 0x00000010u) != 0;
 }
@@ -3101,7 +3175,7 @@ inline ::std::string* RPCommonRequest::release_str_site_list() {
   }
 }
 
-// optional int32 eventId = 38;
+// optional int32 eventId = 38 [default = 0];
 inline bool RPCommonRequest::has_eventid() const {
   return (_has_bits_[1] & 0x00000020u) != 0;
 }
@@ -3123,7 +3197,7 @@ inline void RPCommonRequest::set_eventid(::google::protobuf::int32 value) {
   eventid_ = value;
 }
 
-// optional int64 recDay = 39;
+// optional int64 recDay = 39 [default = -1];
 inline bool RPCommonRequest::has_recday() const {
   return (_has_bits_[1] & 0x00000040u) != 0;
 }
@@ -3134,7 +3208,7 @@ inline void RPCommonRequest::clear_has_recday() {
   _has_bits_[1] &= ~0x00000040u;
 }
 inline void RPCommonRequest::clear_recday() {
-  recday_ = GOOGLE_LONGLONG(0);
+  recday_ = GOOGLE_LONGLONG(-1);
   clear_has_recday();
 }
 inline ::google::protobuf::int64 RPCommonRequest::recday() const {
@@ -3145,7 +3219,7 @@ inline void RPCommonRequest::set_recday(::google::protobuf::int64 value) {
   recday_ = value;
 }
 
-// optional int64 dealPos = 40;
+// optional int64 dealPos = 40 [default = 0];
 inline bool RPCommonRequest::has_dealpos() const {
   return (_has_bits_[1] & 0x00000080u) != 0;
 }
@@ -3165,6 +3239,224 @@ inline ::google::protobuf::int64 RPCommonRequest::dealpos() const {
 inline void RPCommonRequest::set_dealpos(::google::protobuf::int64 value) {
   set_has_dealpos();
   dealpos_ = value;
+}
+
+// optional string sourceType = 41;
+inline bool RPCommonRequest::has_sourcetype() const {
+  return (_has_bits_[1] & 0x00000100u) != 0;
+}
+inline void RPCommonRequest::set_has_sourcetype() {
+  _has_bits_[1] |= 0x00000100u;
+}
+inline void RPCommonRequest::clear_has_sourcetype() {
+  _has_bits_[1] &= ~0x00000100u;
+}
+inline void RPCommonRequest::clear_sourcetype() {
+  if (sourcetype_ != &::google::protobuf::internal::kEmptyString) {
+    sourcetype_->clear();
+  }
+  clear_has_sourcetype();
+}
+inline const ::std::string& RPCommonRequest::sourcetype() const {
+  return *sourcetype_;
+}
+inline void RPCommonRequest::set_sourcetype(const ::std::string& value) {
+  set_has_sourcetype();
+  if (sourcetype_ == &::google::protobuf::internal::kEmptyString) {
+    sourcetype_ = new ::std::string;
+  }
+  sourcetype_->assign(value);
+}
+inline void RPCommonRequest::set_sourcetype(const char* value) {
+  set_has_sourcetype();
+  if (sourcetype_ == &::google::protobuf::internal::kEmptyString) {
+    sourcetype_ = new ::std::string;
+  }
+  sourcetype_->assign(value);
+}
+inline void RPCommonRequest::set_sourcetype(const char* value, size_t size) {
+  set_has_sourcetype();
+  if (sourcetype_ == &::google::protobuf::internal::kEmptyString) {
+    sourcetype_ = new ::std::string;
+  }
+  sourcetype_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RPCommonRequest::mutable_sourcetype() {
+  set_has_sourcetype();
+  if (sourcetype_ == &::google::protobuf::internal::kEmptyString) {
+    sourcetype_ = new ::std::string;
+  }
+  return sourcetype_;
+}
+inline ::std::string* RPCommonRequest::release_sourcetype() {
+  clear_has_sourcetype();
+  if (sourcetype_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = sourcetype_;
+    sourcetype_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional string history_deal_list = 42;
+inline bool RPCommonRequest::has_history_deal_list() const {
+  return (_has_bits_[1] & 0x00000200u) != 0;
+}
+inline void RPCommonRequest::set_has_history_deal_list() {
+  _has_bits_[1] |= 0x00000200u;
+}
+inline void RPCommonRequest::clear_has_history_deal_list() {
+  _has_bits_[1] &= ~0x00000200u;
+}
+inline void RPCommonRequest::clear_history_deal_list() {
+  if (history_deal_list_ != &::google::protobuf::internal::kEmptyString) {
+    history_deal_list_->clear();
+  }
+  clear_has_history_deal_list();
+}
+inline const ::std::string& RPCommonRequest::history_deal_list() const {
+  return *history_deal_list_;
+}
+inline void RPCommonRequest::set_history_deal_list(const ::std::string& value) {
+  set_has_history_deal_list();
+  if (history_deal_list_ == &::google::protobuf::internal::kEmptyString) {
+    history_deal_list_ = new ::std::string;
+  }
+  history_deal_list_->assign(value);
+}
+inline void RPCommonRequest::set_history_deal_list(const char* value) {
+  set_has_history_deal_list();
+  if (history_deal_list_ == &::google::protobuf::internal::kEmptyString) {
+    history_deal_list_ = new ::std::string;
+  }
+  history_deal_list_->assign(value);
+}
+inline void RPCommonRequest::set_history_deal_list(const char* value, size_t size) {
+  set_has_history_deal_list();
+  if (history_deal_list_ == &::google::protobuf::internal::kEmptyString) {
+    history_deal_list_ = new ::std::string;
+  }
+  history_deal_list_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RPCommonRequest::mutable_history_deal_list() {
+  set_has_history_deal_list();
+  if (history_deal_list_ == &::google::protobuf::internal::kEmptyString) {
+    history_deal_list_ = new ::std::string;
+  }
+  return history_deal_list_;
+}
+inline ::std::string* RPCommonRequest::release_history_deal_list() {
+  clear_has_history_deal_list();
+  if (history_deal_list_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = history_deal_list_;
+    history_deal_list_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional string nm_key = 43;
+inline bool RPCommonRequest::has_nm_key() const {
+  return (_has_bits_[1] & 0x00000400u) != 0;
+}
+inline void RPCommonRequest::set_has_nm_key() {
+  _has_bits_[1] |= 0x00000400u;
+}
+inline void RPCommonRequest::clear_has_nm_key() {
+  _has_bits_[1] &= ~0x00000400u;
+}
+inline void RPCommonRequest::clear_nm_key() {
+  if (nm_key_ != &::google::protobuf::internal::kEmptyString) {
+    nm_key_->clear();
+  }
+  clear_has_nm_key();
+}
+inline const ::std::string& RPCommonRequest::nm_key() const {
+  return *nm_key_;
+}
+inline void RPCommonRequest::set_nm_key(const ::std::string& value) {
+  set_has_nm_key();
+  if (nm_key_ == &::google::protobuf::internal::kEmptyString) {
+    nm_key_ = new ::std::string;
+  }
+  nm_key_->assign(value);
+}
+inline void RPCommonRequest::set_nm_key(const char* value) {
+  set_has_nm_key();
+  if (nm_key_ == &::google::protobuf::internal::kEmptyString) {
+    nm_key_ = new ::std::string;
+  }
+  nm_key_->assign(value);
+}
+inline void RPCommonRequest::set_nm_key(const char* value, size_t size) {
+  set_has_nm_key();
+  if (nm_key_ == &::google::protobuf::internal::kEmptyString) {
+    nm_key_ = new ::std::string;
+  }
+  nm_key_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* RPCommonRequest::mutable_nm_key() {
+  set_has_nm_key();
+  if (nm_key_ == &::google::protobuf::internal::kEmptyString) {
+    nm_key_ = new ::std::string;
+  }
+  return nm_key_;
+}
+inline ::std::string* RPCommonRequest::release_nm_key() {
+  clear_has_nm_key();
+  if (nm_key_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = nm_key_;
+    nm_key_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional int64 poi = 44 [default = 0];
+inline bool RPCommonRequest::has_poi() const {
+  return (_has_bits_[1] & 0x00000800u) != 0;
+}
+inline void RPCommonRequest::set_has_poi() {
+  _has_bits_[1] |= 0x00000800u;
+}
+inline void RPCommonRequest::clear_has_poi() {
+  _has_bits_[1] &= ~0x00000800u;
+}
+inline void RPCommonRequest::clear_poi() {
+  poi_ = GOOGLE_LONGLONG(0);
+  clear_has_poi();
+}
+inline ::google::protobuf::int64 RPCommonRequest::poi() const {
+  return poi_;
+}
+inline void RPCommonRequest::set_poi(::google::protobuf::int64 value) {
+  set_has_poi();
+  poi_ = value;
+}
+
+// optional bool should_set_di = 45 [default = false];
+inline bool RPCommonRequest::has_should_set_di() const {
+  return (_has_bits_[1] & 0x00001000u) != 0;
+}
+inline void RPCommonRequest::set_has_should_set_di() {
+  _has_bits_[1] |= 0x00001000u;
+}
+inline void RPCommonRequest::clear_has_should_set_di() {
+  _has_bits_[1] &= ~0x00001000u;
+}
+inline void RPCommonRequest::clear_should_set_di() {
+  should_set_di_ = false;
+  clear_has_should_set_di();
+}
+inline bool RPCommonRequest::should_set_di() const {
+  return should_set_di_;
+}
+inline void RPCommonRequest::set_should_set_di(bool value) {
+  set_has_should_set_di();
+  should_set_di_ = value;
 }
 
 // -------------------------------------------------------------------
@@ -5249,6 +5541,28 @@ inline ::std::string* RPCommonResponse::release_gift_cart_id() {
     gift_cart_id_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
   }
+}
+
+// optional int32 is_transcode = 11;
+inline bool RPCommonResponse::has_is_transcode() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+inline void RPCommonResponse::set_has_is_transcode() {
+  _has_bits_[0] |= 0x00000400u;
+}
+inline void RPCommonResponse::clear_has_is_transcode() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline void RPCommonResponse::clear_is_transcode() {
+  is_transcode_ = 0;
+  clear_has_is_transcode();
+}
+inline ::google::protobuf::int32 RPCommonResponse::is_transcode() const {
+  return is_transcode_;
+}
+inline void RPCommonResponse::set_is_transcode(::google::protobuf::int32 value) {
+  set_has_is_transcode();
+  is_transcode_ = value;
 }
 
 

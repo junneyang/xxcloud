@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,74 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-MainDialog.class
-file
-
-
-
-
-2014-11-17T07:12:25.000000Z
-e31fc7af7d2b01caac7e9087dd160feb
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2424
-
-LogFileOutputStream$2.class
-file
-
-
-
-
-2014-11-17T07:12:27.000000Z
-0337ad4125af5f6b54194089e94312c7
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-586
 
 JNLPMain.class
 file
@@ -375,6 +307,9 @@ dir
 scripts
 dir
 
+help
+dir
+
 Main.class
 file
 
@@ -408,9 +343,6 @@ has-props
 
 
 19577
-
-help
-dir
 
 css
 dir
@@ -556,4 +488,72 @@ has-props
 
 
 788
+
+MainDialog.class
+file
+
+
+
+
+2014-11-17T07:12:25.000000Z
+e31fc7af7d2b01caac7e9087dd160feb
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2424
+
+LogFileOutputStream$2.class
+file
+
+
+
+
+2014-11-17T07:12:27.000000Z
+0337ad4125af5f6b54194089e94312c7
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+586
 

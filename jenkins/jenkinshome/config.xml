@@ -39,29 +39,29 @@
     </slave>
     <slave>
       <name>linqiaoying</name>
-      <remoteFS>/home/users/linqiaoying/upps_test/InterfaceTest/sofa/buy2buy/tool</remoteFS>
-      <numExecutors>2</numExecutors>
+      <description></description>
+      <remoteFS>/home/users/linqiaoying/tool/pbupdate</remoteFS>
+      <numExecutors>1</numExecutors>
       <mode>NORMAL</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.slaves.JNLPLauncher"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
+        <host>10.99.18.33</host>
+        <port>22</port>
+        <credentialsId>d8bcd2d0-416a-4930-84a1-2d878a1c2cec</credentialsId>
+        <maxNumRetries>0</maxNumRetries>
+        <retryWaitTime>0</retryWaitTime>
+      </launcher>
       <label>linqiaoying</label>
       <nodeProperties/>
       <userId>anonymous</userId>
     </slave>
     <slave>
       <name>maguojun</name>
-      <description></description>
-      <remoteFS>/home/users/maguojun/xingneng/</remoteFS>
+      <remoteFS>/home/users/maguojun/tool</remoteFS>
       <numExecutors>2</numExecutors>
       <mode>NORMAL</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.9">
-        <host>10.95.43.38</host>
-        <port>22</port>
-        <credentialsId>5d461c09-2a8f-4a63-978a-4c536ccb5d65</credentialsId>
-        <maxNumRetries>0</maxNumRetries>
-        <retryWaitTime>0</retryWaitTime>
-      </launcher>
+      <launcher class="hudson.slaves.JNLPLauncher"/>
       <label>maguojun</label>
       <nodeProperties/>
       <userId>anonymous</userId>

@@ -1,6 +1,8 @@
-[11/15/14 10:53:40] [SSH] Opening SSH connection to 10.48.55.39:22.
-[11/15/14 10:53:41] [SSH] Authentication successful.
-[11/15/14 10:53:41] [SSH] The remote users environment is:
+[11/17/14 15:12:46] [SSH] Opening SSH connection to 10.48.55.39:22.
+[11/17/14 15:12:53] [SSH] Authentication successful.
+[11/17/14 15:12:53] [SSH] The remote users environment is:
+ANT_HOME=/home/tools/tools/ant/apache-ant-1.6.5
+ANT_HOME_1_7=/home/tools/tools/ant/apache-ant-1.7.1
 BASH=/bin/bash
 BASH_ARGC=()
 BASH_ARGV=()
@@ -24,6 +26,8 @@ IFS=$' \t\n'
 J2REDIR=/home/users/yangjun03/.jumbo/opt/sun-java7/jre
 J2SDKDIR=/home/users/yangjun03/.jumbo/opt/sun-java7
 JAVA_HOME=/home/users/yangjun03/.jumbo/opt/sun-java7
+JAVA_HOME_1_5=/home/tools/tools/java/jdk1.5.0_07
+JAVA_HOME_1_6=/home/tools/tools/java/jdk1.6.0_20
 JUMBO_HADOOP_CONF_DIR=/home/users/yangjun03/.jumbo/etc/hadoop-client
 JUMBO_HADOOP_HOME=/home/users/yangjun03/.jumbo/opt/hadoop-client
 JUMBO_HIVE_CONF_DIR=/home/users/yangjun03/.jumbo/etc/hive
@@ -34,22 +38,25 @@ LD_LIBRARY_PATH=/home/users/yangjun03/libevent/libevent-2.0.20-stable/installdir
 LESSOPEN='|/usr/bin/lesspipe.sh %s'
 LOGNAME=yangjun03
 LS_COLORS=
+MAC=64
 MACHTYPE=x86_64-redhat-linux-gnu
 MAIL=/var/mail/yangjun03
-MANPATH=/home/users/yangjun03/.jumbo/opt/sun-java7/man:/home/users/yangjun03/.jumbo/opt/sun-java6/man:/home/users/yangjun03/.jumbo/share/man:/usr/kerberos/man:/usr/local/share/man:/usr/share/man/en:/usr/share/man:/usr/X11R6/man
+MANPATH=/home/users/yangjun03/.jumbo/opt/sun-java7/man:/home/users/yangjun03/.jumbo/opt/sun-java6/man:/home/users/yangjun03/.jumbo/share/man:/home/tools/tools/php/5.2.17/64/man:/usr/kerberos/man:/usr/local/share/man:/usr/share/man/en:/usr/share/man:/usr/X11R6/man
+MAVEN_2_2_1=/home/tools/tools/maven/apache-maven-2.2.1/bin
+MAVEN_3_0_4=/home/tools/tools/maven/apache-maven-3.0.4/bin
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
-PATH=/home/users/yangjun03/.jumbo/opt/sun-java7/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/db/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/db/bin:/home/users/yangjun03/.jumbo/bin/core_perl:/home/users/yangjun03/.jumbo/bin/site_perl:/home/users/yangjun03/.jumbo/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin:/home/users/yangjun03/.jumbo/bin/vendor_perl
+PATH=/home/users/yangjun03/.jumbo/opt/sun-java7/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java7/db/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/jre/bin:/home/users/yangjun03/.jumbo/opt/sun-java6/db/bin:/home/users/yangjun03/.jumbo/bin/core_perl:/home/users/yangjun03/.jumbo/bin/site_perl:/home/users/yangjun03/.jumbo/bin:/home/tools/tools/svn/1.6.5/64/bin:/home/tools/tools/scmtools/usr/bin:/home/tools/tools/../bin/64/:/home/tools/tools/maven/apache-maven-2.2.0/bin:/home/tools/tools/ant/apache-ant-1.6.5/bin:/home/tools/tools/ant/apache-ant-1.7.1/bin:/home/tools/tools/php/5.2.17/64/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/opt/bin:/home/opt/bin:/home/users/yangjun03/.jumbo/bin/vendor_perl
 PIPESTATUS=([0]="0")
-PPID=5194
+PPID=5643
 PS4='+ '
 PWD=/home/users/yangjun03
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=1
-SSH_CLIENT='10.48.55.39 29521 22'
-SSH_CONNECTION='10.48.55.39 29521 10.48.55.39 22'
+SSH_CLIENT='10.48.55.39 46483 22'
+SSH_CONNECTION='10.48.55.39 46483 10.48.55.39 22'
 SUPPORTED=en_US.UTF-8:en_US:en
 TERM=dumb
 UID=16897
@@ -297,17 +304,19 @@ jumbo ()
         hash -r;
     fi
 }
-[11/15/14 10:53:41] [SSH] Checking java version of java
-[11/15/14 10:53:41] [SSH] java -version returned 1.7.0_51.
-[11/15/14 10:53:41] [SSH] Starting sftp client.
-[11/15/14 10:53:41] [SSH] Copying latest slave.jar...
-[11/15/14 10:53:41] [SSH] Copied 439,117 bytes.
+[11/17/14 15:12:53] [SSH] Checking java version of java
+[11/17/14 15:12:53] [SSH] java -version returned 1.7.0_51.
+[11/17/14 15:12:53] [SSH] Starting sftp client.
+[11/17/14 15:12:53] [SSH] Copying latest slave.jar...
+[11/17/14 15:12:54] [SSH] Copied 439,584 bytes.
 Expanded the channel window size to 4MB
-[11/15/14 10:53:41] [SSH] Starting slave process: cd "/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome" && java  -jar slave.jar
+[11/17/14 15:12:54] [SSH] Starting slave process: cd "/home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome" && java  -jar slave.jar
 <===[JENKINS REMOTING CAPACITY]===>   channel started
-Slave.jar version: 2.47
+Slave.jar version: 2.48
 This is a Unix slave
+Evacuated stdout
 Slave successfully connected and online
-channel stopped
 Connection terminated
-[11/17/14 15:12:23] [SSH] Connection closed.
+channel stopped
+Slave JVM has terminated. Exit code=0
+[11/26/14 12:06:22] [SSH] Connection closed.

@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/app-test/search/lbs-stat/!svn/ver/5160/trunk/upps_test/jenkinsFramework/protobuf/data
-END
-nuomi_benchmark_json.data
-K 25
-svn:wc:ra_dav:version-url
-V 112
-/app-test/search/lbs-stat/!svn/ver/4335/trunk/upps_test/jenkinsFramework/protobuf/data/nuomi_benchmark_json.data
+/app-test/search/lbs-stat/!svn/ver/5249/trunk/upps_test/jenkinsFramework/protobuf/data
 END
 item_function_json.data
 K 25
@@ -27,6 +21,12 @@ svn:wc:ra_dav:version-url
 V 113
 /app-test/search/lbs-stat/!svn/ver/4622/trunk/upps_test/jenkinsFramework/protobuf/data/bnitems_function_json.data
 END
+bntest.data
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/app-test/search/lbs-stat/!svn/ver/5249/trunk/upps_test/jenkinsFramework/protobuf/data/bntest.data
+END
 tmp.data
 K 25
 svn:wc:ra_dav:version-url
@@ -44,4 +44,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 93
 /app-test/search/lbs-stat/!svn/ver/5160/trunk/upps_test/jenkinsFramework/protobuf/data/README
+END
+nuomi_benchmark_json.data
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/app-test/search/lbs-stat/!svn/ver/4335/trunk/upps_test/jenkinsFramework/protobuf/data/nuomi_benchmark_json.data
 END

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>jQuery消息框demo</title>
+  <link rel="stylesheet" type="text/css" href="ui.css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="ui.js"></script>
+</head>
+<body>
+<script>
+// 确认选择框
+function ConfirmBox()
+{
+	options = {'onClickYes':function(){location.href = "http://www.okbase.net";}};
+	MessageBox('confirm', "你确定访问好库编程网吗？", '提示', options);
+}
+</script>
+<ul>
+<li><a href="javascript:void(0)" onclick="MessageBox('notice','任务进行中...', '这是标题');">提示框</a></li>
+<li><a href="javascript:void(0)" onclick="MessageBox('warning', '请输入内容');">告警框</a></li>
+<li><a href="javascript:void(0)" onclick="ConfirmBox();">确认选择框</a></li>
+<li><a href="javascript:void(0)" onclick="show_message('自动消失吧');">自动消失的提示框</a></li>
+<li><a href="javascript:void(0)" onclick="showDialog('mydialog1', 'ajax', '发送信息', {url:'ajaxtest.html'}, 590);">Ajax取得HTML，显示到页面上</a></li>
+</ul>
+<!-- show_message_area是必须的哦 -->
+<div id="show_message_area"></div>
+<br />
+<a href="http://www.okbase.net" target="_blank">好库编程网</a>
+</body>
+</html>

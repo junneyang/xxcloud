@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/template/conf
+END
+conf.testdata.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/template/conf/conf.testdata.html
+END
+conf.testsrv.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/template/conf/conf.testsrv.html
+END
+conf.adddata.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/template/conf/conf.adddata.html
+END
+conf.addsrv.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/template/conf/conf.addsrv.html
+END

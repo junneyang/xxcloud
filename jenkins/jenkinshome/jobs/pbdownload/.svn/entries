@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/jobs/pbdownload
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-24T10:24:34.940865Z
-5157
+2014-11-25T08:32:17.496623Z
+5186
 yangjun03
 
 
@@ -26,6 +26,40 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+lastStable
+file
+
+
+
+
+2014-11-25T02:26:52.000000Z
+c0e2bc825a69b4e51c56530b1a5989d2
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22
+
 builds
 dir
 
@@ -35,7 +69,7 @@ file
 
 
 
-2014-11-21T02:23:01.000000Z
+2014-11-25T02:26:52.000000Z
 c067bc4fabe49d776b3ca8806709a7e6
 2014-11-24T10:24:34.940865Z
 5157
@@ -103,10 +137,10 @@ file
 
 
 
-2014-11-21T02:23:01.000000Z
-52ee216e7ea72db74e87cc1819fc6c59
-2014-11-24T10:24:34.940865Z
-5157
+2014-11-25T02:26:52.000000Z
+650a1c9c9baa20730b4fcfdbe4cdc135
+2014-11-25T08:32:17.496623Z
+5186
 yangjun03
 
 
@@ -130,38 +164,4 @@ yangjun03
 
 
 4
-
-lastStable
-file
-
-
-
-
-2014-11-21T02:23:01.000000Z
-c0e2bc825a69b4e51c56530b1a5989d2
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-svn:special
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-22
 

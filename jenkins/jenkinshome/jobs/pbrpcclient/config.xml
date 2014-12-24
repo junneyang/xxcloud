@@ -37,11 +37,6 @@
           <ignoreOfflineNodes>false</ignoreOfflineNodes>
           <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
         </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>WorkPath</name>
-          <description>必填。工作路径。如：/home/users/yangjun03/workspace。</description>
-          <defaultValue></defaultValue>
-        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>PBTYPE</name>
           <description>必填。pbrpc的类型，支持PUBLIC-PBRPC、SOFA-PBRPC、HULU-PBRPC。默认为PUBLIC-PBRPC。</description>
@@ -108,7 +103,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd ${WorkPath}/pb &amp;&amp; ./pbrpcclient ${PBTYPE} ${IPPORT} ${ServiceName} ${MethodName} &quot;${TestData}&quot;</command>
+      <command>cd ../../pb &amp;&amp; ./pbrpcclient ${PBTYPE} ${IPPORT} ${ServiceName} ${MethodName} &quot;${TestData}&quot;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

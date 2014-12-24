@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/plugins/scm-api/WEB-INF/lib
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,40 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-findbugs-annotations-1.3.9-1.jar
-file
-
-
-
-
-2013-10-03T09:26:12.000000Z
-70fda5202eb9d9ce4f250f2c2ba71152
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-15322
 
 jcip-annotations-1.0.jar
 file
@@ -161,4 +127,38 @@ has-props
 
 
 30717
+
+findbugs-annotations-1.3.9-1.jar
+file
+
+
+
+
+2013-10-03T09:26:12.000000Z
+70fda5202eb9d9ce4f250f2c2ba71152
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15322
 

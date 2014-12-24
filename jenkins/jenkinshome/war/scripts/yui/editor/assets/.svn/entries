@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/scripts/yui/editor/assets
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -26,7 +26,10 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
-editor-core.css
+skins
+dir
+
+simpleeditor-core.css
 file
 
 
@@ -60,10 +63,7 @@ yangjun03
 
 16539
 
-skins
-dir
-
-simpleeditor-core.css
+editor-core.css
 file
 
 

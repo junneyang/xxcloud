@@ -1,0 +1,20 @@
+[
+	{
+		"header": {
+			"subservice":"sub",
+			"secretkey": "pass",
+			"servicekey": "key1"
+		},
+		"algorithmId": "bnitems",
+		"source": 0,
+		"userid": "xuxingjun",
+		"cuid": "hitskyer"
+		"baidu_id": "",
+		"nm_key": "",
+		"coor_sys"; "baidu",
+		"x": 13548484.31,
+		"y": 3452872.76,
+		"area_id": 180,
+		"item_ids": ["8874604360821801178"]
+	}
+]

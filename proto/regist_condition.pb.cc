@@ -46,6 +46,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* StrMatchRule_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   StrMatchRule_reflection_ = NULL;
+const ::google::protobuf::Descriptor* LeaveTimeRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LeaveTimeRule_reflection_ = NULL;
 const ::google::protobuf::Descriptor* Rule_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   Rule_reflection_ = NULL;
@@ -226,8 +229,23 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(StrMatchRule));
-  Rule_descriptor_ = file->message_type(9);
-  static const int Rule_offsets_[9] = {
+  LeaveTimeRule_descriptor_ = file->message_type(9);
+  static const int LeaveTimeRule_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LeaveTimeRule, leave_time_),
+  };
+  LeaveTimeRule_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      LeaveTimeRule_descriptor_,
+      LeaveTimeRule::default_instance_,
+      LeaveTimeRule_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LeaveTimeRule, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LeaveTimeRule, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(LeaveTimeRule));
+  Rule_descriptor_ = file->message_type(10);
+  static const int Rule_offsets_[10] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, location_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, time_),
@@ -236,6 +254,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, is_stay_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, poi_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, aoi_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, leave_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Rule, str_rule_),
   };
   Rule_reflection_ =
@@ -249,11 +268,12 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(Rule));
-  Condition_descriptor_ = file->message_type(10);
-  static const int Condition_offsets_[3] = {
+  Condition_descriptor_ = file->message_type(11);
+  static const int Condition_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Condition, rules_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Condition, append_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Condition, tag_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Condition, prod_tag_),
   };
   Condition_reflection_ =
     new ::google::protobuf::internal::GeneratedMessageReflection(
@@ -266,7 +286,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(Condition));
-  RegistInfo_descriptor_ = file->message_type(11);
+  RegistInfo_descriptor_ = file->message_type(12);
   static const int RegistInfo_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistInfo, cuid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistInfo, cond_),
@@ -282,7 +302,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(RegistInfo));
-  RegistConditionRequest_descriptor_ = file->message_type(12);
+  RegistConditionRequest_descriptor_ = file->message_type(13);
   static const int RegistConditionRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistConditionRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistConditionRequest, regist_info_),
@@ -299,7 +319,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(RegistConditionRequest));
-  RegistConditionResponse_descriptor_ = file->message_type(13);
+  RegistConditionResponse_descriptor_ = file->message_type(14);
   static const int RegistConditionResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistConditionResponse, is_success_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegistConditionResponse, num_),
@@ -316,7 +336,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(RegistConditionResponse));
-  Trigger_descriptor_ = file->message_type(14);
+  Trigger_descriptor_ = file->message_type(15);
   static const int Trigger_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Trigger, tag_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Trigger, post_url_),
@@ -332,7 +352,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(Trigger));
-  SetTriggerRequest_descriptor_ = file->message_type(15);
+  SetTriggerRequest_descriptor_ = file->message_type(16);
   static const int SetTriggerRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetTriggerRequest, header_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetTriggerRequest, trigger_),
@@ -349,7 +369,7 @@ void protobuf_AssignDesc_regist_5fcondition_2eproto() {
       ::google::protobuf::DescriptorPool::generated_pool(),
       ::google::protobuf::MessageFactory::generated_factory(),
       sizeof(SetTriggerRequest));
-  SetTriggerResponse_descriptor_ = file->message_type(16);
+  SetTriggerResponse_descriptor_ = file->message_type(17);
   static const int SetTriggerResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetTriggerResponse, is_success_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetTriggerResponse, num_),
@@ -399,6 +419,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     StrMatchRule_descriptor_, &StrMatchRule::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    LeaveTimeRule_descriptor_, &LeaveTimeRule::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     Rule_descriptor_, &Rule::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
     Condition_descriptor_, &Condition::default_instance());
@@ -437,6 +459,8 @@ void protobuf_ShutdownFile_regist_5fcondition_2eproto() {
   delete AoiRule_reflection_;
   delete StrMatchRule::default_instance_;
   delete StrMatchRule_reflection_;
+  delete LeaveTimeRule::default_instance_;
+  delete LeaveTimeRule_reflection_;
   delete Rule::default_instance_;
   delete Rule_reflection_;
   delete Condition::default_instance_;
@@ -475,43 +499,46 @@ void protobuf_AddDesc_regist_5fcondition_2eproto() {
     "(\001\022\r\n\005poi_y\030\003 \001(\001\022\r\n\005poi_r\030\004 \001(\001\022\017\n\007poi_"
     "tag\030\005 \001(\t\"*\n\007AoiRule\022\016\n\006aoi_id\030\001 \001(\t\022\017\n\007"
     "aoi_tag\030\002 \001(\t\">\n\014StrMatchRule\022.\n\tstr_rul"
-    "es\030\001 \003(\0132\033.lbs.da.openservice.NameVal\"\264\003"
-    "\n\004Rule\022*\n\004type\030\001 \002(\0162\034.lbs.da.openservic"
-    "e.RuleType\0222\n\010location\030\002 \001(\0132 .lbs.da.op"
-    "enservice.LocationRule\022*\n\004time\030\003 \001(\0132\034.l"
-    "bs.da.openservice.TimeRule\022.\n\006source\030\004 \001"
-    "(\0132\036.lbs.da.openservice.SourceRule\0227\n\013tr"
-    "aj_status\030\005 \001(\0132\".lbs.da.openservice.Tra"
-    "jStatusRule\022/\n\007is_stay\030\006 \001(\0132\036.lbs.da.op"
-    "enservice.IsStayRule\022(\n\003poi\030\007 \001(\0132\033.lbs."
-    "da.openservice.PoiRule\022(\n\003aoi\030\010 \001(\0132\033.lb"
-    "s.da.openservice.AoiRule\0222\n\010str_rule\030d \001"
-    "(\0132 .lbs.da.openservice.StrMatchRule\"Q\n\t"
-    "Condition\022\'\n\005rules\030\001 \003(\0132\030.lbs.da.opense"
-    "rvice.Rule\022\016\n\006append\030\002 \001(\t\022\013\n\003tag\030\003 \001(\t\""
-    "G\n\nRegistInfo\022\014\n\004cuid\030\001 \001(\t\022+\n\004cond\030\002 \001("
-    "\0132\035.lbs.da.openservice.Condition\"\262\001\n\026Reg"
-    "istConditionRequest\0221\n\006header\030\001 \002(\0132!.lb"
-    "s.da.openservice.RequestHeader\0223\n\013regist"
-    "_info\030\002 \003(\0132\036.lbs.da.openservice.RegistI"
-    "nfo\0220\n\toperation\030\003 \002(\0162\035.lbs.da.openserv"
-    "ice.Operation\"I\n\027RegistConditionResponse"
-    "\022\022\n\nis_success\030\001 \001(\010\022\013\n\003num\030\002 \001(\005\022\r\n\005err"
-    "or\030\003 \001(\t\"(\n\007Trigger\022\013\n\003tag\030\001 \001(\t\022\020\n\010post"
-    "_url\030\002 \001(\t\"\246\001\n\021SetTriggerRequest\0221\n\006head"
-    "er\030\001 \002(\0132!.lbs.da.openservice.RequestHea"
-    "der\022,\n\007trigger\030\002 \003(\0132\033.lbs.da.openservic"
-    "e.Trigger\0220\n\toperation\030\003 \002(\0162\035.lbs.da.op"
-    "enservice.Operation\"D\n\022SetTriggerRespons"
-    "e\022\022\n\nis_success\030\001 \001(\010\022\013\n\003num\030\002 \001(\005\022\r\n\005er"
-    "ror\030\003 \001(\t*\222\001\n\010RuleType\022\021\n\rLOCATION_RULE\020"
-    "\001\022\r\n\tTIME_RULE\020\002\022\017\n\013SOURCE_RULE\020\003\022\023\n\017TRA"
-    "JSTATUS_RULE\020\004\022\017\n\013ISSTAY_RULE\020\005\022\014\n\010POI_R"
-    "ULE\020\006\022\014\n\010AOI_RULE\020\007\022\021\n\rSTRMATCH_RULE\020\010*u"
-    "\n\tOperation\022\n\n\006TO_ADD\020\001\022\r\n\tTO_DELETE\020\002\022\031"
-    "\n\025TO_DELETE_BY_USER_TAG\020\003\022\030\n\024TO_DELETE_B"
-    "Y_POI_TAG\020\004\022\030\n\024TO_DELETE_BY_AOI_TAG\020\005B\002H"
-    "\001", 1921);
+    "es\030\001 \003(\0132\033.lbs.da.openservice.NameVal\"#\n"
+    "\rLeaveTimeRule\022\022\n\nleave_time\030\001 \001(\005\"\353\003\n\004R"
+    "ule\022*\n\004type\030\001 \002(\0162\034.lbs.da.openservice.R"
+    "uleType\0222\n\010location\030\002 \001(\0132 .lbs.da.opens"
+    "ervice.LocationRule\022*\n\004time\030\003 \001(\0132\034.lbs."
+    "da.openservice.TimeRule\022.\n\006source\030\004 \001(\0132"
+    "\036.lbs.da.openservice.SourceRule\0227\n\013traj_"
+    "status\030\005 \001(\0132\".lbs.da.openservice.TrajSt"
+    "atusRule\022/\n\007is_stay\030\006 \001(\0132\036.lbs.da.opens"
+    "ervice.IsStayRule\022(\n\003poi\030\007 \001(\0132\033.lbs.da."
+    "openservice.PoiRule\022(\n\003aoi\030\010 \001(\0132\033.lbs.d"
+    "a.openservice.AoiRule\0225\n\nleave_time\030\t \001("
+    "\0132!.lbs.da.openservice.LeaveTimeRule\0222\n\010"
+    "str_rule\030d \001(\0132 .lbs.da.openservice.StrM"
+    "atchRule\"c\n\tCondition\022\'\n\005rules\030\001 \003(\0132\030.l"
+    "bs.da.openservice.Rule\022\016\n\006append\030\002 \001(\t\022\013"
+    "\n\003tag\030\003 \001(\t\022\020\n\010prod_tag\030\004 \001(\t\"G\n\nRegistI"
+    "nfo\022\014\n\004cuid\030\001 \001(\t\022+\n\004cond\030\002 \001(\0132\035.lbs.da"
+    ".openservice.Condition\"\262\001\n\026RegistConditi"
+    "onRequest\0221\n\006header\030\001 \002(\0132!.lbs.da.opens"
+    "ervice.RequestHeader\0223\n\013regist_info\030\002 \003("
+    "\0132\036.lbs.da.openservice.RegistInfo\0220\n\tope"
+    "ration\030\003 \002(\0162\035.lbs.da.openservice.Operat"
+    "ion\"I\n\027RegistConditionResponse\022\022\n\nis_suc"
+    "cess\030\001 \001(\010\022\013\n\003num\030\002 \001(\005\022\r\n\005error\030\003 \001(\t\"("
+    "\n\007Trigger\022\013\n\003tag\030\001 \001(\t\022\020\n\010post_url\030\002 \001(\t"
+    "\"\246\001\n\021SetTriggerRequest\0221\n\006header\030\001 \002(\0132!"
+    ".lbs.da.openservice.RequestHeader\022,\n\007tri"
+    "gger\030\002 \003(\0132\033.lbs.da.openservice.Trigger\022"
+    "0\n\toperation\030\003 \002(\0162\035.lbs.da.openservice."
+    "Operation\"D\n\022SetTriggerResponse\022\022\n\nis_su"
+    "ccess\030\001 \001(\010\022\013\n\003num\030\002 \001(\005\022\r\n\005error\030\003 \001(\t*"
+    "\246\001\n\010RuleType\022\021\n\rLOCATION_RULE\020\001\022\r\n\tTIME_"
+    "RULE\020\002\022\017\n\013SOURCE_RULE\020\003\022\023\n\017TRAJSTATUS_RU"
+    "LE\020\004\022\017\n\013ISSTAY_RULE\020\005\022\014\n\010POI_RULE\020\006\022\014\n\010A"
+    "OI_RULE\020\007\022\021\n\rSTRMATCH_RULE\020\010\022\022\n\016LEAVETIM"
+    "E_RULE\020\t*u\n\tOperation\022\n\n\006TO_ADD\020\001\022\r\n\tTO_"
+    "DELETE\020\002\022\031\n\025TO_DELETE_BY_USER_TAG\020\003\022\030\n\024T"
+    "O_DELETE_BY_POI_TAG\020\004\022\030\n\024TO_DELETE_BY_AO"
+    "I_TAG\020\005B\002H\001", 2051);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "regist_condition.proto", &protobuf_RegisterTypes);
   NameVal::default_instance_ = new NameVal();
@@ -523,6 +550,7 @@ void protobuf_AddDesc_regist_5fcondition_2eproto() {
   PoiRule::default_instance_ = new PoiRule();
   AoiRule::default_instance_ = new AoiRule();
   StrMatchRule::default_instance_ = new StrMatchRule();
+  LeaveTimeRule::default_instance_ = new LeaveTimeRule();
   Rule::default_instance_ = new Rule();
   Condition::default_instance_ = new Condition();
   RegistInfo::default_instance_ = new RegistInfo();
@@ -540,6 +568,7 @@ void protobuf_AddDesc_regist_5fcondition_2eproto() {
   PoiRule::default_instance_->InitAsDefaultInstance();
   AoiRule::default_instance_->InitAsDefaultInstance();
   StrMatchRule::default_instance_->InitAsDefaultInstance();
+  LeaveTimeRule::default_instance_->InitAsDefaultInstance();
   Rule::default_instance_->InitAsDefaultInstance();
   Condition::default_instance_->InitAsDefaultInstance();
   RegistInfo::default_instance_->InitAsDefaultInstance();
@@ -572,6 +601,7 @@ bool RuleType_IsValid(int value) {
     case 6:
     case 7:
     case 8:
+    case 9:
       return true;
     default:
       return false;
@@ -2917,6 +2947,213 @@ void StrMatchRule::Swap(StrMatchRule* other) {
 // ===================================================================
 
 #ifndef _MSC_VER
+const int LeaveTimeRule::kLeaveTimeFieldNumber;
+#endif  // !_MSC_VER
+
+LeaveTimeRule::LeaveTimeRule()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+}
+
+void LeaveTimeRule::InitAsDefaultInstance() {
+}
+
+LeaveTimeRule::LeaveTimeRule(const LeaveTimeRule& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+}
+
+void LeaveTimeRule::SharedCtor() {
+  _cached_size_ = 0;
+  leave_time_ = 0;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+LeaveTimeRule::~LeaveTimeRule() {
+  SharedDtor();
+}
+
+void LeaveTimeRule::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void LeaveTimeRule::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* LeaveTimeRule::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return LeaveTimeRule_descriptor_;
+}
+
+const LeaveTimeRule& LeaveTimeRule::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_regist_5fcondition_2eproto();  return *default_instance_;
+}
+
+LeaveTimeRule* LeaveTimeRule::default_instance_ = NULL;
+
+LeaveTimeRule* LeaveTimeRule::New() const {
+  return new LeaveTimeRule;
+}
+
+void LeaveTimeRule::Clear() {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    leave_time_ = 0;
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool LeaveTimeRule::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
+  ::google::protobuf::uint32 tag;
+  while ((tag = input->ReadTag()) != 0) {
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional int32 leave_time = 1;
+      case 1: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &leave_time_)));
+          set_has_leave_time();
+        } else {
+          goto handle_uninterpreted;
+        }
+        if (input->ExpectAtEnd()) return true;
+        break;
+      }
+      
+      default: {
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          return true;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+  return true;
+#undef DO_
+}
+
+void LeaveTimeRule::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // optional int32 leave_time = 1;
+  if (has_leave_time()) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->leave_time(), output);
+  }
+  
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+}
+
+::google::protobuf::uint8* LeaveTimeRule::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // optional int32 leave_time = 1;
+  if (has_leave_time()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->leave_time(), target);
+  }
+  
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  return target;
+}
+
+int LeaveTimeRule::ByteSize() const {
+  int total_size = 0;
+  
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional int32 leave_time = 1;
+    if (has_leave_time()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->leave_time());
+    }
+    
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void LeaveTimeRule::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const LeaveTimeRule* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const LeaveTimeRule*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void LeaveTimeRule::MergeFrom(const LeaveTimeRule& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_leave_time()) {
+      set_leave_time(from.leave_time());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void LeaveTimeRule::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LeaveTimeRule::CopyFrom(const LeaveTimeRule& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LeaveTimeRule::IsInitialized() const {
+  
+  return true;
+}
+
+void LeaveTimeRule::Swap(LeaveTimeRule* other) {
+  if (other != this) {
+    std::swap(leave_time_, other->leave_time_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata LeaveTimeRule::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LeaveTimeRule_descriptor_;
+  metadata.reflection = LeaveTimeRule_reflection_;
+  return metadata;
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
 const int Rule::kTypeFieldNumber;
 const int Rule::kLocationFieldNumber;
 const int Rule::kTimeFieldNumber;
@@ -2925,6 +3162,7 @@ const int Rule::kTrajStatusFieldNumber;
 const int Rule::kIsStayFieldNumber;
 const int Rule::kPoiFieldNumber;
 const int Rule::kAoiFieldNumber;
+const int Rule::kLeaveTimeFieldNumber;
 const int Rule::kStrRuleFieldNumber;
 #endif  // !_MSC_VER
 
@@ -2941,6 +3179,7 @@ void Rule::InitAsDefaultInstance() {
   is_stay_ = const_cast< ::lbs::da::openservice::IsStayRule*>(&::lbs::da::openservice::IsStayRule::default_instance());
   poi_ = const_cast< ::lbs::da::openservice::PoiRule*>(&::lbs::da::openservice::PoiRule::default_instance());
   aoi_ = const_cast< ::lbs::da::openservice::AoiRule*>(&::lbs::da::openservice::AoiRule::default_instance());
+  leave_time_ = const_cast< ::lbs::da::openservice::LeaveTimeRule*>(&::lbs::da::openservice::LeaveTimeRule::default_instance());
   str_rule_ = const_cast< ::lbs::da::openservice::StrMatchRule*>(&::lbs::da::openservice::StrMatchRule::default_instance());
 }
 
@@ -2960,6 +3199,7 @@ void Rule::SharedCtor() {
   is_stay_ = NULL;
   poi_ = NULL;
   aoi_ = NULL;
+  leave_time_ = NULL;
   str_rule_ = NULL;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
@@ -2977,6 +3217,7 @@ void Rule::SharedDtor() {
     delete is_stay_;
     delete poi_;
     delete aoi_;
+    delete leave_time_;
     delete str_rule_;
   }
 }
@@ -3027,6 +3268,9 @@ void Rule::Clear() {
     }
   }
   if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    if (has_leave_time()) {
+      if (leave_time_ != NULL) leave_time_->::lbs::da::openservice::LeaveTimeRule::Clear();
+    }
     if (has_str_rule()) {
       if (str_rule_ != NULL) str_rule_->::lbs::da::openservice::StrMatchRule::Clear();
     }
@@ -3155,6 +3399,20 @@ bool Rule::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(74)) goto parse_leave_time;
+        break;
+      }
+      
+      // optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+      case 9: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_leave_time:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_leave_time()));
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectTag(802)) goto parse_str_rule;
         break;
       }
@@ -3239,6 +3497,12 @@ void Rule::SerializeWithCachedSizes(
       8, this->aoi(), output);
   }
   
+  // optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+  if (has_leave_time()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, this->leave_time(), output);
+  }
+  
   // optional .lbs.da.openservice.StrMatchRule str_rule = 100;
   if (has_str_rule()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
@@ -3306,6 +3570,13 @@ void Rule::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         8, this->aoi(), target);
+  }
+  
+  // optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+  if (has_leave_time()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteMessageNoVirtualToArray(
+        9, this->leave_time(), target);
   }
   
   // optional .lbs.da.openservice.StrMatchRule str_rule = 100;
@@ -3383,6 +3654,13 @@ int Rule::ByteSize() const {
     
   }
   if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    // optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+    if (has_leave_time()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->leave_time());
+    }
+    
     // optional .lbs.da.openservice.StrMatchRule str_rule = 100;
     if (has_str_rule()) {
       total_size += 2 +
@@ -3443,6 +3721,9 @@ void Rule::MergeFrom(const Rule& from) {
     }
   }
   if (from._has_bits_[8 / 32] & (0xffu << (8 % 32))) {
+    if (from.has_leave_time()) {
+      mutable_leave_time()->::lbs::da::openservice::LeaveTimeRule::MergeFrom(from.leave_time());
+    }
     if (from.has_str_rule()) {
       mutable_str_rule()->::lbs::da::openservice::StrMatchRule::MergeFrom(from.str_rule());
     }
@@ -3478,6 +3759,7 @@ void Rule::Swap(Rule* other) {
     std::swap(is_stay_, other->is_stay_);
     std::swap(poi_, other->poi_);
     std::swap(aoi_, other->aoi_);
+    std::swap(leave_time_, other->leave_time_);
     std::swap(str_rule_, other->str_rule_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
@@ -3500,6 +3782,7 @@ void Rule::Swap(Rule* other) {
 const int Condition::kRulesFieldNumber;
 const int Condition::kAppendFieldNumber;
 const int Condition::kTagFieldNumber;
+const int Condition::kProdTagFieldNumber;
 #endif  // !_MSC_VER
 
 Condition::Condition()
@@ -3520,6 +3803,7 @@ void Condition::SharedCtor() {
   _cached_size_ = 0;
   append_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   tag_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  prod_tag_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
@@ -3533,6 +3817,9 @@ void Condition::SharedDtor() {
   }
   if (tag_ != &::google::protobuf::internal::kEmptyString) {
     delete tag_;
+  }
+  if (prod_tag_ != &::google::protobuf::internal::kEmptyString) {
+    delete prod_tag_;
   }
   if (this != default_instance_) {
   }
@@ -3568,6 +3855,11 @@ void Condition::Clear() {
     if (has_tag()) {
       if (tag_ != &::google::protobuf::internal::kEmptyString) {
         tag_->clear();
+      }
+    }
+    if (has_prod_tag()) {
+      if (prod_tag_ != &::google::protobuf::internal::kEmptyString) {
+        prod_tag_->clear();
       }
     }
   }
@@ -3627,6 +3919,23 @@ bool Condition::MergePartialFromCodedStream(
         } else {
           goto handle_uninterpreted;
         }
+        if (input->ExpectTag(34)) goto parse_prod_tag;
+        break;
+      }
+      
+      // optional string prod_tag = 4;
+      case 4: {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
+         parse_prod_tag:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_prod_tag()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+            this->prod_tag().data(), this->prod_tag().length(),
+            ::google::protobuf::internal::WireFormat::PARSE);
+        } else {
+          goto handle_uninterpreted;
+        }
         if (input->ExpectAtEnd()) return true;
         break;
       }
@@ -3673,6 +3982,15 @@ void Condition::SerializeWithCachedSizes(
       3, this->tag(), output);
   }
   
+  // optional string prod_tag = 4;
+  if (has_prod_tag()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->prod_tag().data(), this->prod_tag().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      4, this->prod_tag(), output);
+  }
+  
   if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
@@ -3708,6 +4026,16 @@ void Condition::SerializeWithCachedSizes(
         3, this->tag(), target);
   }
   
+  // optional string prod_tag = 4;
+  if (has_prod_tag()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
+      this->prod_tag().data(), this->prod_tag().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->prod_tag(), target);
+  }
+  
   if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
@@ -3731,6 +4059,13 @@ int Condition::ByteSize() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->tag());
+    }
+    
+    // optional string prod_tag = 4;
+    if (has_prod_tag()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->prod_tag());
     }
     
   }
@@ -3775,6 +4110,9 @@ void Condition::MergeFrom(const Condition& from) {
     if (from.has_tag()) {
       set_tag(from.tag());
     }
+    if (from.has_prod_tag()) {
+      set_prod_tag(from.prod_tag());
+    }
   }
   mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
@@ -3804,6 +4142,7 @@ void Condition::Swap(Condition* other) {
     rules_.Swap(&other->rules_);
     std::swap(append_, other->append_);
     std::swap(tag_, other->tag_);
+    std::swap(prod_tag_, other->prod_tag_);
     std::swap(_has_bits_[0], other->_has_bits_[0]);
     _unknown_fields_.Swap(&other->_unknown_fields_);
     std::swap(_cached_size_, other->_cached_size_);

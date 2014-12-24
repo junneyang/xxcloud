@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/package/jenkinsapi-0.2.25/jenkinsapi/utils
+END
+krb_requester.py
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/package/jenkinsapi-0.2.25/jenkinsapi/utils/krb_requester.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/package/jenkinsapi-0.2.25/jenkinsapi/utils/__init__.py
+END
+requester.py
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/app-test/search/lbs-stat/!svn/ver/5213/trunk/upps_test/jenkinsFramework/protobuf/webpb.cf.bak/package/jenkinsapi-0.2.25/jenkinsapi/utils/requester.py
+END

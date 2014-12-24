@@ -1,0 +1,41 @@
+package echo;
+
+option cc_generic_services = true;
+enum EchoEnum
+{
+    DELAY = 0;
+    STOP = 1;
+    CLEAR = 2;
+};
+message EchoRep
+{
+    repeated int64 reint = 1;
+    repeated string restring = 2;
+};
+message EchoRequest
+{
+      required string message = 1;
+      optional int32 index = 2;
+      optional EchoEnum e = 3;
+      repeated int64 reint = 4;
+      repeated EchoRep rerep = 5;
+};
+
+message EchoResponse
+{
+      required string message = 1;
+      optional double pi = 2;
+      optional EchoRequest request = 3;
+};
+
+message EchoNest
+{
+    optional EchoRequest request = 1;
+    optional int64 index = 2;
+    optional bool b = 3;
+};
+service EchoService
+{
+      rpc Echo(EchoRequest) returns (EchoResponse);
+      rpc Http(EchoRequest) returns (EchoResponse);
+};

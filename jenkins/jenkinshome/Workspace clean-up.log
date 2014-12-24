@@ -4,4 +4,5 @@ Checking gearmanjobclient
 Checking gearmanjobstop
 Checking pbdownload
 Checking pbrpcbenchmark
+Deleting /home/users/yangjun03/protobuf/workspace/app-test/search/lbs-stat/upps_test/jenkinsFramework/protobuf/jenkins/slavehome/workspace/pbrpcbenchmark on yangjun03
 Checking pbrpcclient

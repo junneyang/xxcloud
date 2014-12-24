@@ -56,7 +56,7 @@ void callback (google::protobuf::Message* request_msg, google::protobuf::Message
 }
 
 void async_callback(google::protobuf::Message* response_msg, google::protobuf::RpcController* cntl, 
-		int is_output, long para_starttime, google::protobuf::Message* exp_msg) {
+		int is_output, long para_starttime, string current_expjson) {
 	long para_endtime = getCurrentTimeInUSec();
 	double cost_time = (para_endtime - para_starttime)/1000.0;	//us 2 ms
 	pthread_mutex_lock(&mutex);
@@ -73,20 +73,28 @@ void async_callback(google::protobuf::Message* response_msg, google::protobuf::R
 	pthread_mutex_unlock(&mutex);
 	
 	string json_string;
-	string exp_json_string;
 	string error;
-	if (ProtoMessageToJson(*response_msg, &json_string, &error) && ProtoMessageToJson(*exp_msg, &exp_json_string, &error)) {
+	if ( ProtoMessageToJson(*response_msg, &json_string, &error) ) {
 		if (is_output) {
-			cout << json_string << endl;
+			cout << "act output : " << json_string << endl;
+			cout << "exp output : " << current_expjson << endl;
 		}
-		if (json_string.size() == exp_json_string.size()) {
+		//cout << "exp output size : " << current_expjson.size() << endl;
+		
+		if (json_string.size() == current_expjson.size() || current_expjson.size() <= 3) {
 			pthread_mutex_lock(&mutex);
 			total_res += 1;
 			pthread_mutex_unlock(&mutex);
+			if (is_output) {
+				cout << "true" << endl;
+			}
 		} else {
 			pthread_mutex_lock(&mutex);
 			total_err += 1;
 			pthread_mutex_unlock(&mutex);
+			if (is_output) {
+				cout << "false" << endl;
+			}
 		}
 	} else {
 		pthread_mutex_lock(&mutex);
@@ -97,7 +105,7 @@ void async_callback(google::protobuf::Message* response_msg, google::protobuf::R
 	
 	delete cntl;
 	delete response_msg;
-	delete exp_msg;
+	//delete exp_msg;
 	//async_request(rpc_channel, pbrpc_type, service_name, method_name, method, filestr);
 }
 
@@ -120,7 +128,7 @@ void async_request(google::protobuf::RpcChannel *rpc_channel, string pbrpc_type,
 	if (response_msg == NULL) {
 		return;
 	}
-	//构造期望返回
+	/*//构造期望返回
 	google::protobuf::Message* exp_msg = GetMessageByMethodDescriptor(method, false);
 	if (exp_msg == NULL) {
 		return;
@@ -129,7 +137,7 @@ void async_request(google::protobuf::RpcChannel *rpc_channel, string pbrpc_type,
 	} else {
 		cout << "ERROR : json to proto message error" << error << endl;
 		return;
-	}
+	}*/
 	
 	//构造回调
 	google::protobuf::RpcController * cntl;
@@ -148,7 +156,7 @@ void async_request(google::protobuf::RpcChannel *rpc_channel, string pbrpc_type,
 		return;
 	}
 	long para_starttime = getCurrentTimeInUSec();
-	google::protobuf::Closure* done = google::protobuf::NewCallback(&async_callback, response_msg, cntl, is_output, para_starttime, exp_msg);
+	google::protobuf::Closure* done = google::protobuf::NewCallback(&async_callback, response_msg, cntl, is_output, para_starttime, current_expjson);
 	
 	//请求
 	rpc_channel->CallMethod(method, cntl, request_msg, response_msg, done);

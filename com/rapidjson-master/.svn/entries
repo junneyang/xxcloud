@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/com/rapidjson-master
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,49 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+bin
+dir
+
+thirdparty
+dir
+
+.gitmodules
+file
+
+
+
+
+2014-10-29T06:01:40.000000Z
+205f7814d82e7fe1dc25fe3e58571ccf
+2014-10-29T05:59:59.962505Z
+4195
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+121
+
+example
+dir
 
 readme.md
 file
@@ -173,47 +216,4 @@ yangjun03
 
 
 1316
-
-bin
-dir
-
-thirdparty
-dir
-
-.gitmodules
-file
-
-
-
-
-2014-10-29T06:01:40.000000Z
-205f7814d82e7fe1dc25fe3e58571ccf
-2014-10-29T05:59:59.962505Z
-4195
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-121
-
-example
-dir
 

@@ -1,5 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+'''
+hostname='st01-lbs-upps-import00.st01'
+port=22
+username='root'
+password='UIOJKL'
+'''
 
 import paramiko
 

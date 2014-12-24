@@ -1,0 +1,518 @@
+package lbs.da.openservice;
+
+option optimize_for = SPEED;
+/*
+ * 所有请求需要加上鉴权头，暂时预留不做处理
+ */
+ message RequestHeader {
+	optional string servicekey = 1; //区分来源，
+	optional string secretkey = 2; //来源的验证
+	optional string subservice = 3; //区分子来源
+}
+
+message Arg
+{
+	required string name = 1;
+	optional int64 int_v = 2;
+	optional double double_v = 3;
+	optional string str_v = 4;
+	repeated Arg elements = 5;
+}
+
+/*
+ * 所有用户偏好名
+ */
+ message UserPreferenceTags {
+	repeated string values = 1;
+}
+
+message UserPreference {
+	required string tag = 1;
+	optional int32 level = 2; //无此字段表示查找失败
+	optional float value = 3; //无此字段表示查找失败
+	optional string srcType = 4;
+}
+/*
+ *  用户偏好来源类型
+ */
+  enum UserPreferenceSourceType {
+	MAP_CATEGORY = 0; //地图-类目
+	MAP_PRICE = 1; //地图-价格
+	MAP_BRAND = 2; //地图-品牌
+	TUANGOU_CATEGORY = 10; //团购-类目
+	TUANGOU_PRICE = 11; //团购-价格
+	TUANGOU_BRAND = 12; //团购-品牌
+}
+
+message GetUserPreferenceRequest {
+	required RequestHeader header = 1;
+	required string cuid = 2;
+	repeated string srcType = 3;
+	repeated string include_tag = 4; //若tagname为空，则取所有偏好
+	repeated string exclude_tag = 5;
+}
+
+message GetUserPreferenceResponse {
+	repeated UserPreference values = 1;
+}
+/*
+  *用户轨迹状态
+ */
+  enum UserTrajStatus {
+	HOME_STATUS = 0;
+	COMPANY_STATUS = 1;
+	AREA_STATUS = 2;
+	LOCAL_STATUS = 3;
+	EWORK_STATUS = 4; //E开头状态标识为外地
+	ETRAVEL_STATUS = 5;
+	EFAMILY_STATUS = 6;
+	ELOW_STATUS = 7;
+	EHIGH_STATUS = 8;
+	ENEW_STATUS = 9;
+	UNKNOW_STATUS = 100;
+}
+/*
+ *  常驻点
+ */
+ message RegularStayPoint {
+	required UserTrajStatus type = 1;
+	required double longitude = 2; //经度
+	required double latitude = 3; //维度
+	optional double radius = 4; //半径
+	optional int32 areaid = 5;
+}
+
+message GetRegularStayPointRequest {
+	required RequestHeader header = 1;
+	required string cuid = 2;
+	repeated UserTrajStatus type = 3; //指定类型
+	optional double x = 4;
+	optional double y = 5;
+}
+
+message GetRegularStayPointResponse {
+	repeated RegularStayPoint value = 1;
+}
+
+message Item {
+	required string id = 1;
+	repeated double value = 2;
+	repeated string str_value = 3;
+}
+
+message ItemBytes {
+	required string id = 1;
+	repeated double value = 2;
+	repeated bytes str_value = 3;
+}
+
+message GetItemsByItemRequest {
+	required RequestHeader header = 1;
+	/*
+     * algorithmId取下面19种，含义另有接口文档定义
+     * rule_sim_poi
+     * rule_sim_td   //团单
+     * rule_sim_br    //品牌
+     * rule_rev_poi
+     * rule_rev_td    //团单
+     * rule_rev_br    //品牌
+     * rule_sr_poi
+     * rule_sr_td   //团单
+     * rule_sr_br    //品牌
+     * topic_sim_poi
+     * topic_sim_td   //团单
+     * topic_sim_br    //品牌
+     * topic_rev_poi
+     * topic_rev_td    //团单
+     * topic_rev_br    //品牌
+     * topic_sr_poi
+     * topic_sr_td    //团单
+     * topic_sr_br    //品牌
+     * lda_ar
+     */
+    optional string algorithmId = 2;
+	repeated string item_ids = 3; //可指定多个item id
+	optional string userid = 4;
+	optional string useridtype = 5;
+	optional int32 limit = 6;
+	repeated Arg args = 7;
+}
+
+message GetItemsByItemResponse {
+	repeated Item items = 1;
+	optional string userid = 2;
+	optional string algorithmId = 3;
+	optional string uniqId = 4;
+	optional string bid = 5;
+	repeated Arg args = 6;
+}
+
+message GetBNItemsRequest {
+	required RequestHeader header = 1;      // 请求头部
+
+	optional bytes algorithmId = 2;       // 算法id，soul内部使用
+	optional int32 limit = 3;               // 建议返回结果最大返回多少个poi
+
+    // 以下字段意义跟“AS与RP的通信协议” 字段一致
+	optional int32 source = 4;             // 来源 0为app 1为pc
+	optional bytes userid = 5;             // 用户id，详细对应参看 AS与RP的通信协议
+	optional bytes cuid = 6;               //
+	optional bytes baidu_id = 7;
+	optional bytes nm_key = 8;
+	optional bytes useridtype = 9;         // userid对应的id体系类型，保留字段
+
+	optional bytes coor_sys = 10;            // 坐标体系，
+	optional float x = 11;                   // 对应为na端时，摩卡托坐标x
+	optional float y = 12;                   // 对应为na端时，摩卡托坐标y
+	optional int64 area_id = 13;             // 对应pc或者na端，用户所在的城市id
+
+	optional bytes query = 14;
+	repeated int64 vec_catg = 15;
+	repeated int64 vec_subcatg = 16;
+	repeated int64 vec_thdcatg = 17;
+	repeated int64 vec_shop_dist = 18;
+	repeated int64 vec_shop_range = 19;
+
+	repeated bytes item_ids = 20;            // 百糯qrw识别出来的请求poi id，允许多个，必定不能为空
+	optional int32 item_id_format = 21;      // 0为字符串可视格式， 1为uint64_t格式
+
+	repeated int64 qrw_vec_brand_id = 22;
+	repeated int64 qrw_vec_thdcatg = 23;
+	repeated int64 qrw_vec_subcatg = 24;
+	repeated int64 qrw_vec_catg = 25;
+	repeated int64 qrw_vec_shop_city = 26;
+	repeated int64 qrw_vec_shop_dist = 27;
+	repeated int64 qrw_vec_shop_range = 28;
+
+	repeated Arg args = 29;                 // 可扩展字段
+}
+
+message GetBNItemsResponse {
+	repeated ItemBytes items = 1;             // Item的id为推荐的poi
+	optional bytes userid = 2;          // 根据请求回填的userid
+	optional bytes algorithmId = 3;
+	optional bytes uniqId = 4;
+	optional bytes bid = 5;
+	repeated Arg args = 6;
+}
+
+//实时用户状态信息
+message GetLatestUserTrajRequest {
+	required RequestHeader header = 1;
+	required string cuid = 2;
+}
+
+message GetLatestUserTrajResponse {
+	optional UserTrajStatus status = 1; //状态
+	optional bool is_sticked = 2; //是否停留
+	optional double longitude = 3; //经度
+	optional double latitude = 4; //维度
+	optional int64 start_time = 5; //开始时间， unix秒时间戳
+	optional int64 update_time = 6; //最近更新时间， unix秒时间戳
+	optional int32 staytime = 7; //停留时长
+}
+
+/*
+ * 统计相关
+ */
+message StatElement {
+    required string stat_key = 1;
+    required int64 value = 2;
+}
+
+message StatReportRequest {
+    required RequestHeader header = 1;
+    repeated StatElement items = 2;
+}
+
+message StatReportResponse {
+    repeated StatElement items = 1;
+}
+
+/*
+ *旅游接口-V1.0
+ */
+message DayRoute{
+    repeated string lv_id = 1;//每天旅游景点 -1表示都在路上
+    optional double scene_dura_time = 2; //每天总共游玩时间
+    repeated string cater = 3;
+    repeated string hotel = 4;
+}
+
+message DynamicTripPlanRequest {
+    required RequestHeader header = 1;
+    repeated string lv_id = 2;//输入旅游路线
+    optional string userid = 3;
+    repeated string cater = 4;
+    repeated string hotel = 5;
+    repeated Arg args = 6;
+}
+
+message DynamicTripPlanResponse {
+    required int32 status = 1;           //-1 表示计划出错, -2 表示景点太多.
+    required int64 total_distance = 2;   //总路线长度
+    repeated string lv_id = 3;           //最优旅游路线规划
+    repeated DayRoute dayroute = 4;      //分天游玩
+    repeated string origin_lv_id = 5;    //输入旅游路线
+    optional string userid = 6;
+    optional string uniq_id = 7;
+    repeated Arg args = 8;
+}
+
+
+/*
+ *旅游接口-V2.0
+ */
+message DayRouteInfo{
+    repeated string lv_id = 1;//排好序的景点id列表；每天旅游景点 -1表示都在路上
+    optional double scene_dura_time = 2; //每天总共游玩时间
+    repeated string cater = 3;           //当天可去的餐馆
+    repeated string hotel = 4;           //当天可住的酒店
+	repeated string lvid_cater_hotel = 5;//排好序的景点、餐饮、酒店id列表
+	optional string opt_json_str = 6;    //备用的json字符串，支持可扩展
+	repeated Arg args = 7;
+}
+
+message LvTripPlanRequest {
+    required RequestHeader header = 1;
+    repeated string lv_id = 2;//输入的景点id列表
+    optional string userid = 3;
+	optional string algorithmId = 4;
+    repeated string cater = 5;//餐馆bid列表
+    repeated string hotel = 6;//酒店bid列表
+	optional string opt_json_str = 7; //备用的json字符串，支持可扩展
+	repeated Arg args = 8;
+}
+
+message LvTripPlanResponse {
+    required int32 status = 1;        //-1 表示输入景点均不存在, -2 表示景点太多.
+    required int64 original_total_distance = 2; //原路线总路程
+	required int64 original_total_time = 3;     //原路线总游玩时间
+	required int64 planned_total_distance = 4;  //优化后路线总路程
+	required int64 planned_total_time = 5;      //优化后路线总游玩时间
+	
+    repeated string lv_id = 8;           //路线优化后的景点id列表
+    repeated DayRouteInfo dayroute = 9;  //路线分天信息
+    repeated string origin_lv_id = 10;   //输入的原始景点id列表
+    optional string userid = 11;
+    optional string uniq_id = 12;
+	optional string opt_json_str = 13;   //备用的json字符串，支持可扩展
+	repeated Arg args = 14;
+}
+
+
+//place semantic
+message WifiFinger {
+    optional string mac_addr = 1;   //string格式mac地址， 和int格式设置一个即可
+    optional int64  int_mac = 2;    //int64格式的地址
+    required int32 strength = 3;      //信号强度
+}
+message PlaceSemanticRequest {
+    required RequestHeader header = 1;
+    repeated WifiFinger wifi = 2;   //wifi指纹列表
+    optional double longitude = 3;  //百度墨卡托经度
+    optional double latitude = 4;   //百度墨卡托维度	
+	optional string cuid = 5;       //not used
+	optional int32 accuracy = 6;     //经维度半径精度
+	optional double similarity_threadhold = 7;   //相似度阈值
+}
+message PoiProbability {
+    required string poi = 1;        //poi id
+    required double probability = 2;    //概率，0-1
+    optional string name = 3;       //poi name
+}
+message PlaceSemanticResponse {
+    //repeated string aoi_id = 1;            
+    repeated PoiProbability poi_prob_list = 2;        
+}
+
+
+message POIMatchRequest {
+    required RequestHeader header = 1;
+    required bytes wifi_finger = 2;   //wifi指纹列表, 二进制存储 
+	optional string poi = 3;
+	optional int32 match_finger_offset = 5;
+}
+message POIMatchResponse {
+    optional PoiProbability prob = 1;        
+}
+
+//nuomi userpreference
+enum RequestIdType
+{
+    PASSPORT_ID = 1;
+    BAIDU_ID = 2;
+    CUID = 3;
+    IMEI = 4;
+}
+
+enum NuomiDataType
+{
+	NUOMI_OFFLINE = 1;
+	NUOMI_ONLINE = 2;
+	NUOMI_ALL = 3;
+	ITEM_OFFLINE = 4;
+	NUOMI_ITEM_OFFLINE = 5;
+	NUOMI_ACTION_SEQ = 6; //用户实时行为序列数据
+	NUOMI_OFFLINE_ACTION = 7;  //NUOMI_OFFLINE+NUOMI_ACTION_SEQ
+	NUOMI_ONLINE_ACTION = 8;   //NUOMI_ONLINE + NUOMI_ACTION_SEQ
+	NUOMI_ALL_ACTION = 9;      //NUOMI_ALL+NUOMI_ACTION_SEQ
+
+	ALL_DATA = 100;
+}
+
+message NuomiUserPreferenceRequest {
+    required RequestHeader header = 1;
+    required RequestIdType id_type = 2;
+    required string id = 3;
+    optional NuomiDataType data_type = 4;
+    repeated string feature_names = 5;
+	optional string item_small_flow = 6; //该字段仅支持item数据的小流量
+}
+
+message ScoreInfo {
+    required string featureid = 1;
+    required double score = 2;
+}
+
+message FeatureInfo {
+    required string feature_name = 1;
+    required ScoreInfo score_info = 2;
+    optional NuomiDataType data_type = 3;
+}
+
+enum NuomiUpResultType
+{
+    BY_PASSPORTID = 1;
+    BY_BAIDUID = 2;
+    BY_CUID = 3;
+    BY_IMEI = 4;
+	
+    NO_RESULT = 100;
+    RESULTS_ERROR = 101;
+    REQUEST_ERROR = 102;
+}
+
+message StrInfo {
+    required string featureid = 1;
+    required string value = 2;
+}
+
+message StrFeatureInfo {
+    required string feature_name = 1;
+    required StrInfo str_info = 2;
+	optional NuomiDataType data_type = 3;
+}
+
+message ItemUpInfo{
+    optional string id = 1;
+    optional double score = 2;
+    optional string info = 3;
+    optional string date = 4;
+}
+
+enum UserActionType
+{
+	ACTION_FILTER = 1; //筛选
+	ACTION_VIEW = 2;   //浏览
+	ACTION_BUY = 3;    //立即购买
+	ACTION_ORDER = 4;  //提交订单
+	ACTION_PAYMENT = 5; //支付成功
+}
+
+message UserAction{
+	required uint32 timestamp = 1; //行为时间
+	required UserActionType action_type = 2; //行为类型
+	required bytes param = 3;    //行为参数
+}
+
+message NuomiUserPreferenceResponse {
+    repeated FeatureInfo features = 1;
+    optional NuomiUpResultType result_type = 2;
+    optional string id = 3;
+    repeated StrFeatureInfo other_infos = 4;
+    repeated ItemUpInfo item_infos = 5;
+	optional string item_small_flow = 6; //echo request中的item_small_flow字段
+	optional bool item_shot = 7;         //true item小流量命中，即服务端有配置item_small_flow试验号;false表示服务端没有item_small_flow试验号配置，item_infos中的数据将取自default配置数据
+	repeated UserAction actions = 8;  //实时用户行为序列
+}
+
+
+message GetAOIRequest{
+    required RequestHeader header = 1;
+    optional string cuid = 2;
+    optional double mercator_x = 3;
+    optional double mercator_y = 4;
+}
+
+message GetAOIResponse{
+    repeated string aoi_id = 1;
+}
+
+message GetNearPoiRequest{
+    required RequestHeader header = 1;
+    optional double longitude = 2; 
+    optional double latitude = 3;
+    optional double radius = 4;
+}
+
+message PoiInfo{
+    optional string poi = 1;
+    optional string name = 2;
+    optional double longitude = 3;
+    optional double latitude = 4;
+}
+
+message GetNearPoiResponse{
+    repeated PoiInfo poi_list = 1;
+}
+
+message NuomiBuy2BuyRequest {
+	// 糯米买了又买请求包，支持用户偏好、常驻点、商户关联，组合偏好请求
+	required RequestHeader header = 1;       // 头部信息，框架控制用
+	// 用户偏好子请求，用于支持用户偏好、常驻点
+	optional NuomiUserPreferenceRequest user_preference_req = 2;
+	// 商户关联子请求， 用于支持商户关联，组合偏好
+	optional NuomiMerchantItemRequest mert_req = 3;
+}
+
+message NuomiBuy2BuyResponse {
+	optional int32 status = 1;                       // 请求结果返回码，
+	optional bytes err_str = 2;                      // 出粗时的可视化信息
+	// 用户偏好、常驻点的返回包
+	optional NuomiUserPreferenceResponse user_preference_rsp = 3;
+	// 支持商户关联，组合偏好的返回包。
+	// 其中如果商户关联和组合偏好同时请求，商户关联放在推荐前面，组合偏好放在后面，args字段标出分界
+	optional GetBNItemsResponse mert_rsp = 4;
+}
+
+
+message NuomiMerchantItemRequest {
+
+	required RequestHeader header = 1;       // 头部信息，框架控制用
+	// 来源
+	optional int32 source = 2;               // 来源 0为app 1为pc
+	optional bytes userid = 3;               // 用户id，目前还未用到
+
+	optional bytes algorithmId = 4;          // 算法id，请求算法用
+	optional int32 limit = 5;                // 请求返回的最大Item数，控制返回结果个数；如果不设置或者<1，即不控制，全量返回
+	// 前件团单信息，即(T,S,N)三元组
+	optional int64 deal_id = 6;              // 当前用户关注的团单，详情页下是当前页面团单，验单情况下是用户当前验的团单
+	repeated int64 merchant_id = 7;          // 当前用户下关注的商户，详情页下是当前页面团单对应的商户，验单情况下是用户当前验的商户
+										 	 // 详情页下的商户列表可以不给出
+	optional int32 deal_num = 8;             // 当前用户关注的团单的数量，验单情况下用户验的单数
+	//用户位置信息
+	optional bytes coor_sys = 9;             // 坐标体系，（确定是采用摩卡托还是百度经纬度？）
+	optional float x = 10;                   // 对应为na端时，摩卡托坐标x
+	optional float y = 11;                   // 对应为na端时，摩卡托坐标y
+	optional int64 area_id = 12;             // 对应pc或者na端，用户所在的城市id
+	// 用户筛选分类信息
+	repeated int64 vec_catg = 13;            // 一级分类
+	repeated int64 vec_subcatg = 14;         // 二级分类
+	repeated int64 vec_thdcatg = 15;         // 三级分类
+	// 用户筛选区域信息
+	repeated int64 vec_shop_dist = 16;       // 行政区
+	repeated int64 vec_shop_range = 17;      // 商圈
+	// 扩展字段
+	repeated Arg args = 18;
+}

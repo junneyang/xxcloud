@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/webpb/template
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-21T02:22:16.279814Z
-5097
+2014-12-02T02:10:48.430437Z
+5455
 yangjun03
 
 
@@ -26,16 +26,25 @@ yangjun03
 
 f4274961-963c-4867-a4ef-339537d76bc5
 
+test
+dir
+
+taskmanagement
+dir
+
+nodemanagement
+dir
+
 pb.html
 file
 
 
 
 
-2014-10-22T08:35:42.000000Z
-3b26cd093ffba9de459b7a91716b94f0
-2014-10-22T08:35:37.864745Z
-3878
+2014-12-02T02:10:53.000000Z
+6fe18540f83199f27f938c3843555883
+2014-12-02T02:10:48.430437Z
+5455
 yangjun03
 
 
@@ -58,17 +67,11 @@ yangjun03
 
 
 
-9703
+9659
 
 conf
 dir
 
 stat
-dir
-
-test
-dir
-
-taskmanagement
 dir
 

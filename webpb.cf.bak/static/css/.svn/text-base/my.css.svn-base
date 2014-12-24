@@ -1,0 +1,119 @@
+.config-box{
+    float:left;
+    //width:420px;
+}
+.config-box p {
+    line-height:20px;
+    height:20px;
+    margin:0px;
+    cursor:default;
+}
+.config-box p:nth-child(even) {
+#    background:#FAFAFA;
+}
+.config-box p:hover {
+    background:#FAFAFA;
+}
+.config-box p.active {
+    background:rgb(135, 135, 248);
+    color:white;
+}
+
+.config-box input[type="radio"]{
+    line-height:20px;
+    height:20px;
+    margin:0px;
+    margin-right:5px;
+}
+.config-box input[type="text"]{
+    border:solid 1px #eee;
+    color:#979797;
+    border-radius:6px;
+    font-size:12px;
+    padding:2px 6px;
+    width:288px;
+    margin:0px;
+}
+.clear{
+    clear:both;
+}
+
+button{
+    color: rgb(126, 126, 126);
+    background: rgb(235, 235, 235);
+    border: solid 0px rgb(255, 255, 255);
+    margin: 0px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 24px;
+    height: 28px;
+    padding: 2px 10px;
+}
+button:hover {
+    background: #ccc;       
+}
+button.blue:hover {
+    background:rgb(97, 97, 248);
+}
+button.blue{
+    color:white;
+    background:rgb(135, 135, 248);
+    border:solid 0px rgb(135, 135, 248);
+}
+#select-client{
+    margin:2px 15px;
+        
+}
+#select-client button{
+    width:55px;
+    margin:6px 0px;
+}
+.my_description {
+    padding-left: 40px;
+    width: 920px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+    }
+.content_text{
+    margin-top:0px;
+    color: #979797;
+
+}
+/*.table th, .table td{
+    text-align:left;
+}*/
+.config-box td{
+    padding:2px 5px;
+}
+
+//////////////////////////////////////////////
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+background-color: #eee;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+margin-left: 0;
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+}
+.pagination>li>a, .pagination>li>span {
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.428571429;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index: 2;
+color: #fff;
+cursor: default;
+background-color: rgb(135, 135, 248);
+border-color:  rgb(135, 135, 248);
+}

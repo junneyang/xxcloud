@@ -1,14 +1,14 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins
 https://svn.baidu.com/app-test/search/lbs-stat
 
 
 
-2014-11-24T10:25:50.500004Z
-5158
+2014-11-25T08:32:17.496623Z
+5186
 yangjun03
 
 
@@ -25,46 +25,6 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
-
-jenkinshome
-dir
-
-log
-dir
-
-jenkins-cli.jar
-file
-
-
-
-
-2014-11-18T07:27:13.000000Z
-fcf08771798be5efad42bd299a2511dc
-2014-11-18T07:26:58.932769Z
-4899
-yangjun03
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-751489
 
 slavehome
 dir
@@ -272,4 +232,44 @@ has-props
 
 
 68199289
+
+jenkinshome
+dir
+
+log
+dir
+
+jenkins-cli.jar
+file
+
+
+
+
+2014-11-18T07:27:13.000000Z
+fcf08771798be5efad42bd299a2511dc
+2014-11-18T07:26:58.932769Z
+4899
+yangjun03
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+751489
 

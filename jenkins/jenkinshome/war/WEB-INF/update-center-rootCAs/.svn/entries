@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/war/WEB-INF/update-center-rootCAs
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+jenkins-update-center-root-ca.txt
+file
+
+
+
+
+2014-11-17T07:12:26.000000Z
+79e9d4ee18453aa97336f5fea5e321b2
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76
 
 hudson-community.txt
 file
@@ -127,38 +161,4 @@ yangjun03
 
 
 1736
-
-jenkins-update-center-root-ca.txt
-file
-
-
-
-
-2014-11-17T07:12:26.000000Z
-79e9d4ee18453aa97336f5fea5e321b2
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-76
 

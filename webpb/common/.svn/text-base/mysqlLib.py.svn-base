@@ -34,7 +34,7 @@ class mysqlLib():
     ##################################################################server操作####################################################
     def add_server(self,param):
         try:
-            sql="""insert into tbl_server(id,name,ip,username,password,workspace,belong,descpt) values(NULL,%s,%s,%s,%s,%s,%s,%s)"""
+            sql="""insert into tbl_server(id,name,exenum,workspace,ip,username,password,belong,descpt) values(NULL,%s,%s,%s,%s,%s,%s,%s,%s)"""
             n=self.cursor.execute(sql,param)
             last_id=int(self.cursor.lastrowid)
             self.conn.commit()
@@ -44,8 +44,8 @@ class mysqlLib():
             return 0,0
     def query_server(self,param):
         try:
-            s=DynSql("""select id,name,ip,workspace,belong,descpt,username,password from tbl_server where 1=1
-            { and id=$id} { and belong=$belong}
+            s=DynSql("""select id,name,exenum,workspace,ip,username,password,belong,descpt from tbl_server where 1=1
+            { and id=$id} { and belong=$belong} { and name=$name}
             ORDER BY id DESC {limit {$offset,} $limit}""")
             sql=s(param)
             cnt=self.cursor.execute(sql[0],sql[1])

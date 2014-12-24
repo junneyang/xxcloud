@@ -44,6 +44,7 @@ class IsStayRule;
 class PoiRule;
 class AoiRule;
 class StrMatchRule;
+class LeaveTimeRule;
 class Rule;
 class Condition;
 class RegistInfo;
@@ -61,11 +62,12 @@ enum RuleType {
   ISSTAY_RULE = 5,
   POI_RULE = 6,
   AOI_RULE = 7,
-  STRMATCH_RULE = 8
+  STRMATCH_RULE = 8,
+  LEAVETIME_RULE = 9
 };
 bool RuleType_IsValid(int value);
 const RuleType RuleType_MIN = LOCATION_RULE;
-const RuleType RuleType_MAX = STRMATCH_RULE;
+const RuleType RuleType_MAX = LEAVETIME_RULE;
 const int RuleType_ARRAYSIZE = RuleType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* RuleType_descriptor();
@@ -965,6 +967,88 @@ class StrMatchRule : public ::google::protobuf::Message {
 };
 // -------------------------------------------------------------------
 
+class LeaveTimeRule : public ::google::protobuf::Message {
+ public:
+  LeaveTimeRule();
+  virtual ~LeaveTimeRule();
+  
+  LeaveTimeRule(const LeaveTimeRule& from);
+  
+  inline LeaveTimeRule& operator=(const LeaveTimeRule& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+  
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+  
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const LeaveTimeRule& default_instance();
+  
+  void Swap(LeaveTimeRule* other);
+  
+  // implements Message ----------------------------------------------
+  
+  LeaveTimeRule* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const LeaveTimeRule& from);
+  void MergeFrom(const LeaveTimeRule& from);
+  void Clear();
+  bool IsInitialized() const;
+  
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  
+  ::google::protobuf::Metadata GetMetadata() const;
+  
+  // nested types ----------------------------------------------------
+  
+  // accessors -------------------------------------------------------
+  
+  // optional int32 leave_time = 1;
+  inline bool has_leave_time() const;
+  inline void clear_leave_time();
+  static const int kLeaveTimeFieldNumber = 1;
+  inline ::google::protobuf::int32 leave_time() const;
+  inline void set_leave_time(::google::protobuf::int32 value);
+  
+  // @@protoc_insertion_point(class_scope:lbs.da.openservice.LeaveTimeRule)
+ private:
+  inline void set_has_leave_time();
+  inline void clear_has_leave_time();
+  
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+  
+  ::google::protobuf::int32 leave_time_;
+  
+  mutable int _cached_size_;
+  ::google::protobuf::uint32 _has_bits_[(1 + 31) / 32];
+  
+  friend void  protobuf_AddDesc_regist_5fcondition_2eproto();
+  friend void protobuf_AssignDesc_regist_5fcondition_2eproto();
+  friend void protobuf_ShutdownFile_regist_5fcondition_2eproto();
+  
+  void InitAsDefaultInstance();
+  static LeaveTimeRule* default_instance_;
+};
+// -------------------------------------------------------------------
+
 class Rule : public ::google::protobuf::Message {
  public:
   Rule();
@@ -1082,6 +1166,14 @@ class Rule : public ::google::protobuf::Message {
   inline ::lbs::da::openservice::AoiRule* mutable_aoi();
   inline ::lbs::da::openservice::AoiRule* release_aoi();
   
+  // optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+  inline bool has_leave_time() const;
+  inline void clear_leave_time();
+  static const int kLeaveTimeFieldNumber = 9;
+  inline const ::lbs::da::openservice::LeaveTimeRule& leave_time() const;
+  inline ::lbs::da::openservice::LeaveTimeRule* mutable_leave_time();
+  inline ::lbs::da::openservice::LeaveTimeRule* release_leave_time();
+  
   // optional .lbs.da.openservice.StrMatchRule str_rule = 100;
   inline bool has_str_rule() const;
   inline void clear_str_rule();
@@ -1108,6 +1200,8 @@ class Rule : public ::google::protobuf::Message {
   inline void clear_has_poi();
   inline void set_has_aoi();
   inline void clear_has_aoi();
+  inline void set_has_leave_time();
+  inline void clear_has_leave_time();
   inline void set_has_str_rule();
   inline void clear_has_str_rule();
   
@@ -1120,11 +1214,12 @@ class Rule : public ::google::protobuf::Message {
   ::lbs::da::openservice::IsStayRule* is_stay_;
   ::lbs::da::openservice::PoiRule* poi_;
   ::lbs::da::openservice::AoiRule* aoi_;
+  ::lbs::da::openservice::LeaveTimeRule* leave_time_;
   ::lbs::da::openservice::StrMatchRule* str_rule_;
   int type_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(9 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(10 + 31) / 32];
   
   friend void  protobuf_AddDesc_regist_5fcondition_2eproto();
   friend void protobuf_AssignDesc_regist_5fcondition_2eproto();
@@ -1223,21 +1318,35 @@ class Condition : public ::google::protobuf::Message {
   inline ::std::string* mutable_tag();
   inline ::std::string* release_tag();
   
+  // optional string prod_tag = 4;
+  inline bool has_prod_tag() const;
+  inline void clear_prod_tag();
+  static const int kProdTagFieldNumber = 4;
+  inline const ::std::string& prod_tag() const;
+  inline void set_prod_tag(const ::std::string& value);
+  inline void set_prod_tag(const char* value);
+  inline void set_prod_tag(const char* value, size_t size);
+  inline ::std::string* mutable_prod_tag();
+  inline ::std::string* release_prod_tag();
+  
   // @@protoc_insertion_point(class_scope:lbs.da.openservice.Condition)
  private:
   inline void set_has_append();
   inline void clear_has_append();
   inline void set_has_tag();
   inline void clear_has_tag();
+  inline void set_has_prod_tag();
+  inline void clear_has_prod_tag();
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
   ::google::protobuf::RepeatedPtrField< ::lbs::da::openservice::Rule > rules_;
   ::std::string* append_;
   ::std::string* tag_;
+  ::std::string* prod_tag_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(3 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
   
   friend void  protobuf_AddDesc_regist_5fcondition_2eproto();
   friend void protobuf_AssignDesc_regist_5fcondition_2eproto();
@@ -2550,6 +2659,32 @@ StrMatchRule::mutable_str_rules() {
 
 // -------------------------------------------------------------------
 
+// LeaveTimeRule
+
+// optional int32 leave_time = 1;
+inline bool LeaveTimeRule::has_leave_time() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void LeaveTimeRule::set_has_leave_time() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void LeaveTimeRule::clear_has_leave_time() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void LeaveTimeRule::clear_leave_time() {
+  leave_time_ = 0;
+  clear_has_leave_time();
+}
+inline ::google::protobuf::int32 LeaveTimeRule::leave_time() const {
+  return leave_time_;
+}
+inline void LeaveTimeRule::set_leave_time(::google::protobuf::int32 value) {
+  set_has_leave_time();
+  leave_time_ = value;
+}
+
+// -------------------------------------------------------------------
+
 // Rule
 
 // required .lbs.da.openservice.RuleType type = 1;
@@ -2778,15 +2913,44 @@ inline ::lbs::da::openservice::AoiRule* Rule::release_aoi() {
   return temp;
 }
 
-// optional .lbs.da.openservice.StrMatchRule str_rule = 100;
-inline bool Rule::has_str_rule() const {
+// optional .lbs.da.openservice.LeaveTimeRule leave_time = 9;
+inline bool Rule::has_leave_time() const {
   return (_has_bits_[0] & 0x00000100u) != 0;
 }
-inline void Rule::set_has_str_rule() {
+inline void Rule::set_has_leave_time() {
   _has_bits_[0] |= 0x00000100u;
 }
-inline void Rule::clear_has_str_rule() {
+inline void Rule::clear_has_leave_time() {
   _has_bits_[0] &= ~0x00000100u;
+}
+inline void Rule::clear_leave_time() {
+  if (leave_time_ != NULL) leave_time_->::lbs::da::openservice::LeaveTimeRule::Clear();
+  clear_has_leave_time();
+}
+inline const ::lbs::da::openservice::LeaveTimeRule& Rule::leave_time() const {
+  return leave_time_ != NULL ? *leave_time_ : *default_instance_->leave_time_;
+}
+inline ::lbs::da::openservice::LeaveTimeRule* Rule::mutable_leave_time() {
+  set_has_leave_time();
+  if (leave_time_ == NULL) leave_time_ = new ::lbs::da::openservice::LeaveTimeRule;
+  return leave_time_;
+}
+inline ::lbs::da::openservice::LeaveTimeRule* Rule::release_leave_time() {
+  clear_has_leave_time();
+  ::lbs::da::openservice::LeaveTimeRule* temp = leave_time_;
+  leave_time_ = NULL;
+  return temp;
+}
+
+// optional .lbs.da.openservice.StrMatchRule str_rule = 100;
+inline bool Rule::has_str_rule() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+inline void Rule::set_has_str_rule() {
+  _has_bits_[0] |= 0x00000200u;
+}
+inline void Rule::clear_has_str_rule() {
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline void Rule::clear_str_rule() {
   if (str_rule_ != NULL) str_rule_->::lbs::da::openservice::StrMatchRule::Clear();
@@ -2948,6 +3112,64 @@ inline ::std::string* Condition::release_tag() {
   } else {
     ::std::string* temp = tag_;
     tag_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+    return temp;
+  }
+}
+
+// optional string prod_tag = 4;
+inline bool Condition::has_prod_tag() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void Condition::set_has_prod_tag() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void Condition::clear_has_prod_tag() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void Condition::clear_prod_tag() {
+  if (prod_tag_ != &::google::protobuf::internal::kEmptyString) {
+    prod_tag_->clear();
+  }
+  clear_has_prod_tag();
+}
+inline const ::std::string& Condition::prod_tag() const {
+  return *prod_tag_;
+}
+inline void Condition::set_prod_tag(const ::std::string& value) {
+  set_has_prod_tag();
+  if (prod_tag_ == &::google::protobuf::internal::kEmptyString) {
+    prod_tag_ = new ::std::string;
+  }
+  prod_tag_->assign(value);
+}
+inline void Condition::set_prod_tag(const char* value) {
+  set_has_prod_tag();
+  if (prod_tag_ == &::google::protobuf::internal::kEmptyString) {
+    prod_tag_ = new ::std::string;
+  }
+  prod_tag_->assign(value);
+}
+inline void Condition::set_prod_tag(const char* value, size_t size) {
+  set_has_prod_tag();
+  if (prod_tag_ == &::google::protobuf::internal::kEmptyString) {
+    prod_tag_ = new ::std::string;
+  }
+  prod_tag_->assign(reinterpret_cast<const char*>(value), size);
+}
+inline ::std::string* Condition::mutable_prod_tag() {
+  set_has_prod_tag();
+  if (prod_tag_ == &::google::protobuf::internal::kEmptyString) {
+    prod_tag_ = new ::std::string;
+  }
+  return prod_tag_;
+}
+inline ::std::string* Condition::release_prod_tag() {
+  clear_has_prod_tag();
+  if (prod_tag_ == &::google::protobuf::internal::kEmptyString) {
+    return NULL;
+  } else {
+    ::std::string* temp = prod_tag_;
+    prod_tag_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
     return temp;
   }
 }

@@ -1,0 +1,33 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/jobstatus/'
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uYnppflZpXkA8UqX08cAAAA=[0mmaguojun in workspace /home/users/maguojun/xingneng/workspace/pbrpcclient
+[pbrpcclient] $ /bin/sh -xe /tmp/hudson6222333864246092558.sh
++ cd ../../pb
++ ./pbrpcclient PUBLIC-PBRPC 10.48.55.39:7788 lbs.da.openservice.ItemService GetItemsByItem '[
+ {
+  "header":{
+   "subservice":"sub",
+   "secretkey":"pass",
+   "servicekey":"key1"
+  },
+  "algorithmId":"topic_rev_poi",
+  "item_ids":[
+   "9977193541978760286"
+  ]
+ },
+ {
+  "header":{
+   "subservice":"sub",
+   "secretkey":"pass",
+   "servicekey":"key1"
+  },
+  "algorithmId":"topic_rev_poi",
+  "item_ids":[
+   "9977193541978760286"
+  ]
+ }
+]'
+/tmp/hudson6222333864246092558.sh: line 2: ./pbrpcclient: No such file or directory
+Build step 'Execute shell' marked build as failure
+Notifying endpoint 'HTTP:http://10.48.55.39:8889/jobstatus/'
+Finished: FAILURE

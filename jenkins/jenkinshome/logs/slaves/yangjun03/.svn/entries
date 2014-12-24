@@ -1,7 +1,7 @@
 10
 
 dir
-5175
+5618
 https://svn.baidu.com/app-test/search/lbs-stat/trunk/upps_test/jenkinsFramework/protobuf/jenkins/jenkinshome/logs/slaves/yangjun03
 https://svn.baidu.com/app-test/search/lbs-stat
 
@@ -25,6 +25,40 @@ yangjun03
 
 
 f4274961-963c-4867-a4ef-339537d76bc5
+
+slave.log.7
+file
+
+
+
+
+2014-11-10T09:56:01.000000Z
+fb197eb97eb564306594087acc98fb94
+2014-11-24T10:24:34.940865Z
+5157
+yangjun03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12107
 
 slave.log.8
 file
@@ -340,40 +374,6 @@ file
 
 2014-11-10T10:05:55.000000Z
 80566dc4c631df8b70fbfddf80cac671
-2014-11-24T10:24:34.940865Z
-5157
-yangjun03
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12107
-
-slave.log.7
-file
-
-
-
-
-2014-11-10T09:56:01.000000Z
-fb197eb97eb564306594087acc98fb94
 2014-11-24T10:24:34.940865Z
 5157
 yangjun03
