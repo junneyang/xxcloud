@@ -21,5 +21,3 @@ xCloudFoundry
     
 ### 实现:
 ![image](screenshot/003.jpg)     
-
-
