@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-hostname='st01-lbs-upps-import00.st01'
+hostname='XXX'
 port=22
-username='root'
-password='UIOJKL'
+username='XXX'
+password='XXX'
 
 import paramiko
 
