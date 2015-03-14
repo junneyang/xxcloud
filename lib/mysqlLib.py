@@ -4,9 +4,9 @@ from logLib import *
 import datetime
 
 import MySQLdb
-host='10.48.55.39'
+host='XXX'
 user='root'
-passwd='Admin@123'
+passwd='XXX'
 db='db_pb'
 port=33306
 
