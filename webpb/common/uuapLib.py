@@ -66,7 +66,7 @@ class uuapLib(object):
         return None
 
 if __name__ =="__main__":
-    u = uuapLib('yangjun03','Admin@123',service='http%3A%2F%2F10.81.12.113%3A8088%2Faccounts%2Flogin%2F%3Fnext%3Dhttp%253A%252F%252Fcq01-rdqa-pool094.cq01.baidu.com%253A8080%252Fbadcase%252Fmainframework%252F')
+    u = uuapLib('XXX','XXX',service='http%3A%2F%2F10.81.12.113%3A8088%2Faccounts%2Flogin%2F%3Fnext%3Dhttp%253A%252F%252Fcq01-rdqa-pool094.cq01.baidu.com%253A8080%252Fbadcase%252Fmainframework%252F')
     r = u.get_user()
     if r is not None:
         print "login ok"
