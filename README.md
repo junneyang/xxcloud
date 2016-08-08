@@ -26,7 +26,7 @@ xcloudfoundry，旨在整合数据中心异构虚拟化资源为统一的资源�
 ![image](screenshot/幻灯片5.PNG)
 
 ### Contact Me:
-* 欢迎对OpenStack、AliYun、AWS、Docker、Mesos/Marathon、K8S、IAAS、PAAS等感兴趣小伙伴多多交流。    
+* 欢迎对OpenStack、AliYun/AWS、Docker、Mesos/Marathon、K8S、IAAS、PAAS等感兴趣小伙伴多多交流。    
 * WeChat:     
 ![image](screenshot/wechat.png)
 
