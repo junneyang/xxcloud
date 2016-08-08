@@ -20,5 +20,9 @@ xcloudfoundry，旨在整合数据中心异构虚拟化资源为统一的资源�
 ![image](screenshot/幻灯片2.PNG)
 * 服务实例申请流程:
 ![image](screenshot/幻灯片3.PNG)
+* IAAS服务模型:
+![image](screenshot/幻灯片4.PNG)
+* PAAS服务模型:
+![image](screenshot/幻灯片5.PNG)
 
 
