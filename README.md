@@ -1,8 +1,8 @@
-# xcloudfoundry
+# xcloudfoundry | Contact Me: ![image](screenshot/wechat.png)
 xcloudfoundry，旨在整合数据中心异构虚拟化资源为统一的资源池，并在资源池上为用户提供各类IAAS、PAAS服务。**系统正在大幅调整，现有代码已废弃，请忽略所有源码。**欢迎对混合云管理(OpenStack、AliYun、AWS、Docker、Mesos/Marathon、K8S)、IAAS、PAAS等感兴趣小伙伴多多交流。
 
-### WeCHat: 
-![image](screenshot/wechat)
+### WeChat: 
+![image](screenshot/wechat.png)
 
 ### Features:    
 * 支持接入管理OpenStack、AliYun、AWS、Docker等混合云能力。
