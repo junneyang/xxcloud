@@ -19,15 +19,15 @@ xcloudfoundry，旨在整合数据中心异构虚拟化资源为统一的资源�
 
 ### Framework:    
 * 产品概念架构:        
-![image](screenshot/1.PNG)
+![image](screenshot/幻灯片1.PNG)
 * 系统详细架构:    
-![image](screenshot/2.PNG)
+![image](screenshot/幻灯片2.PNG)
 * 服务实例申请流程:
-![image](screenshot/3.PNG)
+![image](screenshot/幻灯片3.PNG)
 * IAAS服务模型:
-![image](screenshot/4.PNG)
+![image](screenshot/幻灯片4.PNG)
 * PAAS服务模型:
-![image](screenshot/5.PNG)
+![image](screenshot/幻灯片5.PNG)
 
 ### About Me:
 * 欢迎对OpenStack、AliYun/AWS、Docker、Mesos/Marathon、K8S、IAAS、PAAS等感兴趣小伙伴多多交流。  
