@@ -1,6 +1,6 @@
-# xcloudfoundry
-xcloudfoundry，旨在整合数据中心异构虚拟化资源为统一的资源池，并在资源池上为用户提供各类IAAS、PAAS服务。    
-同时，xcloudfoundry定义了IAAS/PAAS服务生命周期管理以及服务实例生命周期管理的规范&框架。所以，xcloudfoundry首先是一个应用的服务化平台，然后才是一个ITaaS的服务平台。
+# xxcloud
+xxcloud，旨在整合数据中心异构虚拟化资源为统一的资源池，并在资源池上为用户提供各类IAAS、PAAS服务。    
+同时，xxcloud 定义了IAAS/PAAS服务生命周期管理以及服务实例生命周期管理的规范&框架。所以，xxcloud 首先是一个应用的服务化平台，然后才是一个ITaaS的服务平台。
 **系统正在大幅调整，现有代码已废弃，请忽略所有源码。**欢迎交流。    
 
 ### Features:    
