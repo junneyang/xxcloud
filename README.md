@@ -29,6 +29,11 @@ xxcloud，旨在整合数据中心异构虚拟化资源为统一的资源池，�
 * PAAS服务模型:
 ![image](screenshot/幻灯片5.PNG)
 
+### 关于云计算
+- 发展理念：大中台、小前台
+- 建设路线：云化、平台化、服务化、一体化、自动化、智能化、场景化
+- 主要方向：采集平台、数据平台、多维分析与BI平台、Web应用微服务平台、调度平台、可视化平台
+
 ### About Me:
 * 欢迎对OpenStack、AliYun/AWS、Docker、Mesos/Marathon、K8S、IAAS、PAAS等感兴趣小伙伴多多交流。  
 * Blog: [http://www.cnblogs.com/junneyang/](http://www.cnblogs.com/junneyang/)    
